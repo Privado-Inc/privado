@@ -3,7 +3,7 @@
 </p>
 
 # Privado CLI
-Privado CLI scans &amp; monitors your repositories to build privacy, transparency reports &amp; finds privacy issues.
+[Privado](https://www.privado.ai/) CLI scans &amp; monitors your repositories to build privacy, transparency reports &amp; finds privacy issues.
 
 ## About Privado
 We are building Privado with a fundamental belief that privacy is the defining problem of this decade and developers want to build Privacy first products. However, current solutions take a top-down checklist kind of compliance approach. Our vision is to enable developers to embed privacy in their products. Our first product is a code scanner built up grounds up for privacy which will allow developers to get visibility into privacy issues in their products and will generate transparency reports for the users of these products.  
