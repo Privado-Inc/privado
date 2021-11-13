@@ -12,7 +12,7 @@ We are building Privado with a fundamental belief that privacy is the defining p
 Code is where the business logic of collecting, sharing and processing of personal data lives. We are scanning the source code to discover personal data, data flows, 3rd party integrations automatically. These scans enable developers to build transparency reports with very little effort and also surfaces privacy issues in the code.
 
 ### Privacy Reports:
-1. Transparency Report like Privacy Pplicy
+1. Transparency Report like Privacy Policy
 2. Privacy compliance reports like GDPR Article 30 or RoPA report
 3. Apple Privacy Nutrition Label report
 4. Google Safety Section report
