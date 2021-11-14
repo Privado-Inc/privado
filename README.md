@@ -26,4 +26,4 @@ We are building a OWASP like list of common privacy issues and will open-source 
 1. Dark Patterns: A pre-checked consent box
 2. Personal data going to logs
 
-This project is still under development, we encourage you to join our slack channel and collaborate with us.
+This project is still under development, we encourage you to join our [slack channel](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw) and collaborate with us.
