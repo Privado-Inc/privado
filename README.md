@@ -6,7 +6,6 @@
 [Privado](https://www.privado.ai/) CLI scans &amp; monitors your repositories to build privacy, transparency reports &amp; finds privacy issues.
 
 [![Slack](https://img.shields.io/badge/Slack%20Workspace-Join%20now!-36C5F0?logo=slack)](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)
-
 [![GitHub stars](https://img.shields.io/github/stars/Privado-Inc/privado?style=social)](https://github.com/Privado-Inc/privado)
 
 
