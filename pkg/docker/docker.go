@@ -8,10 +8,13 @@ import (
 	"io"
 	"os"
 
+	"github.com/Privado-Inc/privado/pkg/utils"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/mount"
 	"github.com/docker/docker/client"
+
+	// "github.com/docker/docker/ne"
 	"github.com/docker/go-connections/nat"
 )
 
@@ -25,14 +28,15 @@ type ContainerPorts struct {
 	WebPortHost    int
 }
 
-type RunImageArgs struct {
-	Args    []string
-	Volumes *ContainerVolumes
-	Ports   *ContainerPorts
+type RunImageOptions struct {
+	Args           []string
+	Volumes        *ContainerVolumes
+	Ports          *ContainerPorts
+	SetupInterrupt bool
 }
 
 func getDefaultDockerClient() (*client.Client, error) {
-	client, err := client.NewClientWithOpts(client.FromEnv)
+	client, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
 	if err != nil {
 		return nil, err
 	}
@@ -47,34 +51,46 @@ func getBaseContainerConfig() *container.Config {
 		AttachStdout: true,
 		AttachStderr: true,
 		Tty:          true,
+		ExposedPorts: nat.PortSet{
+			nat.Port("80/tcp"): {},
+		},
 	}
 	return config
 }
 
 func getContainerHostConfig(volumes *ContainerVolumes, ports *ContainerPorts) *container.HostConfig {
 	hostConfig := &container.HostConfig{}
-	if volumes.LicenseVolumeEnabled {
+
+	if volumes != nil && volumes.LicenseVolumeEnabled {
 		hostConfig.Mounts = append(
 			hostConfig.Mounts,
 			mount.Mount{
-				Source: volumes.LicenseVolumeHost,
-				Target: "/tmp/license.json",
+				Type:     "bind",
+				Source:   volumes.LicenseVolumeHost,
+				Target:   "/tmp/license.json",
+				ReadOnly: true,
 			},
 		)
 	}
-	if volumes.SourceCodeVolumeEnabled {
+	if volumes != nil && volumes.SourceCodeVolumeEnabled {
 		hostConfig.Mounts = append(
 			hostConfig.Mounts,
 			mount.Mount{
+				Type:   "bind",
 				Source: volumes.SourceCodeVolumeHost,
 				Target: "/app/code",
 			},
 		)
 	}
 
-	if ports.WebPortEnabled {
+	if ports != nil && ports.WebPortEnabled {
 		hostConfig.PortBindings = map[nat.Port][]nat.PortBinding{
-			"80": {{HostPort: fmt.Sprint(ports.WebPortHost)}},
+			nat.Port("80/tcp"): {
+				{
+					HostIP:   "0.0.0.0",
+					HostPort: fmt.Sprint(ports.WebPortHost),
+				},
+			},
 		}
 	}
 
@@ -135,7 +151,7 @@ func attachStdioWithContainer(client *client.Client, ctx context.Context, contai
 	return nil
 }
 
-func WaitAndRemoveContainerWhenStopped(client *client.Client, ctx context.Context, containerId string) error {
+func WaitForContainer(client *client.Client, ctx context.Context, containerId string) error {
 	statusCh, errCh := client.ContainerWait(ctx, containerId, container.WaitConditionNotRunning)
 	select {
 	case err := <-errCh:
@@ -145,11 +161,25 @@ func WaitAndRemoveContainerWhenStopped(client *client.Client, ctx context.Contex
 	case <-statusCh:
 	}
 
-	err := client.ContainerRemove(ctx, containerId, types.ContainerRemoveOptions{RemoveVolumes: true})
-	return err
+	return nil
 }
 
-func RunImageWithArgs(args []string, volumes *ContainerVolumes, ports *ContainerPorts) error {
+func RemoveContainerForcefully(client *client.Client, ctx context.Context, containerId string) error {
+	return client.ContainerRemove(
+		ctx,
+		containerId,
+		types.ContainerRemoveOptions{
+			RemoveVolumes: true,
+			Force:         true,
+		},
+	)
+}
+
+func StopContainer(client *client.Client, ctx context.Context, containerId string) error {
+	return client.ContainerStop(ctx, containerId, nil)
+}
+
+func RunImageWithArgs(runOptions *RunImageOptions) error {
 	ctx := context.Background()
 
 	client, err := getDefaultDockerClient()
@@ -164,8 +194,8 @@ func RunImageWithArgs(args []string, volumes *ContainerVolumes, ports *Container
 
 	// Generate container configurations
 	containerConfig := getBaseContainerConfig()
-	containerConfig.Cmd = args
-	hostConfig := getContainerHostConfig(volumes, ports)
+	containerConfig.Cmd = runOptions.Args
+	hostConfig := getContainerHostConfig(runOptions.Volumes, runOptions.Ports)
 
 	// Create container
 	creationResponse, err := client.ContainerCreate(ctx, containerConfig, hostConfig, nil, nil, "")
@@ -184,9 +214,29 @@ func RunImageWithArgs(args []string, volumes *ContainerVolumes, ports *Container
 		return err
 	}
 
-	// wait till container ends
-	fmt.Println("\n> Waiting for process to complete running:")
-	if err := WaitAndRemoveContainerWhenStopped(client, ctx, creationResponse.ID); err != nil {
+	// Image output after this point
+	fmt.Println("\n> Waiting for process to complete:")
+	fmt.Println()
+
+	// Setup interrupt if enabled
+	if runOptions.SetupInterrupt {
+		// Listen for interrupt, clear signal after execution
+		// Stop container when received
+		sgn := utils.RunOnCtrlC(
+			func() {
+				StopContainer(client, ctx, creationResponse.ID)
+			},
+		)
+		defer utils.ClearSignals(sgn)
+	}
+
+	// wait for container to stop (automatically or by interrupt)
+	if err := WaitForContainer(client, ctx, creationResponse.ID); err != nil {
+		return err
+	}
+
+	// remove the container (in all cases)
+	if err := RemoveContainerForcefully(client, ctx, creationResponse.ID); err != nil {
 		return err
 	}
 

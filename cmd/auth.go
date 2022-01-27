@@ -16,13 +16,10 @@ var authCmd = &cobra.Command{
 
 func auth(cmd *cobra.Command, args []string) {
 	email := args[0]
-	fmt.Println("This is the entered arg: ", email)
+	fmt.Println("> Requesting license for: ", email)
 
-	if len(args) < 1 {
-		exit(fmt.Sprintln("Expected Argument: <email>"), true)
-	}
-
-	err := docker.RunImageWithArgs([]string{"auth", email}, &docker.ContainerVolumes{}, &docker.ContainerPorts{})
+	runImageOptions := &docker.RunImageOptions{Args: []string{"auth", email}}
+	err := docker.RunImageWithArgs(runImageOptions)
 	if err != nil {
 		exit(fmt.Sprintf("Received error: \n%s", err), true)
 	}
