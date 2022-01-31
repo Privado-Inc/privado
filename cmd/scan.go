@@ -12,7 +12,7 @@ import (
 
 var scanCmd = &cobra.Command{
 	Use:   "scan <repository>",
-	Short: "Request license for Privado CLI",
+	Short: "Scan a codebase or repository to identify privacy issues and generate compliance reports",
 	Args:  cobra.ExactArgs(1),
 	Run:   scan,
 }
@@ -23,15 +23,20 @@ func defineScanFlags(cmd *cobra.Command) {
 
 func scan(cmd *cobra.Command, args []string) {
 	repository := args[0]
+	port, err := cmd.Flags().GetInt("port")
+	if err != nil {
+		exit(fmt.Sprint("Cannot parse flag --port", err), true)
+	}
 
 	home, err := homedir.Dir()
 	if err != nil {
-		exit("Cannot determine license directory (~/.privado)", true)
+		exit(fmt.Sprint("Cannot determine license directory (~/.privado)", err), true)
 	}
 	licensePath := path.Join(home, ".privado", "license.json")
 
 	runImageOptions := &docker.RunImageOptions{
 		SetupInterrupt: true, // Setup stop on Ctrl+C
+		SpawnWebBrowser: true,
 		Volumes: &docker.ContainerVolumes{
 			LicenseVolumeEnabled:    true,
 			LicenseVolumeHost:       utils.GetAbsolutePath(licensePath),
@@ -40,7 +45,7 @@ func scan(cmd *cobra.Command, args []string) {
 		},
 		Ports: &docker.ContainerPorts{
 			WebPortEnabled: true,
-			WebPortHost:    3000,
+			WebPortHost:    port,
 		},
 	}
 

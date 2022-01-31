@@ -9,7 +9,8 @@ import (
 
 var authCmd = &cobra.Command{
 	Use:   "auth <email>",
-	Short: "Request license for Privado CLI",
+	Short: "Request license for Privado",
+	Long:  "Request license for Privado. A license is valid for 1 year from the date of issue.",
 	Args:  cobra.ExactArgs(1),
 	Run:   auth,
 }

@@ -4,12 +4,16 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"net/http"
 	"os"
 	"os/exec"
 	"os/signal"
 	"path/filepath"
 	"runtime"
 	"syscall"
+	"time"
+
+	"github.com/schollz/progressbar/v3"
 )
 
 type LicenseFileType struct {
@@ -80,12 +84,39 @@ func OpenURLInBrowser(url string) {
 	fmt.Println("> Open the following URL to view results:", url)
 }
 
-func RunOnCtrlC(cleanupFn func()) chan os.Signal {
+// Ignores all error and waits for URL to be responsive
+// by sending HEAD request every intervalSeconds
+func WaitForResponsiveURL(url string, intervalSeconds int) {
+	if intervalSeconds == 0 {
+		intervalSeconds = 5
+	}
+	ticker := time.NewTicker(time.Duration(intervalSeconds) * time.Second)
+	defer ticker.Stop()
+
+	for range ticker.C {
+		res, err := http.Head(url)
+		if err == nil && res.StatusCode == 200 {
+			return
+		}
+	}
+}
+
+func WaitAndOpenURL(url string, sgn chan bool, interval int) {
+	WaitForResponsiveURL(url, interval)
+	sgn <- true
+	OpenURLInBrowser(url)
+}
+
+func RunOnCtrlC(cleanupFn func(), message string) chan os.Signal {
 	notifySignal := make(chan os.Signal)
 	signal.Notify(notifySignal, os.Interrupt, syscall.SIGTERM)
 	go func() {
 		<-notifySignal
-		fmt.Println("\n> Received interrupt signal")
+
+		if message != "" {
+			fmt.Println("\n>", message)
+		}
+
 		cleanupFn()
 		os.Exit(0)
 	}()
@@ -95,4 +126,41 @@ func RunOnCtrlC(cleanupFn func()) chan os.Signal {
 
 func ClearSignals(sgn chan os.Signal) {
 	signal.Stop(sgn)
+}
+
+func RenderProgressSpinnerWithMessages(quit chan bool) {
+	// bar := progressbar.Default(-1, "Scanning directory")
+
+	loaderMessages := []string{
+		"Scanning repository..",
+		"It can take upto 5-10 minutes depending on repository size and system configurations",
+	}
+	messageIndex := 0
+	messageRotationTicker := time.NewTicker(20 * time.Second)
+
+	bar := progressbar.NewOptions(-1,
+		progressbar.OptionFullWidth(),
+		// Good spinners: 0, 31, 51, 52, 54
+		progressbar.OptionSpinnerType(52),
+		progressbar.OptionEnableColorCodes(true),
+		progressbar.OptionSetDescription(loaderMessages[messageIndex]),
+		progressbar.OptionShowCount(),
+	)
+
+	for {
+		seconds := bar.State().SecondsSince
+		select {
+		case <-quit:
+			bar.Close()
+			fmt.Println("\n> Scanning complete")
+			fmt.Println("\n> Total Time taken:", seconds, "seconds")
+			return
+		case <-messageRotationTicker.C:
+			messageIndex++
+			bar.Describe(loaderMessages[messageIndex%len(loaderMessages)])
+		default:
+			bar.Set(int(seconds))
+			time.Sleep(150 * time.Millisecond)
+		}
+	}
 }
