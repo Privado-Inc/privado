@@ -1,9 +1,9 @@
-// directories
+# directories
 bin
 build
 dist
 
-// files
+# files
 privado
 notes.md
 license.json

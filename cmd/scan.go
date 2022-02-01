@@ -17,6 +17,8 @@ var scanCmd = &cobra.Command{
 
 func defineScanFlags(cmd *cobra.Command) {
 	scanCmd.Flags().IntP("port", "p", 3000, "The port to be used to render HTML results")
+	scanCmd.Flags().Bool("debug", false, "Debug flag to enable image output")
+	scanCmd.Flags().MarkHidden("debug")
 }
 
 func scan(cmd *cobra.Command, args []string) {
@@ -26,26 +28,19 @@ func scan(cmd *cobra.Command, args []string) {
 		exit(fmt.Sprint("Cannot parse flag --port", err), true)
 	}
 
+	// verify license
 	if err := utils.VerifyLicenseJSON(licensePath); err != nil {
 		exit(fmt.Sprint(
 			fmt.Sprintf("Could not verify license: %s\n", err),
 			"To request a license, run: 'privado auth <email>'\n",
-			"To bootstrap the app, run: 'privado bootstrap <license>'",
+			"To bootstrap the app, run: 'privado bootstrap <license>'\n\n",
+			"For more info, run: 'privado help'\n",
 		), true)
-		fmt.Println("")
 	}
 
-	// home, err := homedir.Dir()
-	// if err != nil {
-	// 	exit(fmt.Sprint("Cannot determine license directory (~/.privado)", err), true)
-	// }
-	// licensePath := path.Join(home, ".privado", "license.json")
-	// licensePath, err := cmd.Parent().PersistentFlags().GetString("license")
-	// if err != nil {
-	// 	exit(fmt.Sprintf("Cannot determine license path %s: %s", licensePath, err), true)
-	// }
-	fmt.Println("Lic", licensePath)
+	fmt.Println("> Scanning directory:", utils.GetAbsolutePath(repository))
 
+	// run image with options
 	err = docker.RunImageWithArgs(
 		docker.OptionWithSourceVolume(utils.GetAbsolutePath(repository)),
 		docker.OptionWithLicenseVolume(utils.GetAbsolutePath(licensePath)),
@@ -58,14 +53,14 @@ func scan(cmd *cobra.Command, args []string) {
 			"A gentle reminder to save your changes before you exit",
 		}),
 		docker.OptionWithExitErrorMessages([]string{
-			// known and common errors
+			// known faults and errors
 			"Segmentation Fault",
 			"Some error occurred while processing analyzer results!",
 			"exception: ",
-			"requests.exceptions.ConnectionError: HTTPSConnectionPool(host='t.cli.privado.ai', port=443):",
+			"privado: error: invalid choice",
+			"requests.exceptions.ConnectionError: HTTPSConnectionPool(",
 			"Failed to execute script 'app' due to unhandled exception!",
 		}),
-		// docker.
 	)
 	if err != nil {
 		exit(fmt.Sprintf("Received error: %s", err), true)

@@ -10,6 +10,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/Privado-Inc/privado/pkg/utils"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
@@ -40,7 +41,7 @@ func getBaseContainerConfig(image string) *container.Config {
 		OpenStdin:    true,
 		Tty:          true,
 		ExposedPorts: nat.PortSet{
-			nat.Port("80/tcp"): {},
+			nat.Port(config.AppConfig.Container.WebPort): {},
 		},
 	}
 	return config
@@ -55,7 +56,7 @@ func getContainerHostConfig(volumes containerVolumes, ports containerPorts) *con
 			mount.Mount{
 				Type:     "bind",
 				Source:   volumes.licenseVolumeHost,
-				Target:   "/tmp/license.json",
+				Target:   config.AppConfig.Container.LicenseVolumeDir,
 				ReadOnly: true,
 			},
 		)
@@ -66,14 +67,14 @@ func getContainerHostConfig(volumes containerVolumes, ports containerPorts) *con
 			mount.Mount{
 				Type:   "bind",
 				Source: volumes.sourceCodeVolumeHost,
-				Target: "/app/code",
+				Target: config.AppConfig.Container.SourceCodeVolumeDir,
 			},
 		)
 	}
 
 	if ports.webPortEnabled {
 		hostConfig.PortBindings = map[nat.Port][]nat.PortBinding{
-			nat.Port("80/tcp"): {
+			nat.Port(config.AppConfig.Container.WebPort): {
 				{
 					HostIP:   "0.0.0.0",
 					HostPort: fmt.Sprint(ports.webPortHost),
@@ -197,7 +198,7 @@ func RunImageWithArgs(opts ...RunImageOption) error {
 	}
 
 	// Pull image
-	image := "638117407428.dkr.ecr.ap-south-1.amazonaws.com/cli:no-progress-bar"
+	image := config.AppConfig.Container.ImageURL
 	if err := PullLatestImage(image, client); err != nil {
 		return err
 	}
@@ -240,7 +241,7 @@ func RunImageWithArgs(opts ...RunImageOption) error {
 				// reset any color from internal process
 				fmt.Println("Find more details below:\n", err, "\033[0m")
 			}
-			fmt.Println("\n> Please try again or open an issue here: https://github.com/Privado-Inc/privado")
+			fmt.Println("\n> Please try again or open an issue here: ", config.AppConfig.PrivadoRepository)
 			fmt.Println("\n> Terminating..")
 			RemoveContainerForcefully(client, ctx, creationResponse.ID)
 		})

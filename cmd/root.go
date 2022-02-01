@@ -3,10 +3,9 @@ package cmd
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 
 	// homedir "github.com/mitchellh/go-homedir"
-	"github.com/mitchellh/go-homedir"
+	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/spf13/cobra"
 )
 
@@ -19,11 +18,7 @@ var rootCmd = &cobra.Command{
 }
 
 func Execute() {
-	// home, _ := homedir.Dir()
-	// licensePath := filepath.Join(home, ".privado", "license.json")
-	home, _ := homedir.Dir()
-	defaultLicenseLocation := filepath.Join(home, ".privado", "license.json")
-	rootCmd.PersistentFlags().StringVarP(&licensePath, "license", "l", defaultLicenseLocation, "The license file to be used. Overrides the default bootstrapped license")
+	rootCmd.PersistentFlags().StringVarP(&licensePath, "license", "l", config.AppConfig.DefaultLicensePath, "The license file to be used. Overrides the default bootstrapped license")
 
 	if err := rootCmd.Execute(); err != nil {
 		exit(fmt.Sprintln(err), true)

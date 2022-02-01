@@ -3,10 +3,9 @@ package cmd
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 
+	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/Privado-Inc/privado/pkg/utils"
-	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 )
 
@@ -23,6 +22,8 @@ func defineBootstrapFlags(cmd *cobra.Command) {
 }
 
 func bootstrap(cmd *cobra.Command, args []string) {
+	fmt.Println("> Bootstrapping Privado CLI")
+
 	pathToLicenseFile := args[0]
 	overwriteFlag, err := cmd.Flags().GetBool("overwrite")
 	if err != nil {
@@ -36,27 +37,30 @@ func bootstrap(cmd *cobra.Command, args []string) {
 
 	pathToLicenseFile = utils.GetAbsolutePath(pathToLicenseFile)
 
+	// soft-error in case of existing license
 	if fileExists, _ := utils.DoesFileExists(pathToLicenseFile); fileExists {
 		if !overwriteFlag {
 			exit("License already exists. Use '--overwrite' flag to replace the existing license", true)
 		}
 	}
 
-	// create configuration directory
-	home, err := homedir.Dir()
-	if err != nil {
-		exit(fmt.Sprintf("Could not detect a home directory. Unable to bootstrap: %s", err), true)
+	// check if homedir was found
+	if config.AppConfig.HomeDirectory == "" {
+		exit("Could not detect a home directory. Unable to bootstrap", true)
 	}
-	configurationDirectory := filepath.Join(home, ".privado")
-	if err := os.MkdirAll(configurationDirectory, os.ModePerm); err != nil {
+
+	// create configuration directory
+	if err := os.MkdirAll(config.AppConfig.ConfigurationDirectory, os.ModePerm); err != nil {
 		exit(fmt.Sprintf("Could not create configuration directory: %s", err), true)
 	}
 
-	targetLicensePath := filepath.Join(home, ".privado", "license.json")
+	// copy license to target location
+	targetLicensePath := config.AppConfig.DefaultLicensePath
 	if err := utils.CopyFile(pathToLicenseFile, targetLicensePath); err != nil {
 		exit(fmt.Sprintf("Could not copy license file: %s", err), true)
 	}
 
+	// set appropriate license permissions
 	if err := os.Chmod(targetLicensePath, 0600); err != nil {
 		exit(fmt.Sprintf("Could not set appropriate permissions for the license file: %s", err), true)
 	}
