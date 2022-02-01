@@ -1,3 +1,11 @@
+// directories
+bin
+build
+dist
+
+// files
 privado
 notes.md
-build
+license.json
+.privado
+privado-license.json

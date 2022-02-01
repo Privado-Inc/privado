@@ -2,11 +2,9 @@ package cmd
 
 import (
 	"fmt"
-	"path"
 
 	"github.com/Privado-Inc/privado/pkg/docker"
 	"github.com/Privado-Inc/privado/pkg/utils"
-	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 )
 
@@ -18,7 +16,7 @@ var scanCmd = &cobra.Command{
 }
 
 func defineScanFlags(cmd *cobra.Command) {
-	scanCmd.Flags().IntP("port", "p", 3000, "The port to be used to render HTML results.")
+	scanCmd.Flags().IntP("port", "p", 3000, "The port to be used to render HTML results")
 }
 
 func scan(cmd *cobra.Command, args []string) {
@@ -28,11 +26,25 @@ func scan(cmd *cobra.Command, args []string) {
 		exit(fmt.Sprint("Cannot parse flag --port", err), true)
 	}
 
-	home, err := homedir.Dir()
-	if err != nil {
-		exit(fmt.Sprint("Cannot determine license directory (~/.privado)", err), true)
+	if err := utils.VerifyLicenseJSON(licensePath); err != nil {
+		exit(fmt.Sprint(
+			fmt.Sprintf("Could not verify license: %s\n", err),
+			"To request a license, run: 'privado auth <email>'\n",
+			"To bootstrap the app, run: 'privado bootstrap <license>'",
+		), true)
+		fmt.Println("")
 	}
-	licensePath := path.Join(home, ".privado", "license.json")
+
+	// home, err := homedir.Dir()
+	// if err != nil {
+	// 	exit(fmt.Sprint("Cannot determine license directory (~/.privado)", err), true)
+	// }
+	// licensePath := path.Join(home, ".privado", "license.json")
+	// licensePath, err := cmd.Parent().PersistentFlags().GetString("license")
+	// if err != nil {
+	// 	exit(fmt.Sprintf("Cannot determine license path %s: %s", licensePath, err), true)
+	// }
+	fmt.Println("Lic", licensePath)
 
 	err = docker.RunImageWithArgs(
 		docker.OptionWithSourceVolume(utils.GetAbsolutePath(repository)),
