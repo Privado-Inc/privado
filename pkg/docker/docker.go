@@ -1,12 +1,14 @@
 package docker
 
 import (
+	"bufio"
 	"context"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"io"
 	"os"
+	"strings"
 
 	"github.com/Privado-Inc/privado/pkg/utils"
 	"github.com/docker/docker/api/types"
@@ -19,23 +21,6 @@ import (
 	// "github.com/docker/docker/ne"
 	"github.com/docker/go-connections/nat"
 )
-
-type ContainerVolumes struct {
-	LicenseVolumeEnabled, SourceCodeVolumeEnabled bool
-	LicenseVolumeHost, SourceCodeVolumeHost       string
-}
-
-type ContainerPorts struct {
-	WebPortEnabled bool
-	WebPortHost    int
-}
-
-type RunImageOptions struct {
-	Args                            []string
-	Volumes                         *ContainerVolumes
-	Ports                           *ContainerPorts
-	SetupInterrupt, SpawnWebBrowser bool
-}
 
 func getDefaultDockerClient() (*client.Client, error) {
 	client, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
@@ -61,37 +46,37 @@ func getBaseContainerConfig(image string) *container.Config {
 	return config
 }
 
-func getContainerHostConfig(volumes *ContainerVolumes, ports *ContainerPorts) *container.HostConfig {
+func getContainerHostConfig(volumes containerVolumes, ports containerPorts) *container.HostConfig {
 	hostConfig := &container.HostConfig{}
 
-	if volumes != nil && volumes.LicenseVolumeEnabled {
+	if volumes.licenseVolumeEnabled {
 		hostConfig.Mounts = append(
 			hostConfig.Mounts,
 			mount.Mount{
 				Type:     "bind",
-				Source:   volumes.LicenseVolumeHost,
+				Source:   volumes.licenseVolumeHost,
 				Target:   "/tmp/license.json",
 				ReadOnly: true,
 			},
 		)
 	}
-	if volumes != nil && volumes.SourceCodeVolumeEnabled {
+	if volumes.sourceCodeVolumeEnabled {
 		hostConfig.Mounts = append(
 			hostConfig.Mounts,
 			mount.Mount{
 				Type:   "bind",
-				Source: volumes.SourceCodeVolumeHost,
+				Source: volumes.sourceCodeVolumeHost,
 				Target: "/app/code",
 			},
 		)
 	}
 
-	if ports != nil && ports.WebPortEnabled {
+	if ports.webPortEnabled {
 		hostConfig.PortBindings = map[nat.Port][]nat.PortBinding{
 			nat.Port("80/tcp"): {
 				{
 					HostIP:   "0.0.0.0",
-					HostPort: fmt.Sprint(ports.WebPortHost),
+					HostPort: fmt.Sprint(ports.webPortHost),
 				},
 			},
 		}
@@ -110,7 +95,7 @@ func PullLatestImage(image string, client *client.Client) (err error) {
 
 	auth := types.AuthConfig{
 		Username:      "AWS",
-		Password:      "=",
+		Password:      "eyJwYXlsb2FkIjoiNmVLQnBleTBvRG5oUHgxcTRjSTVLZlZ4QnluUDN5UStsODQ1QWMxUjVlSitYcmF2T3pjOTMyV3BYd1JkMmZwVUtjekp3TTBlc3d2ZWtZN3dvQ0laZWp1RmFHQkwvSEZrZUdweHR5L25zOFFUbXUyY3NWVFJqSmVTSXhoWldSYVFPR0lHQWJBOFE2aW1Kb0x0bzg2SUw3T2FvUHpIQ3BSVm5TemRGWll1VVBTZUp2dCtJRXAwazdMVGNNRXpjdEdseDdjVG45Y2l1b0h6cU12R3RacmxlTDJ0MForMDJrTTRBdlM4eWNZNDhydE1YREcycjZNbTk0dmVVSWI4c3Z5cU5BUzJXbFp4QXJOMlpoNFFHSjk0NVQ2YXdxN0hzanZLbmdTUFp3cHhqL256S0FTN1dobHFxY29FNlFYSVhGbWVGZndiL01WZFdEZG9oUUkydE8wK01sdUZETHhEVElQMUxOaTU4SDR2R3UyZ2lEQ21FbEgzcFRmZVBjUklKYnlVR1RudzdNbjRibjNKNy9OU09XQVZDNXptenR3U240TTBxcWcvYWFRSkFJaitQL3RqdXc4N3RsSU55Uk10bmpWUmRVQ3J5emtMdlF3dFd3ZzNWeXNBVGlBUGtwVGhScVZ2cnNiSmZJMkx1MjQ3TCtFWDdGVTZHRmh4YUJwbnEyTVV4MzZ0c3hZeWV5ZUc2SDNTZnMrbHlEcmdRNG9qTld5TE5lS2tJU1VpUXJkcFdVUG5kMjlMVmpqWnFPWW5XN0ZQZmFUQTVmK2x0bytPWlkwZ0RrVjRLTGZCSkM2UzVjZGlDb0tHL3lNQ2k0TFI3N2NCdWFRYW5BOHZIcU5hWWM3NEppWThabmY4Rm8wa0dwY2JxSnowWTh2UW9wclJ0SVovbGhaK3JwaTJaanU3SGVZakRnanA0VUJiVUVTbE8reW1Va3NJSzRZdTRrOHFYRlVOdXB3eCtZbVFWaGlNN3Z5YStkaldpZjVUdmh1UmsxVmd5Vk5CZkEzVlRTYUc3UXoxajFSYlJ6SDE3Qk1ocUJBQ0dscU9OaHFHMzBwdk92VTQrTWdFVlRnK25SL2t5SzVTa3Zrc2liYW9odWhXOUV6N01lb0ZJYUgrS3lCZVJDOHRabjNVeGlOVTZyQjZ3RGFMMFk2YkRMZTc5WmRvWk1BTXZueFduRlJDNnNWMVZiL0hZcXU1dWZkZE5ZWERFNTJBZGlFSXZPa1B5UldVM0xOUW9jZDhXWmx1TkZWQ0R6S3JiUU1nUFMwNzBnMDFUUjdwTmVtWGI5RldNdTJHVlJFTmRxU1IySlAxQWd0ajlMUHAwdkJzZjhLTVFMUFlMUHFySys3MjJJUkVkaXFVaGV0anpuQlNCQnlWeXQzRW50MGQ1cWRocXg4PSIsImRhdGFrZXkiOiJBUUlCQUhpSFdhWVRuUlVXQ2Jueis3THZNRytBUHZUSHpIbEJVUTlGcUVtVjI2QmR3d0hhcHhRVEZrKytnSmRQbGhuaEl0MUxBQUFBZmpCOEJna3Foa2lHOXcwQkJ3YWdiekJ0QWdFQU1HZ0dDU3FHU0liM0RRRUhBVEFlQmdsZ2hrZ0JaUU1FQVM0d0VRUU1mY0ZwdVFKWGtRMzZHUEc5QWdFUWdEdE9zSlRPMGMwZ3JkZnM5VlFQUlI3QlRpNlVaNkVJZkJVQW5IQzZyVUwvd0ZYR0tIeC9TV1lnWXFjdmZOc2poNmlTN1Z6Wi84WXZlbTJMUmc9PSIsInZlcnNpb24iOiIyIiwidHlwZSI6IkRBVEFfS0VZIiwiZXhwaXJhdGlvbiI6MTY0Mzc0NDQyMX0=",
 		ServerAddress: "638117407428.dkr.ecr.region.amazonaws.com",
 	}
 	authBytes, _ := json.Marshal(auth)
@@ -134,7 +119,7 @@ func PullLatestImage(image string, client *client.Client) (err error) {
 }
 
 //lint:ignore U1000 Ignore unused function warning
-func attachStdioWithContainer(client *client.Client, ctx context.Context, containerId string) error {
+func attachContainerOutput(client *client.Client, ctx context.Context, containerId string) (*bufio.Reader, error) {
 	waiter, err := client.ContainerAttach(ctx, containerId, types.ContainerAttachOptions{
 		Stderr: true,
 		Stdout: true,
@@ -144,14 +129,33 @@ func attachStdioWithContainer(client *client.Client, ctx context.Context, contai
 	})
 
 	if err != nil {
-		return err
+		return nil, err
 	}
 
-	go io.Copy(os.Stdout, waiter.Reader)
-	go io.Copy(os.Stderr, waiter.Reader)
+	// attach io by default for now
+	// unsure of the impact yet
 	go io.Copy(waiter.Conn, os.Stdin)
 
-	return nil
+	return waiter.Reader, err
+}
+
+func processAttachedContainerOutput(reader *bufio.Reader, attachStdOut bool, outputMatchList []string, matchFn func(string)) {
+	if attachStdOut {
+		go io.Copy(os.Stdout, reader)
+		go io.Copy(os.Stderr, reader)
+	}
+
+	if len(outputMatchList) > 0 {
+		go func() {
+			line, _ := reader.ReadString('\n')
+			for _, matchStr := range outputMatchList {
+				if strings.Contains(line, matchStr) {
+					matchFn(line)
+					return
+				}
+			}
+		}()
+	}
 }
 
 func WaitForContainer(client *client.Client, ctx context.Context, containerId string) error {
@@ -182,7 +186,9 @@ func StopContainer(client *client.Client, ctx context.Context, containerId strin
 	return client.ContainerStop(ctx, containerId, nil)
 }
 
-func RunImageWithArgs(runOptions *RunImageOptions) error {
+func RunImageWithArgs(opts ...RunImageOption) error {
+	runOptions := newRunImageHandler(opts)
+
 	ctx := context.Background()
 
 	client, err := getDefaultDockerClient()
@@ -198,8 +204,8 @@ func RunImageWithArgs(runOptions *RunImageOptions) error {
 
 	// Generate container configurations
 	containerConfig := getBaseContainerConfig(image)
-	containerConfig.Cmd = runOptions.Args
-	hostConfig := getContainerHostConfig(runOptions.Volumes, runOptions.Ports)
+	containerConfig.Cmd = runOptions.args
+	hostConfig := getContainerHostConfig(runOptions.volumes, runOptions.ports)
 
 	// Create container
 	creationResponse, err := client.ContainerCreate(ctx, containerConfig, hostConfig, nil, nil, "")
@@ -217,18 +223,34 @@ func RunImageWithArgs(runOptions *RunImageOptions) error {
 	defer RemoveContainerForcefully(client, ctx, creationResponse.ID)
 
 	// Attach input/output streams with container
-	// if err := attachStdioWithContainer(client, ctx, creationResponse.ID); err != nil {
-	// 	return err
-	// }
+	if runOptions.attachOutput || len(runOptions.exitErrorMessages) > 0 {
+		// processContainerOutput(attachStdIO, runOnMatch)
+		reader, err := attachContainerOutput(client, ctx, creationResponse.ID)
+		if err != nil {
+			return err
+		}
+
+		processAttachedContainerOutput(reader, runOptions.attachOutput, runOptions.exitErrorMessages, func(err string) {
+			// Error on output
+			fmt.Println("\n> Some error occurred")
+			if err != "" {
+				fmt.Println("\n> Find more details below:\n", err)
+			}
+			fmt.Println("\n> Please try again or open an issue here: https://github.com/Privado-Inc/privado")
+			fmt.Println("\n> Terminating..")
+			RemoveContainerForcefully(client, ctx, creationResponse.ID)
+		})
+	}
 
 	// Start container
-	fmt.Printf("\n> Starting container with the latest image (ContainerId: %s)\n", creationResponse.ID)
+	fmt.Println("\n> Starting container with the latest image")
+	fmt.Println("> Container ID:", creationResponse.ID)
 	if err := client.ContainerStart(ctx, creationResponse.ID, types.ContainerStartOptions{}); err != nil {
 		return err
 	}
 
 	// Setup interrupt fns if enabled
-	if runOptions.SetupInterrupt {
+	if runOptions.setupInterrupt {
 		// Listen for interrupt, clear signal after execution
 		// Remove container when received
 		// All cleanup here: The process ends after this
@@ -243,15 +265,16 @@ func RunImageWithArgs(runOptions *RunImageOptions) error {
 		defer utils.ClearSignals(sgn)
 	}
 
-	if runOptions.Ports.WebPortEnabled && runOptions.SpawnWebBrowser {
+	if runOptions.ports.webPortEnabled && runOptions.spawnWebBrowser {
 		quitProgressChannel := make(chan bool)
-		go utils.RenderProgressSpinnerWithMessages(quitProgressChannel)
-		go utils.WaitAndOpenURL(fmt.Sprintf("http://localhost:%d", runOptions.Ports.WebPortHost), quitProgressChannel, 6)
+		if runOptions.progressLoader {
+			go utils.RenderProgressSpinnerWithMessages(quitProgressChannel)
+		}
+		go utils.WaitAndOpenURL(fmt.Sprintf("http://localhost:%d", runOptions.ports.webPortHost), quitProgressChannel, 6)
 	}
 
 	// Image output after this point
 	fmt.Println("\n> Waiting for process to complete:")
-	fmt.Println()
 
 	// wait for container to stop (automatically or by interrupt)
 	if err := WaitForContainer(client, ctx, creationResponse.ID); err != nil {

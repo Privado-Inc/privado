@@ -34,26 +34,17 @@ func scan(cmd *cobra.Command, args []string) {
 	}
 	licensePath := path.Join(home, ".privado", "license.json")
 
-	runImageOptions := &docker.RunImageOptions{
-		SetupInterrupt: true, // Setup stop on Ctrl+C
-		SpawnWebBrowser: true,
-		Volumes: &docker.ContainerVolumes{
-			LicenseVolumeEnabled:    true,
-			LicenseVolumeHost:       utils.GetAbsolutePath(licensePath),
-			SourceCodeVolumeEnabled: true,
-			SourceCodeVolumeHost:    utils.GetAbsolutePath(repository),
-		},
-		Ports: &docker.ContainerPorts{
-			WebPortEnabled: true,
-			WebPortHost:    port,
-		},
-	}
-
-	err = docker.RunImageWithArgs(runImageOptions)
+	err = docker.RunImageWithArgs(
+		docker.OptionWithSourceVolume(utils.GetAbsolutePath(repository)),
+		docker.OptionWithLicenseVolume(utils.GetAbsolutePath(licensePath)),
+		docker.OptionWithWebPort(port),
+		docker.OptionWithInterrupt(),
+		docker.OptionWithAutoSpawnBrowser(),
+		docker.OptionWithProgressLoader(),
+	)
 	if err != nil {
 		exit(fmt.Sprintf("Received error: %s", err), true)
 	}
-
 }
 
 func init() {

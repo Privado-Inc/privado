@@ -19,8 +19,10 @@ func auth(cmd *cobra.Command, args []string) {
 	email := args[0]
 	fmt.Println("> Requesting license for: ", email)
 
-	runImageOptions := &docker.RunImageOptions{Args: []string{"auth", email}}
-	err := docker.RunImageWithArgs(runImageOptions)
+	err := docker.RunImageWithArgs(
+		docker.OptionWithArgs([]string{"auth", email}),
+		docker.OptionWithAttachedOutput(),
+	)
 	if err != nil {
 		exit(fmt.Sprintf("Received error: \n%s", err), true)
 	}

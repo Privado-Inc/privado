@@ -133,7 +133,7 @@ func RenderProgressSpinnerWithMessages(quit chan bool) {
 
 	loaderMessages := []string{
 		"Scanning repository..",
-		"It can take upto 5-10 minutes depending on repository size and system configurations",
+		"Scanning can take upto 5-10 minutes depending on repository size and system configurations",
 	}
 	messageIndex := 0
 	messageRotationTicker := time.NewTicker(20 * time.Second)
