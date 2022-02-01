@@ -107,16 +107,11 @@ func WaitAndOpenURL(url string, sgn chan bool, interval int) {
 	OpenURLInBrowser(url)
 }
 
-func RunOnCtrlC(cleanupFn func(), message string) chan os.Signal {
+func RunOnCtrlC(cleanupFn func()) chan os.Signal {
 	notifySignal := make(chan os.Signal)
 	signal.Notify(notifySignal, os.Interrupt, syscall.SIGTERM)
 	go func() {
 		<-notifySignal
-
-		if message != "" {
-			fmt.Println("\n>", message)
-		}
-
 		cleanupFn()
 		os.Exit(0)
 	}()
@@ -128,7 +123,7 @@ func ClearSignals(sgn chan os.Signal) {
 	signal.Stop(sgn)
 }
 
-func RenderProgressSpinnerWithMessages(quit chan bool) {
+func RenderProgressSpinnerWithMessages(complete chan bool, quit chan bool, afterLoadMessages []string) {
 	// bar := progressbar.Default(-1, "Scanning directory")
 
 	loaderMessages := []string{
@@ -151,9 +146,19 @@ func RenderProgressSpinnerWithMessages(quit chan bool) {
 		seconds := bar.State().SecondsSince
 		select {
 		case <-quit:
+			fmt.Println()
+			bar.Close()
+		case <-complete:
 			bar.Close()
 			fmt.Println("\n> Scanning complete")
-			fmt.Println("\n> Total Time taken:", seconds, "seconds")
+			fmt.Println("> Total Time taken:", seconds, "seconds")
+
+			if len(afterLoadMessages) > 0 {
+				for _, message := range afterLoadMessages {
+					fmt.Print("\n> ", message)
+				}
+			}
+			fmt.Println()
 			return
 		case <-messageRotationTicker.C:
 			messageIndex++

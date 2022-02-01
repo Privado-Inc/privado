@@ -19,6 +19,7 @@ type runImageHandler struct {
 	setupInterrupt    bool
 	spawnWebBrowser   bool
 	progressLoader    bool
+	afterLoadMessages []string
 	attachOutput      bool
 	exitErrorMessages []string
 }
@@ -73,9 +74,12 @@ func OptionWithAutoSpawnBrowser() RunImageOption {
 	}
 }
 
-func OptionWithProgressLoader() RunImageOption {
+func OptionWithProgressLoader(afterLoadMessages []string) RunImageOption {
 	return func(rh *runImageHandler) {
 		rh.progressLoader = true
+		if len(afterLoadMessages) > 0 {
+			rh.afterLoadMessages = afterLoadMessages
+		}
 	}
 }
 

@@ -40,7 +40,20 @@ func scan(cmd *cobra.Command, args []string) {
 		docker.OptionWithWebPort(port),
 		docker.OptionWithInterrupt(),
 		docker.OptionWithAutoSpawnBrowser(),
-		docker.OptionWithProgressLoader(),
+		docker.OptionWithProgressLoader([]string{
+			fmt.Sprintf("Results and reports can be viewed on http://localhost:%d\n", port),
+			"Press CTRL+C anytime to terminate the process",
+			"A gentle reminder to save your changes before you exit",
+		}),
+		docker.OptionWithExitErrorMessages([]string{
+			// known and common errors
+			"Segmentation Fault",
+			"Some error occurred while processing analyzer results!",
+			"exception: ",
+			"requests.exceptions.ConnectionError: HTTPSConnectionPool(host='t.cli.privado.ai', port=443):",
+			"Failed to execute script 'app' due to unhandled exception!",
+		}),
+		// docker.
 	)
 	if err != nil {
 		exit(fmt.Sprintf("Received error: %s", err), true)

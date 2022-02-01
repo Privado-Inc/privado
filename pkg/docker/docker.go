@@ -150,7 +150,7 @@ func processAttachedContainerOutput(reader *bufio.Reader, attachStdOut bool, out
 			line, _ := reader.ReadString('\n')
 			for _, matchStr := range outputMatchList {
 				if strings.Contains(line, matchStr) {
-					matchFn(line)
+					matchFn(strings.TrimSuffix(line, "\n"))
 					return
 				}
 			}
@@ -222,6 +222,8 @@ func RunImageWithArgs(opts ...RunImageOption) error {
 	// always remove the container in the end
 	defer RemoveContainerForcefully(client, ctx, creationResponse.ID)
 
+	quitProgressBarChannel := make(chan bool, 1)
+
 	// Attach input/output streams with container
 	if runOptions.attachOutput || len(runOptions.exitErrorMessages) > 0 {
 		// processContainerOutput(attachStdIO, runOnMatch)
@@ -232,9 +234,11 @@ func RunImageWithArgs(opts ...RunImageOption) error {
 
 		processAttachedContainerOutput(reader, runOptions.attachOutput, runOptions.exitErrorMessages, func(err string) {
 			// Error on output
+			quitProgressBarChannel <- true
 			fmt.Println("\n> Some error occurred")
 			if err != "" {
-				fmt.Println("\n> Find more details below:\n", err)
+				// reset any color from internal process
+				fmt.Println("Find more details below:\n", err, "\033[0m")
 			}
 			fmt.Println("\n> Please try again or open an issue here: https://github.com/Privado-Inc/privado")
 			fmt.Println("\n> Terminating..")
@@ -255,22 +259,20 @@ func RunImageWithArgs(opts ...RunImageOption) error {
 		// Remove container when received
 		// All cleanup here: The process ends after this
 		// and defer functions are not executed
-		sgn := utils.RunOnCtrlC(
-			func() {
-				// ideally stop here, and remove later
-				RemoveContainerForcefully(client, ctx, creationResponse.ID)
-			},
-			"Received interrupt signal",
-		)
+		sgn := utils.RunOnCtrlC(func() {
+			quitProgressBarChannel <- true
+			fmt.Println("\n> Received interrupt signal")
+			RemoveContainerForcefully(client, ctx, creationResponse.ID)
+		})
 		defer utils.ClearSignals(sgn)
 	}
 
 	if runOptions.ports.webPortEnabled && runOptions.spawnWebBrowser {
-		quitProgressChannel := make(chan bool)
+		completeProgressChannel := make(chan bool)
 		if runOptions.progressLoader {
-			go utils.RenderProgressSpinnerWithMessages(quitProgressChannel)
+			go utils.RenderProgressSpinnerWithMessages(completeProgressChannel, quitProgressBarChannel, runOptions.afterLoadMessages)
 		}
-		go utils.WaitAndOpenURL(fmt.Sprintf("http://localhost:%d", runOptions.ports.webPortHost), quitProgressChannel, 6)
+		go utils.WaitAndOpenURL(fmt.Sprintf("http://localhost:%d", runOptions.ports.webPortHost), completeProgressChannel, 6)
 	}
 
 	// Image output after this point
