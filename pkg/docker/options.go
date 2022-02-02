@@ -94,3 +94,12 @@ func OptionWithAttachedOutput() RunImageOption {
 		rh.attachOutput = true
 	}
 }
+
+func OptionWithDebug(isDebug bool) RunImageOption {
+	return func(rh *runImageHandler) {
+		// currently only enable output in debug mode
+		if isDebug {
+			rh.attachOutput = true
+		}
+	}
+}

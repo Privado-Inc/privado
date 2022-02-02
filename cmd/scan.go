@@ -24,6 +24,7 @@ func defineScanFlags(cmd *cobra.Command) {
 func scan(cmd *cobra.Command, args []string) {
 	repository := args[0]
 	port, err := cmd.Flags().GetInt("port")
+	debug, _ := cmd.Flags().GetBool("debug")
 	if err != nil {
 		exit(fmt.Sprint("Cannot parse flag --port", err), true)
 	}
@@ -61,6 +62,7 @@ func scan(cmd *cobra.Command, args []string) {
 			"requests.exceptions.ConnectionError: HTTPSConnectionPool(",
 			"Failed to execute script 'app' due to unhandled exception!",
 		}),
+		docker.OptionWithDebug(debug),
 	)
 	if err != nil {
 		exit(fmt.Sprintf("Received error: %s", err), true)

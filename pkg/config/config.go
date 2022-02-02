@@ -34,7 +34,7 @@ func init() {
 		DefaultLicensePath:     filepath.Join(home, ".privado", "license.json"),
 		PrivadoRepository:      "https://github.com/Privado-Inc/privado",
 		Container: &ContainerConfiguration{
-			ImageURL:            "638117407428.dkr.ecr.ap-south-1.amazonaws.com/cli:no-progress-bar",
+			ImageURL:            "638117407428.dkr.ecr.ap-south-1.amazonaws.com/cli:latest",
 			SourceCodeVolumeDir: "/app/code",
 			LicenseVolumeDir:    "/tmp/license.json",
 			WebPort:             "80/tcp",

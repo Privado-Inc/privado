@@ -38,9 +38,11 @@ func bootstrap(cmd *cobra.Command, args []string) {
 	pathToLicenseFile = utils.GetAbsolutePath(pathToLicenseFile)
 
 	// soft-error in case of existing license
-	if fileExists, _ := utils.DoesFileExists(pathToLicenseFile); fileExists {
+	if fileExists, _ := utils.DoesFileExists(config.AppConfig.DefaultLicensePath); fileExists {
 		if !overwriteFlag {
 			exit("License already exists. Use '--overwrite' flag to replace the existing license", true)
+		} else {
+			fmt.Println("> '--overwrite' flag found, replacing existing license")
 		}
 	}
 
