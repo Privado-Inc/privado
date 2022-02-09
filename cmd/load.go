@@ -2,7 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"path/filepath"
 
+	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/Privado-Inc/privado/pkg/docker"
 	"github.com/Privado-Inc/privado/pkg/utils"
 	"github.com/spf13/cobra"
@@ -10,8 +12,8 @@ import (
 
 var loadCmd = &cobra.Command{
 	Use:   "load <repository>",
-	Short: "Load a scanned a codebase or repository to continue generating compliance reports",
-	Long:  "Load a scanned a codebase or repository to continue generating compliance reports. It skips privacy scan and loads the results present in the target repository (.privado directory)",
+	Short: "Load a scanned codebase to continue generating compliance reports",
+	Long:  "Load a scanned codebase or repository and continue generating compliance reports. It skips privacy scan and loads the results present in the target repository (.privado directory)",
 	Args:  cobra.ExactArgs(1),
 	Run:   load,
 }
@@ -41,6 +43,10 @@ func load(cmd *cobra.Command, args []string) {
 	}
 
 	fmt.Println("> Loading results from directory:", utils.GetAbsolutePath(repository))
+	resultsPath := filepath.Join(utils.GetAbsolutePath(repository), config.AppConfig.PrivacyResultsPathSuffix)
+	if exists, _ := utils.DoesFileExists(resultsPath); !exists {
+		exit("Cannot find scan results for the specified directory.\nRun 'privado scan <dir>' instead.\n\nRun 'privado help' for more information.", true)
+	}
 
 	// run image with options
 	err = docker.RunImage(

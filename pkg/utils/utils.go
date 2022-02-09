@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"bufio"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -12,6 +13,7 @@ import (
 	"os/signal"
 	"path/filepath"
 	"runtime"
+	"strings"
 	"syscall"
 	"time"
 
@@ -30,6 +32,37 @@ func GetAbsolutePath(relativePath string) string {
 		panic(err)
 	}
 	return fullPath
+}
+
+func CopyFile(src, dst string) error {
+	in, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+
+	out, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer out.Close()
+
+	_, err = io.Copy(out, in)
+	if err != nil {
+		return err
+	}
+	return out.Close()
+}
+
+func DoesFileExists(name string) (bool, error) {
+	_, err := os.Stat(name)
+	if err == nil {
+		return true, nil
+	}
+	if errors.Is(err, os.ErrNotExist) {
+		return false, nil
+	}
+	return false, err
 }
 
 func VerifyLicenseJSON(pathToFile string) error {
@@ -172,33 +205,18 @@ func RenderProgressSpinnerWithMessages(complete, quit chan bool, loadMessages, a
 	}
 }
 
-func CopyFile(src, dst string) error {
-	in, err := os.Open(src)
+func ShowConfirmationPrompt(msg string) (bool, error) {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Printf("%s (y/N): ", msg)
+	ans, err := reader.ReadString('\n')
 	if err != nil {
-		return err
+		return false, err
 	}
-	defer in.Close()
+	ans = strings.TrimSpace(ans)
+	ans = strings.ToLower(ans)
 
-	out, err := os.Create(dst)
-	if err != nil {
-		return err
-	}
-	defer out.Close()
-
-	_, err = io.Copy(out, in)
-	if err != nil {
-		return err
-	}
-	return out.Close()
-}
-
-func DoesFileExists(name string) (bool, error) {
-	_, err := os.Stat(name)
-	if err == nil {
+	if ans == "y" || ans == "yes" || ans == "1" {
 		return true, nil
 	}
-	if errors.Is(err, os.ErrNotExist) {
-		return false, nil
-	}
-	return false, err
+	return false, nil
 }

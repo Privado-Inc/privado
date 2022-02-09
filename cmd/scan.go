@@ -2,7 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"path/filepath"
 
+	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/Privado-Inc/privado/pkg/docker"
 	"github.com/Privado-Inc/privado/pkg/utils"
 	"github.com/spf13/cobra"
@@ -17,6 +19,7 @@ var scanCmd = &cobra.Command{
 
 func defineScanFlags(cmd *cobra.Command) {
 	scanCmd.Flags().IntP("port", "p", 3000, "The port to be used to render HTML results")
+	scanCmd.Flags().BoolP("overwrite", "o", false, "If specified, the warning prompt for existing scan results is disabled and any existing results are overwritten")
 	scanCmd.Flags().Bool("debug", false, "Debug flag to enable image output")
 	scanCmd.Flags().MarkHidden("debug")
 }
@@ -25,7 +28,9 @@ func scan(cmd *cobra.Command, args []string) {
 	repository := args[0]
 	port, err := cmd.Flags().GetInt("port")
 	debug, _ := cmd.Flags().GetBool("debug")
+	overwriteResults, _ := cmd.Flags().GetBool("overwrite")
 	if err != nil {
+
 		exit(fmt.Sprint("Cannot parse flag --port", err), true)
 	}
 
@@ -41,9 +46,23 @@ func scan(cmd *cobra.Command, args []string) {
 
 	// [TODO]: Check for report and prompt
 	// Also add another flag to scan skip prompt
+	// if overwrite flag is not specified, check for existing results
+	if !overwriteResults {
+		resultsPath := filepath.Join(utils.GetAbsolutePath(repository), config.AppConfig.PrivacyResultsPathSuffix)
+		if exists, _ := utils.DoesFileExists(resultsPath); exists {
+			fmt.Printf("> Scan report already exists (%s)\n", config.AppConfig.PrivacyResultsPathSuffix)
+			fmt.Println("> If you want to view or edit existing results, run 'privado load' instead")
+
+			fmt.Println("\n> Rescan will overwrite existing results and progress")
+			confirm, _ := utils.ShowConfirmationPrompt("Continue?")
+			if !confirm {
+				exit("Terminating..", false)
+			}
+			fmt.Println()
+		}
+	}
 
 	fmt.Println("> Scanning directory:", utils.GetAbsolutePath(repository))
-
 	// run image with options
 	err = docker.RunImage(
 		docker.OptionWithSourceVolume(utils.GetAbsolutePath(repository)),
@@ -54,7 +73,7 @@ func scan(cmd *cobra.Command, args []string) {
 		docker.OptionWithProgressLoader(
 			[]string{
 				"Scanning repository..",
-				"Scanning can take upto 5-10 minutes depending on repository size and system configurations",
+				"Scanning can take upto 5-10 minutes",
 			},
 			[]string{
 				"Scanning Complete",

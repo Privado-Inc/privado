@@ -241,8 +241,8 @@ func RunImage(opts ...RunImageOption) error {
 				// reset any color from internal process
 				fmt.Println("Find more details below:\n", err, "\033[0m")
 			}
-			fmt.Println("\n> Please try again or open an issue here: ", config.AppConfig.PrivadoRepository)
-			fmt.Println("\n> Terminating..")
+			fmt.Println("\n> If this is an unexpected output, please try again or open an issue here: ", config.AppConfig.PrivadoRepository)
+			fmt.Println("> Terminating..")
 			RemoveContainerForcefully(client, ctx, creationResponse.ID)
 		})
 	}
