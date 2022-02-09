@@ -8,20 +8,21 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var scanCmd = &cobra.Command{
-	Use:   "scan <repository>",
-	Short: "Scan a codebase or repository to identify privacy issues and generate compliance reports",
+var loadCmd = &cobra.Command{
+	Use:   "load <repository>",
+	Short: "Load a scanned a codebase or repository to continue generating compliance reports",
+	Long:  "Load a scanned a codebase or repository to continue generating compliance reports. It skips privacy scan and loads the results present in the target repository (.privado directory)",
 	Args:  cobra.ExactArgs(1),
-	Run:   scan,
+	Run:   load,
 }
 
-func defineScanFlags(cmd *cobra.Command) {
-	scanCmd.Flags().IntP("port", "p", 3000, "The port to be used to render HTML results")
-	scanCmd.Flags().Bool("debug", false, "Debug flag to enable image output")
-	scanCmd.Flags().MarkHidden("debug")
+func defineLoadFlags(cmd *cobra.Command) {
+	loadCmd.Flags().IntP("port", "p", 3000, "The port to be used to render HTML results")
+	loadCmd.Flags().Bool("debug", false, "Debug flag to enable image output")
+	loadCmd.Flags().MarkHidden("debug")
 }
 
-func scan(cmd *cobra.Command, args []string) {
+func load(cmd *cobra.Command, args []string) {
 	repository := args[0]
 	port, err := cmd.Flags().GetInt("port")
 	debug, _ := cmd.Flags().GetBool("debug")
@@ -39,25 +40,19 @@ func scan(cmd *cobra.Command, args []string) {
 		), true)
 	}
 
-	// [TODO]: Check for report and prompt
-	// Also add another flag to scan skip prompt
-
-	fmt.Println("> Scanning directory:", utils.GetAbsolutePath(repository))
+	fmt.Println("> Loading results from directory:", utils.GetAbsolutePath(repository))
 
 	// run image with options
 	err = docker.RunImage(
+		docker.OptionWithArgs([]string{"--no-scan"}),
 		docker.OptionWithSourceVolume(utils.GetAbsolutePath(repository)),
 		docker.OptionWithLicenseVolume(utils.GetAbsolutePath(licensePath)),
 		docker.OptionWithWebPort(port),
 		docker.OptionWithInterrupt(),
 		docker.OptionWithAutoSpawnBrowser(),
 		docker.OptionWithProgressLoader(
+			[]string{"Loading results.."},
 			[]string{
-				"Scanning repository..",
-				"Scanning can take upto 5-10 minutes depending on repository size and system configurations",
-			},
-			[]string{
-				"Scanning Complete",
 				fmt.Sprintf("Results and reports can be viewed on http://localhost:%d\n", port),
 				"Press CTRL+C anytime to terminate the process",
 				"A gentle reminder to save your changes before you exit",
@@ -81,6 +76,6 @@ func scan(cmd *cobra.Command, args []string) {
 }
 
 func init() {
-	defineScanFlags(scanCmd)
-	rootCmd.AddCommand(scanCmd)
+	defineLoadFlags(loadCmd)
+	rootCmd.AddCommand(loadCmd)
 }

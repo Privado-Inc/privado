@@ -13,15 +13,16 @@ type containerPorts struct {
 type RunImageOption func(opts *runImageHandler)
 
 type runImageHandler struct {
-	args              []string
-	volumes           containerVolumes
-	ports             containerPorts
-	setupInterrupt    bool
-	spawnWebBrowser   bool
-	progressLoader    bool
-	afterLoadMessages []string
-	attachOutput      bool
-	exitErrorMessages []string
+	args               []string
+	volumes            containerVolumes
+	ports              containerPorts
+	setupInterrupt     bool
+	spawnWebBrowser    bool
+	progressLoader     bool
+	duringLoadMessages []string
+	afterLoadMessages  []string
+	attachOutput       bool
+	exitErrorMessages  []string
 }
 
 func newRunImageHandler(opts []RunImageOption) runImageHandler {
@@ -74,9 +75,12 @@ func OptionWithAutoSpawnBrowser() RunImageOption {
 	}
 }
 
-func OptionWithProgressLoader(afterLoadMessages []string) RunImageOption {
+func OptionWithProgressLoader(duringLoadMessages []string, afterLoadMessages []string) RunImageOption {
 	return func(rh *runImageHandler) {
 		rh.progressLoader = true
+		if len(duringLoadMessages) > 0 {
+			rh.duringLoadMessages = duringLoadMessages
+		}
 		if len(afterLoadMessages) > 0 {
 			rh.afterLoadMessages = afterLoadMessages
 		}

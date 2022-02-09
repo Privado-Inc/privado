@@ -125,13 +125,12 @@ func ClearSignals(sgn chan os.Signal) {
 	signal.Stop(sgn)
 }
 
-func RenderProgressSpinnerWithMessages(complete chan bool, quit chan bool, afterLoadMessages []string) {
-	// bar := progressbar.Default(-1, "Scanning directory")
-
-	loaderMessages := []string{
-		"Scanning repository..",
-		"Scanning can take upto 5-10 minutes depending on repository size and system configurations",
+func RenderProgressSpinnerWithMessages(complete, quit chan bool, loadMessages, afterLoadMessages []string) {
+	if len(loadMessages) == 0 {
+		// default message
+		loadMessages = []string{"Loading.."}
 	}
+
 	messageIndex := 0
 	messageRotationTicker := time.NewTicker(20 * time.Second)
 
@@ -140,7 +139,7 @@ func RenderProgressSpinnerWithMessages(complete chan bool, quit chan bool, after
 		// Good spinners: 0, 31, 51, 52, 54
 		progressbar.OptionSpinnerType(52),
 		progressbar.OptionEnableColorCodes(true),
-		progressbar.OptionSetDescription(loaderMessages[messageIndex]),
+		progressbar.OptionSetDescription(loadMessages[messageIndex]),
 		progressbar.OptionShowCount(),
 	)
 
@@ -152,7 +151,8 @@ func RenderProgressSpinnerWithMessages(complete chan bool, quit chan bool, after
 			bar.Close()
 		case <-complete:
 			bar.Close()
-			fmt.Println("\n> Scanning complete")
+			fmt.Println()
+			fmt.Println("> Complete")
 			fmt.Println("> Total Time taken:", seconds, "seconds")
 
 			if len(afterLoadMessages) > 0 {
@@ -164,7 +164,7 @@ func RenderProgressSpinnerWithMessages(complete chan bool, quit chan bool, after
 			return
 		case <-messageRotationTicker.C:
 			messageIndex++
-			bar.Describe(loaderMessages[messageIndex%len(loaderMessages)])
+			bar.Describe(loadMessages[messageIndex%len(loadMessages)])
 		default:
 			bar.Set(int(seconds))
 			time.Sleep(150 * time.Millisecond)

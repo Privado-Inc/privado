@@ -187,7 +187,7 @@ func StopContainer(client *client.Client, ctx context.Context, containerId strin
 	return client.ContainerStop(ctx, containerId, nil)
 }
 
-func RunImageWithArgs(opts ...RunImageOption) error {
+func RunImage(opts ...RunImageOption) error {
 	runOptions := newRunImageHandler(opts)
 
 	ctx := context.Background()
@@ -271,7 +271,12 @@ func RunImageWithArgs(opts ...RunImageOption) error {
 	if runOptions.ports.webPortEnabled && runOptions.spawnWebBrowser {
 		completeProgressChannel := make(chan bool)
 		if runOptions.progressLoader {
-			go utils.RenderProgressSpinnerWithMessages(completeProgressChannel, quitProgressBarChannel, runOptions.afterLoadMessages)
+			go utils.RenderProgressSpinnerWithMessages(
+				completeProgressChannel,
+				quitProgressBarChannel,
+				runOptions.duringLoadMessages,
+				runOptions.afterLoadMessages,
+			)
 		}
 		go utils.WaitAndOpenURL(fmt.Sprintf("http://localhost:%d", runOptions.ports.webPortHost), completeProgressChannel, 6)
 	}

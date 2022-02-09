@@ -9,12 +9,14 @@ import (
 var AppConfig *Configuration
 
 type Configuration struct {
-	HomeDirectory          string
-	DefaultWebPort         int
-	ConfigurationDirectory string
-	DefaultLicensePath     string
-	PrivadoRepository      string
-	Container              *ContainerConfiguration
+	HomeDirectory                 string
+	DefaultWebPort                int
+	ConfigurationDirectory        string
+	DefaultLicensePath            string
+	PrivacyResultsPathSuffix      string
+	PrivacyReportsDirectorySuffix string
+	PrivadoRepository             string
+	Container                     *ContainerConfiguration
 }
 
 type ContainerConfiguration struct {
@@ -28,13 +30,15 @@ func init() {
 	home, _ := homedir.Dir()
 
 	AppConfig = &Configuration{
-		HomeDirectory:          home,
-		DefaultWebPort:         3000,
-		ConfigurationDirectory: filepath.Join(home, ".privado"),
-		DefaultLicensePath:     filepath.Join(home, ".privado", "license.json"),
-		PrivadoRepository:      "https://github.com/Privado-Inc/privado",
+		HomeDirectory:                 home,
+		DefaultWebPort:                3000,
+		ConfigurationDirectory:        filepath.Join(home, ".privado"),
+		DefaultLicensePath:            filepath.Join(home, ".privado", "license.json"),
+		PrivacyResultsPathSuffix:      filepath.Join(".privado", "privacy.json"),
+		PrivacyReportsDirectorySuffix: filepath.Join(".privado", "reports"),
+		PrivadoRepository:             "https://github.com/Privado-Inc/privado",
 		Container: &ContainerConfiguration{
-			ImageURL:            "638117407428.dkr.ecr.ap-south-1.amazonaws.com/cli:latest",
+			ImageURL:            "638117407428.dkr.ecr.ap-south-1.amazonaws.com/cli:dev",
 			SourceCodeVolumeDir: "/app/code",
 			LicenseVolumeDir:    "/tmp/license.json",
 			WebPort:             "80/tcp",
