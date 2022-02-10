@@ -44,8 +44,6 @@ func scan(cmd *cobra.Command, args []string) {
 		), true)
 	}
 
-	// [TODO]: Check for report and prompt
-	// Also add another flag to scan skip prompt
 	// if overwrite flag is not specified, check for existing results
 	if !overwriteResults {
 		resultsPath := filepath.Join(utils.GetAbsolutePath(repository), config.AppConfig.PrivacyResultsPathSuffix)
