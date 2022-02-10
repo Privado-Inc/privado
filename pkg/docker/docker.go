@@ -3,8 +3,6 @@ package docker
 import (
 	"bufio"
 	"context"
-	"encoding/base64"
-	"encoding/json"
 	"fmt"
 	"io"
 	"os"
@@ -94,18 +92,10 @@ func PullLatestImage(image string, client *client.Client) (err error) {
 		}
 	}
 
-	auth := types.AuthConfig{
-		Username:      "AWS",
-		Password:      os.Getenv("PRIVADO_ECR_ACCESS_CODE"),
-		ServerAddress: "638117407428.dkr.ecr.region.amazonaws.com",
-	}
-	authBytes, _ := json.Marshal(auth)
-	authBase64 := base64.URLEncoding.EncodeToString(authBytes)
-
 	ctx := context.Background()
 
 	fmt.Println("\n> Pulling the latest image:", image)
-	reader, err := client.ImagePull(ctx, image, types.ImagePullOptions{RegistryAuth: authBase64})
+	reader, err := client.ImagePull(ctx, image, types.ImagePullOptions{})
 	if err != nil {
 		return err
 	}

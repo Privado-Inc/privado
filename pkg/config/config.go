@@ -38,7 +38,7 @@ func init() {
 		PrivacyReportsDirectorySuffix: filepath.Join(".privado", "reports"),
 		PrivadoRepository:             "https://github.com/Privado-Inc/privado",
 		Container: &ContainerConfiguration{
-			ImageURL:            "638117407428.dkr.ecr.ap-south-1.amazonaws.com/cli:dev",
+			ImageURL:            "public.ecr.aws/privado/cli:latest",
 			SourceCodeVolumeDir: "/app/code",
 			LicenseVolumeDir:    "/tmp/license.json",
 			WebPort:             "80/tcp",
