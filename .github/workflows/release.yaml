@@ -1,0 +1,26 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:   
+      release_tag:
+        description: 'release tag'
+        required: true
+      release_title:
+        description: 'release title'
+        required: false
+      release_notes:
+        description: 'release notes'     
+        required: false
+        default: ''
+
+jobs:
+  create_release:
+    name: create_release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: release
+        uses: ./
+
