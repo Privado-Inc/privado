@@ -1,26 +1,28 @@
-name: release
+name: Release TBB binaries
 
 on:
-  workflow_dispatch:
-    inputs:   
-      release_tag:
-        description: 'release tag'
-        required: true
-      release_title:
-        description: 'release title'
-        required: false
-      release_notes:
-        description: 'release notes'     
-        required: false
-        default: ''
+  release:
+    types: [created]
 
 jobs:
-  create_release:
-    name: create_release
+  releases-matrix:
+    name: Release Go Binary
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # build and publish in parallel: linux/amd64
+        goos: [linux, windows, darwin]
+        goarch: [amd64, arm64]
+        exclude:
+          - goarch: arm64
+            goos: windows
     steps:
       - uses: actions/checkout@v2
-
-      - name: release
-        uses: ./
-
+      - uses: wangyoucao577/go-release-action@v1.24
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: ${{ matrix.goos }}
+          goarch: ${{ matrix.goarch }}
+          project_path: "./"
+          binary_name: "privado"
+          extra_files: README.md
