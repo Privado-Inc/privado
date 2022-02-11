@@ -12,7 +12,7 @@ jobs:
       matrix:
         # build and publish in parallel: linux/amd64
         goos: [linux, windows, darwin]
-        goarch: [amd64]
+        goarch: [amd64, arm64]
         exclude:
           - goarch: arm64
             goos: windows
@@ -25,5 +25,5 @@ jobs:
           goarch: ${{ matrix.goarch }}
           project_path: "./"
           binary_name: "privado"
-          goversion: "https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz"
+          goversion: "https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz"
           extra_files: README.md
