@@ -28,7 +28,7 @@ We are building a OWASP like list of common privacy issues and will open-source 
 
 ### Installation
 ```
-curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | sudo bash
+curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash
 ```
 
 This project is still under development, we encourage you to join our [slack channel](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw) and collaborate with us.

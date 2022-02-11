@@ -35,22 +35,21 @@ function downloadAndInstallLatestVersion {
         exit 1
     fi
 
-    mkdir -p ~/privado
+    mkdir -p ~/.privado
     if [[ "$OS" == "windows" ]]; then
-	curl -L "$BASE_URL$OS-$ARCH.zip" -o ~/privado/privado-$OS-$ARCH.zip
-	curl -L "$BASE_URL$OS-$ARCH.zip.md5" -o ~/privado/privado-$OS-$ARCH.zip.md5
-	MD5_ACTUAL=$(certutil -hashfile ~/privado/privado-$OS-$ARCH.zip MD5)
-	MD5_EXPECTED=$(cat ~/privado/privado-$OS-$ARCH.zip.md5)
+	curl -L "$BASE_URL$OS-$ARCH.zip" -o ~/.privado/privado-$OS-$ARCH.zip
+	curl -L "$BASE_URL$OS-$ARCH.zip.md5" -o ~/.privado/privado-$OS-$ARCH.zip.md5
+	MD5_ACTUAL=$(certutil -hashfile ~/.privado/privado-$OS-$ARCH.zip MD5)
+	MD5_EXPECTED=$(cat ~/.privado/privado-$OS-$ARCH.zip.md5)
     else
-	curl -L "$BASE_URL$OS-$ARCH.tar.gz" -o ~/privado/privado-$OS-$ARCH.tar.gz
-	echo "$BASE_URL$OS-$ARCH.tar.gz.md5"
-	curl -L "$BASE_URL$OS-$ARCH.tar.gz.md5" -o ~/privado/privado-$OS-$ARCH.tar.gz.md5
+	curl -L "$BASE_URL$OS-$ARCH.tar.gz" -o ~/.privado/privado-$OS-$ARCH.tar.gz
+	curl -L "$BASE_URL$OS-$ARCH.tar.gz.md5" -o ~/.privado/privado-$OS-$ARCH.tar.gz.md5
 	if [[ "$OS" == "linux" ]]; then
-		MD5_ACTUAL=$(md5sum ~/privado/privado-$OS-$ARCH.tar.gz | awk '{print $1}')
+		MD5_ACTUAL=$(md5sum ~/.privado/privado-$OS-$ARCH.tar.gz | awk '{print $1}')
 	else
-		MD5_ACTUAL=$(md5 ~/privado/privado-$OS-$ARCH.tar.gz)
+		MD5_ACTUAL=$(md5 ~/.privado/privado-$OS-$ARCH.tar.gz)
 	fi
-	MD5_EXPECTED=$(cat ~/privado/privado-$OS-$ARCH.tar.gz.md5)
+	MD5_EXPECTED=$(cat ~/.privado/privado-$OS-$ARCH.tar.gz.md5)
     fi
 
     if [[ "$MD5_EXPECTED" != "$MD5_ACTUAL" ]]; then
@@ -59,12 +58,18 @@ function downloadAndInstallLatestVersion {
     fi
 
     if [[ "$OS" == "windows" ]]; then
-	unzip ~/privado/privado-$OS-$ARCH.zip -d /usr/local/bin
+	unzip ~/.privado/privado-$OS-$ARCH.zip -d ~/.privado
     elif [[ "$OS" == "darwin" ]]; then
-        tar -xf ~/privado/privado-$OS-$ARCH.tar.gz -C /usr/local/bin
+        tar -xf ~/.privado/privado-$OS-$ARCH.tar.gz -C ~/.privado
     else
-	tar -xf ~/privado/privado-$OS-$ARCH.tar.gz -C /usr/local/bin
+	tar -xf ~/.privado/privado-$OS-$ARCH.tar.gz -C ~/.privado
     fi
+	
+    $(cat ~/.bashrc | grep .privado) || $(echo "export PATH=\$PATH:~/.privado" >> ~/.bashrc)
+   
+    echo "Installation is complete. Please open a new session or run the command"
+    echo ". ~/.bashrc"
+    echo "In your existing session"  
 }
 
 findOS
