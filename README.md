@@ -116,8 +116,9 @@ This is also helpful for huge codebases and projects with multiple collaborators
 The section contains detailed reference to `privado` commands.
 
 ### Privado CLI Global Flags
-| `-h, --help`             	| Help about any command, or sub-command                                                                                    	|
+| Flag             	| Description                                                                                    	|
 |--------------------------	|---------------------------------------------------------------------------------------------------------------------------	|
+| `-h, --help` 	| Help about any command, or sub-command 	|
 | `-l, --license <string>` 	| The license file to be used. Overrides the default bootstrapped license (default "`/Users/ojaswa/.privado/license.json`") 	|
 
 
