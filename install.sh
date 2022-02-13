@@ -66,15 +66,20 @@ function downloadAndInstallLatestVersion {
     fi
 
     PROFILE_PATH="~/.bashrc"
-
+    NO_FILE=""
     for EACH_PROFILE in ".profile" ".bashrc" ".bash_profile" ".zshrc"
     do
       if [[ -f $HOME/$EACH_PROFILE ]]; then
 	cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:~/.privado/bin" >> $HOME/$EACH_PROFILE
 	PROFILE_PATH=$HOME/$EACH_PROFILE
+	NO_FILE="true"
         break
       fi
     done
+    
+    if [[ "$NO_FILE" == "" ]]; then
+        echo "export PATH=\$PATH:~/.privado/bin" >> $PROFILE_PATH
+    fi
 
     echo "Installation is complete. Please open a new session or run the command"
     echo ". $PROFILE_PATH"
