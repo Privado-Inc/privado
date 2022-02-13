@@ -38,15 +38,11 @@ To start off, make sure `docker` is installed. To install docker, you can follow
 - [Using releases](#install-release-manually)
 
 
-### Install using `curl` or `wget`:
+### Install using `curl`:
 The installation script will download and setup the latest stable release for you as per your OS and arch. Run: 
 
 ```
 curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash
-```
-
-```
-wget -qO- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash
 ```
 
 To uninstall, simply delete `~/.privado/bin`.
@@ -82,7 +78,10 @@ To authenticate and bootstrap the app using the generated license, run:
 privado bootstrap </path/to/privado-license.json>
 ```
 
-and done! You are all set to scan your projects and generate compliance reports. Please note that generated licenses are valid for 1 year from the date of issue. For more information about licensing, feel free to get in touch with us over [Slack]((https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)) or [Email](mailto:support@privado.ai).
+and done! You are all set to scan your projects and generate compliance reports.
+
+> Please note that generated licenses are valid for 1 year from the date of issue.    
+> For more information about licensing, feel free to get in touch with us on [Slack](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw) or [Email](mailto:support@privado.ai).
 
 
 ## Running a Scan
@@ -114,3 +113,20 @@ This is also helpful for huge codebases and projects with multiple collaborators
 
 
 ## Command Reference 
+The section contains detailed reference to `privado` commands.
+
+### Privado CLI Global Flags
+| `-h, --help`             	| Help about any command, or sub-command                                                                                    	|
+|--------------------------	|---------------------------------------------------------------------------------------------------------------------------	|
+| `-l, --license <string>` 	| The license file to be used. Overrides the default bootstrapped license (default "`/Users/ojaswa/.privado/license.json`") 	|
+
+
+### Privado CLI Commands
+| Command      	| Description                                                                                                                                                                           	| Usage                          	| Supported Flags                                                                                                                                                                                                                                                                                              	|
+|--------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|--------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| `auth`       	| Generate license for Privado                                                                                                                                                          	| `privado auth `                	| -                                                                                                                                                                                                                                                                                                            	|
+| `bootstrap`  	| Authenticates Privado using the requested license and generates required configurations                                                                                               	| `privado bootstrap  [flags]`   	| `--overwrite`: <br>Overwrites the existing license fil (if any)                                                                                                                                                                                                                                              	|
+| `completion` 	| Generate the autocompletion script for privado for the specified shell. See each sub-command's help for details on how to use the generated script.                                   	| `privado completion [command]` 	| -                                                                                                                                                                                                                                                                                                            	|
+| `help`       	| Help about any command                                                                                                                                                                	| `privado help [command]`       	| -                                                                                                                                                                                                                                                                                                            	|
+| `scan`       	| Scan a codebase or repository to identify privacy issues and generate compliance reports                                                                                              	| `privado scan  [flags]`        	| `-o, --overwrite`: <br>If specified, the warning prompt for existing scan results is disabled and any existing results are overwritten<br><br> `-p, --port `: <br>The port t be used to render HTML results (default 3000) <br><br>`--debug`: <br>To enable underlying process output for debugging purposes 	|
+| `load`       	| Load a scanned codebase or repository and continue generating compliance reports. It skips privacy scan and loads the results present in the target repository (`.privado` directory) 	| `privado load  [flags]`        	| -p, --port    : The port t be used to render HTML results (default 3000)   --debug : To enable underlying process output for debugging purposes                                                                                                                                                              	|
