@@ -35,21 +35,21 @@ function downloadAndInstallLatestVersion {
         exit 1
     fi
 
-    mkdir -p ~/.privado
+    mkdir -p ~/.privado/bin
     if [[ "$OS" == "windows" ]]; then
-	curl -L "$BASE_URL$OS-$ARCH.zip" -o ~/.privado/privado-$OS-$ARCH.zip
-	curl -L "$BASE_URL$OS-$ARCH.zip.md5" -o ~/.privado/privado-$OS-$ARCH.zip.md5
-	MD5_ACTUAL=$(certutil -hashfile ~/.privado/privado-$OS-$ARCH.zip MD5)
-	MD5_EXPECTED=$(cat ~/.privado/privado-$OS-$ARCH.zip.md5)
+	curl -L "$BASE_URL$OS-$ARCH.zip" -o /tmp/privado-$OS-$ARCH.zip
+	curl -L "$BASE_URL$OS-$ARCH.zip.md5" -o /tmp/privado-$OS-$ARCH.zip.md5
+	MD5_ACTUAL=$(certutil -hashfile /tmp/privado-$OS-$ARCH.zip MD5)
+	MD5_EXPECTED=$(cat /tmp/privado-$OS-$ARCH.zip.md5)
     else
-	curl -L "$BASE_URL$OS-$ARCH.tar.gz" -o ~/.privado/privado-$OS-$ARCH.tar.gz
-	curl -L "$BASE_URL$OS-$ARCH.tar.gz.md5" -o ~/.privado/privado-$OS-$ARCH.tar.gz.md5
+	curl -L "$BASE_URL$OS-$ARCH.tar.gz" -o /tmp/privado-$OS-$ARCH.tar.gz
+	curl -L "$BASE_URL$OS-$ARCH.tar.gz.md5" -o /tmp/privado-$OS-$ARCH.tar.gz.md5
 	if [[ "$OS" == "linux" ]]; then
-		MD5_ACTUAL=$(md5sum ~/.privado/privado-$OS-$ARCH.tar.gz | awk '{print $1}')
+		MD5_ACTUAL=$(md5sum /tmp/privado-$OS-$ARCH.tar.gz | awk '{print $1}')
 	else
-		MD5_ACTUAL=$(md5 ~/.privado/privado-$OS-$ARCH.tar.gz)
+		MD5_ACTUAL=$(md5 /tmp/privado-$OS-$ARCH.tar.gz | awk '{print $4}')
 	fi
-	MD5_EXPECTED=$(cat ~/.privado/privado-$OS-$ARCH.tar.gz.md5)
+	MD5_EXPECTED=$(cat /tmp/privado-$OS-$ARCH.tar.gz.md5)
     fi
 
     if [[ "$MD5_EXPECTED" != "$MD5_ACTUAL" ]]; then
@@ -58,14 +58,14 @@ function downloadAndInstallLatestVersion {
     fi
 
     if [[ "$OS" == "windows" ]]; then
-	unzip ~/.privado/privado-$OS-$ARCH.zip -d ~/.privado
+	unzip /tmp/privado-$OS-$ARCH.zip -d ~/.privado/bin
     elif [[ "$OS" == "darwin" ]]; then
-        tar -xf ~/.privado/privado-$OS-$ARCH.tar.gz -C ~/.privado
+        tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C ~/.privado/bin
     else
-	tar -xf ~/.privado/privado-$OS-$ARCH.tar.gz -C ~/.privado
+	tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C ~/.privado/bin
     fi
 	
-    $(cat ~/.bashrc | grep .privado) || $(echo "export PATH=\$PATH:~/.privado" >> ~/.bashrc)
+    $(cat ~/.bashrc | grep .privado) || $(echo "export PATH=\$PATH:~/.privado/bin" >> ~/.bashrc)
    
     echo "Installation is complete. Please open a new session or run the command"
     echo ". ~/.bashrc"
