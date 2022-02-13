@@ -64,11 +64,20 @@ function downloadAndInstallLatestVersion {
     else
 	tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C ~/.privado/bin
     fi
-	
-    $(cat ~/.bashrc | grep .privado) || $(echo "export PATH=\$PATH:~/.privado/bin" >> ~/.bashrc)
-   
+
+    PROFILE_PATH="~/.bashrc"
+
+    for EACH_PROFILE in ".profile" ".bashrc" ".bash_profile" ".zshrc"
+    do
+      if [[ -f $HOME/$EACH_PROFILE ]]; then
+	cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:~/.privado/bin" >> $HOME/$EACH_PROFILE
+	PROFILE_PATH=$HOME/$EACH_PROFILE
+        break
+      fi
+    done
+
     echo "Installation is complete. Please open a new session or run the command"
-    echo ". ~/.bashrc"
+    echo ". $PROFILE_PATH"
     echo "In your existing session"  
 }
 
