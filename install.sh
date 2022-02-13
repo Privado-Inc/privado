@@ -58,7 +58,7 @@ function downloadAndInstallLatestVersion {
     fi
 
     if [[ "$OS" == "windows" ]]; then
-	unzip /tmp/privado-$OS-$ARCH.zip -d $HOME/.privado/bin
+	unzip -o /tmp/privado-$OS-$ARCH.zip -d $HOME/.privado/bin
     elif [[ "$OS" == "darwin" ]]; then
         tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C $HOME/.privado/bin
     else
