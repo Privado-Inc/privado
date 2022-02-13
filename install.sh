@@ -35,11 +35,11 @@ function downloadAndInstallLatestVersion {
         exit 1
     fi
 
-    mkdir -p ~/.privado/bin
+    mkdir -p $HOME/.privado/bin
     if [[ "$OS" == "windows" ]]; then
 	curl -L "$BASE_URL$OS-$ARCH.zip" -o /tmp/privado-$OS-$ARCH.zip
 	curl -L "$BASE_URL$OS-$ARCH.zip.md5" -o /tmp/privado-$OS-$ARCH.zip.md5
-	MD5_ACTUAL=$(certutil -hashfile /tmp/privado-$OS-$ARCH.zip MD5)
+	MD5_ACTUAL=$(certutil -hashfile /tmp/privado-$OS-$ARCH.zip MD5 | head -n2 | tail -n1)
 	MD5_EXPECTED=$(cat /tmp/privado-$OS-$ARCH.zip.md5)
     else
 	curl -L "$BASE_URL$OS-$ARCH.tar.gz" -o /tmp/privado-$OS-$ARCH.tar.gz
@@ -58,17 +58,31 @@ function downloadAndInstallLatestVersion {
     fi
 
     if [[ "$OS" == "windows" ]]; then
-	unzip /tmp/privado-$OS-$ARCH.zip -d ~/.privado/bin
+	unzip /tmp/privado-$OS-$ARCH.zip -d $HOME/.privado/bin
     elif [[ "$OS" == "darwin" ]]; then
-        tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C ~/.privado/bin
+        tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C $HOME/.privado/bin
     else
-	tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C ~/.privado/bin
+	tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C $HOME/.privado/bin
     fi
-	
-    $(cat ~/.bashrc | grep .privado) || $(echo "export PATH=\$PATH:~/.privado/bin" >> ~/.bashrc)
-   
+
+    PROFILE_PATH="$HOME/.bashrc"
+    NO_FILE=""
+    for EACH_PROFILE in ".profile" ".bashrc" ".bash_profile" ".zshrc"
+    do
+      if [[ -f $HOME/$EACH_PROFILE ]]; then
+	cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
+	PROFILE_PATH=$HOME/$EACH_PROFILE
+	NO_FILE="true"
+        break
+      fi
+    done
+    
+    if [[ "$NO_FILE" == "" ]]; then
+        echo "export PATH=\$PATH:$HOME/.privado/bin" >> $PROFILE_PATH
+    fi
+
     echo "Installation is complete. Please open a new session or run the command"
-    echo ". ~/.bashrc"
+    echo ". $PROFILE_PATH"
     echo "In your existing session"  
 }
 

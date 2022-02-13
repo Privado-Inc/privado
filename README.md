@@ -1,33 +1,34 @@
-<p align="center">
-  <img src="https://uploads-ssl.webflow.com/5ec4dc8db66aa018f257c00f/611c2d51857811724661bcda_Full%20Logo%2032px.svg" />
-</p>
+# Privado User Documentation
 
-# Privado CLI
-[Privado](https://www.privado.ai/) CLI scans &amp; monitors your repositories to build privacy, transparency reports &amp; finds privacy issues.
+## What is Privado? <a href="#what-is-privado" id="what-is-privado"></a>
 
-[![Slack](https://img.shields.io/badge/Slack%20Workspace-Join%20now!-36C5F0?logo=slack)](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)
-[![GitHub stars](https://img.shields.io/github/stars/Privado-Inc/privado?style=social)](https://github.com/Privado-Inc/privado)
+Privado is a static code scanning tool to find, fix and remediate privacy issues in your products & applications. Our scan discovers what personal data(as defined by GDPR, other laws) your app is processing, third-party integrations, data flows. With our scan results, we generate privacy reports for your apps as mandated by laws like GDPR or platforms like Apple and keep them in sync with code changes.
 
+## What does our scan discover? <a href="#what-does-our-scan-discover" id="what-does-our-scan-discover"></a>
 
-## About Privado
-We are building Privado with a fundamental belief that privacy is the defining problem of this decade and developers want to build Privacy first products. However, current solutions take a top-down checklist kind of compliance approach. Our vision is to enable developers to embed privacy in their products. Our first product is a code scanner built grounds up for privacy which will allow developers to get visibility into privacy issues in their products and will generate transparency reports for the users of these products.  
+1. Data Elements: These are personal data that your app is collecting, sharing, processing. Here is a list of data elements that we are discovering.
+2. Third-Parties: Any third-party integrations inside your code, via APIs or SDKs/libraries.
+3. APIs: We also discover any internal APIs that your app is connected with.
+4. Datastores(not released yet, still beta): Identify the databases where you are sourcing the data from or sending the data.
+5. Privacy Vulnerabilities(not released yet, still beta): Code issues that exist which can lead to privacy vulnerabilities
 
-## Introducing Code Scanning for Privacy
-Code is where the business logic of collecting, sharing and processing of personal data lives. We are scanning the source code to discover personal data, data flows, 3rd party integrations automatically. These scans enable developers to build transparency reports with very little effort and also surfaces privacy issues in the code.
+## What can I do with Privado? <a href="#what-can-i-do-with-privado" id="what-can-i-do-with-privado"></a>
 
-This project is under active development, we encourage you to join our [slack channel](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw) and collaborate with us. 
+### Generate Play Store Data Safety Report <a href="#generate-play-store-data-safety-report" id="generate-play-store-data-safety-report"></a>
 
+This is the first use case that we are live with. Currently, to fill the data safety form Android developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report.
 
-### Privacy Reports:
-1. Transparency Report like Privacy Policy
-2. Privacy compliance reports like GDPR Article 30 or RoPA report
-3. Apple Privacy Nutrition Label report
-4. Google Safety Section report
+### Privacy Audits <a href="#privacy-audits" id="privacy-audits"></a>
 
-### Privacy Issues
-We are building a OWASP like list of common privacy issues and will open-source them soon. Some examples of privacy issues are:
-1. Dark Patterns: A pre-checked consent box
-2. Personal data going to logs
+Privacy Engineers can use our CLI tool as an MRI for products, applications and find out privacy risks. With our scans, privacy engineers save the time they have to spend chasing engineers with assessments and can directly start prescribing privacy controls for data minimization, sharing, etc.
+
+### We have the following use cases on our Roadmap: <a href="#we-have-the-following-use-cases-on-our-roadmap" id="we-have-the-following-use-cases-on-our-roadmap"></a>
+
+1. Generating Apple Nutrition Label Report
+2. Generating privacy compliance reports like GDPR Article 30 or RoPA report
+3. Detecting Privacy Vulnerabilities in current code implementation
+4. Privacy Policy Generator
+
 
 ## Installation
 
@@ -131,3 +132,15 @@ The section contains detailed reference to `privado` commands.
 | `help`       	| Help about any command                                                                                                                                                                	| `privado help [command]`       	| -                                                                                                                                                                                                                                                                                                            	|
 | `scan`       	| Scan a codebase or repository to identify privacy issues and generate compliance reports                                                                                              	| `privado scan  [flags]`        	| `-o, --overwrite`: <br>If specified, the warning prompt for existing scan results is disabled and any existing results are overwritten<br><br> `-p, --port `: <br>The port t be used to render HTML results (default 3000) <br><br>`--debug`: <br>To enable underlying process output for debugging purposes 	|
 | `load`       	| Load a scanned codebase or repository and continue generating compliance reports. It skips privacy scan and loads the results present in the target repository (`.privado` directory) 	| `privado load  [flags]`        	| -p, --port    : The port t be used to render HTML results (default 3000)   --debug : To enable underlying process output for debugging purposes                                                                                                                                                              	|
+
+
+## What does it cost? <a href="#what-does-it-cost" id="what-does-it-cost"></a>
+
+Privado is free for:
+
+1. Open Source Projects
+2. For individual developers and small teams.
+
+## How Privado CLI handles your data? <a href="#how-privado-cli-handles-your-data" id="how-privado-cli-handles-your-data"></a>
+
+Privado CLI tool was engineered with security in mind. Our tool runs the scan locally on your machine and your code never leaves your system.
