@@ -6,10 +6,7 @@ After you have authenticated you can run your first scan.
 
 ## Scan your project <a href="#scan-your-project" id="scan-your-project"></a>
 
-Once you have authenticated, change to the project you want to scan and run `privado scan`
-
-IMAGE of Scan
-
+Once you have authenticated, simply run `privado scan <project>`.   
 Once the scan finishes, we will open the result in your browser.
 
 ## Scan Results <a href="#scan-results" id="scan-results"></a>

@@ -1,6 +1,6 @@
 # Scan Results
 
-Once you authenticate, change to the project you want to scan and run command, `privado scan`.
+Once you authenticate, run the command, `privado scan <project-dir>`.
 
 CLI image
 
@@ -67,5 +67,3 @@ You can remove third parties by marking them as False Positive and give us feedb
 
 \
 \
-
-

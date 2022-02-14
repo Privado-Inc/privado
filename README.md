@@ -34,7 +34,7 @@ Privacy Engineers can use our CLI tool as an MRI for products, applications and 
 
 To start off, make sure `docker` is installed. To install docker, you can follow the steps stated in the [official documentation](https://docs.docker.com/engine/install/). You can install Privado CLI in multiple manners:  
 
-- [Using `curl` or `wget`](#install-using-curl-or-wget)
+- [Using `curl`](#install-using-curl)
 - [Using `go`](#install-using-go)
 - [Using releases](#install-release-manually)
 
@@ -49,7 +49,7 @@ curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh |
 To uninstall, simply delete `~/.privado/bin`.
 
 ### Install using Go
-If you are a GoLang fan, you can use the `go install` to install the Privado CLI:
+If you are a GoLang fan, you can use the `go install` command to install the Privado CLI:
 
 ```
 go install github.com/Privado-Inc/privado@latest
@@ -93,7 +93,7 @@ To scan a repository, simply run:
 ```
 privado scan <path/to/repository>
 ```
-Depending on repository size and system configuration, scanning can take upto 5-10 minutes. Post completion, the results can be viewed on [localhost:3000](http://localhost:3000).   
+Depending on repository size and system configuration, time to scan can vary. Post completion, the results can be viewed on [localhost:3000](http://localhost:3000).   
 
 <img width="456" alt="privado-scan-completion-snapshot" src="https://user-images.githubusercontent.com/35270649/153745682-3a97e6eb-0696-4536-b8ca-562d31ead1f9.png">
 
