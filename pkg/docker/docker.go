@@ -109,7 +109,6 @@ func PullLatestImage(image string, client *client.Client) (err error) {
 	return nil
 }
 
-//lint:ignore U1000 Ignore unused function warning
 func attachContainerOutput(client *client.Client, ctx context.Context, containerId string) (*bufio.Reader, error) {
 	waiter, err := client.ContainerAttach(ctx, containerId, types.ContainerAttachOptions{
 		Stderr: true,
@@ -138,11 +137,13 @@ func processAttachedContainerOutput(reader *bufio.Reader, attachStdOut bool, out
 
 	if len(outputMatchList) > 0 {
 		go func() {
-			line, _ := reader.ReadString('\n')
-			for _, matchStr := range outputMatchList {
-				if strings.Contains(line, matchStr) {
-					matchFn(strings.TrimSuffix(line, "\n"))
-					return
+			for {
+				line, _ := reader.ReadString('\n')
+				for _, matchStr := range outputMatchList {
+					if strings.Contains(line, matchStr) {
+						matchFn(strings.TrimSuffix(line, "\n"))
+						return
+					}
 				}
 			}
 		}()

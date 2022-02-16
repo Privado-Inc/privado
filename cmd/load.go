@@ -68,7 +68,6 @@ func load(cmd *cobra.Command, args []string) {
 			// known faults and errors
 			"App: Encountered error: ",
 			"Segmentation Fault",
-			"Some error occurred while processing analyzer results!",
 			"exception: ",
 			"privado: error: invalid choice",
 			"requests.exceptions.ConnectionError: HTTPSConnectionPool(",

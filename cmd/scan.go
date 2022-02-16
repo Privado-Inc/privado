@@ -84,8 +84,7 @@ func scan(cmd *cobra.Command, args []string) {
 			// known faults and errors
 			"App: Encountered error: ",
 			"Segmentation Fault",
-			"Some error occurred while processing analyzer results!",
-			"exception: ",
+			"Some error occurred while processing analyzer results",
 			"privado: error: invalid choice",
 			"requests.exceptions.ConnectionError: HTTPSConnectionPool(",
 			"Failed to execute script 'app' due to unhandled exception!",
