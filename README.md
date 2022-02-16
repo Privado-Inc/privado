@@ -32,7 +32,7 @@ Privacy Engineers can use our CLI tool as an MRI for products, applications and 
 
 ## Installation
 
-To start off, make sure `docker` is installed. To install docker, you can follow the steps stated in the [official documentation](https://docs.docker.com/engine/install/). You can install Privado CLI in multiple manners:  
+To start off, make sure `docker` is installed. To install docker, you can follow the steps stated in the [official documentation](https://docs.docker.com/engine/install/). Linux users should also follow docker [post installation steps](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) in order to run Privado CLI without root (`sudo`) privileges. You can install Privado CLI in multiple manners:  
 
 - [Using `curl`](#install-using-curl)
 - [Using `go`](#install-using-go)
@@ -58,14 +58,21 @@ go install github.com/Privado-Inc/privado@latest
 This will place the `privado` binary in your `GOPATH`'s bin directory. This directory must be added to the `$PATH` environment variable. You can learn more [here](https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-go). 
 
 ### Install Release Manually
-We use [GitHub Releases](https://github.com/Privado-Inc/privado/releases) to ship versioned `privado` releases for supported platforms. You can download a executable of Privado CLI for your platform.
+We use [GitHub Releases](https://github.com/Privado-Inc/privado/releases) to ship versioned `privado` releases for supported platforms. You can download a executable of Privado CLI for your platform.   
 
-For example, to setup `privado` for MAC-OSX (arm64), you will download `privado-darwin-amd64.tar.gz`, and run:
+To know your architecture, you can run: 
 ```
-tar -xf ~/.privado/privado-darwin-amd64.tar.gz
+$ uname -m
+```
+ 
+For example, to setup `privado` for MAC-OSX (arm64), you will download `privado-darwin-arm64.tar.gz`, and run:
+```
+tar -xf ~/.privado/privado-darwin-arm64.tar.gz
 chmod +x privado
 mv privado /usr/bin/privado
 ```
+
+For detailed platform-specific instructions, please refer [Install Privado CLI Manually](https://docs.privado.ai/privado-cli/installing-privado-cli#install-release-manually).
 
 ## Authenticating
 Privado CLI requires a license key to run scans. To generate a license, run the following command:
