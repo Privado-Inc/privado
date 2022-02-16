@@ -36,7 +36,10 @@ func init() {
 	licenseFileName := "license.json"
 
 	if isDev, err := strconv.ParseBool(os.Getenv("PRIVADO_DEV")); err == nil && isDev {
-		imageTag = "dev"
+		imageTag = os.Getenv("PRIVADO_TAG")
+		if imageTag == "" {
+			imageTag = "dev"
+		}
 		licenseFileName = "license-dev.json"
 	}
 
