@@ -65,14 +65,74 @@ To know your architecture, you can run:
 $ uname -m
 ```
  
-For example, to setup `privado` for MAC-OSX (arm64), you will download `privado-darwin-arm64.tar.gz`, and run:
+For detailed platform-specific instructions to setup `privado`, refer below:
+<details>
+<summary>MacOSX</summary>
+ 
+#### ARM64 (M1 Chip)
+To setup `privado` for macOS (arm64) i.e. Macbook with M1 chip, download `privado-darwin-arm64.tar.gz` from the [latest release](https://github.com/Privado-Inc/privado/releases/tag/latest). 
+
+Navigate to the download directory and run:
+
 ```
-tar -xf ~/.privado/privado-darwin-arm64.tar.gz
-chmod +x privado
-mv privado /usr/bin/privado
+$ tar -xf ~/.privado/privado-darwin-arm64.tar.gz
+$ chmod +x privado
+$ mv privado /usr/bin/privado
 ```
 
-For detailed platform-specific instructions, please refer [Install Privado CLI Manually](https://docs.privado.ai/privado-cli/installing-privado-cli#install-release-manually).
+#### AMD64 (Intel Chip)
+To setup `privado` for macOS (amd64), download `privado-darwin-amd64.tar.gz` from the [latest release](https://github.com/Privado-Inc/privado/releases/tag/latest). 
+
+Navigate to the download directory and run:
+
+```
+$ tar -xf ~/.privado/privado-darwin-amd64.tar.gz
+$ chmod +x privado
+$ mv privado /usr/bin/privado
+```
+</details>
+ 
+<details>
+ <summary>Linux</summary>
+
+To setup `privado` on your linux system, download the respective zip from [latest release](https://github.com/Privado-Inc/privado/releases/tag/latest) for your platform. Navigate to the download directory and run the following commands:
+
+#### ARM64
+```
+$ tar -xf ~/.privado/privado-linux-arm64.tar.gz
+$ chmod +x privado
+$ mv privado /usr/bin/privado
+```
+
+#### AMD64
+```
+$ tar -xf ~/.privado/privado-linux-amd64.tar.gz
+$ chmod +x privado
+$ mv privado /usr/bin/privado
+```
+
+</details>
+
+<details>
+<summary>Windows</summary>
+
+To setup `privado` on your windows system, download `privado-windows-amd64.zip` from [latest release](https://github.com/Privado-Inc/privado/releases/tag/latest). Navigate to the download directory and run the following `bash` commands:
+
+```
+$ mkdir -p $HOME/.privado/bin
+$ unzip -o privado-windows-amd64.zip -d $HOME/.privado/bin
+$ chmod +x $HOME/.privado/bin/privado
+$ echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/.bashrc
+```
+
+Open a new session or source profile for effects to take place in the same session:
+```
+$ source $HOME/.bashrc
+```
+
+When using [WSL](https://docs.microsoft.com/en-us/windows/wsl/), we recommend moving the binary to `/usr/bin` instead for optimal experience across users. Refer to steps for [Linux](#install-release-manually) for more information.
+
+</details>
 
 ## Authenticating
 Privado CLI requires a license key to run scans. To generate a license, run the following command:
