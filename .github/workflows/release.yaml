@@ -2,7 +2,7 @@ name: Release TBB binaries
 
 on:
   release:
-    types: [created]
+    types: [created, edited]
 
 jobs:
   releases-matrix:
@@ -28,3 +28,4 @@ jobs:
           goversion: "https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz"
           extra_files: README.md
           asset_name: privado-${{ matrix.goos }}-${{ matrix.goarch }}
+          overwrite: true
