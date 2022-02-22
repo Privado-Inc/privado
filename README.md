@@ -37,6 +37,7 @@ To start off, make sure `docker` is installed. To install docker, you can follow
 - [Using `curl`](#install-using-curl)
 - [Using `go`](#install-using-go)
 - [Using releases](#install-release-manually)
+- [Build locally](#build-privado-cli-locally)
 
 
 ### Install using `curl`:
@@ -77,7 +78,7 @@ Navigate to the download directory and run:
 ```
 $ tar -xf ~/.privado/privado-darwin-arm64.tar.gz
 $ chmod +x privado
-$ mv privado /usr/bin/privado
+$ mv privado /usr/local/bin/
 ```
 
 #### AMD64 (Intel Chip)
@@ -88,7 +89,7 @@ Navigate to the download directory and run:
 ```
 $ tar -xf ~/.privado/privado-darwin-amd64.tar.gz
 $ chmod +x privado
-$ mv privado /usr/bin/privado
+$ mv privado /usr/local/bin/
 ```
 </details>
  
@@ -133,6 +134,18 @@ $ source $HOME/.bashrc
 When using [WSL](https://docs.microsoft.com/en-us/windows/wsl/), we recommend moving the binary to `/usr/bin` instead for optimal experience across users. Refer to steps for [Linux](#install-release-manually) for more information.
 
 </details>
+
+### Build Privado CLI Locally
+If you do not wish to use the pre-built binaries shipped in releases, you can choose to build Privado CLI locally. To do this, make sure that [GoLang](https://go.dev/doc/install) is installed and follow the following steps:
+
+1. Clone the repository: `git clone https://github.com/Privado-Inc/privado.git`    
+2. Change directory: `cd privado`   
+3. Skip this step if you intend to build the `main` branch.    
+    To build the [latest stable release](https://github.com/Privado-Inc/privado/releases/tag/latest), checkout the `latest` tag: `git checkout latest`   
+4. Build with Go: `go build`   
+5. You can now run `./privado`.   
+
+For convenience, we recommend moving `privado` to a `$PATH` directory. You can refer to manual installation steps for more details.
 
 ## Authenticating
 Privado CLI requires a license key to run scans. To generate a license, run the following command:
