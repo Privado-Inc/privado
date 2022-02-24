@@ -5,9 +5,27 @@ on:
     types: [created, edited]
 
 jobs:
+  set-release-tag:
+    name: Set Release Tag
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.settag.outputs.tag }}
+    steps:
+      - name: Set release tag
+        id: settag
+        run: |
+          PRIVADO_RELEASE_TAG=$GITHUB_REF_NAME
+          if [[ $PRIVADO_RELEASE_TAG = "latest" ]] 
+          then
+            PRIVADO_RELEASE_TAG=$(curl --silent "https://api.github.com/repos/Privado-Inc/privado/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          fi
+          echo "Final Tag: $PRIVADO_RELEASE_TAG"
+          echo "::set-output name=tag::$PRIVADO_RELEASE_TAG"
+
   releases-matrix:
     name: Release Go Binary
     runs-on: ubuntu-latest
+    needs: set-release-tag
     strategy:
       matrix:
         # build and publish in parallel: linux/amd64
@@ -16,6 +34,7 @@ jobs:
         exclude:
           - goarch: arm64
             goos: windows
+      
     steps:
       - uses: actions/checkout@v2
       - uses: wangyoucao577/go-release-action@v1.24
@@ -29,3 +48,4 @@ jobs:
           extra_files: README.md
           asset_name: privado-${{ matrix.goos }}-${{ matrix.goarch }}
           overwrite: true
+          ldflags: "-X 'github.com/Privado-Inc/privado/cmd.Version=${{ needs.set-release-tag.outputs.tag }}'"
