@@ -10,6 +10,7 @@ import (
 )
 
 var licensePath string
+var Version = "dev"
 
 var rootCmd = &cobra.Command{
 	Use:   "privado",
