@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"runtime"
+	"time"
 
 	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/spf13/cobra"
@@ -22,7 +23,14 @@ func version(cmd *cobra.Command, args []string) {
 		printVersion = "Nightly"
 	}
 	fmt.Printf("Privado CLI: Version %s (%s-%s) \n", printVersion, runtime.GOOS, runtime.GOARCH)
-	fmt.Println("For more information, visit", config.AppConfig.PrivadoRepository)
+
+	// Additional info for exclusively this cmd ('version' also called from "update")
+	if cmd.Name() == "version" {
+		fmt.Println()
+		time.Sleep(config.AppConfig.SlowdownTime)
+		fmt.Println("For more information, visit", config.AppConfig.PrivadoRepository)
+		fmt.Println("To update to the latest version, run `privado update`")
+	}
 }
 
 func init() {

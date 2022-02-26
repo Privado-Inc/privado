@@ -3,9 +3,7 @@ package cmd
 import (
 	"fmt"
 	"io/ioutil"
-	"os"
 	"path/filepath"
-	"runtime"
 	"strings"
 	"time"
 
@@ -26,13 +24,24 @@ var updateCmd = &cobra.Command{
 func update(cmd *cobra.Command, args []string) {
 	version(cmd, args)
 	fmt.Println()
+	time.Sleep(config.AppConfig.SlowdownTime)
+	if Version == "dev" {
+		exit(
+			fmt.Sprint("Cannot perform an update on the dev build. Kindly use a release build or update manually\nFor more information, visit ", config.AppConfig.PrivadoRepository),
+			false,
+		)
+	}
 
-	// if Version == "dev" {
-	// 	exit(
-	// 		fmt.Sprint("Cannot perform an update on the dev build. Kindly use a release build or update manually\nFor more information, visit ", config.AppConfig.PrivadoRepository),
-	// 		false,
-	// 	)
-	// }
+	currentExecPath, err := utils.GetPathToCurrentBinary()
+	if err != nil {
+		exit(fmt.Sprint("Could not evaluate path to current binary. Auto update fail\nFor more information, visit", config.AppConfig.PrivadoRepository), true)
+	}
+
+	// hasPerm := utils.HasPermissionToFile("/usr/local/bin/syringe")
+
+	// fmt.Println("Permission to write", hasPerm)
+	// exit("", false)
+
 	fmt.Println("Fetching latest release..")
 	releaseInfo, err := utils.GetLatestReleaseFromGitHub(config.AppConfig.PrivadoRepositoryName)
 	if releaseInfo.TagName == "" || releaseInfo.PublishedAt == "" || err != nil {
@@ -43,16 +52,23 @@ func update(cmd *cobra.Command, args []string) {
 		exit(fmt.Sprint("You are already using the latest version of Privado CLI: ", Version), false)
 	}
 
-	// timeSinceRelease := int(time.Since(publishedAtTime.Local()).Hours() / 24)
-
-	// fmt.Printf("New release found: %s (Released %d days ago)\n", releaseInfo.TagName, timeSinceRelease)
-	time.Sleep(config.AppConfig.SlowdownTime)
-
-	// create temporary directory for update assets
-	temporaryDirectory, err := ioutil.TempDir("", "privado-update-")
+	// Print new release information (with time elapsed if possible)
+	daysSinceRelease, err := utils.GetDaysSinceRFC3339String(releaseInfo.PublishedAt)
 	if err != nil {
-		exit("Could not create temporary download file. Terminating..", true)
+		fmt.Printf("New release found: %s\n", releaseInfo.TagName)
+	} else {
+		daySinceString := ""
+		switch {
+		case (daysSinceRelease < 1):
+			daySinceString = "Released today"
+		case daysSinceRelease == 1:
+			daySinceString = "Released yesterday"
+		default:
+			daySinceString = fmt.Sprintf("Released %d days ago", daysSinceRelease)
+		}
+		fmt.Printf("New release found: %s (%s)\n", releaseInfo.TagName, daySinceString)
 	}
+	time.Sleep(config.AppConfig.SlowdownTime)
 
 	// get download url
 	replacer := strings.NewReplacer(
@@ -62,8 +78,14 @@ func update(cmd *cobra.Command, args []string) {
 	)
 	githubReleaseDownloadURL := replacer.Replace(config.ExtConfig.GitHubReleaseDownloadURL)
 
-	// download to file
+	// create temporary directory for update assets
+	temporaryDirectory, err := ioutil.TempDir("", "privado-update-")
+	if err != nil {
+		exit("Could not create temporary download file. Terminating..", true)
+	}
 	downloadedFilePath := filepath.Join(temporaryDirectory, config.AppConfig.PrivadoRepositoryReleaseFilename)
+
+	// download to file in temp directory
 	err = utils.DownloadToFile(githubReleaseDownloadURL, downloadedFilePath)
 	if err != nil {
 		exit(fmt.Sprint("Could not download release asset: ", githubReleaseDownloadURL), true)
@@ -81,21 +103,18 @@ func update(cmd *cobra.Command, args []string) {
 
 	fmt.Println("Extracted release asset:", temporaryDirectory)
 	time.Sleep(config.AppConfig.SlowdownTime)
+	fmt.Println()
 
-	fmt.Println("githubReleaseFileURL", githubReleaseDownloadURL, temporaryDirectory)
-
-	printVersion := Version
-	if Version == "dev" {
-		printVersion = "Nightly"
+	fmt.Println("Installing latest release..")
+	time.Sleep(config.AppConfig.SlowdownTime)
+	err = utils.SafeMoveFile(filepath.Join(temporaryDirectory, "privado"), currentExecPath, true)
+	if err != nil {
+		exit(fmt.Sprint("Could not update existing installation: ", err), true)
 	}
-	fmt.Printf("Privado CLI: Version %s (%s-%s) \n", printVersion, runtime.GOOS, runtime.GOARCH)
-	fmt.Println("For more information, visit", config.AppConfig.PrivadoRepository)
 
-	file, _ := os.Executable()
-	fmt.Println(file)
-	final, _ := filepath.EvalSymlinks(file)
-	fmt.Println(final)
-
+	time.Sleep(config.AppConfig.SlowdownTime)
+	fmt.Println()
+	fmt.Println("Installed latest release! \nTo validate installation, run `privado version`")
 }
 
 func init() {
