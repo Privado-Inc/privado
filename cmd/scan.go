@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"path/filepath"
+	"time"
 
 	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/Privado-Inc/privado/pkg/docker"
@@ -30,7 +31,6 @@ func scan(cmd *cobra.Command, args []string) {
 	debug, _ := cmd.Flags().GetBool("debug")
 	overwriteResults, _ := cmd.Flags().GetBool("overwrite")
 	if err != nil {
-
 		exit(fmt.Sprint("Cannot parse flag --port", err), true)
 	}
 
@@ -42,6 +42,15 @@ func scan(cmd *cobra.Command, args []string) {
 			"To bootstrap the app, run: 'privado bootstrap <license>'\n\n",
 			"For more info, run: 'privado help'\n",
 		), true)
+	}
+
+	hasUpdate, updateMessage, err := checkForUpdate()
+	if err == nil && hasUpdate {
+		fmt.Println(updateMessage)
+		time.Sleep(config.AppConfig.SlowdownTime)
+		fmt.Println("To use the latest version of Privado CLI, run `privado update`")
+		time.Sleep(config.AppConfig.SlowdownTime)
+		fmt.Println()
 	}
 
 	// if overwrite flag is not specified, check for existing results
