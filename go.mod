@@ -18,6 +18,8 @@ require (
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/h2non/filetype v1.1.3 // indirect
+	github.com/juju/errors v0.0.0-20220203013757-bd733f3c86b9 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/mitchellh/colorstring v0.0.0-20190213212951-d06e56a500db // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
@@ -36,7 +38,9 @@ require (
 )
 
 require (
+	github.com/codeclysm/extract v2.2.0+incompatible
 	github.com/docker/docker v20.10.12+incompatible
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+	golang.org/x/mod v0.5.1
 )

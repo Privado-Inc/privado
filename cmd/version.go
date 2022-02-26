@@ -28,3 +28,18 @@ func version(cmd *cobra.Command, args []string) {
 func init() {
 	rootCmd.AddCommand(versionCmd)
 }
+
+// update logic
+// Check for latest version tag
+// Get the latest tag
+// Compare if new available
+// Prompt user
+// if yes: download binary for respective os & arch
+// Get location of current binary
+// for UNIX:
+// Check if permissions available to replace the binary
+// If yes, replace
+// If not, prompt? or what? sudo ?? > Prompt with command
+// for non-UNIX i.e. windows:
+// not possible to replace files during runtime
+// prompt command
