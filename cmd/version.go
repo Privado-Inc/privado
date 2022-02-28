@@ -24,12 +24,19 @@ func version(cmd *cobra.Command, args []string) {
 	}
 	fmt.Printf("Privado CLI: Version %s (%s-%s) \n", printVersion, runtime.GOOS, runtime.GOARCH)
 
-	// Additional info for exclusively this cmd ('version' also called from "update")
+	// Additional info for exclusively this cmd (so 'version' can be called just to print version)
 	if cmd.Name() == "version" {
-		fmt.Println()
+		hasUpdate, updateMessage, err := checkForUpdate()
+		if err == nil && hasUpdate {
+			fmt.Println()
+			fmt.Println(updateMessage)
+			time.Sleep(config.AppConfig.SlowdownTime)
+			fmt.Println("To use the latest version of Privado CLI, run `privado update`")
+			fmt.Println()
+		}
+
 		time.Sleep(config.AppConfig.SlowdownTime)
 		fmt.Println("For more information, visit", config.AppConfig.PrivadoRepository)
-		fmt.Println("To update to the latest version, run `privado update`")
 	}
 }
 
