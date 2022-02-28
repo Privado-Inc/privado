@@ -64,7 +64,9 @@ func bootstrap(cmd *cobra.Command, args []string) {
 
 	// set appropriate license permissions
 	if err := os.Chmod(targetLicensePath, 0600); err != nil {
-		exit(fmt.Sprintf("Could not set appropriate permissions for the license file: %s", err), true)
+		fmt.Println("> License setup complete! ")
+		fmt.Println("However, could not set appropriate permissions for the license file: ", err)
+		exit(fmt.Sprintf("Consider restricting access to %s", targetLicensePath), true)
 	}
 
 	exit("> Privado CLI bootstrapped successfully!", false)

@@ -4,8 +4,10 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
+	"io/fs"
 	"io/ioutil"
 	"math"
 	"net/http"
@@ -17,7 +19,6 @@ import (
 	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/codeclysm/extract"
 	"github.com/schollz/progressbar/v3"
-	"golang.org/x/sys/unix"
 )
 
 type gitHubReleaseType struct {
@@ -124,33 +125,17 @@ func GetPathToCurrentBinary() (string, error) {
 	return resolvedFilePath, nil
 }
 
-func HasPermissionToFile(file string) bool {
-	return unix.Access(file, unix.W_OK) == nil
-
-	info, err := os.Stat(file)
+func HasWritePermissionToFile(filePath string) (bool, error) {
+	file, err := os.OpenFile(filePath, os.O_RDWR, 0744)
 	if err != nil {
-		fmt.Println("Unable to fetch perms, err:", err)
-		return false
+		if errors.Is(err, fs.ErrPermission) {
+			return false, nil
+		}
+		return false, err
 	}
+	defer file.Close()
 
-	mode := info.Mode()
-
-	fmt.Print("Owner: ")
-	for i := 1; i < 4; i++ {
-		fmt.Print(string(mode.String()[i]))
-	}
-
-	fmt.Print("\nGroup: ")
-	for i := 4; i < 7; i++ {
-		fmt.Print(string(mode.String()[i]))
-	}
-
-	fmt.Print("\nOther: ")
-	for i := 7; i < 10; i++ {
-		fmt.Print(string(mode.String()[i]))
-	}
-
-	return true
+	return true, nil
 }
 
 func SafeMoveFile(source, target string, showLogs bool) (err error) {

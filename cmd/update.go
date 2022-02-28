@@ -60,24 +60,31 @@ func update(cmd *cobra.Command, args []string) {
 	version(cmd, args)
 	fmt.Println()
 	time.Sleep(config.AppConfig.SlowdownTime)
-	// if Version == "dev" {
-	// 	exit(
-	// 		fmt.Sprint("Cannot perform an update on the dev build. Kindly use a release build or update manually\nFor more information, visit ", config.AppConfig.PrivadoRepository),
-	// 		false,
-	// 	)
-	// }
+	if Version == "dev" {
+		exit(
+			fmt.Sprint("Cannot perform an update on the dev build. Kindly use a release build or update manually\nFor more information, visit ", config.AppConfig.PrivadoRepository),
+			false,
+		)
+	}
 
 	// get path to current executable
 	currentExecPath, err := utils.GetPathToCurrentBinary()
 	if err != nil {
 		exit(fmt.Sprint("Could not evaluate path to current binary. Auto update fail\nFor more information, visit", config.AppConfig.PrivadoRepository), true)
 	}
-	// check for appropriate permissions
-	// hasPerm := utils.HasPermissionToFile("/usr/local/bin/syringe")
-	// fmt.Println("Permission to write", hasPerm)
-	// exit("", false)
 
-	Version = "v0.1.1"
+	// check for appropriate permissions
+	hasPerm, err := utils.HasWritePermissionToFile(currentExecPath)
+	if err != nil {
+		exit(fmt.Sprintf("Could not open executable for write: %s", err), true)
+	}
+	if !hasPerm {
+		fmt.Println("> Error: Permission denied")
+		fmt.Printf("> The identified installation (%s) requires privileged permissions\n", currentExecPath)
+		fmt.Println()
+		exit("Try again with a privileged user (sudo)?", true)
+	}
+
 	// check for release info
 	fmt.Println("Fetching latest release..")
 	hasUpdate, updateMessage, err := checkForUpdate()
