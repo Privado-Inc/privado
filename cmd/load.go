@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"path/filepath"
+	"time"
 
 	"github.com/Privado-Inc/privado/pkg/config"
 	"github.com/Privado-Inc/privado/pkg/docker"
@@ -42,6 +43,15 @@ func load(cmd *cobra.Command, args []string) {
 		), true)
 	}
 
+	hasUpdate, updateMessage, err := checkForUpdate()
+	if err == nil && hasUpdate {
+		fmt.Println(updateMessage)
+		time.Sleep(config.AppConfig.SlowdownTime)
+		fmt.Println("To use the latest version of Privado CLI, run `privado update`")
+		time.Sleep(config.AppConfig.SlowdownTime)
+		fmt.Println()
+	}
+
 	fmt.Println("> Loading results from directory:", utils.GetAbsolutePath(repository))
 	resultsPath := filepath.Join(utils.GetAbsolutePath(repository), config.AppConfig.PrivacyResultsPathSuffix)
 	if exists, _ := utils.DoesFileExists(resultsPath); !exists {
@@ -61,7 +71,7 @@ func load(cmd *cobra.Command, args []string) {
 			[]string{
 				fmt.Sprintf("Results and reports can be viewed on http://localhost:%d\n", port),
 				"Press CTRL+C anytime to terminate the process",
-				"A gentle reminder to save your changes before you exit",
+				"Don't forget to save your changes before you exit",
 			},
 		),
 		docker.OptionWithExitErrorMessages([]string{

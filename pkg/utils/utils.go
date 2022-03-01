@@ -35,22 +35,37 @@ func GetAbsolutePath(relativePath string) string {
 }
 
 func CopyFile(src, dst string) error {
+	// open src
 	in, err := os.Open(src)
 	if err != nil {
 		return err
 	}
 	defer in.Close()
 
+	// create dst
 	out, err := os.Create(dst)
 	if err != nil {
 		return err
 	}
 	defer out.Close()
 
+	// copy content
 	_, err = io.Copy(out, in)
 	if err != nil {
 		return err
 	}
+
+	// get src permissions
+	fileStat, err := os.Stat(src)
+	if err != nil {
+		return err
+	}
+
+	// give same permissions
+	if err := os.Chmod(dst, fileStat.Mode()); err != nil {
+		return err
+	}
+
 	return out.Close()
 }
 
