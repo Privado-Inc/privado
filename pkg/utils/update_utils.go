@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"github.com/Privado-Inc/privado/pkg/config"
-	"github.com/codeclysm/extract"
+	extract "github.com/codeclysm/extract/v3"
 	"github.com/schollz/progressbar/v3"
 )
 

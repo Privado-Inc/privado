@@ -38,7 +38,7 @@ require (
 )
 
 require (
-	github.com/codeclysm/extract v2.2.0+incompatible
+	github.com/codeclysm/extract/v3 v3.0.2
 	github.com/docker/docker v20.10.12+incompatible
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
