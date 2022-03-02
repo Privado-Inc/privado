@@ -100,3 +100,37 @@ a.   Consequences of Termination: Upon the expiry or any termination of this EUL
 b.   The termination of this EULA shall not relieve any party of its obligation or liability accrued prior to the date of termination.
  
 c.	The termination of this EULA shall not limit or otherwise affect any other remedy (including a claim for damages) that the terminating party may have arising out of the event that gave rise to the right of termination.
+
+## 14.	ADVERTISING OR PUBLICITY
+Licensor may use the name or marks, refer to or identify of Licensee in advertising or publicity releases, promotional or for marketing correspondence.
+ 
+## 15.	INTERPRETATION 
+This EULA will in all events be construed as a whole, according to its fair meaning, and not strictly for or against a party merely because that party (or the party's legal representative) drafted the EULA. The headings, titles, and captions contained in this EULA are merely for reference and do not define, limit, extend, or describe the scope of this EULA or any provision herein. Unless the context requires otherwise, (a) the gender (or lack of gender) of all words used in this EULA includes the masculine, feminine, and neuter, and (b) the word "including" means "including, without limitation”.
+ 
+## 16.	FORCE MAJEURE
+Neither party shall be liable to the other for any loss or damage resulting from any cause beyond its reasonable control (a "Force Majeure Event") including, but not limited to, insurrection or civil disorder, riot, war or military operations, national or local emergency, acts or directives of government or other competent authority, compliance with any statutory obligation or executive order, any Act of God, fire, lightning, explosion, flood, earthquake, epidemics,  or other similar force beyond such party's reasonable control. Upon occurrence of a Force Majeure Event and to the extent such occurrence interferes with either party's performance of this EULA, such party shall be excused from performance of its obligations during the first three months of such interference, provided that such party uses best efforts to avoid or remove such causes of non-performance as soon as possible.
+ 
+## 17.	SEVERABILITY
+If any provision of this EULA is determined to be invalid, illegal or unenforceable in any respect, including because of the duration thereof, the area covered thereby, or the types of activities restricted thereby, by a court of competent jurisdiction (i) the validity, legality or enforceability of the remaining provisions contained herein shall not in any way be affected or impaired thereby, and (ii) the court of competent jurisdiction making such determination shall have the power to reduce the duration and/or area of such provisions or types of activities restricted and/or to delete specific words or phrases and in its reduced form such provision shall then be enforceable. The parties may acting in good faith adopt any and all actions required to cause such invalid, illegal and unenforceable provision to be valid and enforceable, or, alternatively, to reach an agreement in relation to said null provision whereby each of the Party receives, as far as possible, substantially the same benefits and obligations based on valid provisions, provided that the EULA is not enforced in a form that materially affects the commercial agreement between the Parties.
+ 
+## 18.	ASSIGNMENT AND DELEGATION
+You may not assign this EULA. The Licensor may assign this EULA in conjunction with the sale of substantial assets, divestiture, merger or amalgamation, or to its affiliate, and may delegate or subcontract its duties. Any unauthorized assignment of this EULA is void.
+ 
+## 19.	WAIVER 
+Failure to exercise, or any delay in exercising, any right or remedy provided under this EULA shall not constitute a waiver of that or any other right or remedy, nor shall it preclude or restrict any further exercise of that or any other right or remedy. No single or partial exercise of any right or remedy provided under this EULA or by law shall preclude or restrict the further exercise of that or any other right or remedy.
+ 
+## 20.	GOVERNING LAWS
+This EULA and all rights and obligations under this EULA shall in all respects be governed by and construed and enforced in accordance with laws of State of Delaware, USA and the courts of State of Delaware, USA shall have an exclusive jurisdiction to adjudicate any subject matter under this EULA.
+ 
+## 21.	INDEPENDENT CONTRACTOR
+The parties are independent contractors and none of their personnel or sub-contractors are agents, representatives or employees of any other party. No party owes a fiduciary duty to any other party.  No party shall have the authority to bind or make any representations on behalf of any other party, and no party shall hold itself out as such or knowingly permit another to rely on such belief.
+
+## 22.	SURVIVAL
+If this EULA is terminated in accordance with the terms hereof, this EULA shall become void and of no further force and effect and none of the Parties shall have any right or obligation or liability to the other Parties under this EULA, provided however that, the provisions of this section and section 1 (Definition), section 7 ( Disclaimer), section 9 (Intellectual Property Rights), section 10 (Confidentiality), section 11 (Indemnification) , section 12 (Limitation of Liability), section 13 (Term and Termination), section 17 (Severability), section 19 (Waiver), section 20 (Governing Law), and section 21 (Independent Contractor) shall survive the termination of this EULA without limit in time.
+
+## 23.	ENTIRE AGREEMENT
+This EULA constitutes the entire agreement between the Parties and supersedes any prior understanding or representation of any kind preceding the date of this EULA, and may not be amended, supplemented, varied or otherwise changed except in writing. There are no other promises, conditions, understandings, or other agreements, whether oral or written, relating to the subject matter of this EULA. Each party acknowledges that, in entering into this EULA, it has not relied on, and shall have no right or remedy in respect of, any statement, representation, assurance or warranty other than as expressly set out in this EULA.
+ 
+## 24.	CHANGES TO THIS EULA 
+Licensor may update the terms and conditions of this EULA. We encourage you to check these terms and conditions on a regular basis to be aware of the changes made to it This EULA was last modified on 15 Feb 2022.
+
