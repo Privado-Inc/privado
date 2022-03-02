@@ -25,17 +25,17 @@ Please make sure that any Personal Information you share with us is accurate and
 ## 3.	HOW WE USE YOUR PERSONAL INFORMATION
 
 We use the Personal Information for the following purposes: 
-•	to provide you with information about our Software/Offerings and/or our periodic newsletters;
-•	for marketing purposes and provide you with information related to our other Offerings;
-•	to respond to your requests;
-•	to manage our relationship with you; 
-•	 for internal record keeping;  
-•	to provide you with authentication to login and use your user account;
-•	to verify your identity;
-•	to maintain correct and up-to-date information about you;
-•	to improve our Software, Website and other Offerings;
-•	to otherwise be able to provide the services to you and 
-•	to comply with our legal or statutory obligations.
+- to provide you with information about our Software/Offerings and/or our periodic newsletters;
+- for marketing purposes and provide you with information related to our other Offerings;
+- to respond to your requests;
+- to manage our relationship with you; 
+- for internal record keeping;  
+- to provide you with authentication to login and use your user account;
+- to verify your identity;
+- to maintain correct and up-to-date information about you;
+- to improve our Software, Website and other Offerings;
+- to otherwise be able to provide the services to you and 
+- to comply with our legal or statutory obligations.
 
 ## 4.	WHO DO WE DISCLOSE YOUR DATA TO?
 We do not trade or otherwise transfer to outside parties any Personal Information. This does not include trusted third parties or subcontractors hired to provide services on our behalf.
