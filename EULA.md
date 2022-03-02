@@ -42,3 +42,16 @@ f.  	upload, transmit or otherwise make available in connection with the Softwar
 
 g. 	violate (intentionally or unintentionally) any applicable local, state, national or international laws or regulations in connection with the Software, including but not limited to those related to Intellectual Property Rights, privacy or security.
 
+## 4. THE LICENSEE’S RESPONSIBILITIES
+a. 	Registration As a condition for using the Software, the Licensee may be required to register with Licensor and enter his/her email address.  Licensee shall ensure that accurate, complete, and updated registration information.
+
+b. 	Compliance with Laws: The Licensee shall comply with all applicable local, state, national and foreign laws, in connection with its use  and access of the Software. The Licensee acknowledges that the Licensor exercises no control over the content of the information transmitted by the Licensee through the Software.
+
+c.  	Unauthorized Use; False Information: The Licensee shall: (i) notify the Licensor immediately of any unauthorized use or any other known or suspected breach of security in relation to the Software,  (ii) report to the Licensor immediately and use reasonable efforts to stop any unauthorized use of the Software, that is known or suspected by the Licensee, and (iii) not provide false identity information to gain access to or use the Software.
+
+d. 	The Licensor shall not be liable for any loss of data or functionality, caused directly or indirectly by the Licensee.
+
+e. 	Licensee Content. The Licensee is solely responsible for collecting, entering and updating all the Licensee Content uploaded on, accessed using, or processed through the Software, and for ensuring that the Licensee Content does not (i) include anything that actually or potentially infringes or misappropriates the copyright, trade secret, trademark or other intellectual property right of any third party, or (ii) contain anything that is obscene, defamatory, harassing, offensive or malicious. Licensee acknowledges and agrees that Licensor uses certain third-party tools for analytical purposes and may use Licensee Content and track Licensee’s usage of the Software for any purpose including but not limited to research, analytics, and to improve Licensee’s Software.
+
+## 5. CONSIDERATION
+The Parties agree that in consideration for the access to the Software the Licensee shall use the Software to be conscious of data privacy while developing their own software. The Software is provided by the Licensor to promote awareness regarding personal data privacy and promote a privacy conscious community of developers. The Parties agree that the foregoing objective of furthering privacy is adequate and valid consideration for the Licensor to grant the license under this EULA.
