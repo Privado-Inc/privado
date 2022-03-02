@@ -1,3 +1,5 @@
+# Privacy Policy
+
 We, Privado Inc (“Privado” or “we” or “us”) are the owners of the <insert name of the Software> , Command Line Interface Tool ("CLI”) for Android developers. The CLI enables developers to scan the software code for gaps related to privacy implementation and suggests strategies to ensure privacy (the “Software”).  Our website www.privado.ai (the “Website”) showcases our services and product offerings (“Offerings”). 
   
 We take your privacy seriously and are committed to safeguarding your personal information collected via this Software. This privacy policy (“Privacy Policy”) sets forth how we collect, use and protect the personal information collected via this Software. This Privacy Policy is an integral part of the Software End User License Agreement ("EULA") and must be construed in conjunction with the EULA. The EULA is available at <insert link>.
