@@ -12,7 +12,7 @@ This Privacy Policy is an electronic record in the form of an electronic contrac
   
 If you have any questions or concerns about this Privacy Policy or your personal information, please contact us at privacy@privado.ai. 
   
-##1.	INTRODUCTION 
+## 1.	INTRODUCTION 
   
 The Software has been developed by Privado to help developers identify privacy gaps. The Software also generates a report and suggests the various strategies to increase privacy features of the software/application. 
   
@@ -42,7 +42,9 @@ We do not trade or otherwise transfer to outside parties any Personal Informatio
 This includes those who act as data processors on our behalf, acting strictly under contract . With your confidentiality and protection in mind, we will always strive to protect your data when dealing with third-party vendors and other data processors. As permitted by law, we may share your Personal Information with third parties as follows:
   
 •	 Service Providers: Your Personal Information may be shared with or collected by third party service providers who provide us with services, including but not limited to data hosting or processing, credit card processing or processing and fulfilling purchases. We may also avail services from Twilio for sending emails and Amazon Webservices for cloud infrastructure services. We require these providers to exercise reasonable care to protect your Personal Information and restrict the use of your Personal Information to the purposes for which it was provided to them. 
+  
 •	Merger or Acquisition: We may transfer your Personal Information if we are acquired by another entity, or if we merge with another company or transfer a part of our business, including the Software, to a third party. Any such third party or resultant entity that receives your Personal Information shall have the right to continue to use your Personal Information in line with the purposes set out herein. In the event of such a sale or transfer, we may notify you.
+  
 •	Legal and Regulatory Authorities: We may disclose your Personal Information in order to comply with our legal obligations/ court orders/ requests by Govt. authorities. 
 
 ## 5.	HOW LONG DO WE STORE YOUR PERSONAL INFORMATION?  
@@ -76,7 +78,9 @@ If you are a California resident, you have the rights as mentioned below;
 •	Access: You have the right to request certain information about our collection and use of your Personal Data over the past 12 months. If we have disclosed your Personal Information for a business purpose over the past 12 months, we will identify the categories of Personal Data shared with each category of third-party recipient. If we have sold your Personal Information over the past 12 months, we will identify the categories of Personal Information purchased by each category of third-party recipient.
   
 •	Deletion: You have the right to request that we delete the Personal Information that we have collected from you. 
+  
 •	Exercising Your Rights: To exercise the rights described above, you must send us a request that (1) provides sufficient information to allow us to verify that you are the person about whom we have collected Personal Information and (2) describes your request in sufficient detail to allow us to understand, evaluate, and respond to it. Each request that meets both of these criteria will be considered a “Valid Request.” We may not respond to requests that do not meet these criteria. We will only use Personal Information provided in a Valid Request to verify you and complete your request. You do not need an account to submit a Valid Request. We will respond to your Valid Request within 45 days of receipt. We will not charge you with any fees for making a Valid Request unless your Valid Request(s) is excessive, repetitive, or manifestly unfounded. If we determine that your Valid Request warrants any fees, we will notify you of the fees and explain that decision before completing your request. You may submit your Valid Request at [insert email address]
+  
 •	 No Discrimination: We will not discriminate against you for exercising your rights under the California Consumer Privacy Act (the “CCPA”). We will not deny you use of our Software, charge you different prices or rates, or provide you a lower quality of our Software if you exercise your rights under the CCPA. 
 
 ## 9.	 LINKS TO OTHER WEBSITES/APPLICATIONS
