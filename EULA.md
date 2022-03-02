@@ -91,3 +91,12 @@ You agree to indemnify, keep indemnified, defend ( at the Licensor’s option) a
  
 ## 12.	LIMITATION OF LIABILITY 
 IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR SPECIAL DAMAGES HOWSOEVER CAUSED, IN CONNECTION WITH THIS EULA, (EVEN IF YOU HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE) INCLUDING WITHOUT LIMITATION DAMAGES RESULTING FROM ANY ASPECT OF USE OF OR INABILITY TO USE THE SOFTWARE. THE FOREGOING LIMITATIONS OF LIABILITY AND EXCLUSIONS OF DAMAGES IN THIS CLAUSE FORM AN ESSENTIAL BASIS OF THIS AGREEMENT AND SHALL APPLY NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED WARRANTY OR REMEDY HEREIN.
+
+## 13.	TERM AND TERMINATION
+This EULA will commence upon your acceptance of this EULA or access to the Software whichever occurs earlier and unless earlier terminated as provided in this clause, the term of this EULA shall remain in force for perpetuity. Notwithstanding the foregoing, the Licensor may, terminate this EULA at any time, without any reason or notice whatsoever. Further the Licensor my withdraw the Software from the market without any notice.
+ 
+a.   Consequences of Termination: Upon the expiry or any termination of this EULA the rights and License granted to you hereunder shall immediately and automatically cease to be in effect, and you shall immediately de-install the Software from Your system and premises.
+ 
+b.   The termination of this EULA shall not relieve any party of its obligation or liability accrued prior to the date of termination.
+ 
+c.	The termination of this EULA shall not limit or otherwise affect any other remedy (including a claim for damages) that the terminating party may have arising out of the event that gave rise to the right of termination.
