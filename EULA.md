@@ -6,12 +6,20 @@ THIS SOFTWARE END USER LICENSE AGREEMENT ("EULA") IS A LEGAL AGREEMENT BETWEEN �
 
 ## 1. DEFINITION:
 a.   	“Enhancements” shall mean any modification, update, upgrade or addition to the Software that, when made or added to the solution or modules currently being used by You, provides minor functionality enhancements but does not change overall utility, functional capability, or application, where such modifications or additions are generally made available by Licensor to all its customers without any additional costs. Enhancements are generally denoted by minor version level (e.g., v1.1.0 to v1.1.1) changes, as determined by Licensor.
+
 b.  	“Error” shall mean (i) with respect to Software: any failure, or inability of the Software to perform any functions set forth in the documentation due to any defect in the Software or any non-conformity in the Software as specified by the Licensor.
+
 c.   	“Intellectual Property” includes, but is not limited to all patents, trademarks, ideas, concepts, creations, discoveries, inventions, know-how, permits, service marks, brands, trade names, trade secrets, proprietary information and knowledge, technology, computer programs, databases, copyrights, licenses, franchises, formulae, designs, data, documents, instruction manuals, records, memoranda, notes, whether or not copyrightable or patentable, or any written or verbal instructions or comments and other confidential information.
+
 d.  	“Intellectual Property Rights” means all rights, benefits, title or interest in or to any Intellectual Property, anywhere in the world (whether registered or not and including all applications for the same).
+
 e.   	“Licensee Content” shall mean all data created by or in any way originating with Licensee, and all data that is the output of computer processing of or other electronic manipulation of any data that was created by or in any way originated with Licensee, whether such data or output is stored on Licensee’s hardware, Licensor’s hardware, or exists in any system owned, maintained, or otherwise controlled by Licensee or by Licensor.
+
 f.    	“Licensor” shall mean Privado Inc. an entity, incorporated under the laws of State of Delaware, USA.
+
 g.   	“New Version” shall mean any modification, update, upgrade or addition that, when made or added to Software, provides major functionality enhancements or changes the overall utility, functional capability, or application. New Versions are generally denoted by major version level (e.g., v1.0 to v1.1 or above) changes, as determined by Licensor.
+
 h.  	“Support Services” shall mean the support and maintenance services pertaining to the Software provided by Licensor to the Licensee.
+
 i.    	“Software” shall mean Privado Command Line Interface(CLI) Tool licensed by the Licensor to you under this EULA. The Software may be accompanied by some documentation that describes or supports the use of the Software to enable you to use and understand the operations of the Software including technical documentation, if any.
 
