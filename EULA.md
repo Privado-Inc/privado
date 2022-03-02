@@ -67,3 +67,27 @@ Licensor agrees that Licensee may not choose to upgrade the Software to the New 
 
 Notwithstanding the foregoing, while the Licensee may choose not to upgrade the Software to the New Version, the Licensor shall have no responsibility to provide you with any Support Services in the older versions of the Software. The Licensor hereby disclaims all express, implied or statutory warranties, including, without limitation, any implied warranty of merchantability, title, fitness for a particular purpose, or non-infringement loss of data or arising otherwise in law or equity or from a course of dealing or usage of trade, all of which are expressly disclaimed and excluded. The Licensor further disclaims warranties that the Software in its older versions will meet your requirements, that the operation of the Software will be uninterrupted or Error-free or that any bugs or Errors or defects would be fixed or the Software in its older versions will operate in combination with your content, or with any other hardware, software, systems or data not provided by the Licensor. You acknowledge that the Licensor does not control the transfer of data over communications facilities, including, the internet, and that the older versions of the Software may be subject to limitations, delays, and other problems inherent in the use of such communications facilities.
  
+## 9. INTELLECTUAL PROPERTY RIGHTS
+a.   Any and all ownership rights to the Software, Enhancements, New Version and branding thereof, including Intellectual Property Rights therein is the sole and exclusive property of the Licensor. This EULA does not grant the Licensee any rights, title and interest in and to Software, Enhancements, New Version, its contents, and branding thereof, except where expressly and unequivocally licensed herein. Any rights not expressly and unequivocally granted to the Licensee are reserved.
+ 
+b.   You agree that you shall not assert, or authorize, assist, or encourage any third party to assert, against Licensor any infringement or misappropriation of Intellectual Property Rights related claim regarding the Software, Enhancements, or New Version.
+ 
+c.	From time to time, the Licensee may provide feedback, suggestions, requirements or recommendations (“Feedback”) regarding the Software. The Licensee hereby assigns to the Licensor, all right, title and interest to such Feedback and an exclusive right to create any developments based on such Feedback.
+ 
+d.   In between the Licensor and the Licensee, the Licensee shall retain title to and all ownership rights in the Licensee Content.  The Licensee shall grant to the Licensor a worldwide, non-exclusive and non-transferable limited-term license to host, copy, transmit, analyse, process, display, store, configure, and perform the Licensee Content, solely as necessary for the working of the Software.
+ 
+e.   The Licensee acknowledges and agrees the Software may generate certain reports (the “Reports”) with the use of the Licensee Content provided by the Licensee, while using the Software. All intellectual property rights in all such Reports generated contain non-personal data or anonymised data pertaining to the Software, shall vest solely with the Licensor.
+
+## 10. CONFIDENTIALITY
+ 
+a.   The Software provided under this EULA contains valuable trade secrets and is the confidential information of the Licensor. You shall not disclose, provide or otherwise make available the Software or its information to any third party, except as expressly granted under this EULA. 
+ 
+b.   You agree to use all commercially reasonable precautions to protect the confidentiality of the Software and shall secure from all third parties having access to the Software, per the terms of this EULA, commitment to maintain the Software in confidence.
+ 
+c.	You agree that under no circumstances the Licensor or its affiliates or subsidiaries shall be held responsible or liable for any loss, damage or harm caused due to your reliance on information obtained from the Software.
+
+## 11.	INDEMNITY
+You agree to indemnify, keep indemnified, defend ( at the Licensor’s option) and hold harmless the Licensor, its Affiliates and its respective directors, officers, employees, representatives, from and against any and all claims and resulting losses, costs, liabilities, and expenses (including reasonable attorney’s fees), arising as a result of or in connection with (a) Your breach of or violation of applicable laws and regulations, (b) use of the Software other than as permitted under this EULA; (c) Your acts or omissions, (d) a third party claim for infringement or misappropriation based upon Your combination or use of the Software developed by the Licensee or third parties. The provisions of this section shall survive the termination of this EULA.
+ 
+## 12.	LIMITATION OF LIABILITY 
+IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR SPECIAL DAMAGES HOWSOEVER CAUSED, IN CONNECTION WITH THIS EULA, (EVEN IF YOU HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE) INCLUDING WITHOUT LIMITATION DAMAGES RESULTING FROM ANY ASPECT OF USE OF OR INABILITY TO USE THE SOFTWARE. THE FOREGOING LIMITATIONS OF LIABILITY AND EXCLUSIONS OF DAMAGES IN THIS CLAUSE FORM AN ESSENTIAL BASIS OF THIS AGREEMENT AND SHALL APPLY NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED WARRANTY OR REMEDY HEREIN.
