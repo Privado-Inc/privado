@@ -29,10 +29,11 @@ Privacy Engineers can use our CLI tool as an MRI for products, applications and 
 3. Detecting Privacy Vulnerabilities in current code implementation
 4. Privacy Policy Generator
 
+## Prerequisite - Docker
+To start off, make sure `docker` is installed. To install docker, you can follow the steps stated in the [official documentation](https://docs.docker.com/engine/install/). Linux users should also follow docker [post installation steps](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) in order to run Privado CLI without root (`sudo`) privileges.
 
 ## Installation
-
-To start off, make sure `docker` is installed. To install docker, you can follow the steps stated in the [official documentation](https://docs.docker.com/engine/install/). Linux users should also follow docker [post installation steps](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) in order to run Privado CLI without root (`sudo`) privileges. You can install Privado CLI in multiple manners:  
+You can install Privado CLI in multiple manners:  
 
 - [Using `curl`](#install-using-curl)
 - [Using `go`](#install-using-go)
