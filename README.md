@@ -2,6 +2,9 @@
 
 [![slack](https://img.shields.io/badge/slack-privado-brightgreen.svg?logo=slack)](https://join.slack.com/t/devprivops/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)
 
+<img width="1200" alt="Base@2x" src="https://user-images.githubusercontent.com/87804852/156975499-0856c6b2-3ee7-4c58-9108-2e4ce82ab801.png">
+
+
 ## What is Privado? <a href="#what-is-privado" id="what-is-privado"></a>
 
 Privado is a static code scanning tool to find, fix and remediate privacy issues in your products & applications. Our scan discovers what personal data(as defined by GDPR, other laws) your app is processing, third-party integrations, data flows. With our scan results, we generate privacy reports for your apps as mandated by laws like GDPR or platforms like Apple and keep them in sync with code changes.
