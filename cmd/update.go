@@ -28,7 +28,7 @@ func checkForUpdate() (hasUpdate bool, updateMessage string, err error) {
 
 	// get release info
 	releaseInfo, err := utils.GetLatestReleaseFromGitHub(config.AppConfig.PrivadoRepositoryName)
-	if releaseInfo.TagName == "" || releaseInfo.PublishedAt == "" || err != nil {
+	if err != nil || releaseInfo.TagName == "" || releaseInfo.PublishedAt == "" {
 		return false, "", err
 	}
 

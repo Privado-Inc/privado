@@ -38,7 +38,8 @@ func GetLatestReleaseFromGitHub(repoName string) (*gitHubReleaseType, error) {
 
 	defaultClient := &http.Client{}
 	response, err := defaultClient.Do(req)
-	if response.StatusCode != 200 || err != nil {
+
+	if err != nil || response.StatusCode != 200 {
 		return nil, err
 	}
 
