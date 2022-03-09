@@ -65,27 +65,48 @@ function downloadAndInstallLatestVersion {
 	tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C $HOME/.privado/bin
     fi
 
-    PROFILE_PATH="$HOME/.bashrc"
-    NO_FILE=""
-    for EACH_PROFILE in ".profile" ".bashrc" ".bash_profile" ".zshrc"
-    do
-      if [[ -f $HOME/$EACH_PROFILE ]]; then
-	cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
-	PROFILE_PATH=$HOME/$EACH_PROFILE
-	NO_FILE="true"
-        break
-      fi
-    done
+    WHO_AM_I=$(whoami)
+
+    if [[ "$WHO_AM_I" == "root" ]]; then
+	    LOGNAME=$(logname)
+	    if [[ "$LOGNAME" != "root" ]]; then
+		    ls -s $HOME/.privado/bin/privado /usr/local/bin/privado
+	    fi
+    else
+    	PROFILE_PATH="$HOME/.bashrc"
+    	NO_FILE=""
+    	for EACH_PROFILE in ".profile" ".bash_profile" ".zshrc"
+    	do
+      		if [[ -f $HOME/$EACH_PROFILE ]]; then
+			cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
+			PROFILE_PATH=$HOME/$EACH_PROFILE
+			NO_FILE="true"
+      		fi
+    	done
     
-    if [[ "$NO_FILE" == "" ]]; then
-        echo "export PATH=\$PATH:$HOME/.privado/bin" >> $PROFILE_PATH
+    	if [[ "$NO_FILE" == "" ]]; then
+        	echo "export PATH=\$PATH:$HOME/.privado/bin" >> $PROFILE_PATH
+    	fi
     fi
 
-    echo "Installation is complete. Please open a new session or run the command"
-    echo ". $PROFILE_PATH"
-    echo "In your existing session"  
+    echo "Installation is complete. Please open a new session and use the privado cli tool"
 }
 
+function checkDocker {
+	docker ps 2> /dev/null
+	EXIT_CODE=$?
+	if [[ "$EXIT_CODE" != "0" ]]; then
+		echo "Preflight Checks Failed. Either Docker is not installed, or not running, or you don't have permission to use the same without sudo. Please retry this script with sudo privileges."
+		exit
+	fi	
+}
+
+
+function preFlightChecks {
+	checkDocker
+}
+
+preFlightChecks
 findOS
 findArch
-downloadAndInstallLatestVersion
+#downloadAndInstallLatestVersion
