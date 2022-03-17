@@ -93,14 +93,11 @@ function downloadAndInstallLatestVersion {
 }
 
 function checkDocker {
-	if [[ "$OS" == "linux" ]]; then		
-		docker ps 2> /dev/null
-	else
-		docker ps > /dev/null
-	fi
+	docker ps > /dev/null 2>&1
 	EXIT_CODE=$?
 	if [[ "$EXIT_CODE" != "0" ]]; then
-		echo "Preflight Checks Failed. Either Docker is not installed, or not running, or you don't have permission to use the same without sudo. Please retry this script with sudo privileges."
+		echo "> Preflight checks failed!"
+		echo "> Either Docker is not installed, not running, or you do not have appropriate permissions to use the same. Please retry this script with sudo privileges."
 		exit
 	fi	
 }
@@ -113,4 +110,4 @@ function preFlightChecks {
 findOS
 findArch
 preFlightChecks
-#downloadAndInstallLatestVersion
+downloadAndInstallLatestVersion
