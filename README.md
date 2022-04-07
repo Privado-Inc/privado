@@ -21,7 +21,13 @@ Privado is a static code scanning tool to find, fix and remediate privacy issues
 
 ### Generate Play Store Data Safety Report <a href="#generate-play-store-data-safety-report" id="generate-play-store-data-safety-report"></a>
 
-This is the first use case that we are live with. Currently, to fill the data safety form Android developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report.
+This is the first use case that we are live with. Currently, to fill the data safety form Android developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report. This is how it works:
+
+- It's a CLI tool that does a static scan of your android app's code to find data types collected, SDKs
+- We look at Android permissions, user forms to detect Android Data Type. For the third party, we find relevant SDKs, Libraries & API calls
+- Guided workflow to help you fill the rest of the data safety form
+- Generates a CSV that you can import to Play Console
+- Scan runs locally, no code ever leaves your machine.
 
 ### Privacy Audits <a href="#privacy-audits" id="privacy-audits"></a>
 
