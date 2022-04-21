@@ -69,9 +69,7 @@ function downloadAndInstallLatestVersion {
 
     if [[ "$WHO_AM_I" == "root" ]]; then
 	    LOGNAME=$(logname)
-	    if [[ "$LOGNAME" != "root" ]]; then
-		    ls -s $HOME/.privado/bin/privado /usr/local/bin/privado
-	    fi
+            ln -s $HOME/.privado/bin/privado /usr/local/bin/privado
     else
     	PROFILE_PATH="$HOME/.bashrc"
     	NO_FILE=""
