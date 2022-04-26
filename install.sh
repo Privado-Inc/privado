@@ -83,7 +83,7 @@ function downloadAndInstallLatestVersion {
       		fi
     	done
     
-    	if [[ "$NO_FILE" == "" ]]; then
+    	if [[ "$NO_FILE" == "" ]] || [[ "$OS" == "linux"  ]]; then
         	echo "export PATH=\$PATH:$HOME/.privado/bin" >> $PROFILE_PATH
     	fi
     fi
@@ -106,7 +106,12 @@ function preFlightChecks {
 	checkDocker
 }
 
+function cleanup {
+	rm -rf /tmp/privado-*
+}
+
 findOS
 findArch
 preFlightChecks
 downloadAndInstallLatestVersion
+cleanup
