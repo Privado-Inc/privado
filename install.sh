@@ -68,27 +68,26 @@ function downloadAndInstallLatestVersion {
     WHO_AM_I=$(whoami)
 
     if [[ "$WHO_AM_I" == "root" ]]; then
-	    LOGNAME=$(logname)
-            cp $HOME/.privado/bin/privado /usr/local/bin/privado
-	    chmod 777 /usr/local/bin/privado
+		cp $HOME/.privado/bin/privado /usr/local/bin/privado
+		chmod 755 /usr/local/bin/privado
+		echo "Installation is complete! Run 'privado' to use Privado CLI"
     else
-    	PROFILE_PATH="$HOME/.bashrc"
+    	DEFAULT_PROFILE_PATH="$HOME/.bashrc"
     	NO_FILE=""
     	for EACH_PROFILE in ".profile" ".bash_profile" ".zshrc"
     	do
       		if [[ -f $HOME/$EACH_PROFILE ]]; then
-			cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
-			PROFILE_PATH=$HOME/$EACH_PROFILE
-			NO_FILE="true"
+				cat $HOME/$EACH_PROFILE | grep -q "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
+				NO_FILE="true"
       		fi
     	done
     
     	if [[ "$NO_FILE" == "" ]] || [[ "$OS" == "linux"  ]]; then
-        	echo "export PATH=\$PATH:$HOME/.privado/bin" >> $PROFILE_PATH
+        	cat $DEFAULT_PROFILE_PATH | grep -q "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $DEFAULT_PROFILE_PATH
     	fi
+	
+		echo "Installation is complete! Please open a new session and use the privado cli tool"
     fi
-
-    echo "Installation is complete. Please open a new session and use the privado cli tool"
 }
 
 function checkDocker {
@@ -107,7 +106,7 @@ function preFlightChecks {
 }
 
 function cleanup {
-	rm -rf /tmp/privado-*
+	rm -f /tmp/privado-*
 }
 
 findOS
