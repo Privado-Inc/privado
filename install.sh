@@ -65,27 +65,52 @@ function downloadAndInstallLatestVersion {
 	tar -xf /tmp/privado-$OS-$ARCH.tar.gz -C $HOME/.privado/bin
     fi
 
-    PROFILE_PATH="$HOME/.bashrc"
-    NO_FILE=""
-    for EACH_PROFILE in ".profile" ".bashrc" ".bash_profile" ".zshrc"
-    do
-      if [[ -f $HOME/$EACH_PROFILE ]]; then
-	cat $HOME/$EACH_PROFILE | grep "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
-	PROFILE_PATH=$HOME/$EACH_PROFILE
-	NO_FILE="true"
-        break
-      fi
-    done
-    
-    if [[ "$NO_FILE" == "" ]]; then
-        echo "export PATH=\$PATH:$HOME/.privado/bin" >> $PROFILE_PATH
-    fi
+    WHO_AM_I=$(whoami)
 
-    echo "Installation is complete. Please open a new session or run the command"
-    echo ". $PROFILE_PATH"
-    echo "In your existing session"  
+    if [[ "$WHO_AM_I" == "root" ]]; then
+		cp $HOME/.privado/bin/privado /usr/local/bin/privado
+		chmod 755 /usr/local/bin/privado
+		echo "Installation is complete! Run 'privado' to use Privado CLI"
+    else
+    	DEFAULT_PROFILE_PATH="$HOME/.bashrc"
+    	NO_FILE=""
+    	for EACH_PROFILE in ".profile" ".bash_profile" ".zshrc"
+    	do
+      		if [[ -f $HOME/$EACH_PROFILE ]]; then
+				cat $HOME/$EACH_PROFILE | grep -q "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
+				NO_FILE="true"
+      		fi
+    	done
+    
+    	if [[ "$NO_FILE" == "" ]] || [[ "$OS" == "linux"  ]]; then
+        	cat $DEFAULT_PROFILE_PATH | grep -q "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $DEFAULT_PROFILE_PATH
+    	fi
+	
+		echo "Installation is complete! Please open a new session and use the privado cli tool"
+    fi
+}
+
+function checkDocker {
+	docker ps > /dev/null 2>&1
+	EXIT_CODE=$?
+	if [[ "$EXIT_CODE" != "0" ]]; then
+		echo "> Preflight checks failed!"
+		echo "> Either Docker is not installed, not running, or you do not have appropriate permissions to use the same. Please retry this script with sudo privileges."
+		exit
+	fi	
+}
+
+
+function preFlightChecks {
+	checkDocker
+}
+
+function cleanup {
+	rm -f /tmp/privado-*
 }
 
 findOS
 findArch
+preFlightChecks
 downloadAndInstallLatestVersion
+cleanup
