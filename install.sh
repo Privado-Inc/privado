@@ -74,7 +74,7 @@ function downloadAndInstallLatestVersion {
     else
     	DEFAULT_PROFILE_PATH="$HOME/.bashrc"
     	NO_FILE=""
-    	for EACH_PROFILE in ".profile" ".bash_profile" ".zshrc"
+    	for EACH_PROFILE in ".profile" ".bash_profile" ".zprofile" ".zshrc"
     	do
       		if [[ -f $HOME/$EACH_PROFILE ]]; then
 				cat $HOME/$EACH_PROFILE | grep -q "/.privado" || echo "export PATH=\$PATH:$HOME/.privado/bin" >> $HOME/$EACH_PROFILE
