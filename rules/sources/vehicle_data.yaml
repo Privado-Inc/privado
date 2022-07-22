@@ -1,0 +1,20 @@
+sources:
+  - id: Data.Sensitive.VehicleData.VehicleRegistrationNumber
+    name: Vehicle Registration Number
+    category: Vehicle Data
+    is_sensitive: False
+    sensitivity: NOT_KNOWN
+    patterns:
+    - pattern: "(?i)(?:vehicle|truck|car|motorcycle|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration[^\\s/(;)#|,=!>]{0,5}(number){0,1}"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.VehicleData.LicensePlate
+    name: License Plate
+    category: Vehicle Data
+    is_sensitive: False
+    sensitivity: NOT_KNOWN
+    patterns:
+      - pattern: "(?i)license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(number|no))?"
+    tags:
+      - law: GDPR

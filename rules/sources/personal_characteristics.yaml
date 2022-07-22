@@ -2,6 +2,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.Height
     name: Height
     category: Personal Characteristics
+    is_sensitive: False
     sensitivity: low
     patterns:
       - pattern: "(?i)height[^\\s/(;)#|,=!>]{0,2}(?:cms|inches|feet)|(?:body|person|patient|baby|student|user|girl|boy|male|female|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,2}height"
@@ -11,6 +12,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.MaritalStatus
     name: Marital Status
     category: Personal Characteristics
+    is_sensitive: False
     sensitivity: medium
     patterns:
       - pattern: "(?i)marital[^\\s/(;)#|,=!>]{0,10}status|is[^\\s/(;)#|,=!>]{0,3}married|relationship[^\\s/(;)#|,=!>]{0,10}status"
@@ -20,6 +22,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.Nationality
     name: Nationality
     category: Personal Characteristics
+    is_sensitive: False
     sensitivity: medium
     patterns:
       - pattern: "(?i)nationality|nationalities"
@@ -29,6 +32,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.RacialorEthnicOrigin
     name: Racial or Ethnic Origin
     category: Personal Characteristics
+    is_sensitive: True
     sensitivity: high
     patterns:
       - pattern: "(?i)(?:racial|ethnic)[^\\s/(;)#|,=!>]*(?:origin|group)|ethnicity|ethnic|racial"
@@ -38,6 +42,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.Religion/ReligiousBeliefs
     name: Religion / Religious Beliefs
     category: Personal Characteristics
+    is_sensitive: True
     sensitivity: high
     patterns:
       - pattern: "(?i)religion|religious|christianity|catholic|judaism|jewish|muslim|hinduism|atheist|atheism"
@@ -47,6 +52,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.SexualOrientation
     name: Sexual Orientation
     category: Personal Characteristics
+    is_sensitive: True
     sensitivity: high
     patterns:
       - pattern: "(?i)alloromantic|allosexual|androsexual|aromantic|asexual|autoromantic|autosexual|bicurious|biromantic|bisexual|demiromantic|demisexual|gay|gynesexual|gynosexual|heteromantic|heterosexuality|homoromantic|homosexuality|lesbian|monosexual|multisexual|pansexual|omnisexual|panromantic|polysexual|queer|skoliosexual|spectrasexual|cupiosexual|lithromantic"
@@ -56,6 +62,7 @@ sources:
   - id: Data.Sensitive.PersonalCharacteristics.Signature
     name: Signature
     category: Personal Characteristics
+    is_sensitive: False
     sensitivity: high
     patterns:
       - pattern: "(?i)(?:person|customer|user|buyer|seller|publisher|CEO|CFO|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}signature"
@@ -66,6 +73,7 @@ sources:
     name: Weight
     sensitivity: medium
     category: Personal Characteristics
+    is_sensitive: False
     patterns:
       - pattern: "(?i)body[^\\s/(;)#|,=!>]{0,5}mass[^\\s/(;)#|,=!>]{0,5}index|body[^\\s/(;)#|,=!>]{0,5}weight|weight[^\\s/(;)#|,=!>]{0,5}(?:kg|kgs|pound|pounds)|(?:body|person|patient|baby|student|user|girl|boy|male|female|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}weight"
     tags:

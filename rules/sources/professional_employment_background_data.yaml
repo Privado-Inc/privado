@@ -1,0 +1,70 @@
+sources:
+  - id: Data.Sensitive.Professional&EmploymentBackground.TotalExperience
+    name: Total Experience
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)(?:applicant|candidate|job[^\\s/(;)#|,=!>]*applicant)[^\\s/(;)#|,=!>]*(?:experience|experiences)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.Professional&EmploymentBackground.PastEmployers
+    name: Past Employers
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)(?:employee|employment|employee[^\\s/(;)#|,=!>]*work)[^\\s/(;)#|,=!>]*(?:history|experience|experiences)|past[^\\s/(;)#|,=!>]*(?:experience|experiences)|previous[^\\s/(;)#|,=!>]*employers|(?:candidate|applicant)[^\\s/(;)#|,=!>]*past[^\\s/(;)#|,=!>]*company"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.Professional&EmploymentBackground.PastRolesorPositions
+    name: Past Roles or Positions
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)past[^\\s/(;)#|,=!>]{0,5}role|(?:previous|past)[^\\s/(;)#|,=!>]{0,5}job[^\\s/(;)#|,=!>]{0,5}title"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.Professional&EmploymentBackground.PastSalaryDetails
+    name: Past Salary Details
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)(?:past|previous)[^\\s/(;)#|,=!>]{0,5}salary|salary[^\\s/(;)#|,=!>]{0,5}history"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.Professional&EmploymentBackground.Reasonforleavingorchangeofjob
+    name: Reason for leaving or change of job
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)reason[^\\s/(;)#|,=!>]{0,5}leaving|job[^\\s/(;)#|,=!>]{0,5}change[^\\s/(;)#|,=!>]{0,5}reason|employment[^\\s/(;)#|,=!>]{0,5}change[^\\s/(;)#|,=!>]{0,5}reason"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.Professional&EmploymentBackground.PastDatesofEmployment
+    name: Past Dates of Employment
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)job[^\\s/(;)#|,=!>]{0,5}(?:from|to)[^\\s/(;)#|,=!>]{0,5}date|employment[^\\s/(;)#|,=!>]{0,5}date|employment[^\\s/(;)#|,=!>]{0,5}date[^\\s/(;)#|,=!>]{0,5}(?:start|end)|(?:start|end)[^\\s/(;)#|,=!>]{0,5}employment[^\\s/(;)#|,=!>]{0,5}date"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.Professional&EmploymentBackground.ProofofLastSalary
+    name: Proof of Last Salary
+    category: Professional & Employment Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)(?:last|previous)[^\\s/(;)#|,=!>]{0,5}salary[^\\s/(;)#|,=!>]{0,5}slip"
+    tags:
+      - law: GDPR

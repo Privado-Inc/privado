@@ -1,0 +1,30 @@
+sources:
+  - id: Data.Sensitive.EducationalBackground.EducationalHistory
+    name: Educational History
+    category: Educational Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)educational[^\\s/(;)#|,=!>]{0,10}istory|(?:master|bachelor)[^\\s/(;)#|,=!>]{0,10}degree|attended[^\\s/(;)#|,=!>]{0,10}(?:universities|university|school|college)|(?:universities|university|school|college)[^\\s/(;)#|,=!>]{0,10}attended"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.EducationalBackground.Skills
+    name: Skills
+    category: Educational Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)(?:technical|speaking|programming|soft)[^\\s/(;)#|,=!>]{0,10}skills"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.EducationalBackground.AcademicTranscripts
+    name: Academic Transcripts
+    category: Educational Background
+    is_sensitive: False
+    sensitivity: low
+    patterns:
+      - pattern: "(?i)academic[^\\s/(;)#|,=!>]{0,10}transcripts|(?:diploma|bachelor|[^\\s/(;)#|,=!>]{0,10}degree|masters[^\\s/(;)#|,=!>]{0,10}degree|pg|degree)[^\\s/(;)#|,=!>]{0,10}certificate"
+    tags:
+      - law: GDPR
