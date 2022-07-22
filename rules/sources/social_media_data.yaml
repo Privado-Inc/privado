@@ -23,7 +23,7 @@ sources:
     name: Social Media Contact
     category: Social Media Data
     is_sensitive: False
-    sensitivity: NOT_KNOWN
+    sensitivity: medium
     patterns:
       - pattern: "(?i)social[^\\s/(;)#|,=!>]{0,10}account"
     tags:

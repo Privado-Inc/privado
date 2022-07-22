@@ -23,7 +23,7 @@ sources:
     name: Technical Diagnostic Data
     category: Technical Data
     is_sensitive: False
-    sensitivity: NOT_KNOWN
+    sensitivity: low
     patterns:
       - pattern: "(?i)(?:crash|performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)"
     tags:
@@ -33,7 +33,7 @@ sources:
     name: Browsing Time
     category: Technical Data
     is_sensitive: False
-    sensitivity: NOT_KNOWN
+    sensitivity: low
     patterns:
       - pattern: "(?i)browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration)"
     tags:

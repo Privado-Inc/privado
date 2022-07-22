@@ -23,7 +23,7 @@ sources:
     name: Building Information System Access
     category: Workplace Monitoring Data
     is_sensitive: False
-    sensitivity: NOT_KNOWN
+    sensitivity: low
     patterns:
       - pattern: "(?i)access[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}number|access[^\\s/(;)#|,=!>]{0,10}card|employee[^\\s/(;)#|,=!>]{0,10}check[^\\s/(;)#|,=!>]{0,10}(?:out|in)|punch[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}time|punch[^\\s/(;)#|,=!>]{0,10}card"
     tags:
@@ -33,7 +33,7 @@ sources:
     name: Application Usage
     category: Workplace Monitoring Data
     is_sensitive: False
-    sensitivity: NOT_KNOWN
+    sensitivity: low
     patterns:
       - pattern: "(?i)app[^\\s/(;)#|,=!>]{0,3}usage|cpu[^\\s/(;)#|,=!>]{0,3}freq"
     tags:
