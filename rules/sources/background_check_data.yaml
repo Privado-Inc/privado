@@ -5,9 +5,9 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)(?:criminal|crime)[^\\s/(;)#|,=!>]{0,10}(?:background|record|history|activity)"
+      - "(?i)(?:criminal|crime)[^\\s/(;)#|,=!>]{0,10}(?:background|record|history|activity)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.BackgroundCheckDetails.ReferenceChecks
     name: Reference Checks
@@ -15,9 +15,9 @@ sources:
     is_sensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)(?:reference|verification)[^\\s/(;)#|,=!>]{0,10}check"
+      - "(?i)(?:reference|verification)[^\\s/(;)#|,=!>]{0,10}check"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.BackgroundCheckDetails.EmploymentHistory
     name: Employment History
@@ -25,9 +25,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)employment[^\\s/(;)#|,=!>]{0,10}(?:history|verification|check)"
+      - "(?i)employment[^\\s/(;)#|,=!>]{0,10}(?:history|verification|check)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.BackgroundCheckDetails.CompensationHistory
     name: Compensation History
@@ -35,9 +35,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:past|previous)[^\\s/(;)#|,=!>]{0,10}salary|salary[^\\s/(;)#|,=!>]{0,10}history"
+      - "(?i)(?:past|previous)[^\\s/(;)#|,=!>]{0,10}salary|salary[^\\s/(;)#|,=!>]{0,10}history"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.BackgroundCheckDetails.CreditHistory
     name: Credit History
@@ -45,6 +45,6 @@ sources:
     is_sensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)loan[^\\s/(;)#|,=!>]{0,10}history|credit[^\\s/(;)#|,=!>]{0,10}(?:score|record|slip|report|history|rate|worth|rank)|financial[^\\s/(;)#|,=!>]{0,10}condition|loan[^\\s/(;)#|,=!>]{0,10}taken"
+      - "(?i)loan[^\\s/(;)#|,=!>]{0,10}history|credit[^\\s/(;)#|,=!>]{0,10}(?:score|record|slip|report|history|rate|worth|rank)|financial[^\\s/(;)#|,=!>]{0,10}condition|loan[^\\s/(;)#|,=!>]{0,10}taken"
     tags:
-      - law: GDPR
+      law: GDPR

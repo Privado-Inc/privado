@@ -5,9 +5,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-    - pattern: "(?i)(?:vehicle|truck|car|motorcycle|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration[^\\s/(;)#|,=!>]{0,5}(number){0,1}"
+      -  "(?i)(?:vehicle|truck|car|motorcycle|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration[^\\s/(;)#|,=!>]{0,5}(number){0,1}"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.VehicleData.LicensePlate
     name: License Plate
@@ -15,6 +15,6 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(number|no))?"
+      -  "(?i)license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(number|no))?"
     tags:
-      - law: GDPR
+      law: GDPR

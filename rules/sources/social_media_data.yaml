@@ -5,9 +5,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]*(?:account|profile)"
+      - "(?i)(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]*(?:account|profile)"
     tags:
-      - law: GDPR
+      law: GDPR
   
   - id: Data.Sensitive.SocialMediaData.SocialMediaActivity
     name: Social Media Activity
@@ -15,9 +15,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]*(?:likes|comments|shares)|reddit[^\\s/(;)#|,=!>]*(?:upvote|downvote)|pinterest[^\\s/(;)#|,=!>]*pin|twitter[^\\s/(;)#|,=!>]*tweet"
+      - "(?i)(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]*(?:likes|comments|shares)|reddit[^\\s/(;)#|,=!>]*(?:upvote|downvote)|pinterest[^\\s/(;)#|,=!>]*pin|twitter[^\\s/(;)#|,=!>]*tweet"
     tags:
-      - law: GDPR
+      law: GDPR
   
   - id: Data.Sensitive.SocialMediaData.SocialMediaContact
     name: Social Media Contact
@@ -25,6 +25,6 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)social[^\\s/(;)#|,=!>]{0,10}account"
+      - "(?i)social[^\\s/(;)#|,=!>]{0,10}account"
     tags:
-      - law: GDPR
+      law: GDPR

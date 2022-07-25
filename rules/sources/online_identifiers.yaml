@@ -5,9 +5,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)cookies|cookie"
+      - "(?i)cookies|cookie"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.OnlineIdentifiers.DeviceIdentifier
     name: Device Identifier
@@ -15,9 +15,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)device[^\\s/(;)#|,=!>]{0,5}(?:id|name|info)|idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid|hardware[^\\s/(;)#|,=!>]{0,5}name|mobile[^\\s/(;)#|,=!>]{0,5}(?:model|brand)|laptop[^\\s/(;)#|,=!>]{0,5}(?:model|brand)"
+      - "(?i)device[^\\s/(;)#|,=!>]{0,5}(?:id|name|info)|idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid|hardware[^\\s/(;)#|,=!>]{0,5}name|mobile[^\\s/(;)#|,=!>]{0,5}(?:model|brand)|laptop[^\\s/(;)#|,=!>]{0,5}(?:model|brand)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.OnlineIdentifiers.IPAddress
     name: IP Address
@@ -25,9 +25,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)(?:(?<!sh)ip|ipv4|ipv6)[^\\s/(;)#|,=!>]{0,10}address|machine[^\\s/(;)#|,=!>]{0,10}ip"
+      - "(?i)(?:(?<!sh)ip|ipv4|ipv6)[^\\s/(;)#|,=!>]{0,10}address|machine[^\\s/(;)#|,=!>]{0,10}ip"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.OnlineIdentifiers.MACAddress
     name: MAC Address
@@ -35,9 +35,9 @@ sources:
     is_sensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)mac[^\\s/(;)#|,=!>]{0,2}(?:address|ip)|ip[^\\s/(;)#|,=!>]{0,2}mac"
+      - "(?i)mac[^\\s/(;)#|,=!>]{0,2}(?:address|ip)|ip[^\\s/(;)#|,=!>]{0,2}mac"
     tags:
-      - law: GDPR
+      law: GDPR
     
   - id: Data.Sensitive.OnlineIdentifiers.Pixel
     name: Pixel
@@ -45,9 +45,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)online[^\\s/(;)#|,=!>]{0,10}identifier|online[^\\s/(;)#|,=!>]{0,10}identity"
+      - "(?i)online[^\\s/(;)#|,=!>]{0,10}identifier|online[^\\s/(;)#|,=!>]{0,10}identity"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.OnlineIdentifiers.AdvertisingIdentifiers
     name: Advertising Identifiers
@@ -55,6 +55,6 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
+      - "(?i)idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
     tags:
-      - law: GDPR
+      law: GDPR

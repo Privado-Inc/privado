@@ -5,9 +5,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,8}name|name[^\\s/(;)#|,=!>]{0,8}(?:guardian|mother|father)"
+      - "(?i)(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,8}name|name[^\\s/(;)#|,=!>]{0,8}(?:guardian|mother|father)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.SpouseFamilyAndDependentDetails.ParentsContactDetails
     name: Parents Contact Details
@@ -15,9 +15,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,10}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
+      - "(?i)(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,10}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.SpouseFamilyAndDependentDetails.SpouseName
     name: Spouse Name
@@ -25,9 +25,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:fiance|spouse|husband|wife)[^\\s/(;)#|,=!>]{0,8}name"
+      - "(?i)(?:fiance|spouse|husband|wife)[^\\s/(;)#|,=!>]{0,8}name"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.SpouseFamilyAndDependentDetails.SpouseContactDetails
     name: Spouse Contact Details
@@ -35,9 +35,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:fiance|spouse|husband|wife)[^\\s/(;)#|,=!>]{0,4}(?:contact|number|nbr|phone|mobile|mob|landline|email|address|addr)"
+      - "(?i)(?:fiance|spouse|husband|wife)[^\\s/(;)#|,=!>]{0,4}(?:contact|number|nbr|phone|mobile|mob|landline|email|address|addr)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.SpouseFamilyAndDependentDetails.DependentName
     name: Dependent Name
@@ -45,9 +45,9 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:dependant|daughter|wife|fiance|grand[^\\s/(;)#|,=!>]{0,8}mother|grand[^\\s/(;)#|,=!>]{0,8}father)[^\\s/(;)#|,=!>]{0,8}name"
+      - "(?i)(?:dependant|daughter|wife|fiance|grand[^\\s/(;)#|,=!>]{0,8}mother|grand[^\\s/(;)#|,=!>]{0,8}father)[^\\s/(;)#|,=!>]{0,8}name"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.SpouseFamilyAndDependentDetails.DependentContactDetails
     name: Dependent Contact Details
@@ -55,6 +55,6 @@ sources:
     is_sensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:dependant|children|daughter|wife|fiance|grand[^\\s/(;)#|,=!>]{0,10}mother|grand[^\\s/(;)#|,=!>]{0,10}father|family)[^\\s/(;)#|,=!>]{0,5}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
+      - "(?i)(?:dependant|children|daughter|wife|fiance|grand[^\\s/(;)#|,=!>]{0,10}mother|grand[^\\s/(;)#|,=!>]{0,10}father|family)[^\\s/(;)#|,=!>]{0,5}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
     tags:
-      - law: GDPR
+      law: GDPR

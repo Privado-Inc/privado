@@ -5,9 +5,9 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)locomotor[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*illness|cerebral[^\\s/(;)#|,=!>]*palsy|hearing[^\\s/(;)#|,=!>]*impairment|muscular[^\\s/(;)#|,=!>]*dystrophy|multiple[^\\s/(;)#|,=!>]*sclerosis|hiv[^\\s/(;)#|,=!>]*aids|physical[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*disability|alzheimer|thalassemia|hemophilia|autism|cancer|dwarfism|blindness|handicapped|wheelchair|diabetic|dyslexia|epilepsy|schizophrenia|depression|physical[^\\s/(;)#|,=!>]disorder"
+      - "(?i)locomotor[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*illness|cerebral[^\\s/(;)#|,=!>]*palsy|hearing[^\\s/(;)#|,=!>]*impairment|muscular[^\\s/(;)#|,=!>]*dystrophy|multiple[^\\s/(;)#|,=!>]*sclerosis|hiv[^\\s/(;)#|,=!>]*aids|physical[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*disability|alzheimer|thalassemia|hemophilia|autism|cancer|dwarfism|blindness|handicapped|wheelchair|diabetic|dyslexia|epilepsy|schizophrenia|depression|physical[^\\s/(;)#|,=!>]disorder"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.HealthData.HealthInsuranceNumber
     name: Health Insurance Number
@@ -15,9 +15,9 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)(?:health|medical)[^\\s/(;)#|,=!>]*insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|mediclaim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)"
+      - "(?i)(?:health|medical)[^\\s/(;)#|,=!>]*insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|mediclaim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)"
     tags:
-      - law: GDPR
+      law: GDPR
   
    - id: Data.Sensitive.HealthData.IllnessorMedicalCondition
     name: Illness or Medical Condition
@@ -25,9 +25,9 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)health[^\\s/(;)#|,=!>]{0,10}record|medical[^\\s/(;)#|,=!>]{0,10}condition|(?:user|person|customer|employee)[^\\s/(;)#|,=!>]{0,10}health|illness[^\\s/(;)#|,=!>]{0,10}(?:record|name|data|type|date)"
+      - "(?i)health[^\\s/(;)#|,=!>]{0,10}record|medical[^\\s/(;)#|,=!>]{0,10}condition|(?:user|person|customer|employee)[^\\s/(;)#|,=!>]{0,10}health|illness[^\\s/(;)#|,=!>]{0,10}(?:record|name|data|type|date)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.HealthData.MaternityLeaveDetails
     name: Maternity Leave Details
@@ -35,9 +35,9 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)maternity[^\\s/(;)#|,=!>]{0,10}leave"
+      - "(?i)maternity[^\\s/(;)#|,=!>]{0,10}leave"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.HealthData.PaternityLeaveDetails
     name: Paternity Leave Details
@@ -45,9 +45,9 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)paternity[^\\s/(;)#|,=!>]{0,10}leave"
+      - "(?i)paternity[^\\s/(;)#|,=!>]{0,10}leave"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.HealthData.MedicalCertificates
     name: Medical Certificates
@@ -55,6 +55,6 @@ sources:
     is_sensitive: True
     sensitivity: high
     patterns:
-      - pattern: "(?i)blood[^\\s/(;)#|,=!>]{0,10}report|medical[^\\s/(;)#|,=!>]{0,10}(?:report|test)|medical[^\\s/(;)#|,=!>]{0,10}certificate|blood[^\\s/(;)#|,=!>]{0,10}group"
+      - "(?i)blood[^\\s/(;)#|,=!>]{0,10}report|medical[^\\s/(;)#|,=!>]{0,10}(?:report|test)|medical[^\\s/(;)#|,=!>]{0,10}certificate|blood[^\\s/(;)#|,=!>]{0,10}group"
     tags:
-      - law: GDPR
+      law: GDPR
