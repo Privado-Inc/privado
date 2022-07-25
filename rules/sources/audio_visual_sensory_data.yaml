@@ -1,5 +1,5 @@
 sources:
-  - id: Data.Sensitive.AudioVisual&SensoryData.Video
+  - id: Data.Sensitive.AudioVisualAndSensoryData.Video
     name: Video
     category: Audio Visual & Sensory Data
     is_sensitive: False
@@ -9,7 +9,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.AudioVisual&SensoryData.AudioRecordings
+  - id: Data.Sensitive.AudioVisualAndSensoryData.AudioRecordings
     name: Audio Recordings
     category: Audio Visual & Sensory Data
     is_sensitive: False
@@ -19,7 +19,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.AudioVisual&SensoryData.IoTorSensorData
+  - id: Data.Sensitive.AudioVisualAndSensoryData.IoTorSensorData
     name: IoT or Sensor Data
     category: Audio Visual & Sensory Data
     is_sensitive: False

@@ -1,5 +1,5 @@
 sources:
-  - id: Data.Sensitive.Spouse/Family&DependentDetails.ParentsName
+  - id: Data.Sensitive.SpouseFamilyAndDependentDetails.ParentsName
     name: Parents Name
     category: Spouse/Family & Dependent Details
     is_sensitive: False
@@ -9,7 +9,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Spouse/Family&DependentDetails.ParentsContactDetails
+  - id: Data.Sensitive.SpouseFamilyAndDependentDetails.ParentsContactDetails
     name: Parents Contact Details
     category: Spouse/Family & Dependent Details
     is_sensitive: False
@@ -19,7 +19,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Spouse/Family&DependentDetails.SpouseName
+  - id: Data.Sensitive.SpouseFamilyAndDependentDetails.SpouseName
     name: Spouse Name
     category: Spouse/Family & Dependent Details
     is_sensitive: False
@@ -29,7 +29,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Spouse/Family&DependentDetails.SpouseContactDetails
+  - id: Data.Sensitive.SpouseFamilyAndDependentDetails.SpouseContactDetails
     name: Spouse Contact Details
     category: Spouse/Family & Dependent Details
     is_sensitive: False
@@ -39,7 +39,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Spouse/Family&DependentDetails.DependentName
+  - id: Data.Sensitive.SpouseFamilyAndDependentDetails.DependentName
     name: Dependent Name
     category: Spouse/Family & Dependent Details
     is_sensitive: False
@@ -49,7 +49,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Spouse/Family&DependentDetails.DependentContactDetails
+  - id: Data.Sensitive.SpouseFamilyAndDependentDetails.DependentContactDetails
     name: Dependent Contact Details
     category: Spouse/Family & Dependent Details
     is_sensitive: False

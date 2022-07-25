@@ -1,5 +1,5 @@
 sources:
-  - id: Data.Sensitive.Professional&EmploymentBackground.TotalExperience
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.TotalExperience
     name: Total Experience
     category: Professional & Employment Background
     is_sensitive: False
@@ -9,7 +9,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Professional&EmploymentBackground.PastEmployers
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.PastEmployers
     name: Past Employers
     category: Professional & Employment Background
     is_sensitive: False
@@ -19,7 +19,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Professional&EmploymentBackground.PastRolesorPositions
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.PastRolesorPositions
     name: Past Roles or Positions
     category: Professional & Employment Background
     is_sensitive: False
@@ -29,7 +29,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Professional&EmploymentBackground.PastSalaryDetails
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.PastSalaryDetails
     name: Past Salary Details
     category: Professional & Employment Background
     is_sensitive: False
@@ -39,7 +39,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Professional&EmploymentBackground.Reasonforleavingorchangeofjob
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.Reasonforleavingorchangeofjob
     name: Reason for leaving or change of job
     category: Professional & Employment Background
     is_sensitive: False
@@ -49,7 +49,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Professional&EmploymentBackground.PastDatesofEmployment
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.PastDatesofEmployment
     name: Past Dates of Employment
     category: Professional & Employment Background
     is_sensitive: False
@@ -59,7 +59,7 @@ sources:
     tags:
       - law: GDPR
 
-  - id: Data.Sensitive.Professional&EmploymentBackground.ProofofLastSalary
+  - id: Data.Sensitive.ProfessionalAndEmploymentBackground.ProofofLastSalary
     name: Proof of Last Salary
     category: Professional & Employment Background
     is_sensitive: False
