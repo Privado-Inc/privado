@@ -1,0 +1,23 @@
+
+# Sink Rules for storage database MongoDB - https://www.mongodb.com/
+
+sinks:
+
+  - id: Storages.MongoDB.Read
+    name: MongoDB(Read)
+    domains:
+      - mongodb.com
+    patterns: 
+      - "(i?).*(?:com.mongodb.|mongodb.DBCursor|mongodb.DBCollection|mongodb.BasicDBObject|MongoClient|MongoClientURI|MongoClients[.]create).*(?:(get|list|count|distinct|aggregate|count).*|find|findOne|findMany)"
+      - "(i?:)(?:org[.]bson[.]MongoCollection.*[.](get|count|distinct|find|findOne|findMany|aggregate):.*[(].*mongo.*client[.]model[.]Filters[.]eq[)])"
+    tags:
+
+  - id: Storages.MongoDB.Write
+    name: MongoDB(Write)
+    domains:
+      - mongodb.com
+    patterns: 
+      - "(i?).*(?:com.mongodb.|mongodb.DBCursor|mongodb.DBCollection|mongodb.BasicDBObject|MongoClient|MongoClientURI|MongoClients[.]create).*(?:create|drop|findAnd|findOneAnd|insert|remove|rename|save|set|update|bulkWrite|delete).*"
+      - "(i?)(?:org[.]bson[.]MongoCollection.*[.](create|drop|findAnd|findOneAnd|insert|remove|rename|save|set|update|bulkWrite|delete):.*[(].*mongo.*client[.]model[.]Filters[.]eq[)])"
+    tags:
+
