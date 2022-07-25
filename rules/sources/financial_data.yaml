@@ -1,0 +1,140 @@
+sources:
+  - id: Data.Sensitive.FinancialData.BankAccountDetails
+    name: Bank Account Details
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)(?<!question)bank[^\\s/(;)#|,=!>]*(?:name|account|details|detail|address|country|swift-code|swift_code)|bank[^\\s/(;)#|,=!>]*account[^\\s/(;)#|,=!>]*details|swift[-_]code|swiftcode"
+    tags:
+      - law: GDPR
+      
+  - id: Data.Sensitive.FinancialData.CardIssuer
+    name: Card Issuer
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)(?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}issuer|card[^\\s/(;)#|,=!>]{0,10}issuer"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.CardNumber
+    name: Card Number
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)(?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}number|(?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.VPAAddress
+    name: VPA Address
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)virtual[^\\s/(;)#|,=!>]{0,5}payment[^\\s/(;)#|,=!>]{0,5}address|virtual[^\\s/(;)#|,=!>]{0,5}payment|upi[-_[<'.]{0,2}id"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.PaymentMode
+    name: Payment Mode
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)payment[^\\s/(;)#|,=!>]{0,5}(?:mode|method|options)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.CreditScore
+    name: Credit Score
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)(?:credit|cibil|crisil|fico|schufa)[^\\s/(;)#|,=!>]{0,10}score"
+    tags:
+      - law: GDPR
+    
+  - id: Data.Sensitive.FinancialData.TaxInformation
+    name: Tax Information
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax"
+    tags:
+      - law: GDPR
+  
+  - id: Data.Sensitive.FinancialData.RetirementAccountInformation
+    name: Retirement Account Information
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)401k|(?:retirement|pension)[^\\s/(;)#|,=!>]{0,10}(?:plan|account)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.PayrollInformation
+    name: Payroll Information
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)payroll|pay[-_]roll"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.Expenses
+    name: Expenses
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:travel|lodging|food|mileage|healthcare|business|medical|travel)[^\\s/(;)#|,=!>]{0,10}(?:reimbursement|expense)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.CompanyAllowances
+    name: Company Allowances
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:dearness|houserent|entertainment|overtime|compensatory|conveyance|leave[^\\s/(;)#|,=!>]{0,10}travel|medical|periodicals|books|withholding|personal|employment|child|basic[^\\s/(;)#|,=!>]{0,10}tax|travel|maternity|paternity)[^\\s/(;)#|,=!>]{0,10}allowance"
+    tags:
+      - law: GDPR
+  
+  - id: Data.Sensitive.FinancialData.StockorEquityGrants
+    name: Stock or Equity Grants
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)(?:user|employee|incentive|phantom|common|restricted)[^\\s/(;)#|,=!>]{0,10}(?:stocks|equity)|stocks[^\\s/(;)#|,=!>]{0,10}grant|employee[^\\s/(;)#|,=!>]{0,10}stock[^\\s/(;)#|,=!>]{0,10}purchase[^\\s/(;)#|,=!>]{0,10}plan|incentive[^\\s/(;)#|,=!>]{0,10}stock[^\\s/(;)#|,=!>]{0,10}option|employee[^\\s/(;)#|,=!>]{0,10}stock[^\\s/(;)#|,=!>]{0,10}option[^\\s/(;)#|,=!>]{0,10}scheme|restricted[^\\s/(;)#|,=!>]{0,10}stock[^\\s/(;)#|,=!>]{0,10}units|stock[^\\s/(;)#|,=!>]{0,10}appreciation[^\\s/(;)#|,=!>]{0,10}rights|phantom[^\\s/(;)#|,=!>]{0,10}stocks|non[^\\s/(;)#|,=!>]{0,10}qualified[^\\s/(;)#|,=!>]{0,10}stock[^\\s/(;)#|,=!>]{0,10}options|stock[^\\s/(;)#|,=!>]{0,10}option[^\\s/(;)#|,=!>]{0,10}grant|restricted[^\\s/(;)#|,=!>]{0,10}stock[^\\s/(;)#|,=!>]{0,10}awards"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.Salary
+    name: Salary
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)salary[^\\s/(;)#|,=!>]{0,10}(?:details|detail|slip|pay)|employee[^\\s/(;)#|,=!>]{0,10}salary|basic[^\\s/(;)#|,=!>]{0,10}salary|(?:dearness|houserent)[^\\s/(;)#|,=!>]{0,10}allowance|salary"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.FinancialData.Benefits
+    name: Benefits
+    category: Financial Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)gym[^\\s/(;)#|,=!>]{0,10}membership|free[^\\s/(;)#|,=!>]{0,10}(?:lunch|snacks|breakfast|drinks|dinner)|employee[^\\s/(;)#|,=!>]{0,10}discount|employee[^\\s/(;)#|,=!>]{0,10}assistance[^\\s/(;)#|,=!>]{0,10}program|company[^\\s/(;)#|,=!>]{0,10}car|(?:retirement|pension)[^\\s/(;)#|,=!>]{0,10}plan|performance[^\\s/(;)#|,=!>]{0,10}bonus|(?:life|medical|dental|vision)[^\\s/(;)#|,=!>]{0,10}insurance|flexible[^\\s/(;)#|,=!>]{0,10}hours|company[^\\s/(;)#|,=!>]{0,10}shuttle|relocation[^\\s/(;)#|,=!>]{0,10}bonus|(?:paternity|maternity)[^\\s/(;)#|,=!>]{0,10}leave"
+    tags:
+      - law: GDPR

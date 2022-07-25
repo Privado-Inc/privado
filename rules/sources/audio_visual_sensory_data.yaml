@@ -1,0 +1,30 @@
+sources:
+  - id: Data.Sensitive.AudioVisualAndSensoryData.Video
+    name: Video
+    category: Audio Visual & Sensory Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:cctv|webcam|video|camera)[^\\s/(;)#|,=!>]{0,5}(?:feed|clip|recording|footage)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.AudioVisualAndSensoryData.AudioRecordings
+    name: Audio Recordings
+    category: Audio Visual & Sensory Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:audio|microphone|phone)[^\\s/(;)#|,=!>]{0,5}(?:feed|clip|recording)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.AudioVisualAndSensoryData.IoTorSensorData
+    name: IoT or Sensor Data
+    category: Audio Visual & Sensory Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)thermocouples|thermistor|thermometer|(?:thermal|temperature|radiation|light|proximity|gyroscope|pressure|position)[^\\s/(;)#|,=!>]{0,10}(?:sensors|sensor)|(?:sensors|sensor)[^\\s/(;)#|,=!>]{0,10}(?:thermal|temperature|radiation|light|proximity|gyroscope|pressure|position)|accelerometer"
+    tags:
+      - law: GDPR

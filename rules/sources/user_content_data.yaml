@@ -1,0 +1,50 @@
+sources:
+  - id: Data.Sensitive.UserContentData.Ratings
+    name: Ratings
+    category: User Content Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:user|product|movie|show|drama|coach|buyer|seller|doctor|hospital|college|hotel|agent|author|customer|artist|photo|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]*(?:rating|ratings)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.UserContentData.Reviews
+    name: Reviews
+    category: User Content Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:user|movie|drama|coach|buyer|seller|doctor|hospital|college|hotel|agent|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,4}(?:review|reviews)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.UserContentData.EmailsorTextMessages
+    name: Emails or Text Messages
+    category: User Content Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)email[^\\s/(;)#|,=!>]*(?:content|message|msg)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.UserContentData.CustomerSupport
+    name: Customer Support
+    category: User Content Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)support[^\\s/(;)#|,=!>]{0,10}ticket|customer[^\\s/(;)#|,=!>]{0,12}(?:complaint|support)"
+    tags:
+      - law: GDPR
+
+  - id: Data.Sensitive.UserContentData.NPSorCSATScores
+    name: NPS or CSAT Scores
+    category: User Content Data
+    is_sensitive: False
+    sensitivity: medium
+    patterns:
+      - pattern: "(?i)(?:nps|csat|net[^\\s/(;)#|,=!>]{0,15}promoter)[^\\s/(;)#|,=!>]{0,15}(?:score|feedback)|customer[^\\s/(;)#|,=!>]{0,15}satisfaction"
+    tags:
+      - law: GDPR

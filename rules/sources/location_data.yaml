@@ -1,0 +1,10 @@
+sources:
+  - id: Data.Sensitive.LocationData.PreciseLocation
+    name: Precise Location
+    category: Location Data
+    is_sensitive: False
+    sensitivity: high
+    patterns:
+      - pattern: "(?i)gps[^\\s/(;)#|,=!>]{0,3}(?:location|position|trace)|user[^\\\\s/(;)#|,=!>]{0,5}location|latitude|longitude|geo[^\\s/(;)#|,=!>]{0,5}coordinates"
+    tags:
+      - law: GDPR
