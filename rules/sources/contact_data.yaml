@@ -2,7 +2,7 @@ sources:
   - id: Data.Sensitive.ContactData.Address
     name: Address
     category: Contact Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)(?:home|house|billing|mailing|shipping|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)|(?:pin|zip|postal|metro)[-_[<'. ]{0,2}code|(?:delivery|pickup)[^\\s/(;)#|,=!>]{0,10}(?:location|position)|house[^\\s/(;)#|,=!>]{0,2}(?:number|no)|address[-_.]{0,2}line"
@@ -12,7 +12,7 @@ sources:
   - id: Data.Sensitive.ContactData.EmailAddress
     name: Email Address
     category: Contact Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)email|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email|email[^\\s/(;)#|,=!>]{0,10}(?:address|id)"
@@ -22,7 +22,7 @@ sources:
   - id: Data.Sensitive.ContactData.PhoneNumber
     name: Phone Number
     category: Contact Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)phone|contact[^\\s/(;)#|,=!>]detail|(?:mobile|phone)[^\\s/(;)#|,=!>]{0,10}(?:number|no)|cellphone|(?:primary|secondary)[^\\s/(;)#|,=!>]{0,10}phone|landline|telephone"
@@ -32,7 +32,7 @@ sources:
   - id: Data.Sensitive.ContactData.EmergencyContactDetails
     name: Emergency Contact Details
     category: Contact Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)emergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}(?:number|no|nbr|phone|mobile|mob|landline|email|details|detail|relation)"

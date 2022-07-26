@@ -2,7 +2,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.DateofBirth
     name: Date of Birth
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)"
@@ -12,7 +12,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.FirstName
     name: First Name
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)(?:first|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}name"
@@ -22,7 +22,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.Gender
     name: Gender
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)[^-]male|[^-]female|transgender|genderqueer|genderfluid|omnigender|multigender|polygender|neutrois|pangender|trigender|cisgender|agender|androgyne|androgynous|[^-]gender"
@@ -32,7 +32,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.LastName
     name: Last Name
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)last[^\\s/(;)#|,=!>]{0,5}name|sur(?!geon)[^\\s/(;)#|,=!>]{0,5}name"
@@ -42,7 +42,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.Age
     name: Age
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)[^a-zA-Z-\\s/(;)#|,=!>]age|\\bage\\b|age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}age"
@@ -52,7 +52,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.EmployeeCode
     name: Employee Code
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)(?:employee)[^\\s/(;)#|,=!>]{0,10}(?:no|number|code|id|nbr)"
@@ -62,7 +62,7 @@ sources:
   - id: Data.Sensitive.PersonalIdentification.Photograph
     name: Photograph
     category: Personal Identification
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)(?:profile|employee|user|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}(?:picture|pic|photo)"

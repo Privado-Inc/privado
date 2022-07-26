@@ -2,7 +2,7 @@ sources:
   - id: Data.Sensitive.TechnicalData.CrashData
     name: Crash Data
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)"
@@ -12,7 +12,7 @@ sources:
   - id: Data.Sensitive.TechnicalData.BrowsingHistory
     name: Browsing History
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)browsing[^\\s/(;)#|,=!>]*history|website[^\\s/(;)#|,=!>]*visited|web[^\\s/(;)#|,=!>]*pages[^\\s/(;)#|,=!>]*visited"
@@ -22,7 +22,7 @@ sources:
   - id: Data.Sensitive.TechnicalData.TechnicalDiagnosticData
     name: Technical Diagnostic Data
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)(?:crash|performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)"
@@ -32,7 +32,7 @@ sources:
   - id: Data.Sensitive.TechnicalData.BrowsingTime
     name: Browsing Time
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration)"

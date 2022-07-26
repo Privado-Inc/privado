@@ -2,7 +2,7 @@ sources:
   - id: Data.Sensitive.WorkplaceMonitoringData.VideoRecordings
     name: Video Recordings
     category: Workplace Monitoring Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)(?:video|screen)[^\\s/(;)#|,=!>]{0,10}recording"
@@ -12,7 +12,7 @@ sources:
   - id: Data.Sensitive.WorkplaceMonitoringData.WebsiteFiltering
     name: Website Filtering
     category: Workplace Monitoring Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)(?:website|domain)[^\\s/(;)#|,=!>]{0,3}blocked|(?:whitelisted|blacklisted)[^\\s/(;)#|,=!>]{0,3}site"
@@ -22,7 +22,7 @@ sources:
   - id: Data.Sensitive.WorkplaceMonitoringData.BuildingInformationSystemAccess
     name: Building Information System Access
     category: Workplace Monitoring Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)access[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}number|access[^\\s/(;)#|,=!>]{0,10}card|employee[^\\s/(;)#|,=!>]{0,10}check[^\\s/(;)#|,=!>]{0,10}(?:out|in)|punch[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}time|punch[^\\s/(;)#|,=!>]{0,10}card"
@@ -32,7 +32,7 @@ sources:
   - id: Data.Sensitive.WorkplaceMonitoringData.ApplicationUsage
     name: Application Usage
     category: Workplace Monitoring Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
       - "(?i)app[^\\s/(;)#|,=!>]{0,3}usage|cpu[^\\s/(;)#|,=!>]{0,3}freq"

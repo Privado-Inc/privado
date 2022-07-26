@@ -2,7 +2,7 @@ sources:
   - id: Data.Sensitive.PurchaseData.PurchaseHistory
     name: Purchase History
     category: Purchase Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)purchase[^\\s/(;)#|,=!>]{0,5}(?:history|(?<!site|val)id)|past[^\\s/(;)#|,=!>]{0,5}(?:purchases|purchase)|previous[^\\s/(;)#|,=!>]{0,5}purchase"
@@ -12,7 +12,7 @@ sources:
   - id: Data.Sensitive.PurchaseData.ProductReturnHistory
     name: Product Return History
     category: Purchase Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)return[^\\s/(;)#|,=!>]{0,5}(?:history|product)|cancel[^\\s/(;)#|,=!>]{0,5}(?:order|purchase)|exchange[^\\s/(;)#|,=!>]{0,5}product"
@@ -22,7 +22,7 @@ sources:
   - id: Data.Sensitive.PurchaseData.OrderDetails
     name: Order Details
     category: Purchase Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)order[^\\s/(;)#|,=!>]{0,5}number"
@@ -32,7 +32,7 @@ sources:
   - id: Data.Sensitive.PurchaseData.OfferDetails
     name: Offer Details
     category: Purchase Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
       - "(?i)(?:product|special)[^\\s/(;)#|,=!>]{0,5}offer|offer[^\\s/(;)#|,=!>]{0,5}(?:details|detail)|coupon|cashback|product[^\\s/(;)#|,=!>]{0,5}discount|reward[^\\s/(;)#|,=!>]{0,5}(?:points|point)"
