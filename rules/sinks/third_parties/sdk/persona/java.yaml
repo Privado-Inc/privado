@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Persona
+    name: Persona
+    domains:
+      - persona.ly
+    patterns:
+      - "(?i)(cc.rightangle.(persona)|com.definitelyscala.(scala-js-persona)|com.jccworld.(persona-mock-server)|com.jetdrone.(yoke.examples.mozilla-persona)|com.microsoft.fluentui.(fluentui_persona)|edu.usc.ir.(PersonaExtraction)|gws.(persona)|io.vertigo.(vertigo-persona-api|vertigo-persona-impl)|org.jenkins-ci.plugins.(persona)|org.jsweet.candies.(persona)|org.jvnet.hudson.plugins.(persona)|org.odpi.egeria.(view-services)|org.vaadin.addons.(persona-for-vaadin)).*"
+    tags:

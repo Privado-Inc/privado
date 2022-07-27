@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Kochava
+    name: Kochava
+    domains:
+      - kochava.com
+    patterns:
+      - "(?i)(com.kochava.base.(tracker|tracker-location|tracker-network)|com.kochava.consent.(consent)|com.kochava.core.(core)|com.kochava.entitlements.(entitlements)|com.kochava.tracker.(datapointnetwork|engagement|events|legacyreferrer|tracker)|com.mparticle.(android-kochava-kit)|com.rudderstack.android.integration.(kochava)).*"
+    tags:

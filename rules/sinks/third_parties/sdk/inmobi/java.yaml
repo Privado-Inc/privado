@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Inmobi
+    name: Inmobi
+    domains:
+      - inmobi.com
+    patterns:
+      - "(?i)(ai.meson.sdk.mediation.(inmobi)|com.applovin.mediation.sdks.inmobi.(InMobiSDK)|com.applovin.mediation.(inmobi-adapter)|com.buzzvil.buzzscreen.(sdk-inmobi)|com.cleveradssolutions.(inmobi)|com.consoliads.(InMobiSDK-mediation|inmobi-mediation)|com.daisy.inmobi.(Daisy-Mediation-Inmobi)|com.getui.bx.(inmobi)|com.getui.(bxsdk-inmobi)|com.google.ads.mediation.(inmobi-imageview)|com.inmobi.ares.setest.(sedemo-maven)|com.inmobi.ares.(sample-maven|sedemo-maven|setest-maven)|com.inmobi.hive.test.(hiveunit-mr2)|com.inmobi.monetization.(inmobi-AB-plugin-dfp|inmobi-ads|inmobi-core|inmobi-mediation|inmobi-mopub-plugin)|com.inmobi.omsdk.(inmobi-omsdk)|com.iqzone.thirdparty.(inmobi-cn)|com.mopub.mediation.(inmobi)|com.my.target.mediation.(inmobi)|com.newsdog.(inmobi)|com.vungle.advancedauction.(inmobi)|com.yodo1.mas.mediation.(inmobi)|com.yumimobi.ads.thirdparty.(inmobi)|io.github.sachinnagpal.paise.(inmobi-mopub-plugin)|io.github.sunitsdk.(inmobi)|net.admixer.sdk.mediation.(inmobi)|net.pubnative.android.(inmobi)).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Bugsnag
+    name: Bugsnag
+    domains:
+      - bugsnag.com
+    patterns:
+      - "(?i)(bugsnag-client.(bugsnag-client)|clj-bugsnag.(clj-bugsnag)|co.touchlab.(kermit-bugsnag-test-macosarm64|kermit-bugsnag-test-tvossimulatorarm64|kermit-bugsnag-tvosx64|kermit-bugsnag-watchosx64)|com.bugsnag.(bugsnag|bugsnag-android|bugsnag-android-core|bugsnag-android-gradle-plugin|bugsnag-android-ndk|bugsnag-plugin-android-anr|bugsnag-plugin-android-ndk|bugsnag-plugin-android-okhttp)|com.gitee.chinasoft_ohos.(bugsnag-ohos-core|bugsnag_plugin_ohos_anr|bugsnag_plugin_ohos_ndk)|com.rudderstack.android.integration.(bugsnag)|com.segment.analytics.android.integrations.(bugsnag)|com.segment.analytics.android.(analytics-integration-bugsnag)|org.grails.plugins.(bugsnag)|org.librarysimplified.(org.librarysimplified.bugsnag)|org.webjars.npm.(bugsnag__browser|bugsnag__cuid|bugsnag__js|bugsnag__node|bugsnag__safe-json-stringify)).*"
+    tags:

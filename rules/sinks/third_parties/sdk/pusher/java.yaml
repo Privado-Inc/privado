@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Pusher
+    name: Pusher
+    domains:
+      - pusher.com
+    patterns:
+      - "(?i)(clj-pusher.(clj-pusher)|cljsjs.(pusher)|com.gruelbox.(service-pusher)|com.guestful.module.(guestful.module.pusher-client)|com.jimi.jimitrackorderkit.(JimiOrderCoreKit)|com.jimi.jimivideopusher.(JimiVideoPusher)|com.jimi.(JimiOrderCoreKit)|com.joelafriedman.(clj-pusher)|com.lorddoig.(pusher-clj)|com.pusher.(beams-chatkit|chatkit-android|chatkit-core|java-websocket|push-notifications-android|push-notifications-server-java|pusher-http-java|pusher-java-client|pusher-platform|pusher-platform-android|pusher-platform-core|pusher-rest-java|pusher-websocket-android)|com.ringcentral.pubnub-jtools.(pusher)|common-pusher.(common-pusher)|data.info.bitrich.xchange-stream.(service-pusher)|de.125m125.kt.(ktapi-pusher)|info.bitrich.xchange-stream.(service-pusher|xchange-stream-service-pusher)|org.clojars._ulises.(clj-pusher)|org.clojars.shawnspooner.(clj-pusher)|org.jsweet.candies.(pusher-js)|org.knowm.xchange.(xchange-stream-service-pusher)|org.marvec.(pusher)|org.opendaylight.openflowplugin.applications.(of-switch-config-pusher)|org.opendaylight.openflowplugin.(odl-openflowplugin-app-config-pusher|odl-openflowplugin-app-config-pusher-he)|org.webjars.(angular-pusher)|pusher.(pusher)|systems.comodal.(pusher-websocket-java)|tamasjung.(clj-pusher)).*"
+    tags:

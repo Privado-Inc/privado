@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Admixer
+    name: Admixer
+    domains:
+      - admixer.com
+    patterns:
+      - "(?i)(com.mobon.sdk.(adapter-admixer)|net.admixer.sdk.mediation.(admob-legacy|admob-pre20|chartboost|fyber|huawei|smaato)|net.admixer.sdk.unity.(unity-plugin)|net.admixer.sdk.(SDK|instream|instreamvideo|sdk)).*"
+    tags:

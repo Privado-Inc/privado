@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Stripe
+    name: Stripe
+    domains:
+      - stripe.com
+    patterns:
+      - "(?i)(com.stripe.(stripe-3ds2-android|stripe-android|stripe-java|stripe-scala|stripe-wechatpay)|org.stripe.(stripe.hellow|stripe.payment)|org.webjars.bower.(angular-stripe|angular-stripe-checkout)|org.webjars.bowergithub.bennypowers.(stripe-elements)|org.webjars.bowergithub.morbidick.(stripe-elements)|org.webjars.bowergithub.paperfireelements.(paperfire-stripe)|org.webjars.npm.(github-com-bendrucker-angular-stripe|github-com-vue-stripe-vue-stripe|stripe)).*"
+    tags:

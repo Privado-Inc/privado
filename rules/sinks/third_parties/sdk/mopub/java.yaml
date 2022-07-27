@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mopub
+    name: Mopub
+    domains:
+      - mopub.com
+    patterns:
+      - "(?i)(com.mopub.volley.(mopub-volley)|com.mopub.(mopub-sdk|mopub-sdk-banner|mopub-sdk-base|mopub-sdk-fullscreen|mopub-sdk-interstitial|mopub-sdk-native-static|mopub-sdk-rewardedvideo|omsdk-android)|net.admixer.sdk.mediation-adapter.(mopub)|net.admixer.sdk.mediation.(mopub)|net.admixer.sdk.(MoPub)).*"
+    tags:

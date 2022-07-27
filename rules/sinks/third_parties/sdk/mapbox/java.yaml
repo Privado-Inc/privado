@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mapbox
+    name: Mapbox
+    domains:
+      - mapbox.com
+    patterns:
+      - "(?i)(com.mapbox.mapboxsdk.(mapbox-android-core|mapbox-android-plugin-annotation-v9|mapbox-android-sdk|mapbox-android-services|mapbox-android-telemetry|mapbox-java-services|mapbox-sdk-core|mapbox-sdk-geojson|mapbox-sdk-services|mapbox-sdk-turf)|com.wdtinc.(mapbox-vector-tile)|org.webjars.npm.(mapbox__vector-tile)).*"
+    tags:

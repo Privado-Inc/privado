@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Helpshift
+    name: Helpshift
+    domains:
+      - helpshift.com
+    patterns:
+      - "(?i)(com.helpshift.mvnhello.(mvn-hello-world|mvn-hello-world-support)|com.helpshift.(android-aar|android-en-aar|android-en-lib|android-en-sdk|android-helpshift-aar|android-helpshift-aar-china|android-helpshift-aar-java7|android-helpshift-en-lib|android-helpshift-en-sdk|android-helpshift-lib|android-helpshift-sdk|android-helpshift-support-aar|android-helpshift-support-lib|android-helpshift-support-sdk|android-helpshift-withCampaigns-aar|android-helpshift-withCampaigns-aar-java7|android-helpshift-withCampaigns-lib|android-helpshift-withCampaigns-sdk|android-lib|android-sdk|android-snapshot-aar|android-snapshot-lib|android-snapshot-sdk|helpshift-sdkx|zk-queue)).*"
+    tags:

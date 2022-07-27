@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Huawei.Cloud
+    name: Huawei Cloud
+    domains:
+      - cloud.huawei.com
+    patterns:
+      - "(?i)(com.huawei.agconnect.(agconnect-apms-plugin|agconnect-applinking|agconnect-appmessaging|agconnect-crash)|com.huawei.hms.(awareness|hwid|iap|identity|location|push|videokit-player)|com.huaweicloud.(esdk-obs-java)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Huawei
+    name: Huawei
+    domains:
+      - huawei.com
+    patterns:
+      - "(?i)(com.huawei.agconnect.(agconnect-apms|agconnect-storage)|com.huawei.hms.(appservice|dtm-api|hianalytics|maps)|com.huawei.scenekit.(full-sdk)).*"
+    tags:

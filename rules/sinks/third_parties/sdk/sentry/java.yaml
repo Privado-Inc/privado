@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Sentry
+    name: Sentry
+    domains:
+      - sentry.io
+    patterns:
+      - "(?i)(com.amp.(amp-sentry)|com.avito.android.(sentry)|com.cloudera.cdh.(sentry-core)|com.getsentry.raven.(raven)|io.sentry.(sentry|sentry-android|sentry-android-gradle-plugin|sentry-core|sentry-logback|sentry-spring)|net.kencochrane.raven.(raven)|org.apache.sentry.(sentry-authorization-provider|sentry-core-common|sentry-core-model-db|sentry-provider-common|sentry-provider-db|sentry-provider-file|sentry-service-api)|raven-clj.(raven-clj)).*"
+    tags:

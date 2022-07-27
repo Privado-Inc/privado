@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Leanplum
+    name: Leanplum
+    domains:
+      - leanplum.com
+    patterns:
+      - "(?i)(com.leanplum.segment.(LeanplumIntegration)|com.leanplum.(leanplum-core|leanplum-fcm|leanplum-gcm|leanplum-location|leanplum-mipush|leanplum-monitoring|leanplum-push)|com.mparticle.(android-leanplum-kit)|com.rudderstack.android.integration.(leanplum)|com.segment.analytics.android.(analytics-integration-leanplum)).*"
+    tags:

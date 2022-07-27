@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mulesoft
+    name: Mulesoft
+    domains:
+      - mulesoft.com
+    patterns:
+      - "(?i)(com.mulesoft.cloudhub.(cloudhub-enhanced-logging-api)|com.mulesoft.connectivity.(rest-sdk-commons)|org.mule.connector.(mule-cloudwatch-connector|mule-connector)|org.mule.extensions.(mule-core-modules-parent|mule-ee-core-modules-parent|mule-extensions|mule-extensions-all|mule-extensions-annotations|mule-extensions-api|mule-extensions-api-dsql|mule-extensions-api-parent|mule-extensions-api-persistence|mule-extensions-api-xml-dsl|mule-extensions-archetype|mule-extensions-archetype-it|mule-extensions-archetype-maven-plugin|mule-extensions-archetype-parent|mule-extensions-maven-plugin|mule-extensions-parent|mule-extensions-xml-archetype|mule-modules-parent|mule-modules-xml-parent|mule-request-builder|xml-mule-extensions-archetype)|org.mule.modules.(mule-apikit-module|mule-tracing-module)|org.mule.tools.devkit.(mule-devkit-parent)|org.mule.tools.dmt.(mule-dmt)).*"
+    tags:

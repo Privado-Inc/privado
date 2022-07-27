@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mparticle
+    name: Mparticle
+    domains:
+      - mparticle.com
+    patterns:
+      - "(?i)(com.mparticle.(android-core|android-kit-base|android-tune-kit|smartype-api-android|smartype-api-iosarm64|smartype-api-metadata)|ly.iterative.mparticle.(android-core)).*"
+    tags:

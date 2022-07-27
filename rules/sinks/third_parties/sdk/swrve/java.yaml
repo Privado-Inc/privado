@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Swrve
+    name: Swrve
+    domains:
+      - swrve.com
+    patterns:
+      - "(?i)(com.swrve.mparticle.(mparticle-android-integration-swrve)|com.swrve.sdk.android.(swrve|swrve-amazon|swrve-amazon-beta|swrve-beta|swrve-common|swrve-common-beta|swrve-common-temp|swrve-conversations|swrve-conversations-beta|swrve-firebase|swrve-firebase-beta|swrve-geo|swrve-geo-beta|swrve-google|swrve-huawei|swrve-huawei-beta|swrve-push)|com.swrve.segment.(analytics-android-integration-swrve)|com.swrve.(rate-limited-logger)).*"
+    tags:

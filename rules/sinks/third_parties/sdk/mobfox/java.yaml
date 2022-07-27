@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mobfox
+    name: Mobfox
+    domains:
+      - mobfox.com
+    patterns:
+      - "(?i)(com.adsdk.sdk.(MobFox-Android-SDK)|com.bingzer.android.ads.networks.mobfox.(adnets-mobfox)|com.bingzer.android.ads.(adnets-mobfox)|com.cleveradssolutions.(mobfox)|com.github.mobfox.(mfx-android-admob-adapter|mfx-android-sdk)|com.iqzone.thirdparty.(mobfox)|com.mobfox.sdk.(MobFox-Android-Core)).*"
+    tags:

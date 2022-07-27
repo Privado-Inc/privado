@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Bitly
+    name: Bitly
+    domains:
+      - bitly.com
+    patterns:
+      - "(?i)(clojure-bitly.(clojure-bitly)|com.bitly.(bitlysdk)|com.opsmatters.(bitly-java-api)|hashids.(hashids)|net.swisstech.(bitly-api-client)|net.thauvin.erik.(bitly-shorten)|org.crazyyak.apis.(yak-apis-bitly)|org.danielsz.(clojure-bitly)|org.grails.plugins.(bitly-shortener)|org.tiogasolutions.apis.(tioga-apis-bitly)|org.wso2.carbon.extension.identity.authenticator.(bitly|connector|feature)).*"
+    tags:

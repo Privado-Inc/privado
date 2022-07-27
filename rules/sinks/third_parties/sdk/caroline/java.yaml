@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Caroline
+    name: Caroline
+    domains:
+      - caroline.cloud
+    patterns:
+      - "(?i)(cloud.caroline.(caroline-sdk-internal-js|caroline-sdk-internal-jvm)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Caroline
+    name: Caroline
+    domains:
+      - caroline.tools
+    patterns:
+      - "(?i)(tools.caroline.(caroline-sdk-internal-js)).*"
+    tags:

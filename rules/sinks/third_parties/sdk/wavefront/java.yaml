@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Wavefront
+    name: Wavefront
+    domains:
+      - wavefront.com
+    patterns:
+      - "(?i)(com.wavefront.(java-lib|wavefront-dropwizard-metrics-sdk-java|wavefront-internal-reporter-java|wavefront-opentracing-bundle-java|wavefront-opentracing-sdk-java|wavefront-runtime-sdk-jvm|wavefront-sdk-java|wavefront-spring-boot|wavefront-spring-boot-starter)).*"
+    tags:

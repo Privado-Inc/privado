@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Intercom
+    name: Intercom
+    domains:
+      - intercom.com
+    patterns:
+      - "(?i)(com.appprova.daryl.(intercom)|com.intercom.(android-commons|android-composer|android-composer-gallery|twig)|com.segment.analytics.android.integrations.(intercom)|eu.bolt.(intercom-transformer)|intercom-clj.(intercom-clj)|io.intercom.android.(intercom-sdk-base-transitive|nexus-client-android)|io.intercom.module.(dropwizard-guice)|org.jsweet.candies.(intercomjs--intercom)|org.randombits.confluence.(confluence-intercom)|org.webjars.bower.(angular-intercom|angular-intercom-mini)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Intercom
+    name: Intercom
+    domains:
+      - intercom.io
+    patterns:
+      - "(?i)(io.intercom.android.(intercom-sdk|intercom-sdk-base|intercom-sdk-fcm|intercom-sdk-gcm)|io.intercom.(intercom-java)).*"
+    tags:

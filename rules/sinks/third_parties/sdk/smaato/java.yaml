@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Smaato
+    name: Smaato
+    domains:
+      - smaato.com
+    patterns:
+      - "(?i)(co.adcel.android.(adcel-smaato)|com.adtoapp.android.(adtoapp-smaato)|com.applovin.mediation.sdks.smaato.(smaato)|com.applovin.mediation.(smaato-adapter)|com.cleveradssolutions.(smaato)|com.daisy.smaato.(Daisy-Mediation-Smaato)|com.iqzone.thirdparty.(smaato)|com.smaato.switchgear.(switchgear)|com.tradplusad.(tradplus-smaato)).*"
+    tags:

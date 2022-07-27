@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Unity
+    name: Unity
+    domains:
+      - unity.com
+    patterns:
+      - "(?i)(com.unity3d.ads.(unity-ads)|com.mopub.mediation.(unityads)).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Flurry
+    name: Flurry
+    domains:
+      - flurry.com
+    patterns:
+      - "(?i)(com.flurry.android.(ads|analytics)|com.mobidevelop.robovm.(robopods-flurry-ios-ads)|org.robovm.(robopods-flurry-android-ads|robopods-flurry-ios-ads)).*"
+    tags:

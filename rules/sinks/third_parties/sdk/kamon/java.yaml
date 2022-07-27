@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Kamon
+    name: Kamon
+    domains:
+      - kamon.io
+    patterns:
+      - "(?i)(io.kamon.(kamon-akka-http|kamon-core|kamon-prometheus|kamon-status-page|kanela-agent)).*"
+    tags:

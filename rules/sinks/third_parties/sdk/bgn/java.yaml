@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Bgn
+    name: Bgn
+    domains:
+      - bgn.mobi
+    patterns:
+      - "(?i)(com.bgnmobi.anrtracker.(ANRTracker)|com.bgnmobi.easyfeedback.(EasyFeedback)|com.bgnmobi.sdk.(ads-applovin-max|analytics|core|purchase-module-billingclient|purchases|sdk-bom|sdp|webservice)).*"
+    tags:

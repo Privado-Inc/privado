@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Startapp
+    name: Startapp
+    domains:
+      - startapp.com
+    patterns:
+      - "(?i)(com.startapp.(admob-mediation|common|consent-dialog|consent-dialog-androidx|consent-dialog-impl|consent-dialog-support|inapp-sdk-interstitial-only|inapp-sdk-native-interstitial|ironsource-mediation|mopub-mediation|soda-insights-sdk|truenet)).*"
+    tags:

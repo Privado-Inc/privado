@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mediafire
+    name: Mediafire
+    domains:
+      - mediafire.org
+    patterns:
+      - "(?i)(org.sapia.(sapia_mediafire_plugin|sapia_mediafire_plugin_core|sapia_mediafire_plugin_parent)).*"
+    tags:

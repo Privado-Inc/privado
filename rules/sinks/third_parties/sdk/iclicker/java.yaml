@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Iclicker
+    name: Iclicker
+    domains:
+      - iclicker.com
+    patterns:
+      - "(?i)(com.iclicker.(iclicker-library-api-layer|iclicker-library-api-model|iclicker-library-client|iclicker-library-core|iclicker-library-data-layer|iclicker-library-repository-layer|iclicker-library-service-layer|iclicker-scheduler-messaging)|com.reef.(iclicker-request-client)).*"
+    tags:

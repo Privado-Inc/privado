@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Appboy
+    name: Appboy
+    domains:
+      - appboy.com
+    patterns:
+      - "(?i)(com.appboy.(android-sdk-base|android-sdk-ui|appboy-segment-integration)|com.mparticle.(android-appboy-kit)).*"
+    tags:

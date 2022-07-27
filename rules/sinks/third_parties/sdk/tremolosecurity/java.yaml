@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Tremolosecurity
+    name: Tremolosecurity
+    domains:
+      - tremolosecurity.com
+    patterns:
+      - "(?i)(com.tremolosecurity.unison.(unison-lastmile-sdk|unison-sdk)).*"
+    tags:

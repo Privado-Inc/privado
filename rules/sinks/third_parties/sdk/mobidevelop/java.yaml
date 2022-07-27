@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mobidevelop
+    name: Mobidevelop
+    domains:
+      - mobidevelop.com
+    patterns:
+      - "(?i)(com.mobidevelop.robovm.(robopods-appmetrica-ios|robopods-appmetrica-parent|robopods-facebook-ios|robopods-facebook-ios-core|robopods-google-mobile-ads-ios)).*"
+    tags:

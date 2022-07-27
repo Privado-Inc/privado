@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Tapstream
+    name: Tapstream
+    domains:
+      - tapstream.com
+    patterns:
+      - "(?i)(com.segment.analytics.android.integrations.(tapstream)|com.segment.analytics.android.(analytics-integration-tapstream)|com.tapstream.sdk.(segment-integration|tapstream-android|tapstream-core|tapstream-parent)|com.tapstream.(ga4j)|io.segment.analytics.android.(tapstream)).*"
+    tags:

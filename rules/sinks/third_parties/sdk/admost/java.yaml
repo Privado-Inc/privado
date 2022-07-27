@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Admost
+    name: Admost
+    domains:
+      - admost.com
+    patterns:
+      - "(?i)(com.admost.sdk.(adcolony|admost|amr|applovin|chartboost|facebook|inmobi|mintegral|mobfox-adapter|mopub-adapter|tapjoy|unity)).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Verizon
+    name: Verizon
+    domains:
+      - verizon.com
+    patterns:
+      - "(?i)(com.verizon.ads.(android-vas-core|android-vas-inline-placement|android-vas-interstitial-placement|android-vas-native-placement|android-vas-omsdk|android-vas-open-rtb-native-controller|android-vas-standard-edition|android-vas-support|android-vas-vast-controller|android-vas-verizon-native-controller|android-vas-verizon-ssp-waterfall-provider|android-vas-video-player|android-vas-web-controller|android-vas-web-view)).*"
+    tags:

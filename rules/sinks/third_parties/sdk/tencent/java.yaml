@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Tencent
+    name: Tencent
+    domains:
+      - tencent.com
+    patterns:
+      - "(?i)(com.tencent.mm.opensdk.(wechat-sdk-android-without-mta)|com.tencentcloudapi.(tencentcloud-sdk-java)).*"
+    tags:

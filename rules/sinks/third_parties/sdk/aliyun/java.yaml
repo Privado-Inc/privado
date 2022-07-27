@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Aliyun
+    name: Aliyun
+    domains:
+      - aliyun.com
+    patterns:
+      - "(?i)(com.aliyun.datahub.(aliyun-sdk-datahub)|com.aliyun.dpa.(oss-android-sdk)|com.aliyun.mns.(aliyun-sdk-mns)|com.aliyun.oas.(aliyun-oas)|com.aliyun.odps.(cupid-sdk|odps-sdk-commons|odps-sdk-core)|com.aliyun.openservices.(aliyun-log-android-sdk)|com.aliyun.oss.(aliyun-sdk-oss)|com.aliyun.(alibaba-dingtalk-service-sdk|aliyun-java-sdk-airec|aliyun-java-sdk-ccc|aliyun-java-sdk-cdn|aliyun-java-sdk-cloudapi|aliyun-java-sdk-core|aliyun-java-sdk-core-v5|aliyun-java-sdk-dm|aliyun-java-sdk-dysmsapi|aliyun-java-sdk-ecs|aliyun-java-sdk-edas|aliyun-java-sdk-green|aliyun-java-sdk-ram|aliyun-java-sdk-rds|aliyun-java-sdk-ros|aliyun-java-sdk-slb|aliyun-java-sdk-sts|aliyun-java-sdk-vpc)).*"
+    tags:

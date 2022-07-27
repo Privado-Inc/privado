@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Att
+    name: Att
+    domains:
+      - att.com
+    patterns:
+      - "(?i)(com.att.ajsc.(sdk-java-interceptor|sdk-java-utility)).*"
+    tags:

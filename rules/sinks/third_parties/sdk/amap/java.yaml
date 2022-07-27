@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amap
+    name: Amap
+    domains:
+      - amap.com
+    patterns:
+      - "(?i)(com.amap.api.(3dmap|3dmapgp|location|location-aar|locgp|map2d|map3d|map3d-native|navi|navi-3dmap|navi-3dmap-aar|navi-native|navi-solo|navi-solo-native|navi-test-all|poisearchmodule|search|searchgp|tripmodule)|com.amap.aplugin.(com.amap.aplugin.gradle.plugin)).*"
+    tags:

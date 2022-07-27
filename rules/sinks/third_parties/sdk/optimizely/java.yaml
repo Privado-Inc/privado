@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Optimizely
+    name: Optimizely
+    domains:
+      - optimizely.com
+    patterns:
+      - "(?i)(com.mparticle.(android-optimizely-kit)|com.optimizely.ab.(android-sdk|android-sdk-datafile-handler|android-sdk-event-handler|android-sdk-shared|android-sdk-user-experiment-record|android-sdk-user-profile|core-api|core-httpclient-impl|httpclient)|com.patxi.(poetimizely-maven-plugin)|com.rudderstack.android.integration.(optimizely)|com.segment.analytics.android.integrations.(optimizely|optimizelyx)|org.webjars.bower.(ng-optimizely)).*"
+    tags:

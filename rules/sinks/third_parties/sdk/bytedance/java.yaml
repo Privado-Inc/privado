@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Bytedance
+    name: Bytedance
+    domains:
+      - bytedance.com
+    patterns:
+      - "(?i)(com.bytedance.sdk.(pangle-sdk)|com.bytedance.ttgame.(gsdk_wrapper_com.bytedance.ug.sdk_PangolinSDK-double|mio_sdk_base|qq_sdk|rocket_sdk_CnToutiaoRelease|rocket_sdk_I18nToutiaoRelease)).*"
+    tags:

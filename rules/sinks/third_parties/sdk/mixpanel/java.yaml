@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mixpanel
+    name: Mixpanel
+    domains:
+      - mixpanel.com
+    patterns:
+      - "(?i)(com.midtrans.(analytics)|com.mixpanel.android.(annotations|annotations-compiler|mixpanel-android|mixpanel-android-experimental)|com.mixpanel.(mixpanel-java)|com.nimroddayan.buildmetrics.(buildmetrics-mixpanel)|com.segment.analytics.android.integrations.(mixpanel)|com.segment.analytics.android.(analytics-integration-mixpanel)|com.winfooz.(winanalytics)|io.segment.analytics.android.(mixpanel)|raywillig.(mixpanel)).*"
+    tags:

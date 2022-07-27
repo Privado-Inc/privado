@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Telegram
+    name: Telegram
+    domains:
+      - telegram.org
+    patterns:
+      - "(?i)(it.rebase.(rebot-jboss-books-service|rebot-parent|rebot-sed-plugin|rebot-telegram-api|rebot-telegram-api-emojis|rebot-telegram-api-objects|rebot-telegram-api-parent|rebot-telegram-api-spi|rebot-telegram-bot|rebot-welcome-message-plugin)|org.telegram.(Bots|passport|telegramapi|telegrambots|telegrambots-abilities|telegrambots-meta|telegrambots-spring-boot-starter|telegrambotsextensions|telegraph|telegraph-meta)).*"
+    tags:

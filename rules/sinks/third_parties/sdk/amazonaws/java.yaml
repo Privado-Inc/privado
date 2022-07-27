@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amazonaws
+    name: Amazonaws
+    domains:
+      - amazonaws.com
+    patterns:
+      - "(?i)(com.amazonaws.(aws-android-sdk-apigateway-core|aws-android-sdk-appsync-runtime|aws-android-sdk-auth-core|aws-android-sdk-cognito|aws-android-sdk-cognitoauth|aws-android-sdk-mobile-client|aws-java-sdk-acm|aws-java-sdk-athena|aws-java-sdk-batch|aws-java-sdk-bom|aws-java-sdk-cloudsearch|aws-java-sdk-codedeploy|aws-java-sdk-cognitoidp|aws-java-sdk-config|aws-java-sdk-devicefarm|aws-java-sdk-elasticsearch|aws-java-sdk-events|aws-java-sdk-glacier|aws-java-sdk-glue|aws-java-sdk-osgi|aws-java-sdk-redshift|aws-java-sdk-rekognition|aws-java-sdk-simpleworkflow|aws-java-sdk-stepfunctions|aws-java-sdk-xray|aws-xray-recorder-sdk-aws-sdk-v2)).*"
+    tags:

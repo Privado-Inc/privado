@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Onesignal
+    name: Onesignal
+    domains:
+      - onesignal.com
+    patterns:
+      - "(?i)(com.currencyfair.(onesignal)|com.github.fleker.(onesignal)|com.github.onesignaliran.(OneSignalIran)|com.onesignal.androidsdk.onesignal-gradle-plugin.(com.onesignal.androidsdk.onesignal-gradle-plugin.gradle.plugin)|com.onesignal.(OneSignal)|gradle.plugin.com.onesignal.(onesignal-gradle-plugin)|io.github.cactacea.addons.(onesignal)|io.github.jklingsporn.(vertx-push-onesignal)|ir.daal.(OneSignal)|org.webjars.npm.(github-com-OneSignal-emoji-picker)).*"
+    tags:

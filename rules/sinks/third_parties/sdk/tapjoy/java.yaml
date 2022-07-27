@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Tapjoy
+    name: Tapjoy
+    domains:
+      - tapjoy.com
+    patterns:
+      - "(?i)(co.adcel.android.(adcel-tapjoy)|com.adtiming.adapters.om.(tapjoy)|com.adtiming.adapters.(tapjoy)|com.adtoapp.android.(adtoapp-tapjoy)|com.cleveradssolutions.(tapjoy)|com.consoliads.(tapjoy-mediation)|com.mi.dev.mint.(tapjoy|tapjoy-adapter)|com.mopub.mediation.(tapjoy)|com.openmediation.adapters.(tapjoy)|com.tapjoy.(tapjoy-android-sdk)|com.tradplusad.(tradplus-tapjoy)|com.yandex.ads.mediation.(mobileads-tapjoy)|com.yodo1.mas.mediation.(tapjoy)|com.yomob.(TGSDKADTapjoy)|com.yumimobi.ads.mediation.(tapjoy)|net.pubnative.android.(tapjoy)).*"
+    tags:

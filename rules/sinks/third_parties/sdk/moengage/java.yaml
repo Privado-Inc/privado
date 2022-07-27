@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Moengage
+    name: Moengage
+    domains:
+      - moengage.com
+    patterns:
+      - "(?i)(com.moengage.tools-android-sdk.(com.moengage.tools-android-sdk.gradle.plugin)|com.moengage.(addon-inbox|addon-messaging|addon-realtime-trigger|android-dependency-catalog|android-dependency-catalog-internal|android-dependency-internal|cards|condition-evaluator|core|dummy-java|dummy-wrapper|geofence|hms-pushkit|inapp|inbox-core|inbox-ui|integration-verifier|logger|loggerlib|moe-android-sdk|moe-core|moe-inapp-lib|moe-location-lib|moe-push-baidu|moe-push-base|moe-push-firebase|moe-push-gcm|moe-push-mi|moengage-integration|moengage-segment-integration|moengagesdk|plugin-base|plugin-base-inbox|push-amp|push-amp-mi|push-amp-plus|pushbase|realtime-trigger|rich-notification|security|unity-wrapper)|com.rudderstack.android.integration.(moengage)|com.segment.analytics.android.integrations.(moengage)|com.segment.analytics.android.(analytics-integration-moengage)|gradle.plugin.MoEngage-Gradle-Plugin.(tools-android-sdk)).*"
+    tags:

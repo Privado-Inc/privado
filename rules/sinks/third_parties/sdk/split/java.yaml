@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Split
+    name: Split
+    domains:
+      - split.io
+    patterns:
+      - "(?i)(io.split.api.(java-api)|io.split.client.(java-client|java-client-parent|java-client-testing|pluggable-storage)|io.split.qosrunner.(qosrunner)|io.split.(android-client|fastly-api-java|qosdtos|qosrunner)).*"
+    tags:

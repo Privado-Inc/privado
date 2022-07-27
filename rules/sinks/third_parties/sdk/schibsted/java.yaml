@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Schibsted
+    name: Schibsted
+    domains:
+      - schibsted.com
+    patterns:
+      - "(?i)(com.schibsted.account.(account-sdk-android-common|account-sdk-android-core|account-sdk-android-smartlock|account-sdk-android-ui|account-sdk-android-web|account-sdk-java)|com.schibsted.jofogas.jfgtestlibrary.(jfgtestlibrary)|com.schibsted.security.(strongbox-sdk|strongbox-spring-boot-starter)|com.schibsted.spain.(api-down-checker|barista|generator|parallax-layer-layout|retroswagger)|com.schibsted.spt.data.(jslt)|schibsted.gradle-init.(schibsted.gradle-init.gradle.plugin)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Schibsted
+    name: Schibsted
+    domains:
+      - schibsted.io
+    patterns:
+      - "(?i)(io.schibsted.scrooge-gradle-plugin.(io.schibsted.scrooge-gradle-plugin.gradle.plugin)|io.schibsted.(scrooge-gradle-plugin)).*"
+    tags:

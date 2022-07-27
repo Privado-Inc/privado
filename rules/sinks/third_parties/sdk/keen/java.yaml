@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Keen
+    name: Keen
+    domains:
+      - keen.io
+    patterns:
+      - "(?i)(com.treasuredata.(keen-client-java-core)|io.keen.(keen-client-api-android|keen-client-api-java|keen-client-api-query|keen-client-java-core|keenclient-scala)|org.vaadin.keen.charts.(keen-charts)|org.webjars.npm.(keen-js|keen-tracking)).*"
+    tags:

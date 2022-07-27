@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Vmware
+    name: Vmware
+    domains:
+      - vmware.com
+    patterns:
+      - "(?i)(com.vmware.admiral.(admiral-adapter-common|admiral-adapter-docker|admiral-adapter-registry|admiral-common|admiral-common-test|admiral-compute|admiral-request)|com.vmware.card-connectors.(connectors-common|connectors-common-test|connectors-config|connectors-test|core|core-test)|com.vmware.dcp.(dcp-common)|com.vmware.identity.commons.(samltoken)|com.vmware.identity.idm.(vmware-identity-idm-client|vmware-identity-idm-interface)|com.vmware.identity.oidc.(openidconnect-common)|com.vmware.identity.rest.afd.(vmware-identity-rest-afd-client|vmware-identity-rest-afd-common)|com.vmware.identity.rest.core.(vmware-identity-rest-core-client|vmware-identity-rest-core-common|vmware-identity-rest-core-server)|com.vmware.identity.rest.idm.(vmware-identity-rest-idm-client|vmware-identity-rest-idm-common)|com.vmware.identity.(admin-interfaces|client-domain-controller-cache|diagnostics|openidconnect-common|samltoken|vmware-endpoint-certificate-store)|com.vmware.jsonteng.(jsonteng)|com.vmware.ovsdb.(json-rpc)|com.vmware.photon.controller.(photon-adapter-util|photon-aws-adapter|photon-azure-adapter|photon-model|photon-model-security|photon-model-tasks|photon-vsphere-adapter)|com.vmware.vcloud.(vcd-api-bindings-java|vcd-openapi-schemas|vcd-xjc-plugins)|com.vmware.vmafd.(client-domain-controller-cache|vmware-endpoint-certificate-store)|com.vmware.vmdir.rest.(vmware-directory-rest-client|vmware-directory-rest-common)|com.vmware.xenon.(xenon-common|xenon-swagger|xenon-ui)|com.vmware.(vijava)|net.java.dev.vcc.thirdparty.(vi-api)|org.jclouds.api.(vcloud|vcloudexpress)|org.jclouds.labs.(vcloud-director)|org.opennms.features.topology.plugins.topo.(org.opennms.features.topology.plugins.topo.vmware|vmware)|org.opennms.osgi.features.topology.(opennms-topology-runtime-vmware)|org.opennms.(opennms-vmware)).*"
+    tags:
