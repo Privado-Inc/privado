@@ -2,25 +2,25 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns: 
-      - "(?i)(?:log|timber|logger|logging).(?:error|wtf|fatal|e|w|f).*"
+      - "(?i)(?:log|timber|logger).*(?:error|wtf|fatal|e|w|f).*"
     tags:
   
   - id: Leakages.Log.Warn
     name: Log Warn
     patterns: 
-      - "(?i)(?:log|timber|logger).(?:warn|w).*"
+      - "(?i)(?:log|timber|logger).*(?:warn|w).*"
     tags:
   
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns: 
-      - "(?i)(?:log|timber|logger).(?:debug|verbose|trace|d|v|t).*"
+      - "(?i)(?:log|timber|logger).*(?:debug|verbose|trace|d|v|t).*"
     tags:
   
   - id: Leakages.Log.Info
     name: Log Info
     patterns: 
-      - "(?i)(?:log|timber|logger).(?:info|out|i).*"
+      - "(?i)(?:log|timber|logger).*(?:info|out|i).*"
     tags:
 
   - id: Leakages.Log.Console
