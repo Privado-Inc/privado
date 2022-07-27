@@ -2,49 +2,49 @@ sources:
   - id: Data.Sensitive.AccountData.AccountID
     name: Account ID
     category: Account Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)(?:account|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,4}(?:id|code)"
+      - "(?i)(?:account|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,4}(?:id|code)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.AccountData.SocialMediaLoginIdentifier
     name: Social Media Login Identifier
     category: Account Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)(?:facebook|twitter|instagram|linkedin|pinterest|behance|dribble)[^\\s/(;)#|,=!>]{0,2}(?:id|account|username)"
+      - "(?i)(?:facebook|twitter|instagram|linkedin|pinterest|behance|dribble)[^\\s/(;)#|,=!>]{0,2}(?:id|account|username)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.AccountData.LanguagePreferences
     name: Language Preferences
     sensitivity: low
     category: Account Data
-    is_sensitive: False
+    isSensitive: False
     patterns:
-      - pattern: "(?i)language[^\\s/(;)#|,=!>]{0,5}(?:preference|select)|(?:user|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}language"
+      - "(?i)language[^\\s/(;)#|,=!>]{0,5}(?:preference|select)|(?:user|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}language"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.AccountData.AccountPassword
     name: Account Password
     category: Account Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)(?:user|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]*(?:password|passwrd)|password|passwrd"
+      - "(?i)(?:user|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]*(?:password|passwrd)|password|passwrd"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.AccountData.AccountName
     name: Account Name
     category: Account Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)(?:account|customer|person|user|organization|company)[^\\s/(;)#|,=!>]{0,8}name"
+      - "(?i)(?:account|customer|person|user|organization|company)[^\\s/(;)#|,=!>]{0,8}name"
     tags:
-      - law: GDPR
+      law: GDPR
