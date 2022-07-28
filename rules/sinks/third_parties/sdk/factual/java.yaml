@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Factual
     name: Factual
     domains:
-      - factual.com
+      - "factual.com"
     patterns:
-      - "(?i)(com.factual.(factual-java-driver)).*"
+      - "(?i)(com[.]factual[.](factual-java-driver)).*"
     tags:

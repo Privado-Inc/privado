@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Nyris
     name: Nyris
     domains:
-      - nyris.io
+      - "nyris.io"
     patterns:
-      - "(?i)(io.nyris.(sdk)).*"
+      - "(?i)(io[.]nyris[.](sdk)).*"
     tags:

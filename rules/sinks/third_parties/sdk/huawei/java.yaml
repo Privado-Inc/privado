@@ -7,15 +7,15 @@ sinks:
   - id: ThirdParties.SDK.Huawei.Cloud
     name: Huawei Cloud
     domains:
-      - cloud.huawei.com
+      - "cloud.huawei.com"
     patterns:
-      - "(?i)(com.huawei.agconnect.(agconnect-apms-plugin|agconnect-applinking|agconnect-appmessaging|agconnect-crash)|com.huawei.hms.(awareness|hwid|iap|identity|location|push|videokit-player)|com.huaweicloud.(esdk-obs-java)).*"
+      - "(?i)(com[.]huawei[.]agconnect[.](agconnect-apms-plugin|agconnect-applinking|agconnect-appmessaging|agconnect-crash)|com[.]huawei[.]hms[.](awareness|hwid|iap|identity|location|push|videokit-player)|com[.]huaweicloud[.](esdk-obs-java)).*"
     tags:
 
   - id: ThirdParties.SDK.Huawei
     name: Huawei
     domains:
-      - huawei.com
+      - "huawei.com"
     patterns:
-      - "(?i)(com.huawei.agconnect.(agconnect-apms|agconnect-storage)|com.huawei.hms.(appservice|dtm-api|hianalytics|maps)|com.huawei.scenekit.(full-sdk)).*"
+      - "(?i)(com[.]huawei[.]agconnect[.](agconnect-apms|agconnect-storage)|com[.]huawei[.]hms[.](appservice|dtm-api|hianalytics|maps)|com[.]huawei[.]scenekit[.](full-sdk)).*"
     tags:

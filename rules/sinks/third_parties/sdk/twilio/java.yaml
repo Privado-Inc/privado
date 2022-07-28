@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Twilio
     name: Twilio
     domains:
-      - twilio.com
+      - "twilio.com"
     patterns:
-      - "(?i)(com.twilio.sdk.(twilio|twilio-java-sdk)).*"
+      - "(?i)(com[.]twilio[.]sdk[.](twilio|twilio-java-sdk)).*"
     tags:

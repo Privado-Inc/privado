@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Roboconf
     name: Roboconf
     domains:
-      - roboconf.net
+      - "roboconf.net"
     patterns:
-      - "(?i)(net.roboconf.(roboconf-iaas-vmware)).*"
+      - "(?i)(net[.]roboconf[.](roboconf-iaas-vmware)).*"
     tags:

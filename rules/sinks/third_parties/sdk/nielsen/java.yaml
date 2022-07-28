@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Nielsen
     name: Nielsen
     domains:
-      - nielsen.com
+      - "nielsen.com"
     patterns:
-      - "(?i)(com.segment.analytics.android.integrations.(nielsen-dtvr|nielsendcr)|org.renjin.cran.(DCL|apc)).*"
+      - "(?i)(com[.]segment[.]analytics[.]android[.]integrations[.](nielsen-dtvr|nielsendcr)|org[.]renjin[.]cran[.](DCL|apc)).*"
     tags:

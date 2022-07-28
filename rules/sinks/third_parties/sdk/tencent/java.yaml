@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Tencent
     name: Tencent
     domains:
-      - tencent.com
+      - "tencent.com"
     patterns:
-      - "(?i)(com.tencent.mm.opensdk.(wechat-sdk-android-without-mta)|com.tencentcloudapi.(tencentcloud-sdk-java)).*"
+      - "(?i)(com[.]tencent[.]mm[.]opensdk[.](wechat-sdk-android-without-mta)|com[.]tencentcloudapi[.](tencentcloud-sdk-java)).*"
     tags:

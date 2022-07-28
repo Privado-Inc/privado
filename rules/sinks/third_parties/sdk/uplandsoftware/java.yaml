@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Uplandsoftware
     name: Uplandsoftware
     domains:
-      - uplandsoftware.com
+      - "uplandsoftware.com"
     patterns:
-      - "(?i)(com.mparticle.(android-localytics-kit)|com.onliquid.(liquid-mixpanel)|com.segment.analytics.android.integrations.(localytics)|com.segment.analytics.android.(analytics-integration-localytics|localytics)|io.segment.analytics.android.(localytics)).*"
+      - "(?i)(com[.]mparticle[.](android-localytics-kit)|com[.]onliquid[.](liquid-mixpanel)|com[.]segment[.]analytics[.]android[.]integrations[.](localytics)|com[.]segment[.]analytics[.]android[.](analytics-integration-localytics|localytics)|io[.]segment[.]analytics[.]android[.](localytics)).*"
     tags:

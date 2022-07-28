@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Qiniu
     name: Qiniu
     domains:
-      - qiniu.com
+      - "qiniu.com"
     patterns:
-      - "(?i)(com.qiniu.(qiniu-java-sdk)).*"
+      - "(?i)(com[.]qiniu[.](qiniu-java-sdk)).*"
     tags:

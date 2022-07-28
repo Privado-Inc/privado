@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Tapsell
     name: Tapsell
     domains:
-      - tapsell.ir
+      - "tapsell.ir"
     patterns:
-      - "(?i)(ir.tapsell.sdk.(tapsell-sdk-android)).*"
+      - "(?i)(ir[.]tapsell[.]sdk[.](tapsell-sdk-android)).*"
     tags:

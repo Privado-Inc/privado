@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Thinkingdata
     name: Thinkingdata
     domains:
-      - thinkingdata.cn
+      - "thinkingdata.cn"
     patterns:
-      - "(?i)(cn.thinkingdata.android.(ThinkingAnalyticsRuntime|ThinkingAnalyticsSDK|android-gradle-plugin|android-gradle-plugin2)|cn.thinkingdata.ta.(integration-common-api|logbus-custom-interceptor)|cn.thinkingdata.(ThinkingGameSDK|kafka-common|thinkingdatasdk)).*"
+      - "(?i)(cn[.]thinkingdata[.]android[.](ThinkingAnalyticsRuntime|ThinkingAnalyticsSDK|android-gradle-plugin|android-gradle-plugin2)|cn[.]thinkingdata[.]ta[.](integration-common-api|logbus-custom-interceptor)|cn[.]thinkingdata[.](ThinkingGameSDK|kafka-common|thinkingdatasdk)).*"
     tags:

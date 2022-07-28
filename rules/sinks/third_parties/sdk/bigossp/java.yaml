@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Bigossp
     name: Bigossp
     domains:
-      - bigossp.com
+      - "bigossp.com"
     patterns:
-      - "(?i)(com.bigossp.(bigo-ads)).*"
+      - "(?i)(com[.]bigossp[.](bigo-ads)).*"
     tags:

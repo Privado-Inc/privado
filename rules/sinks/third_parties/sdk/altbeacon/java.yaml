@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Altbeacon
     name: Altbeacon
     domains:
-      - altbeacon.org
+      - "altbeacon.org"
     patterns:
-      - "(?i)(org.altbeacon.(android-beacon-library)).*"
+      - "(?i)(org[.]altbeacon[.](android-beacon-library)).*"
     tags:

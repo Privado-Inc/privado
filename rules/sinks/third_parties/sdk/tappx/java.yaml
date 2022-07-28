@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Tappx
     name: Tappx
     domains:
-      - tappx.com
+      - "tappx.com"
     patterns:
-      - "(?i)(com.tappx.sdk.android.(omsdk|tappx-sdk)).*"
+      - "(?i)(com[.]tappx[.]sdk[.]android[.](omsdk|tappx-sdk)).*"
     tags:

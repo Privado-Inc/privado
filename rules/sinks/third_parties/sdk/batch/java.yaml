@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Batch
     name: Batch
     domains:
-      - batch.com
+      - "batch.com"
     patterns:
-      - "(?i)(com.batch.android.(batch-sdk)).*"
+      - "(?i)(com[.]batch[.]android[.](batch-sdk)).*"
     tags:

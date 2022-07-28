@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Treasuredata
     name: Treasuredata
     domains:
-      - treasuredata.com
+      - "treasuredata.com"
     patterns:
-      - "(?i)(com.treasuredata.bigdam.(log)|com.treasuredata.client.(td-client)|com.treasuredata.embulk.plugins.(embulk-output-td)|com.treasuredata.(td-android-sdk|td-client|td-import|td-logger|underwrap)).*"
+      - "(?i)(com[.]treasuredata[.]bigdam[.](log)|com[.]treasuredata[.]client[.](td-client)|com[.]treasuredata[.]embulk[.]plugins[.](embulk-output-td)|com[.]treasuredata[.](td-android-sdk|td-client|td-import|td-logger|underwrap)).*"
     tags:

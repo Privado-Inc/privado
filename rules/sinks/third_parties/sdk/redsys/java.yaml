@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Redsys
     name: Redsys
     domains:
-      - redsys.es
+      - "redsys.es"
     patterns:
-      - "(?i)(com.miguelangeljulvez.easyredsys.(easyredsys-client|easyredsys-server)|es.voghdev.redsysonandroid.(library)|redsys-clj.(redsys-clj)).*"
+      - "(?i)(com[.]miguelangeljulvez[.]easyredsys[.](easyredsys-client|easyredsys-server)|es[.]voghdev[.]redsysonandroid[.](library)|redsys-clj[.](redsys-clj)).*"
     tags:

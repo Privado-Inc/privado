@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Alipay
     name: Alipay
     domains:
-      - alipay.com
+      - "alipay.com"
     patterns:
-      - "(?i)(cn.com.antcloud.api.(antcloud-api-sdk)|com.alipay.sdk.(alipay-sdk-java)).*"
+      - "(?i)(cn[.]com[.]antcloud[.]api[.](antcloud-api-sdk)|com[.]alipay[.]sdk[.](alipay-sdk-java)).*"
     tags:

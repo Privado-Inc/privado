@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Loggly
     name: Loggly
     domains:
-      - loggly.com
+      - "loggly.com"
     patterns:
-      - "(?i)(biz.neustar.(loggly)|com.commercehub.dropwizard.(dropwizard-logging-loggly)|com.jamierf.dropwizard.(dropwizard-logging-loggly)|io.clickhandler.(loggly-gwt)|net.lightbody.able.(able-loggly)|org.clojars.promotably.(proggly)|org.mule.modules.(mule-module-loggly)).*"
+      - "(?i)(biz[.]neustar[.](loggly)|com[.]commercehub[.]dropwizard[.](dropwizard-logging-loggly)|com[.]jamierf[.]dropwizard[.](dropwizard-logging-loggly)|io[.]clickhandler[.](loggly-gwt)|net[.]lightbody[.]able[.](able-loggly)|org[.]clojars[.]promotably[.](proggly)|org[.]mule[.]modules[.](mule-module-loggly)).*"
     tags:

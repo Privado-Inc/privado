@@ -7,15 +7,15 @@ sinks:
   - id: ThirdParties.SDK.Matomo
     name: Matomo
     domains:
-      - matomo.org
+      - "matomo.org"
     patterns:
-      - "(?i)(ch.rasc.(piwik-tracking)|com.eclipsesource.tabris.(tabris-tracking)|com.gitee.chinasoft_ohos.(matomo-sdk-ohos)|com.synaptix.analytics.(piwik-client-java)|org.codehaus.sonar-plugins.(sonar-piwik-plugin)|org.jenkins-ci.plugins.(piwikanalytics)|org.jvnet.hudson.plugins.(piwikanalytics)|org.matomo.sdk.(tracker)|org.opencastproject.(matterhorn-engage-theodul-plugin-custom-piwik|opencast-engage-theodul-plugin-custom-matomo)|org.piwik.java.tracking.(matomo-java-tracker|piwik-java-tracker)|org.piwik.(piwik-java-tracking)|org.webjars.bower.(angulartics-piwik)|org.webjars.bowergithub.angulartics.(angulartics-piwik)|org.webjars.npm.(github-com-angulartics-angulartics-piwik|matomo-tracker)|org.xwiki.contrib.(application-piwik-extension)|pro.piwik.sdk.(piwik-sdk)|se.vgregion.oppna-program-piwik-tracking.(oppna-program-piwik-tracking-core-bc-composite-types)).*"
+      - "(?i)(ch[.]rasc[.](piwik-tracking)|com[.]eclipsesource[.]tabris[.](tabris-tracking)|com[.]gitee[.]chinasoft_ohos[.](matomo-sdk-ohos)|com[.]synaptix[.]analytics[.](piwik-client-java)|org[.]codehaus[.]sonar-plugins[.](sonar-piwik-plugin)|org[.]jenkins-ci[.]plugins[.](piwikanalytics)|org[.]jvnet[.]hudson[.]plugins[.](piwikanalytics)|org[.]matomo[.]sdk[.](tracker)|org[.]opencastproject[.](matterhorn-engage-theodul-plugin-custom-piwik|opencast-engage-theodul-plugin-custom-matomo)|org[.]piwik[.]java[.]tracking[.](matomo-java-tracker|piwik-java-tracker)|org[.]piwik[.](piwik-java-tracking)|org[.]webjars[.]bower[.](angulartics-piwik)|org[.]webjars[.]bowergithub[.]angulartics[.](angulartics-piwik)|org[.]webjars[.]npm[.](github-com-angulartics-angulartics-piwik|matomo-tracker)|org[.]xwiki[.]contrib[.](application-piwik-extension)|pro[.]piwik[.]sdk[.](piwik-sdk)|se[.]vgregion[.]oppna-program-piwik-tracking[.](oppna-program-piwik-tracking-core-bc-composite-types)).*"
     tags:
 
   - id: ThirdParties.SDK.Matomo
     name: Matomo
     domains:
-      - matomo.se
+      - "matomo.se"
     patterns:
-      - "(?i)(se.vgregion.oppna-program-piwik-tracking.(oppna-program-piwik-tracking-core-bc)).*"
+      - "(?i)(se[.]vgregion[.]oppna-program-piwik-tracking[.](oppna-program-piwik-tracking-core-bc)).*"
     tags:

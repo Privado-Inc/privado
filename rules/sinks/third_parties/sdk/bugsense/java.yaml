@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Bugsense
     name: Bugsense
     domains:
-      - bugsense.com
+      - "bugsense.com"
     patterns:
-      - "(?i)(com.meetup.gradle.(api-gradle-plugins)|io.github.rciovati.tools.(bugsense-plugin)).*"
+      - "(?i)(com[.]meetup[.]gradle[.](api-gradle-plugins)|io[.]github[.]rciovati[.]tools[.](bugsense-plugin)).*"
     tags:

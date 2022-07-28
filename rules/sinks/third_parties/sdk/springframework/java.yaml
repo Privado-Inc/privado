@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Springframework
     name: Springframework
     domains:
-      - springframework.org
+      - "springframework.org"
     patterns:
-      - "(?i)(org.springframework.social.(spring-social-facebook-web)).*"
+      - "(?i)(org[.]springframework[.]social[.](spring-social-facebook-web)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Cucumber
     name: Cucumber
     domains:
-      - cucumber.io
+      - "cucumber.io"
     patterns:
-      - "(?i)(io.cucumber.(cucumber-picocontainer|datatable)).*"
+      - "(?i)(io[.]cucumber[.](cucumber-picocontainer|datatable)).*"
     tags:

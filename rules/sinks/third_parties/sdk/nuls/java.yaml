@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Nuls
     name: Nuls
     domains:
-      - nuls.io
+      - "nuls.io"
     patterns:
-      - "(?i)(io.nuls.core-module.(kernel-sdk)).*"
+      - "(?i)(io[.]nuls[.]core-module[.](kernel-sdk)).*"
     tags:

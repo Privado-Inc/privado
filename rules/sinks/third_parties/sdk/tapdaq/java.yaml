@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Tapdaq
     name: Tapdaq
     domains:
-      - tapdaq.com
+      - "tapdaq.com"
     patterns:
-      - "(?i)(com.tapdaq.(tapdaq|tapdaqandroid)).*"
+      - "(?i)(com[.]tapdaq[.](tapdaq|tapdaqandroid)).*"
     tags:

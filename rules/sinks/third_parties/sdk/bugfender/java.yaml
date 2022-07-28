@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Bugfender
     name: Bugfender
     domains:
-      - bugfender.com
+      - "bugfender.com"
     patterns:
-      - "(?i)(com.bugfender.sdk.(android)|com.bugfender.upload-mapping.(com.bugfender.upload-mapping.gradle.plugin)|com.bugfender.(upload-mapping)).*"
+      - "(?i)(com[.]bugfender[.]sdk[.](android)|com[.]bugfender[.]upload-mapping[.](com[.]bugfender[.]upload-mapping[.]gradle[.]plugin)|com[.]bugfender[.](upload-mapping)).*"
     tags:

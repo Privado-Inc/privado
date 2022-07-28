@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Micrometer
     name: Micrometer
     domains:
-      - micrometer.io
+      - "micrometer.io"
     patterns:
-      - "(?i)(io.micrometer.(micrometer-registry-wavefront)).*"
+      - "(?i)(io[.]micrometer[.](micrometer-registry-wavefront)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Paystack
     name: Paystack
     domains:
-      - paystack.com
+      - "paystack.com"
     patterns:
-      - "(?i)(app.ephod.pentecost.(pentecost)|co.paystack.android.design.widget.(pinpad)|co.paystack.android.(paystack)|com.dubems.paystack.(com.dubems.paystack.gradle.plugin)|com.paystack.checkout.(checkout-android)|com.paystack.(checkout-android)|gradle.plugin.com.dubems.paystack.(paystack-grails)|org.grails.plugins.(paystack-grails)).*"
+      - "(?i)(app[.]ephod[.]pentecost[.](pentecost)|co[.]paystack[.]android[.]design[.]widget[.](pinpad)|co[.]paystack[.]android[.](paystack)|com[.]dubems[.]paystack[.](com[.]dubems[.]paystack[.]gradle[.]plugin)|com[.]paystack[.]checkout[.](checkout-android)|com[.]paystack[.](checkout-android)|gradle[.]plugin[.]com[.]dubems[.]paystack[.](paystack-grails)|org[.]grails[.]plugins[.](paystack-grails)).*"
     tags:

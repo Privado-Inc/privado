@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Agora
     name: Agora
     domains:
-      - agora.io
+      - "agora.io"
     patterns:
-      - "(?i)(io.agora.rtc.(full-sdk)).*"
+      - "(?i)(io[.]agora[.]rtc[.](full-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Zendrive
     name: Zendrive
     domains:
-      - zendrive.com
+      - "zendrive.com"
     patterns:
-      - "(?i)(com.zendrive.sdk.android.support.(ebson)|com.zendrive.sdk.android.(ZendriveSDK|ZendriveSDK-HMS|ZendriveSDK-testing)).*"
+      - "(?i)(com[.]zendrive[.]sdk[.]android[.]support[.](ebson)|com[.]zendrive[.]sdk[.]android[.](ZendriveSDK|ZendriveSDK-HMS|ZendriveSDK-testing)).*"
     tags:

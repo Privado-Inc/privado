@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Myadsget
     name: Myadsget
     domains:
-      - myadsget.com
+      - "myadsget.com"
     patterns:
-      - "(?i)(com.myadsget.(san-sdk)).*"
+      - "(?i)(com[.]myadsget[.](san-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mopinion
     name: Mopinion
     domains:
-      - mopinion.com
+      - "mopinion.com"
     patterns:
-      - "(?i)(com.mopinion.mopinionsdk.(mopinionsdk)|com.mopinion.mopinionsdkweb.(mopinionsdkweb)).*"
+      - "(?i)(com[.]mopinion[.]mopinionsdk[.](mopinionsdk)|com[.]mopinion[.]mopinionsdkweb[.](mopinionsdkweb)).*"
     tags:

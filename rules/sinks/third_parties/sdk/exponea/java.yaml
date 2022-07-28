@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Exponea
     name: Exponea
     domains:
-      - exponea.com
+      - "exponea.com"
     patterns:
-      - "(?i)(com.exponea.sdk.(sdk)).*"
+      - "(?i)(com[.]exponea[.]sdk[.](sdk)).*"
     tags:

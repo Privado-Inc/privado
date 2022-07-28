@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Snowflake
     name: Snowflake
     domains:
-      - snowflake.com
+      - "snowflake.com"
     patterns:
-      - "(?i)(com.mulesoft.connectors.(mule4-snowflake-connector)).*"
+      - "(?i)(com[.]mulesoft[.]connectors[.](mule4-snowflake-connector)).*"
     tags:

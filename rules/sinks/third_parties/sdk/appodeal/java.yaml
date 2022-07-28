@@ -7,15 +7,15 @@ sinks:
   - id: ThirdParties.SDK.Appodeal
     name: Appodeal
     domains:
-      - appodeal.com
+      - "appodeal.com"
     patterns:
-      - "(?i)(com.appodeal.integration.(android-integration)|com.mobidevelop.robovm.(robopods-appodeal-ios|robopods-appodeal-parent)|ru.prof-itgroup.(appodeal_helper)).*"
+      - "(?i)(com[.]appodeal[.]integration[.](android-integration)|com[.]mobidevelop[.]robovm[.](robopods-appodeal-ios|robopods-appodeal-parent)|ru[.]prof-itgroup[.](appodeal_helper)).*"
     tags:
 
   - id: ThirdParties.SDK.Appodeal
     name: Appodeal
     domains:
-      - appodeal.net
+      - "appodeal.net"
     patterns:
-      - "(?i)(net.admixer.sdk.mediation.(appodeal)).*"
+      - "(?i)(net[.]admixer[.]sdk[.]mediation[.](appodeal)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Chatwork
     name: Chatwork
     domains:
-      - chatwork.com
+      - "chatwork.com"
     patterns:
-      - "(?i)(com.chatwork.(akka-guard-core|akka-guard-core-typed|akka-guard-http|akka-guard-http-typed|bytearray-schema|bytearray-schema-hbase|gatling-akka|gatling-akka-root|healthchecks-core|healthchecks-k8s-probes|reactive-zookeeper|root|sbt-aws|scala-jwk|scala-ulid|ulid)|com.vexus2.jenkins.chatwork.(chatwork)|net.cimadai.(chatwork-scala)).*"
+      - "(?i)(com[.]chatwork[.](akka-guard-core|akka-guard-core-typed|akka-guard-http|akka-guard-http-typed|bytearray-schema|bytearray-schema-hbase|gatling-akka|gatling-akka-root|healthchecks-core|healthchecks-k8s-probes|reactive-zookeeper|root|sbt-aws|scala-jwk|scala-ulid|ulid)|com[.]vexus2[.]jenkins[.]chatwork[.](chatwork)|net[.]cimadai[.](chatwork-scala)).*"
     tags:

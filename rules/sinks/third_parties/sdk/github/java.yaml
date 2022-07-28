@@ -7,15 +7,15 @@ sinks:
   - id: ThirdParties.SDK.Github
     name: Github
     domains:
-      - github.com
+      - "github.com"
     patterns:
-      - "(?i)(com.github.nisrulz.(easydeviceinfo-ads)|se.bjurr.violations.(violation-comments-to-github-gradle-plugin)).*"
+      - "(?i)(com[.]github[.]nisrulz[.](easydeviceinfo-ads)|se[.]bjurr[.]violations[.](violation-comments-to-github-gradle-plugin)).*"
     tags:
 
   - id: ThirdParties.SDK.Github.Wechaty
     name: Github Wechaty
     domains:
-      - wechaty.github.io
+      - "wechaty.github.io"
     patterns:
-      - "(?i)(io.github.wechaty.(wechaty)).*"
+      - "(?i)(io[.]github[.]wechaty[.](wechaty)).*"
     tags:

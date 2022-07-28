@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Xiaomi
     name: Xiaomi
     domains:
-      - xiaomi.com
+      - "xiaomi.com"
     patterns:
-      - "(?i)(com.xiaomi.infra.galaxy.(galaxy-talos-sdk)).*"
+      - "(?i)(com[.]xiaomi[.]infra[.]galaxy[.](galaxy-talos-sdk)).*"
     tags:

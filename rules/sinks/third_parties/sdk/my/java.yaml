@@ -7,23 +7,23 @@ sinks:
   - id: ThirdParties.SDK.My
     name: My
     domains:
-      - my.com
+      - "my.com"
     patterns:
-      - "(?i)(com.my.target.(mytarget-sdk)).*"
+      - "(?i)(com[.]my[.]target[.](mytarget-sdk)).*"
     tags:
 
   - id: ThirdParties.SDK.My.Target
     name: My Target
     domains:
-      - target.my.com
+      - "target.my.com"
     patterns:
-      - "(?i)(com.adtoapp.android.(adtoapp-mytarget)|com.applovin.mediation.(mytarget-adapter)|com.cleveradssolutions.(mytarget)|com.my.target.mediation.(admob|applovin)|com.tradplusad.(tradplus-mytarget)|com.yodo1.mas.mediation.(mytarget)).*"
+      - "(?i)(com[.]adtoapp[.]android[.](adtoapp-mytarget)|com[.]applovin[.]mediation[.](mytarget-adapter)|com[.]cleveradssolutions[.](mytarget)|com[.]my[.]target[.]mediation[.](admob|applovin)|com[.]tradplusad[.](tradplus-mytarget)|com[.]yodo1[.]mas[.]mediation[.](mytarget)).*"
     tags:
 
   - id: ThirdParties.SDK.My.Tracker
     name: My Tracker
     domains:
-      - tracker.my.com
+      - "tracker.my.com"
     patterns:
-      - "(?i)(com.my.tracker.plugins.(beacon)|com.my.tracker.(mytracker-sdk)).*"
+      - "(?i)(com[.]my[.]tracker[.]plugins[.](beacon)|com[.]my[.]tracker[.](mytracker-sdk)).*"
     tags:

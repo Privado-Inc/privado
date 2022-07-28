@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Quantcast
     name: Quantcast
     domains:
-      - quantcast.com
+      - "quantcast.com"
     patterns:
-      - "(?i)(com.quantcast.android.measurement.(QuantcastAndroidSdk|QuantcastAndroidSdk-split)|com.segment.analytics.android.integrations.(quantcast)|com.segment.analytics.android.(analytics-integration-quantcast)|io.segment.analytics.android.(quantcast)).*"
+      - "(?i)(com[.]quantcast[.]android[.]measurement[.](QuantcastAndroidSdk|QuantcastAndroidSdk-split)|com[.]segment[.]analytics[.]android[.]integrations[.](quantcast)|com[.]segment[.]analytics[.]android[.](analytics-integration-quantcast)|io[.]segment[.]analytics[.]android[.](quantcast)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Komamitsu
     name: Komamitsu
     domains:
-      - komamitsu.org
+      - "komamitsu.org"
     patterns:
-      - "(?i)(org.komamitsu.(fluency-treasuredata)).*"
+      - "(?i)(org[.]komamitsu[.](fluency-treasuredata)).*"
     tags:

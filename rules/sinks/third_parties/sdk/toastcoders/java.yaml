@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Toastcoders
     name: Toastcoders
     domains:
-      - toastcoders.com
+      - "toastcoders.com"
     patterns:
-      - "(?i)(com.toastcoders.(yavijava)).*"
+      - "(?i)(com[.]toastcoders[.](yavijava)).*"
     tags:

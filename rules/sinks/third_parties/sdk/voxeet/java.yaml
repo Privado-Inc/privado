@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Voxeet
     name: Voxeet
     domains:
-      - voxeet.com
+      - "voxeet.com"
     patterns:
-      - "(?i)(com.voxeet.sdk.(sdk)).*"
+      - "(?i)(com[.]voxeet[.]sdk[.](sdk)).*"
     tags:

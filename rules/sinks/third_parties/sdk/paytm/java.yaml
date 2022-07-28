@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Paytm
     name: Paytm
     domains:
-      - paytm.com
+      - "paytm.com"
     patterns:
-      - "(?i)(com.paytm.(pgplussdk)).*"
+      - "(?i)(com[.]paytm[.](pgplussdk)).*"
     tags:

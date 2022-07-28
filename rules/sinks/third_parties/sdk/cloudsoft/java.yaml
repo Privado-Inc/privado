@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Cloudsoft
     name: Cloudsoft
     domains:
-      - cloudsoft.io
+      - "cloudsoft.io"
     patterns:
-      - "(?i)(io.cloudsoft.jclouds.api.(vcloud)|io.cloudsoft.jclouds.labs.(vcloud-director)).*"
+      - "(?i)(io[.]cloudsoft[.]jclouds[.]api[.](vcloud)|io[.]cloudsoft[.]jclouds[.]labs[.](vcloud-director)).*"
     tags:

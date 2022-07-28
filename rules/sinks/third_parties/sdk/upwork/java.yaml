@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Upwork
     name: Upwork
     domains:
-      - Upwork.com
+      - "Upwork.com"
     patterns:
-      - "(?i)(com.Upwork.(api)).*"
+      - "(?i)(com[.]Upwork[.](api)).*"
     tags:

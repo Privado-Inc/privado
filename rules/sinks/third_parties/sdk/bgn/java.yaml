@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Bgn
     name: Bgn
     domains:
-      - bgn.mobi
+      - "bgn.mobi"
     patterns:
-      - "(?i)(com.bgnmobi.anrtracker.(ANRTracker)|com.bgnmobi.easyfeedback.(EasyFeedback)|com.bgnmobi.sdk.(ads-applovin-max|analytics|core|purchase-module-billingclient|purchases|sdk-bom|sdp|webservice)).*"
+      - "(?i)(com[.]bgnmobi[.]anrtracker[.](ANRTracker)|com[.]bgnmobi[.]easyfeedback[.](EasyFeedback)|com[.]bgnmobi[.]sdk[.](ads-applovin-max|analytics|core|purchase-module-billingclient|purchases|sdk-bom|sdp|webservice)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Unboundid
     name: Unboundid
     domains:
-      - unboundid.com
+      - "unboundid.com"
     patterns:
-      - "(?i)(com.unboundid.product.scim.(scim-sdk)).*"
+      - "(?i)(com[.]unboundid[.]product[.]scim[.](scim-sdk)).*"
     tags:

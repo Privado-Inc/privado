@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Urbanairship
     name: Urbanairship
     domains:
-      - urbanairship.com
+      - "urbanairship.com"
     patterns:
-      - "(?i)(com.fsryan.tools.(logging-android-urbanairship)|com.github.kevinsawicki.(urbanairship-lib)|com.mparticle.(android-urbanairship-kit)|com.urbanairship.android.(event-templates|segment-integration|unity-plugin|urbanairship-accengage|urbanairship-adm|urbanairship-ads-identifier|urbanairship-automation|urbanairship-chat|urbanairship-core|urbanairship-fcm|urbanairship-gcm|urbanairship-hms|urbanairship-location|urbanairship-message-center|urbanairship-preference-center|wallet)|com.urbanairship.(connect-client|datacube|java-client|sarlacc-client|sarlacc-pit)|io.sprucehill.(urbanairship-java-api-wrapper)|org.jsweet.candies.(urbanairship-cordova)).*"
+      - "(?i)(com[.]fsryan[.]tools[.](logging-android-urbanairship)|com[.]github[.]kevinsawicki[.](urbanairship-lib)|com[.]mparticle[.](android-urbanairship-kit)|com[.]urbanairship[.]android[.](event-templates|segment-integration|unity-plugin|urbanairship-accengage|urbanairship-adm|urbanairship-ads-identifier|urbanairship-automation|urbanairship-chat|urbanairship-core|urbanairship-fcm|urbanairship-gcm|urbanairship-hms|urbanairship-location|urbanairship-message-center|urbanairship-preference-center|wallet)|com[.]urbanairship[.](connect-client|datacube|java-client|sarlacc-client|sarlacc-pit)|io[.]sprucehill[.](urbanairship-java-api-wrapper)|org[.]jsweet[.]candies[.](urbanairship-cordova)).*"
     tags:

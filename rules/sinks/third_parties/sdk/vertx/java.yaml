@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Vertx
     name: Vertx
     domains:
-      - vertx.io
+      - "vertx.io"
     patterns:
-      - "(?i)(io.vertx.(vertx-mail-client)).*"
+      - "(?i)(io[.]vertx[.](vertx-mail-client)).*"
     tags:

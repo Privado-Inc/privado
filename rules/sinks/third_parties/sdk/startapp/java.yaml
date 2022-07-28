@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Startapp
     name: Startapp
     domains:
-      - startapp.com
+      - "startapp.com"
     patterns:
-      - "(?i)(com.startapp.(admob-mediation|common|consent-dialog|consent-dialog-androidx|consent-dialog-impl|consent-dialog-support|inapp-sdk-interstitial-only|inapp-sdk-native-interstitial|ironsource-mediation|mopub-mediation|soda-insights-sdk|truenet)).*"
+      - "(?i)(com[.]startapp[.](admob-mediation|common|consent-dialog|consent-dialog-androidx|consent-dialog-impl|consent-dialog-support|inapp-sdk-interstitial-only|inapp-sdk-native-interstitial|ironsource-mediation|mopub-mediation|soda-insights-sdk|truenet)).*"
     tags:

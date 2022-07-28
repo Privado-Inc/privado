@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Adcel
     name: Adcel
     domains:
-      - adcel.co
+      - "adcel.co"
     patterns:
-      - "(?i)(co.adcel.android.(adcel-rtb)).*"
+      - "(?i)(co[.]adcel[.]android[.](adcel-rtb)).*"
     tags:

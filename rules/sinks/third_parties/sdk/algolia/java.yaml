@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Algolia
     name: Algolia
     domains:
-      - algolia.com
+      - "algolia.com"
     patterns:
-      - "(?i)(com.algolia.instantsearch.(voice)).*"
+      - "(?i)(com[.]algolia[.]instantsearch[.](voice)).*"
     tags:

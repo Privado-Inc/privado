@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hortonworks
     name: Hortonworks
     domains:
-      - hortonworks.com
+      - "hortonworks.com"
     patterns:
-      - "(?i)(com.hortonworks.streamline.(streamline-sdk)).*"
+      - "(?i)(com[.]hortonworks[.]streamline[.](streamline-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Renjin
     name: Renjin
     domains:
-      - renjin.org
+      - "renjin.org"
     patterns:
-      - "(?i)(org.renjin.cran.(MRwarping|fast|spartan|waveclock)).*"
+      - "(?i)(org[.]renjin[.]cran[.](MRwarping|fast|spartan|waveclock)).*"
     tags:

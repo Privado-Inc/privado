@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Linkedin
     name: Linkedin
     domains:
-      - linkedin.com
+      - "linkedin.com"
     patterns:
-      - "(?i)(com.linkedin.zoie.(zoie-core)).*"
+      - "(?i)(com[.]linkedin[.]zoie[.](zoie-core)).*"
     tags:

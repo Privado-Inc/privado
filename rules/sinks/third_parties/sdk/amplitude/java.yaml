@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Amplitude
     name: Amplitude
     domains:
-      - amplitude.com
+      - "amplitude.com"
     patterns:
-      - "(?i)(cljsjs.(amplitude)|com.amplitude.(android-sdk|experiment-android-client|java-sdk)|com.nimroddayan.buildmetrics.(buildmetrics-amplitude)|com.rudderstack.android.amplitude.(amplitude)|com.rudderstack.android.integration.amplitude.(amplitude)|com.rudderstack.android.integration.(amplitude)|com.segment.analytics.android.integrations.(amplitude)|com.segment.analytics.android.(analytics-integration-amplitude)|io.segment.analytics.android.(amplitude)|kz.btsd.(amplitude_flutter_release|did_amplitude_flutter)|ly.iterative.itly.(plugin-amplitude|plugin-amplitude-android|plugin-amplitude-metadata)|org.webjars.npm.(amplitude-js)).*"
+      - "(?i)(cljsjs[.](amplitude)|com[.]amplitude[.](android-sdk|experiment-android-client|java-sdk)|com[.]nimroddayan[.]buildmetrics[.](buildmetrics-amplitude)|com[.]rudderstack[.]android[.]amplitude[.](amplitude)|com[.]rudderstack[.]android[.]integration[.]amplitude[.](amplitude)|com[.]rudderstack[.]android[.]integration[.](amplitude)|com[.]segment[.]analytics[.]android[.]integrations[.](amplitude)|com[.]segment[.]analytics[.]android[.](analytics-integration-amplitude)|io[.]segment[.]analytics[.]android[.](amplitude)|kz[.]btsd[.](amplitude_flutter_release|did_amplitude_flutter)|ly[.]iterative[.]itly[.](plugin-amplitude|plugin-amplitude-android|plugin-amplitude-metadata)|org[.]webjars[.]npm[.](amplitude-js)).*"
     tags:

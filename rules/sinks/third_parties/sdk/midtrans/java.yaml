@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Midtrans
     name: Midtrans
     domains:
-      - midtrans.com
+      - "midtrans.com"
     patterns:
-      - "(?i)(ai.devsupport.(midtrans)|co.mailtarget.(midtrans-snap-client)|com.midtrans.(corekit|gopay-checkout|issuetracker|java-library|scancard|uikit)|io.github.febialfarabi.(payment-model)).*"
+      - "(?i)(ai[.]devsupport[.](midtrans)|co[.]mailtarget[.](midtrans-snap-client)|com[.]midtrans[.](corekit|gopay-checkout|issuetracker|java-library|scancard|uikit)|io[.]github[.]febialfarabi[.](payment-model)).*"
     tags:

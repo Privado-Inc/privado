@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Alibaba
     name: Alibaba
     domains:
-      - alibaba.com
+      - "alibaba.com"
     patterns:
-      - "(?i)(com.alibaba.ans.(ans-sdk)|com.alibaba.cloud.(sentinel-dubbo-api)|com.alibaba.csp.(sentinel-annotation-aspectj|sentinel-apache-dubbo-adapter|sentinel-api-gateway-adapter-common|sentinel-cluster-client-default|sentinel-cluster-server-default|sentinel-core|sentinel-datasource-apollo|sentinel-datasource-consul|sentinel-datasource-extension|sentinel-datasource-nacos|sentinel-datasource-redis|sentinel-datasource-zookeeper|sentinel-dubbo-adapter|sentinel-parameter-flow-control|sentinel-reactor-adapter|sentinel-spring-cloud-gateway-adapter|sentinel-spring-webflux-adapter|sentinel-spring-webmvc-adapter|sentinel-transport-simple-http|sentinel-web-servlet|sentinel-zuul-adapter)|com.alibaba.edas.acm.(acm-sdk)|com.alibaba.nls.(nls-sdk-common)).*"
+      - "(?i)(com[.]alibaba[.]ans[.](ans-sdk)|com[.]alibaba[.]cloud[.](sentinel-dubbo-api)|com[.]alibaba[.]csp[.](sentinel-annotation-aspectj|sentinel-apache-dubbo-adapter|sentinel-api-gateway-adapter-common|sentinel-cluster-client-default|sentinel-cluster-server-default|sentinel-core|sentinel-datasource-apollo|sentinel-datasource-consul|sentinel-datasource-extension|sentinel-datasource-nacos|sentinel-datasource-redis|sentinel-datasource-zookeeper|sentinel-dubbo-adapter|sentinel-parameter-flow-control|sentinel-reactor-adapter|sentinel-spring-cloud-gateway-adapter|sentinel-spring-webflux-adapter|sentinel-spring-webmvc-adapter|sentinel-transport-simple-http|sentinel-web-servlet|sentinel-zuul-adapter)|com[.]alibaba[.]edas[.]acm[.](acm-sdk)|com[.]alibaba[.]nls[.](nls-sdk-common)).*"
     tags:

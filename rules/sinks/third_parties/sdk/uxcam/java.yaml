@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Uxcam
     name: Uxcam
     domains:
-      - uxcam.com
+      - "uxcam.com"
     patterns:
-      - "(?i)(com.segment.analytics.android.(analytics-integration-uxcam)).*"
+      - "(?i)(com[.]segment[.]analytics[.]android[.](analytics-integration-uxcam)).*"
     tags:

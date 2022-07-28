@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mobfox
     name: Mobfox
     domains:
-      - mobfox.com
+      - "mobfox.com"
     patterns:
-      - "(?i)(com.adsdk.sdk.(MobFox-Android-SDK)|com.bingzer.android.ads.networks.mobfox.(adnets-mobfox)|com.bingzer.android.ads.(adnets-mobfox)|com.cleveradssolutions.(mobfox)|com.github.mobfox.(mfx-android-admob-adapter|mfx-android-sdk)|com.iqzone.thirdparty.(mobfox)|com.mobfox.sdk.(MobFox-Android-Core)).*"
+      - "(?i)(com[.]adsdk[.]sdk[.](MobFox-Android-SDK)|com[.]bingzer[.]android[.]ads[.]networks[.]mobfox[.](adnets-mobfox)|com[.]bingzer[.]android[.]ads[.](adnets-mobfox)|com[.]cleveradssolutions[.](mobfox)|com[.]github[.]mobfox[.](mfx-android-admob-adapter|mfx-android-sdk)|com[.]iqzone[.]thirdparty[.](mobfox)|com[.]mobfox[.]sdk[.](MobFox-Android-Core)).*"
     tags:

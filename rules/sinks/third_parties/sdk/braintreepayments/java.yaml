@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Braintreepayments
     name: Braintreepayments
     domains:
-      - braintreepayments.com
+      - "braintreepayments.com"
     patterns:
-      - "(?i)(com.braintreepayments.api.(braintree-api)|com.braintreepayments.gateway.(braintree-java)).*"
+      - "(?i)(com[.]braintreepayments[.]api[.](braintree-api)|com[.]braintreepayments[.]gateway[.](braintree-java)).*"
     tags:

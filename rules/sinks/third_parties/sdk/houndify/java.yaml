@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Houndify
     name: Houndify
     domains:
-      - houndify.com
+      - "houndify.com"
     patterns:
-      - "(?i)(com.just-ai.aimybox.(houndify-speechkit)|com.justai.aimybox.(houndify-speechkit)).*"
+      - "(?i)(com[.]just-ai[.]aimybox[.](houndify-speechkit)|com[.]justai[.]aimybox[.](houndify-speechkit)).*"
     tags:

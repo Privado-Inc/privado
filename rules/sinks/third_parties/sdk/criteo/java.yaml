@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Criteo
     name: Criteo
     domains:
-      - criteo.com
+      - "criteo.com"
     patterns:
-      - "(?i)(com.criteo.mediation.google.(criteo-adapter)|com.criteo.mediation.mopub.(criteo-adapter)|com.criteo.publisher.(criteo-publisher-sdk|criteo-publisher-sdk-development)).*"
+      - "(?i)(com[.]criteo[.]mediation[.]google[.](criteo-adapter)|com[.]criteo[.]mediation[.]mopub[.](criteo-adapter)|com[.]criteo[.]publisher[.](criteo-publisher-sdk|criteo-publisher-sdk-development)).*"
     tags:

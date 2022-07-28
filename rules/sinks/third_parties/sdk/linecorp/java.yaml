@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Linecorp
     name: Linecorp
     domains:
-      - linecorp.com
+      - "linecorp.com"
     patterns:
-      - "(?i)(com.linecorp.(linesdk)).*"
+      - "(?i)(com[.]linecorp[.](linesdk)).*"
     tags:

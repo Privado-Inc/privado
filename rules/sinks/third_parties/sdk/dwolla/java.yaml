@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Dwolla
     name: Dwolla
     domains:
-      - dwolla.com
+      - "dwolla.com"
     patterns:
-      - "(?i)(com.dwolla.(dwolla-java-sdk)).*"
+      - "(?i)(com[.]dwolla[.](dwolla-java-sdk)).*"
     tags:

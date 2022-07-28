@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Pollfish
     name: Pollfish
     domains:
-      - pollfish.com
+      - "pollfish.com"
     patterns:
-      - "(?i)(com.pollfish.mediation.(pollfish-admob|pollfish-mopub)|com.pollfish.(mopub-adapter|pollfish|pollfish-googleplay|pollfish-universal|unity)).*"
+      - "(?i)(com[.]pollfish[.]mediation[.](pollfish-admob|pollfish-mopub)|com[.]pollfish[.](mopub-adapter|pollfish|pollfish-googleplay|pollfish-universal|unity)).*"
     tags:

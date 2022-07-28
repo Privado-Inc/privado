@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Boyunjian
     name: Boyunjian
     domains:
-      - boyunjian.com
+      - "boyunjian.com"
     patterns:
-      - "(?i)(com.boyunjian.flashdb.(flashdb-client)).*"
+      - "(?i)(com[.]boyunjian[.]flashdb[.](flashdb-client)).*"
     tags:

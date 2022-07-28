@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Pingidentity
     name: Pingidentity
     domains:
-      - pingidentity.com
+      - "pingidentity.com"
     patterns:
-      - "(?i)(com.unboundid.(unboundid-ldapsdk)).*"
+      - "(?i)(com[.]unboundid[.](unboundid-ldapsdk)).*"
     tags:

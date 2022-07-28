@@ -7,15 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Payu
     name: Payu
     domains:
-      - payu.com
+      - "payu.in"
     patterns:
-      - "(?i)(com.google.android.(PayU)|com.payu.crashlogger.(payu-crash-logger)|com.payu.custombrowser.(payu-custom-browser)|com.payu.gpay.(payu-gpay)|com.payu.india.(native-otp-assist|native-otp-reader|payu-asset-library-android|payu-checkout-pro|payu-checkout-pro-base|payu-checkout-pro-ui|payu-sdk)|com.payu.magicretry.(magicretry)|com.payu.networking.(payu-core-networking)|com.payu.olamoney.(olamoney)|com.payu.paymentparamhelper.(paymentparamhelper)|com.payu.payuanalytics.(payuanalytics)|com.payu.phonepe.(phonepe-intent)|com.payu.ratel.(ratel-core|ratel-server|ratel-test-utils|ratel-tests)|com.payu.upisdk.(upisdk)|com.payu.(payu-public-sec-rules)|com.sasidhar.smaps.payu.(payu)|com.sasidhar.smaps.payumoney.(payumoney)|org.kill-bill.billing.plugin.ruby.(payu-latam-plugin)).*"
-    tags:
-
-  - id: ThirdParties.SDK.Payu
-    name: Payu
-    domains:
-      - payu.in
-    patterns:
-      - "(?i)(in.payu.(native-otp-assist|native-otp-reader|paymentparamhelper|payu-asset-library-android|payu-checkout-pro|payu-checkout-pro-base|payu-checkout-pro-ui|payu-core-networking|payu-crash-logger|payu-custom-browser|payu-sdk|payuanalytics|phonepe-intent|upisdk)).*"
+      - "(?i)(com[.]google[.]android[.](PayU)|com[.]payu[.]crashlogger[.](payu-crash-logger)|com[.]payu[.]custombrowser[.](payu-custom-browser)|com[.]payu[.]gpay[.](payu-gpay)|com[.]payu[.]india[.](native-otp-assist|native-otp-reader|payu-asset-library-android|payu-checkout-pro|payu-checkout-pro-base|payu-checkout-pro-ui|payu-sdk)|com[.]payu[.]magicretry[.](magicretry)|com[.]payu[.]networking[.](payu-core-networking)|com[.]payu[.]olamoney[.](olamoney)|com[.]payu[.]paymentparamhelper[.](paymentparamhelper)|com[.]payu[.]payuanalytics[.](payuanalytics)|com[.]payu[.]phonepe[.](phonepe-intent)|com[.]payu[.]ratel[.](ratel-core|ratel-server|ratel-test-utils|ratel-tests)|com[.]payu[.]upisdk[.](upisdk)|com[.]payu[.](payu-public-sec-rules)|com[.]sasidhar[.]smaps[.]payu[.](payu)|com[.]sasidhar[.]smaps[.]payumoney[.](payumoney)|org[.]kill-bill[.]billing[.]plugin[.]ruby[.](payu-latam-plugin)|in[.]payu[.](native-otp-assist|native-otp-reader|paymentparamhelper|payu-asset-library-android|payu-checkout-pro|payu-checkout-pro-base|payu-checkout-pro-ui|payu-core-networking|payu-crash-logger|payu-custom-browser|payu-sdk|payuanalytics|phonepe-intent|upisdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Pushwoosh
     name: Pushwoosh
     domains:
-      - pushwoosh.com
+      - "pushwoosh.com"
     patterns:
-      - "(?i)(com.pushwoosh.java7.(pushwoosh-badge|pushwoosh-experimental|pushwoosh-gcm|pushwoosh-location)|com.pushwoosh.(pushwoosh|pushwoosh-amazon|pushwoosh-baidu|pushwoosh-inbox|pushwoosh-inbox-ui|ratemyapp)).*"
+      - "(?i)(com[.]pushwoosh[.]java7[.](pushwoosh-badge|pushwoosh-experimental|pushwoosh-gcm|pushwoosh-location)|com[.]pushwoosh[.](pushwoosh|pushwoosh-amazon|pushwoosh-baidu|pushwoosh-inbox|pushwoosh-inbox-ui|ratemyapp)).*"
     tags:

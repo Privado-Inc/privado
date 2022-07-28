@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Tremolosecurity
     name: Tremolosecurity
     domains:
-      - tremolosecurity.com
+      - "tremolosecurity.com"
     patterns:
-      - "(?i)(com.tremolosecurity.unison.(unison-lastmile-sdk|unison-sdk)).*"
+      - "(?i)(com[.]tremolosecurity[.]unison[.](unison-lastmile-sdk|unison-sdk)).*"
     tags:

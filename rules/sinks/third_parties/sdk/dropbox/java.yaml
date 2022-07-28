@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Dropbox
     name: Dropbox
     domains:
-      - dropbox.com
+      - "dropbox.com"
     patterns:
-      - "(?i)(com.dropbox.affectedmoduledetector.(affectedmoduledetector)|com.dropbox.core.(dropbox-core-sdk|sdk)|com.dropbox.kaiken.(kaiken-annotations|kaiken-runtime|kaiken-scoping)|com.dropbox.mobile.kotlinsnapshot.(core)|com.dropbox.mobile.store.(cache4|multicast|store4)).*"
+      - "(?i)(com[.]dropbox[.]affectedmoduledetector[.](affectedmoduledetector)|com[.]dropbox[.]core[.](dropbox-core-sdk|sdk)|com[.]dropbox[.]kaiken[.](kaiken-annotations|kaiken-runtime|kaiken-scoping)|com[.]dropbox[.]mobile[.]kotlinsnapshot[.](core)|com[.]dropbox[.]mobile[.]store[.](cache4|multicast|store4)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Quant
     name: Quant
     domains:
-      - quant.network
+      - "quant.network"
     patterns:
-      - "(?i)(network.quant.(overledger-sdk-api)).*"
+      - "(?i)(network[.]quant[.](overledger-sdk-api)).*"
     tags:

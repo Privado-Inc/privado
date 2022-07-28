@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Applovin
     name: Applovin
     domains:
-      - applovin.com
+      - "applovin.com"
     patterns:
-      - "(?i)(com.adtoapp.android.(adtoapp-applovin)|com.applovin.mediation.(bytedance-adapter|fyber-adapter|google-adapter|ironsource-adapter|tapjoy-adapter|unityads-adapter)|com.applovin.quality.(AppLovinQualityServiceGradlePlugin)|com.applovin.(applovin-sdk)|com.mopub.mediation.(applovin)).*"
+      - "(?i)(com[.]adtoapp[.]android[.](adtoapp-applovin)|com[.]applovin[.]mediation[.](bytedance-adapter|fyber-adapter|google-adapter|ironsource-adapter|tapjoy-adapter|unityads-adapter)|com[.]applovin[.]quality[.](AppLovinQualityServiceGradlePlugin)|com[.]applovin[.](applovin-sdk)|com[.]mopub[.]mediation[.](applovin)).*"
     tags:

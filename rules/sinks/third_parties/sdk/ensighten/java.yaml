@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Ensighten
     name: Ensighten
     domains:
-      - ensighten.com
+      - "ensighten.com"
     patterns:
-      - "(?i)(com.ensighten.android.(ensighten-android-gradle-inpath-plugin|ensighten-android-gradle-plugin|ensighten-core)|com.ensighten.plugin.android.(ensighten)).*"
+      - "(?i)(com[.]ensighten[.]android[.](ensighten-android-gradle-inpath-plugin|ensighten-android-gradle-plugin|ensighten-core)|com[.]ensighten[.]plugin[.]android[.](ensighten)).*"
     tags:

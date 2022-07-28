@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Leancloud
     name: Leancloud
     domains:
-      - leancloud.cn
+      - "leancloud.cn"
     patterns:
-      - "(?i)(cn.leancloud.android.(avoscloud-sdk)).*"
+      - "(?i)(cn[.]leancloud[.]android[.](avoscloud-sdk)).*"
     tags:

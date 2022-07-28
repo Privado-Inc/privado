@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mparticle
     name: Mparticle
     domains:
-      - mparticle.com
+      - "mparticle.com"
     patterns:
-      - "(?i)(com.mparticle.(android-core|android-kit-base|android-tune-kit|smartype-api-android|smartype-api-iosarm64|smartype-api-metadata)|ly.iterative.mparticle.(android-core)).*"
+      - "(?i)(com[.]mparticle[.](android-core|android-kit-base|android-tune-kit|smartype-api-android|smartype-api-iosarm64|smartype-api-metadata)|ly[.]iterative[.]mparticle[.](android-core)).*"
     tags:

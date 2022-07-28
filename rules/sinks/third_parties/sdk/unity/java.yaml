@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Unity
     name: Unity
     domains:
-      - unity.com
+      - "unity.com"
     patterns:
-      - "(?i)(com.unity3d.ads.(unity-ads)|com.mopub.mediation.(unityads)).*"
+      - "(?i)(com[.]unity3d[.]ads[.](unity-ads)|com[.]mopub[.]mediation[.](unityads)).*"
     tags:

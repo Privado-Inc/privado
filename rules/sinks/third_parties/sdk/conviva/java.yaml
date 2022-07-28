@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Conviva
     name: Conviva
     domains:
-      - conviva.com
+      - "conviva.com"
     patterns:
-      - "(?i)(com.conviva.sdk.(conviva-brightcove-sdk|conviva-core-sdk|conviva-ima-sdk|conviva-irdeto-sdk|conviva-mediaplayer-sdk|conviva-ooyala-sdk)|com.conviva.(android-core|conviva-android-core)).*"
+      - "(?i)(com[.]conviva[.]sdk[.](conviva-brightcove-sdk|conviva-core-sdk|conviva-ima-sdk|conviva-irdeto-sdk|conviva-mediaplayer-sdk|conviva-ooyala-sdk)|com[.]conviva[.](android-core|conviva-android-core)).*"
     tags:

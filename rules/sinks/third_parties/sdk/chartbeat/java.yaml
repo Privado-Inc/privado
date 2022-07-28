@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Chartbeat
     name: Chartbeat
     domains:
-      - chartbeat.com
+      - "chartbeat.com"
     patterns:
-      - "(?i)(com.chartbeat.(sdk)).*"
+      - "(?i)(com[.]chartbeat[.](sdk)).*"
     tags:

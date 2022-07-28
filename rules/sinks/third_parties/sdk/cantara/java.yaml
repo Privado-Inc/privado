@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Cantara
     name: Cantara
     domains:
-      - cantara.no
+      - "cantara.no"
     patterns:
-      - "(?i)(no.cantara.messi.(messi-sdk)).*"
+      - "(?i)(no[.]cantara[.]messi[.](messi-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Blackducksoftware
     name: Blackducksoftware
     domains:
-      - blackducksoftware.com
+      - "blackducksoftware.com"
     patterns:
-      - "(?i)(com.blackducksoftware.protex.sdkclient.(protex-sdk-client)).*"
+      - "(?i)(com[.]blackducksoftware[.]protex[.]sdkclient[.](protex-sdk-client)).*"
     tags:

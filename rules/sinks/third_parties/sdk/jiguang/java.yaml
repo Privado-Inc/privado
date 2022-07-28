@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Jiguang
     name: Jiguang
     domains:
-      - jiguang.cn
+      - "jiguang.cn"
     patterns:
-      - "(?i)(cn.jiguang.sdk.(jpush)|cn.jiguang.(jpush)|cn.jpush.api.(jiguang-common|jpush-client|jsms-client)|com.gitee.fubluesky.kernel.(push-sdk-jpush)|io.github.pactstart.(jpush-spring-boot-starter)|io.github.watayouxiang.tio.(jpush)|net.guerlab.sms.(guerlab-sms-jpush)|org.anyline.(anyline-jpush)).*"
+      - "(?i)(cn[.]jiguang[.]sdk[.](jpush)|cn[.]jiguang[.](jpush)|cn[.]jpush[.]api[.](jiguang-common|jpush-client|jsms-client)|com[.]gitee[.]fubluesky[.]kernel[.](push-sdk-jpush)|io[.]github[.]pactstart[.](jpush-spring-boot-starter)|io[.]github[.]watayouxiang[.]tio[.](jpush)|net[.]guerlab[.]sms[.](guerlab-sms-jpush)|org[.]anyline[.](anyline-jpush)).*"
     tags:

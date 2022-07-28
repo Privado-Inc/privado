@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Gimbal
     name: Gimbal
     domains:
-      - gimbal.com
+      - "gimbal.com"
     patterns:
-      - "(?i)(co.roverlabs.(rover-gimbal)|com.dji.(dji-sdk|dji-sdk-lib|dji-sdk-provided|utmiss)|com.gimbal.android.v2.(gimbal-sdk|gimbal-slf4j-impl)|com.gimbal.android.v3.(gimbal-sdk|gimbal-slf4j-impl)|com.gimbal.android.v4.(gimbal-sdk|gimbal-slf4j-impl)|com.urbanairship.android.(gimbal-adapter)).*"
+      - "(?i)(co[.]roverlabs[.](rover-gimbal)|com[.]dji[.](dji-sdk|dji-sdk-lib|dji-sdk-provided|utmiss)|com[.]gimbal[.]android[.]v2[.](gimbal-sdk|gimbal-slf4j-impl)|com[.]gimbal[.]android[.]v3[.](gimbal-sdk|gimbal-slf4j-impl)|com[.]gimbal[.]android[.]v4[.](gimbal-sdk|gimbal-slf4j-impl)|com[.]urbanairship[.]android[.](gimbal-adapter)).*"
     tags:

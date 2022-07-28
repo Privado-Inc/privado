@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Admost
     name: Admost
     domains:
-      - admost.com
+      - "admost.com"
     patterns:
-      - "(?i)(com.admost.sdk.(adcolony|admost|amr|applovin|chartboost|facebook|inmobi|mintegral|mobfox-adapter|mopub-adapter|tapjoy|unity)).*"
+      - "(?i)(com[.]admost[.]sdk[.](adcolony|admost|amr|applovin|chartboost|facebook|inmobi|mintegral|mobfox-adapter|mopub-adapter|tapjoy|unity)).*"
     tags:

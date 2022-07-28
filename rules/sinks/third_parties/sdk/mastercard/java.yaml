@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mastercard
     name: Mastercard
     domains:
-      - mastercard.com
+      - "mastercard.com"
     patterns:
-      - "(?i)(com.mastercard.api.(sdk-api-core)|com.mastercard.sdk.core.(mastercard-sdk-core)).*"
+      - "(?i)(com[.]mastercard[.]api[.](sdk-api-core)|com[.]mastercard[.]sdk[.]core[.](mastercard-sdk-core)).*"
     tags:

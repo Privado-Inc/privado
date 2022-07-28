@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Keen
     name: Keen
     domains:
-      - keen.io
+      - "keen.io"
     patterns:
-      - "(?i)(com.treasuredata.(keen-client-java-core)|io.keen.(keen-client-api-android|keen-client-api-java|keen-client-api-query|keen-client-java-core|keenclient-scala)|org.vaadin.keen.charts.(keen-charts)|org.webjars.npm.(keen-js|keen-tracking)).*"
+      - "(?i)(com[.]treasuredata[.](keen-client-java-core)|io[.]keen[.](keen-client-api-android|keen-client-api-java|keen-client-api-query|keen-client-java-core|keenclient-scala)|org[.]vaadin[.]keen[.]charts[.](keen-charts)|org[.]webjars[.]npm[.](keen-js|keen-tracking)).*"
     tags:

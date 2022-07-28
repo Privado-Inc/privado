@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Ticketmaster
     name: Ticketmaster
     domains:
-      - ticketmaster.com
+      - "ticketmaster.com"
     patterns:
-      - "(?i)(com.ticketmaster.(presencesdk)).*"
+      - "(?i)(com[.]ticketmaster[.](presencesdk)).*"
     tags:

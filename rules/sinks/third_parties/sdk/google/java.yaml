@@ -7,87 +7,87 @@ sinks:
   - id: ThirdParties.SDK.Google.Admob
     name: Google Admob
     domains:
-      - admob.google.com
+      - "admob.google.com"
     patterns:
-      - "(?i)(co.ogury.(ogury-mediation-admob)|com.applovin.mediation.(google-ad-manager-adapter)|com.appsinnova.ads.mediation.(admob)|com.google.ads.mediation.(adcolony|applovin|chartboost|fyber|inmobi|ironsource|mopub|mytarget|tapjoy|unity|vungle)|com.google.android.gms.(play-services-ads|play-services-ads-base|play-services-ads-identifier|play-services-ads-license|play-services-ads-lite|play-services-ads-lite-license|play-services-fitness|play-services-wallet)|com.google.api-ads.(ads-lib|ads-lib-appengine|ads-lib-axis|adwords-axis|adwords-lib|common|common-axis|dfa-lib|dfp-axis|dfp-lib|google-ads|google-ads-annotation-processing)|com.google.apis.(google-api-services-admob|google-api-services-androidpublisher|google-api-services-doubleclickbidmanager)|com.google.doubleclick.(doubleclick-core|doubleclick-openrtb|doubleclick-parent)|com.google.firebase.(firebase-ads|firebase-ads-lite)|com.mopub.mediation.(admob)|com.yodo1.mas.mediation.(admob)|net.admixer.sdk.mediation-adapter.(admob)|net.admixer.sdk.mediation.(admob)|org.robovm.(robopods-google-mobile-ads-ios)).*"
+      - "(?i)(co[.]ogury[.](ogury-mediation-admob)|com[.]applovin[.]mediation[.](google-ad-manager-adapter)|com[.]appsinnova[.]ads[.]mediation[.](admob)|com[.]google[.]ads[.]mediation[.](adcolony|applovin|chartboost|fyber|inmobi|ironsource|mopub|mytarget|tapjoy|unity|vungle)|com[.]google[.]android[.]gms[.](play-services-ads|play-services-ads-base|play-services-ads-identifier|play-services-ads-license|play-services-ads-lite|play-services-ads-lite-license|play-services-fitness|play-services-wallet)|com[.]google[.]api-ads[.](ads-lib|ads-lib-appengine|ads-lib-axis|adwords-axis|adwords-lib|common|common-axis|dfa-lib|dfp-axis|dfp-lib|google-ads|google-ads-annotation-processing)|com[.]google[.]apis[.](google-api-services-admob|google-api-services-androidpublisher|google-api-services-doubleclickbidmanager)|com[.]google[.]doubleclick[.](doubleclick-core|doubleclick-openrtb|doubleclick-parent)|com[.]google[.]firebase[.](firebase-ads|firebase-ads-lite)|com[.]mopub[.]mediation[.](admob)|com[.]yodo1[.]mas[.]mediation[.](admob)|net[.]admixer[.]sdk[.]mediation-adapter[.](admob)|net[.]admixer[.]sdk[.]mediation[.](admob)|org[.]robovm[.](robopods-google-mobile-ads-ios)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Analytics
     name: Google Analytics
     domains:
-      - analytics.google.com
+      - "analytics.google.com"
     patterns:
-      - "(?i)(com.google.apis.(google-api-services-analyticsreporting)|com.google.firebase.(firebase-analytics|firebase-analytics-ktx)).*"
+      - "(?i)(com[.]google[.]apis[.](google-api-services-analyticsreporting)|com[.]google[.]firebase[.](firebase-analytics|firebase-analytics-ktx)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud
     name: Google Cloud
     domains:
-      - cloud.google.com
+      - "cloud.google.com"
     patterns:
-      - "(?i)(com.anvato.(androidsdk)|com.google.android.gms.(play-services-recaptcha)|com.google.api.grpc.(proto-google-cloud-datastore-v1)|com.google.apis.(google-api-services-container|google-api-services-storage)|com.google.auth.(google-auth-library-credentials|google-auth-library-oauth2-http)|com.google.cloud.dataflow.(google-cloud-dataflow-java-sdk-all)|com.google.cloud.datastore.(datastore-v1-proto-client)|com.google.cloud.(google-cloud-bigquery|google-cloud-bigquerystorage|google-cloud-bom|google-cloud-compute|google-cloud-core|google-cloud-datastore|google-cloud-dns|google-cloud-errorreporting|google-cloud-language|google-cloud-logging|google-cloud-monitoring|google-cloud-nio|google-cloud-pubsub|google-cloud-resourcemanager|google-cloud-securitycenter|google-cloud-spanner|google-cloud-speech|google-cloud-storage|google-cloud-trace|google-cloud-translate|google-cloud-vision)|com.igg.component.sdk.(auth-google)|com.spotify.(featran-scio|scio-avro|scio-bigquery|scio-core|scio-google-cloud-platform|scio-macros|scio-schemas)).*"
+      - "(?i)(com[.]anvato[.](androidsdk)|com[.]google[.]android[.]gms[.](play-services-recaptcha)|com[.]google[.]api[.]grpc[.](proto-google-cloud-datastore-v1)|com[.]google[.]apis[.](google-api-services-container|google-api-services-storage)|com[.]google[.]auth[.](google-auth-library-credentials|google-auth-library-oauth2-http)|com[.]google[.]cloud[.]dataflow[.](google-cloud-dataflow-java-sdk-all)|com[.]google[.]cloud[.]datastore[.](datastore-v1-proto-client)|com[.]google[.]cloud[.](google-cloud-bigquery|google-cloud-bigquerystorage|google-cloud-bom|google-cloud-compute|google-cloud-core|google-cloud-datastore|google-cloud-dns|google-cloud-errorreporting|google-cloud-language|google-cloud-logging|google-cloud-monitoring|google-cloud-nio|google-cloud-pubsub|google-cloud-resourcemanager|google-cloud-securitycenter|google-cloud-spanner|google-cloud-speech|google-cloud-storage|google-cloud-trace|google-cloud-translate|google-cloud-vision)|com[.]igg[.]component[.]sdk[.](auth-google)|com[.]spotify[.](featran-scio|scio-avro|scio-bigquery|scio-core|scio-google-cloud-platform|scio-macros|scio-schemas)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Drive
     name: Google Drive
     domains:
-      - drive.google.com
+      - "drive.google.com"
     patterns:
-      - "(?i)(com.google.android.gms.(play-services-drive)|com.google.apis.(google-api-services-drive)).*"
+      - "(?i)(com[.]google[.]android[.]gms[.](play-services-drive)|com[.]google[.]apis[.](google-api-services-drive)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Firebase
     name: Google Firebase
     domains:
-      - firebase.google.com
+      - "firebase.google.com"
     patterns:
-      - "(?i)(com.firebase.(firebase-client|firebase-client-android|firebase-client-jvm|firebase-jobdispatcher|firebase-jobdispatcher-with-gcm-dep|firebase-token-generator|geofire|geofire-android|geofire-common|tubesock)|com.firebaseui.(firebase-ui|firebase-ui-auth|firebase-ui-database)|com.google.firebase.(firebase-admin|firebase-appcheck|firebase-appcheck-debug|firebase-appcheck-safetynet|firebase-appdistribution-gradle|firebase-appindexing|firebase-auth|firebase-auth-ktx|firebase-bom|firebase-common|firebase-common-ktx|firebase-components|firebase-config|firebase-config-ktx|firebase-core|firebase-crash|firebase-database|firebase-database-ktx|firebase-datatransport|firebase-dynamic-links|firebase-dynamic-links-ktx|firebase-encoders|firebase-encoders-json|firebase-firestore|firebase-firestore-ktx|firebase-functions|firebase-iid|firebase-iid-interop|firebase-inappmessaging-display|firebase-inappmessaging-display-ktx|firebase-installations|firebase-installations-interop|firebase-invites|firebase-measurement-connector|firebase-messaging-ktx|firebase-ml-modeldownloader|firebase-ml-vision|firebase-ml-vision-face-model|firebase-perf|firebase-perf-ktx|firebase-plugins|firebase-storage|perf-plugin|firebase-crashlytics|firebase-crashlytics-buildtools|firebase-crashlytics-gradle|firebase-crashlytics-ktx|firebase-crashlytics-ndk)|com.segment.analytics.android.integrations.(firebase)|com.crashlytics.sdk.android.(answers|crashlytics|crashlytics-core|crashlytics-ndk)|org.librarysimplified.(org.librarysimplified.crashlytics.api)).*"
+      - "(?i)(com[.]firebase[.](firebase-client|firebase-client-android|firebase-client-jvm|firebase-jobdispatcher|firebase-jobdispatcher-with-gcm-dep|firebase-token-generator|geofire|geofire-android|geofire-common|tubesock)|com[.]firebaseui[.](firebase-ui|firebase-ui-auth|firebase-ui-database)|com[.]google[.]firebase[.](firebase-admin|firebase-appcheck|firebase-appcheck-debug|firebase-appcheck-safetynet|firebase-appdistribution-gradle|firebase-appindexing|firebase-auth|firebase-auth-ktx|firebase-bom|firebase-common|firebase-common-ktx|firebase-components|firebase-config|firebase-config-ktx|firebase-core|firebase-crash|firebase-database|firebase-database-ktx|firebase-datatransport|firebase-dynamic-links|firebase-dynamic-links-ktx|firebase-encoders|firebase-encoders-json|firebase-firestore|firebase-firestore-ktx|firebase-functions|firebase-iid|firebase-iid-interop|firebase-inappmessaging-display|firebase-inappmessaging-display-ktx|firebase-installations|firebase-installations-interop|firebase-invites|firebase-measurement-connector|firebase-messaging-ktx|firebase-ml-modeldownloader|firebase-ml-vision|firebase-ml-vision-face-model|firebase-perf|firebase-perf-ktx|firebase-plugins|firebase-storage|perf-plugin|firebase-crashlytics|firebase-crashlytics-buildtools|firebase-crashlytics-gradle|firebase-crashlytics-ktx|firebase-crashlytics-ndk)|com[.]segment[.]analytics[.]android[.]integrations[.](firebase)|com[.]crashlytics[.]sdk[.]android[.](answers|crashlytics|crashlytics-core|crashlytics-ndk)|org[.]librarysimplified[.](org[.]librarysimplified[.]crashlytics[.]api)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Gmail
     name: Google Gmail
     domains:
-      - gmail.google.com
+      - "gmail.google.com"
     patterns:
-      - "(?i)(com.google.apis.(google-api-services-gmail)).*"
+      - "(?i)(com[.]google[.]apis[.](google-api-services-gmail)).*"
     tags:
 
   - id: ThirdParties.SDK.Google
     name: Google
     domains:
-      - google.com
+      - "google.com"
     patterns:
-      - "(?i)(client.(google-api-client|google-api-client-android|google-api-client-jackson2|google-http-client|google-http-client-jackson2|google-oauth-client|google-oauth-client-jetty)|com.getui.(sdk-for-google-play)|com.google.ads.interactivemedia.v3.(interactivemedia)|com.google.android.ads.(mediation-test-suite)|com.google.android.exoplayer.(extension-ima)|com.google.appengine.(appengine-api-1.0-sdk)|com.google.auto.service.(auto-service)|com.google.gms.(google-services)|com.google.http-client.(google-http-client-bom)|com.google.oauth-client.(google-oauth-client-jetty)|com.google.sitebricks.(sitebricks-mail)|com.google.tango.(sdk-support)|com.google.vr.(sdk-audio|sdk-base)|org.renjin.cran.(loa)).*"
+      - "(?i)(client[.](google-api-client|google-api-client-android|google-api-client-jackson2|google-http-client|google-http-client-jackson2|google-oauth-client|google-oauth-client-jetty)|com[.]getui[.](sdk-for-google-play)|com[.]google[.]ads[.]interactivemedia[.]v3[.](interactivemedia)|com[.]google[.]android[.]ads[.](mediation-test-suite)|com[.]google[.]android[.]exoplayer[.](extension-ima)|com[.]google[.]appengine[.](appengine-api-1[.]0-sdk)|com[.]google[.]auto[.]service[.](auto-service)|com[.]google[.]gms[.](google-services)|com[.]google[.]http-client[.](google-http-client-bom)|com[.]google[.]oauth-client[.](google-oauth-client-jetty)|com[.]google[.]sitebricks[.](sitebricks-mail)|com[.]google[.]tango[.](sdk-support)|com[.]google[.]vr[.](sdk-audio|sdk-base)|org[.]renjin[.]cran[.](loa)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Maps
     name: Google Maps
     domains:
-      - maps.google.com
+      - "maps.google.com"
     patterns:
-      - "(?i)(com.anees4ever.(googlemap)|com.google.maps.android.(maps-compose|maps-ktx|maps-utils-ktx|maps-v3-ktx)|com.google.maps.(google-maps-services)|com.tuya.smart.(tuyasmart-react-native-googlemap)|com.yun.(gmap)|jrizani.(googlemap-with-type-view)|org.webjars.(angularjs-google-maps)).*"
+      - "(?i)(com[.]anees4ever[.](googlemap)|com[.]google[.]maps[.]android[.](maps-compose|maps-ktx|maps-utils-ktx|maps-v3-ktx)|com[.]google[.]maps[.](google-maps-services)|com[.]tuya[.]smart[.](tuyasmart-react-native-googlemap)|com[.]yun[.](gmap)|jrizani[.](googlemap-with-type-view)|org[.]webjars[.](angularjs-google-maps)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Pay
     name: Google Pay
     domains:
-      - pay.google.com
+      - "pay.google.com"
     patterns:
-      - "(?i)(admaker.(google-pay)|com.igg.paysdk.(google-pay)).*"
+      - "(?i)(admaker[.](google-pay)|com[.]igg[.]paysdk[.](google-pay)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Play
     name: Google Play
     domains:
-      - play.google.com
+      - "play.google.com"
     patterns:
-      - "(?i)(com.google.ar.sceneform.(plugin)|com.google.ar.(core)).*"
+      - "(?i)(com[.]google[.]ar[.]sceneform[.](plugin)|com[.]google[.]ar[.](core)).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Spreadsheets
     name: Google Spreadsheets
     domains:
-      - spreadsheets.google.com
+      - "spreadsheets.google.com"
     patterns:
-      - "(?i)(com.google.apis.(google-api-services-sheets)).*"
+      - "(?i)(com[.]google[.]apis[.](google-api-services-sheets)).*"
     tags:

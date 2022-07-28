@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hyprmx
     name: Hyprmx
     domains:
-      - hyprmx.com
+      - "hyprmx.com"
     patterns:
-      - "(?i)(com.applovin.mediation.(hyprmx-adapter)|com.iqzone.thirdparty.(hyprmx)).*"
+      - "(?i)(com[.]applovin[.]mediation[.](hyprmx-adapter)|com[.]iqzone[.]thirdparty[.](hyprmx)).*"
     tags:

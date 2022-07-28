@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Webjars
     name: Webjars
     domains:
-      - webjars.org
+      - "webjars.org"
     patterns:
-      - "(?i)(org.webjars.npm.(github-com-appnexus-lucid)).*"
+      - "(?i)(org[.]webjars[.]npm[.](github-com-appnexus-lucid)).*"
     tags:

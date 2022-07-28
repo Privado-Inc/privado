@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Memetix
     name: Memetix
     domains:
-      - memetix.com
+      - "memetix.com"
     patterns:
-      - "(?i)(com.memetix.(microsoft-translator-java-api)).*"
+      - "(?i)(com[.]memetix[.](microsoft-translator-java-api)).*"
     tags:

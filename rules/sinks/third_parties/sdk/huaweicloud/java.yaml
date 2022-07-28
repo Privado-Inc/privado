@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Huaweicloud
     name: Huaweicloud
     domains:
-      - huaweicloud.com
+      - "huaweicloud.com"
     patterns:
-      - "(?i)(com.huaweicloud.dis.(huaweicloud-sdk-java-dis)|com.huaweicloud.sdk.(huaweicloud-sdk-iam)).*"
+      - "(?i)(com[.]huaweicloud[.]dis[.](huaweicloud-sdk-java-dis)|com[.]huaweicloud[.]sdk[.](huaweicloud-sdk-iam)).*"
     tags:

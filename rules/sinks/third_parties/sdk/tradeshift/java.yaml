@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Tradeshift
     name: Tradeshift
     domains:
-      - tradeshift.com
+      - "tradeshift.com"
     patterns:
-      - "(?i)(com.tradeshift.sdk.(tradeshift-sdk-core)).*"
+      - "(?i)(com[.]tradeshift[.]sdk[.](tradeshift-sdk-core)).*"
     tags:

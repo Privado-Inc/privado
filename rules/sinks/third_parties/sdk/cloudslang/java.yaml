@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Cloudslang
     name: Cloudslang
     domains:
-      - cloudslang.io
+      - "cloudslang.io"
     patterns:
-      - "(?i)(io.cloudslang.content.(score-vmware)).*"
+      - "(?i)(io[.]cloudslang[.]content[.](score-vmware)).*"
     tags:

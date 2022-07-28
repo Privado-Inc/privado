@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mollie
     name: Mollie
     domains:
-      - mollie.com
+      - "mollie.com"
     patterns:
-      - "(?i)(be.feelio.(mollie)|be.woutschoovaerts.(mollie)|com.github.benniekrijger.(scala-mollie)|mollie-clj.(mollie-clj)).*"
+      - "(?i)(be[.]feelio[.](mollie)|be[.]woutschoovaerts[.](mollie)|com[.]github[.]benniekrijger[.](scala-mollie)|mollie-clj[.](mollie-clj)).*"
     tags:

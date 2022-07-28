@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mailjet
     name: Mailjet
     domains:
-      - mailjet.com
+      - "mailjet.com"
     patterns:
-      - "(?i)(com.mailjet.(mailjet-client)|org.worldiety.mailjet.(logger)).*"
+      - "(?i)(com[.]mailjet[.](mailjet-client)|org[.]worldiety[.]mailjet[.](logger)).*"
     tags:

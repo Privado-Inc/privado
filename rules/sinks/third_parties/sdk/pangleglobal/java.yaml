@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Pangleglobal
     name: Pangleglobal
     domains:
-      - pangleglobal.com
+      - "pangleglobal.com"
     patterns:
-      - "(?i)(co.adcel.android.(adcel-pangle)|com.cleveradssolutions.(pangle)|com.consoliads.(pangle-mediation)|com.minijoy.android.(pangle_sdk)|com.mopub.mediation.(pangle)|com.myadsget.(mediation-pangle)|com.pangle.global.(ads-sdk)|com.tradplusad.(tradplus-pangle)|com.yandex.ads.mediation.(mobileads-pangle)|com.yodo1.mas.mediation.(pangle)).*"
+      - "(?i)(co[.]adcel[.]android[.](adcel-pangle)|com[.]cleveradssolutions[.](pangle)|com[.]consoliads[.](pangle-mediation)|com[.]minijoy[.]android[.](pangle_sdk)|com[.]mopub[.]mediation[.](pangle)|com[.]myadsget[.](mediation-pangle)|com[.]pangle[.]global[.](ads-sdk)|com[.]tradplusad[.](tradplus-pangle)|com[.]yandex[.]ads[.]mediation[.](mobileads-pangle)|com[.]yodo1[.]mas[.]mediation[.](pangle)).*"
     tags:

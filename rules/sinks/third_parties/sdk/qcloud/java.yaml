@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Qcloud
     name: Qcloud
     domains:
-      - qcloud.com
+      - "qcloud.com"
     patterns:
-      - "(?i)(com.qcloud.(cos_api|cos_api-bundle|qcloud-java-sdk)).*"
+      - "(?i)(com[.]qcloud[.](cos_api|cos_api-bundle|qcloud-java-sdk)).*"
     tags:

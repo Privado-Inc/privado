@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Onesignal
     name: Onesignal
     domains:
-      - onesignal.com
+      - "onesignal.com"
     patterns:
-      - "(?i)(com.currencyfair.(onesignal)|com.github.fleker.(onesignal)|com.github.onesignaliran.(OneSignalIran)|com.onesignal.androidsdk.onesignal-gradle-plugin.(com.onesignal.androidsdk.onesignal-gradle-plugin.gradle.plugin)|com.onesignal.(OneSignal)|gradle.plugin.com.onesignal.(onesignal-gradle-plugin)|io.github.cactacea.addons.(onesignal)|io.github.jklingsporn.(vertx-push-onesignal)|ir.daal.(OneSignal)|org.webjars.npm.(github-com-OneSignal-emoji-picker)).*"
+      - "(?i)(com[.]currencyfair[.](onesignal)|com[.]github[.]fleker[.](onesignal)|com[.]github[.]onesignaliran[.](OneSignalIran)|com[.]onesignal[.]androidsdk[.]onesignal-gradle-plugin[.](com[.]onesignal[.]androidsdk[.]onesignal-gradle-plugin[.]gradle[.]plugin)|com[.]onesignal[.](OneSignal)|gradle[.]plugin[.]com[.]onesignal[.](onesignal-gradle-plugin)|io[.]github[.]cactacea[.]addons[.](onesignal)|io[.]github[.]jklingsporn[.](vertx-push-onesignal)|ir[.]daal[.](OneSignal)|org[.]webjars[.]npm[.](github-com-OneSignal-emoji-picker)).*"
     tags:

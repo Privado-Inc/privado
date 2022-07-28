@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Adcash
     name: Adcash
     domains:
-      - adcash.com
+      - "adcash.com"
     patterns:
-      - "(?i)(com.adcash.(adcash-admob-adapter|adcash-mopub-adapter|adcash-sdk-lib)).*"
+      - "(?i)(com[.]adcash[.](adcash-admob-adapter|adcash-mopub-adapter|adcash-sdk-lib)).*"
     tags:

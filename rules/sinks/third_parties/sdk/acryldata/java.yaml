@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Acryldata
     name: Acryldata
     domains:
-      - acryldata.io
+      - "acryldata.io"
     patterns:
-      - "(?i)(io.acryl.(datahub-client)).*"
+      - "(?i)(io[.]acryl[.](datahub-client)).*"
     tags:

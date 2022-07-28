@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Paycom
     name: Paycom
     domains:
-      - paycom.com
+      - "paycom.com"
     patterns:
-      - "(?i)(uz.dkamaloff.libs.(paycom-android|paycom-backend|paycom-backend-metadata|paycom-backend-mpp|paycom-base|paycom-base-metadata|paycom-base-mpp|paycom-sdk)|uz.paycom.(payment)).*"
+      - "(?i)(uz[.]dkamaloff[.]libs[.](paycom-android|paycom-backend|paycom-backend-metadata|paycom-backend-mpp|paycom-base|paycom-base-metadata|paycom-base-mpp|paycom-sdk)|uz[.]paycom[.](payment)).*"
     tags:

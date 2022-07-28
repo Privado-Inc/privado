@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Zalo
     name: Zalo
     domains:
-      - zalo.me
+      - "zalo.me"
     patterns:
-      - "(?i)(me.zalo.(sdk-core)).*"
+      - "(?i)(me[.]zalo[.](sdk-core)).*"
     tags:

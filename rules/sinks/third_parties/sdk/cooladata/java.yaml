@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Cooladata
     name: Cooladata
     domains:
-      - cooladata.com
+      - "cooladata.com"
     patterns:
-      - "(?i)(com.cooladata.android.(android-sdk|cooladata-sdk)).*"
+      - "(?i)(com[.]cooladata[.]android[.](android-sdk|cooladata-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Stylefeng
     name: Stylefeng
     domains:
-      - stylefeng.cn
+      - "stylefeng.cn"
     patterns:
-      - "(?i)(cn.stylefeng.roses.(db-sdk-mp|jwt-sdk)).*"
+      - "(?i)(cn[.]stylefeng[.]roses[.](db-sdk-mp|jwt-sdk)).*"
     tags:

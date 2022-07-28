@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Redbricklane
     name: Redbricklane
     domains:
-      - redbricklane.com
+      - "redbricklane.com"
     patterns:
-      - "(?i)(com.redbricklane.zapr.banner.(zapr-banner-sdk)).*"
+      - "(?i)(com[.]redbricklane[.]zapr[.]banner[.](zapr-banner-sdk)).*"
     tags:

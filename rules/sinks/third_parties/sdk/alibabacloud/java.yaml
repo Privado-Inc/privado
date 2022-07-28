@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Alibabacloud
     name: Alibabacloud
     domains:
-      - alibabacloud.com
+      - "alibabacloud.com"
     patterns:
-      - "(?i)(com.alibaba.cloud.(spring-cloud-starter-alicloud-oss)|com.aliyun.(taobao-sdk-java)|com.github.abdvel.(aliyun-log)|org.springframework.cloud.(spring-cloud-alibaba-dependencies|spring-cloud-starter-alibaba-nacos-discovery|spring-cloud-starter-alibaba-sentinel)).*"
+      - "(?i)(com[.]alibaba[.]cloud[.](spring-cloud-starter-alicloud-oss)|com[.]aliyun[.](taobao-sdk-java)|com[.]github[.]abdvel[.](aliyun-log)|org[.]springframework[.]cloud[.](spring-cloud-alibaba-dependencies|spring-cloud-starter-alibaba-nacos-discovery|spring-cloud-starter-alibaba-sentinel)).*"
     tags:

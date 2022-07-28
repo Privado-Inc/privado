@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Gamedock
     name: Gamedock
     domains:
-      - gamedock.io
+      - "gamedock.io"
     patterns:
-      - "(?i)(io.gamedock.sdk.(gamedock-sdk-appsflyer)).*"
+      - "(?i)(io[.]gamedock[.]sdk[.](gamedock-sdk-appsflyer)).*"
     tags:

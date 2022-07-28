@@ -4,18 +4,18 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Ibm
-    name: Ibm
+  - id: ThirdParties.SDK.Ibm.Cloud
+    name: Ibm Cloud
     domains:
-      - ibm.cloud
+      - "cloud.ibm.com"
     patterns:
-      - "(?i)(com.ibm.cloud.(sdk-core)).*"
+      - "(?i)(com[.]ibm[.]cloud[.](sdk-core)).*"
     tags:
 
   - id: ThirdParties.SDK.Ibm
     name: Ibm
     domains:
-      - ibm.com
+      - "ibm.com"
     patterns:
-      - "(?i)(com.ibm.watson.developer_cloud.(java-sdk)).*"
+      - "(?i)(com[.]ibm[.]watson[.]developer_cloud[.](java-sdk)).*"
     tags:

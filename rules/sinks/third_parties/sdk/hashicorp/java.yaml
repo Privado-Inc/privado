@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hashicorp
     name: Hashicorp
     domains:
-      - hashicorp.com
+      - "hashicorp.com"
     patterns:
-      - "(?i)(com.hashicorp.nomad.(nomad-sdk)).*"
+      - "(?i)(com[.]hashicorp[.]nomad[.](nomad-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hyphenate
     name: Hyphenate
     domains:
-      - hyphenate.com
+      - "hyphenate.com"
     patterns:
-      - "(?i)(com.hyphenate.(hyphenate-sdk|hyphenate-sdk-lite)).*"
+      - "(?i)(com[.]hyphenate[.](hyphenate-sdk|hyphenate-sdk-lite)).*"
     tags:

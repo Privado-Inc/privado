@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mopub
     name: Mopub
     domains:
-      - mopub.com
+      - "mopub.com"
     patterns:
-      - "(?i)(com.mopub.volley.(mopub-volley)|com.mopub.(mopub-sdk|mopub-sdk-banner|mopub-sdk-base|mopub-sdk-fullscreen|mopub-sdk-interstitial|mopub-sdk-native-static|mopub-sdk-rewardedvideo|omsdk-android)|net.admixer.sdk.mediation-adapter.(mopub)|net.admixer.sdk.mediation.(mopub)|net.admixer.sdk.(MoPub)).*"
+      - "(?i)(com[.]mopub[.]volley[.](mopub-volley)|com[.]mopub[.](mopub-sdk|mopub-sdk-banner|mopub-sdk-base|mopub-sdk-fullscreen|mopub-sdk-interstitial|mopub-sdk-native-static|mopub-sdk-rewardedvideo|omsdk-android)|net[.]admixer[.]sdk[.]mediation-adapter[.](mopub)|net[.]admixer[.]sdk[.]mediation[.](mopub)|net[.]admixer[.]sdk[.](MoPub)).*"
     tags:

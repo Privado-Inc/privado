@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Ontry
     name: Ontry
     domains:
-      - ontry.com
+      - "ontry.com"
     patterns:
-      - "(?i)(com.ontry.quangcao.(qclibsdk)).*"
+      - "(?i)(com[.]ontry[.]quangcao[.](qclibsdk)).*"
     tags:

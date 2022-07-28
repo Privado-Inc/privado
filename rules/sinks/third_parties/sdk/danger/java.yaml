@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Danger
     name: Danger
     domains:
-      - danger.systems
+      - "danger.systems"
     patterns:
-      - "(?i)(systems.danger.(danger-kotlin-sdk)).*"
+      - "(?i)(systems[.]danger[.](danger-kotlin-sdk)).*"
     tags:

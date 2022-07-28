@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Sendbird
     name: Sendbird
     domains:
-      - sendbird.com
+      - "sendbird.com"
     patterns:
-      - "(?i)(com.sendbird.sdk.(uikit)).*"
+      - "(?i)(com[.]sendbird[.]sdk[.](uikit)).*"
     tags:

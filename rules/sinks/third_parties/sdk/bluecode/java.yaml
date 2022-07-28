@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Bluecode
     name: Bluecode
     domains:
-      - bluecode.com
+      - "bluecode.com"
     patterns:
-      - "(?i)(at.bluecode.sdk.(ui)).*"
+      - "(?i)(at[.]bluecode[.]sdk[.](ui)).*"
     tags:

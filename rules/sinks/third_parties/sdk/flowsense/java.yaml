@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Flowsense
     name: Flowsense
     domains:
-      - flowsense.com
+      - "flowsense.com"
     patterns:
-      - "(?i)(br.com.flowsense.(sdk)).*"
+      - "(?i)(br[.]com[.]flowsense[.](sdk)).*"
     tags:

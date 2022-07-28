@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Sap
     name: Sap
     domains:
-      - sap.com
+      - "sap.com"
     patterns:
-      - "(?i)(com.sap.cloud.yaas.service-sdk.(service-sdk-pattern-support)).*"
+      - "(?i)(com[.]sap[.]cloud[.]yaas[.]service-sdk[.](service-sdk-pattern-support)).*"
     tags:

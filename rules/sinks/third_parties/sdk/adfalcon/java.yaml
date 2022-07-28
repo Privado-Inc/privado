@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Adfalcon
     name: Adfalcon
     domains:
-      - adfalcon.com
+      - "adfalcon.com"
     patterns:
-      - "(?i)(com.noqoush.adfalcon.android.(sdk)).*"
+      - "(?i)(com[.]noqoush[.]adfalcon[.]android[.](sdk)).*"
     tags:

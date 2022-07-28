@@ -7,15 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Paypal
     name: Paypal
     domains:
-      - paypal.com
+      - "paypal.com"
     patterns:
-      - "(?i)(com.braintreepayments.api.(paypal)|com.egzosn.(pay-java-paypal)|com.github.shijingsh.(pay-java-paypal)|com.paypal.android.sdk.(data-collector|paypal-one-touch)|com.paypal.android.(PayPalPartnerAuth)|com.paypal.butterfly.(butterfly-extensions-api)|com.paypal.digraph.(digraph-parser)|com.paypal.mocca.(mocca-client)|com.paypal.sdk.(adaptivepaymentssdk|checkout-sdk|merchantsdk|paypal-android-sdk|paypal-core|paypal-partner-android-sdk|paypal-saaj|paypal-soap|permissionssdk|rest-api-sdk)|com.paypal.springboot.(resteasy-spring-boot-starter)|com.paypal.(paypalhttp|paypalhttp-testutils)).*"
-    tags:
-
-  - id: ThirdParties.SDK.Paypal
-    name: Paypal
-    domains:
-      - paypal.es
-    patterns:
-      - "(?i)(org.clojars.thejohnnybrown.(payflow)).*"
+      - "(?i)(com[.]paypal[.]excheckout[.](merchant-java-sdk)|com[.]braintreepayments[.]api[.](paypal)|com[.]egzosn[.](pay-java-paypal)|com[.]github[.]shijingsh[.](pay-java-paypal)|com[.]paypal[.]android[.]sdk[.](data-collector|paypal-one-touch)|com[.]paypal[.]android[.](PayPalPartnerAuth)|com[.]paypal[.]butterfly[.](butterfly-extensions-api)|com[.]paypal[.]digraph[.](digraph-parser)|com[.]paypal[.]mocca[.](mocca-client)|com[.]paypal[.]sdk[.](adaptivepaymentssdk|checkout-sdk|merchantsdk|paypal-android-sdk|paypal-core|paypal-partner-android-sdk|paypal-saaj|paypal-soap|permissionssdk|rest-api-sdk)|com[.]paypal[.]springboot[.](resteasy-spring-boot-starter)|com[.]paypal[.](paypalhttp|paypalhttp-testutils)|org[.]clojars[.]thejohnnybrown[.](payflow)).*"
     tags:

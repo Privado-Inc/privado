@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Smartlook
     name: Smartlook
     domains:
-      - smartlook.com
+      - "smartlook.com"
     patterns:
-      - "(?i)(com.smartlook.(smartlook-crash-gradle-plugin)).*"
+      - "(?i)(com[.]smartlook[.](smartlook-crash-gradle-plugin)).*"
     tags:

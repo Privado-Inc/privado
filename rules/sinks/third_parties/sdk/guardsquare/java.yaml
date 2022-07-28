@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Guardsquare
     name: Guardsquare
     domains:
-      - guardsquare.com
+      - "guardsquare.com"
     patterns:
-      - "(?i)(com.guardsquare.(dexguard-gradle-plugin|proguard-base|proguard-core)).*"
+      - "(?i)(com[.]guardsquare[.](dexguard-gradle-plugin|proguard-base|proguard-core)).*"
     tags:

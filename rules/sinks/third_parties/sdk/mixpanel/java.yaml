@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mixpanel
     name: Mixpanel
     domains:
-      - mixpanel.com
+      - "mixpanel.com"
     patterns:
-      - "(?i)(com.midtrans.(analytics)|com.mixpanel.android.(annotations|annotations-compiler|mixpanel-android|mixpanel-android-experimental)|com.mixpanel.(mixpanel-java)|com.nimroddayan.buildmetrics.(buildmetrics-mixpanel)|com.segment.analytics.android.integrations.(mixpanel)|com.segment.analytics.android.(analytics-integration-mixpanel)|com.winfooz.(winanalytics)|io.segment.analytics.android.(mixpanel)|raywillig.(mixpanel)).*"
+      - "(?i)(com[.]midtrans[.](analytics)|com[.]mixpanel[.]android[.](annotations|annotations-compiler|mixpanel-android|mixpanel-android-experimental)|com[.]mixpanel[.](mixpanel-java)|com[.]nimroddayan[.]buildmetrics[.](buildmetrics-mixpanel)|com[.]segment[.]analytics[.]android[.]integrations[.](mixpanel)|com[.]segment[.]analytics[.]android[.](analytics-integration-mixpanel)|com[.]winfooz[.](winanalytics)|io[.]segment[.]analytics[.]android[.](mixpanel)|raywillig[.](mixpanel)).*"
     tags:

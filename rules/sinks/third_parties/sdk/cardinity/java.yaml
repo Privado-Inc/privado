@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Cardinity
     name: Cardinity
     domains:
-      - cardinity.com
+      - "cardinity.com"
     patterns:
-      - "(?i)(com.cardinity.(cardinity-sdk-java)).*"
+      - "(?i)(com[.]cardinity[.](cardinity-sdk-java)).*"
     tags:

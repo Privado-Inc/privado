@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Radar
     name: Radar
     domains:
-      - radar.io
+      - "radar.io"
     patterns:
-      - "(?i)(org.radarbase.(radar-android-application-status|radar-android-empatica|radar-android-faros|radar-android-login-oauth2|radar-android-login-qr|radar-android-phone|radar-android-phone-telephony|radar-android-phone-usage|radar-android-ppg|radar-auth|radar-commons|radar-commons-android|radar-commons-server|radar-commons-testing|radar-commons-unsafe|radar-jersey|radar-jersey-hibernate|radar-output-restructure|radar-schemas-commons|radar-schemas-core|radar-schemas-registration|radar-schemas-tools|radar-spring-auth)).*"
+      - "(?i)(org[.]radarbase[.](radar-android-application-status|radar-android-empatica|radar-android-faros|radar-android-login-oauth2|radar-android-login-qr|radar-android-phone|radar-android-phone-telephony|radar-android-phone-usage|radar-android-ppg|radar-auth|radar-commons|radar-commons-android|radar-commons-server|radar-commons-testing|radar-commons-unsafe|radar-jersey|radar-jersey-hibernate|radar-output-restructure|radar-schemas-commons|radar-schemas-core|radar-schemas-registration|radar-schemas-tools|radar-spring-auth)).*"
     tags:

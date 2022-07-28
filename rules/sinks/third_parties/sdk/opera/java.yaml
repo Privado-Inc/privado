@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Opera
     name: Opera
     domains:
-      - opera.com
+      - "opera.com"
     patterns:
-      - "(?i)(com.opera.(operadriver)).*"
+      - "(?i)(com[.]opera[.](operadriver)).*"
     tags:

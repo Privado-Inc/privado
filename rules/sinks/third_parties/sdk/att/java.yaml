@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Att
     name: Att
     domains:
-      - att.com
+      - "att.com"
     patterns:
-      - "(?i)(com.att.ajsc.(sdk-java-interceptor|sdk-java-utility)).*"
+      - "(?i)(com[.]att[.]ajsc[.](sdk-java-interceptor|sdk-java-utility)).*"
     tags:

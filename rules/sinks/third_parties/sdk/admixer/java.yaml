@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Admixer
     name: Admixer
     domains:
-      - admixer.com
+      - "admixer.com"
     patterns:
-      - "(?i)(com.mobon.sdk.(adapter-admixer)|net.admixer.sdk.mediation.(admob-legacy|admob-pre20|chartboost|fyber|huawei|smaato)|net.admixer.sdk.unity.(unity-plugin)|net.admixer.sdk.(SDK|instream|instreamvideo|sdk)).*"
+      - "(?i)(com[.]mobon[.]sdk[.](adapter-admixer)|net[.]admixer[.]sdk[.]mediation[.](admob-legacy|admob-pre20|chartboost|fyber|huawei|smaato)|net[.]admixer[.]sdk[.]unity[.](unity-plugin)|net[.]admixer[.]sdk[.](SDK|instream|instreamvideo|sdk)).*"
     tags:

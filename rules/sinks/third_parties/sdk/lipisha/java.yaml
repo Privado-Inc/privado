@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Lipisha
     name: Lipisha
     domains:
-      - lipisha.com
+      - "lipisha.com"
     patterns:
-      - "(?i)(com.lipisha.sdk.(lipisha-sdk)).*"
+      - "(?i)(com[.]lipisha[.]sdk[.](lipisha-sdk)).*"
     tags:

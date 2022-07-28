@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Braze
     name: Braze
     domains:
-      - braze.com
+      - "braze.com"
     patterns:
-      - "(?i)(com.rudderstack.android.integration.(braze)).*"
+      - "(?i)(com[.]rudderstack[.]android[.]integration[.](braze)).*"
     tags:

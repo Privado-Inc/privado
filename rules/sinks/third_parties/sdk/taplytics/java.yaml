@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Taplytics
     name: Taplytics
     domains:
-      - taplytics.com
+      - "taplytics.com"
     patterns:
-      - "(?i)(com.mparticle.(android-taplytics-kit)|com.segment.analytics.android.(analytics-integration-taplytics)|com.taplytics.analytics.android.integrations.(taplytics)).*"
+      - "(?i)(com[.]mparticle[.](android-taplytics-kit)|com[.]segment[.]analytics[.]android[.](analytics-integration-taplytics)|com[.]taplytics[.]analytics[.]android[.]integrations[.](taplytics)).*"
     tags:

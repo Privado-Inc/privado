@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Kochava
     name: Kochava
     domains:
-      - kochava.com
+      - "kochava.com"
     patterns:
-      - "(?i)(com.kochava.base.(tracker|tracker-location|tracker-network)|com.kochava.consent.(consent)|com.kochava.core.(core)|com.kochava.entitlements.(entitlements)|com.kochava.tracker.(datapointnetwork|engagement|events|legacyreferrer|tracker)|com.mparticle.(android-kochava-kit)|com.rudderstack.android.integration.(kochava)).*"
+      - "(?i)(com[.]kochava[.]base[.](tracker|tracker-location|tracker-network)|com[.]kochava[.]consent[.](consent)|com[.]kochava[.]core[.](core)|com[.]kochava[.]entitlements[.](entitlements)|com[.]kochava[.]tracker[.](datapointnetwork|engagement|events|legacyreferrer|tracker)|com[.]mparticle[.](android-kochava-kit)|com[.]rudderstack[.]android[.]integration[.](kochava)).*"
     tags:

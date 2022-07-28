@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Ubugsnag
     name: Ubugsnag
     domains:
-      - ubugsnag.com
+      - "ubugsnag.com"
     patterns:
-      - "(?i)(tiny-bugsnag.(tiny-bugsnag)).*"
+      - "(?i)(tiny-bugsnag[.](tiny-bugsnag)).*"
     tags:

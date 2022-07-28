@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Dynatrace
     name: Dynatrace
     domains:
-      - dynatrace.com
+      - "dynatrace.com"
     patterns:
-      - "(?i)(com.dynatrace.agent.(agent-android)|com.dynatrace.diagnostics.automation.(dynatrace-maven-plugin)|com.dynatrace.metric.util.(dynatrace-metric-utils-java)|com.dynatrace.ruxit.tools.(android)|com.dynatrace.sdk.(server-rest-sdk)|com.dynatrace.tools.android.(gradle-plugin)|com.dynatrace.tools.(android)|com.dynatrace.(com.dynatrace.adk)).*"
+      - "(?i)(com[.]dynatrace[.]agent[.](agent-android)|com[.]dynatrace[.]diagnostics[.]automation[.](dynatrace-maven-plugin)|com[.]dynatrace[.]metric[.]util[.](dynatrace-metric-utils-java)|com[.]dynatrace[.]ruxit[.]tools[.](android)|com[.]dynatrace[.]sdk[.](server-rest-sdk)|com[.]dynatrace[.]tools[.]android[.](gradle-plugin)|com[.]dynatrace[.]tools[.](android)|com[.]dynatrace[.](com[.]dynatrace[.]adk)).*"
     tags:

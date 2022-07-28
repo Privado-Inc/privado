@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Plugin
     name: Plugin
     domains:
-      - plugin.gradle
+      - "plugin.gradle"
     patterns:
-      - "(?i)(gradle.plugin.com.schibsted.(schibsted-gradle-plugin)).*"
+      - "(?i)(gradle[.]plugin[.]com[.]schibsted[.](schibsted-gradle-plugin)).*"
     tags:

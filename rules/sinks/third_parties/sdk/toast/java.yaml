@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Toast
     name: Toast
     domains:
-      - toast.com
+      - "toast.com"
     patterns:
-      - "(?i)(com.toast.android.gamebase.(gamebase-sdk)).*"
+      - "(?i)(com[.]toast[.]android[.]gamebase[.](gamebase-sdk)).*"
     tags:

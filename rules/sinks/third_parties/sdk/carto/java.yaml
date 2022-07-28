@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Carto
     name: Carto
     domains:
-      - carto.com
+      - "carto.com"
     patterns:
-      - "(?i)(com.carto.analyticstoolbox.(core)|com.carto.(carto-mobile-sdk)).*"
+      - "(?i)(com[.]carto[.]analyticstoolbox[.](core)|com[.]carto[.](carto-mobile-sdk)).*"
     tags:

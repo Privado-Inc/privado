@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Qualtrics
     name: Qualtrics
     domains:
-      - qualtrics.com
+      - "qualtrics.com"
     patterns:
-      - "(?i)(com.rudderstack.android.integration.(qualtrics)).*"
+      - "(?i)(com[.]rudderstack[.]android[.]integration[.](qualtrics)).*"
     tags:

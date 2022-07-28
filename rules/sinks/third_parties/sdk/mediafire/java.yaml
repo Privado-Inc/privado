@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Mediafire
     name: Mediafire
     domains:
-      - mediafire.org
+      - "mediafire.org"
     patterns:
-      - "(?i)(org.sapia.(sapia_mediafire_plugin|sapia_mediafire_plugin_core|sapia_mediafire_plugin_parent)).*"
+      - "(?i)(org[.]sapia[.](sapia_mediafire_plugin|sapia_mediafire_plugin_core|sapia_mediafire_plugin_parent)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hpe
     name: Hpe
     domains:
-      - hpe.com
+      - "hpe.com"
     patterns:
-      - "(?i)(com.hpe.adm.nga.sdk.(sdk-src)|com.hpe.adm.octane.ciplugins.(integrations-sdk)).*"
+      - "(?i)(com[.]hpe[.]adm[.]nga[.]sdk[.](sdk-src)|com[.]hpe[.]adm[.]octane[.]ciplugins[.](integrations-sdk)).*"
     tags:

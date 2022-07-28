@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Sf
     name: Sf
     domains:
-      - sf.net
+      - "sf.net"
     patterns:
-      - "(?i)(net.sf.m-m-m.(mmm-search-engine)).*"
+      - "(?i)(net[.]sf[.]m-m-m[.](mmm-search-engine)).*"
     tags:

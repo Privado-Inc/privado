@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hanko
     name: Hanko
     domains:
-      - hanko.io
+      - "hanko.io"
     patterns:
-      - "(?i)(io.hanko.(kotlin-sdk)).*"
+      - "(?i)(io[.]hanko[.](kotlin-sdk)).*"
     tags:

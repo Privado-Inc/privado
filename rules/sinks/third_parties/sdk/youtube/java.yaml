@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Youtube
     name: Youtube
     domains:
-      - youtube.com
+      - "youtube.com"
     patterns:
-      - "(?i)(com.google.api.client.(google-api-data-youtube-v2|google-api-data-youtube-v2-atom)|com.google.apis.(google-api-services-youtube|google-api-services-youtubeAnalytics|google-api-services-youtubereporting)|com.google.gdata.(gdata-youtube|gdata-youtube-2.0|gdata-youtube-meta|youtube|youtube-meta)).*"
+      - "(?i)(com[.]google[.]api[.]client[.](google-api-data-youtube-v2|google-api-data-youtube-v2-atom)|com[.]google[.]apis[.](google-api-services-youtube|google-api-services-youtubeAnalytics|google-api-services-youtubereporting)|com[.]google[.]gdata[.](gdata-youtube|gdata-youtube-2[.]0|gdata-youtube-meta|youtube|youtube-meta)).*"
     tags:

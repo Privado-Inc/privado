@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Temporal
     name: Temporal
     domains:
-      - temporal.io
+      - "temporal.io"
     patterns:
-      - "(?i)(io.temporal.(temporal-sdk)).*"
+      - "(?i)(io[.]temporal[.](temporal-sdk)).*"
     tags:

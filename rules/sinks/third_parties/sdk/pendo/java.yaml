@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Pendo
     name: Pendo
     domains:
-      - pendo.io
+      - "pendo.io"
     patterns:
-      - "(?i)(com.ksc.mission.base.(pendo)|org.webjars.npm.(types__pendo-io-browser)).*"
+      - "(?i)(com[.]ksc[.]mission[.]base[.](pendo)|org[.]webjars[.]npm[.](types__pendo-io-browser)).*"
     tags:

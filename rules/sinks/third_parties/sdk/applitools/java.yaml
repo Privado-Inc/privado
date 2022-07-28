@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Applitools
     name: Applitools
     domains:
-      - applitools.com
+      - "applitools.com"
     patterns:
-      - "(?i)(com.applitools.(eyes-sdk-core-java3)).*"
+      - "(?i)(com[.]applitools[.](eyes-sdk-core-java3)).*"
     tags:

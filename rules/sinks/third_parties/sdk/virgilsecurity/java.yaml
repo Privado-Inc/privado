@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Virgilsecurity
     name: Virgilsecurity
     domains:
-      - virgilsecurity.com
+      - "virgilsecurity.com"
     patterns:
-      - "(?i)(com.virgilsecurity.sdk.(sdk|sdk-android)).*"
+      - "(?i)(com[.]virgilsecurity[.]sdk[.](sdk|sdk-android)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Addapptr
     name: Addapptr
     domains:
-      - addapptr.com
+      - "addapptr.com"
     patterns:
-      - "(?i)(net.pubnative.android.(addapptr)).*"
+      - "(?i)(net[.]pubnative[.]android[.](addapptr)).*"
     tags:

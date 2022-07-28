@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Vk
     name: Vk
     domains:
-      - vk.com
+      - "vk.com"
     patterns:
-      - "(?i)(com.appcraftlab.(idgie-vk)|com.github.weekens.(spring-social-vkontakte)|com.jetradarmobile.(sociallogin-vkontakte)|io.github.kascoder.(vkclient)|org.grails.plugins.(spring-security-oauth-vkontakte|spring-security-vkontakte)|ru.shadam.spring-boot.(social-vkontakte-spring-boot-starter)).*"
+      - "(?i)(com[.]appcraftlab[.](idgie-vk)|com[.]github[.]weekens[.](spring-social-vkontakte)|com[.]jetradarmobile[.](sociallogin-vkontakte)|io[.]github[.]kascoder[.](vkclient)|org[.]grails[.]plugins[.](spring-security-oauth-vkontakte|spring-security-vkontakte)|ru[.]shadam[.]spring-boot[.](social-vkontakte-spring-boot-starter)).*"
     tags:

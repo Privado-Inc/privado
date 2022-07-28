@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Unimi
     name: Unimi
     domains:
-      - unimi.it
+      - "unimi.it"
     patterns:
-      - "(?i)(it.unimi.di.(mg4j)).*"
+      - "(?i)(it[.]unimi[.]di[.](mg4j)).*"
     tags:

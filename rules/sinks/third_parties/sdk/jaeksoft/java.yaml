@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Jaeksoft
     name: Jaeksoft
     domains:
-      - jaeksoft.com
+      - "jaeksoft.com"
     patterns:
-      - "(?i)(com.jaeksoft.(opensearchserver)).*"
+      - "(?i)(com[.]jaeksoft[.](opensearchserver)).*"
     tags:

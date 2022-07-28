@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Swish
     name: Swish
     domains:
-      - swish.nu
+      - "swish.nu"
     patterns:
-      - "(?i)(org.notima.(swish4j)).*"
+      - "(?i)(org[.]notima[.](swish4j)).*"
     tags:

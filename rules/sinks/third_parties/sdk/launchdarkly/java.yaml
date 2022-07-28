@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Launchdarkly
     name: Launchdarkly
     domains:
-      - launchdarkly.com
+      - "launchdarkly.com"
     patterns:
-      - "(?i)(com.launchdarkly.(launchdarkly-android-client-sdk|launchdarkly-java-server-sdk)).*"
+      - "(?i)(com[.]launchdarkly[.](launchdarkly-android-client-sdk|launchdarkly-java-server-sdk)).*"
     tags:

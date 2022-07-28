@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Alluxio
     name: Alluxio
     domains:
-      - alluxio.io
+      - "alluxio.io"
     patterns:
-      - "(?i)(org.alluxio.(alluxio-core-client-fs|alluxio-core-client-hdfs|alluxio-core-common|alluxio-core-server-common|alluxio-core-server-master|alluxio-core-server-proxy|alluxio-core-server-worker|alluxio-core-transport|alluxio-hub-server|alluxio-hub-transport|alluxio-integration-fuse|alluxio-integration-jnifuse-fs|alluxio-integration-jnifuse-native|alluxio-job-client|alluxio-job-common|alluxio-job-server|alluxio-logserver|alluxio-minicluster|alluxio-shaded-hadoop|alluxio-shell|alluxio-stress-common|alluxio-stress-shell|alluxio-table-base|alluxio-table-client|alluxio-table-server-common|alluxio-table-server-master|alluxio-table-server-underdb-hive|alluxio-table-shell|alluxio-underfs-hdfs|alluxio-underfs-local)).*"
+      - "(?i)(org[.]alluxio[.](alluxio-core-client-fs|alluxio-core-client-hdfs|alluxio-core-common|alluxio-core-server-common|alluxio-core-server-master|alluxio-core-server-proxy|alluxio-core-server-worker|alluxio-core-transport|alluxio-hub-server|alluxio-hub-transport|alluxio-integration-fuse|alluxio-integration-jnifuse-fs|alluxio-integration-jnifuse-native|alluxio-job-client|alluxio-job-common|alluxio-job-server|alluxio-logserver|alluxio-minicluster|alluxio-shaded-hadoop|alluxio-shell|alluxio-stress-common|alluxio-stress-shell|alluxio-table-base|alluxio-table-client|alluxio-table-server-common|alluxio-table-server-master|alluxio-table-server-underdb-hive|alluxio-table-shell|alluxio-underfs-hdfs|alluxio-underfs-local)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Appbrain
     name: Appbrain
     domains:
-      - appbrain.com
+      - "appbrain.com"
     patterns:
-      - "(?i)(com.appbrain.(appbrain-sdk)).*"
+      - "(?i)(com[.]appbrain[.](appbrain-sdk)).*"
     tags:

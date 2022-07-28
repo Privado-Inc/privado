@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Start
     name: Start
     domains:
-      - start.io
+      - "start.io"
     patterns:
-      - "(?i)(com.startapp.(inapp-sdk)).*"
+      - "(?i)(com[.]startapp[.](inapp-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Flurry
     name: Flurry
     domains:
-      - flurry.com
+      - "flurry.com"
     patterns:
-      - "(?i)(com.flurry.android.(ads|analytics)|com.mobidevelop.robovm.(robopods-flurry-ios-ads)|org.robovm.(robopods-flurry-android-ads|robopods-flurry-ios-ads)).*"
+      - "(?i)(com[.]flurry[.]android[.](ads|analytics)|com[.]mobidevelop[.]robovm[.](robopods-flurry-ios-ads)|org[.]robovm[.](robopods-flurry-android-ads|robopods-flurry-ios-ads)).*"
     tags:

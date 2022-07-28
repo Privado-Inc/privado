@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Yandex
     name: Yandex
     domains:
-      - yandex.com
+      - "yandex.com"
     patterns:
-      - "(?i)(com.yandex.android.(appmetrica-build-plugin|appmetricapush-core|appmetricapush-provider-firebase|appmetricapush-provider-hms|mobileads|mobmetricalib|mobmetricalib-ndk-crashes|mobmetricapushlib)|com.yandex.cloud.(java-sdk-services)|com.yandex.java.(ym-java-epr-sdk)).*"
+      - "(?i)(com[.]yandex[.]android[.](appmetrica-build-plugin|appmetricapush-core|appmetricapush-provider-firebase|appmetricapush-provider-hms|mobileads|mobmetricalib|mobmetricalib-ndk-crashes|mobmetricapushlib)|com[.]yandex[.]cloud[.](java-sdk-services)|com[.]yandex[.]java[.](ym-java-epr-sdk)).*"
     tags:

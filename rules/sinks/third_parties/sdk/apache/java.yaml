@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Apache
     name: Apache
     domains:
-      - apache.org
+      - "apache.org"
     patterns:
-      - "(?i)(org.apache.jclouds.api.(vcloud)|org.apache.jclouds.labs.(vcac)|org.apache.stratos.(vcloud)).*"
+      - "(?i)(org[.]apache[.]jclouds[.]api[.](vcloud)|org[.]apache[.]jclouds[.]labs[.](vcac)|org[.]apache[.]stratos[.](vcloud)).*"
     tags:

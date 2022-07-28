@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Permutive
     name: Permutive
     domains:
-      - permutive.com
+      - "permutive.com"
     patterns:
-      - "(?i)(com.permutive.android.(appnexus)).*"
+      - "(?i)(com[.]permutive[.]android[.](appnexus)).*"
     tags:

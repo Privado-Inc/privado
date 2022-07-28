@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Swrve
     name: Swrve
     domains:
-      - swrve.com
+      - "swrve.com"
     patterns:
-      - "(?i)(com.swrve.mparticle.(mparticle-android-integration-swrve)|com.swrve.sdk.android.(swrve|swrve-amazon|swrve-amazon-beta|swrve-beta|swrve-common|swrve-common-beta|swrve-common-temp|swrve-conversations|swrve-conversations-beta|swrve-firebase|swrve-firebase-beta|swrve-geo|swrve-geo-beta|swrve-google|swrve-huawei|swrve-huawei-beta|swrve-push)|com.swrve.segment.(analytics-android-integration-swrve)|com.swrve.(rate-limited-logger)).*"
+      - "(?i)(com[.]swrve[.]mparticle[.](mparticle-android-integration-swrve)|com[.]swrve[.]sdk[.]android[.](swrve|swrve-amazon|swrve-amazon-beta|swrve-beta|swrve-common|swrve-common-beta|swrve-common-temp|swrve-conversations|swrve-conversations-beta|swrve-firebase|swrve-firebase-beta|swrve-geo|swrve-geo-beta|swrve-google|swrve-huawei|swrve-huawei-beta|swrve-push)|com[.]swrve[.]segment[.](analytics-android-integration-swrve)|com[.]swrve[.](rate-limited-logger)).*"
     tags:

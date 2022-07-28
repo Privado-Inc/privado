@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Fullstory
     name: Fullstory
     domains:
-      - fullstory.com
+      - "fullstory.com"
     patterns:
-      - "(?i)(com.rudderstack.android.integration.(fullstory)).*"
+      - "(?i)(com[.]rudderstack[.]android[.]integration[.](fullstory)).*"
     tags:

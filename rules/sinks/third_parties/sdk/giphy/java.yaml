@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Giphy
     name: Giphy
     domains:
-      - giphy.com
+      - "giphy.com"
     patterns:
-      - "(?i)(com.giphy.sdk.(ui)).*"
+      - "(?i)(com[.]giphy[.]sdk[.](ui)).*"
     tags:

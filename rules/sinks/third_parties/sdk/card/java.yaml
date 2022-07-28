@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Card
     name: Card
     domains:
-      - card.io
+      - "card.io"
     patterns:
-      - "(?i)(io.card.(android-sdk)).*"
+      - "(?i)(io[.]card[.](android-sdk)).*"
     tags:

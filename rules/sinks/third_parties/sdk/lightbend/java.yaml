@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Lightbend
     name: Lightbend
     domains:
-      - lightbend.com
+      - "lightbend.com"
     patterns:
-      - "(?i)(com.akkaserverless.(akkaserverless-sdk-protocol)).*"
+      - "(?i)(com[.]akkaserverless[.](akkaserverless-sdk-protocol)).*"
     tags:

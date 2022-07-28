@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Buzzvil
     name: Buzzvil
     domains:
-      - buzzvil.com
+      - "buzzvil.com"
     patterns:
-      - "(?i)(com.buzzvil.buzzscreen.(sdk-fan)).*"
+      - "(?i)(com[.]buzzvil[.]buzzscreen[.](sdk-fan)).*"
     tags:

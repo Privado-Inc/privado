@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Prebid
     name: Prebid
     domains:
-      - prebid.org
+      - "prebid.org"
     patterns:
-      - "(?i)(com.adsolutions.(adsolutions-prebid-mobile-sdk)|com.freestar.org.prebid.(API1.0)|com.sortable.(prebid-mobile-sdk)|net.pubnative.(hybid.sdk.source.prebid)|org.prebid.(prebid-mobile-sdk|prebid-mobile-sdk-core|prebid-mobile-sdk-gam-event-handlers|prebid-mobile-sdk-mopub-adapters|prebid-mobile-sdk-open-measurement|prebid-mobile-sdk-rendering)).*"
+      - "(?i)(com[.]adsolutions[.](adsolutions-prebid-mobile-sdk)|com[.]freestar[.]org[.]prebid[.](API1[.]0)|com[.]sortable[.](prebid-mobile-sdk)|net[.]pubnative[.](hybid[.]sdk[.]source[.]prebid)|org[.]prebid[.](prebid-mobile-sdk|prebid-mobile-sdk-core|prebid-mobile-sdk-gam-event-handlers|prebid-mobile-sdk-mopub-adapters|prebid-mobile-sdk-open-measurement|prebid-mobile-sdk-rendering)).*"
     tags:

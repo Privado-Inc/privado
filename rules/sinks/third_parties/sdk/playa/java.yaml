@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Playa
     name: Playa
     domains:
-      - playa.ru
+      - "playa.ru"
     patterns:
-      - "(?i)(ru.playa.keycloak.(keycloak-russian-providers)).*"
+      - "(?i)(ru[.]playa[.]keycloak[.](keycloak-russian-providers)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Talkinggenie
     name: Talkinggenie
     domains:
-      - talkinggenie.com
+      - "talkinggenie.com"
     patterns:
-      - "(?i)(com.talkinggenie.(talkinggenie-sdk-common)).*"
+      - "(?i)(com[.]talkinggenie[.](talkinggenie-sdk-common)).*"
     tags:

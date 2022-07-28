@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Appboy
     name: Appboy
     domains:
-      - appboy.com
+      - "appboy.com"
     patterns:
-      - "(?i)(com.appboy.(android-sdk-base|android-sdk-ui|appboy-segment-integration)|com.mparticle.(android-appboy-kit)).*"
+      - "(?i)(com[.]appboy[.](android-sdk-base|android-sdk-ui|appboy-segment-integration)|com[.]mparticle[.](android-appboy-kit)).*"
     tags:

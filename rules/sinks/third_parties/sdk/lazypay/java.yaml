@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Lazypay
     name: Lazypay
     domains:
-      - lazypay.in
+      - "lazypay.in"
     patterns:
-      - "(?i)(com.citruspay.lazypay.(lazypay-sdk)).*"
+      - "(?i)(com[.]citruspay[.]lazypay[.](lazypay-sdk)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Kidoz
     name: Kidoz
     domains:
-      - kidoz.net
+      - "kidoz.net"
     patterns:
-      - "(?i)(net.kidoz.sdk.(kidoz-android-native)).*"
+      - "(?i)(net[.]kidoz[.]sdk[.](kidoz-android-native)).*"
     tags:

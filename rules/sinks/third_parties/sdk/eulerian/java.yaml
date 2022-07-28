@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Eulerian
     name: Eulerian
     domains:
-      - eulerian.com
+      - "eulerian.com"
     patterns:
-      - "(?i)(com.eulerian.android.sdk.(eanalytics)).*"
+      - "(?i)(com[.]eulerian[.]android[.]sdk[.](eanalytics)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Fillr
     name: Fillr
     domains:
-      - fillr.com
+      - "fillr.com"
     patterns:
-      - "(?i)(com.fillr.(fillr-browser-sdk|fillr-browser-sdk-klarna)).*"
+      - "(?i)(com[.]fillr[.](fillr-browser-sdk|fillr-browser-sdk-klarna)).*"
     tags:

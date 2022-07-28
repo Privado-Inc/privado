@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Adison
     name: Adison
     domains:
-      - adison.co
+      - "adison.co"
     patterns:
-      - "(?i)(co.adison.(adison-offerwall-sdk)).*"
+      - "(?i)(co[.]adison[.](adison-offerwall-sdk)).*"
     tags:

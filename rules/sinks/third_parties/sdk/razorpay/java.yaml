@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Razorpay
     name: Razorpay
     domains:
-      - razorpay.com
+      - "razorpay.com"
     patterns:
-      - "(?i)(com.aitime.android.(payment-razorpay)|com.razorpay.(checkout|customui|gpay|razorpay-android|razorpay-java)).*"
+      - "(?i)(com[.]aitime[.]android[.](payment-razorpay)|com[.]razorpay[.](checkout|customui|gpay|razorpay-android|razorpay-java)).*"
     tags:

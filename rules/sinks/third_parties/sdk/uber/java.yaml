@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Uber
     name: Uber
     domains:
-      - uber.com
+      - "uber.com"
     patterns:
-      - "(?i)(com.uber.sdk.(rides-android)).*"
+      - "(?i)(com[.]uber[.]sdk[.](rides-android)).*"
     tags:
