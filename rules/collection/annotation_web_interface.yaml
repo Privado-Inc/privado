@@ -1,24 +1,24 @@
 collections:
-  - id: Java.Spring
+  - id: Collections.Annotation.Spring
     name: Spring Web Interface Annotation
     patterns: 
-      - "^@RequestMapping$|^@PostMapping$|^@GetMapping$|^@PutMapping$|^@GetMapping$|^@DeleteMapping$"
+      - "RequestMapping|PostMapping|GetMapping|PutMapping|GetMapping|DeleteMapping"
     tags:
 
-  - id: Java.Struts
+  - id: Collections.Annotation.Struts
     name: Struts Web Interface Annotation
     patterns: 
-      - "^@Action$"
+      - "Action"
     tags:
 
-  - id: Java.Blade
+  - id: Collections.Annotation.Blade
     name: Blade Web Interface Annotation
     patterns: 
-      - "^@Path$|^@Get$|^@Put$|^@Post$|^@Patch$|^@Delete$"
+      - "Path|Get|Put|Post|Patch|Delete"
     tags:
 
-  - id: Java.Jersey
+  - id: Collections.Annotation.Jersey
     name: Jersey Web Interface Annotation
     patterns: 
-      - "^@Get$|^@Put$|^@Post$|^@Patch$|^@Delete$"
+      - "Get|Put|Post|Patch|Delete"
     tags:
