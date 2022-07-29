@@ -22,3 +22,9 @@ collections:
     patterns: 
       - "Get|Put|Post|Patch|Delete"
     tags:
+
+  - id: Collections.Annotation.GoogleWebToolkit
+    name: GWT Web Interface Annotation
+    patterns: 
+      - "RemoteServiceRelativePath"
+    tags:
