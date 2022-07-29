@@ -1,0 +1,24 @@
+collections:
+  - id: Java.Spring
+    name: Spring Web Interface Annotation
+    patterns: 
+      - "^@RequestMapping$|^@PostMapping$|^@GetMapping$|^@PutMapping$|^@GetMapping$|^@DeleteMapping$"
+    tags:
+
+  - id: Java.Struts
+    name: Struts Web Interface Annotation
+    patterns: 
+      - "^@Action$"
+    tags:
+
+  - id: Java.Blade
+    name: Blade Web Interface Annotation
+    patterns: 
+      - "^@Path$|^@Get$|^@Put$|^@Post$|^@Patch$|^@Delete$"
+    tags:
+
+  - id: Java.Jersey
+    name: Jersey Web Interface Annotation
+    patterns: 
+      - "^@Get$|^@Put$|^@Post$|^@Patch$|^@Delete$"
+    tags:
