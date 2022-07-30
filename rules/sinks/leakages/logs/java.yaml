@@ -1,27 +1,27 @@
 sinks:
 
-  - id: Leakages.Log4j.Error
+  - id: Leakages.Log.Error
     name: Log4j Error
     patterns:
-      - "(?i)(?:org.apache.logging.log4j).*error.*"
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback).*error.*"
     tags:
     
-  - id: Leakages.Log4j.Warn
+  - id: Leakages.Log.Warn
     name: Log4j Warn
     patterns:
-      - "(?i)(?:org.apache.logging.log4j).*warn.*"
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback).*warn.*"
     tags:
   
-  - id: Leakages.Log4j.Debug
+  - id: Leakages.Log.Debug
     name: Log4j Debug
     patterns:
-      - "(?i)(?:org.apache.logging.log4j).*debug.*"
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback).*debug.*"
     tags:
   
-  - id: Leakages.Log4j.Info
+  - id: Leakages.Log.Info
     name: Log4j Error
     patterns:
-      - "(?i)(?:org.apache.logging.log4j).*info.*"
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback).*info.*"
     tags:
   
   - id: Leakages.JavaLogging.Severe
@@ -36,11 +36,6 @@ sinks:
       - "(?i)(?:java.util.logging).*warning.*"
     tags:
   
-  - id: Leakages.JavaLogging.Info
-    name: Java Logging Info
-    patterns:
-      - "(?i)(?:java.util.logging).*info.*"
-    tags:
   
   - id: Leakages.JavaLogging.Log
     name: Java Logging Log
@@ -48,80 +43,32 @@ sinks:
       - "(?i)(?:java.util.logging).*log.*"
     tags:
 
-  - id: Leakages.TinyLog.Error
-    name: Tiny Log Error
-    patterns:
-      - "(?i)(?:org.tinylog.Logger).*error.*"
-    tags:
-
-  - id: Leakages.TinyLog.Warn
-    name: Tiny Log Warn
-    patterns:
-      - "(?i)(?:org.tinylog.Logger).*warn.*"
-    tags:
-  
-  - id: Leakages.TinyLog.Debug
-    name: Tiny Log Debug
-    patterns:
-      - "(?i)(?:org.tinylog.Logger).*debug.*"
-    tags:
-  
-  - id: Leakages.TinyLog.Info
-    name: Tiny Log Info
-    patterns:
-      - "(?i)(?:org.tinylog.Logger).*info.*"
-    tags:
-  
-  - id: Leakages.Logback.Error
-    name: Logback Error
-    patterns:
-      - "(?i)(?:ch.qos.logback).*error.*"
-    tags:
-  
-  - id: Leakages.Logback.Warn
-    name: Logback Warn
-    patterns:
-      - "(?i)(?:ch.qos.logback).*warn.*"
-    tags:
-  
-  - id: Leakages.Logback.Debug
-    name: Logback Debug
-    patterns:
-      - "(?i)(?:ch.qos.logback).*debug.*"
-    tags:
-  
-  - id: Leakages.Logback.Info
-    name: Logback Info
-    patterns:
-      - "(?i)(?:ch.qos.logback).*info.*"
-    tags:
-
   - id: Leakages.Internal.Error
     name: Log Error
     patterns: 
-      - "(?i).*(?:error|wtf|fatal|e|w|f).*"
+      - "(?i)(?:error|wtf|fatal)"
     tags:
   
   - id: Leakages.Internal.Warn
     name: Log Warn
     patterns: 
-      - "(?i).*(?:warn|w).*"
+      - "(?i)(?:warn|w)"
     tags:
   
   - id: Leakages.Internal.Debug
     name: Log Debug
     patterns: 
-      - "(?i).*(?:debug|verbose|trace|d|v|t).*"
+      - "(?i)(?:debug|verbose|trace)"
     tags:
   
   - id: Leakages.Internal.Info
     name: Log Info
     patterns: 
-      - "(?i).*(?:info|out|i).*"
+      - "(?i)(?:info|out)"
     tags:
 
   - id: Leakages.Internal.Console
     name: Log Console
     patterns: 
-      - "(?i)java.io.PrintStream.(?:print|println|write).*"
+      - "(?i)java.io.PrintStream.(?:print|println|write)"
     tags:
