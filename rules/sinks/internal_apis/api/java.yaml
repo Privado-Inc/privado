@@ -2,5 +2,5 @@ sinks:
   - id: Sinks.API.InternalAPI
     name: Internal APIs
     patterns: 
-      - "(?i).*(?:url|client|connection|request|execute|load|host|access|fetch|get|set|put|post|trace|patch|send|remove|delete|write|read|assignment|provider).*"
+      - "(?i).*(?:^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?)|)){4}|localhost).*"
     tags:
