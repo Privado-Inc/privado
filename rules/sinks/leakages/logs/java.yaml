@@ -1,0 +1,55 @@
+sinks:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(?:error|severe|fatal).*"
+    tags:
+    
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(warn|warning).*"
+    tags:
+  
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(debug|log).*"
+    tags:
+  
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback).*info.*"
+    tags:
+
+  - id: Leakages.Internal.Error
+    name: Internal Log Error
+    patterns: 
+      - "(?i)(?:error|wtf|fatal)"
+    tags:
+  
+  - id: Leakages.Internal.Warn
+    name: Internal Log Warn
+    patterns: 
+      - "(?i)(?:warn)"
+    tags:
+  
+  - id: Leakages.Internal.Debug
+    name: Internal Log Debug
+    patterns: 
+      - "(?i)(?:debug|verbose|trace)"
+    tags:
+  
+  - id: Leakages.Internal.Info
+    name: Internal Log Info
+    patterns: 
+      - "(?i)(?:info|out)"
+    tags:
+
+  - id: Leakages.Internal.Console
+    name: Log Console
+    patterns: 
+      - "(?i)java.io.PrintStream.(?:print|println|write)"
+    tags:
