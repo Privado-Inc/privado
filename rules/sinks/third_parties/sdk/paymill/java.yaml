@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paymill.com"
     patterns:
-      - "(?i)(com[.]paymill[.]android[.](android-sdk)).*"
+      - "(?i)(com[.]paymill[.]android).*"
     tags:

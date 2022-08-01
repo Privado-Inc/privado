@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paypal.com"
     patterns:
-      - "(?i)(com[.]paypal[.]excheckout[.](merchant-java-sdk)|com[.]braintreepayments[.]api[.](paypal)|com[.]egzosn[.](pay-java-paypal)|com[.]github[.]shijingsh[.](pay-java-paypal)|com[.]paypal[.]android[.]sdk[.](data-collector|paypal-one-touch)|com[.]paypal[.]android[.](PayPalPartnerAuth)|com[.]paypal[.]butterfly[.](butterfly-extensions-api)|com[.]paypal[.]digraph[.](digraph-parser)|com[.]paypal[.]mocca[.](mocca-client)|com[.]paypal[.]sdk[.](adaptivepaymentssdk|checkout-sdk|merchantsdk|paypal-android-sdk|paypal-core|paypal-partner-android-sdk|paypal-saaj|paypal-soap|permissionssdk|rest-api-sdk)|com[.]paypal[.]springboot[.](resteasy-spring-boot-starter)|com[.]paypal[.](paypalhttp|paypalhttp-testutils)|org[.]clojars[.]thejohnnybrown[.](payflow)).*"
+      - "(?i)(com[.]paypal[.]excheckout|com[.]paypal[.]android[.]sdk|com[.]paypal[.]android|com[.]paypal[.]butterfly|com[.]paypal[.]digraph|com[.]paypal[.]mocca|com[.]paypal[.]sdk|com[.]paypal[.]springboot|com[.]paypal).*"
     tags:

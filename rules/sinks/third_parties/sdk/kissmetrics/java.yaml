@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kissmetrics.com"
     patterns:
-      - "(?i)(com[.]kissmetrics[.]sdk[.](KISSmetricsSDK)|org[.]grails[.]plugins[.](kissmetrics)|org[.]webjars[.]bower[.](angulartics-kissmetrics)).*"
+      - "(?i)(com[.]kissmetrics[.]sdk).*"
     tags:

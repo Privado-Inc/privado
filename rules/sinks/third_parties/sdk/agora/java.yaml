@@ -9,5 +9,5 @@ sinks:
     domains:
       - "agora.io"
     patterns:
-      - "(?i)(io[.]agora[.]rtc[.](full-sdk)).*"
+      - "(?i)(io[.]agora[.]rtc).*"
     tags:

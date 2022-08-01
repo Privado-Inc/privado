@@ -9,5 +9,5 @@ sinks:
     domains:
       - "didomi.io"
     patterns:
-      - "(?i)(io[.]didomi[.]sdk[.](android)).*"
+      - "(?i)(io[.]didomi[.]sdk).*"
     tags:

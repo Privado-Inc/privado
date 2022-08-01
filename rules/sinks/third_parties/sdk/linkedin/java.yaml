@@ -9,5 +9,5 @@ sinks:
     domains:
       - "linkedin.com"
     patterns:
-      - "(?i)(com[.]linkedin[.]zoie[.](zoie-core)).*"
+      - "(?i)(com[.]linkedin[.]zoie).*"
     tags:

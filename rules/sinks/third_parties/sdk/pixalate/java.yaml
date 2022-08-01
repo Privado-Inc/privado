@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pixalate.com"
     patterns:
-      - "(?i)(com[.]pixalate[.]android[.](prebid-blocking)).*"
+      - "(?i)(com[.]pixalate[.]android).*"
     tags:

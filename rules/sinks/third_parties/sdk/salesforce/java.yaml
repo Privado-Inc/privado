@@ -9,5 +9,5 @@ sinks:
     domains:
       - "salesforce.com"
     patterns:
-      - "(?i)(com[.]buabook[.](sf-et-fuel-sdk)|com[.]day[.]cq[.]mcm[.](cq-mcm-exacttarget-integration|cq-mcm-exacttarget-wsclient)|com[.]exacttarget[.](fuelsdk)|com[.]github[.]salesforce-marketingcloud[.](fuelsdk|java-sdk)|com[.]salesforce[.]argus[.](argus)|com[.]salesforce[.]cantor[.](cantor-misc)|com[.]salesforce[.]formula[.](formula-engine-api|formula-engine-impl)|com[.]salesforce[.]marketingcloud[.](marketingcloudsdk)|com[.]salesforce[.]mobilesdk[.](MobileSync|SalesforceAnalytics|SmartStore)|com[.]salesforce[.]nimbus[.](core)|com[.]salesforce[.]transmogrifai[.](transmogrifai-features)).*"
+      - "(?i)(com[.]github[.]salesforce-marketingcloud|com[.]salesforce[.]argus|com[.]salesforce[.]cantor|com[.]salesforce[.]formula|com[.]salesforce[.]marketingcloud|com[.]salesforce[.]mobilesdk|com[.]salesforce[.]nimbus|com[.]salesforce[.]transmogrifai).*"
     tags:

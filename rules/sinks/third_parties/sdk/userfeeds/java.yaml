@@ -9,5 +9,5 @@ sinks:
     domains:
       - "userfeeds.io"
     patterns:
-      - "(?i)(io[.]userfeeds[.]ads[.]sdk[.](core)).*"
+      - "(?i)(io[.]userfeeds[.]ads[.]sdk).*"
     tags:

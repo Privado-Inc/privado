@@ -9,5 +9,5 @@ sinks:
     domains:
       - "janrain.com"
     patterns:
-      - "(?i)(br[.]com[.]insula[.](spring-security-janrain)|com[.]googlecode[.]janrain4j[.](janrain4j)|me[.]dm7[.]jrengage[.]android[.](jrengage)|org[.]grails[.]plugins[.](janrain)|org[.]mule[.]modules[.](mule-module-janrain)).*"
+      - "(?i)(com[.]googlecode[.]janrain4j).*"
     tags:

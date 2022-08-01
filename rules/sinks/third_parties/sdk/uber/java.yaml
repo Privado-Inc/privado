@@ -9,5 +9,5 @@ sinks:
     domains:
       - "uber.com"
     patterns:
-      - "(?i)(com[.]uber[.]sdk[.](rides-android)).*"
+      - "(?i)(com[.]uber[.]sdk).*"
     tags:

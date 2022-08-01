@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cooladata.com"
     patterns:
-      - "(?i)(com[.]cooladata[.]android[.](android-sdk|cooladata-sdk)).*"
+      - "(?i)(com[.]cooladata[.]android).*"
     tags:

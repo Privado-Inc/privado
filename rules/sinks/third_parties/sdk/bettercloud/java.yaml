@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bettercloud.com"
     patterns:
-      - "(?i)(com[.]bettercloud[.](spring-boot-starter-scim2)).*"
+      - "(?i)(com[.]bettercloud).*"
     tags:

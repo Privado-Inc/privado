@@ -9,5 +9,5 @@ sinks:
     domains:
       - "eulerian.com"
     patterns:
-      - "(?i)(com[.]eulerian[.]android[.]sdk[.](eanalytics)).*"
+      - "(?i)(com[.]eulerian[.]android[.]sdk).*"
     tags:

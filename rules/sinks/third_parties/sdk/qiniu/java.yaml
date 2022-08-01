@@ -9,5 +9,5 @@ sinks:
     domains:
       - "qiniu.com"
     patterns:
-      - "(?i)(com[.]qiniu[.](qiniu-java-sdk)).*"
+      - "(?i)(com[.]qiniu).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "card.io"
     patterns:
-      - "(?i)(io[.]card[.](android-sdk)).*"
+      - "(?i)(io[.]card).*"
     tags:

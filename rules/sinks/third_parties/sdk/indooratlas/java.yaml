@@ -9,5 +9,5 @@ sinks:
     domains:
       - "indooratlas.com"
     patterns:
-      - "(?i)(com[.]indooratlas[.]android[.](groundsage-android-sdk|indooratlas-android-sdk|indooratlas-android-wayfinding)).*"
+      - "(?i)(com[.]indooratlas[.]android).*"
     tags:

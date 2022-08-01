@@ -9,5 +9,5 @@ sinks:
     domains:
       - "start.io"
     patterns:
-      - "(?i)(com[.]startapp[.](inapp-sdk)).*"
+      - "(?i)(com[.]startapp).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adcash.com"
     patterns:
-      - "(?i)(com[.]adcash[.](adcash-admob-adapter|adcash-mopub-adapter|adcash-sdk-lib)).*"
+      - "(?i)(com[.]adcash).*"
     tags:

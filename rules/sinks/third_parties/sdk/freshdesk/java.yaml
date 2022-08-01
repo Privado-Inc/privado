@@ -9,5 +9,5 @@ sinks:
     domains:
       - "freshdesk.com"
     patterns:
-      - "(?i)(com[.]github[.]freshdesk[.](freshchat-android)|com[.]github[.]pandafw[.](panda-tube-freshdesk)|io[.]gumga[.](gumga-freshdesk)).*"
+      - "(?i)(com[.]github[.]freshdesk).*"
     tags:

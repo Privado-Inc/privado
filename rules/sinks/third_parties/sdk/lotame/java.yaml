@@ -9,5 +9,5 @@ sinks:
     domains:
       - "lotame.com"
     patterns:
-      - "(?i)(com[.]lotame[.](cc-android-sdk)|com[.]rudderstack[.]android[.]integration[.](lotame)|io[.]gamedock[.]sdk[.](gamedock-sdk-lotame)|kixi[.](data[.]vendor[.]lotame)).*"
+      - "(?i)(com[.]lotame).*"
     tags:

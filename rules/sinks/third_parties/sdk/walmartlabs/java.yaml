@@ -9,5 +9,5 @@ sinks:
     domains:
       - "walmartlabs.com"
     patterns:
-      - "(?i)(com[.]walmartlabs[.]concord[.]runtime[.]v2[.](concord-runtime-sdk-v2)|com[.]walmartlabs[.]concord[.](concord-sdk)).*"
+      - "(?i)(com[.]walmartlabs[.]concord[.]runtime[.]v2|com[.]walmartlabs[.]concord).*"
     tags:

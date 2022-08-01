@@ -9,5 +9,5 @@ sinks:
     domains:
       - "talkinggenie.com"
     patterns:
-      - "(?i)(com[.]talkinggenie[.](talkinggenie-sdk-common)).*"
+      - "(?i)(com[.]talkinggenie).*"
     tags:

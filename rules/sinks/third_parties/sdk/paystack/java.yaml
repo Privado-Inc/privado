@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paystack.com"
     patterns:
-      - "(?i)(app[.]ephod[.]pentecost[.](pentecost)|co[.]paystack[.]android[.]design[.]widget[.](pinpad)|co[.]paystack[.]android[.](paystack)|com[.]dubems[.]paystack[.](com[.]dubems[.]paystack[.]gradle[.]plugin)|com[.]paystack[.]checkout[.](checkout-android)|com[.]paystack[.](checkout-android)|gradle[.]plugin[.]com[.]dubems[.]paystack[.](paystack-grails)|org[.]grails[.]plugins[.](paystack-grails)).*"
+      - "(?i)(co[.]paystack[.]android[.]design[.]widget|co[.]paystack[.]android|com[.]dubems[.]paystack|com[.]paystack[.]checkout|com[.]paystack|gradle[.]plugin[.]com[.]dubems[.]paystack).*"
     tags:

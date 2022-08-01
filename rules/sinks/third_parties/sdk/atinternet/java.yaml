@@ -9,5 +9,5 @@ sinks:
     domains:
       - "atinternet.com"
     patterns:
-      - "(?i)(com[.]atinternet[.](Tracker)|com[.]batch[.]android[.](atinternet-dispatcher)|com[.]fifty-five[.]cargo[.](atinternet)|com[.]fiftyfive[.]cargo[.](ATInternet|atinternet)).*"
+      - "(?i)(com[.]atinternet).*"
     tags:

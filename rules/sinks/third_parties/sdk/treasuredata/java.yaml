@@ -9,5 +9,5 @@ sinks:
     domains:
       - "treasuredata.com"
     patterns:
-      - "(?i)(com[.]treasuredata[.]bigdam[.](log)|com[.]treasuredata[.]client[.](td-client)|com[.]treasuredata[.]embulk[.]plugins[.](embulk-output-td)|com[.]treasuredata[.](td-android-sdk|td-client|td-import|td-logger|underwrap)).*"
+      - "(?i)(com[.]treasuredata[.]bigdam|com[.]treasuredata[.]client|com[.]treasuredata[.]embulk[.]plugins|com[.]treasuredata).*"
     tags:

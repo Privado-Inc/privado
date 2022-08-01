@@ -9,5 +9,5 @@ sinks:
     domains:
       - "unity.com"
     patterns:
-      - "(?i)(com[.]unity3d[.]ads[.](unity-ads)|com[.]mopub[.]mediation[.](unityads)).*"
+      - "(?i)(com[.]unity3d[.]ads).*"
     tags:

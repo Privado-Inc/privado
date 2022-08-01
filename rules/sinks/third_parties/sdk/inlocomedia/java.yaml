@@ -9,5 +9,5 @@ sinks:
     domains:
       - "inlocomedia.com"
     patterns:
-      - "(?i)(com[.]inlocomedia[.]android[.](android-sdk-ads)).*"
+      - "(?i)(com[.]inlocomedia[.]android).*"
     tags:

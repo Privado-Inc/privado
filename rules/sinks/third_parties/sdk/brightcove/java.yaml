@@ -9,5 +9,5 @@ sinks:
     domains:
       - "brightcove.com"
     patterns:
-      - "(?i)(com[.]brightcove[.]metrics[.](metrics-graphite-pickle)|com[.]brightcove[.]zencoder[.]api[.](zencoder-java)|com[.]brightcove[.](dropwizard-s3-config)|org[.]clojars[.]brightcove[.](cassaforte)|org[.]webjars[.]bower[.](github-com-brightcove-videojs-overlay|github-com-brightcove-videojs-playlist)|org[.]webjars[.]bowergithub[.]brightcove[.](pkcs7)).*"
+      - "(?i)(com[.]brightcove[.]metrics|com[.]brightcove[.]zencoder[.]api|com[.]brightcove|org[.]clojars[.]brightcove|org[.]webjars[.]bowergithub[.]brightcove).*"
     tags:

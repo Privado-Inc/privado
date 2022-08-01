@@ -9,5 +9,5 @@ sinks:
     domains:
       - "citruspay.com"
     patterns:
-      - "(?i)(com[.]citruspay[.]sdk[.](payment-sdk)).*"
+      - "(?i)(com[.]citruspay[.]sdk).*"
     tags:

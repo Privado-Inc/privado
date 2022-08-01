@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paysera.com"
     patterns:
-      - "(?i)(com[.]paysera[.]lib[.](kotlin-lib-common-sdk)).*"
+      - "(?i)(com[.]paysera[.]lib).*"
     tags:

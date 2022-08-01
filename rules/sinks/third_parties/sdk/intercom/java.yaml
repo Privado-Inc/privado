@@ -9,5 +9,5 @@ sinks:
     domains:
       - "intercom.com"
     patterns:
-      - "(?i)(com[.]appprova[.]daryl[.](intercom)|com[.]intercom[.](android-commons|android-composer|android-composer-gallery|twig)|com[.]segment[.]analytics[.]android[.]integrations[.](intercom)|eu[.]bolt[.](intercom-transformer)|intercom-clj[.](intercom-clj)|io[.]intercom[.]android[.](intercom-sdk-base-transitive|nexus-client-android|intercom-sdk|intercom-sdk-base|intercom-sdk-fcm|intercom-sdk-gcm)|io[.]intercom[.]module[.](dropwizard-guice)|org[.]jsweet[.]candies[.](intercomjs--intercom)|org[.]randombits[.]confluence[.](confluence-intercom)|org[.]webjars[.]bower[.](angular-intercom|angular-intercom-mini)|io[.]intercom[.](intercom-java)).*"
+      - "(?i)(com[.]intercom|intercom-clj|io[.]intercom[.]android|io[.]intercom[.]module|io[.]intercom).*"
     tags:

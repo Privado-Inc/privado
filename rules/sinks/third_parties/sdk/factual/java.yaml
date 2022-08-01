@@ -9,5 +9,5 @@ sinks:
     domains:
       - "factual.com"
     patterns:
-      - "(?i)(com[.]factual[.](factual-java-driver)).*"
+      - "(?i)(com[.]factual).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "springframework.org"
     patterns:
-      - "(?i)(org[.]springframework[.]social[.](spring-social-facebook-web)).*"
+      - "(?i)(org[.]springframework[.]social).*"
     tags:

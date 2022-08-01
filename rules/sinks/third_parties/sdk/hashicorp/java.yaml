@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hashicorp.com"
     patterns:
-      - "(?i)(com[.]hashicorp[.]nomad[.](nomad-sdk)).*"
+      - "(?i)(com[.]hashicorp[.]nomad).*"
     tags:

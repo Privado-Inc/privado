@@ -9,5 +9,5 @@ sinks:
     domains:
       - "rudderstack.com"
     patterns:
-      - "(?i)(com[.]rudderstack[.]android[.]integration[.](appsflyer)).*"
+      - "(?i)(com[.]rudderstack[.]android[.]integration).*"
     tags:

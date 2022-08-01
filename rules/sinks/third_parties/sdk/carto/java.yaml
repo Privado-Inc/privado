@@ -9,5 +9,5 @@ sinks:
     domains:
       - "carto.com"
     patterns:
-      - "(?i)(com[.]carto[.]analyticstoolbox[.](core)|com[.]carto[.](carto-mobile-sdk)).*"
+      - "(?i)(com[.]carto[.]analyticstoolbox|com[.]carto).*"
     tags:

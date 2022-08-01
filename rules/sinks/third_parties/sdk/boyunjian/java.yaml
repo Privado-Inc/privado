@@ -9,5 +9,5 @@ sinks:
     domains:
       - "boyunjian.com"
     patterns:
-      - "(?i)(com[.]boyunjian[.]flashdb[.](flashdb-client)).*"
+      - "(?i)(com[.]boyunjian[.]flashdb).*"
     tags:

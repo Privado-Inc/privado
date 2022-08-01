@@ -9,5 +9,5 @@ sinks:
     domains:
       - "snowplowanalytics.com"
     patterns:
-      - "(?i)(com[.]nitayjoffe[.]thirdparty[.]com[.]snowplowanalytics[.](snowplow-kinesis-enrich)|com[.]snowplowanalytics[.](iab-spiders-and-robots-client|snowplow-android-tracker|snowplow-badrows|snowplow-common-enrich|snowplow-event-generator-core|snowplow-event-recovery-core|snowplow-events-manifest|snowplow-java-tracker|snowplow-postgres|snowplow-processing-manifest|snowplow-scala-analytics-sdk|snowplow-scala-tracker|snowplow-scala-tracker-core|snowplow-scala-tracker-emitter-http4s|snowplow-scala-tracker-emitter-id|snowplow-scala-tracker-metadata)|ly[.]iterative[.]itly[.](plugin-snowplow-2-android|plugin-snowplow-android|plugin-snowplow-metadata)).*"
+      - "(?i)(com[.]nitayjoffe[.]thirdparty[.]com[.]snowplowanalytics|com[.]snowplowanalytics).*"
     tags:

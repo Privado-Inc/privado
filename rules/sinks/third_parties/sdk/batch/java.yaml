@@ -9,5 +9,5 @@ sinks:
     domains:
       - "batch.com"
     patterns:
-      - "(?i)(com[.]batch[.]android[.](batch-sdk)).*"
+      - "(?i)(com[.]batch[.]android).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "redbricklane.com"
     patterns:
-      - "(?i)(com[.]redbricklane[.]zapr[.]banner[.](zapr-banner-sdk)).*"
+      - "(?i)(com[.]redbricklane[.]zapr[.]banner).*"
     tags:

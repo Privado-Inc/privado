@@ -9,5 +9,5 @@ sinks:
     domains:
       - "comscore.com"
     patterns:
-      - "(?i)(com[.]aol[.]one[.]publishers[.]android[.](comscore)|com[.]comscore[.](android-analytics)|com[.]mparticle[.](android-comscore-kit)|com[.]segment[.]analytics[.]android[.]integrations[.](comscore)).*"
+      - "(?i)(com[.]comscore).*"
     tags:

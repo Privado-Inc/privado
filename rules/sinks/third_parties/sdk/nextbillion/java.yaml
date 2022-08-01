@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nextbillion.ai"
     patterns:
-      - "(?i)(ai[.]nextbillion[.](nbmap-sdk-geojson)).*"
+      - "(?i)(ai[.]nextbillion).*"
     tags:

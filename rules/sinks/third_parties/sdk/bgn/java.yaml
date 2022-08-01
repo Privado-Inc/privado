@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bgn.mobi"
     patterns:
-      - "(?i)(com[.]bgnmobi[.]anrtracker[.](ANRTracker)|com[.]bgnmobi[.]easyfeedback[.](EasyFeedback)|com[.]bgnmobi[.]sdk[.](ads-applovin-max|analytics|core|purchase-module-billingclient|purchases|sdk-bom|sdp|webservice)).*"
+      - "(?i)(com[.]bgnmobi[.]anrtracker|com[.]bgnmobi[.]easyfeedback|com[.]bgnmobi[.]sdk).*"
     tags:

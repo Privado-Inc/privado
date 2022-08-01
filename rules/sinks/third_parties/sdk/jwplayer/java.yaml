@@ -9,5 +9,5 @@ sinks:
     domains:
       - "jwplayer.com"
     patterns:
-      - "(?i)(com[.]definitelyscala[.](scala-js-jwplayer)|com[.]jwplayer[.](jwplatform)|org[.]jsweet[.]candies[.](jwplayer)|org[.]xwiki[.]contrib[.](macro-jwplayer|macro-jwplayer-ui|macro-jwplayer-xip)).*"
+      - "(?i)(com[.]jwplayer).*"
     tags:

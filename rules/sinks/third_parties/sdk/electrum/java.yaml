@@ -9,5 +9,5 @@ sinks:
     domains:
       - "electrum.io"
     patterns:
-      - "(?i)(io[.]electrum[.](message-masking-sdk)).*"
+      - "(?i)(io[.]electrum).*"
     tags:

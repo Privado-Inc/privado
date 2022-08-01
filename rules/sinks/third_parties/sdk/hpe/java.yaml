@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hpe.com"
     patterns:
-      - "(?i)(com[.]hpe[.]adm[.]nga[.]sdk[.](sdk-src)|com[.]hpe[.]adm[.]octane[.]ciplugins[.](integrations-sdk)).*"
+      - "(?i)(com[.]hpe[.]adm[.]nga[.]sdk|com[.]hpe[.]adm[.]octane[.]ciplugins).*"
     tags:

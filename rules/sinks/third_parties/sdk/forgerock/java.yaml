@@ -9,5 +9,5 @@ sinks:
     domains:
       - "forgerock.com"
     patterns:
-      - "(?i)(com[.]forgerock[.]openbanking[.](openbanking-sdk)).*"
+      - "(?i)(com[.]forgerock[.]openbanking).*"
     tags:

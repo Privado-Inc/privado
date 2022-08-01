@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cloudbees.com"
     patterns:
-      - "(?i)(com[.]cloudbees[.]thirdparty[.](vijava)).*"
+      - "(?i)(com[.]cloudbees[.]thirdparty).*"
     tags:

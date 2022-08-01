@@ -9,5 +9,5 @@ sinks:
     domains:
       - "admost.com"
     patterns:
-      - "(?i)(com[.]admost[.]sdk[.](adcolony|admost|amr|applovin|chartboost|facebook|inmobi|mintegral|mobfox-adapter|mopub-adapter|tapjoy|unity)).*"
+      - "(?i)(com[.]admost[.]sdk).*"
     tags:

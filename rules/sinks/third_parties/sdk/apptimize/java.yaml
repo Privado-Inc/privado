@@ -9,5 +9,5 @@ sinks:
     domains:
       - "apptimize.com"
     patterns:
-      - "(?i)(com[.]apptimize[.]segment[.](apptimize-segment-integration)|com[.]mparticle[.](android-apptimize-kit)|com[.]segment[.]analytics[.]android[.]integrations[.](apptimize)|com[.]segment[.]analytics[.]android[.](analytics-integration-apptimize)).*"
+      - "(?i)(com[.]apptimize[.]segment).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mixpanel.com"
     patterns:
-      - "(?i)(com[.]midtrans[.](analytics)|com[.]mixpanel[.]android[.](annotations|annotations-compiler|mixpanel-android|mixpanel-android-experimental)|com[.]mixpanel[.](mixpanel-java)|com[.]nimroddayan[.]buildmetrics[.](buildmetrics-mixpanel)|com[.]segment[.]analytics[.]android[.]integrations[.](mixpanel)|com[.]segment[.]analytics[.]android[.](analytics-integration-mixpanel)|com[.]winfooz[.](winanalytics)|io[.]segment[.]analytics[.]android[.](mixpanel)|raywillig[.](mixpanel)).*"
+      - "(?i)(com[.]mixpanel[.]android|com[.]mixpanel).*"
     tags:

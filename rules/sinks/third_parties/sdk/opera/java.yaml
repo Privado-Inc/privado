@@ -9,5 +9,5 @@ sinks:
     domains:
       - "opera.com"
     patterns:
-      - "(?i)(com[.]opera[.](operadriver)).*"
+      - "(?i)(com[.]opera).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "didd.org"
     patterns:
-      - "(?i)(org[.]didd[.]dev[.](admob)).*"
+      - "(?i)(org[.]didd[.]dev).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pizzalord.club"
     patterns:
-      - "(?i)(club[.]pizzalord[.](shire-sdk)).*"
+      - "(?i)(club[.]pizzalord).*"
     tags:

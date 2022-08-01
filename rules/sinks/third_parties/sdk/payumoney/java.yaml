@@ -9,5 +9,5 @@ sinks:
     domains:
       - "payumoney.com"
     patterns:
-      - "(?i)(com[.]aitime[.]android[.](payment-payumoney)|com[.]payumoney[.]core[.](payumoney-sdk)|com[.]payumoney[.]graphics[.](asset-download-sdk)|com[.]payumoney[.]sdkui[.](plug-n-play)).*"
+      - "(?i)(com[.]payumoney[.]core|com[.]payumoney[.]graphics|com[.]payumoney[.]sdkui).*"
     tags:

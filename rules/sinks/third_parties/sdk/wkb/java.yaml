@@ -9,5 +9,5 @@ sinks:
     domains:
       - "wkb.com"
     patterns:
-      - "(?i)(com[.]wkb[.](basedata-service-sdk)).*"
+      - "(?i)(com[.]wkb).*"
     tags:

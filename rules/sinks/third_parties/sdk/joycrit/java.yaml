@@ -9,5 +9,5 @@ sinks:
     domains:
       - "joycrit.com"
     patterns:
-      - "(?i)(com[.]joycrit[.]sdk[.](joycrit-facebook)).*"
+      - "(?i)(com[.]joycrit[.]sdk).*"
     tags:

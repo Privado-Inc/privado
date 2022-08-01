@@ -9,5 +9,5 @@ sinks:
     domains:
       - "jaeksoft.com"
     patterns:
-      - "(?i)(com[.]jaeksoft[.](opensearchserver)).*"
+      - "(?i)(com[.]jaeksoft).*"
     tags:

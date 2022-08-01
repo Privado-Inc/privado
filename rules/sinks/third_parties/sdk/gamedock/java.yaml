@@ -9,5 +9,5 @@ sinks:
     domains:
       - "gamedock.io"
     patterns:
-      - "(?i)(io[.]gamedock[.]sdk[.](gamedock-sdk-appsflyer)).*"
+      - "(?i)(io[.]gamedock[.]sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "plugin.gradle"
     patterns:
-      - "(?i)(gradle[.]plugin[.]com[.]schibsted[.](schibsted-gradle-plugin)).*"
+      - "(?i)(gradle[.]plugin[.]com[.]schibsted).*"
     tags:

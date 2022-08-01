@@ -9,5 +9,5 @@ sinks:
     domains:
       - "revenuemonster.my"
     patterns:
-      - "(?i)(com[.]github[.]revenuemonster[.](RevenueMonsterOpenAPI)|io[.]revenuemonster[.]sdk[.](rm-kotlin-sdk|rm-kotlin-sdk-android|rm-kotlin-sdk-android-debug|rm-kotlin-sdk-jvm)|io[.]revenuemonster[.](rm-kotlin-sdk|rm-kotlin-sdk-android|rm-kotlin-sdk-android-debug)).*"
+      - "(?i)(com[.]github[.]revenuemonster|io[.]revenuemonster[.]sdk|io[.]revenuemonster).*"
     tags:

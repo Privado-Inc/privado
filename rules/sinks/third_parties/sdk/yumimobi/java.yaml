@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yumimobi.com"
     patterns:
-      - "(?i)(com[.]yumimobi[.]ads[.]mediation[.](admob)|com[.]yumimobi[.]ads[.]thirdparty[.](androidquery|bytedance|mobvista)|com[.]yumimobi[.]ads[.](mediation)).*"
+      - "(?i)(com[.]yumimobi[.]ads[.]mediation|com[.]yumimobi[.]ads[.]thirdparty|com[.]yumimobi[.]ads).*"
     tags:

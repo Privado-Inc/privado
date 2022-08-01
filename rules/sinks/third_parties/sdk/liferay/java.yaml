@@ -9,5 +9,5 @@ sinks:
     domains:
       - "liferay.com"
     patterns:
-      - "(?i)(com[.]liferay[.]mobile[.](liferay-android-sdk|liferay-android-sdk-core)|com[.]liferay[.]portal[.](com[.]liferay[.]portal[.]kernel)|com[.]liferay[.](com[.]liferay[.]configuration[.]admin[.]api|com[.]liferay[.]portal[.]configuration[.]metatype|com[.]liferay[.]portal[.]instance[.]lifecycle[.]api)).*"
+      - "(?i)(com[.]liferay[.]mobile|com[.]liferay[.]portal|com[.]liferay).*"
     tags:

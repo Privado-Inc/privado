@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mobidevelop.com"
     patterns:
-      - "(?i)(com[.]mobidevelop[.]robovm[.](robopods-appmetrica-ios|robopods-appmetrica-parent|robopods-facebook-ios|robopods-facebook-ios-core|robopods-google-mobile-ads-ios)).*"
+      - "(?i)(com[.]mobidevelop[.]robovm).*"
     tags:

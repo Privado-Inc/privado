@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bugsee.com"
     patterns:
-      - "(?i)(com[.]bugsee[.](bugsee-android|bugsee-android-gradle-plugin)).*"
+      - "(?i)(com[.]bugsee).*"
     tags:

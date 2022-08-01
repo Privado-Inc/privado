@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adcolony.com"
     patterns:
-      - "(?i)(co[.]adcel[.]android[.](adcel-adcolony)|com[.]adcolony[.](sdk)|com[.]adtiming[.]adapters[.]om[.](adcolony)|com[.]adtiming[.]adapters[.](adcolony)|com[.]adtoapp[.]android[.](adtoapp-adcolony)|com[.]applovin[.]mediation[.](adcolony-adapter)|com[.]appnexus[.]opensdk[.]mediatedviews[.](appnexus-adcolony-mediation|appnexus-adcolony-mediation-alpha)|com[.]chartboost[.](helium-adcolony)|com[.]cleveradssolutions[.](adcolony)|com[.]consoliads[.](adcolony-mediation)|com[.]hyprmx[.]mediate[.](HyprMediate-AdColony)|com[.]iqzone[.]thirdparty[.](adcolony)|com[.]mi[.]dev[.]mint[.](adcolony|adcolony-adapter)|com[.]mopub[.]mediation[.](adcolony)|com[.]my[.]target[.]mediation[.](adcolony)|com[.]myadsget[.](mediation-adcolony)|com[.]openmediation[.]adapters[.](adcolony)|com[.]tradplusad[.](tradplus-adcolony)|com[.]yandex[.]ads[.]mediation[.](mobileads-adcolony)|com[.]yodo1[.]mas[.]mediation[.](adcolony)|com[.]yomob[.](TGSDKADAdcolony)|com[.]yumimobi[.]ads[.]mediation[.](adcolony)|com[.]yumimobi[.]ads[.]thirdparty[.](adcolony)|io[.]github[.]sunitsdk[.](adcolony)|io[.]maxads[.](max-adcolony)|net[.]admixer[.]sdk[.]mediation[.](adcolony)|net[.]pubnative[.]android[.](adcolony)).*"
+      - "(?i)(com[.]adcolony).*"
     tags:

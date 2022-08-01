@@ -9,5 +9,5 @@ sinks:
     domains:
       - "chiship.cn"
     patterns:
-      - "(?i)(cn[.]chiship[.]sdk[.](chiship-sdk-core)).*"
+      - "(?i)(cn[.]chiship[.]sdk).*"
     tags:

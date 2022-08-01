@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mobgame.com"
     patterns:
-      - "(?i)(com[.]mobgame[.]ads[.](mbgm-android-ads-sdk)).*"
+      - "(?i)(com[.]mobgame[.]ads).*"
     tags:

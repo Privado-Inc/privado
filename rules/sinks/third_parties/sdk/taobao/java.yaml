@@ -9,5 +9,5 @@ sinks:
     domains:
       - "taobao.com"
     patterns:
-      - "(?i)(com[.]taobao[.]android[.](weex_sdk)).*"
+      - "(?i)(com[.]taobao[.]android).*"
     tags:

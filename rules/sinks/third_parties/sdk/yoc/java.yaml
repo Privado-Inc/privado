@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yoc.com"
     patterns:
-      - "(?i)(com[.]yoc[.]visx[.]sdk[.](visx-sdk)).*"
+      - "(?i)(com[.]yoc[.]visx[.]sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ontry.com"
     patterns:
-      - "(?i)(com[.]ontry[.]quangcao[.](qclibsdk)).*"
+      - "(?i)(com[.]ontry[.]quangcao).*"
     tags:

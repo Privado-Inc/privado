@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sendbird.com"
     patterns:
-      - "(?i)(com[.]sendbird[.]sdk[.](uikit)).*"
+      - "(?i)(com[.]sendbird[.]sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "rollout.io"
     patterns:
-      - "(?i)(io[.]rollout[.]rox[.](rox-android)).*"
+      - "(?i)(io[.]rollout[.]rox).*"
     tags:

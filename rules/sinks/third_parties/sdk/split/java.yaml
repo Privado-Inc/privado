@@ -9,5 +9,5 @@ sinks:
     domains:
       - "split.io"
     patterns:
-      - "(?i)(io[.]split[.]api[.](java-api)|io[.]split[.]client[.](java-client|java-client-parent|java-client-testing|pluggable-storage)|io[.]split[.]qosrunner[.](qosrunner)|io[.]split[.](android-client|fastly-api-java|qosdtos|qosrunner)).*"
+      - "(?i)(io[.]split[.]api|io[.]split[.]client|io[.]split[.]qosrunner|io[.]split).*"
     tags:

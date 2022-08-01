@@ -9,5 +9,5 @@ sinks:
     domains:
       - "doku.com"
     patterns:
-      - "(?i)(com[.]doku[.](java-library)).*"
+      - "(?i)(com[.]doku).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "chartbeat.com"
     patterns:
-      - "(?i)(com[.]chartbeat[.](sdk)).*"
+      - "(?i)(com[.]chartbeat).*"
     tags:

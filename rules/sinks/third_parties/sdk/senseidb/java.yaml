@@ -9,5 +9,5 @@ sinks:
     domains:
       - "senseidb.com"
     patterns:
-      - "(?i)(com[.]senseidb[.]zoie[.](zoie-core)).*"
+      - "(?i)(com[.]senseidb[.]zoie).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "catappult.io"
     patterns:
-      - "(?i)(io[.]catappult[.](appcoins-ads)).*"
+      - "(?i)(io[.]catappult).*"
     tags:

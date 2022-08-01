@@ -9,5 +9,5 @@ sinks:
     domains:
       - "leftshift.one"
     patterns:
-      - "(?i)(one[.]leftshift[.]gaia-java-sdk[.](gaia-java-sdk-api)|one[.]leftshift[.]gaia-sdk[.](gaia-sdk-api|gaia-sdk-graphql|gaia-sdk-java-core)).*"
+      - "(?i)(one[.]leftshift[.]gaia-java-sdk|one[.]leftshift[.]gaia-sdk).*"
     tags:

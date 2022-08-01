@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mparticle.com"
     patterns:
-      - "(?i)(com[.]mparticle[.](android-core|android-kit-base|android-tune-kit|smartype-api-android|smartype-api-iosarm64|smartype-api-metadata)|ly[.]iterative[.]mparticle[.](android-core)).*"
+      - "(?i)(com[.]mparticle|ly[.]iterative[.]mparticle).*"
     tags:

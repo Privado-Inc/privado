@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adjust.com"
     patterns:
-      - "(?i)(com[.]adjust[.]sdk[.](adjust-android|adjust-android-imei|adjust-android-oaid|adjust-android-webbridge)|com[.]bytedance[.]ttgame[.](optional_adjust_api_CnRelease)|com[.]mparticle[.](android-adjust-kit)).*"
+      - "(?i)(com[.]adjust[.]sdk).*"
     tags:

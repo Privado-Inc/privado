@@ -9,5 +9,5 @@ sinks:
     domains:
       - "roboconf.net"
     patterns:
-      - "(?i)(net[.]roboconf[.](roboconf-iaas-vmware)).*"
+      - "(?i)(net[.]roboconf).*"
     tags:

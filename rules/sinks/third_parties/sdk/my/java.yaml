@@ -9,7 +9,7 @@ sinks:
     domains:
       - "my.com"
     patterns:
-      - "(?i)(com[.]my[.]target[.](mytarget-sdk)).*"
+      - "(?i)(com[.]my[.]target).*"
     tags:
 
   - id: ThirdParties.SDK.My.Target
@@ -17,7 +17,7 @@ sinks:
     domains:
       - "target.my.com"
     patterns:
-      - "(?i)(com[.]adtoapp[.]android[.](adtoapp-mytarget)|com[.]applovin[.]mediation[.](mytarget-adapter)|com[.]cleveradssolutions[.](mytarget)|com[.]my[.]target[.]mediation[.](admob|applovin)|com[.]tradplusad[.](tradplus-mytarget)|com[.]yodo1[.]mas[.]mediation[.](mytarget)).*"
+      - "(?i)(com[.]my[.]target[.]mediation).*"
     tags:
 
   - id: ThirdParties.SDK.My.Tracker
@@ -25,5 +25,5 @@ sinks:
     domains:
       - "tracker.my.com"
     patterns:
-      - "(?i)(com[.]my[.]tracker[.]plugins[.](beacon)|com[.]my[.]tracker[.](mytracker-sdk)).*"
+      - "(?i)(com[.]my[.]tracker[.]plugins|com[.]my[.]tracker).*"
     tags:

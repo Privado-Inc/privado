@@ -9,5 +9,5 @@ sinks:
     domains:
       - "atlassian.com"
     patterns:
-      - "(?i)(com[.]atlassian[.]bitbucket[.]server[.](bitbucket-branch|bitbucket-branch-api)|com[.]atlassian[.]jira[.]plugins[.](jira-ads-plugin)|com[.]atlassian[.]jira[.](jira-api|jira-rest-java-client-api|jira-rest-java-client-app|jira-rest-java-client-core)|com[.]atlassian[.]rm[.](common-bridges-sdk)|com[.]atlassian[.]stash[.](stash-branch-permissions|stash-branch-utils)|com[.]opsgenie[.]integration[.](sdk)).*"
+      - "(?i)(com[.]atlassian[.]bitbucket[.]server|com[.]atlassian[.]jira[.]plugins|com[.]atlassian[.]jira|com[.]atlassian[.]rm|com[.]atlassian[.]stash).*"
     tags:

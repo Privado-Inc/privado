@@ -9,5 +9,5 @@ sinks:
     domains:
       - "brooklyn.io"
     patterns:
-      - "(?i)(io[.]brooklyn[.]networking[.](brooklyn-networking-vcloud-director-nat-microservice)).*"
+      - "(?i)(io[.]brooklyn[.]networking).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nuls.io"
     patterns:
-      - "(?i)(io[.]nuls[.]core-module[.](kernel-sdk)).*"
+      - "(?i)(io[.]nuls[.]core-module).*"
     tags:

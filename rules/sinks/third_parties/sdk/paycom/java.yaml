@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paycom.com"
     patterns:
-      - "(?i)(uz[.]dkamaloff[.]libs[.](paycom-android|paycom-backend|paycom-backend-metadata|paycom-backend-mpp|paycom-base|paycom-base-metadata|paycom-base-mpp|paycom-sdk)|uz[.]paycom[.](payment)).*"
+      - "(?i)(uz[.]paycom).*"
     tags:

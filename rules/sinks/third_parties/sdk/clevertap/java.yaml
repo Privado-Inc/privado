@@ -9,5 +9,5 @@ sinks:
     domains:
       - "clevertap.com"
     patterns:
-      - "(?i)(com[.]clevertap[.]android[.](clevertap-android-sdk|clevertap-geofence-sdk|clevertap-hms-sdk|clevertap-segment-android|clevertap-xiaomi-sdk|push-templates)|com[.]clevertap[.]apns[.](apns-http2)|com[.]clevertap[.](stormdb)|com[.]mparticle[.](android-clevertap-kit)|com[.]rudderstack[.]android[.]integration[.](clevertap)|sdk[.](clevertap-android-sdk)).*"
+      - "(?i)(com[.]clevertap[.]android|com[.]clevertap[.]apns|com[.]clevertap).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "elastic.co"
     patterns:
-      - "(?i)(co[.]elastic[.]apm[.](apm-agent-attach)|co[.]elastic[.]logging[.](ecs-logging-core)).*"
+      - "(?i)(co[.]elastic[.]apm|co[.]elastic[.]logging).*"
     tags:

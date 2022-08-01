@@ -9,5 +9,5 @@ sinks:
     domains:
       - "myadsget.com"
     patterns:
-      - "(?i)(com[.]myadsget[.](san-sdk)).*"
+      - "(?i)(com[.]myadsget).*"
     tags:

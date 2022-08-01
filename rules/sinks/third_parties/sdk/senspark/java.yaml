@@ -9,5 +9,5 @@ sinks:
     domains:
       - "senspark.com"
     patterns:
-      - "(?i)(com[.]senspark[.]ee[.](ads)).*"
+      - "(?i)(com[.]senspark[.]ee).*"
     tags:

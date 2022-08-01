@@ -9,5 +9,5 @@ sinks:
     domains:
       - "smartlook.com"
     patterns:
-      - "(?i)(com[.]smartlook[.](smartlook-crash-gradle-plugin)).*"
+      - "(?i)(com[.]smartlook).*"
     tags:

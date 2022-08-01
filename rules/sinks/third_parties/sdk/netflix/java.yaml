@@ -9,5 +9,5 @@ sinks:
     domains:
       - "netflix.com"
     patterns:
-      - "(?i)(com[.]netflix[.]eureka[.](eureka-client|eureka-core)|org[.]springframework[.]cloud[.](spring-cloud-netflix-dependencies)).*"
+      - "(?i)(com[.]netflix[.]eureka).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "renjin.org"
     patterns:
-      - "(?i)(org[.]renjin[.]cran[.](MRwarping|fast|spartan|waveclock)).*"
+      - "(?i)(org[.]renjin[.]cran).*"
     tags:

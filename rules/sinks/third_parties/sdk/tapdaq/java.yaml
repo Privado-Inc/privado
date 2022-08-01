@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tapdaq.com"
     patterns:
-      - "(?i)(com[.]tapdaq[.](tapdaq|tapdaqandroid)).*"
+      - "(?i)(com[.]tapdaq).*"
     tags:

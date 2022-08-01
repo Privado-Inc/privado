@@ -9,5 +9,5 @@ sinks:
     domains:
       - "lipisha.com"
     patterns:
-      - "(?i)(com[.]lipisha[.]sdk[.](lipisha-sdk)).*"
+      - "(?i)(com[.]lipisha[.]sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "iovation.com"
     patterns:
-      - "(?i)(com[.]iovation[.]launchkey[.](sdk)).*"
+      - "(?i)(com[.]iovation[.]launchkey).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "redsys.es"
     patterns:
-      - "(?i)(com[.]miguelangeljulvez[.]easyredsys[.](easyredsys-client|easyredsys-server)|es[.]voghdev[.]redsysonandroid[.](library)|redsys-clj[.](redsys-clj)).*"
+      - "(?i)(com[.]miguelangeljulvez[.]easyredsys|es[.]voghdev[.]redsysonandroid|redsys-clj).*"
     tags:

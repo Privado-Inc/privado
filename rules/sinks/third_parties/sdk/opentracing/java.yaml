@@ -9,5 +9,5 @@ sinks:
     domains:
       - "opentracing.io"
     patterns:
-      - "(?i)(io[.]opentracing[.]brave[.](brave-opentracing)|io[.]opentracing[.]contrib[.](opentracing-agent|opentracing-concurrent|opentracing-interceptors|opentracing-jaxrs2|opentracing-jdbc|opentracing-redis-common|opentracing-spanmanager|opentracing-spring-cloud-starter|opentracing-spring-tracer-configuration-starter|opentracing-spring-web-starter|opentracing-tracerresolver|opentracing-web-servlet-filter)|io[.]opentracing[.](opentracing-api|opentracing-impl|opentracing-mock|opentracing-noop|opentracing-util)|org[.]apache[.]camel[.](camel-opentracing)|org[.]eclipse[.]microprofile[.]opentracing[.](microprofile-opentracing-api)).*"
+      - "(?i)(io[.]opentracing[.]brave|io[.]opentracing[.]contrib|io[.]opentracing|org[.]eclipse[.]microprofile[.]opentracing).*"
     tags:

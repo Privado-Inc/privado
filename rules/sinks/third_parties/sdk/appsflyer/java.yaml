@@ -9,5 +9,5 @@ sinks:
     domains:
       - "appsflyer.com"
     patterns:
-      - "(?i)(com[.]appsflyer[.](AppsFlyerAdobeExtension|AppsflyerLib|adrevenue|adrevenue-beta|aerospike-clj|af-android-adrevenue-beta|af-android-sdk|af-android-sdk-beta|af-android-sdk-lite-beta|af-android-sdk-oaid|af-android-sdk-pbf-alpha|appsflyer-adobe-sdk-extension-beta|appsflyer-url-resolver|cloffeine|ketu|lvl|oaid|oaid-beta|pronto|segment-android-integration|segment-android-integration-beta|unity-adrevenue-wrapper|unity-wrapper)|com[.]mparticle[.](android-appsflyer-kit)|com[.]segment[.]analytics[.]android[.](analytics-integration-appsflyer)).*"
+      - "(?i)(com[.]appsflyer).*"
     tags:

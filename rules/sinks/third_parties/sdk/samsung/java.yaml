@@ -9,5 +9,5 @@ sinks:
     domains:
       - "samsung.com"
     patterns:
-      - "(?i)(com[.]samsung[.]android[.](sdk)).*"
+      - "(?i)(com[.]samsung[.]android).*"
     tags:

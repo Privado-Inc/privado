@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hanko.io"
     patterns:
-      - "(?i)(io[.]hanko[.](kotlin-sdk)).*"
+      - "(?i)(io[.]hanko).*"
     tags:

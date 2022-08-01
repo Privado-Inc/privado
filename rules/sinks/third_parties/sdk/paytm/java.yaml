@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paytm.com"
     patterns:
-      - "(?i)(com[.]paytm[.](pgplussdk)).*"
+      - "(?i)(com[.]paytm).*"
     tags:

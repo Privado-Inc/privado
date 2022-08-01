@@ -9,5 +9,5 @@ sinks:
     domains:
       - "consul.io"
     patterns:
-      - "(?i)(com[.]ecwid[.]consul[.](consul-api)|org[.]springframework[.]cloud[.](spring-cloud-starter-consul-all|spring-cloud-starter-consul-discovery)).*"
+      - "(?i)(com[.]ecwid[.]consul).*"
     tags:

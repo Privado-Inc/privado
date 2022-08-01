@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mailjet.com"
     patterns:
-      - "(?i)(com[.]mailjet[.](mailjet-client)|org[.]worldiety[.]mailjet[.](logger)).*"
+      - "(?i)(com[.]mailjet|org[.]worldiety[.]mailjet).*"
     tags:

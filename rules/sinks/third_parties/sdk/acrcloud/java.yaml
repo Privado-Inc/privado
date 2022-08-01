@@ -9,5 +9,5 @@ sinks:
     domains:
       - "acrcloud.com"
     patterns:
-      - "(?i)(com[.]acrcloud[.]sdks[.](com[.]acrcloud[.]sdks[.]recognizer)).*"
+      - "(?i)(com[.]acrcloud[.]sdks).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "scandit.com"
     patterns:
-      - "(?i)(com[.]scandit[.]datacapture[.](barcode|core|id|label|parser|text|text-base)).*"
+      - "(?i)(com[.]scandit[.]datacapture).*"
     tags:

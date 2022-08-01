@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adfalcon.com"
     patterns:
-      - "(?i)(com[.]noqoush[.]adfalcon[.]android[.](sdk)).*"
+      - "(?i)(com[.]noqoush[.]adfalcon[.]android).*"
     tags:

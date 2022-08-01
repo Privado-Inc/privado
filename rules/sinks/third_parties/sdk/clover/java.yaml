@@ -9,5 +9,5 @@ sinks:
     domains:
       - "clover.com"
     patterns:
-      - "(?i)(com[.]clover[.]sdk[.](clover-android-sdk)).*"
+      - "(?i)(com[.]clover[.]sdk).*"
     tags:

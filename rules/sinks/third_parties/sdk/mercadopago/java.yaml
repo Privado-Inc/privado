@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mercadopago.com"
     patterns:
-      - "(?i)(com[.]mercadopago[.](dx-java)).*"
+      - "(?i)(com[.]mercadopago).*"
     tags:

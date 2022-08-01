@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kochava.com"
     patterns:
-      - "(?i)(com[.]kochava[.]base[.](tracker|tracker-location|tracker-network)|com[.]kochava[.]consent[.](consent)|com[.]kochava[.]core[.](core)|com[.]kochava[.]entitlements[.](entitlements)|com[.]kochava[.]tracker[.](datapointnetwork|engagement|events|legacyreferrer|tracker)|com[.]mparticle[.](android-kochava-kit)|com[.]rudderstack[.]android[.]integration[.](kochava)).*"
+      - "(?i)(com[.]kochava[.]base|com[.]kochava[.]consent|com[.]kochava[.]core|com[.]kochava[.]entitlements|com[.]kochava[.]tracker).*"
     tags:

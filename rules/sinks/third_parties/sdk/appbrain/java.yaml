@@ -9,5 +9,5 @@ sinks:
     domains:
       - "appbrain.com"
     patterns:
-      - "(?i)(com[.]appbrain[.](appbrain-sdk)).*"
+      - "(?i)(com[.]appbrain).*"
     tags:

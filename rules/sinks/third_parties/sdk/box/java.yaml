@@ -9,5 +9,5 @@ sinks:
     domains:
       - "box.com"
     patterns:
-      - "(?i)(com[.]box[.](box-java-sdk)).*"
+      - "(?i)(com[.]box).*"
     tags:

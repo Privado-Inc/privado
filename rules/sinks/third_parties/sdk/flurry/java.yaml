@@ -9,5 +9,5 @@ sinks:
     domains:
       - "flurry.com"
     patterns:
-      - "(?i)(com[.]flurry[.]android[.](ads|analytics)|com[.]mobidevelop[.]robovm[.](robopods-flurry-ios-ads)|org[.]robovm[.](robopods-flurry-android-ads|robopods-flurry-ios-ads)).*"
+      - "(?i)(com[.]flurry[.]android).*"
     tags:

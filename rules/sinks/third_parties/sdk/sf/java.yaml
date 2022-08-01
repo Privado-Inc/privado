@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sf.net"
     patterns:
-      - "(?i)(net[.]sf[.]m-m-m[.](mmm-search-engine)).*"
+      - "(?i)(net[.]sf[.]m-m-m).*"
     tags:

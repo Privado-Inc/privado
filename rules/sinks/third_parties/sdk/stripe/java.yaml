@@ -9,5 +9,5 @@ sinks:
     domains:
       - "stripe.com"
     patterns:
-      - "(?i)(com[.]stripe[.](stripe-3ds2-android|stripe-android|stripe-java|stripe-scala|stripe-wechatpay)|org[.]stripe[.](stripe[.]hellow|stripe[.]payment)|org[.]webjars[.]bower[.](angular-stripe|angular-stripe-checkout)|org[.]webjars[.]bowergithub[.]bennypowers[.](stripe-elements)|org[.]webjars[.]bowergithub[.]morbidick[.](stripe-elements)|org[.]webjars[.]bowergithub[.]paperfireelements[.](paperfire-stripe)|org[.]webjars[.]npm[.](github-com-bendrucker-angular-stripe|github-com-vue-stripe-vue-stripe|stripe)).*"
+      - "(?i)(com[.]stripe|org[.]stripe).*"
     tags:

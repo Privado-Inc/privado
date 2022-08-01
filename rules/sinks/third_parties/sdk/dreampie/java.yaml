@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dreampie.cn"
     patterns:
-      - "(?i)(cn[.]dreampie[.](resty-mail)).*"
+      - "(?i)(cn[.]dreampie).*"
     tags:

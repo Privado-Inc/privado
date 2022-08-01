@@ -9,5 +9,5 @@ sinks:
     domains:
       - "virgilsecurity.com"
     patterns:
-      - "(?i)(com[.]virgilsecurity[.]sdk[.](sdk|sdk-android)).*"
+      - "(?i)(com[.]virgilsecurity[.]sdk).*"
     tags:

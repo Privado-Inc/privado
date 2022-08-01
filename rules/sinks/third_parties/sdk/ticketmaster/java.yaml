@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ticketmaster.com"
     patterns:
-      - "(?i)(com[.]ticketmaster[.](presencesdk)).*"
+      - "(?i)(com[.]ticketmaster).*"
     tags:

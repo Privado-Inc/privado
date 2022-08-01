@@ -9,5 +9,5 @@ sinks:
     domains:
       - "criteo.com"
     patterns:
-      - "(?i)(com[.]criteo[.]mediation[.]google[.](criteo-adapter)|com[.]criteo[.]mediation[.]mopub[.](criteo-adapter)|com[.]criteo[.]publisher[.](criteo-publisher-sdk|criteo-publisher-sdk-development)).*"
+      - "(?i)(com[.]criteo[.]mediation[.]google|com[.]criteo[.]mediation[.]mopub|com[.]criteo[.]publisher).*"
     tags:

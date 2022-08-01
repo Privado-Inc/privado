@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cleverads.com"
     patterns:
-      - "(?i)(com[.]cleveradssolutions[.](cas-sdk|facebook)).*"
+      - "(?i)(com[.]cleveradssolutions).*"
     tags:

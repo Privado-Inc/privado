@@ -9,5 +9,5 @@ sinks:
     domains:
       - "danger.systems"
     patterns:
-      - "(?i)(systems[.]danger[.](danger-kotlin-sdk)).*"
+      - "(?i)(systems[.]danger).*"
     tags:

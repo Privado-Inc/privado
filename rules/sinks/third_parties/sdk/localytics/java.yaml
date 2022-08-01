@@ -9,5 +9,5 @@ sinks:
     domains:
       - "localytics.com"
     patterns:
-      - "(?i)(com[.]localytics[.]android[.](library)).*"
+      - "(?i)(com[.]localytics[.]android).*"
     tags:

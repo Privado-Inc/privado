@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sphere.io"
     patterns:
-      - "(?i)(io[.]sphere[.]sdk[.]jvm[.](sdk-http)).*"
+      - "(?i)(io[.]sphere[.]sdk[.]jvm).*"
     tags:

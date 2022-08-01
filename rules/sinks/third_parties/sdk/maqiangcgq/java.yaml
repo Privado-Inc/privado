@@ -9,5 +9,5 @@ sinks:
     domains:
       - "maqiangcgq.com"
     patterns:
-      - "(?i)(com[.]maqiangcgq[.](quincy-sdk)).*"
+      - "(?i)(com[.]maqiangcgq).*"
     tags:

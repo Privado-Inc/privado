@@ -9,5 +9,5 @@ sinks:
     domains:
       - "clickhouse.com"
     patterns:
-      - "(?i)(ru[.]yandex[.]clickhouse[.](clickhouse-jdbc)).*"
+      - "(?i)(ru[.]yandex[.]clickhouse).*"
     tags:

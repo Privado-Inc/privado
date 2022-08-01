@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sinofool.net"
     patterns:
-      - "(?i)(net[.]sinofool[.](alipay-java-sdk)).*"
+      - "(?i)(net[.]sinofool).*"
     tags:

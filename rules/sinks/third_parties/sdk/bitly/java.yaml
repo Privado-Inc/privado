@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bitly.com"
     patterns:
-      - "(?i)(clojure-bitly[.](clojure-bitly)|com[.]bitly[.](bitlysdk)|com[.]opsmatters[.](bitly-java-api)|hashids[.](hashids)|net[.]swisstech[.](bitly-api-client)|net[.]thauvin[.]erik[.](bitly-shorten)|org[.]crazyyak[.]apis[.](yak-apis-bitly)|org[.]danielsz[.](clojure-bitly)|org[.]grails[.]plugins[.](bitly-shortener)|org[.]tiogasolutions[.]apis[.](tioga-apis-bitly)|org[.]wso2[.]carbon[.]extension[.]identity[.]authenticator[.](bitly|connector|feature)).*"
+      - "(?i)(clojure-bitly|com[.]bitly).*"
     tags:

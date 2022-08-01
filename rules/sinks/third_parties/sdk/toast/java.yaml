@@ -9,5 +9,5 @@ sinks:
     domains:
       - "toast.com"
     patterns:
-      - "(?i)(com[.]toast[.]android[.]gamebase[.](gamebase-sdk)).*"
+      - "(?i)(com[.]toast[.]android[.]gamebase).*"
     tags:

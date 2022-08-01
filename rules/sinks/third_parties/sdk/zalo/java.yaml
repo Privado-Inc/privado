@@ -9,5 +9,5 @@ sinks:
     domains:
       - "zalo.me"
     patterns:
-      - "(?i)(me[.]zalo[.](sdk-core)).*"
+      - "(?i)(me[.]zalo).*"
     tags:

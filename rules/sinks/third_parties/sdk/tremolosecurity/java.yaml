@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tremolosecurity.com"
     patterns:
-      - "(?i)(com[.]tremolosecurity[.]unison[.](unison-lastmile-sdk|unison-sdk)).*"
+      - "(?i)(com[.]tremolosecurity[.]unison).*"
     tags:

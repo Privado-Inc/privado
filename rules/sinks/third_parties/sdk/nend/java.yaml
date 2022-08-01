@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nend.net"
     patterns:
-      - "(?i)(com[.]applovin[.]mediation[.]sdks[.]nend[.](nend)|com[.]applovin[.]mediation[.](nend-adapter)|com[.]google[.]ads[.]mediation[.](nend)).*"
+      - "(?i)(com[.]applovin[.]mediation[.]sdks[.]nend).*"
     tags:

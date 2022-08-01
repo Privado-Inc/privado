@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ow2.org"
     patterns:
-      - "(?i)(org[.]ow2[.]proactive[.](vmware)|org[.]ow2[.]sirocco[.]vmm[.](sirocco-vmm-agent-driver-vmware)).*"
+      - "(?i)(org[.]ow2[.]proactive|org[.]ow2[.]sirocco[.]vmm).*"
     tags:

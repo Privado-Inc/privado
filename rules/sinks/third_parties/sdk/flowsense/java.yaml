@@ -9,5 +9,5 @@ sinks:
     domains:
       - "flowsense.com"
     patterns:
-      - "(?i)(br[.]com[.]flowsense[.](sdk)).*"
+      - "(?i)(br[.]com[.]flowsense).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "streampipes.org"
     patterns:
-      - "(?i)(org[.]streampipes[.](streampipes-sdk)).*"
+      - "(?i)(org[.]streampipes).*"
     tags:

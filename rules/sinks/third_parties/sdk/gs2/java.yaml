@@ -9,5 +9,5 @@ sinks:
     domains:
       - "gs2.io"
     patterns:
-      - "(?i)(io[.]gs2[.](gs2-java-sdk-core)).*"
+      - "(?i)(io[.]gs2).*"
     tags:

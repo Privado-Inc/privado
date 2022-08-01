@@ -9,5 +9,5 @@ sinks:
     domains:
       - "epfl.ch"
     patterns:
-      - "(?i)(ch[.]epfl[.]bluebrain[.]nexus[.](delta-sdk-views)).*"
+      - "(?i)(ch[.]epfl[.]bluebrain[.]nexus).*"
     tags:

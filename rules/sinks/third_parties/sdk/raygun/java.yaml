@@ -9,5 +9,5 @@ sinks:
     domains:
       - "raygun.com"
     patterns:
-      - "(?i)(co[.]adcel[.]android[.](adcel-revmob)|com[.]adtoapp[.]android[.](adtoapp-revmob)|com[.]fatboyindustrial[.]logback-raygun[.](logback-raygun)|com[.]mindscapehq[.]raygun4java[.](raygun4java)|com[.]mindscapehq[.](core|raygun4java-play2|sampleapp|webprovider)|com[.]raygun[.](raygun4android)|thegreatape[.](ring-raygun)).*"
+      - "(?i)(com[.]fatboyindustrial[.]logback-raygun|com[.]mindscapehq[.]raygun4java|com[.]raygun).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "razorpay.com"
     patterns:
-      - "(?i)(com[.]aitime[.]android[.](payment-razorpay)|com[.]razorpay[.](checkout|customui|gpay|razorpay-android|razorpay-java)).*"
+      - "(?i)(com[.]razorpay).*"
     tags:

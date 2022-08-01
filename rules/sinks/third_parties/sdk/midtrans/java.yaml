@@ -9,5 +9,5 @@ sinks:
     domains:
       - "midtrans.com"
     patterns:
-      - "(?i)(ai[.]devsupport[.](midtrans)|co[.]mailtarget[.](midtrans-snap-client)|com[.]midtrans[.](corekit|gopay-checkout|issuetracker|java-library|scancard|uikit)|io[.]github[.]febialfarabi[.](payment-model)).*"
+      - "(?i)(com[.]midtrans).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cardinity.com"
     patterns:
-      - "(?i)(com[.]cardinity[.](cardinity-sdk-java)).*"
+      - "(?i)(com[.]cardinity).*"
     tags:

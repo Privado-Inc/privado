@@ -9,5 +9,5 @@ sinks:
     domains:
       - "unimi.it"
     patterns:
-      - "(?i)(it[.]unimi[.]di[.](mg4j)).*"
+      - "(?i)(it[.]unimi[.]di).*"
     tags:

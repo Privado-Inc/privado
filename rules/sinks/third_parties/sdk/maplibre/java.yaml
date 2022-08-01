@@ -9,5 +9,5 @@ sinks:
     domains:
       - "maplibre.com"
     patterns:
-      - "(?i)(org[.]maplibre[.]gl[.](android-sdk)).*"
+      - "(?i)(org[.]maplibre[.]gl).*"
     tags:

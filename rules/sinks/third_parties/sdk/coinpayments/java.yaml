@@ -9,5 +9,5 @@ sinks:
     domains:
       - "coinpayments.net"
     patterns:
-      - "(?i)(com[.]alexdupre[.](coinpayments)|org[.]brunocvcunha[.]coinpayments[.](coinpayments-java)).*"
+      - "(?i)(org[.]brunocvcunha[.]coinpayments).*"
     tags:

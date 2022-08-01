@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adcel.co"
     patterns:
-      - "(?i)(co[.]adcel[.]android[.](adcel-rtb)).*"
+      - "(?i)(co[.]adcel[.]android).*"
     tags:

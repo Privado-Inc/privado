@@ -9,5 +9,5 @@ sinks:
     domains:
       - "launchdarkly.com"
     patterns:
-      - "(?i)(com[.]launchdarkly[.](launchdarkly-android-client-sdk|launchdarkly-java-server-sdk)).*"
+      - "(?i)(com[.]launchdarkly).*"
     tags:

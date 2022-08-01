@@ -9,5 +9,5 @@ sinks:
     domains:
       - "memetix.com"
     patterns:
-      - "(?i)(com[.]memetix[.](microsoft-translator-java-api)).*"
+      - "(?i)(com[.]memetix).*"
     tags:

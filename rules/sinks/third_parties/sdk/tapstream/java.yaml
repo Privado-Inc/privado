@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tapstream.com"
     patterns:
-      - "(?i)(com[.]segment[.]analytics[.]android[.]integrations[.](tapstream)|com[.]segment[.]analytics[.]android[.](analytics-integration-tapstream)|com[.]tapstream[.]sdk[.](segment-integration|tapstream-android|tapstream-core|tapstream-parent)|com[.]tapstream[.](ga4j)|io[.]segment[.]analytics[.]android[.](tapstream)).*"
+      - "(?i)(com[.]tapstream[.]sdk|com[.]tapstream).*"
     tags:

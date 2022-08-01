@@ -9,5 +9,5 @@ sinks:
     domains:
       - "fyber.com"
     patterns:
-      - "(?i)(com[.]fyber[.]vamp[.](core-sdk|mraid-kit|video-kit)|com[.]fyber[.](fairbid-sdk)|com[.]mopub[.]mediation[.](fyber)).*"
+      - "(?i)(com[.]fyber[.]vamp|com[.]fyber).*"
     tags:

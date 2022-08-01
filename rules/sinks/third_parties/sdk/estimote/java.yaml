@@ -9,5 +9,5 @@ sinks:
     domains:
       - "estimote.com"
     patterns:
-      - "(?i)(com[.]estimote[.](cloud-plugin|coresdk|internal-plugins-api|ketchup|management-sdk|proximity-sdk|repository-plugin|scanning-plugin|scanning-sdk|sdk)).*"
+      - "(?i)(com[.]estimote).*"
     tags:

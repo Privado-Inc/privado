@@ -9,5 +9,5 @@ sinks:
     domains:
       - "piwik.org"
     patterns:
-      - "(?i)(org[.]piwik[.]sdk[.](piwik-sdk)).*"
+      - "(?i)(org[.]piwik[.]sdk).*"
     tags:

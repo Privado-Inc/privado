@@ -9,5 +9,5 @@ sinks:
     domains:
       - "solovyev.org"
     patterns:
-      - "(?i)(org[.]solovyev[.]android[.](android-common-ads)).*"
+      - "(?i)(org[.]solovyev[.]android).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "taboola.com"
     patterns:
-      - "(?i)(com[.]taboola[.](android-sdk|android-sdk-beta|android-sdk-infra|android-sdk-om|android-sdk-plus|android-sdk-plus-beta|android-sdk-plus-push|android-sdk-plus-push-debug|api-java-client-core|async-profiler-actuator-endpoint|backstage-api-java-client|cronyx-parent|taboola-cronyx|taboola-cronyx-api|taboola-cronyx-bundle-examples|taboola-cronyx-server-example|testmavenlibrary)).*"
+      - "(?i)(com[.]taboola).*"
     tags:

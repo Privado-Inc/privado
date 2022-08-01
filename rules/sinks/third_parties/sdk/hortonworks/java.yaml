@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hortonworks.com"
     patterns:
-      - "(?i)(com[.]hortonworks[.]streamline[.](streamline-sdk)).*"
+      - "(?i)(com[.]hortonworks[.]streamline).*"
     tags:

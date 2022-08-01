@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kamon.io"
     patterns:
-      - "(?i)(io[.]kamon[.](kamon-akka-http|kamon-core|kamon-prometheus|kamon-status-page|kanela-agent)).*"
+      - "(?i)(io[.]kamon).*"
     tags:

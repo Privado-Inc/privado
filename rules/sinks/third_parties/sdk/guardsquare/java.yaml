@@ -9,5 +9,5 @@ sinks:
     domains:
       - "guardsquare.com"
     patterns:
-      - "(?i)(com[.]guardsquare[.](dexguard-gradle-plugin|proguard-base|proguard-core)).*"
+      - "(?i)(com[.]guardsquare).*"
     tags:

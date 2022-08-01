@@ -9,5 +9,5 @@ sinks:
     domains:
       - "buzzvil.com"
     patterns:
-      - "(?i)(com[.]buzzvil[.]buzzscreen[.](sdk-fan)).*"
+      - "(?i)(com[.]buzzvil[.]buzzscreen).*"
     tags:

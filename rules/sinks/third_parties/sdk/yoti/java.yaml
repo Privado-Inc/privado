@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yoti.com"
     patterns:
-      - "(?i)(com[.]yoti[.]mobile[.]android[.]sdk[.](yoti-sdk-common|yoti-sdk-core|yoti-sdk-remote|yoti-sdk-ui)).*"
+      - "(?i)(com[.]yoti[.]mobile[.]android[.]sdk).*"
     tags:

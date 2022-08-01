@@ -9,5 +9,5 @@ sinks:
     domains:
       - "thirdpresence.com"
     patterns:
-      - "(?i)(com[.]thirdpresence[.]adsdk[.]mediation[.]admob[.](thirdpresence-admob-mediation)).*"
+      - "(?i)(com[.]thirdpresence[.]adsdk[.]mediation[.]admob).*"
     tags:

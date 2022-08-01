@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mopinion.com"
     patterns:
-      - "(?i)(com[.]mopinion[.]mopinionsdk[.](mopinionsdk)|com[.]mopinion[.]mopinionsdkweb[.](mopinionsdkweb)).*"
+      - "(?i)(com[.]mopinion[.]mopinionsdk|com[.]mopinion[.]mopinionsdkweb).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "amap.com"
     patterns:
-      - "(?i)(com[.]amap[.]api[.](3dmap|3dmapgp|location|location-aar|locgp|map2d|map3d|map3d-native|navi|navi-3dmap|navi-3dmap-aar|navi-native|navi-solo|navi-solo-native|navi-test-all|poisearchmodule|search|searchgp|tripmodule)|com[.]amap[.]aplugin[.](com[.]amap[.]aplugin[.]gradle[.]plugin)).*"
+      - "(?i)(com[.]amap[.]api|com[.]amap[.]aplugin).*"
     tags:

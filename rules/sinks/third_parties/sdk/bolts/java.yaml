@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bolts.net"
     patterns:
-      - "(?i)(com[.]idealista[.](elves)|com[.]mobidevelop[.]robovm[.](robopods-bolts-ios)|com[.]parse[.]bolts[.](bolts-android|bolts-applinks|bolts-tasks)|fr[.]avianey[.](bolts-android-api)|org[.]robovm[.](robopods-bolts-ios)|ru[.]yandex[.](bolts)).*"
+      - "(?i)(com[.]parse[.]bolts).*"
     tags:

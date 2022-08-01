@@ -9,5 +9,5 @@ sinks:
     domains:
       - "temporal.io"
     patterns:
-      - "(?i)(io[.]temporal[.](temporal-sdk)).*"
+      - "(?i)(io[.]temporal).*"
     tags:

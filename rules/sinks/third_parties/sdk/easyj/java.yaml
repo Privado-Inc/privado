@@ -9,5 +9,5 @@ sinks:
     domains:
       - "easyj.icu"
     patterns:
-      - "(?i)(icu[.]easyj[.]sdk[.](easyj-dwz-sdk-core)|icu[.]easyj[.](easyj-dwz-sdk-core)).*"
+      - "(?i)(icu[.]easyj[.]sdk|icu[.]easyj).*"
     tags:

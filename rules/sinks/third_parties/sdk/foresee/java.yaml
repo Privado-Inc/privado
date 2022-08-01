@@ -9,5 +9,5 @@ sinks:
     domains:
       - "foresee.com"
     patterns:
-      - "(?i)(com[.]foresee[.]platform[.](public-api-sdk)|com[.]foresee[.]sdk[.](adobeExtension|core|cxMeasure|feedback|replay|sdk)).*"
+      - "(?i)(com[.]foresee[.]platform|com[.]foresee[.]sdk).*"
     tags:

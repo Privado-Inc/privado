@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bing.com"
     patterns:
-      - "(?i)(com[.]microsoft[.]bing[.](bing-autosuggest|bing-commerce-search|bing-customimagesearch|bing-customwebsearch|bing-entitysearch|bing-imagesearch|bing-newsearch|bing-spellcheck|bing-videosearch)).*"
+      - "(?i)(com[.]microsoft[.]bing).*"
     tags:

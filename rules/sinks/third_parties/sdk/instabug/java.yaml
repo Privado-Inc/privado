@@ -9,5 +9,5 @@ sinks:
     domains:
       - "instabug.com"
     patterns:
-      - "(?i)(com[.]instabug[.]library[.](instabug|instabug-apm|instabug-apm-okhttp-interceptor|instabug-bug|instabug-chat|instabug-core|instabug-crash|instabug-features-request|instabug-ndk-crash|instabug-plugin|instabug-survey|instabug-with-okhttp-interceptor|instabugabs|instabugbasic|instabugcompat|instabugcore|instabugsupport)|org[.]librarysimplified[.](org[.]librarysimplified[.]instabug[.]spi)).*"
+      - "(?i)(com[.]instabug[.]library).*"
     tags:

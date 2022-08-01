@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cucumber.io"
     patterns:
-      - "(?i)(io[.]cucumber[.](cucumber-picocontainer|datatable)).*"
+      - "(?i)(io[.]cucumber).*"
     tags:

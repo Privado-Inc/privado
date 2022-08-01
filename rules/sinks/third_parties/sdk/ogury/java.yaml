@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ogury.com"
     patterns:
-      - "(?i)(co[.]ogury[.](ogury-sdk)|com[.]mopub[.]mediation[.](ogury)).*"
+      - "(?i)(co[.]ogury).*"
     tags:

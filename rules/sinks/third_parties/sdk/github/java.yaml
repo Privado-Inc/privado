@@ -9,7 +9,7 @@ sinks:
     domains:
       - "github.com"
     patterns:
-      - "(?i)(com[.]github[.]nisrulz[.](easydeviceinfo-ads)|se[.]bjurr[.]violations[.](violation-comments-to-github-gradle-plugin)).*"
+      - "(?i)(com[.]github[.]nisrulz).*"
     tags:
 
   - id: ThirdParties.SDK.Github.Wechaty
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "wechaty.github.io"
     patterns:
-      - "(?i)(io[.]github[.]wechaty[.](wechaty)).*"
+      - "(?i)(io[.]github[.]wechaty).*"
     tags:

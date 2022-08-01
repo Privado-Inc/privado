@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ensighten.com"
     patterns:
-      - "(?i)(com[.]ensighten[.]android[.](ensighten-android-gradle-inpath-plugin|ensighten-android-gradle-plugin|ensighten-core)|com[.]ensighten[.]plugin[.]android[.](ensighten)).*"
+      - "(?i)(com[.]ensighten[.]android|com[.]ensighten[.]plugin[.]android).*"
     tags:

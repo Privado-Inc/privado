@@ -9,5 +9,5 @@ sinks:
     domains:
       - "voxeet.com"
     patterns:
-      - "(?i)(com[.]voxeet[.]sdk[.](sdk)).*"
+      - "(?i)(com[.]voxeet[.]sdk).*"
     tags:

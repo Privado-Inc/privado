@@ -9,5 +9,5 @@ sinks:
     domains:
       - "rank.com"
     patterns:
-      - "(?i)(com[.]rank[.]android[.](rankregistration|rankresponsiblegambling|ranksettings)).*"
+      - "(?i)(com[.]rank[.]android).*"
     tags:

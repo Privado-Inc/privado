@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cloudera.com"
     patterns:
-      - "(?i)(com[.]cloudera[.]cdp[.](cdp-sdk-java)).*"
+      - "(?i)(com[.]cloudera[.]cdp).*"
     tags:

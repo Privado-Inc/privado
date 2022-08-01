@@ -9,5 +9,5 @@ sinks:
     domains:
       - "contentful.com"
     patterns:
-      - "(?i)(com[.]contentful[.]java[.](java-sdk)).*"
+      - "(?i)(com[.]contentful[.]java).*"
     tags:

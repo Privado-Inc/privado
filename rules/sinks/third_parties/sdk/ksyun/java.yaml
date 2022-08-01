@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ksyun.com"
     patterns:
-      - "(?i)(com[.]ksyun[.](ksc-sdk-java-core)).*"
+      - "(?i)(com[.]ksyun).*"
     tags:

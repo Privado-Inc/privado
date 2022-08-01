@@ -9,5 +9,5 @@ sinks:
     domains:
       - "Upwork.com"
     patterns:
-      - "(?i)(com[.]Upwork[.](api)).*"
+      - "(?i)(com[.]Upwork).*"
     tags:

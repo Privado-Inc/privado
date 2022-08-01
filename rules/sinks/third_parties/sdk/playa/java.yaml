@@ -9,5 +9,5 @@ sinks:
     domains:
       - "playa.ru"
     patterns:
-      - "(?i)(ru[.]playa[.]keycloak[.](keycloak-russian-providers)).*"
+      - "(?i)(ru[.]playa[.]keycloak).*"
     tags:

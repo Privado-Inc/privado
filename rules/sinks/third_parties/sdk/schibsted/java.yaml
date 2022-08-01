@@ -9,5 +9,5 @@ sinks:
     domains:
       - "schibsted.com"
     patterns:
-      - "(?i)(com[.]schibsted[.]account[.](account-sdk-android-common|account-sdk-android-core|account-sdk-android-smartlock|account-sdk-android-ui|account-sdk-android-web|account-sdk-java)|com[.]schibsted[.]jofogas[.]jfgtestlibrary[.](jfgtestlibrary)|com[.]schibsted[.]security[.](strongbox-sdk|strongbox-spring-boot-starter)|com[.]schibsted[.]spain[.](api-down-checker|barista|generator|parallax-layer-layout|retroswagger)|com[.]schibsted[.]spt[.]data[.](jslt)|schibsted[.]gradle-init[.](schibsted[.]gradle-init[.]gradle[.]plugin)|io[.]schibsted[.]scrooge-gradle-plugin[.](io[.]schibsted[.]scrooge-gradle-plugin[.]gradle[.]plugin)|io[.]schibsted[.](scrooge-gradle-plugin)).*"
+      - "(?i)(com[.]schibsted[.]account|com[.]schibsted[.]jofogas[.]jfgtestlibrary|com[.]schibsted[.]security|com[.]schibsted[.]spain|com[.]schibsted[.]spt[.]data|schibsted[.]gradle-init|io[.]schibsted[.]scrooge-gradle-plugin|io[.]schibsted).*"
     tags:

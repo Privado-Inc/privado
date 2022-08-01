@@ -9,5 +9,5 @@ sinks:
     domains:
       - "giphy.com"
     patterns:
-      - "(?i)(com[.]giphy[.]sdk[.](ui)).*"
+      - "(?i)(com[.]giphy[.]sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "segment.com"
     patterns:
-      - "(?i)(com[.]segment[.]analytics[.]android[.](analytics|analytics-core)|com[.]segment[.]analytics[.]java[.](analytics)|io[.]segment[.]analytics[.]android[.](bugsnag)).*"
+      - "(?i)(com[.]segment[.]analytics[.]android|com[.]segment[.]analytics[.]java|io[.]segment[.]analytics[.]android).*"
     tags:

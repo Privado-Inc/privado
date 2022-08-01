@@ -9,5 +9,5 @@ sinks:
     domains:
       - "qcloud.com"
     patterns:
-      - "(?i)(com[.]qcloud[.](cos_api|cos_api-bundle|qcloud-java-sdk)).*"
+      - "(?i)(com[.]qcloud).*"
     tags:

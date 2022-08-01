@@ -9,7 +9,7 @@ sinks:
     domains:
       - "cloud.huawei.com"
     patterns:
-      - "(?i)(com[.]huawei[.]agconnect[.](agconnect-apms-plugin|agconnect-applinking|agconnect-appmessaging|agconnect-crash)|com[.]huawei[.]hms[.](awareness|hwid|iap|identity|location|push|videokit-player)|com[.]huaweicloud[.](esdk-obs-java)).*"
+      - "(?i)(com[.]huawei[.]agconnect|com[.]huawei[.]hms|com[.]huaweicloud).*"
     tags:
 
   - id: ThirdParties.SDK.Huawei
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "huawei.com"
     patterns:
-      - "(?i)(com[.]huawei[.]agconnect[.](agconnect-apms|agconnect-storage)|com[.]huawei[.]hms[.](appservice|dtm-api|hianalytics|maps)|com[.]huawei[.]scenekit[.](full-sdk)).*"
+      - "(?i)(com[.]huawei[.]agconnect|com[.]huawei[.]hms|com[.]huawei[.]scenekit).*"
     tags:

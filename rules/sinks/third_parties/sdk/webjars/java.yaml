@@ -9,5 +9,5 @@ sinks:
     domains:
       - "webjars.org"
     patterns:
-      - "(?i)(org[.]webjars[.]npm[.](github-com-appnexus-lucid)).*"
+      - "(?i)(org[.]webjars[.]npm).*"
     tags:

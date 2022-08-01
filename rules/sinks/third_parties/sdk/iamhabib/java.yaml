@@ -9,5 +9,5 @@ sinks:
     domains:
       - "iamhabib.com"
     patterns:
-      - "(?i)(com[.]iamhabib[.](easy-ads)).*"
+      - "(?i)(com[.]iamhabib).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "microfocus.com"
     patterns:
-      - "(?i)(com[.]microfocus[.]adm[.]almoctane[.]sdk[.](sdk-src)).*"
+      - "(?i)(com[.]microfocus[.]adm[.]almoctane[.]sdk).*"
     tags:

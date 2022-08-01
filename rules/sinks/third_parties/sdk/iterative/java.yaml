@@ -9,5 +9,5 @@ sinks:
     domains:
       - "iterative.ly"
     patterns:
-      - "(?i)(ly[.]iterative[.]itly[.](sdk-core)).*"
+      - "(?i)(ly[.]iterative[.]itly).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "exponea.com"
     patterns:
-      - "(?i)(com[.]exponea[.]sdk[.](sdk)).*"
+      - "(?i)(com[.]exponea[.]sdk).*"
     tags:

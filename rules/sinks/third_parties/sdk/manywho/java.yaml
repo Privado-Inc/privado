@@ -9,5 +9,5 @@ sinks:
     domains:
       - "manywho.com"
     patterns:
-      - "(?i)(com[.]manywho[.]sdk[.](sdk-api|sdk-core|sdk-server)).*"
+      - "(?i)(com[.]manywho[.]sdk).*"
     tags:

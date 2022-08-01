@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dropbox.com"
     patterns:
-      - "(?i)(com[.]dropbox[.]affectedmoduledetector[.](affectedmoduledetector)|com[.]dropbox[.]core[.](dropbox-core-sdk|sdk)|com[.]dropbox[.]kaiken[.](kaiken-annotations|kaiken-runtime|kaiken-scoping)|com[.]dropbox[.]mobile[.]kotlinsnapshot[.](core)|com[.]dropbox[.]mobile[.]store[.](cache4|multicast|store4)).*"
+      - "(?i)(com[.]dropbox[.]affectedmoduledetector|com[.]dropbox[.]core|com[.]dropbox[.]kaiken|com[.]dropbox[.]mobile[.]kotlinsnapshot|com[.]dropbox[.]mobile[.]store).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "lyft.com"
     patterns:
-      - "(?i)(com[.]lyft[.](lyft-android-sdk)).*"
+      - "(?i)(com[.]lyft).*"
     tags:

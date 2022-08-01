@@ -9,5 +9,5 @@ sinks:
     domains:
       - "objectbox.io"
     patterns:
-      - "(?i)(io[.]objectbox[.](objectbox-gradle-plugin)).*"
+      - "(?i)(io[.]objectbox).*"
     tags:

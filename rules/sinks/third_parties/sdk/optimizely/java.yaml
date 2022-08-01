@@ -9,5 +9,5 @@ sinks:
     domains:
       - "optimizely.com"
     patterns:
-      - "(?i)(com[.]mparticle[.](android-optimizely-kit)|com[.]optimizely[.]ab[.](android-sdk|android-sdk-datafile-handler|android-sdk-event-handler|android-sdk-shared|android-sdk-user-experiment-record|android-sdk-user-profile|core-api|core-httpclient-impl|httpclient)|com[.]patxi[.](poetimizely-maven-plugin)|com[.]rudderstack[.]android[.]integration[.](optimizely)|com[.]segment[.]analytics[.]android[.]integrations[.](optimizely|optimizelyx)|org[.]webjars[.]bower[.](ng-optimizely)).*"
+      - "(?i)(com[.]optimizely[.]ab).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "applitools.com"
     patterns:
-      - "(?i)(com[.]applitools[.](eyes-sdk-core-java3)).*"
+      - "(?i)(com[.]applitools).*"
     tags:

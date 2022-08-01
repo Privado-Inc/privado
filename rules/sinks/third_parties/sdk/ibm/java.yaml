@@ -9,7 +9,7 @@ sinks:
     domains:
       - "cloud.ibm.com"
     patterns:
-      - "(?i)(com[.]ibm[.]cloud[.](sdk-core)).*"
+      - "(?i)(com[.]ibm[.]cloud).*"
     tags:
 
   - id: ThirdParties.SDK.Ibm
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "ibm.com"
     patterns:
-      - "(?i)(com[.]ibm[.]watson[.]developer_cloud[.](java-sdk)).*"
+      - "(?i)(com[.]ibm[.]watson[.]developer_cloud).*"
     tags:

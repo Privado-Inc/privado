@@ -9,5 +9,5 @@ sinks:
     domains:
       - "arcgis.com"
     patterns:
-      - "(?i)(com[.]esri[.]android[.]geotrigger[.](geotrigger-sdk)|com[.]esri[.]arcgis[.]android[.](arcgis-android)|com[.]esri[.]arcgis[.](arcobjects)|com[.]esri[.]arcgisruntime[.](arcgis-android|arcgis-java-resources|gradle-arcgis-java-plugin)|com[.]esri[.]geometry[.](esri-geometry-api)|com[.]esri[.](jsde_concurrent|jsde_jpe_sdk|jsde_sdk)).*"
+      - "(?i)(com[.]esri[.]arcgis[.]android|com[.]esri[.]arcgis|com[.]esri[.]arcgisruntime).*"
     tags:

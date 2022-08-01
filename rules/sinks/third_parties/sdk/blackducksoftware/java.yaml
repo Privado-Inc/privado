@@ -9,5 +9,5 @@ sinks:
     domains:
       - "blackducksoftware.com"
     patterns:
-      - "(?i)(com[.]blackducksoftware[.]protex[.]sdkclient[.](protex-sdk-client)).*"
+      - "(?i)(com[.]blackducksoftware[.]protex[.]sdkclient).*"
     tags:

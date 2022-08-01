@@ -9,5 +9,5 @@ sinks:
     domains:
       - "army.mil"
     patterns:
-      - "(?i)(mil[.]army[.]missioncommand[.](emp3-android-sdk)).*"
+      - "(?i)(mil[.]army[.]missioncommand).*"
     tags:

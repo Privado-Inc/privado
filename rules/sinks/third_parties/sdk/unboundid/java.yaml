@@ -9,5 +9,5 @@ sinks:
     domains:
       - "unboundid.com"
     patterns:
-      - "(?i)(com[.]unboundid[.]product[.]scim[.](scim-sdk)).*"
+      - "(?i)(com[.]unboundid[.]product[.]scim).*"
     tags:

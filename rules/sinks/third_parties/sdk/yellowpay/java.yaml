@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yellowpay.co"
     patterns:
-      - "(?i)(co[.]yellowpay[.](Yellow-SDK)).*"
+      - "(?i)(co[.]yellowpay).*"
     tags:

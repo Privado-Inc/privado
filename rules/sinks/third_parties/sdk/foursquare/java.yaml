@@ -9,5 +9,5 @@ sinks:
     domains:
       - "foursquare.com"
     patterns:
-      - "(?i)(com[.]foursquare[.](adobe-pilgrim-extension)|com[.]mparticle[.](android-pilgrim-kit)).*"
+      - "(?i)(com[.]foursquare).*"
     tags:

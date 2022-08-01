@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bingzer.com"
     patterns:
-      - "(?i)(com[.]bingzer[.]android[.]ads[.](adnets-google-ads|adrunner)).*"
+      - "(?i)(com[.]bingzer[.]android[.]ads).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "blueconic.com"
     patterns:
-      - "(?i)(com[.]blueconic[.](browscap-java)).*"
+      - "(?i)(com[.]blueconic).*"
     tags:

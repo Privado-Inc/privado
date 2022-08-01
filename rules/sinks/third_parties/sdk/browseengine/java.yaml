@@ -9,5 +9,5 @@ sinks:
     domains:
       - "browseengine.com"
     patterns:
-      - "(?i)(com[.]browseengine[.]bobo[.](bobo-browse)).*"
+      - "(?i)(com[.]browseengine[.]bobo).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "iclicker.com"
     patterns:
-      - "(?i)(com[.]iclicker[.](iclicker-library-api-layer|iclicker-library-api-model|iclicker-library-client|iclicker-library-core|iclicker-library-data-layer|iclicker-library-repository-layer|iclicker-library-service-layer|iclicker-scheduler-messaging)|com[.]reef[.](iclicker-request-client)).*"
+      - "(?i)(com[.]iclicker).*"
     tags:

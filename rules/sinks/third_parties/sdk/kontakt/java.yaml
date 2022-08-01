@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kontakt.io"
     patterns:
-      - "(?i)(com[.]kontaktio[.]sdk[.](kontakt-sdk)|com[.]kontaktio[.](kontakt-sdk|sdk)|io[.]kontakt[.]mvn[.](sdk)).*"
+      - "(?i)(com[.]kontaktio[.]sdk|com[.]kontaktio|io[.]kontakt[.]mvn).*"
     tags:

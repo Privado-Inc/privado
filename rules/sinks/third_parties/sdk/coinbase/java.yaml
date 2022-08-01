@@ -9,5 +9,5 @@ sinks:
     domains:
       - "coinbase.com"
     patterns:
-      - "(?i)(coinbase-pro-clj[.](coinbase-pro-clj)|com[.]coinbase[.]android[.](coinbase-android-sdk)|com[.]coinbase[.]api[.](coinbase-java)|com[.]coinbase[.](coinbase-java)|com[.]github[.]bad-pop[.](jcoinbase)|com[.]github[.]dubasdey[.](coinbase-pro-client)|com[.]github[.]kevinstl[.](CoinbaseJava)|com[.]gruelbox[.](xchange-coinbase|xchange-stream-coinbasepro)|com[.]paritytrading[.]philadelphia[.](philadelphia-coinbase)|com[.]tokenopoly[.]coinbridge[.](coinbase-commerce-core)|com[.]westwinglabs[.](coinbase-kotlin)|com[.]xeiam[.]xchange[.](xchange-coinbase|xchange-coinbaseex)|io[.]contek[.]invoker[.](coinbasepro-api|invoker-coinbasepro-api)|org[.]estonlabs[.](coinbase-java-api)|org[.]jvirtanen[.]philadelphia[.](philadelphia-coinbase)|org[.]knowm[.]xchange[.](xchange-coinbase|xchange-coinbaseex)).*"
+      - "(?i)(coinbase-pro-clj|com[.]coinbase[.]android|com[.]coinbase[.]api|com[.]coinbase).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "applovin.com"
     patterns:
-      - "(?i)(com[.]adtoapp[.]android[.](adtoapp-applovin)|com[.]applovin[.]mediation[.](bytedance-adapter|fyber-adapter|google-adapter|ironsource-adapter|tapjoy-adapter|unityads-adapter)|com[.]applovin[.]quality[.](AppLovinQualityServiceGradlePlugin)|com[.]applovin[.](applovin-sdk)|com[.]mopub[.]mediation[.](applovin)).*"
+      - "(?i)(com[.]applovin[.]mediation|com[.]applovin[.]quality|com[.]applovin).*"
     tags:

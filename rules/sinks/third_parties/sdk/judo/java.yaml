@@ -9,5 +9,5 @@ sinks:
     domains:
       - "judo.app"
     patterns:
-      - "(?i)(app[.]judo[.](judo-sdk)|io[.]rover[.]campaigns[.](core|debug|experiences|location|notifications|ticketmaster)|io[.]rover[.](sdk)).*"
+      - "(?i)(app[.]judo).*"
     tags:

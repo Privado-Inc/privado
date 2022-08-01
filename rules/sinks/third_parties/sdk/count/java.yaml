@@ -9,5 +9,5 @@ sinks:
     domains:
       - "count.ly"
     patterns:
-      - "(?i)(com[.]gitee[.]chinasoft_ohos[.](countly-sdk-ohos)|com[.]people[.]library[.](countly)|com[.]segment[.]analytics[.]android[.]integrations[.](countly)|com[.]segment[.]analytics[.]android[.](analytics-integration-countly)|io[.]segment[.]analytics[.]android[.](countly)|ly[.]count[.]android[.]plugins[.]upload-symbols[.](ly[.]count[.]android[.]plugins[.]upload-symbols[.]gradle[.]plugin)|ly[.]count[.]android[.](sdk|sdk-native|sdk-plugin)|ly[.]count[.]sdk[.](core|java)|ly[.]count[.](sdk-android|sdk-android-messaging)).*"
+      - "(?i)(ly[.]count[.]android[.]plugins[.]upload-symbols|ly[.]count[.]android|ly[.]count[.]sdk|ly[.]count).*"
     tags:

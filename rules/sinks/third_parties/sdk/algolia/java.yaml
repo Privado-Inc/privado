@@ -9,5 +9,5 @@ sinks:
     domains:
       - "algolia.com"
     patterns:
-      - "(?i)(com[.]algolia[.]instantsearch[.](voice)).*"
+      - "(?i)(com[.]algolia[.]instantsearch).*"
     tags:

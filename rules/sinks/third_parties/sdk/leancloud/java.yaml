@@ -9,5 +9,5 @@ sinks:
     domains:
       - "leancloud.cn"
     patterns:
-      - "(?i)(cn[.]leancloud[.]android[.](avoscloud-sdk)).*"
+      - "(?i)(cn[.]leancloud[.]android).*"
     tags:

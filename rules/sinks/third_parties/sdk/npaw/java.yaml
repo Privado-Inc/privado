@@ -9,5 +9,5 @@ sinks:
     domains:
       - "npaw.com"
     patterns:
-      - "(?i)(com[.]npaw[.]youbora[.]adapters[.](brightcove-adapter|exoplayer2-adapter|ima-adapter)|com[.]npaw[.]youbora[.](youboralib)).*"
+      - "(?i)(com[.]npaw[.]youbora[.]adapters|com[.]npaw[.]youbora).*"
     tags:

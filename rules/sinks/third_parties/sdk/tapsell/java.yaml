@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tapsell.ir"
     patterns:
-      - "(?i)(ir[.]tapsell[.]sdk[.](tapsell-sdk-android)).*"
+      - "(?i)(ir[.]tapsell[.]sdk).*"
     tags:

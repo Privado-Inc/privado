@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mapxus.com"
     patterns:
-      - "(?i)(com[.]mapxus[.]sdk[.](sdk-auth)).*"
+      - "(?i)(com[.]mapxus[.]sdk).*"
     tags:

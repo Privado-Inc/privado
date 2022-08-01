@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hypertrack.io"
     patterns:
-      - "(?i)(io[.]hypertrack[.](common|consumer|hypertrack-java|smart-scheduler|transmitter)).*"
+      - "(?i)(io[.]hypertrack).*"
     tags:

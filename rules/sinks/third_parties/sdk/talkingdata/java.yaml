@@ -9,5 +9,5 @@ sinks:
     domains:
       - "talkingdata.com"
     patterns:
-      - "(?i)(com[.]talkingdata[.]fregata[.](core|fregata|spark)|io[.]github[.]v7lin[.](mobile-analytics-talkingdata-android|talkingdata-analytics-android)).*"
+      - "(?i)(com[.]talkingdata[.]fregata).*"
     tags:

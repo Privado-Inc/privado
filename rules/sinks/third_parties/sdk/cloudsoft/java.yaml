@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cloudsoft.io"
     patterns:
-      - "(?i)(io[.]cloudsoft[.]jclouds[.]api[.](vcloud)|io[.]cloudsoft[.]jclouds[.]labs[.](vcloud-director)).*"
+      - "(?i)(io[.]cloudsoft[.]jclouds[.]api|io[.]cloudsoft[.]jclouds[.]labs).*"
     tags:

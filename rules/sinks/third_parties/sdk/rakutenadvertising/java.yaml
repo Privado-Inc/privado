@@ -9,5 +9,5 @@ sinks:
     domains:
       - "rakutenadvertising.io"
     patterns:
-      - "(?i)(io[.]rakutenadvertising[.](ads)).*"
+      - "(?i)(io[.]rakutenadvertising).*"
     tags:

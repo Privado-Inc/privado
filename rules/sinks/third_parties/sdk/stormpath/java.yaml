@@ -9,5 +9,5 @@ sinks:
     domains:
       - "stormpath.com"
     patterns:
-      - "(?i)(com[.]stormpath[.]sdk[.](stormpath-sdk-api|stormpath-sdk-httpclient|stormpath-sdk-impl|stormpath-sdk-oauth)).*"
+      - "(?i)(com[.]stormpath[.]sdk).*"
     tags:

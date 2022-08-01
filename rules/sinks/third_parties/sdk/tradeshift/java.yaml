@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tradeshift.com"
     patterns:
-      - "(?i)(com[.]tradeshift[.]sdk[.](tradeshift-sdk-core)).*"
+      - "(?i)(com[.]tradeshift[.]sdk).*"
     tags:

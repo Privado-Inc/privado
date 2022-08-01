@@ -9,5 +9,5 @@ sinks:
     domains:
       - "drivit.com"
     patterns:
-      - "(?i)(com[.]github[.]drivitapp[.](AndroidSDK|AndroidSDK-Private|android-core)).*"
+      - "(?i)(com[.]github[.]drivitapp).*"
     tags:

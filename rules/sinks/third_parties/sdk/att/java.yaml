@@ -9,5 +9,5 @@ sinks:
     domains:
       - "att.com"
     patterns:
-      - "(?i)(com[.]att[.]ajsc[.](sdk-java-interceptor|sdk-java-utility)).*"
+      - "(?i)(com[.]att[.]ajsc).*"
     tags:

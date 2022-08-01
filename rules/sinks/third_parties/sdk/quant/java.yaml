@@ -9,5 +9,5 @@ sinks:
     domains:
       - "quant.network"
     patterns:
-      - "(?i)(network[.]quant[.](overledger-sdk-api)).*"
+      - "(?i)(network[.]quant).*"
     tags:

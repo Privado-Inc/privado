@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cantara.no"
     patterns:
-      - "(?i)(no[.]cantara[.]messi[.](messi-sdk)).*"
+      - "(?i)(no[.]cantara[.]messi).*"
     tags:

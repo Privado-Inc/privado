@@ -9,5 +9,5 @@ sinks:
     domains:
       - "appier.com"
     patterns:
-      - "(?i)(com[.]appier[.]android[.](ads-sdk)|com[.]appier[.](ads-android)).*"
+      - "(?i)(com[.]appier[.]android|com[.]appier).*"
     tags:

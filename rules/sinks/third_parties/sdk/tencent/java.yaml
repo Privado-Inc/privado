@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tencent.com"
     patterns:
-      - "(?i)(com[.]tencent[.]mm[.]opensdk[.](wechat-sdk-android-without-mta)|com[.]tencentcloudapi[.](tencentcloud-sdk-java)).*"
+      - "(?i)(com[.]tencent[.]mm[.]opensdk|com[.]tencentcloudapi).*"
     tags:

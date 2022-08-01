@@ -9,5 +9,5 @@ sinks:
     domains:
       - "launchkey.com"
     patterns:
-      - "(?i)(com[.]launchkey[.]sdk[.](launchkey-sdk)).*"
+      - "(?i)(com[.]launchkey[.]sdk).*"
     tags:

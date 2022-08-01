@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hyphenate.com"
     patterns:
-      - "(?i)(com[.]hyphenate[.](hyphenate-sdk|hyphenate-sdk-lite)).*"
+      - "(?i)(com[.]hyphenate).*"
     tags:

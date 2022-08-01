@@ -9,5 +9,5 @@ sinks:
     domains:
       - "chartboost.com"
     patterns:
-      - "(?i)(com[.]chartboost[.]sdk[.](android-sdk)|com[.]chartboost[.](chartboost-sdk|chartboost-unity-bridge|helium|helium-chartboost|helium-facebook|helium-tapjoy|helium-unityads|helium-vungle)).*"
+      - "(?i)(com[.]chartboost[.]sdk|com[.]chartboost).*"
     tags:

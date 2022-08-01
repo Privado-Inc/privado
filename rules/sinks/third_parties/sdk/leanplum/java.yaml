@@ -9,5 +9,5 @@ sinks:
     domains:
       - "leanplum.com"
     patterns:
-      - "(?i)(com[.]leanplum[.]segment[.](LeanplumIntegration)|com[.]leanplum[.](leanplum-core|leanplum-fcm|leanplum-gcm|leanplum-location|leanplum-mipush|leanplum-monitoring|leanplum-push)|com[.]mparticle[.](android-leanplum-kit)|com[.]rudderstack[.]android[.]integration[.](leanplum)|com[.]segment[.]analytics[.]android[.](analytics-integration-leanplum)).*"
+      - "(?i)(com[.]leanplum[.]segment|com[.]leanplum).*"
     tags:

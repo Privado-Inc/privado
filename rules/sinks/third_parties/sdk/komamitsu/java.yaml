@@ -9,5 +9,5 @@ sinks:
     domains:
       - "komamitsu.org"
     patterns:
-      - "(?i)(org[.]komamitsu[.](fluency-treasuredata)).*"
+      - "(?i)(org[.]komamitsu).*"
     tags:

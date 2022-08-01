@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mule.org"
     patterns:
-      - "(?i)(org[.]mule[.]modules[.]security[.](microsoft-authentication)).*"
+      - "(?i)(org[.]mule[.]modules[.]security).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "amobee.com"
     patterns:
-      - "(?i)(com[.]amobee[.](meeseeks-db)).*"
+      - "(?i)(com[.]amobee).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "quarkiverse.io"
     patterns:
-      - "(?i)(io[.]quarkiverse[.]operatorsdk[.](quarkus-operator-sdk)).*"
+      - "(?i)(io[.]quarkiverse[.]operatorsdk).*"
     tags:

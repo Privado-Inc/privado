@@ -9,5 +9,5 @@ sinks:
     domains:
       - "unify.id"
     patterns:
-      - "(?i)(id[.]unify[.]sdk[.](sdk-core)).*"
+      - "(?i)(id[.]unify[.]sdk).*"
     tags:

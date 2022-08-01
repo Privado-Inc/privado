@@ -9,5 +9,5 @@ sinks:
     domains:
       - "balzo.eu"
     patterns:
-      - "(?i)(eu[.]balzo[.]auth-droid[.](facebook-core)).*"
+      - "(?i)(eu[.]balzo[.]auth-droid).*"
     tags:

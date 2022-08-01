@@ -9,5 +9,5 @@ sinks:
     domains:
       - "oracle.com"
     patterns:
-      - "(?i)(com[.]oracle[.]oci[.]sdk[.](oci-java-sdk-common|oci-java-sdk-database|oci-java-sdk-keymanagement|oci-java-sdk-loadbalancer|oci-java-sdk-monitoring|oci-java-sdk-ons|oci-java-sdk-workrequests)).*"
+      - "(?i)(com[.]oracle[.]oci[.]sdk).*"
     tags:

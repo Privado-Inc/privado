@@ -9,5 +9,5 @@ sinks:
     domains:
       - "admixer.com"
     patterns:
-      - "(?i)(com[.]mobon[.]sdk[.](adapter-admixer)|net[.]admixer[.]sdk[.]mediation[.](admob-legacy|admob-pre20|chartboost|fyber|huawei|smaato)|net[.]admixer[.]sdk[.]unity[.](unity-plugin)|net[.]admixer[.]sdk[.](SDK|instream|instreamvideo|sdk)).*"
+      - "(?i)(net[.]admixer[.]sdk[.]mediation|net[.]admixer[.]sdk[.]unity|net[.]admixer[.]sdk).*"
     tags:

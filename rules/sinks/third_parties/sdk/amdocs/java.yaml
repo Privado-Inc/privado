@@ -9,5 +9,5 @@ sinks:
     domains:
       - "amdocs.com"
     patterns:
-      - "(?i)(com[.]amdocs[.]zusammen[.](zusammen-sdk)).*"
+      - "(?i)(com[.]amdocs[.]zusammen).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tune.com"
     patterns:
-      - "(?i)(com[.]fifty-five[.]cargo[.](tune)|com[.]fiftyfive[.]cargo[.](Tune|tune)|com[.]github[.]andriykuba[.](scala-glicko2)|com[.]github[.]rastoarpit[.](paytunessdk)|com[.]smartwhere[.](android-tune)|com[.]tune[.]reporting[.](tune-reporting)|com[.]tune[.]sdk[.](tune-api-java)|com[.]tune[.](tune-marketing-console-sdk|tune-marketing-console-sdk-lite|tune-segment-integration)|org[.]cicirello[.](chips-n-salsa)|org[.]reaktivity[.](ry-tune)|org[.]renjin[.]cran[.](BSGW|ELMR|PDSCE|atmcmc)|uk[.]org[.]retep[.]xmpp[.]protocol[.](tune)).*"
+      - "(?i)(com[.]tune[.]reporting|com[.]tune[.]sdk|com[.]tune).*"
     tags:

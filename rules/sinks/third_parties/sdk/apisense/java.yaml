@@ -9,5 +9,5 @@ sinks:
     domains:
       - "apisense.io"
     patterns:
-      - "(?i)(io[.]apisense[.]sdk[.](apisense-android-sdk)).*"
+      - "(?i)(io[.]apisense[.]sdk).*"
     tags:

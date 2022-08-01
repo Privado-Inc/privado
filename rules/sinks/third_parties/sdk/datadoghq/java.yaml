@@ -9,5 +9,5 @@ sinks:
     domains:
       - "datadoghq.com"
     patterns:
-      - "(?i)(com[.]datadoghq[.](dd-sdk-android|dd-sdk-android-gradle-plugin|java-dogstatsd-client)).*"
+      - "(?i)(com[.]datadoghq).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adison.co"
     patterns:
-      - "(?i)(co[.]adison[.](adison-offerwall-sdk)).*"
+      - "(?i)(co[.]adison).*"
     tags:

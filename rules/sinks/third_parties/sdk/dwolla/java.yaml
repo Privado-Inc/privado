@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dwolla.com"
     patterns:
-      - "(?i)(com[.]dwolla[.](dwolla-java-sdk)).*"
+      - "(?i)(com[.]dwolla).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "outbrain.com"
     patterns:
-      - "(?i)(com[.]buzzvil[.]buzzscreen[.](sdk-outbrain)|com[.]outbrain[.]outbrain[.](OBSDK)|com[.]outbrain[.]sdk[.]pub[.](obsdk)|com[.]outbrain[.]swinfra[.](ci-friendly-maven-plugin)).*"
+      - "(?i)(com[.]outbrain[.]outbrain|com[.]outbrain[.]sdk[.]pub|com[.]outbrain[.]swinfra).*"
     tags:

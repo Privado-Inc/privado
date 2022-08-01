@@ -9,5 +9,5 @@ sinks:
     domains:
       - "zendrive.com"
     patterns:
-      - "(?i)(com[.]zendrive[.]sdk[.]android[.]support[.](ebson)|com[.]zendrive[.]sdk[.]android[.](ZendriveSDK|ZendriveSDK-HMS|ZendriveSDK-testing)).*"
+      - "(?i)(com[.]zendrive[.]sdk[.]android[.]support|com[.]zendrive[.]sdk[.]android).*"
     tags:

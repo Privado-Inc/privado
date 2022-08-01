@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mail.ru"
     patterns:
-      - "(?i)(org[.]grails[.]plugins[.](catharsis-widgets)|ru[.]mail[.](auth-sdk-pub)).*"
+      - "(?i)(ru[.]mail).*"
     tags:

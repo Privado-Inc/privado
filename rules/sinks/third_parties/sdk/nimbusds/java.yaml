@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nimbusds.com"
     patterns:
-      - "(?i)(com[.]nimbusds[.](c2id-server-sdk)).*"
+      - "(?i)(com[.]nimbusds).*"
     tags:

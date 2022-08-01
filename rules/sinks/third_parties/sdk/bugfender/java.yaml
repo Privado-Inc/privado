@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bugfender.com"
     patterns:
-      - "(?i)(com[.]bugfender[.]sdk[.](android)|com[.]bugfender[.]upload-mapping[.](com[.]bugfender[.]upload-mapping[.]gradle[.]plugin)|com[.]bugfender[.](upload-mapping)).*"
+      - "(?i)(com[.]bugfender[.]sdk|com[.]bugfender[.]upload-mapping|com[.]bugfender).*"
     tags:

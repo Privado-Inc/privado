@@ -9,5 +9,5 @@ sinks:
     domains:
       - "baidu.com"
     patterns:
-      - "(?i)(com[.]baidu[.]aip[.](java-sdk)|com[.]baidubce[.](bce-java-sdk)).*"
+      - "(?i)(com[.]baidu[.]aip|com[.]baidubce).*"
     tags:

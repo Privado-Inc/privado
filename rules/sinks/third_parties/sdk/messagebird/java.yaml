@@ -9,5 +9,5 @@ sinks:
     domains:
       - "messagebird.com"
     patterns:
-      - "(?i)(com[.]messagebird[.](messagebird-api)).*"
+      - "(?i)(com[.]messagebird).*"
     tags:

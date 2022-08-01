@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pollfish.com"
     patterns:
-      - "(?i)(com[.]pollfish[.]mediation[.](pollfish-admob|pollfish-mopub)|com[.]pollfish[.](mopub-adapter|pollfish|pollfish-googleplay|pollfish-universal|unity)).*"
+      - "(?i)(com[.]pollfish[.]mediation|com[.]pollfish).*"
     tags:

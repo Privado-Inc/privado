@@ -9,5 +9,5 @@ sinks:
     domains:
       - "daonguyen.com"
     patterns:
-      - "(?i)(com[.]daonguyen[.]ads[.](sunloaqp)).*"
+      - "(?i)(com[.]daonguyen[.]ads).*"
     tags:

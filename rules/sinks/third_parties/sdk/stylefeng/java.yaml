@@ -9,5 +9,5 @@ sinks:
     domains:
       - "stylefeng.cn"
     patterns:
-      - "(?i)(cn[.]stylefeng[.]roses[.](db-sdk-mp|jwt-sdk)).*"
+      - "(?i)(cn[.]stylefeng[.]roses).*"
     tags:

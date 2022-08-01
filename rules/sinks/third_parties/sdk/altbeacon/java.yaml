@@ -9,5 +9,5 @@ sinks:
     domains:
       - "altbeacon.org"
     patterns:
-      - "(?i)(org[.]altbeacon[.](android-beacon-library)).*"
+      - "(?i)(org[.]altbeacon).*"
     tags:

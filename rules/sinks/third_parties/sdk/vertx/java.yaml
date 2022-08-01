@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vertx.io"
     patterns:
-      - "(?i)(io[.]vertx[.](vertx-mail-client)).*"
+      - "(?i)(io[.]vertx).*"
     tags:

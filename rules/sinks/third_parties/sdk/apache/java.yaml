@@ -9,5 +9,5 @@ sinks:
     domains:
       - "apache.org"
     patterns:
-      - "(?i)(org[.]apache[.]jclouds[.]api[.](vcloud)|org[.]apache[.]jclouds[.]labs[.](vcac)|org[.]apache[.]stratos[.](vcloud)).*"
+      - "(?i)(org[.]apache[.]jclouds[.]api|org[.]apache[.]jclouds[.]labs|org[.]apache[.]stratos).*"
     tags:

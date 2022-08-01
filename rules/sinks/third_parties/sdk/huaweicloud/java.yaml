@@ -9,5 +9,5 @@ sinks:
     domains:
       - "huaweicloud.com"
     patterns:
-      - "(?i)(com[.]huaweicloud[.]dis[.](huaweicloud-sdk-java-dis)|com[.]huaweicloud[.]sdk[.](huaweicloud-sdk-iam)).*"
+      - "(?i)(com[.]huaweicloud[.]dis|com[.]huaweicloud[.]sdk).*"
     tags:

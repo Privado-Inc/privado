@@ -9,5 +9,5 @@ sinks:
     domains:
       - "alipay.com"
     patterns:
-      - "(?i)(cn[.]com[.]antcloud[.]api[.](antcloud-api-sdk)|com[.]alipay[.]sdk[.](alipay-sdk-java)).*"
+      - "(?i)(com[.]alipay[.]sdk).*"
     tags:

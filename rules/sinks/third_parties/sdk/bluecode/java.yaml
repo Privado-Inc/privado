@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bluecode.com"
     patterns:
-      - "(?i)(at[.]bluecode[.]sdk[.](ui)).*"
+      - "(?i)(at[.]bluecode[.]sdk).*"
     tags:

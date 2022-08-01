@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mapbox.com"
     patterns:
-      - "(?i)(com[.]mapbox[.]mapboxsdk[.](mapbox-android-core|mapbox-android-plugin-annotation-v9|mapbox-android-sdk|mapbox-android-services|mapbox-android-telemetry|mapbox-java-services|mapbox-sdk-core|mapbox-sdk-geojson|mapbox-sdk-services|mapbox-sdk-turf)|com[.]wdtinc[.](mapbox-vector-tile)|org[.]webjars[.]npm[.](mapbox__vector-tile)).*"
+      - "(?i)(com[.]mapbox[.]mapboxsdk).*"
     tags:

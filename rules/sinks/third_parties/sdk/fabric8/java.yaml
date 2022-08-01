@@ -9,5 +9,5 @@ sinks:
     domains:
       - "fabric8.io"
     patterns:
-      - "(?i)(io[.]fabric8[.](fabric-api)).*"
+      - "(?i)(io[.]fabric8).*"
     tags:

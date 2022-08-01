@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sendinblue.com"
     patterns:
-      - "(?i)(com[.]sendinblue[.](sendinblue|sib-api-v3-sdk)|de[.]intension[.](keycloak-sendinblue|keycloak-sendinblue-bundle|keycloak-sendinblue-extension)).*"
+      - "(?i)(com[.]sendinblue).*"
     tags:

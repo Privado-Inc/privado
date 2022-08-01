@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tappx.com"
     patterns:
-      - "(?i)(com[.]tappx[.]sdk[.]android[.](omsdk|tappx-sdk)).*"
+      - "(?i)(com[.]tappx[.]sdk[.]android).*"
     tags:

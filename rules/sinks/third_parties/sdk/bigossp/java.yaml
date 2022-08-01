@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bigossp.com"
     patterns:
-      - "(?i)(com[.]bigossp[.](bigo-ads)).*"
+      - "(?i)(com[.]bigossp).*"
     tags:

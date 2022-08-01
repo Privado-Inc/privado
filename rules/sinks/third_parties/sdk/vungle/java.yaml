@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vungle.com"
     patterns:
-      - "(?i)(com[.]github[.]vungle[.](vungle-android-sdk)|com[.]vungle[.]advancedauction[.](sdk)|com[.]vungle[.](publisher-sdk-android)).*"
+      - "(?i)(com[.]github[.]vungle|com[.]vungle[.]advancedauction|com[.]vungle).*"
     tags:
