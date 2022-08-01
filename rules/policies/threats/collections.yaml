@@ -1,3 +1,7 @@
+# Collections points are places from where user directly provides input to the application. Example: user registration forms, payment forms, etc. 
+# Use of dark patterns or bad UI controls may lead to data breaches or non-compliance. This file contains policies for commonly observed 
+# issues related to collection points.
+
 policies:
         - id: Policy.Threats.Collections.isKeyboardCacheUsed
           type: threat
