@@ -1,0 +1,13 @@
+# This file contains policies related to data storage. You can define policies related to encryption, back-up etc. 
+
+policies:
+        - id: Policy.Threats.Storage.isAppDataBackupAllowed
+          type: threat
+          description: iOS and Android allow users to back up their applications as well as their data. A backup containing sensitive data may lead to breaches or unauthorized access.
+          fix: "If the application holds sensitive data, don't allow back-up. You should ensure that the data is encrypted if the back-up necessary.
+               Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#checking-for-sensitive-data-disclosure-through-the-user-interface-mstg-storage-7"
+          action: Deny
+          repositories:
+                - **
+          tags:
+                - "Mobile Security": MSTG-STORAGE-8
