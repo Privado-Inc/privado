@@ -1,0 +1,26 @@
+policies:
+        - id: Policy.Threats.Collections.isKeyboardCacheUsed
+          type: threat
+          description: When users type in input fields, the software automatically suggests data. This feature can be very useful for messaging apps. However, the keyboard 
+                       cache may disclose sensitive information when the user selects an input field that takes this type of information.
+          fix: "Disable the keyboard cache on text inputs that process sensitive data. 
+               Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#determining-whether-the-keyboard-cache-is-disabled-for-text-input-fields-mstg-storage-5"
+          action: Deny
+          repositories:
+                - **
+          tags:
+                - "Mobile Security": MSTG-STORAGE-5
+
+        - id: Policy.Threats.Collections.isInputMasked
+          type: threat
+          description:  Entering sensitive information when, for example, registering an account or making payments, is an essential part of using many apps. 
+                        This data may be financial information such as credit card data or user account passwords. The data may be exposed if the app doesn't 
+                        properly mask it while it is being typed. In order to prevent disclosure and mitigate risks such as shoulder surfing you should verify 
+                        that no sensitive data is exposed via the user interface unless explicitly required (e.g. a password being entered)
+          fix: "Mask the Sensitive Data either by showing asterisk or dots instead of plain text
+                Reference: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#checking-for-sensitive-data-disclosure-through-the-user-interface-mstg-storage-7"
+          action: Deny
+          repositories:
+                - **
+          tags:
+                - "Mobile Security": MSTG-STORAGE-7
