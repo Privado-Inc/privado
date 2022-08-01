@@ -2,49 +2,49 @@ sources:
   - id: Data.Sensitive.NationalIdentificationNumbers.Passport
     name: Passport
     category: National Identification Numbers
-    is_sensitive: False
+    isSensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)passport[^\\s/(;)#|,=!>]{0,10}(?:no|number|id|expiry|validity|country)"
+      - "(?i)passport[^\\s/(;)#|,=!>]{0,10}(?:no|number|id|expiry|validity|country)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.NationalIdentificationNumbers.DrivingLicense
     name: Driving License
     category: National Identification Numbers
-    is_sensitive: False
+    isSensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)(?:driving|driver|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)[^\\s/(;)#|,=!>]{0,5}(?:no|number|id)|(?:driving|driver)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)"
+      - "(?i)(?:driving|driver|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)[^\\s/(;)#|,=!>]{0,5}(?:no|number|id)|(?:driving|driver)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)"
     tags:
-      - law: GDPR
+      law: GDPR
       
   - id: Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber
     name: Social Security Number
     category: National Identification Numbers
-    is_sensitive: False
+    isSensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no|id)"
+      - "(?i)social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no|id)"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.NationalIdentificationNumbers.PANNumber
     name: PAN Number
     category: National Identification Numbers
-    is_sensitive: False
+    isSensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)pan[^\\s/(;)#|,=!>]{0,3}card[^\\s/(;)#|,=!>]{0,3}(?:no|number)|permanant[^\\s/(;)#|,=!>]{0,3}account[^\\s/(;)#|,=!>]{0,3}number"
+      - "(?i)pan[^\\s/(;)#|,=!>]{0,3}card[^\\s/(;)#|,=!>]{0,3}(?:no|number)|permanant[^\\s/(;)#|,=!>]{0,3}account[^\\s/(;)#|,=!>]{0,3}number"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.NationalIdentificationNumbers.AadharNumber
     name: Aadhar Number
     category: National Identification Numbers
-    is_sensitive: False
+    isSensitive: False
     sensitivity: high
     patterns:
-      - pattern: "(?i)aadhaar[^\\s/(;)#|,=!>]*(?:no|number|id)|aadhaar[^\\s/(;)#|,=!>]*card[^\\s/(;)#|,=!>]*(?:no|number|id)|aadhaar[^\\s/(;)#|,=!>]*card"
+      - "(?i)aadhaar[^\\s/(;)#|,=!>]*(?:no|number|id)|aadhaar[^\\s/(;)#|,=!>]*card[^\\s/(;)#|,=!>]*(?:no|number|id)|aadhaar[^\\s/(;)#|,=!>]*card"
     tags:
-      - law: GDPR
+      law: GDPR
