@@ -1,0 +1,15 @@
+policies:   
+        - id: Policy.Threats.Leakages
+          description: Sensitive Data written to log files or file system may lead to unauthorized access or exposure to potential attack.
+          fix: It is not recommended to log Sensitive Data to log files or the file system. The data must be encrypted if it is absolutely necessary to log it.                                                          
+          action: Deny
+          dataFlow:
+                sources:
+                  - Data.Sensitive.*             
+
+                sinks:
+                  - Leakages.*
+          repositories:                                                         
+                - **
+          tags:
+                - CWE: CWE-359, CWE-532
