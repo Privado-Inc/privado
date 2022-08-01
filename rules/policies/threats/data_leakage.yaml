@@ -12,4 +12,4 @@ policies:
           repositories:                                                         
                 - **
           tags:
-                - CWE: CWE-359, CWE-532
+                - CWE: CWE-359, CWE-532, MSTG-STORAGE-3
