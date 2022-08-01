@@ -1,6 +1,0 @@
-sinks:
-  - id: Leakages.Console.Output
-    name: Console Output
-    patterns: 
-      - "(i?)System.out.(?:write).*"
-    tags:

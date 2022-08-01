@@ -19,7 +19,7 @@ sources:
     tags:
       law: GDPR
   
-   - id: Data.Sensitive.HealthData.IllnessorMedicalCondition
+  - id: Data.Sensitive.HealthData.IllnessorMedicalCondition
     name: Illness or Medical Condition
     category: Health Data
     isSensitive: True
