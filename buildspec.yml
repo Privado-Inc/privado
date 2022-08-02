@@ -13,14 +13,14 @@ phases:
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/privado-main
       - VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
       - |
-        if [[ $CODEBUILD_SOURCE_VERSION = "main" ]]
+        if [[ $AWS_REGION = "eu-west-1" ]]
         then
-            IS_RELEASE_BRANCH="true"
-            TAG_1="master"
+            echo "defining tags for release branch"
+            TAG_1="latest"
             TAG_2=$VERSION
             TAG_3="master-$VERSION"
         else
-            IS_RELEASE_BRANCH="false"
+            echo "defining tags for staging branch"
             TAG_1="stage"
             TAG_2="stage-$VERSION"
         fi
