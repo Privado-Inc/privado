@@ -2,29 +2,29 @@ sources:
   - id: Data.Sensitive.UsageData.ClickStream
     name: Click Stream
     category: Usage Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)click(stream|track|log)|track{0,2}click|number[^\\s/(;)#|,=!>]{0,10}of[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)|count[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)"
+      - "(?i)click(stream|track|log)|track{0,2}click|number[^\\s/(;)#|,=!>]{0,10}of[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)|count[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)"
     tags:
-      - law: GDPR
+      law: GDPR
   
   - id: Data.Sensitive.UsageData.SearchHistory
     name: Search History
     category: Usage Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)search[^\\s/(;)#|,=!>]{0,12}history|saved[^\\s/(;)#|,=!>]{0,12}search|past[^\\s/(;)#|,=!>]{0,12}searches"
+      - "(?i)search[^\\s/(;)#|,=!>]{0,12}history|saved[^\\s/(;)#|,=!>]{0,12}search|past[^\\s/(;)#|,=!>]{0,12}searches"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.UsageData.ProductInteractions
     name: Product Interactions
     category: Usage Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)product[^\\s/(;)#|,=!>]{0,10}feedback"
+      - "(?i)product[^\\s/(;)#|,=!>]{0,10}feedback"
     tags:
-      - law: GDPR
+      law: GDPR

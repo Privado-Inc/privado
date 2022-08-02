@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Vmware
+    name: Vmware
+    domains:
+      - "vmware.com"
+    patterns:
+      - "(?i)(com[.]vmware[.]admiral|com[.]vmware[.]card-connectors|com[.]vmware[.]dcp|com[.]vmware[.]identity[.]commons|com[.]vmware[.]identity[.]idm|com[.]vmware[.]identity[.]oidc|com[.]vmware[.]identity[.]rest[.]afd|com[.]vmware[.]identity[.]rest[.]core|com[.]vmware[.]identity[.]rest[.]idm|com[.]vmware[.]identity|com[.]vmware[.]jsonteng|com[.]vmware[.]ovsdb|com[.]vmware[.]photon[.]controller|com[.]vmware[.]vcloud|com[.]vmware[.]vmafd|com[.]vmware[.]vmdir[.]rest|com[.]vmware[.]xenon|com[.]vmware).*"
+    tags:
