@@ -12,3 +12,26 @@ policies:
                 - **
           tags:
                 - "Mobile Security": MSTG-STORAGE-6
+
+        - id: Policy.Threats.Storage.isDataExposedToThirdPartiesViaNotification
+          type: threat
+          description: Sensitive information might be leaked to third parties via app notification. It is important to understand that notifications 
+                       should never be considered private. When a notification is handled by the Android system it is broadcasted system-wide and 
+                       any application running with a NotificationListenerService can listen for these notifications to receive them in full and may 
+                       handle them however it wants. There are many known malware samples such as Joker, and Alien which abuses the 
+                       NotificationListenerService to listen for notifications on the device and then send them to attacker-controlled C2 infrastructure. 
+                       Commonly this is done in order to listen for two-factor authentication (2FA) codes that appear as notifications on the device 
+                       which are then sent to the attacker. A safer alternative for the user would be to use a 2FA application that does not generate 
+                       notifications. Furthermore there are a number of apps on the Google Play Store that provide notification logging, which 
+                       basically logs locally any notifications on the Android system. This highlights that notifications are in no way private on 
+                       Android and accessible by any other app on the device.
+                       
+                       For this reason all notification usage should be inspected for confidential or high risk information that could be used by malicious applications. 
+                       If not properly configured, these mechanisms may leak sensitive data.
+          fix: "Ensure that no sensitive data is exposed via notification system.
+               Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4"
+          action: Deny
+          repositories:
+                - **
+          tags:
+                - "Mobile Security": MSTG-STORAGE-4
