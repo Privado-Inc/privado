@@ -14,9 +14,9 @@ policies:
 
         - id: Policy.Threats.Storage.isDataStoredOnExternalStorage
           type: threat
-          description: External data storage is globally accessible by all the apps on mobile. If app writes the sensitive data on external storage, 
+          description: External or shared data storage is globally accessible by all the apps on mobile. If app writes the sensitive data on external or shared storage, 
                        other apps can read the data leading to unauthorized access.
-          fix: "App should not store sensitive data on the external storage. In case, there is a necessity, the data must be encrypted. 
+          fix: "App should not store sensitive data on the external or shared storage. In case, there is a necessity, the data must be encrypted. 
                Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
           action: Deny
           repositories:
