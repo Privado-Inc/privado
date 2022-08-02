@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Inmobi
+    name: Inmobi
+    domains:
+      - "inmobi.com"
+    patterns:
+      - "(?i)(com[.]applovin[.]mediation[.]sdks[.]inmobi|com[.]daisy[.]inmobi|com[.]inmobi[.]ares[.]setest|com[.]inmobi[.]ares|com[.]inmobi[.]hive[.]test|com[.]inmobi[.]monetization|com[.]inmobi[.]omsdk).*"
+    tags:

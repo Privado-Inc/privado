@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Ow2
+    name: Ow2
+    domains:
+      - "ow2.org"
+    patterns:
+      - "(?i)(org[.]ow2[.]proactive|org[.]ow2[.]sirocco[.]vmm).*"
+    tags:

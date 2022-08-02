@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Adobe
+    name: Adobe
+    domains:
+      - "adobe.com"
+    patterns:
+      - "(?i)(com[.]adobe[.]aem|com[.]adobe[.]blazeds|com[.]adobe[.]cairngorm|com[.]adobe[.]cq[.]social|com[.]adobe[.]cq|com[.]adobe[.]flex[.]framework|com[.]adobe[.]flex|com[.]adobe[.]flexunit|com[.]adobe[.]granite|com[.]adobe[.]marketing[.]mobile|com[.]adobe[.]xmp).*"
+    tags:

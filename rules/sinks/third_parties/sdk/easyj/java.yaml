@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Easyj
+    name: Easyj
+    domains:
+      - "easyj.icu"
+    patterns:
+      - "(?i)(icu[.]easyj[.]sdk|icu[.]easyj).*"
+    tags:

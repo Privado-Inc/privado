@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Apache
+    name: Apache
+    domains:
+      - "apache.org"
+    patterns:
+      - "(?i)(org[.]apache[.]jclouds[.]api|org[.]apache[.]jclouds[.]labs|org[.]apache[.]stratos).*"
+    tags:

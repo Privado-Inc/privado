@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Wechat
+    name: Wechat
+    domains:
+      - "wechat.com"
+    patterns:
+      - "(?i)(app[.]myoss[.]wechat|cn[.]javaer[.]wechat|cn[.]sharesdk[.]wechat|com[.]dou361[.]wechat|com[.]glancebar[.]wechat|com[.]maojianwei[.]wechat|me[.]gaigeshen[.]wechat|org[.]oxerr[.]spring[.]security[.]wechat).*"
+    tags:
