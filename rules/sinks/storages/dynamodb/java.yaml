@@ -3,13 +3,22 @@
 
 sinks:
 
+  - id: Storages.AmazonDynamoDB.ReadAndWrite
+    name: Amazon Dynamo DB
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(i?)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchE|e)xecuteStatement|executeTransaction)[:].*)))"
+    tags:
+
   - id: Storages.AmazonDynamoDB.Read
     name: Amazon Dynamo DB(Read)
     domains:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?).*(?:com[.]amazonaws[.]services[.]dynamodbv2|AmazonDynamoDBClientBuilder[.]|DynamoDbClient[.]builder).*(batchGet|describe|get|list|query|scan|transactGet|equals|load|withExpectedEntry|withS).*"
+      - "(i?)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchG|g)etItem|query|scan|transactGetItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchLoad|load|parallelScan|query|queryPage|scan|scanPage|transactionLoad)[:].*))"
     tags:
 
   - id: Storages.AmazonDynamoDB.Write
@@ -18,7 +27,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?).*(?:com[.]amazonaws[.]services[.]dynamodbv2|AmazonDynamoDBClientBuilder[.]|DynamoDbClient[.]builder).*(batchWrite|create|delete|execute|save|build|put|restore|tag|update|transactWrite).*" 
+      - "(i?)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchWrite|delete|put|update)Item|transactWriteItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchWrite|delete|save|transactionWrite)[:].*))"
     tags:
-
-
