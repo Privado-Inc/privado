@@ -27,29 +27,29 @@ sinks:
   - id: Leakages.Internal.Error
     name: Internal Log Error
     patterns: 
-      - "(?i)(?:error|wtf|fatal)"
+      - "(?i).*(?:error|wtf|fatal).*"
     tags:
   
   - id: Leakages.Internal.Warn
     name: Internal Log Warn
     patterns: 
-      - "(?i)(?:warn)"
+      - "(?i).*(?:warn).*"
     tags:
   
   - id: Leakages.Internal.Debug
     name: Internal Log Debug
     patterns: 
-      - "(?i)(?:debug|verbose|trace)"
+      - "(?i).*(?:debug|verbose|trace).*"
     tags:
   
   - id: Leakages.Internal.Info
     name: Internal Log Info
     patterns: 
-      - "(?i)(?:info|out)"
+      - "(?i).*(?:info|out).*"
     tags:
 
   - id: Leakages.Internal.Console
     name: Log Console
     patterns: 
-      - "(?i)java.io.PrintStream.(?:print|println|write)"
+      - "(?i)java.io.PrintStream.(?:print|println|write).*"
     tags:
