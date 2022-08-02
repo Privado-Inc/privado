@@ -11,7 +11,7 @@ phases:
       - ACCOUNT_ID=${CODEBUILD_BUILD_ARN} && IFS=':' && set -- $ACCOUNT_ID && ACCOUNT_ID=$5
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/privado-main
-      - VERSION=$VERSION_INITIAL+"."+$CODEBUILD_BUILD_NUMBER
+      - VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
       - |
         if [[ $CODEBUILD_SOURCE_VERSION = "main" ]]
         then
