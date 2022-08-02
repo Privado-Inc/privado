@@ -18,11 +18,11 @@ phases:
             IS_RELEASE_BRANCH="true"
             TAG_1="master"
             TAG_2=$VERSION
-            TAG_3="master"+"-"+$VERSION
+            TAG_3="master-$VERSION"
         else
             IS_RELEASE_BRANCH="false"
             TAG_1="stage"
-            TAG_2="stage"+"-"+$VERSION
+            TAG_2="stage-$VERSION"
         fi
 
   build:
