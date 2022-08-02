@@ -22,4 +22,4 @@ policies:
           repositories:
                 - **
           tags:
-                - "Mobile Security": MSTG-STORAGE-8
+                - "Mobile Security": MSTG-STORAGE-1, MSTG-STORAGE-2
