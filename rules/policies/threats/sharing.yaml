@@ -1,0 +1,14 @@
+# This file contains policies related to data processing. You can define policies related to encryption, back-up etc. 
+
+policies:
+        - id: Policy.Threats.Storage.isIpcDataSharingAllowed
+          type: threat
+          description: "As part of Android's IPC mechanisms, content providers allow an app's stored data to be accessed and modified by other apps. 
+                       If not properly configured, these mechanisms may leak sensitive data."
+          fix: "Ensure proper configurations are in place when using the content providers.
+               Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Stored-Data-Has-Been-Exposed-via-IPC-Mechanisms-MSTG-STORAGE-6"
+          action: Deny
+          repositories:
+                - **
+          tags:
+                - "Mobile Security": MSTG-STORAGE-6
