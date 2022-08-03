@@ -12,18 +12,10 @@ phases:
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/privado-main
       - VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
-      - |
-        if [[ $AWS_REGION = "eu-west-1" ]]
-        then
-            echo "defining tags for release branch"
-            TAG_1="latest"
-            TAG_2=$VERSION
-            TAG_3="master-$VERSION"
-        else
-            echo "defining tags for staging branch"
-            TAG_1="stage"
-            TAG_2="stage-$VERSION"
-        fi
+      - TAG_1=latest
+      - TAG_2=$VERSION
+      - echo $CODEBUILD_WEBHOOK_HEAD_REF
+      - TAG_3=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
 
   build:
     commands:
