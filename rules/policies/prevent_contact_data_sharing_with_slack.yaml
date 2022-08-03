@@ -17,16 +17,16 @@ policies:
       
       sources:
         #  the below args follow following format => dir_structure_under_rules_folder:sourceId
-        - "Data.Sensitive.ContactData.*" 
+        - "Data.Sensitive.ContactData.*"
         - "Data.Sensitive.PersonalIdentification.PhoneNumber"
       
       sinks:
-        - "Data.Sharing.Slack"
-        - ".*"
+        - "ThirdParties.*"
       
     repositories:      # optional field default value : - .*
       - "privado-messaging-app"
       - "Order Manager"
+      - "accounts.*"
 
     tags:
       - policyPurpose: Security Audit
