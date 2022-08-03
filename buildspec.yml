@@ -21,7 +21,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
+      - docker build -t $REPOSITORY_URI:latest --build-arg VERSION=$VERSION .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_1
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_2
   post_build:
