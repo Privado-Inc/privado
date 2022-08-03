@@ -39,7 +39,7 @@ phases:
         then
               echo "\$TAG_3 is empty"
         else
-              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_3
+              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_3-$VERSION
               docker push $REPOSITORY_URI:$TAG_3
         fi
       - echo completed pushing image to ecr
