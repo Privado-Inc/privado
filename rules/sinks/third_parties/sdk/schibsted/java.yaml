@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Schibsted
+    name: Schibsted
+    domains:
+      - "schibsted.com"
+    patterns:
+      - "(?i)(com[.]schibsted[.]account|com[.]schibsted[.]jofogas[.]jfgtestlibrary|com[.]schibsted[.]security|com[.]schibsted[.]spain|com[.]schibsted[.]spt[.]data|schibsted[.]gradle-init|io[.]schibsted[.]scrooge-gradle-plugin|io[.]schibsted).*"
+    tags:

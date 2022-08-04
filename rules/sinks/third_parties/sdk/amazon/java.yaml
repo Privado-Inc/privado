@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amazon
+    name: Amazon
+    domains:
+      - "amazon.com"
+    patterns:
+      - "(?i)(com[.]amazon[.]alexa|com[.]amazon[.]android|com[.]amazon[.]redshift|com[.]amazonaws[.]s3|com[.]amazonaws[.]scala|com[.]amazonaws|software[.]amazon[.]awscdk|software[.]amazon[.]awsconstructs|software[.]amazon[.]awssdk|software[.]amazon[.]ion|software[.]amazon[.]jsii|software[.]amazon[.]kinesis|software[.]amazon[.]konstruk|software[.]amazon[.]smithy).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazon.Aws
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i)(com[.]amazon[.]emr|com[.]amazon[.]redshift|com[.]amazonaws[.]lambda|com[.]amazonaws[.]secretsmanager|com[.]amazonaws|software[.]amazon[.]awssdk).*"
+    tags:
