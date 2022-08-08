@@ -24,32 +24,32 @@ sinks:
       - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback).*info.*"
     tags:
 
-  - id: Leakages.Internal.Error
-    name: Internal Log Error
-    patterns: 
-      - "(?i)(?:error|wtf|fatal)"
-    tags:
+#   - id: Leakages.Internal.Error
+#     name: Internal Log Error
+#     patterns: 
+#       - "(?i).*(?:error|wtf|fatal).*"
+#     tags:
   
-  - id: Leakages.Internal.Warn
-    name: Internal Log Warn
-    patterns: 
-      - "(?i)(?:warn)"
-    tags:
+#   - id: Leakages.Internal.Warn
+#     name: Internal Log Warn
+#     patterns: 
+#       - "(?i).*(?:warn).*"
+#     tags:
   
-  - id: Leakages.Internal.Debug
-    name: Internal Log Debug
-    patterns: 
-      - "(?i)(?:debug|verbose|trace)"
-    tags:
+#   - id: Leakages.Internal.Debug
+#     name: Internal Log Debug
+#     patterns: 
+#       - "(?i).*(?:debug|verbose|trace).*"
+#     tags:
   
-  - id: Leakages.Internal.Info
-    name: Internal Log Info
-    patterns: 
-      - "(?i)(?:info|out)"
-    tags:
+#   - id: Leakages.Internal.Info
+#     name: Internal Log Info
+#     patterns: 
+#       - "(?i).*(?:info|out).*"
+#     tags:
 
   - id: Leakages.Internal.Console
     name: Log Console
     patterns: 
-      - "(?i)java.io.PrintStream.(?:print|println|write)"
+      - "(?i)java.io.PrintStream.(?:print|println|write).*"
     tags:

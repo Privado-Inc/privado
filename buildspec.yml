@@ -12,24 +12,16 @@ phases:
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/privado-main
       - VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
-      - |
-        if [[ $CODEBUILD_SOURCE_VERSION = "main" ]]
-        then
-            IS_RELEASE_BRANCH="true"
-            TAG_1="master"
-            TAG_2=$VERSION
-            TAG_3="master-$VERSION"
-        else
-            IS_RELEASE_BRANCH="false"
-            TAG_1="stage"
-            TAG_2="stage-$VERSION"
-        fi
+      - TAG_1=latest
+      - TAG_2=$VERSION
+      - echo $CODEBUILD_WEBHOOK_HEAD_REF
+      - TAG_3=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
 
   build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
+      - docker build -t $REPOSITORY_URI:latest --build-arg VERSION=$VERSION .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_1
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_2
   post_build:
@@ -47,7 +39,7 @@ phases:
         then
               echo "\$TAG_3 is empty"
         else
-              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_3
-              docker push $REPOSITORY_URI:$TAG_3
+              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_3-$VERSION
+              docker push $REPOSITORY_URI:$TAG_3-$VERSION
         fi
       - echo completed pushing image to ecr
