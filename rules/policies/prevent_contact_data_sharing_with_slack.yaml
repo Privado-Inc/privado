@@ -45,5 +45,5 @@ policies:
     repositories:
       - "payments-.*"
     tags:
-      - policyPurpose: "Security Audit"
+      policyPurpose: "Security Audit"
   

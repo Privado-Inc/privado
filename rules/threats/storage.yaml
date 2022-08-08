@@ -1,6 +1,6 @@
 # This file contains policies related to data storage. You can define policies related to encryption, back-up etc. 
 
-policies:
+threats:
         - id: Threats.Storage.isAppDataBackupAllowed
           name: "Local PII data backup allowed through app backup setting"
           type: Threat
