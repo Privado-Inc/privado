@@ -1,0 +1,14 @@
+
+# Sink Rules for storage database Apache HBase - https://hbase.apache.org/
+
+sinks:
+
+  - id: Storages.ApacheHBase.ReadAndWrite
+    name: Apache HBase
+    domains:
+      - hbase.apache.org
+      - apache.org
+    patterns:
+      - "(i?).*org[.]apache[.]hadoop[.]hbase[.].*"
+    tags:
+
