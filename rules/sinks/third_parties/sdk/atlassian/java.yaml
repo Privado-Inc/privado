@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Atlassian
+    name: Atlassian
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "(?i)(com[.]atlassian[.]bitbucket[.]server|com[.]atlassian[.]jira[.]plugins|com[.]atlassian[.]jira|com[.]atlassian[.]rm|com[.]atlassian[.]stash).*"
+    tags:

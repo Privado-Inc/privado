@@ -1,0 +1,85 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "admob.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]ads[.]mediation|com[.]google[.]android[.]gms|com[.]google[.]api-ads|com[.]google[.]apis|com[.]google[.]doubleclick|com[.]google[.]firebase).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Analytics
+    name: Google Analytics
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]apis|com[.]google[.]firebase).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud
+    name: Google Cloud
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms|com[.]google[.]api[.]grpc|com[.]google[.]apis|com[.]google[.]auth|com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]datastore|com[.]google[.]cloud).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Drive
+    name: Google Drive
+    domains:
+      - "drive.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms|com[.]google[.]apis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Firebase
+    name: Google Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]firebase).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Gmail
+    name: Google Gmail
+    domains:
+      - "gmail.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]apis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google
+    name: Google
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(com[.]google[.]ads[.]interactivemedia[.]v3|com[.]google[.]android[.]ads|com[.]google[.]android[.]exoplayer|com[.]google[.]appengine|com[.]google[.]auto[.]service|com[.]google[.]gms|com[.]google[.]http-client|com[.]google[.]oauth-client|com[.]google[.]sitebricks|com[.]google[.]tango|com[.]google[.]vr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Maps
+    name: Google Maps
+    domains:
+      - "maps.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Play
+    name: Google Play
+    domains:
+      - "play.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Spreadsheets
+    name: Google Spreadsheets
+    domains:
+      - "spreadsheets.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]apis).*"
+    tags:

@@ -11,13 +11,27 @@ phases:
       - ACCOUNT_ID=${CODEBUILD_BUILD_ARN} && IFS=':' && set -- $ACCOUNT_ID && ACCOUNT_ID=$5
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/privado-main
+      - VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
+      - |
+        if [[ $CODEBUILD_SOURCE_VERSION = "main" ]]
+        then
+            IS_RELEASE_BRANCH="true"
+            TAG_1="master"
+            TAG_2=$VERSION
+            TAG_3="master-$VERSION"
+        else
+            IS_RELEASE_BRANCH="false"
+            TAG_1="stage"
+            TAG_2="stage-$VERSION"
+        fi
 
   build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:latest .
-      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$CUSTOME_IMAGE_TAG
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_1
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_2
   post_build:
     commands:
       - echo Build completed on `date`
@@ -26,5 +40,14 @@ phases:
       - echo "$IMAGES_TO_DELETE"
       - aws ecr batch-delete-image --region $AWS_REGION --repository-name privado-main --image-ids "$IMAGES_TO_DELETE" || true
       - echo Pushing the Docker images...
-      - docker push $REPOSITORY_URI:$CUSTOME_IMAGE_TAG
+      - docker push $REPOSITORY_URI:$TAG_1
+      - docker push $REPOSITORY_URI:$TAG_2
+      - |
+        if [[ -z "$TAG_3" ]]
+        then
+              echo "\$TAG_3 is empty"
+        else
+              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_3
+              docker push $REPOSITORY_URI:$TAG_3
+        fi
       - echo completed pushing image to ecr

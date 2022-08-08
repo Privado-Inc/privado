@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Chatwork
+    name: Chatwork
+    domains:
+      - "chatwork.com"
+    patterns:
+      - "(?i)(com[.]chatwork|com[.]vexus2[.]jenkins[.]chatwork).*"
+    tags:
