@@ -3,25 +3,25 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
-      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(?:error|severe|fatal).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(?:error|severe|fatal).*"
     tags:
     
   - id: Leakages.Log.Warn
     name: Log Warn
     patterns:
-      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(warn|warning).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(warn|warning).*"
     tags:
   
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(debug|log).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging).*(debug|log).*"
     tags:
   
   - id: Leakages.Log.Info
     name: Log Info
     patterns:
-      - "(?i)(?:org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback).*info.*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback).*info.*"
     tags:
 
 #   - id: Leakages.Internal.Error
