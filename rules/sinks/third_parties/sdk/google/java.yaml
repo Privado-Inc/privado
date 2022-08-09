@@ -9,7 +9,7 @@ sinks:
     domains:
       - "admob.google.com"
     patterns:
-      - "(?i)(com[.]google[.]ads[.]mediation|com[.]google[.]android[.]gms|com[.]google[.]api-ads|com[.]google[.]apis|com[.]google[.]doubleclick|com[.]google[.]firebase).*"
+      - "(?i)(com[.]google[.]ads[.]mediation|com[.]google[.]android[.]gms[.]ads|com[.]google[.]api[.]services[.]admob|com[.]google[.]ads).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Analytics
@@ -17,7 +17,7 @@ sinks:
     domains:
       - "analytics.google.com"
     patterns:
-      - "(?i)(com[.]google[.]apis|com[.]google[.]firebase).*"
+      - "(?i)(com[.]google[.]api[.]services[.]analytics|com[.]google[.]android[.]gms[.]analytics).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud
@@ -25,7 +25,23 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]android[.]gms|com[.]google[.]api[.]grpc|com[.]google[.]apis|com[.]google[.]auth|com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]datastore|com[.]google[.]cloud).*"
+      - "(?i)(com[.]google[.]cloud[.]storage|com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]datastore|com[.]google[.]cloud).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.CloudMessaging
+    name: Google Cloud Messaging
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]cloudmessaging|com[.]google[.]android[.]gms[.]gcm).*"
+    tags:
+    
+- id: ThirdParties.SDK.Google.DoubleClick
+    name: Google DoubleClick
+    domains:
+      - "marketingplatform.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]doubleclick).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Drive
@@ -33,7 +49,7 @@ sinks:
     domains:
       - "drive.google.com"
     patterns:
-      - "(?i)(com[.]google[.]android[.]gms|com[.]google[.]apis).*"
+      - "(?i)(com[.]google[.]android[.]gms[.]drive).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Firebase
@@ -41,15 +57,15 @@ sinks:
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(com[.]google[.]firebase).*"
+      - "(?i)(com[.]google[.]firebase|com[.]google[.]android[.]gms[.]measurement).*"
     tags:
-
-  - id: ThirdParties.SDK.Google.Gmail
-    name: Google Gmail
+    
+  - id: ThirdParties.SDK.Google.Fit
+    name: Google Fit
     domains:
-      - "gmail.google.com"
+      - "google.com"
     patterns:
-      - "(?i)(com[.]google[.]apis).*"
+      - "(?i)(com[.]google[.]android[.]gms[.]fitness).*"
     tags:
 
   - id: ThirdParties.SDK.Google
@@ -57,7 +73,15 @@ sinks:
     domains:
       - "google.com"
     patterns:
-      - "(?i)(com[.]google[.]ads[.]interactivemedia[.]v3|com[.]google[.]android[.]ads|com[.]google[.]android[.]exoplayer|com[.]google[.]appengine|com[.]google[.]auto[.]service|com[.]google[.]gms|com[.]google[.]http-client|com[.]google[.]oauth-client|com[.]google[.]sitebricks|com[.]google[.]tango|com[.]google[.]vr).*"
+      - "(?i)(com[.]google[.]android[.]gms[.](auth|recaptcha|safetynet|streamprotect|tagmanager|tasks|wearable|identity)|com[.]google[.]api[.]client[.]googleapis|com[.]google[.]auth).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.Location
+    name: Google Location Services
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]location).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Maps
@@ -65,21 +89,22 @@ sinks:
     domains:
       - "maps.google.com"
     patterns:
-      - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps).*"
+      - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps|com[.]google[.]android[.]gms[.]maps).*"
     tags:
 
+  - id: ThirdParties.SDK.Google.Pay
+    name: Google Pay
+    domains:
+      - "pay.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]pay).*"
+    tags:
+    
   - id: ThirdParties.SDK.Google.Play
-    name: Google Play
+    name: Google Play Services
     domains:
       - "play.google.com"
     patterns:
-      - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar).*"
+      - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar|com[.]google[.]android[.]gms[.](games|wallet)).*"
     tags:
-
-  - id: ThirdParties.SDK.Google.Spreadsheets
-    name: Google Spreadsheets
-    domains:
-      - "spreadsheets.google.com"
-    patterns:
-      - "(?i)(com[.]google[.]apis).*"
-    tags:
+    
