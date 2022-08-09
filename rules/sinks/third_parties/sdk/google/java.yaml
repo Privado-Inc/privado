@@ -36,7 +36,7 @@ sinks:
       - "(?i)(com[.]google[.]android[.]gms[.]cloudmessaging|com[.]google[.]android[.]gms[.]gcm).*"
     tags:
     
-- id: ThirdParties.SDK.Google.DoubleClick
+  - id: ThirdParties.SDK.Google.DoubleClick
     name: Google DoubleClick
     domains:
       - "marketingplatform.google.com"
