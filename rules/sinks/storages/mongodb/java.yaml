@@ -8,7 +8,7 @@ sinks:
     domains:
       - mongodb.com
     patterns: 
-      - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((find|findOne|findMany|distinct|aggregate)[:].*)"
+      - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((find|findOne|findMany|distinct|aggregate)[:].*))"
     tags:
 
   - id: Storages.MongoDB.Write
