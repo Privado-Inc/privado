@@ -1,0 +1,30 @@
+collections:
+  - id: Collections.Annotation.Spring
+    name: Spring Web Interface Annotation
+    patterns: 
+      - "RequestMapping|PostMapping|GetMapping|PutMapping|GetMapping|DeleteMapping"
+    tags:
+
+  - id: Collections.Annotation.Struts
+    name: Struts Web Interface Annotation
+    patterns: 
+      - "Action"
+    tags:
+
+  - id: Collections.Annotation.Blade
+    name: Blade Web Interface Annotation
+    patterns: 
+      - "Path|Get|Put|Post|Patch|Delete"
+    tags:
+
+  - id: Collections.Annotation.Jersey
+    name: Jersey Web Interface Annotation
+    patterns: 
+      - "Get|Put|Post|Patch|Delete"
+    tags:
+
+  - id: Collections.Annotation.GoogleWebToolkit
+    name: GWT Web Interface Annotation
+    patterns: 
+      - "RemoteServiceRelativePath"
+    tags:

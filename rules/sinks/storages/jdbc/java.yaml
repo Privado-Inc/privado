@@ -1,0 +1,28 @@
+
+# Sink Rules for storage database JDBC Driver - https://www.oracle.com/in/database/technologies/appdev/jdbc.html
+
+sinks:
+
+  - id: Storages.SpringFramewor.Jdbc
+    name: Java Database Connector
+    domains:
+      - oracle.com
+    patterns:
+      - "(i?).*(java[.]sql[.](Statement|PreparedStatement)[.](execute))" 
+    tags:
+
+  - id: Storages.SpringFramewor.Jdbc.Write
+    name: Java Database Connector(Write)
+    domains:
+      - oracle.com
+    patterns:
+      - "(i?)((java[.]sql[.](Statement|PreparedStatement)[.](executeUpdate|executeLargeUpdate).*)|(.*repository.*[.](save.*|delete.*)[:].*))" 
+    tags:
+
+  - id: Storages.SpringFramewor.Jdbc.Read
+    name: Java Database Connector(Read)
+    domains:
+      - oracle.com
+    patterns:
+      - "(i?)((java[.]sql[.](Statement|PreparedStatement)[.](executeQuery).*)|(.*repository.*[.](count[:]long.*|find.*[:].*)))" 
+    tags:

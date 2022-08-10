@@ -1,0 +1,24 @@
+
+# Sink Rules for storage database Amazon Cognito - https://aws.amazon.com/cognito/
+
+sinks:
+
+  - id: Storages.AmazonCognito.Read
+    name: Amazon Cognito(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(i?).*(?:CognitoIdentityProviderClient[.]|CognitoIdentityClient[.]|AWSCognitoIdentityProviderClientBuilder).*(describe|get|list|lookup|equals|subscribe).*"
+    tags:
+
+  - id: Storages.AmazonCognito.Write
+    name: Amazon Cognito(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(i?).*(?:CognitoIdentityProviderClient[.]|CognitoIdentityClient[.]|AWSCognitoIdentityProviderClientBuilder).*(create|delete|set|tag|unlink|link|untag|update|merge|bulkPublish|createIdentityPool|temporaryPassword|).*"
+    tags:
+
+

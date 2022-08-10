@@ -1,0 +1,13 @@
+
+# Sink Rules for storage database Vaticle TypeDB - https://vaticle.com/typedb
+
+sinks:
+
+  - id: Storages.VaticleTypeDB.ReadAndWrite
+    name: Vaticle TypeDB
+    domains:
+      - vaticle.com
+    patterns:
+      - "(i?).*com[.]vaticle[.]type(?:db|ql)[.].*"
+    tags:
+

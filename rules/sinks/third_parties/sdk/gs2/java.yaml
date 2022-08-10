@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Gs2
+    name: Gs2
+    domains:
+      - "gs2.io"
+    patterns:
+      - "(?i)(io[.]gs2).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Facebook
+    name: Facebook
+    domains:
+      - "facebook.com"
+    patterns:
+      - "(?i)(cn[.]sharesdk[.]facebook|com[.]facebook[.]ads[.]sdk|com[.]facebook[.]airlift|com[.]facebook[.]android|com[.]facebook[.]api|com[.]facebook[.]drift|com[.]facebook[.]fresco[.]custom|com[.]facebook[.]fresco|com[.]facebook[.]infer[.]annotation|com[.]facebook[.]presto|com[.]facebook[.]rebound|com[.]facebook[.]shimmer|com[.]facebook[.]soloader|com[.]facebook[.]stetho|com[.]github[.]asne[.]facebook|com[.]google[.]code[.]facebookapi).*"
+    tags:
