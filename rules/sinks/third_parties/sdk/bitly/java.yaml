@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bitly.com"
     patterns:
-      - "(?i)(clojure-bitly|com[.]bitly).*"
+      - "(?i)(clojure-bitly|com[.]bitly|com[.]opsmatters[.]bitly|com[.]rosaloves[.]bitlyj).*"
     tags:

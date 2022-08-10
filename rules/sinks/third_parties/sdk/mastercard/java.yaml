@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mastercard.com"
     patterns:
-      - "(?i)(com[.]mastercard[.]api|com[.]mastercard[.]sdk[.]core).*"
+      - "(?i)(com[.]mastercard[.]api|com[.]mastercard[.]sdk[.]core|com[.]mastercard[.]developer).*"
     tags:

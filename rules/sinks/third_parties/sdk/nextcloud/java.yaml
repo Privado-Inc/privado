@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nextcloud.com"
     patterns:
-      - "(?i)(com[.]github[.]nextcloud).*"
+      - "(?i)(com[.]github[.]nextcloud|br[.]com[.]anteros[.]nextcloud[.]api|org[.]aarboard[.]nextcloud[.]api).*"
     tags:
