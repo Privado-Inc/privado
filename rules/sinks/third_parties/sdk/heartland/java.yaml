@@ -9,5 +9,5 @@ sinks:
     domains:
       - "heartland.us"
     patterns:
-      - "(?i)(com[.]heartlandpaymentsystems).*"
+      - "(?i)(com[.]heartlandpaymentsystems|com[.]global[.]api).*"
     tags:

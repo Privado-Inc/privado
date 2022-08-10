@@ -9,7 +9,7 @@ sinks:
     domains:
       - "amazon.com"
     patterns:
-      - "(?i)(com[.]amazon[.]alexa|com[.]amazon[.]android|com[.]amazon[.]redshift|com[.]amazonaws[.]s3|com[.]amazonaws[.]scala|com[.]amazonaws|software[.]amazon[.]awscdk|software[.]amazon[.]awsconstructs|software[.]amazon[.]awssdk|software[.]amazon[.]ion|software[.]amazon[.]jsii|software[.]amazon[.]kinesis|software[.]amazon[.]konstruk|software[.]amazon[.]smithy).*"
+      - "(?i)(com[.]amazon[.]alexa|com[.]amazon[.]android|com[.]amazon[.]redshift|software[.]amazon[.]awscdk|software[.]amazon[.]awsconstructs|software[.]amazon[.]awssdk|software[.]amazon[.]ion|software[.]amazon[.]jsii|software[.]amazon[.]kinesis|software[.]amazon[.]konstruk|software[.]amazon[.]smithy).*"
     tags:
 
   - id: ThirdParties.SDK.Amazon.Aws

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mollie.com"
     patterns:
-      - "(?i)(mollie-clj).*"
+      - "(?i)(be[.]feelio[.]mollie|be[.]woutschoovaerts[.]mollie).*"
     tags:

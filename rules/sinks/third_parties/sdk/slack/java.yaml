@@ -9,5 +9,5 @@ sinks:
     domains:
       - "slack.com"
     patterns:
-      - "(?i)(com[.]github[.]slack-scala-client|com[.]hubspot[.]slack|com[.]kreait[.]slack|com[.]palantir[.]roboslack|com[.]slack[.]api|com[.]slack[.]eithernet|com[.]slack[.]keeper|com[.]ullink[.]slack|gradle[.]plugin[.]fr[.]pturpin[.]slackpublish|gradle[.]plugin[.]net[.]madeng[.]slack|io[.]hndrs[.]slack|net[.]gpedro[.]integrations[.]slack|org[.]incode[.]module[.]slack|slack-rtm).*"
+      - "(?i)(com[.]slack[.]api|com[.]hubspot[.]slack|com[.]kreait[.]slack|com[.]palantir[.]roboslack|com[.]slack[.]eithernet|com[.]slack[.]keeper|com[.]ullink[.]slack|gradle[.]plugin[.]fr[.]pturpin[.]slackpublish|gradle[.]plugin[.]net[.]madeng[.]slack|io[.]hndrs[.]slack|net[.]gpedro[.]integrations[.]slack|org[.]incode[.]module[.]slack).*"
     tags:

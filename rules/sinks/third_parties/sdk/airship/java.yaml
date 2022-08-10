@@ -9,5 +9,5 @@ sinks:
     domains:
       - "airship.com"
     patterns:
-      - "(?i)(com[.]urbanairship[.]android).*"
+      - "(?i)(com[.]urbanairship[.]api|com[.]urbanairship[.]android|com[.]urbanairship).*"
     tags:

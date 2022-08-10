@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paypal.com"
     patterns:
-      - "(?i)(com[.]paypal[.]excheckout|com[.]paypal[.]android[.]sdk|com[.]paypal[.]android|com[.]paypal[.]butterfly|com[.]paypal[.]digraph|com[.]paypal[.]mocca|com[.]paypal[.]sdk|com[.]paypal[.]springboot|com[.]paypal).*"
+      - "(?i)(com[.]paypal[.]api|com[.]paypal[.]base|com[.]paypal[.]excheckout|com[.]paypal[.]android[.]sdk|com[.]paypal[.]android|com[.]paypal[.]butterfly|com[.]paypal[.]digraph|com[.]paypal[.]mocca|com[.]paypal[.]sdk|com[.]paypal[.]springboot|com[.]paypal).*"
     tags:

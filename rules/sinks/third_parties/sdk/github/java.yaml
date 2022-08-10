@@ -9,13 +9,5 @@ sinks:
     domains:
       - "github.com"
     patterns:
-      - "(?i)(com[.]github[.]nisrulz).*"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Wechaty
-    name: Github Wechaty
-    domains:
-      - "wechaty.github.io"
-    patterns:
-      - "(?i)(io[.]github[.]wechaty).*"
+      - "(?i)(org[.]kohsuke[.]github).*"
     tags:
