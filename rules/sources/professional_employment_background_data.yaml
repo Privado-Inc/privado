@@ -65,6 +65,6 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:last|previous)[^\\s/(;)#|,=!>]{0,5}salary[^\\s/(;)#|,=!>]{0,5}slip"
+      - "(?i)((?:last|previous|latest)[^\\s/(;)#|,=!>]{0,5}){0,1}salary[^\\s/(;)#|,=!>]{0,5}slip"
     tags:
       law: GDPR

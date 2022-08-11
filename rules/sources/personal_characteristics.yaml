@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)height[^\\s/(;)#|,=!>]{0,2}(?:cms|inches|feet)|(?:body|person|patient|baby|student|user|girl|boy|male|female|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,2}height"
+      - "(?i).*(height[^\\s/(;)#|,=!>]{0,2}(?:cms|inches|feet|meter|metre))|height"
     tags:
       law: GDPR
   
@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)marital[^\\s/(;)#|,=!>]{0,10}status|is[^\\s/(;)#|,=!>]{0,3}married|relationship[^\\s/(;)#|,=!>]{0,10}status"
+      - "(?i).*(marital[^\\s/(;)#|,=!>]{0,10}status|is[^\\s/(;)#|,=!>]{0,3}married|relationship[^\\s/(;)#|,=!>]{0,10}status)"
     tags:
       law: GDPR
 
@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)nationality|nationalities"
+      - "(?i).*(nationality|nationalities)"
     tags:
       law: GDPR
 
@@ -35,7 +35,7 @@ sources:
     isSensitive: True
     sensitivity: high
     patterns:
-      - "(?i)(?:racial|ethnic)[^\\s/(;)#|,=!>]*(?:origin|group)|ethnicity|ethnic|racial"
+      - "(?i).*((?:racial|ethnic)[^\\s/(;)#|,=!>]{0,5}(?:origin|group)|ethnicity)"
     tags:
       law: GDPR
   
@@ -45,7 +45,7 @@ sources:
     isSensitive: True
     sensitivity: high
     patterns:
-      - "(?i)religion|religious|christianity|catholic|judaism|jewish|muslim|hinduism|atheist|atheism"
+      - "(?i).*(religion|religious[^\\s/(;)#|,=!>]{0,5}(group|community|practices|belief|beleifs))"
     tags:
       law: GDPR
   
@@ -55,7 +55,7 @@ sources:
     isSensitive: True
     sensitivity: high
     patterns:
-      - "(?i)alloromantic|allosexual|androsexual|aromantic|asexual|autoromantic|autosexual|bicurious|biromantic|bisexual|demiromantic|demisexual|gay|gynesexual|gynosexual|heteromantic|heterosexuality|homoromantic|homosexuality|lesbian|monosexual|multisexual|pansexual|omnisexual|panromantic|polysexual|queer|skoliosexual|spectrasexual|cupiosexual|lithromantic"
+      - "(?i).*(sexual[^\\s/(;)#|,=!>]{0,5}(orientation|nature|preference|inclination))"
     tags:
       law: GDPR
     
@@ -65,7 +65,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)(?:person|customer|user|buyer|seller|publisher|CEO|CFO|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}signature"
+      - "(?i)(?:person|customer|user|buyer|seller|publisher|CEO|CFO)[^\\s/(;)#|,=!>]{0,5}signature"
     tags:
       law: GDPR
   
@@ -75,6 +75,6 @@ sources:
     category: Personal Characteristics
     isSensitive: False
     patterns:
-      - "(?i)body[^\\s/(;)#|,=!>]{0,5}mass[^\\s/(;)#|,=!>]{0,5}index|body[^\\s/(;)#|,=!>]{0,5}weight|weight[^\\s/(;)#|,=!>]{0,5}(?:kg|kgs|pound|pounds)|(?:body|person|patient|baby|student|user|girl|boy|male|female|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}weight"
+      - "(?i)body[^\\s/(;)#|,=!>]{0,5}mass[^\\s/(;)#|,=!>]{0,5}index|body[^\\s/(;)#|,=!>]{0,5}weight|weight[^\\s/(;)#|,=!>]{0,5}(?:kg|kgs|pound|pounds)|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}weight"
     tags:
       law: GDPR

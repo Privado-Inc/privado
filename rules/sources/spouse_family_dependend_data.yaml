@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,8}name|name[^\\s/(;)#|,=!>]{0,8}(?:guardian|mother|father)"
+      - "(?i).*(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,8}name|name[^\\s/(;)#|,=!>]{0,8}(?:guardian|mother|father).*"
     tags:
       law: GDPR
 
@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,10}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
+      - "(?i).*((?:guardian|mother|father)[^\\s/(;)#|,=!>]{0,10}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)).*"
     tags:
       law: GDPR
 
@@ -45,7 +45,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:dependant|daughter|wife|fiance|grand[^\\s/(;)#|,=!>]{0,8}mother|grand[^\\s/(;)#|,=!>]{0,8}father)[^\\s/(;)#|,=!>]{0,8}name"
+      - "(?i)(?:dependant|dependant|son|daughter|children|wife|husband|fiance|grand[^\\s/(;)#|,=!>]{0,8}mother|grand[^\\s/(;)#|,=!>]{0,8}father)[^\\s/(;)#|,=!>]{0,8}name"
     tags:
       law: GDPR
 
@@ -55,6 +55,6 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:dependant|children|daughter|wife|fiance|grand[^\\s/(;)#|,=!>]{0,10}mother|grand[^\\s/(;)#|,=!>]{0,10}father|family)[^\\s/(;)#|,=!>]{0,5}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
+      - "(?i)(?:dependant|dependant|son|daughter|children|wife|fiance|grand[^\\s/(;)#|,=!>]{0,10}mother|grand[^\\s/(;)#|,=!>]{0,10}father|family)[^\\s/(;)#|,=!>]{0,5}(?:contact|number|nbr|phone|mobile|landline|email|address|addr)"
     tags:
       law: GDPR
