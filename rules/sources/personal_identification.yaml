@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)((.*gender)|ismale|isfemale|sex)"
+      - "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
     tags:
       law: GDPR
   
@@ -35,7 +35,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i).*(last[^\\s/(;)#|,=!>]{0,5}name|sur(?!geon)[^\\s/(;)#|,=!>]{0,5}name)"
+      - "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name"
     tags:
       law: GDPR
   
@@ -45,7 +45,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)age|is[_-]{0,1}(minor|major|adult)|(.*(age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer)[^\\s/(;)#|,=!>]{0,10}(?<!im|p)age))"
+      - "(?i)age|is[_-]{0,1}(minor|major|adult|child)|(.*(age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer)[^\\s/(;)#|,=!>]{0,10}(?<!im|p)age))"
     tags:
       law: GDPR
 
