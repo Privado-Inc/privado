@@ -8,7 +8,7 @@ sinks:
     domains:
       - mongodb.com
     patterns: 
-      - "(?i)(com[.]mongodb[.]client[.]MongoCollection[.]((find|findOne|findMany)[:](.*org.bson.conversions.Bson.*))|(distinct|aggregate)[:].*)"
+      - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((find|findOne|findMany|distinct|aggregate)[:].*))"
     tags:
 
   - id: Storages.MongoDB.Write
@@ -16,6 +16,6 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(?i)(com[.]mongodb[.]client[.]MongoCollection[.]((deleteMany|deleteOne|findOneAnd(Delete|Replace|Update)|replaceOne|replaceMany|updateOne|updateMany)[:](.*org.bson.conversions.Bson*))|((bulkWrite|insertOne|insertMany)[:].*))"
+      - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((delete|deleteMany|deleteOne|findOneAnd(Delete|Replace|Update)|replace|replaceOne|replaceMany|update|updateOne|updateMany|bulkWrite|insert|insertOne|insertMany)[:].*))"
     tags:
 
