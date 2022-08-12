@@ -9,7 +9,7 @@ sinks:
     domains:
       - "cloud.huawei.com"
     patterns:
-      - "(?i)(com[.]huawei[.]agconnect|com[.]huawei[.]hms|com[.]huaweicloud).*"
+      - "(?i)(com[.]huaweicloud).*"
     tags:
 
   - id: ThirdParties.SDK.Huawei

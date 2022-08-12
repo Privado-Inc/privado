@@ -9,5 +9,5 @@ sinks:
     domains:
       - "freshdesk.com"
     patterns:
-      - "(?i)(com[.]github[.]freshdesk).*"
+      - "(?i)(com[.]github[.]freshdesk|com[.]codename1[.]freshdesk).*"
     tags:

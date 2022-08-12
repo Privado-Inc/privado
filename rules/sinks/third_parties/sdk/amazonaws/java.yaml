@@ -9,5 +9,5 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws).*"
+      - "(?i)(com[.]amazonaws[.]s3|com[.]amazonaws[.]scala|com[.]amazonaws).*"
     tags:

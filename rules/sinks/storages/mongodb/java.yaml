@@ -1,3 +1,5 @@
+
+
 # Sink Rules for storage database MongoDB - https://www.mongodb.com/
 
 sinks:
@@ -8,6 +10,7 @@ sinks:
       - mongodb.com
     patterns: 
       - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((find|findOne|findMany|distinct|aggregate)[:].*))"
+
     tags:
 
   - id: Storages.MongoDB.Write

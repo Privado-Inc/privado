@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sap.com"
     patterns:
-      - "(?i)(com[.]sap[.]cloud[.]yaas[.]service-sdk).*"
+      - "(?i)(com[.]sap[.]cloud).*"
     tags:
