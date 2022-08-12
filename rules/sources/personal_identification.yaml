@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)"
+      - "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year))))"
     tags:
       law: GDPR
 
@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:first|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}name"
+      - "(?i).*(?:first|given|full)[^\\s/(;)#|,=!>]{0,5}name"
     tags:
       law: GDPR
   
@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)[^-]male|[^-]female|transgender|genderqueer|genderfluid|omnigender|multigender|polygender|neutrois|pangender|trigender|cisgender|agender|androgyne|androgynous|[^-]gender"
+      - "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
     tags:
       law: GDPR
   
@@ -35,7 +35,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)last[^\\s/(;)#|,=!>]{0,5}name|sur(?!geon)[^\\s/(;)#|,=!>]{0,5}name"
+      - "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)"
     tags:
       law: GDPR
   
@@ -45,7 +45,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)[^a-zA-Z-\\s/(;)#|,=!>]age|\\bage\\b|age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}age"
+      - "(?i)age|is[_-]{0,1}(minor|major|adult|child)|(.*(age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer)[^\\s/(;)#|,=!>]{0,10}(?<!im|p)age))"
     tags:
       law: GDPR
 
@@ -55,7 +55,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:employee)[^\\s/(;)#|,=!>]{0,10}(?:no|number|code|id|nbr)"
+      - "(?i)(?:.*employee|emp)[^\\s/(;)#|,=!>]{0,10}(?:no|number|code|id|nbr|num)"
     tags:
       law: GDPR
 
@@ -65,6 +65,6 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)(?:profile|employee|user|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,5}(?:picture|pic|photo)"
+      - "(?i).*(?:profile|employee|user)[^\\s/(;)#|,=!>]{0,5}(?:picture|image|pic|photo)"
     tags:
       law: GDPR

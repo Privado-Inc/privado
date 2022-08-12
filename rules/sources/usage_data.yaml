@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)click(stream|track|log)|track{0,2}click|number[^\\s/(;)#|,=!>]{0,10}of[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)|count[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)"
+      - "(?i).*(click(stream|track|log)|track{0,2}click|number[^\\s/(;)#|,=!>]{0,10}of[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)|count[^\\s/(;)#|,=!>]{0,10}(?:clicks|click)).*"
     tags:
       law: GDPR
   
@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)search[^\\s/(;)#|,=!>]{0,12}history|saved[^\\s/(;)#|,=!>]{0,12}search|past[^\\s/(;)#|,=!>]{0,12}searches"
+      - "(?i).*(search[^\\s/(;)#|,=!>]{0,12}history|saved[^\\s/(;)#|,=!>]{0,12}search|past[^\\s/(;)#|,=!>]{0,12}searches).*"
     tags:
       law: GDPR
 
@@ -25,6 +25,6 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)product[^\\s/(;)#|,=!>]{0,10}feedback"
+      - "(?i).*(buttons[-_]{0,1}clicked|pages[-_]{0,1}viewed|event[-_]{0,1}(streaming|monitoring|analysis|tracking)[-_]{0,1}data).*"
     tags:
       law: GDPR
