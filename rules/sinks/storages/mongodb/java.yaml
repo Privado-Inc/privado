@@ -19,3 +19,18 @@ sinks:
       - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((delete|deleteMany|deleteOne|findOneAnd(Delete|Replace|Update)|replace|replaceOne|replaceMany|update|updateOne|updateMany|bulkWrite|insert|insertOne|insertMany)[:].*))"
     tags:
 
+  - id: Storages.MongoDB.Morphia.Read
+    name: MongoDB(Read)
+    domains:
+      - mongodb.com
+    patterns: 
+      - "(?i)(.*[.]morphia[.]Datastore)[.]((find|get|getByKey|getByKeys|getCount|createAggregation|createQuery|queryByExample|exists).*[:].*)"
+    tags:
+
+  - id: Storages.MongoDB.Morphia.Write
+    name: MongoDB(Write)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)(.*[.]morphia[.]Datastore)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)|merge).*[:].*)"
+    tags:
