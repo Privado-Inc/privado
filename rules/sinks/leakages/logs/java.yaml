@@ -15,7 +15,7 @@ sinks:
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|log|d).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|log|d|v).*"
     tags:
   
   - id: Leakages.Log.Info
@@ -23,33 +23,9 @@ sinks:
     patterns:
       - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback|timber.log.Timber|android.util.Log).*(info|i).*"
     tags:
-
-#   - id: Leakages.Internal.Error
-#     name: Internal Log Error
-#     patterns: 
-#       - "(?i).*(?:error|wtf|fatal).*"
-#     tags:
   
-#   - id: Leakages.Internal.Warn
-#     name: Internal Log Warn
-#     patterns: 
-#       - "(?i).*(?:warn).*"
-#     tags:
-  
-#   - id: Leakages.Internal.Debug
-#     name: Internal Log Debug
-#     patterns: 
-#       - "(?i).*(?:debug|verbose|trace).*"
-#     tags:
-  
-#   - id: Leakages.Internal.Info
-#     name: Internal Log Info
-#     patterns: 
-#       - "(?i).*(?:info|out).*"
-#     tags:
-
-  - id: Leakages.Internal.Console
+  - id: Leakages.Log.Console
     name: Log Console
     patterns: 
-      - "(?i)java.io.PrintStream.(?:print|println|write).*"
+      - "(?i)(java.io.PrintStream|android.util.(?:Log){0,1}Printer).(?:print|println|write).*"
     tags:
