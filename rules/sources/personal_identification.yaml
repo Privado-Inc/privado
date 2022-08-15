@@ -45,7 +45,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)age|is[_-]{0,1}(minor|major|adult|child)|(.*(age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer)[^\\s/(;)#|,=!>]{0,10}(?<!im|p)age))"
+      - "(?i)age|is[_-]{0,1}(minor|major|adult|child)|(.*(age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer)[^\\s/(;)#|,=!>]{0,5}(?<!im|p|langu|us|aver)age))"
     tags:
       law: GDPR
 
