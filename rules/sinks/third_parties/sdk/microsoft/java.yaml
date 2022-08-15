@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Microsoft.Azure
+    name: Microsoft Azure
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]functions|com[.]microsoft[.]azure[.]android|com[.]microsoft[.]azure|com[.]microsoft[.]appcenter|com[.]microsoft[.]azure[.]applicationinsights|com[.]microsoft[.]azure[.]appplatform|com[.]microsoft[.]azure[.]appservice|com[.]microsoft[.]azure[.]authorization|com[.]microsoft[.]azure[.]cognitiveservices|com[.]microsoft[.]azure[.]compute|com[.]microsoft[.]azure[.]containerservice|com[.]microsoft[.]azure[.]datafactory|com[.]microsoft[.]azure[.]dns|com[.]microsoft[.]azure[.]eventhubs|com[.]microsoft[.]azure[.]healthcareapis|com[.]microsoft[.]azure[.]iothub-java-client|com[.]microsoft[.]azure[.]keyvault|com[.]microsoft[.]azure[.]locks|com[.]microsoft[.]azure[.]monitor|com[.]microsoft[.]azure[.]network|com[.]microsoft[.]azure[.]operationsmanagement|com[.]microsoft[.]azure[.]policy|com[.]microsoft[.]azure[.]recoveryservices[.]backup|com[.]microsoft[.]azure[.]resourcehealth|com[.]microsoft[.]azure[.]resources|com[.]microsoft[.]azure[.]sdk[.]iot[.]deps|com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning[.]security|com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning|com[.]microsoft[.]azure[.]sdk[.]iot|com[.]microsoft[.]azure[.]spatialanchors|com[.]microsoft[.]azure[.]storage|com[.]microsoft[.]bingads|com[.]microsoft[.]cognitiveservices[.]speech|com[.]microsoft[.]graph|com[.]microsoft[.]windowsazure[.]storage[.]microsoft-windowsazure-storage-sdk|com[.]microsoft[.]windowsazure[.]storage|com[.]microsoft[.]windowsazure).*"
+    tags:

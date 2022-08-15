@@ -1,0 +1,110 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "admob.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]ads[.]mediation|com[.]google[.]android[.]gms[.]ads|com[.]google[.]api[.]services[.]admob|com[.]google[.]ads).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Analytics
+    name: Google Analytics
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]api[.]services[.]analytics|com[.]google[.]android[.]gms[.]analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud
+    name: Google Cloud
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]storage|com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]datastore|com[.]google[.]cloud).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.CloudMessaging
+    name: Google Cloud Messaging
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]cloudmessaging|com[.]google[.]android[.]gms[.]gcm).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.DoubleClick
+    name: Google DoubleClick
+    domains:
+      - "marketingplatform.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]doubleclick).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Drive
+    name: Google Drive
+    domains:
+      - "drive.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]drive).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Firebase
+    name: Google Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]firebase|com[.]google[.]android[.]gms[.]measurement).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.Fit
+    name: Google Fit
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]fitness).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google
+    name: Google
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.](auth|recaptcha|safetynet|streamprotect|tagmanager|tasks|wearable|identity)|com[.]google[.]api[.]client[.]googleapis|com[.]google[.]auth).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.Location
+    name: Google Location Services
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]location).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Maps
+    name: Google Maps
+    domains:
+      - "maps.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps|com[.]google[.]android[.]gms[.]maps).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Pay
+    name: Google Pay
+    domains:
+      - "pay.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]pay).*"
+    tags:
+    
+  - id: ThirdParties.SDK.Google.Play
+    name: Google Play Services
+    domains:
+      - "play.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar|com[.]google[.]android[.]gms[.](games|wallet)).*"
+    tags:
+    

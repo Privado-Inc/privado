@@ -2,39 +2,39 @@ sources:
   - id: Data.Sensitive.TechnicalData.CrashData
     name: Crash Data
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)"
+      - "(?i).*(crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)).*"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.TechnicalData.BrowsingHistory
     name: Browsing History
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)browsing[^\\s/(;)#|,=!>]*history|website[^\\s/(;)#|,=!>]*visited|web[^\\s/(;)#|,=!>]*pages[^\\s/(;)#|,=!>]*visited"
+      - "(?i)browsing[^\\s/(;)#|,=!>]*history|website[^\\s/(;)#|,=!>]*visited|web[^\\s/(;)#|,=!>]*pages[^\\s/(;)#|,=!>]*visited"
     tags:
-      - law: GDPR
+      law: GDPR
   
   - id: Data.Sensitive.TechnicalData.TechnicalDiagnosticData
     name: Technical Diagnostic Data
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)(?:crash|performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)"
+      - "(?i).*((?:performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)|(cpu|memory|disk)[^\\s/(;)#|,=!>]{0,5}(usage|freq|available|used)).*"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.TechnicalData.BrowsingTime
     name: Browsing Time
     category: Technical Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: low
     patterns:
-      - pattern: "(?i)browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration)"
+      - "(?i).*(browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration))"
     tags:
-      - law: GDPR
+      law: GDPR

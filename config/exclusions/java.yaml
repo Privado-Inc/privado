@@ -1,0 +1,10 @@
+exclusions:
+  - id: Exclusions.Test
+    name: Exclude test source code
+    patterns:
+      - ".*/src/test/.*"
+
+  - id: Exclusions.Empty
+    name: Exclude file which cannot be read
+    patterns:
+      - "<empty>"

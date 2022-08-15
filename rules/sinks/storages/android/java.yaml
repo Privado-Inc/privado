@@ -1,0 +1,28 @@
+
+# Sink Rules for storage database Android SQLite - https://developer.android.com/
+
+sinks:
+
+  - id: Storages.Android.SQLite.Read
+    name: SQLite(Read)
+    domains:
+      - android.com
+    patterns: 
+      - "(?i)(android[.]database[.]sqlite[.]SQLiteDatabase)[.]((query|rawQuery).*)"
+    tags:
+
+  - id: Storages.Android.SQLite.Write
+    name: SQLite(Write)
+    domains:
+      - android.com
+    patterns:
+      - "(?i)(android[.]database[.]sqlite[.]SQLiteDatabase)[.]((delete|update|replace|insert|query|rawQuery).*)"
+    tags:
+
+  - id: Storages.Android.SQLite
+    name: SQLite
+    domains:
+      - android.com
+    patterns: 
+      - "(?i)(android[.]database[.]sqlite[.](SQLiteDatabase|SQLiteStatement))[.]((execute|execSQL|execPerConnectionSQL|compileStatement).*)"
+    tags:

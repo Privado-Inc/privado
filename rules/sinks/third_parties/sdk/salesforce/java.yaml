@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Salesforce
+    name: Salesforce
+    domains:
+      - "salesforce.com"
+    patterns:
+      - "(?i)(com[.]github[.]salesforce-marketingcloud|com[.]salesforce[.]argus|com[.]salesforce[.]cantor|com[.]salesforce[.]formula|com[.]salesforce[.]marketingcloud|com[.]salesforce[.]mobilesdk|com[.]salesforce[.]nimbus|com[.]salesforce[.]transmogrifai).*"
+    tags:

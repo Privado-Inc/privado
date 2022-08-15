@@ -2,19 +2,19 @@ sources:
   - id: Data.Sensitive.VehicleData.VehicleRegistrationNumber
     name: Vehicle Registration Number
     category: Vehicle Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-    - pattern: "(?i)(?:vehicle|truck|car|motorcycle|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration[^\\s/(;)#|,=!>]{0,5}(number){0,1}"
+      -  "(?i).*((?:vehicle|truck|car|motorcycle|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}).*"
     tags:
-      - law: GDPR
+      law: GDPR
 
   - id: Data.Sensitive.VehicleData.LicensePlate
     name: License Plate
     category: Vehicle Data
-    is_sensitive: False
+    isSensitive: False
     sensitivity: medium
     patterns:
-      - pattern: "(?i)license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(number|no))?"
+      -  "(?i).*(license[^\\s/(;)#|,=!>]{0,5}plate([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}).*"
     tags:
-      - law: GDPR
+      law: GDPR

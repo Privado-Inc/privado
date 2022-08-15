@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Aliyun
+    name: Aliyun
+    domains:
+      - "aliyun.com"
+    patterns:
+      - "(?i)(com[.]aliyun[.]datahub|com[.]aliyun[.]dpa|com[.]aliyun[.]mns|com[.]aliyun[.]oas|com[.]aliyun[.]odps|com[.]aliyun[.]openservices|com[.]aliyun[.]oss|com[.]aliyun).*"
+    tags:
