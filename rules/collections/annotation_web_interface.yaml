@@ -2,7 +2,7 @@ collections:
   - id: Collections.Annotation.Spring
     name: Spring Web Interface Annotation
     patterns: 
-      - "RequestMapping|PostMapping|GetMapping|PutMapping|GetMapping|DeleteMapping"
+      - "RequestMapping|PostMapping|PutMapping|GetMapping|DeleteMapping"
     tags:
 
   - id: Collections.Annotation.Struts
@@ -14,13 +14,13 @@ collections:
   - id: Collections.Annotation.Blade
     name: Blade Web Interface Annotation
     patterns: 
-      - "Path|Get|Put|Post|Patch|Delete"
+      - "Path|(Get|Put|Post|Patch|Delete){0,1}Route"
     tags:
 
   - id: Collections.Annotation.Jersey
     name: Jersey Web Interface Annotation
     patterns: 
-      - "Get|Put|Post|Patch|Delete"
+      - "Path|ApplicationPath"
     tags:
 
   - id: Collections.Annotation.GoogleWebToolkit
