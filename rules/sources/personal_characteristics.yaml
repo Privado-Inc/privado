@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i).*(height[^\\s/(;)#|,=!>]{0,2}(?:cms|inches|feet|meter|metre))|height"
+      - "(?i).*(height[^\\s/(;)#|,=!>]{0,5}(?:cms|inches|feet|meter|metre))|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}height|height"
     tags:
       law: GDPR
   
