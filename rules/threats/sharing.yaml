@@ -1,7 +1,7 @@
 # This file contains policies related to data processing. You can define policies related to encryption, back-up etc. 
 
 threats:
-  - id: Threats.Storage.isIpcDataSharingAllowed
+  - id: Threats.Sharing.isIpcDataSharingAllowed
     name: "Content provider configuration leaks sensitive data"
     type: Threat
     description: >-
@@ -16,7 +16,7 @@ threats:
       "MSTG-STORAGE-6" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Stored-Data-Has-Been-Exposed-via-IPC-Mechanisms-MSTG-STORAGE-6"
       "MITRE" : "Insecurity.MisconfiguredPermissions, Sharing.Exposure"
 
-  - id: Threats.Storage.isDataExposedToThirdPartiesViaNotification
+  - id: Threats.Sharing.isDataExposedToThirdPartiesViaNotification
     name: "App notification is leaking sensitive data"
     type: Threat
     description: >-
@@ -36,6 +36,11 @@ threats:
     fix: >-
       Ensure that no sensitive data is exposed via notification system.
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4
+    dataFlow:
+      sources:
+        - Data.Sensitive.*             
+      sinks:
+        - Miscellaneous.Threats.AndroidNotification
     repositories:
       - "**"
     tags:
