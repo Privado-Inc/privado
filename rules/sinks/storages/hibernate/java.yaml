@@ -1,0 +1,23 @@
+
+
+# Sink Rules for storage database Hibernate - https://hibernate.org/
+
+sinks:
+
+  - id: Storages.Hibernate.Read
+    name: Hibernate(Read)
+    domains:
+      - hibernate.org
+    patterns: 
+  - "(?i)((org[.]hibernate[.]Session[.]((byId|byMultipleIds|byNaturalId|bySimpleNaturalId|get|getEntityName|load|refresh)[:].*))|(org[.]hibernate[.]query[.]Query.*((getResultList|getResultStream|getSingleResult|list||stream|uniqueResult|uniqueResultOptional)[:].*)))"
+
+    tags:
+
+  - id: Storages.Hibernate.Write
+    name: Hibernate(Write)
+    domains:
+      - hibernate.org
+    patterns:
+      - "(?i)(org[.]hibernate[.]Session[.]((delete|merge|persist|replicate|save|saveOrUpdate|update)[:].*))"
+    tags:
+
