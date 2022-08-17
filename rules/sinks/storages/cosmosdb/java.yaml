@@ -20,5 +20,3 @@ sinks:
     patterns:
       - "(i?).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:upsert|create|patch|delete|replace|set|update|save).*"
     tags:
-
-

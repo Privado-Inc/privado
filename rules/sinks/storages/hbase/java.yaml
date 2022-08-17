@@ -11,4 +11,3 @@ sinks:
     patterns:
       - "(i?).*org[.]apache[.]hadoop[.]hbase[.].*"
     tags:
-

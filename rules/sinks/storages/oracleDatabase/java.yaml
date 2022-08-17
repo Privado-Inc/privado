@@ -10,4 +10,3 @@ sinks:
     patterns:
       - "(i?).*jdbc:oracle:.*|.*oracle[.]jdbc[.]pool[.]OracleDataSource.*(?:executeQuery|execute).*" 
     tags:
-

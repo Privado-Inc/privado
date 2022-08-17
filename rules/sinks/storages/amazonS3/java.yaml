@@ -18,5 +18,3 @@ sinks:
     patterns: 
       - "(i?).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:abortMultipartUpload|completeMultipartUpload|copy|create|delete|put|uploadPart).*"
     tags:
-
-

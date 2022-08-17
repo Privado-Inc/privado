@@ -2,6 +2,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/scala,java,intellij+all,visualstudiocode,eclipse,sbt
 # Edit at https://www.toptal.com/developers/gitignore?templates=scala,java,intellij+all,visualstudiocode,eclipse,sbt
 
+.idea
+
 ### MAC ###
 .DS_Store
 

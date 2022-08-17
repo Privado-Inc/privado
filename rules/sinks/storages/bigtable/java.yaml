@@ -11,4 +11,3 @@ sinks:
     patterns:
       - "(i?).*com[.]google[.]cloud[.]bigquery.*"
     tags:
-
