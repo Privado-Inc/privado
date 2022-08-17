@@ -10,4 +10,3 @@ sinks:
     patterns:
       - "(i?).*com[.]vaticle[.]type(?:db|ql)[.].*"
     tags:
-

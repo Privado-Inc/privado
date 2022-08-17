@@ -11,4 +11,3 @@ sinks:
     patterns:
       - "(i?).*(?:CassandraConnector|Cluster[.]builder|com[.]datastax[.]oss|com[.]datastax[.]driver[.]core|com[.]noorq[.]casser|org[.]eclipse[.]jnosql[.]mapping[.]cassandra).*"
     tags:
-

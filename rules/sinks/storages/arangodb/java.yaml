@@ -18,5 +18,3 @@ sinks:
     patterns:
       - "(i?).*(?:com[.]arangodb[.]Arango|org[.]eclipse[.]jnosql[.]mapping[.]arangodb).*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*"
     tags:
-
-

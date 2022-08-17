@@ -1,39 +1,43 @@
 # This file contains policies related to data processing. You can define policies related to encryption, back-up etc. 
 
 threats:
-        - id: Threats.Storage.isIpcDataSharingAllowed
-          name: "Content provider configuration leaks sensitive data"
-          type: Threat
-          description: "As part of Android's IPC mechanisms, content providers allow an app's stored data to be accessed and modified by other apps. 
-                       If not properly configured, these mechanisms may leak sensitive data."
-          fix: "Ensure proper configurations are in place when using the content providers.
-               Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Stored-Data-Has-Been-Exposed-via-IPC-Mechanisms-MSTG-STORAGE-6"
-          repositories:
-                - "**"
-          tags:
-                "MSTG-STORAGE-6" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Stored-Data-Has-Been-Exposed-via-IPC-Mechanisms-MSTG-STORAGE-6"
-                "MITRE" : "Insecurity.MisconfiguredPermissions, Sharing.Exposure"
+  - id: Threats.Storage.isIpcDataSharingAllowed
+    name: "Content provider configuration leaks sensitive data"
+    type: Threat
+    description: >-
+      As part of Android's IPC mechanisms, content providers allow an app's stored data to be accessed and modified by other apps. 
+      If not properly configured, these mechanisms may leak sensitive data.
+    fix: >-
+      Ensure proper configurations are in place when using the content providers.
+      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Stored-Data-Has-Been-Exposed-via-IPC-Mechanisms-MSTG-STORAGE-6
+    repositories:
+      - "**"
+    tags:
+      "MSTG-STORAGE-6" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Stored-Data-Has-Been-Exposed-via-IPC-Mechanisms-MSTG-STORAGE-6"
+      "MITRE" : "Insecurity.MisconfiguredPermissions, Sharing.Exposure"
 
-        - id: Threats.Storage.isDataExposedToThirdPartiesViaNotification
-          name: "App notification is leaking sensitive data"
-          type: Threat
-          description: "Sensitive information might be leaked to third parties via app notification. It is important to understand that notifications 
-                       should never be considered private. When a notification is handled by the Android system it is broadcasted system-wide and 
-                       any application running with a NotificationListenerService can listen for these notifications to receive them in full and may 
-                       handle them however it wants. There are many known malware samples such as Joker, and Alien which abuses the 
-                       NotificationListenerService to listen for notifications on the device and then send them to attacker-controlled C2 infrastructure. 
-                       Commonly this is done in order to listen for two-factor authentication (2FA) codes that appear as notifications on the device 
-                       which are then sent to the attacker. A safer alternative for the user would be to use a 2FA application that does not generate 
-                       notifications. Furthermore there are a number of apps on the Google Play Store that provide notification logging, which 
-                       basically logs locally any notifications on the Android system. This highlights that notifications are in no way private on 
-                       Android and accessible by any other app on the device.
-                       
-                       For this reason all notification usage should be inspected for confidential or high risk information that could be used by malicious applications. 
-                       If not properly configured, these mechanisms may leak sensitive data."
-          fix: "Ensure that no sensitive data is exposed via notification system.
-               Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4"
-          repositories:
-                - "**"
-          tags:
-                "MSTG-STORAGE-4" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4"
-                "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
+  - id: Threats.Storage.isDataExposedToThirdPartiesViaNotification
+    name: "App notification is leaking sensitive data"
+    type: Threat
+    description: >-
+      Sensitive information might be leaked to third parties via app notification. It is important to understand that notifications 
+      should never be considered private. When a notification is handled by the Android system it is broadcasted system-wide and 
+      any application running with a NotificationListenerService can listen for these notifications to receive them in full and may 
+      handle them however it wants. There are many known malware samples such as Joker, and Alien which abuses the 
+      NotificationListenerService to listen for notifications on the device and then send them to attacker-controlled C2 infrastructure. 
+      Commonly this is done in order to listen for two-factor authentication (2FA) codes that appear as notifications on the device 
+      which are then sent to the attacker. A safer alternative for the user would be to use a 2FA application that does not generate 
+      notifications. Furthermore there are a number of apps on the Google Play Store that provide notification logging, which 
+      basically logs locally any notifications on the Android system. This highlights that notifications are in no way private on 
+      Android and accessible by any other app on the device.
+      
+      For this reason all notification usage should be inspected for confidential or high risk information that could be used by malicious applications. 
+      If not properly configured, these mechanisms may leak sensitive data.
+    fix: >-
+      Ensure that no sensitive data is exposed via notification system.
+      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4
+    repositories:
+      - "**"
+    tags:
+      "MSTG-STORAGE-4" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4"
+      "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"

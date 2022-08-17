@@ -20,5 +20,3 @@ sinks:
     patterns:
       - "(i?).*(?:DocumentDBClient|docdb[.]amazonaws[.]com|rds-combined-ca-bundle[.]pem).*(add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|findAnd|findOneAnd|rename|save|set|update|bulkWrite).*"
     tags:
-
-

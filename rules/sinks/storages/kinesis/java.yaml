@@ -20,5 +20,3 @@ sinks:
     patterns:
       - "(i?).*(?:KinesisAsyncClient|KinesisClient|software.amazon.awssdk.services.kinesis).*(add|create|delete|merge|put|remove|update|set|send).*"
     tags:
-
-
