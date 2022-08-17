@@ -9,7 +9,7 @@ sinks:
     domains:
       - hibernate.org
     patterns: 
-  - "(?i)((org[.]hibernate[.]Session[.]((byId|byMultipleIds|byNaturalId|bySimpleNaturalId|get|getEntityName|load|refresh)[:].*))|(org[.]hibernate[.]query[.]Query.*((getResultList|getResultStream|getSingleResult|list||stream|uniqueResult|uniqueResultOptional)[:].*)))"
+      - "(?i)((org[.]hibernate[.]Session[.]((byId|byMultipleIds|byNaturalId|bySimpleNaturalId|get|getEntityName|load|refresh)[:].*))|(org[.]hibernate[.]query[.]Query.*((getResultList|getResultStream|getSingleResult|list||stream|uniqueResult|uniqueResultOptional)[:].*)))"
 
     tags:
 
