@@ -20,5 +20,3 @@ sinks:
     patterns:
       - "(i?).*(?:CognitoIdentityProviderClient[.]|CognitoIdentityClient[.]|AWSCognitoIdentityProviderClientBuilder).*(create|delete|set|tag|unlink|link|untag|update|merge|bulkPublish|createIdentityPool|temporaryPassword|).*"
     tags:
-
-

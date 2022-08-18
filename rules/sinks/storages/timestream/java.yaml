@@ -20,4 +20,3 @@ sinks:
     patterns:
       - "(i?).*(?:TimestreamWriteAsyncClient|TimestreamWriteAsyncClientBuilder|TimestreamWriteBaseClientBuilder|TimestreamWriteClient|TimestreamWriteClientBuilder|com[.]amazonaws[.]services[.]timestreamwrite).*"
     tags:
-

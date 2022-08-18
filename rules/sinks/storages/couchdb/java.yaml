@@ -20,5 +20,3 @@ sinks:
     patterns:
       - "(i?).*(?:com[.]fourspaces[.]couchdb|.*org[.]ektorp[.].*couchdb|.*org[.]lightcouch[.]CouchDb|org.*jnosql.*couch.*|com[.]couchbase[.]client).*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*" 
     tags:
-
-

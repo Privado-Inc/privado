@@ -18,5 +18,3 @@ sinks:
     patterns:
       - "(i?).*(?:GraphDatabase.driver|GraphDatabaseFactory).*(basic|kerberos|custom|bearer|writeTransaction|run|execute|beginTransaction|beginTx|delete|commit|create|set|).*"
     tags:
-
-

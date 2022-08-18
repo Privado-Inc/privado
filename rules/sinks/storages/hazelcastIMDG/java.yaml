@@ -10,4 +10,3 @@ sinks:
     patterns:
       - "(i?).*com[.](hazelcast|com[.]hazelcast[.]core[.]HazelcastInstance)[.](?:core|client|cache|nio|query|collection|connector|cp|spi|spring|sql|jet|getMap).*"
     tags:
-
