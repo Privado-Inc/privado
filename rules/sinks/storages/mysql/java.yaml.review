@@ -1,0 +1,20 @@
+
+# Sink Rules for storage database MySQL - https://www.mysql.com/
+
+sinks:
+
+  - id: Storages.MySQL.Read
+    name: MySQL(Read)
+    domains:
+      - mysql.com
+    patterns: 
+      - "(i?).*org[.]springframework[.]jdbc[.]datasource.*(?:get|list|head|select|view|find|search|match).*"
+    tags:
+
+  - id: Storages.MySQL.Write
+    name: MySQL(Write)
+    domains:
+      - mysql.com
+    patterns: 
+      - "(i?).*org[.]springframework[.]jdbc[.]datasource.*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*"
+    tags:

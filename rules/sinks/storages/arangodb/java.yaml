@@ -1,0 +1,20 @@
+
+# Sink Rules for storage database ArangoDB - https://www.arangodb.com/
+
+sinks:
+
+  - id: Storages.ArangoDB.Read
+    name: ArangoDB(Read)
+    domains:
+      - arangodb.com
+    patterns:
+      - "(i?).*(?:com[.]arangodb[.]Arango|org[.]eclipse[.]jnosql[.]mapping[.]arangodb).*(?:get|list|head|select|view|find|search|match).*"
+    tags:
+
+  - id: Storages.ArangoDB.Write
+    name: ArangoDB(Write)
+    domains:
+      - arangodb.com
+    patterns:
+      - "(i?).*(?:com[.]arangodb[.]Arango|org[.]eclipse[.]jnosql[.]mapping[.]arangodb).*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*"
+    tags:

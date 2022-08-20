@@ -1,0 +1,20 @@
+# This file contains policies related to data leakages such as writing sensitive data to log files, file system or streams.
+
+threats:   
+  - id: Threats.Leakage.isDataLeakingToLog
+    name: "PII data is written to the log files"
+    type: Threat
+    description: "Sensitive Data written to log files or file system may lead to unauthorized access or exposure to potential attack."
+    fix: "It is not recommended to log Sensitive Data to log files or the file system. The data must be encrypted if it is absolutely necessary to log it."   
+    dataFlow:
+      sources:
+        - Data.Sensitive.*             
+      sinks:
+        - Leakages.*
+    repositories:                                                         
+      - "**"
+    tags:
+      "CWE-359" : "https://cwe.mitre.org/data/definitions/359.html"
+      "CWE-532" : "https://cwe.mitre.org/data/definitions/532.html"
+      "MSTG-STORAGE-3" : "https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#Testing-Logs-for-Sensitive-Data-MSTG-STORAGE-3"
+      "MITRE" : "Sharing.Exposure"

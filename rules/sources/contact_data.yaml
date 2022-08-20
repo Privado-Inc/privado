@@ -1,0 +1,40 @@
+sources:
+  - id: Data.Sensitive.ContactData.Address
+    name: Address
+    category: Contact Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(.*(?<!(ip|mac|email|server|logical|physical|port|public|private)[-_]?)address)|(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)|(?:pin|zip|postal|metro)[-_\\[<'. ]{0,2}code|(?:delivery|pickup)[^\\s/(;)#|,=!>]{0,10}(?:location|position)|house[^\\s/(;)#|,=!>]{0,2}(?:number|no)|address[-_.]{0,2}line"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.ContactData.EmailAddress
+    name: Email Address
+    category: Contact Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.ContactData.PhoneNumber
+    name: Phone Number
+    category: Contact Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*((phone|mobile|cellphone|contact)[^\\s/(;)#|,=!>]{0,2}(detail|details)|(?:mobile|phone|cellphone|contact)[^\\s/(;)#|,=!>]{0,10}(?:number|nbr|num|no)|(?:primary|secondary)[^\\s/(;)#|,=!>]{0,10}(phone|landline|telephone))"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.ContactData.EmergencyContactDetails
+    name: Emergency Contact Details
+    category: Contact Data
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i)emergency[^\\s/(;)#|,=!>]{0,5}contact[^\\s/(;)#|,=!>]{0,5}(?:number|no|nbr|phone|mobile|mob|landline|email|details|detail|relation)"
+    tags:
+      law: GDPR

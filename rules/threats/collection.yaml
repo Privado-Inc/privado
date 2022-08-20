@@ -1,0 +1,36 @@
+# Collections points are places from where user directly provides input to the application. Example: user registration forms, payment forms, etc. 
+# Use of dark patterns or bad UI controls may lead to data breaches or non-compliance. This file contains policies for commonly observed 
+# issues related to collection points.
+
+threats:
+  - id: Threats.Collection.isKeyboardCacheUsed
+    name: "Keyboard cache is not disabled for the PII text inputs"
+    type: Threat
+    description: >-
+      When users type in input fields, the software automatically suggests data. This feature can be very useful for messaging apps. However, the keyboard 
+      cache may disclose sensitive information when the user selects an input field that takes this type of information.
+    fix: >-
+      Disable the keyboard cache on text inputs that process sensitive data. 
+      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#determining-whether-the-keyboard-cache-is-disabled-for-text-input-fields-mstg-storage-5
+    repositories:
+      - "**"
+    tags:
+      "MSTG-STORAGE-5": "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#determining-whether-the-keyboard-cache-is-disabled-for-text-input-fields-mstg-storage-5"
+      "MITRE" : "Collection.Interception, Collection.Registration"
+
+  - id: Threats.Collection.isInputMasked
+    name: "Sensitive data is not masked on the user interface" 
+    type: Threat
+    description: >-
+      Entering sensitive information when, for example, registering an account or making payments, is an essential part of using many apps. 
+      This data may be financial information such as credit card data or user account passwords. The data may be exposed if the app doesn't 
+      properly mask it while it is being typed. In order to prevent disclosure and mitigate risks such as shoulder surfing you should verify 
+      that no sensitive data is exposed via the user interface unless explicitly required (e.g. a password being entered)
+    fix: >-
+      Mask the Sensitive Data either by showing asterisk or dots instead of plain text
+      Reference: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#checking-for-sensitive-data-disclosure-through-the-user-interface-mstg-storage-7
+    repositories:
+      - "**"
+    tags:
+      "MSTG-STORAGE-7" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#checking-for-sensitive-data-disclosure-through-the-user-interface-mstg-storage-7"
+      "MITRE" : "Collection.Interception, Collection.Registration"

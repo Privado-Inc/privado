@@ -236,3 +236,7 @@ Privado is free for:
 ## How Privado CLI handles your data? <a href="#how-privado-cli-handles-your-data" id="how-privado-cli-handles-your-data"></a>
 
 Privado CLI tool was engineered with security in mind. Our tool runs the scan locally on your machine and your code never leaves your system.
+
+## License
+
+Privado OSS is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE(AGPL 3.0).  This application may only be used in compliance with the License. In lieu of applicable law or written agreement, software distributed under the License is distributed "AS IS", VOID OF ALL WARRANTIES OR CONDITIONS. For specific details regarding permissions and restrictions, see [LICENSE](/LICENSE).

@@ -1,0 +1,70 @@
+sources:
+  - id: Data.Sensitive.BiometricData.FingerprintScans
+    name: Fingerprint Scans
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)finger[^\\s/(;)#|,=!>]{0,5}print|finger[^\\s/(;)#|,=!>]{0,5}print[^\\s/(;)#|,=!>]{0,5}scan"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BiometricData.IrisRecognition
+    name: Iris Recognition
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)iris[^\\s/(;)#|,=!>]*(?:recognition|feature|scan)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BiometricData.FacialRecognition
+    name: Facial Recognition
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)(?:facial)[^\\s/(;)#|,=!>]{0,3}(?:recognition|hair|happy|angry|agree|talk|crazy|talk[^\\s/(;)#|,=!>]{0,3}angry|sad|neutral|shock|rolleye|think|shake|asleep|drunk|serious|landmark|mark|detection)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BiometricData.VoiceRecognition
+    name: Voice Recognition
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)(voice|speech)[^\\s/(;)#|,=!>]{0,5}(?:recognition|recog)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BiometricData.HandwritingRecognition
+    name: Handwriting Recognition
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)handwriting[^\\s/(;)#|,=!>]*recognition|handwritten[^\\s/(;)#|,=!>]*text[^\\s/(;)#|,=!>]*recognition"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BiometricData.DNAMatching
+    name: DNA Matching
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)dna(?!me)[^\\s/(;)#|,=!>]{0,10}(?:subsequence|scan|print|sequence)|prote[^\\s/(;)#|,=!>]{0,10}insequence"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BiometricData.Gait
+    name: Gait
+    category: Biometric Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)(?:abnormal|hemiplegic|diplegic|neuropathic|myopathic|choreiform|ataxic|parkinsonian|sensory)[^\\s/(;)#|,=!>]{0,3}gait|(?:forefoot|midfoot|rarefoot|heel|fore[^\\s/(;)#|,=!>]{0,3}foot|mid[^\\s/(;)#|,=!>]{0,3}foot|rare[^\\s/(;)#|,=!>]{0,3}foot)[^\\s/(;)#|,=!>]{0,3}strike|(?:foot|hip)[^\\s/(;)#|,=!>]{0,3}angle|foot[^\\s/(;)#|,=!>]{0,2}progression[^\\s/(;)#|,=!>]{0,3}angle|stride[^\\s/(;)#|,=!>]{0,3}(?:length|width|duration)|(?:lateral|forward)[^\\s/(;)#|,=!>]{0,3}stride"
+    tags:
+      law: GDPR

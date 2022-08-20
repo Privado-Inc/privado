@@ -1,0 +1,50 @@
+sources:
+  - id: Data.Sensitive.AccountData.AccountID
+    name: Account ID
+    category: Account Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(?:account|user|customer|doctor|patient|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,3}(id|number|no|num)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.AccountData.SocialMediaLoginIdentifier
+    name: Social Media Login Identifier
+    category: Account Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(?:facebook|twitter|instagram|linkedin|pinterest|behance|dribble)[^\\s/(;)#|,=!>]{0,2}(?:id|account|username|handle)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.AccountData.LanguagePreferences
+    name: Language Preferences
+    sensitivity: low
+    category: Account Data
+    isSensitive: False
+    patterns:
+      - "(?i).*language.*"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.AccountData.AccountPassword
+    name: Account Password
+    category: Account Data
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i).*(?<!db|database|sql|jira).*((?:user)[^\\s/(;)#|,=!>]{0,5}(?:psw|pswd)|password|passwrd)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.AccountData.AccountName
+    name: Account Name
+    category: Account Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(?<!db|database|sql|jira).*(?:account|customer|person|user|organization|company)[^\\s/(;)#|,=!>]{0,8}name"
+    tags:
+      law: GDPR

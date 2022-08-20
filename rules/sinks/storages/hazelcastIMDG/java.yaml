@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Hazelcast IMDG - https://hazelcast.org/imdg/
+
+sinks:
+
+  - id: Storages.HazelcastIMDG.ReadAndWrite
+    name: Hazelcast IMDG
+    domains:
+      - hazelcast.org
+    patterns:
+      - "(i?).*com[.](hazelcast|com[.]hazelcast[.]core[.]HazelcastInstance)[.](?:core|client|cache|nio|query|collection|connector|cp|spi|spring|sql|jet|getMap).*"
+    tags:

@@ -1,4 +1,7 @@
 README.md
-CODE_OF_CONDUCT.md
+buildspec.yml
 Dockerfile
+.git
+.gitignore
+CODE_OF_CONDUCT.md
 bin

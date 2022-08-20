@@ -1,0 +1,80 @@
+sources:
+  - id: Data.Sensitive.PersonalCharacteristics.Height
+    name: Height
+    category: Personal Characteristics
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*(height[^\\s/(;)#|,=!>]{0,5}(?:cms|inches|feet|meter|metre))|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}height|height"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.PersonalCharacteristics.MaritalStatus
+    name: Marital Status
+    category: Personal Characteristics
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(marital|married|relationship[^\\s/(;)#|,=!>]{0,2}status).*"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.PersonalCharacteristics.Nationality
+    name: Nationality
+    category: Personal Characteristics
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(nationality|nationalities)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.PersonalCharacteristics.RacialorEthnicOrigin
+    name: Racial or Ethnic Origin
+    category: Personal Characteristics
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*((?:racial|ethnic)[^\\s/(;)#|,=!>]{0,5}(?:origin|group)|ethnicity)"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.PersonalCharacteristics.Religion/ReligiousBeliefs
+    name: Religion / Religious Beliefs
+    category: Personal Characteristics
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*(religion|religious[^\\s/(;)#|,=!>]{0,5}(group|community|practices|belief|beleifs))"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.PersonalCharacteristics.SexualOrientation
+    name: Sexual Orientation
+    category: Personal Characteristics
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*(sexual[^\\s/(;)#|,=!>]{0,5}(orientation|nature|preference|inclination))"
+    tags:
+      law: GDPR
+    
+  - id: Data.Sensitive.PersonalCharacteristics.Signature
+    name: Signature
+    category: Personal Characteristics
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i)(?:person|customer|user|buyer|seller|publisher|CEO|CFO)[^\\s/(;)#|,=!>]{0,5}signature"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.PersonalCharacteristics.Weight
+    name: Weight
+    sensitivity: medium
+    category: Personal Characteristics
+    isSensitive: False
+    patterns:
+      - "(?i)body[^\\s/(;)#|,=!>]{0,5}mass[^\\s/(;)#|,=!>]{0,5}index|body[^\\s/(;)#|,=!>]{0,5}weight|weight[^\\s/(;)#|,=!>]{0,5}(?:kg|kgs|pound|pounds)|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}weight"
+    tags:
+      law: GDPR

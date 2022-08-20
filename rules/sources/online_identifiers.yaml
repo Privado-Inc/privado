@@ -1,0 +1,60 @@
+sources:
+  - id: Data.Sensitive.OnlineIdentifiers.Cookies
+    name: Cookies
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(cookies|cookie)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.OnlineIdentifiers.DeviceIdentifier
+    name: Device Identifier
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(device[^\\s/(;)#|,=!>]{0,5}(?:id|info|details))"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.OnlineIdentifiers.IPAddress
+    name: IP Address
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(?:(?<!(sh|tr)[-_]{0,1})ip|ipv4|ipv6)[^\\s/(;)#|,=!>]{0,10}address|machine[^\\s/(;)#|,=!>]{0,10}ip|ip"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.OnlineIdentifiers.MACAddress
+    name: MAC Address
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)mac[^\\s/(;)#|,=!>]{0,2}(?:address|ip)|ip[^\\s/(;)#|,=!>]{0,2}mac"
+    tags:
+      law: GDPR
+    
+  - id: Data.Sensitive.OnlineIdentifiers.Pixel
+    name: Pixel
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*(online[^\\s/(;)#|,=!>]{0,10}identifier|online[^\\s/(;)#|,=!>]{0,10}identity|(tracking|ad|advertising)[^\\s/(;)#|,=!>]{0,10}pixel)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.OnlineIdentifiers.AdvertisingIdentifiers
+    name: Advertising Identifiers
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i)idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
+    tags:
+      law: GDPR
