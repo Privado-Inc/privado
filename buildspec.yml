@@ -11,7 +11,13 @@ phases:
       - ACCOUNT_ID=${CODEBUILD_BUILD_ARN} && IFS=':' && set -- $ACCOUNT_ID && ACCOUNT_ID=$5
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/privado-main
-      - VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
+      - |
+        if [[ $AWS_REGION = "eu-west-1" ]]
+        then
+            VERSION="$(git describe --tags --abbrev=0)"
+        else
+            VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
+        fi
       - TAG_1=latest
       - TAG_2=$VERSION
       - echo $CODEBUILD_WEBHOOK_HEAD_REF
