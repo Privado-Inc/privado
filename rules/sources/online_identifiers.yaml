@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)cookies|cookie"
+      - "(?i).*(cookies|cookie)"
     tags:
       law: GDPR
 
@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)device[^\\s/(;)#|,=!>]{0,5}(?:id|name|info)|idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid|hardware[^\\s/(;)#|,=!>]{0,5}name|mobile[^\\s/(;)#|,=!>]{0,5}(?:model|brand)|laptop[^\\s/(;)#|,=!>]{0,5}(?:model|brand)"
+      - "(?i).*(device[^\\s/(;)#|,=!>]{0,5}(?:id|info|details))"
     tags:
       law: GDPR
 
@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)(?:(?<!sh)ip|ipv4|ipv6)[^\\s/(;)#|,=!>]{0,10}address|machine[^\\s/(;)#|,=!>]{0,10}ip"
+      - "(?i)(?:(?<!(sh|tr)[-_]{0,1})ip|ipv4|ipv6)[^\\s/(;)#|,=!>]{0,10}address|machine[^\\s/(;)#|,=!>]{0,10}ip|ip"
     tags:
       law: GDPR
 
@@ -45,7 +45,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)online[^\\s/(;)#|,=!>]{0,10}identifier|online[^\\s/(;)#|,=!>]{0,10}identity"
+      - "(?i).*(online[^\\s/(;)#|,=!>]{0,10}identifier|online[^\\s/(;)#|,=!>]{0,10}identity|(tracking|ad|advertising)[^\\s/(;)#|,=!>]{0,10}pixel)"
     tags:
       law: GDPR
 

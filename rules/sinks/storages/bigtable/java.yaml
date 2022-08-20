@@ -1,0 +1,13 @@
+
+# Sink Rules for storage database Google Cloud Bigtable - https://cloud.google.com/bigtable
+
+sinks:
+
+  - id: Storages.CloudBigtable.ReadAndWrite
+    name: Google Cloud Bigtable
+    domains:
+      - cloud.google.com
+      - google.com
+    patterns:
+      - "(i?).*com[.]google[.]cloud[.]bigquery.*"
+    tags:

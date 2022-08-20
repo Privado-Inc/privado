@@ -1,0 +1,22 @@
+
+# Sink Rules for storage database Azure Cosmos DB - https://azure.microsoft.com/en-us/services/cosmos-db/
+
+sinks:
+
+  - id: Storages.AzureCosmosDb.Read
+    name: Azure Cosmos DB(Read)
+    domains:
+      - azure.microsoft.com
+      - microsoft.com
+    patterns:
+      - "(i?).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:read|readItem|readMany|readAll|query|get|find|list|select).*"
+    tags:
+
+  - id: Storages.AzureCosmosDb.Write
+    name: Azure Cosmos DB(Write)
+    domains:
+      - azure.microsoft.com
+      - microsoft.com
+    patterns:
+      - "(i?).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:upsert|create|patch|delete|replace|set|update|save).*"
+    tags:

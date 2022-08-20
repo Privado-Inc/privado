@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cisco.com"
     patterns:
-      - "(?i)(com[.]ciscospark).*"
+      - "(?i)(com[.]ciscospark|com[.]cisco[.]cuic|com[.]cloupia).*"
     tags:

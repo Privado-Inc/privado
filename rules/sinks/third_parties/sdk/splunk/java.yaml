@@ -9,5 +9,5 @@ sinks:
     domains:
       - "splunk.com"
     patterns:
-      - "(?i)(splunk-sdk).*"
+      - "(?i)(com[.]splunk).*"
     tags:

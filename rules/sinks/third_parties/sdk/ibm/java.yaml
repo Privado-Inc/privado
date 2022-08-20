@@ -17,5 +17,5 @@ sinks:
     domains:
       - "ibm.com"
     patterns:
-      - "(?i)(com[.]ibm[.]watson[.]developer_cloud).*"
+      - "(?i)(com[.]ibm[.]watson[.]developer_cloud|com[.]ibm[.]net|com[.]ibm).*"
     tags:

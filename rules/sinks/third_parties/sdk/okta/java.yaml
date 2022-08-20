@@ -9,5 +9,5 @@ sinks:
     domains:
       - "okta.com"
     patterns:
-      - "(?i)(com[.]okta[.]authn[.]sdk|com[.]okta[.]sdk).*"
+      - "(?i)(com[.]okta[.]authn[.]sdk|com[.]okta[.]sdk|src[.]gen[.]java[.]main[.]org[.]openapitools[.]client|org[.]openapitools[.]client).*"
     tags:

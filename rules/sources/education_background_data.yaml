@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)educational[^\\s/(;)#|,=!>]{0,10}istory|(?:master|bachelor)[^\\s/(;)#|,=!>]{0,10}degree|attended[^\\s/(;)#|,=!>]{0,10}(?:universities|university|school|college)|(?:universities|university|school|college)[^\\s/(;)#|,=!>]{0,10}attended"
+      - "(?i)educational[^\\s/(;)#|,=!>]{0,10}history|(?:master|bachelor)[^\\s/(;)#|,=!>]{0,10}degree|attended[^\\s/(;)#|,=!>]{0,10}(?:universities|university|school|college)|(?:universities|university|school|college)[^\\s/(;)#|,=!>]{0,10}attended"
     tags:
       law: GDPR
 

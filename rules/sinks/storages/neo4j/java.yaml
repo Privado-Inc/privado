@@ -1,0 +1,20 @@
+
+# Sink Rules for storage database Neo4j Graph Database - https://neo4j.com/
+
+sinks:
+
+  - id: Storages.Neo4jGraphDatabase.Read
+    name: Neo4j Graph Database(Read)
+    domains:
+      - neo4j.com
+    patterns:
+      - "(i?).*(?:org.neo4j|GraphDatabase.driver|GraphDatabaseFactory).*(equals|text|withText|withParameters|withUpdatedParameters|column|database|impersonatedUser|metrics|get|run|has|find|withName|next|).*" 
+    tags:
+
+  - id: Storages.Neo4jGraphDatabase.Write
+    name: Neo4j Graph Database(Write)
+    domains:
+      - neo4j.com
+    patterns:
+      - "(i?).*(?:GraphDatabase.driver|GraphDatabaseFactory).*(basic|kerberos|custom|bearer|writeTransaction|run|execute|beginTransaction|beginTx|delete|commit|create|set|).*"
+    tags:

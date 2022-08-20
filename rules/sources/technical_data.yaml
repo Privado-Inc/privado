@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)"
+      - "(?i).*(crash[^\\s/(;)#|,=!>]{0,5}(?:report|status|file|dump|table|log)).*"
     tags:
       law: GDPR
 
@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(?:crash|performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)"
+      - "(?i).*((?:performance)[^\\s/(;)#|,=!>]{0,5}(?:report|dump|info|log)|(cpu|memory|disk)[^\\s/(;)#|,=!>]{0,5}(usage|freq|available|used)).*"
     tags:
       law: GDPR
 
@@ -35,6 +35,6 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration)"
+      - "(?i).*(browsing[^\\s/(;)#|,=!>]{0,10}(?:time|duration))"
     tags:
       law: GDPR

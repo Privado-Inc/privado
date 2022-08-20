@@ -9,5 +9,5 @@ sinks:
     domains:
       - "moengage.com"
     patterns:
-      - "(?i)(com[.]moengage[.]tools-android-sdk|com[.]moengage).*"
+      - "(?i)(com[.]moengage[.]core|com[.]moengage[.]pushlibrary|com[.]moengage).*"
     tags:
