@@ -4,7 +4,9 @@
 
 The most simple way to run a Privado scan is by just doing,
 
-`privado scan <source directory>`
+   
+
+    privado scan <source directory>
 
 This begins analyzing the app, fetching/updating the analysis engine and then performing the scan of target source directory locally.
 
