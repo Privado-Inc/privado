@@ -1,0 +1,9 @@
+# Command Reference
+Use privado --help for a list of available commands
+| Command|Description|Usage| Supported flags|
+| ------------ | ------------ | ------------ | ------------ |
+|`scan`|Scan a codebase or repository to identify privacy issues and generate compliance reports|`privado scan <repository> [flags]`|	`-c`, `--config` string: Specifies the config (with rules) directory to be passed to privado-core for scanning. These external rules and configurations are merged with the default set that Privado defines <br><br>`--debug`: Enables privado-core image output in debug mode <br><br>`--disable-deduplication`      When specified, the engine does not remove duplicate and subset dataflows. This option is useful if you wish to review all flows (including duplicates) manually   <br><br>`-h`, `--help`: help for scan  <br><br>`-i`, `--ignore-default-rules`: If specified, the default rules are ignored and only the specified rules (-r) are considered  <br><br>`--overwrite`: If specified, the warning prompt for existing scan results is disabled and any existing results are overwritten  <br><br>`--skip-dependency-download`: When specified, the engine skips downloading all locally unavailable dependencies. Skipping dependency download can yield incomplete results
+| `config`  | List, enable, or disable telemetry for Privado CLI   |`privado config <List/enable/disable>` | `-h`, `--help`: Help for config  |
+|`help`   | Help provides help for any command in the application.  | `privado help [command]`  | `-h`, `--help`: Help for help   |
+|  `update`  | Check for latest release and update to the latest version Privado CLI  | `privado update [flags]`  | `-h`, `--help`: Help for update  |
+| `version`   |  Print the current version of Privado CLI | `privado version [flags]`  |  `-h, --help`: Help for version |

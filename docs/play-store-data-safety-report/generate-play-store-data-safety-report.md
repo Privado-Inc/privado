@@ -1,66 +1,30 @@
 # Generate Play Store Data Safety Report
 
-## Run Scan <a href="#run-scan" id="run-scan"></a>
+> Before generating the Data Safety Report, ensure that you have scanned the repository on your machine using privado CLI and the results are available on the Privado Cloud dashboard. To learn how to scan your repository, click here
 
-To generate the data safety report, browse to the folder containing your Android app code(`cd ~/Android/myapp/`) and run `privado scan .`
+Once your application has been scanned and results have been synced to the Privado Cloud dashboard, you can now generate Data Safety Reports for your Android application. Generating a Data Safety report  may be mandatory requirement to publish your apps on the Google Play Store. To learn more about Data Safety Reports and why they might be needed for your repo, click here. Generating this report is a easy 3 step process. To begin, select your target repository → **Click Create Data Safety Report** and follow the instructions
 
+[ADD SCREENSHOT]
 
-
-## Generating Data Safety Report
-
-Once the scan finishes, we will open the results in your browser.
-
-![](<../.gitbook/assets/Initial Summary (2).png>)
-
-Click on, Create Data Safety Report button and answer a few questions in an easy to use & guided wizard.
-
-### Review Data Elements
+**1. Review Data**
 
 Privado scans the source code of your application for over 200 data elements and looks at data collection like user forms, Android permissions, etc. to discover data elements your mobile app is collecting or sharing.
 
-![](<../.gitbook/assets/Base (8).png>)
+[ADD SCREENSHOT]
 
-Click on the View button to see where we found the data element, in case you find a discovery is wrong, mark it false positive and we will remove the data element from the report.
+To drill down, click **View**. On the **Code Analysis** tab, you can review individual data instances, their flows and mark them as **False Positive** to remove them from the results as well as the report if needed.  
 
-### Review SDKs
+[ADD SCREENSHOT]
 
-Our scan also discovers all third-party SDKs, libraries that your mobile app uses. For popular SDKs we have a database of default data collected, shared and purposes & we will fill these details automatically. For SDKs, where we do not have the information, please select the values in the next steps.
+**2. Review Data Usage**
 
-![](<../.gitbook/assets/Base (1) (1).png>)
+Provide information about data collection and data security relevant to your application. Click Next to proceed. 
 
-Click on the View button to see where we found the SDKs, in case you find a discovery is wrong, mark it false positive and we will remove corresponding values from the report.
+[ADD SCREENSHOT]
 
-### Define Data Usage
+**3. Review Summary and Download Report**
 
-In this section, we will ask you some questions about the data types & SDKs we have discovered. First up, for your application let us know details around data deletion, encryption.
+And we are done! Review the summary and download report in CSV or PDF format
 
-![](<../.gitbook/assets/Base (2) (1).png>)
+[ADD SCREENSHOT]
 
-In the next step, for data types tell us if you are sharing them with any third party. Please note data type collected is checked by default.
-
-![](<../.gitbook/assets/Base (3) (1).png>)
-
-Finally, for each data type mark them if they are Required meaning app users have to provide that data, or Optional meaning app owners can choose to not share that data with your app.\
-
-
-![](<../.gitbook/assets/Base (4) (1) (1).png>)
-
-### Describe Purposes
-
-For each Data Type that you are collecting, mark the purposes. Please note one data type could have multiple purposes of collection.
-
-![](<../.gitbook/assets/Base (5) (1).png>)
-
-For data types, you are sharing mark the Purposes of Sharing. Please note only data types that were marked as being shared will be in this list.
-
-![](<../.gitbook/assets/Base (6) (1).png>)
-
-You are done with the data safety report!
-
-### Reviewing Results
-
-Congratulations, you have completed the form. Quickly review what you have filled and make sure the details are filled correctly. This will be added to your app’s data safety section and is important for you to be transparent to build trust with your app users.
-
-![](<../.gitbook/assets/Base (7) (1).png>)
-
-Click on, Download Report as CSV to generate a file that you can import in Play Store.\
