@@ -1,14 +1,35 @@
 # Table of contents
 
-{% content-ref url="getting-started-with-privado/" %}
-[getting-started-with-privado](getting-started-with-privado/)
-{% endcontent-ref %}
-
-{% content-ref url="understanding-rules/" %}
-[understanding-rules](understanding-rules/)
-{% endcontent-ref %}
-
-## Play Store Data Safety Report
-
-* [Generate Play Store Data Safety Report](play-store-data-safety-report/generate-play-store-data-safety-report.md)
-* [Uploading results to Play Store](play-store-data-safety-report/uploading-results-to-play-store.md)
+* [Privado OSS](docs/README.md)
+* [Table of contents](docs/SUMMARY.md)
+* [Getting Started With Privado](docs/getting-started-with-privado/README.md)
+   * [Overview](docs/getting-started-with-privado/overview.md)
+   * [Running a Scan](docs/getting-started-with-privado/running-a-scan.md)
+   * [Understanding Results](docs/getting-started-with-privado/understanding-the-results.md)
+   * [Command Reference](docs/getting-started-with-privado/command-reference.md)
+   * [Contributing through GitHub](docs/getting-started-with-privado/contributing.md)
+* [Understanding Rules](docs/understanding-rules/README.md)
+   * [Sources](docs/understanding-rules/sources.md)
+   * [Sinks](docs/understanding-rules/sinks/README.md)
+     * [Overview](docs/understanding-rules/sinks/overview.md)
+     * [Storages](docs/understanding-rules/sinks/storages.md)
+     * [Third Parties](docs/understanding-rules/sinks/third-parties.md)
+     * [Leakages](docs/understanding-rules/sinks/leakages.md)
+     * [Internal APIs](docs/understanding-rules/sinks/internal-apis.md)
+   * [Collections](docs/understanding-rules/collections.md)
+   * [Policies](docs/understanding-rules/policies.md)
+* [Customizing Privado](docs/customizing-privado/README.md)
+   * [Add a new Leakage Sink](docs/customizing-privado/add-a-leakage-sink.md)
+   * [Add a new Source](docs/customizing-privado/add-a-new-source.md)
+   * [Add a new Storage Sink](docs/customizing-privado/add-a-new-storage-sink.md)
+   * [Add a new Policy](docs/customizing-privado/add-a-policy.md)
+   * [Add a new Third Party Sink](docs/customizing-privado/add-a-third-party-sink.md)
+* [Generating ROPA Report](docs/generate-ropa-report.md)
+* [Play Store Data Safety Report](docs/play-store-data-safety-report/README.md)
+   * [Generate Play Store Data Safety Report](docs/play-store-data-safety-report/generate-play-store-data-safety-report.md)
+   * [Uploading results to Play Store](docs/play-store-data-safety-report/uploading-results-to-play-store.md)
+* [Configurations](docs/configurations.md)
+* [About Privado](docs/about/README.md)
+   * [LICENSING](docs/about/licensing.md)
+   * [Privacy Policy](docs/about/privacy.md)
+   * [Security](docs/about/security.md)
