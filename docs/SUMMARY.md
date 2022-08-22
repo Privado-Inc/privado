@@ -1,12 +1,16 @@
 # Table of contents
 
+## Overview
 * [Privado OSS](./README.md)
-* [Getting Started With Privado](./getting-started-with-privado/README.md)
-   * [Overview](./getting-started-with-privado/overview.md)
-   * [Running a Scan](./getting-started-with-privado/running-a-scan.md)
-   * [Understanding Results](./getting-started-with-privado/understanding-the-results.md)
-   * [Command Reference](./getting-started-with-privado/command-reference.md)
-   * [Contributing through GitHub](./getting-started-with-privado/contributing.md)
+
+## Getting Started With Privado
+* [Overview](./getting-started-with-privado/README.md)
+* [Running a Scan](./getting-started-with-privado/running-a-scan.md)
+* [Understanding Results](./getting-started-with-privado/understanding-the-results.md)
+* [Command Reference](./getting-started-with-privado/command-reference.md)
+* [Contributing through GitHub](./getting-started-with-privado/contributing.md)
+
+## second group
 * [Understanding Rules](./understanding-rules/README.md)
    * [Sources](./understanding-rules/sources.md)
    * [Sinks](./understanding-rules/sinks/README.md)
