@@ -1,1 +1,20 @@
-# 
+# Add a new Third Party Sink
+
+Applications are built by assembling third party libraries. Privado helps you track data flows to third parties.
+
+**List of fields for the definition of third party sink:**
+
+
+|  Field | Description |
+| ------------ | ------------ |
+|  id |It is unique identifier for the third party sink. It has format `ThirdParties.SDK.` + Vendor Name ( without spaces and special characters )   |
+| name  | It is name of the third party   |
+| patterns  | It is an array of regex patterns for the third party sink. This regex will be used to search method names and to further check if data elements are going to the identified methods. Matching methods with data flows will be tagged for this third party sink. <br></br>Example: Mark specific method from a known class</br>class name: `com.privado.MySinkClass`</br>method name: `mySinkMethod()`</br>pattern: `com.privado.MySinkClass.mySinkMethod`</br></br>Example: Mark all methods from a known class<br>class name: `com.privado.MySinkClass`</br>method one: `mySinkMethod1()`</br>method two: `mySinkMethod2()`</br>pattern: `com.privado.MySinkClass.*`<br></br>Example: Mark a specific method across the classes</br>class name: `com.privado.MySinkClass`</br>method one: `mySinkMethod()`</br>class name: `com.privado.MySinkClass2`<br>method one: `mySinkMethod()`<br>pattern: `.*mySinkMethod`  |
+|  tags | It’s an object of key-value pairs. This is useful to group and filter third party sinks. </br>Example: you can tag applicable laws for the third party sinks.<br></br>```tags:```<br>`      laws: GDPR, HIPAA `|
+
+
+High level key is sinks which is an array of storages. Once the third party sink object is defined, we can add it to the array of sinks.
+
+For a new vendor, you can create sub-directory with the vendor name under directory `rules/sinks/third_parties/sdk`. You can create a language specific file - `java.yaml` and add the third party sink definition to it.
+
+Once the new third party sink is added, Privado will detect and track data flows to this third party sink.
