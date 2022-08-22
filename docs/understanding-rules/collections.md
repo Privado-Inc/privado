@@ -7,4 +7,4 @@ Directory `rules/collections/annotations`:
     |__rules
        |__collections
        |  |__annotations
-       |  |  |__java.rule
+       |  |  |__java.yaml
