@@ -5,48 +5,48 @@ Rules directory structure:
 
     |__rules
        |__sources
-       |  |__contact_data.rule
-       |  |__account_data.rule
-       |  |__personal_identification.rule
+       |  |__contact_data.yaml
+       |  |__account_data.yaml
+       |  |__personal_identification.yaml
        |  |__ ...
        |__sinks
        |  |__storages
        |  |  |__mongodb
-       |  |     |__java.rule
-       |  |     |__python.rule
-       |  |     |__cpp.rule
-       |  |     |__default.rule
+       |  |     |__java.yaml
+       |  |     |__python.yaml
+       |  |     |__cpp.yaml
+       |  |     |__default.yaml
        |  |  |__mysql
-       |  |     |__java.rule
-       |  |     |__python.rule
-       |  |     |__cpp.rule
+       |  |     |__java.yaml
+       |  |     |__python.yaml
+       |  |     |__cpp.yaml
        |  |  |__ ...
        |  |__leakages
        |  |  |__logs
-       |  |     |__java.rule
-       |  |     |__python.rule
-       |  |     |__cpp.rule  
+       |  |     |__java.yaml
+       |  |     |__python.yaml
+       |  |     |__cpp.yaml
        |  |__third_parties
        |  |  |__api
-       |  |        |_java.rule
-       |  |        |__python.rule
-       |  |        |__cpp.rule
-       |  |        |__default.rule
+       |  |        |_java.yaml
+       |  |        |__python.yaml
+       |  |        |__cpp.yaml
+       |  |        |__default.yaml
        |  |  |__sdk
        |  |     |__slack
-       |  |        |__java.rule
-       |  |        |__python.rule
-       |  |        |__cpp.rule  
+       |  |        |__java.yaml
+       |  |        |__python.yaml
+       |  |        |__cpp.yaml 
        |  |     |__jira
-       |  |        |__java.rule
-       |  |        |__python.rule
-       |  |        |__cpp.rule
-       |  |        |__default.rule
+       |  |        |__java.yaml
+       |  |        |__python.yaml
+       |  |        |__cpp.yaml
+       |  |        |__default.yaml
        |__collections
        |  |__annotations
-       |  |  |__java.rule
-       |  |  |__python.rule
-       |  |  |__default.rule                    
+       |  |  |__java.yaml
+       |  |  |__python.yaml
+       |  |  |__default.yaml
        |__threats
        |  |__collection.yaml
        |  |__configuration.yaml
