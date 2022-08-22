@@ -14,6 +14,8 @@ Privado scans the source code of your application for over 200 data elements and
 
 To drill down, click **View**. On the **Code Analysis** tab, you can review individual data instances, their flows and mark them as **False Positive** to remove them from the results as well as the report if needed.  
 
+[ADD SCREENSHOT]
+
 **2. Review Data Usage**
 
 Provide information about data collection and data security relevant to your application. Click Next to proceed. 
