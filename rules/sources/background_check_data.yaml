@@ -1,0 +1,50 @@
+sources:
+  - id: Data.Sensitive.BackgroundCheckDetails.CriminalRecordsHistory
+    name: Criminal Records History
+    category: Background Check Details
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*(?:criminal|crime)[^\\s/(;)#|,=!>]{0,10}(?:background|record|history|activity)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BackgroundCheckDetails.ReferenceChecks
+    name: Reference Checks
+    category: Background Check Details
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i).*(?:reference|verification)[^\\s/(;)#|,=!>]{0,10}check"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BackgroundCheckDetails.EmploymentHistory
+    name: Employment History
+    category: Background Check Details
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*employment[^\\s/(;)#|,=!>]{0,10}(?:history|verification|check)"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BackgroundCheckDetails.CompensationHistory
+    name: Compensation History
+    category: Background Check Details
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*(?:past|previous|latest)[^\\s/(;)#|,=!>]{0,10}(salary|compensation|ctc)|salary[^\\s/(;)#|,=!>]{0,10}history"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.BackgroundCheckDetails.CreditHistory
+    name: Credit History
+    category: Background Check Details
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i).*loan[^\\s/(;)#|,=!>]{0,10}history|credit[^\\s/(;)#|,=!>]{0,10}(?:score|record|slip|report|history|rate|worth|rank)|financial[^\\s/(;)#|,=!>]{0,10}condition|loan[^\\s/(;)#|,=!>]{0,10}taken"
+    tags:
+      law: GDPR

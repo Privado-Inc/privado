@@ -1,0 +1,40 @@
+sources:
+  - id: Data.Sensitive.WorkplaceMonitoringData.VideoRecordings
+    name: Video Recordings
+    category: Workplace Monitoring Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*((?:video|screen)[^\\s/(;)#|,=!>]{0,10}recording).*"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.WorkplaceMonitoringData.WebsiteFiltering
+    name: Website Filtering
+    category: Workplace Monitoring Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*((?:website|domain)[^\\s/(;)#|,=!>]{0,3}blocked|(?:whitelisted|blacklisted)[^\\s/(;)#|,=!>]{0,3}site).*"
+    tags:
+      law: GDPR
+      
+  - id: Data.Sensitive.WorkplaceMonitoringData.BuildingInformationSystemAccess
+    name: Building Information System Access
+    category: Workplace Monitoring Data
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*(access[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}number|access[^\\s/(;)#|,=!>]{0,10}card|employee[^\\s/(;)#|,=!>]{0,10}check[^\\s/(;)#|,=!>]{0,10}(?:out|in)|punch[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}time|punch[^\\s/(;)#|,=!>]{0,10}card).*"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.WorkplaceMonitoringData.ApplicationUsage
+    name: Application Usage
+    category: Workplace Monitoring Data
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*(app[^\\s/(;)#|,=!>]{0,3}(usage|stats|statistics)).*"
+    tags:
+      law: GDPR

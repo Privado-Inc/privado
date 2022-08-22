@@ -1,0 +1,20 @@
+
+# Sink Rules for storage database Amazon S3 - https://aws.amazon.com/s3/
+
+sinks:
+
+  - id: Storages.AmazonS3.Read
+    name: Amazon S3(Read)
+    domains:
+      - aws.amazon.com
+    patterns: 
+      - "(i?).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:get|list|head|select).*"
+    tags:
+
+  - id: Storages.AmazonS3.Write
+    name: Amazon S3(Write)
+    domains:
+      - aws.amazon.com
+    patterns: 
+      - "(i?).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:abortMultipartUpload|completeMultipartUpload|copy|create|delete|put|uploadPart).*"
+    tags:

@@ -1,0 +1,49 @@
+
+#  .* is a regular expression. Meaning the policy structure supports regex(case-sensitive).
+#
+#  The tags field in each policy object are the tags for referencing the policy.
+#  These are not to be associated with sources'/sinks' tags.
+#
+#  In case no sinks key is defined inside a policy:
+#  The policy will evaluate to true for any processing instance of corresponding sources being found
+#  Thus a missing sink implies any kind of processing is Allowed/NotAllowed for given source
+
+policies:  
+  
+  - id: Policy.Deny.Sharing.ContactToSlack
+    name: "Example: Don't share contact data on Slack"
+    type: Compliance
+    description: "Policy to restrict Contact Information being shared with Slack"
+    fix: "Talk to the Data Protection team: dataprotection@org.com"
+    action: Deny    
+    dataFlow:      
+      sources:
+        #  the below args follow following format => dir_structure_under_rules_folder:sourceId
+        - "Data.Sensitive.ContactData.*"
+        - "Data.Sensitive.PersonalIdentification.PhoneNumber"
+      
+      sinks:
+        - "Data.Sharing.Slack"
+      
+    repositories:      # optional field default value : - .*
+      - "privado-messaging-app"
+      - "Order Manager"
+      - "accounts.*"
+
+    tags:
+
+
+  - id: Policy.Allow.Processing.FinancialData
+    name: "Example: Don't use financial data outside of payments services"
+    type: Compliance
+    description: "Policy to allow processing Financial Information only in payments services"
+    fix: "Talk to the Data Protection team: dataprotection@org.com"
+    action: Allow
+    dataFlow:
+      sources:
+        - "Data.Sensitive.FinancialData.*"
+    repositories:
+      - "payments-.*"
+    tags:
+      policyPurpose: "Security Audit"
+  

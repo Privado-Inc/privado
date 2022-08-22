@@ -1,0 +1,31 @@
+# This file contains policies related to data storage. You can define policies related to encryption, back-up etc. 
+
+threats:
+  - id: Threats.Storage.isAppDataBackupAllowed
+    name: "Local PII data backup allowed through app backup setting"
+    type: Threat
+    description: "iOS and Android allow users to back up their applications as well as their data. A backup containing sensitive data may lead to breaches or unauthorized access."
+    fix: >-
+      If the application holds sensitive data, don't allow back-up. You should ensure that the data is encrypted if the back-up necessary.
+      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Testing-Backups-for-Sensitive-Data-MSTG-STORAGE-8
+    repositories:
+      - "**"
+    tags:
+      "MSTG-STORAGE-8" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Testing-Backups-for-Sensitive-Data-MSTG-STORAGE-8"
+      "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
+
+  - id: Threats.Storage.isDataStoredOnExternalStorage
+    name: "PII data is exposed outside through external storage" 
+    type: Threat
+    description: >- 
+      External or shared data storage is globally accessible by all the apps on mobile. If app writes the sensitive data on external or shared storage, 
+      other apps can read the data leading to unauthorized access.
+    fix: >-
+      App should not store sensitive data on the external or shared storage. In case, there is a necessity, the data must be encrypted. 
+      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
+    repositories:
+      - "**"
+    tags:
+      "MSTG-STORAGE-1" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2" 
+      "MSTG-STORAGE-2" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
+      "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"

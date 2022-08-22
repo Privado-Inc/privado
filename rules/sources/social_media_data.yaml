@@ -1,0 +1,30 @@
+sources:
+  - id: Data.Sensitive.SocialMediaData.SocialMediaAccount
+    name: Social Media Account
+    category: Social Media Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]*(?:account|profile)"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.SocialMediaData.SocialMediaActivity
+    name: Social Media Activity
+    category: Social Media Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(?:facebook|instagram|linkedin|twitter|youtube|whatsapp|reddit|snapchat|pinterest|medium|behance|dribble)[^\\s/(;)#|,=!>]*(?:likes|comments|shares)|reddit[^\\s/(;)#|,=!>]*(?:upvote|downvote)|pinterest[^\\s/(;)#|,=!>]*pin|twitter[^\\s/(;)#|,=!>]*tweet"
+    tags:
+      law: GDPR
+  
+  - id: Data.Sensitive.SocialMediaData.SocialMediaContact
+    name: Social Media Contact
+    category: Social Media Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)social[^\\s/(;)#|,=!>]{0,10}account"
+    tags:
+      law: GDPR

@@ -1,0 +1,31 @@
+sinks:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:error|severe|fatal|[.]e[:]).*"
+    tags:
+    
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(warn|warning|[.]w[:]).*"
+    tags:
+  
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|log|[.](d|v)[:]).*"
+    tags:
+  
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|java.util.logging|ch.qos.logback|timber.log.Timber|android.util.Log).*(info|[.]i[:]).*"
+    tags:
+  
+  - id: Leakages.Log.Console
+    name: Log Console
+    patterns: 
+      - "(?i)(java.io.PrintStream|android.util.(?:Log){0,1}Printer).(?:print|println|write).*"
+    tags:
