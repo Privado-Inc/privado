@@ -1,41 +1,69 @@
-# Privado User Documentation
+# What is Privado?
+Privado is an open source static code analysis tool to discover data flows in the code. It detects the personal data being processed, and further maps the journey of the data from the point of collection to going to interesting sinks such as third parties, databases, logs, and internal APIs.
 
-## What is Privado? <a href="#what-is-privado" id="what-is-privado"></a>
+# Who is it for?
+1.  Privacy Engineers
+2.  Data Protection Engineers
+3.  Data Governance Engineers
+4.  Security Engineers
+5.  Mobile App Developers
+6.  Developers
+    
+# How does it help?
+Privado let’s Engineer ask contextual questions on usage of sensitive data at scale.  
+Example:
 
-Privado is a static code scanning tool to find, fix and remediate privacy issues in your products & applications. Our scan discovers what personal data(as defined by GDPR, other laws) your app is processing, third-party integrations, data flows. With our scan results, we generate privacy reports for your apps as mandated by laws like GDPR or platforms like Apple and keep them in sync with code changes.
+> **"Hello, User Accounts API Repository. Has any sensitive data been > leaked to a log file?"**
 
-## How Privado CLI handles your data?
+> **“Hello, HealthCare App Repository. Can you tell me all the variables
+> that process patient's medicine data? And are they shared with Google
+> Analytics?”**
 
-Privado CLI tool was engineered with security in mind. Our tool runs the scan locally on your machine and your code never leaves your system.
+> **“Hey, Payments Micro-service Repository, is credit card data tokenized
+> and encrypted?"**
 
-## What does our scan discover? <a href="#what-does-our-scan-discover" id="what-does-our-scan-discover"></a>
+> **“Hey, Food Delivery Mobile App Repository, can you tell me if the User
+> Location data is shared with this weird S3 bucket?"**
 
-1. Data Elements: These are personal data that your app is collecting, sharing, processing. Here is a list of data elements that we are discovering.
-2. Third-Parties: Any third-party integrations inside your code, via APIs or SDKs/libraries.
-3. APIs: We also discover any internal APIs that your app is connected with.
-4. Datastores(not released yet, still beta): Identify the databases where you are sourcing the data from or sending the data.
-5. Privacy Vulnerabilities(not released yet, still beta): Code issues that exist which can lead to privacy vulnerabilities
+# Use cases
+1.  Generate and maintain Data map and Record of Processing Activity Reports ( Article-30 Reports )
+2.  Automate the generation of the data-flow diagrams
+3.  Identify and remove data leaks
+4.  Improve data storage security by identifying and fixing insecure practices
+5.  Finding and fixing unaccounted third-party sharing of data
+6.  Establish and enforce Data Protection and Governance policies
+7.  Generate Android Data Safety Report
+8.  Incorporate various GDPR, CCPA, SOC, ISO, HIPAA, PCI controls
+9.  Do continuous monitoring for privacy and data issues
+10.  Implement Privacy by Design
+    
 
-## What can I do with Privado?
+# How does Privado work?
+Privado can be run locally on your computer or in your CI/CD pipeline. During the scanning process, Privado creates a knowledge graph that answers thousands of questions about sensitive data contextually. You never have to worry about your code leaving your machine since the scan is local. An output file is stored in JSON format. The results can be viewed on Privado Cloud.
 
-### Generate Play Store Data Safety Report
+# What does the scan discover?
+Upon scanning a repository, Privado will discover the following information in the code and presents it in a nice dashboard for your review.
 
-This is the first use case that we are live with. Currently, to fill the data safety form Android developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report.
+-   Data Elements
+-   Data Flow Diagrams
+-   Data Inventory
+-   Code Analysis
+-   Issues
+    
+[ADD THE IMAGE HERE]
 
-### Privacy Audits <a href="#privacy-audits" id="privacy-audits"></a>
+# What can I do with Privado?
+Apart from getting a comprehensive outlook of your data practices for Privacy Audits, you can also use the tool to generate various privacy reports to comply with privacy laws like GDPR and CCPA.
 
-Privacy Engineers can use our CLI tool as an MRI for products, applications and find out privacy risks. With our scans, privacy engineers save the time they have to spend chasing engineers with assessments and can directly start prescribing privacy controls for data minimization, sharing, etc.
+## Record of Processing Activity ( ROPA ) Report
+Our free cloud platform can be used to generate RoPA reports for a single, as well as a combination of repositories added to the platform. Check out how to create a RoPA report for your repository.
 
-#### We have the following use cases on our Roadmap: <a href="#we-have-the-following-use-cases-on-our-roadmap" id="we-have-the-following-use-cases-on-our-roadmap"></a>
+## Data Safety Report
+Data Safety Report is a privacy form that is needed to publish any Android app on the Play Store. Currently, to fill the data safety form developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report.
 
-1. Generating Apple Nutrition Label Report
-2. Generating privacy compliance reports like GDPR Article 30 or RoPA report
-3. Detecting Privacy Vulnerabilities in current code implementation
-4. Privacy Policy Generator
+# Supported languages
+Java is the first language we support. As part of the Enterprise offering, Privado supports all languages. To open source a language, the architecture change is required so that community contributions can be made easily. We are working on open sourcing support for the other languages.
 
-## What does it cost?
+# Contribute
+If you love this project and would like to contribute, please check out our contribution page.
 
-Privado is free for:
-
-1. Open Source Projects
-2. For individual developers and small teams.
