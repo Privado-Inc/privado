@@ -1,6 +1,12 @@
 # Table of contents
 
-* [Privado User Documentation](README.md)
+{% content-ref url="getting-started-with-privado/" %}
+[getting-started-with-privado](getting-started-with-privado/)
+{% endcontent-ref %}
+
+{% content-ref url="understanding-rules/" %}
+[understanding-rules](understanding-rules/)
+{% endcontent-ref %}
 
 ## Play Store Data Safety Report
 
