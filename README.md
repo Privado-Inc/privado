@@ -1,128 +1,69 @@
-# Contributor Covenant Code of Conduct
+# What is Privado?
+Privado is an open source static code analysis tool to discover data flows in the code. It detects the personal data being processed, and further maps the journey of the data from the point of collection to going to interesting sinks such as third parties, databases, logs, and internal APIs.
 
-## Our Pledge
+# Who is it for?
+1.  Privacy Engineers
+2.  Data Protection Engineers
+3.  Data Governance Engineers
+4.  Security Engineers
+5.  Mobile App Developers
+6.  Developers
+    
+# How does it help?
+Privado let’s Engineer ask contextual questions on usage of sensitive data at scale.  
+Example:
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+> **"Hello, User Accounts API Repository. Has any sensitive data been > leaked to a log file?"**
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+> **“Hello, HealthCare App Repository. Can you tell me all the variables
+> that process patient's medicine data? And are they shared with Google
+> Analytics?”**
 
-## Our Standards
+> **“Hey, Payments Micro-service Repository, is credit card data tokenized
+> and encrypted?"**
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+> **“Hey, Food Delivery Mobile App Repository, can you tell me if the User
+> Location data is shared with this weird S3 bucket?"**
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+# Use cases
+1.  Generate and maintain Data map and Record of Processing Activity Reports ( Article-30 Reports )
+2.  Automate the generation of the data-flow diagrams
+3.  Identify and remove data leaks
+4.  Improve data storage security by identifying and fixing insecure practices
+5.  Finding and fixing unaccounted third-party sharing of data
+6.  Establish and enforce Data Protection and Governance policies
+7.  Generate Android Data Safety Report
+8.  Incorporate various GDPR, CCPA, SOC, ISO, HIPAA, PCI controls
+9.  Do continuous monitoring for privacy and data issues
+10.  Implement Privacy by Design
+    
 
-Examples of unacceptable behavior include:
+# How does Privado work?
+Privado can be run locally on your computer or in your CI/CD pipeline. During the scanning process, Privado creates a knowledge graph that answers thousands of questions about sensitive data contextually. You never have to worry about your code leaving your machine since the scan is local. An output file is stored in JSON format. The results can be viewed on Privado Cloud.
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+# What does the scan discover?
+Upon scanning a repository, Privado will discover the following information in the code and presents it in a nice dashboard for your review.
 
-## Enforcement Responsibilities
+-   Data Elements
+-   Data Flow Diagrams
+-   Data Inventory
+-   Code Analysis
+-   Issues
+    
+[ADD THE IMAGE HERE]
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+# What can I do with Privado?
+Apart from getting a comprehensive outlook of your data practices for Privacy Audits, you can also use the tool to generate various privacy reports to comply with privacy laws like GDPR and CCPA.
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+## Record of Processing Activity ( ROPA ) Report
+Our free cloud platform can be used to generate RoPA reports for a single, as well as a combination of repositories added to the platform. Check out how to create a RoPA report for your repository.
 
-## Scope
+## Data Safety Report
+Data Safety Report is a privacy form that is needed to publish any Android app on the Play Store. Currently, to fill the data safety form developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report.
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+# Supported languages
+Java is the first language we support. As part of the Enterprise offering, Privado supports all languages. To open source a language, the architecture change is required so that community contributions can be made easily. We are working on open sourcing support for the other languages.
 
-## Enforcement
+# Contribute
+If you love this project and would like to contribute, please check out our contribution page.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-support@privado.ai.
-All complaints will be reviewed and investigated promptly and fairly.
-
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
-
-## Enforcement Guidelines
-
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
-
-### 1. Correction
-
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
-
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
-
-### 2. Warning
-
-**Community Impact**: A violation through a single incident or series
-of actions.
-
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
-
-### 3. Temporary Ban
-
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
-
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
-
-### 4. Permanent Ban
-
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
-
-[homepage]: https://www.contributor-covenant.org
-
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
