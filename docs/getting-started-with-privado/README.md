@@ -22,7 +22,7 @@ You can download and use this [sample application](https://github.com/saurabh-su
 
 The results are generated at `.privado/privado.json`
 
-{% file src="../.gitbook/assets/2x 60fps latest.mp4" %}
+<figure><img src="../.gitbook/assets/2x 60fps latest.gif" alt=""><figcaption></figcaption></figure>
 
 ## Visualize results
 
