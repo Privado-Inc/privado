@@ -12,7 +12,7 @@ privado scan <source directory>
 
 This begins analyzing the app, fetching/updating the analysis engine and then performing the scan of target source directory locally.
 
-{% file src="../.gitbook/assets/2x 60fps latest.gif" %}
+<figure><img src="../.gitbook/assets/2x 60fps latest.gif" alt=""><figcaption></figcaption></figure>
 
 Upon completion, results are generated locally under `<source directory>/.privado/privado.json` file. This file contains all the information such as discovered data elements, data inventory, data flows to 3rd party, logs, and other sensitive sinks etc. Optionally, when configured, the scan can also send its results to Privado dashboard for visualisation. To know more about how to view results on dashboard, click here.
 
