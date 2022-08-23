@@ -8,7 +8,6 @@
 * [Running a Scan](getting-started-with-privado/running-a-scan.md)
 * [Understanding Results](getting-started-with-privado/understanding-the-results.md)
 * [Command Reference](getting-started-with-privado/command-reference.md)
-* [Contributing through GitHub](getting-started-with-privado/contributing.md)
 
 ## Understanding Rules
 
@@ -28,8 +27,8 @@
 * [Add a new Leakage Sink](customizing-privado/add-a-leakage-sink.md)
 * [Add a new Source](customizing-privado/add-a-new-source.md)
 * [Add a new Storage Sink](customizing-privado/add-a-new-storage-sink.md)
-* [Add a new Policy](customizing-privado/add-a-policy.md)
 * [Add a new Third Party Sink](customizing-privado/add-a-third-party-sink.md)
+* [Add a new Policy](customizing-privado/add-a-policy.md)
 
 ## ROPA Report
 
@@ -43,6 +42,7 @@
 ## Extra
 
 * [Configurations](configurations.md)
+* [Contributing through GitHub](extra/contributing.md)
 
 ## About Privado
 
