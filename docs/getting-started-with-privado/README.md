@@ -5,7 +5,7 @@ Follow these 3 simple steps to get started with Privado
 ### Download Privado CLI
 
 ```
-curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash
+curl -o- https://raw.githubusercontent.com/Privado-Inc/privado-cli/main/install.sh | bash
 ```
 
 ### Scan your repository
