@@ -20,7 +20,7 @@ You can download and use this [sample application](https://github.com/saurabh-su
 
 ### Get results
 
-The results are generated at `.privado/privado.json`
+The results are generated at `<source directory>/.privado/privado.json`
 
 <figure><img src="../.gitbook/assets/2x 60fps latest.gif" alt=""><figcaption></figcaption></figure>
 
