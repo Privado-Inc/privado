@@ -4,7 +4,7 @@
 
 ## Getting Started With Privado
 
-* [Overview](getting-started-with-privado/README.md)
+* [Quick Start](getting-started-with-privado/README.md)
 * [Running a Scan](getting-started-with-privado/running-a-scan.md)
 * [Understanding Results](getting-started-with-privado/understanding-the-results.md)
 * [Command Reference](getting-started-with-privado/command-reference.md)

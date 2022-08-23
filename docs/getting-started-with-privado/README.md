@@ -1,16 +1,18 @@
-# Overview
-
-## Quick Start
+# Quick Start
 
 Follow these 3 simple steps to get started with Privado
 
 ### Download Privado CLI
 
-`curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash`
+```
+curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash
+```
 
 ### Scan your repository
 
-`./privado scan /path/to/your/repository`
+```
+privado scan <source directory>
+```
 
 {% hint style="info" %}
 You can download and use this [sample application](https://github.com/saurabh-sudo/BankingSystem-Backend) to test Privado
@@ -19,6 +21,8 @@ You can download and use this [sample application](https://github.com/saurabh-su
 ### Get results
 
 The results are generated at `.privado/privado.json`
+
+{% file src="../.gitbook/assets/2x 60fps latest.mp4" %}
 
 ## Visualize results
 
