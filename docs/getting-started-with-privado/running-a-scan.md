@@ -1,10 +1,10 @@
 # Running a Scan
 
 {% hint style="info" %}
-**Requirements:** Privado requires Docker and an Internet connection for fetching its scanning engine (provided as Docker images) for the first time.
+**Requirements:** Privado requires Docker and an Internet connection for fetching its scanning engine (provided as Docker images) for the first time. To install docker, you can follow the steps stated in the [official documentation](https://docs.docker.com/engine/install/). Linux users should also follow docker [post installation steps](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) in order to run Privado CLI without root (`sudo`) privileges.
 {% endhint %}
 
-The most simple way to run a Privado scan is by just doing,
+The simplest way to run a Privado scan is by just doing,
 
 ```bash
 privado scan <source directory>

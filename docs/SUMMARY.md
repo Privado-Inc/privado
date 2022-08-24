@@ -24,8 +24,8 @@
 
 ## Customizing Privado
 
-* [Add a new Leakage Sink](customizing-privado/add-a-leakage-sink.md)
 * [Add a new Source](customizing-privado/add-a-new-source.md)
+* [Add a new Leakage Sink](customizing-privado/add-a-leakage-sink.md)
 * [Add a new Storage Sink](customizing-privado/add-a-new-storage-sink.md)
 * [Add a new Third Party Sink](customizing-privado/add-a-third-party-sink.md)
 * [Add a new Policy](customizing-privado/add-a-policy.md)
