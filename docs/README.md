@@ -17,13 +17,7 @@ Privado is an open source static code analysis tool to discover data flows in th
 
 Privado lets an engineer ask contextual questions on usage of sensitive data at scale
 
-> **"Hello `User Accounts API Repository`, has any sensitive data been leaked to a log file?"**
-
-> **“Hello `HealthCare App Repository,` can you tell me all the variables that process patient's medicine data? Also, are those variable shared with Google Analytics?”**
-
-> **“Hey `Payments Micro-service Repository`, is credit card data tokenized and encrypted?"**
-
-> **“Hey, `Food Delivery Mobile App Repository`, can you tell me if the User Location data is shared with this weird S3 bucket?"**
+<figure><img src=".gitbook/assets/Bubbles.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Use cases
 

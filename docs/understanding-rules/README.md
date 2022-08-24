@@ -6,7 +6,7 @@ Privado has rules to answer the contextual questions related to  personal data. 
 
 All Privado rules are defined in YAML format and generally have the following structure:
 
-<figure><img src="../.gitbook/assets/Rule YAML.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Rules YAML.jpg" alt=""><figcaption></figcaption></figure>
 
 The structure of rule varies a bit based on the types of rules that are defined. For example, the Source rule contains `isSensitive` as well as `sensitivity` keys so that based on the values set, the source data is tagged appropriately. Simlarly,  policy rules contain `description` that is needed for the issue that gets created when policy is violated. It also contains `dataflow` as well as `repositories` on which the policy will be applied. To learn more about rules, you can review the [rules](https://github.com/Privado-Inc/privado/tree/main/rules) directory on Github
 
