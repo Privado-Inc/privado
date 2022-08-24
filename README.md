@@ -18,8 +18,7 @@ Privado is an open source static code analysis tool to discover data flows in th
 Privado let’s Engineer ask contextual questions on usage of sensitive data at scale.  
 Examples:
 
-<img src="https://user-images.githubusercontent.com/80044360/186339716-8829e529-ca63-479a-8cbe-55ba3068bffa.jpeg" width="600px">
-
+<img src="https://user-images.githubusercontent.com/80044360/186449832-5799854c-a8e0-43c6-bf43-4b47ff5d23a5.jpeg" width="600px">
 
 # Use cases
 1.  Generate and maintain Data map and Record of Processing Activity Reports ( Article-30 Reports )
@@ -57,7 +56,8 @@ You can download and use this [sample application](https://github.com/saurabh-su
 
 The results are generated at `<source directory>/.privado/privado.json`
 
-<img src="https://user-images.githubusercontent.com/80044360/186337916-659b3387-1e97-478c-abb6-44e5046a9411.jpeg" height="600px">
+<img src="https://user-images.githubusercontent.com/80044360/186449914-77ac4646-0e3c-459d-b5cd-9c7ccbe25397.jpeg" height="600px">
+
 
 ### Visualize results
 
