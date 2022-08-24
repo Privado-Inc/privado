@@ -1,5 +1,10 @@
 # What is Privado?
+[![slack](https://img.shields.io/badge/slack-privado-5A34D9.svg?logo=slack)](https://join.slack.com/t/privado-community/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)
+[![docs](https://img.shields.io/badge/docs-gitbook-brightgreen.svg?logo=gitbook)](https://docs.privado.ai)
+
 Privado is an open source static code analysis tool to discover data flows in the code. It detects the personal data being processed, and further maps the journey of the data from the point of collection to going to interesting sinks such as third parties, databases, logs, and internal APIs.
+
+<img src="https://user-images.githubusercontent.com/80044360/186333819-779bfff5-d7a2-4bba-88e9-0ca866e1ee81.gif" width="600px">
 
 # Who is it for?
 1.  Privacy Engineers
@@ -11,19 +16,10 @@ Privado is an open source static code analysis tool to discover data flows in th
     
 # How does it help?
 Privado let’s Engineer ask contextual questions on usage of sensitive data at scale.  
-Example:
+Examples:
 
-> **"Hello, User Accounts API Repository. Has any sensitive data been > leaked to a log file?"**
+<img src="https://user-images.githubusercontent.com/80044360/186339716-8829e529-ca63-479a-8cbe-55ba3068bffa.jpeg" width="600px">
 
-> **“Hello, HealthCare App Repository. Can you tell me all the variables
-> that process patient's medicine data? And are they shared with Google
-> Analytics?”**
-
-> **“Hey, Payments Micro-service Repository, is credit card data tokenized
-> and encrypted?"**
-
-> **“Hey, Food Delivery Mobile App Repository, can you tell me if the User
-> Location data is shared with this weird S3 bucket?"**
 
 # Use cases
 1.  Generate and maintain Data map and Record of Processing Activity Reports ( Article-30 Reports )
@@ -38,6 +34,37 @@ Example:
 10.  Implement Privacy by Design
     
 
+# Quick Start
+
+Follow these 3 simple steps to get started with Privado
+
+### Download Privado CLI
+
+```
+curl -o- https://raw.githubusercontent.com/Privado-Inc/privado-cli/main/install.sh | bash
+```
+
+### Scan your repository
+
+```
+privado scan <source directory>
+```
+
+You can download and use this [sample application](https://github.com/saurabh-sudo/BankingSystem-Backend) to test Privado
+
+
+### Get results
+
+The results are generated at `<source directory>/.privado/privado.json`
+
+<img src="https://user-images.githubusercontent.com/80044360/186337916-659b3387-1e97-478c-abb6-44e5046a9411.jpeg" height="600px">
+
+### Visualize results
+
+To visualize the results and generate reports, you can create a free account at the end of a successful scan. Once a scan is complete, it will ask your permission to synchronize the generated results with Privado Cloud Dashboard. Note that **no code is sent to the cloud**. Upon successful sync, you can view the results on our free platform.
+
+<img src="https://user-images.githubusercontent.com/80044360/186335775-82139291-4edc-4750-85bf-18b26d5655d3.png" width="600px">
+
 # How does Privado work?
 Privado can be run locally on your computer or in your CI/CD pipeline. During the scanning process, Privado creates a knowledge graph that answers thousands of questions about sensitive data contextually. You never have to worry about your code leaving your machine since the scan is local. An output file is stored in JSON format. The results can be viewed on Privado Cloud.
 
@@ -50,8 +77,6 @@ Upon scanning a repository, Privado will discover the following information in t
 -   Code Analysis
 -   Issues
     
-[ADD THE IMAGE HERE]
-
 # What can I do with Privado?
 Apart from getting a comprehensive outlook of your data practices for Privacy Audits, you can also use the tool to generate various privacy reports to comply with privacy laws like GDPR and CCPA.
 
