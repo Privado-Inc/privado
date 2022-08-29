@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)((phone|mobile|cellphone|contact)|.*(phone|mobile|cellphone|contact)[^\\s/(;)#|,=!>]{0,2}(?:detail|details)|(?:mobile|phone|cellphone|contact)[^\\s/(;)#|,=!>]{0,10}(?:number|nbr|num|no)|(?:primary|secondary)[^\\s/(;)#|,=!>]{0,10}(phone|landline|telephone))"
+      - "(?i)(((^(?!\s*$))(phone|mobile|cellphone|contact))|.*(phone|mobile|cellphone|contact)[^\\s/(;)#|,=!>]{0,2}(?:detail|details)|(?:mobile|phone|cellphone|contact)[^\\s/(;)#|,=!>]{0,10}(?:number|nbr|num|no)|(?:primary|secondary)[^\\s/(;)#|,=!>]{0,10}(phone|landline|telephone))"
     tags:
       law: GDPR
   
