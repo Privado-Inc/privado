@@ -1,6 +1,10 @@
 # Quick Start
 
-Follow these 3 simple steps to get started with Privado
+Follow these 4 simple steps to get started with Privado
+
+### Install and start Docker
+
+Make sure you have docker installed and running. [Docker download page](https://docs.docker.com/get-docker/)
 
 ### Download Privado CLI
 
