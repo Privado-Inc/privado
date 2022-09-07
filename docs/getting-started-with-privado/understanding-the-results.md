@@ -43,4 +43,3 @@ Check out some of our blogs on how these issues can sometimes lead to big proble
 With all the results neatly compiled in a JSON file, it enables developers to extract other useful information from the code scan to create their own analysis. The resulting privado.json file looks something like this,
 
 <figure><img src="../.gitbook/assets/Privado JSON.jpg" alt=""><figcaption></figcaption></figure>
-

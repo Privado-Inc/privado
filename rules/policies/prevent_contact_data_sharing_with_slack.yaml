@@ -11,7 +11,7 @@
 policies:  
   
   - id: Policy.Deny.Sharing.ContactToSlack
-    name: "Don't share contact data on Slack"
+    name: "Example: Don't share contact data on Slack"
     type: Compliance
     description: "Policy to restrict Contact Information being shared with Slack"
     fix: "Talk to the Data Protection team: dataprotection@org.com"
@@ -34,7 +34,7 @@ policies:
 
 
   - id: Policy.Allow.Processing.FinancialData
-    name: "Don't use financial data outside of payments services"
+    name: "Example: Don't use financial data outside of payments services"
     type: Compliance
     description: "Policy to allow processing Financial Information only in payments services"
     fix: "Talk to the Data Protection team: dataprotection@org.com"

@@ -50,4 +50,3 @@ Sources are present in [`rules/sources`](https://github.com/Privado-Inc/privado/
 ```
 
 When the code is scanned, Privado first marks the “sources”, then tracks it’s journey to sinks such as third parties, databases, and logs.
-
