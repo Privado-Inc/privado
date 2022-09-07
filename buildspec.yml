@@ -14,8 +14,11 @@ phases:
       - |
         if [[ $AWS_REGION = "eu-west-1" ]]
         then
-            VERSION="$(git describe --tags --abbrev=0)"
+            LATEST_TAG="$(git describe --tags --abbrev=0)"
+            VERSION=${LATEST_TAG:1}
         else
+            LATEST_TAG=$(curl -i "Accept: application/vnd.github+json" -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/Privado-Inc/privado/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+            VERSION_INITIAL=${LATEST_TAG:1}
             VERSION=$VERSION_INITIAL.$CODEBUILD_BUILD_NUMBER
         fi
       - TAG_1=latest
