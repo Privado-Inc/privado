@@ -1,21 +1,31 @@
-# Getting Started With Privado
+# Quick Start
 
-## Quick Start
+Follow these 4 simple steps to get started with Privado
 
-Follow these 3 simple steps to get started with Niagara
+### Install and start Docker
+
+Make sure you have docker installed and running. [Docker download page](https://docs.docker.com/get-docker/)
 
 ### Download Privado CLI
 
-`curl -o- https://raw.githubusercontent.com/Privado-Inc/privado/main/install.sh | bash`
+```
+curl -o- https://raw.githubusercontent.com/Privado-Inc/privado-cli/main/install.sh | bash
+```
 
 ### Scan your repository
 
-`./privado scan /path/to/your/repository`
+```
+privado scan <source directory>
+```
+
+{% hint style="info" %}
+You can download and use this [sample application](https://github.com/saurabh-sudo/BankingSystem-Backend) to test Privado
+{% endhint %}
 
 ### Get results
 
-The results are generated at **.privado/privado.json**
+The results are generated at `<source directory>/.privado/privado.json`
 
 ## Visualize results
 
-To visualize the results and generate reports, you can create a free account at the end of a successful scan. Once a scan is complete, it will ask your permission to synchronize the generated results with Privado Cloud. Note that **no code is sent to the cloud**. Upon successful sync, you can view the results on our free platform.
+To visualize the results and generate reports, you can create a free account at the end of a successful scan. Once a scan is complete, it will ask your permission to synchronize the generated results with Privado Cloud Dashboard. Note that **no code is sent to the cloud**. Upon successful sync, you can view the results on our free platform.

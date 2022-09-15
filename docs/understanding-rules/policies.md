@@ -1,18 +1,60 @@
 # Policies
 
-Incompatible data usages are major reason for the privacy fines. To protect data, data governance teams want to define and enforce controls at the time of collection and processing. Policies allows user to govern  the usage of personal data.
+Incompatible data usages are major reason for the privacy fines. To protect data, data governance teams want to define and enforce controls at the time of collection and processing. Policies allows user to govern the usage of personal data.
 
-Example:
+### Examples
 
-Usage of Race, Ethnicity and Nationality in your Machine Learning and Artificial Intelligence model may make them bias towards certain individuals. You can have policy that prohibits the use of Race, Ethnicity and Nationality in Artificial Intelligence and Machine Learning models.
+* Usage of Race, Ethnicity and Nationality in your Machine Learning and Artificial Intelligence model may make them bias towards certain individuals. You can have policy that prohibits the use of Race, Ethnicity and Nationality in Artificial Intelligence and Machine Learning models.
 
+```yaml
+policies: 
 
-Business intelligence dashboards are popular among business analysts to run queries and get insights to help customers and grow the business. Exposing personal data as part of these dashboards can lead to unauthorised access and breaches. You can have a policy to deny access of personal data such as name, email, mobile, address to your business dashboard applications.
+    - id: Policy.Deny.Processing.EthicalUsageForAI
+    name : "Ethical AI Usage Policy"
+    type: Compliance
+    description: "Don't use ethnicity, race and nationality for machine learning and AI"
+    fix: "Talk to the Privacy Engineering team: privacy-engineering@org.com"
+    action: Deny    
+    dataFlow:      
+      sources:
+             - "Data.Sensitive.PersonalIdentification.Ethnicity"
+             - "Data.Sensitive.PersonalIdentification.Race"
+             - "Data.Sensitive.PersonalIdentification.Nationality"
+    repositories: 
+             - curate-offers-machine-learning
+             - track-engagement-ai
+    tags:
+       laws: GDPR, CCPA2
+```
 
+* Business intelligence dashboards are popular among business analysts to run queries and get insights to help customers and grow the business. Exposing personal data as part of these dashboards can lead to unauthorized access and breaches. You can have a policy to deny access of personal data such as name, email, mobile, address to your business dashboard applications.
 
-Directory `rules/policies/`:
+```yaml
+policies:
 
-    |__rules
-       |__policies                   
-       |  |__disallow_personal_data_in_business_dashboards.yaml
-       |  |__ai_governance.yaml
+    - id: Policy.Deny.Processing.NoPersonalDataInBIReports
+    name : "Restrict usage of personal data in BI reports"
+    type: Compliance
+    description: "Personal data in BI reports may expose it to unathorized access."
+    fix: "Talk to the Data Protection team: data-protection@org.com"
+    action: Deny    
+    dataFlow:      
+      sources:
+             - "Data.Sensitive.PersonalIdentification.*"
+    repositories: 
+             - business-intelligence-dashoboard
+             - business-intelligence-advanced-reports
+    tags:
+       laws: GDPR, CCPA
+```
+
+### Organization
+
+Policies are present in `rules/policies` and are organized as follows,
+
+```
+|__rules
+   |__policies                   
+   |  |__disallow_personal_data_in_business_dashboards.yaml
+   |  |__ai_governance.yaml
+```
