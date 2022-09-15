@@ -39,6 +39,16 @@ sources:
     tags:
       law: GDPR
 
+  - id: Data.Sensitive.AccountData.Mnemonic
+    name: Mnemonic
+    category: Account Data
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i).*(mnemonic)"
+    tags:
+      law: GDPR
+
   - id: Data.Sensitive.AccountData.AccountName
     name: Account Name
     category: Account Data
