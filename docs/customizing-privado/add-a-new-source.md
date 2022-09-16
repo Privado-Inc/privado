@@ -1,8 +1,8 @@
 # Add a new Source
 
-Source is a data element definition. To add a new data element, you first need to decide category. If you go to directory [`rules/sources`](https://github.com/Privado-Inc/privado/tree/main/rules/sources), you can see 22 files, each representing a category. The full list of Privado source categories can be found HERE.
+Source is a data element definition. To add a new data element, you first need to decide category. If you go to directory [`rules/sources`](https://github.com/Privado-Inc/privado/tree/main/rules/sources), you can see 22 files, each representing a category. The full list of Privado source categories can be found (here)[https://github.com/Privado-Inc/privado/tree/main/rules/sources].
 
-You can either existing category or use your own custom category. If you use existing category, you can open the corresponding file and add entry for the data element.
+You can either use an existing category or use your own custom category. If you use an existing category, you can open the corresponding file and add entry for the data element.
 
 **List of fields for defining a data element:**
 
