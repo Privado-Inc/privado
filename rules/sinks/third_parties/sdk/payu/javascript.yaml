@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Payu
+    name: Payu
+    domains:
+      - "payu.in"
+    patterns:
+      - "sails-hook-payu|@ingameltd\\/payu|payu|pay-u|payu-node|payu-blik-pl|gateway-payu|payu-latam-node|razor-pay-connector-prodio|payutr|payu-pl|payu-latam|payuexpress|nodejs-payu-sdk|payu-sdk|react-native-payu"
+    tags:

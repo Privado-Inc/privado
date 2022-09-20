@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amap
+    name: Amap
+    domains:
+      - "amap.com"
+    patterns:
+      - "@orca-fe\\/x-map|amap-drill|react-native-michael-amap|cordova-plugin-navimap|wqr-amap|react-native-amap-search|react-native-yf-amap|@fourcels\\/react-map|react-native-amap3d-zz|@uiw\\/react-native-amap-geolocation|react-native-amap-view|react-native-smart-amap-location|@axolo\\/egg-amap|mapboxmanage|ele-react-native-amap|angular-amap|@hanyk\\/vue-amap|amap-react-native|react-native-amap-kit|husha-amap|s-amap|wanwenqing-amap-jsapi-types|react-bf-amap|react-native-send-location-amap|@amap\\/amap-jsapi-loader|react-native-amap3d|echarts-amap|react-native-smart-amap|ele-react-native-location|vue-amap-search|react-native-amap-geolocation|amap-js-api-typings|echarts-extension-amap|amap-echarts|react-amap-next|@wayz\\/react-amap-gl|react-native-amaplocating|f-amap-utils|@joshua7v\\/amapex|ng2-ef-inputs|amap-wx|react-native-anavi|vue3-amap-xmj|react-native-amap-yf|coord-picker|@wanmi\\/react-native-amap3d|react-native-gizwits-amap3d|shu-c-amap|@heytea\\/react-native-amap3d|cordova-plugin-amap-location-android|amap-scan-radar|react-native-hd-amap3d|react-native-amap-navi|react-native-gzdsx-amap|react-amap-binding|es-amap|react-native-amap3d-openwise|plain-js|react-native-wonder-amap|rc-amap"
+    tags:

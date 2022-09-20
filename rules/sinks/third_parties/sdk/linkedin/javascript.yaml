@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Linkedin
+    name: Linkedin
+    domains:
+      - "linkedin.com"
+    patterns:
+      - "vanilla-sharing|sharer.npm.js|social-links|vue-socials|sharon|@crexi-dev\\/demo|@proscom\\/social-links|@odilo\\/core|passport-linkedin-oauth2|@sokratis\\/passport-linkedin-oauth2|@joewitt99\\/passport-linkedin-oauth2|@hvastani\\/passport-linkedin-oauth2|cordova-plugin-x-socialsharing|node-linkedin|passport-linkedin|sails-auth|social-login|social-share.js|count-shares|angular-linkedin-sdk|linkedin-pdf-to-json|shares|socialcount.js|com.peerio.cordova.plugin.social|linkedin-profile-retrieve|react-linkedin-login|resume-pdf-to-json|react-linkedin-sdk|linkedin-public-profile-parser|react-native-linkedin-sdk|react-social-bar|count-shares-fix|linkedin-auto-connect|clever-auth-linkedin|vcard-linkedin-parser|social-share-js|react-native-linkedin-oauth|social-media-login|jsonresume-linkedin|indiesocial|node-red-linkedin|react-linkedin-login-oauth2|@cocreate\\/linkedin|react-linkedin-insight|linkedin-login-for-react|node-linkedin-v2|scribe-node|react-linkedin-oauth2|common-dustjs-helpers|linkedin-oauth-agent|scrapedin|linkedin-canonical-url|@inspire-platform\\/sails-hook-auth|bare-auth-linkedin|cision-sails-auth|easy-social-share-links|cordova-plugin-np-socialsharing|react-custom-share|react-linkedin-share-link|passport-linkedin-token-v2|nuxt-linkedin-insight-tag|react-social-auth|passport-linkedin-token|ember-social|sails-passport-hook|hellojs-xbrunosousa|react-social-plugins|express-authenticators|node-linked-in|linkedin-profile-company-scraper|scrapedin-browserless|react-share-linkedin|passport-linkedin-oauth2-token|linkedin-api-wrapper|cordova-plugin-androidx-socialsharing|@joonhocho\\/social-link|linkedin-login-ssr|react-linkedin-insight-tag|linkedin-js|enouvo-passport-linkedin-token-v2|react-linkedin-login-oauth2-fork|count-shares-my-fork|react-native-linkedin-login|list-of-companies|react-sns|passport-linked-in-token|sociallogin|rn-linkedin-signin|@getwanted\\/scrapedin|@segment\\/analytics.js-integration-linkedin-insight-tag|react-linkedin-profile-badge|nuxt-goodshare|node-linkedin-distributed|@knohime\\/linkedin-import|jobberjs|friends-link|cordova-plugin-evoca-socialsharing|sails-auth-new|linkedin-scrapper|@traverse-data\\/sails-auth|@dadi\\/web-dustjs|@mvegter\\/scrapedin|cordova-plugin-social-sharing-ka|linkedin-api|@pablosanches\\/linkedin-sdk|@jorgeblacio\\/react-custom-share|linkedin-company-profile-scraper"
+    tags:

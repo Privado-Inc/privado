@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Apolloelements
+    name: Apolloelements
+    domains:
+      - "apolloelements.dev"
+    patterns:
+      - "@apollo-elements\\/lit-apollo|@apollo-elements\\/components|@apollo-elements\\/core|@apollo-elements\\/fast|@apollo-elements\\/mixins"
+    tags:

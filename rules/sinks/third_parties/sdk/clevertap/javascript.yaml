@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Clevertap
+    name: Clevertap
+    domains:
+      - "clevertap.com"
+    patterns:
+      - "clevertap-react|react-native-clevertap-inbox|clevertap|clevertap-react-native|clevertap-cordova|leads-clevertap|@segment\\/analytics.js-integration-clevertap|flaviocopes-clevertap-cordova|clevertap-web-sdk|sda-clevertap|@ionic-native\\/clevertap"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mailchimp
+    name: Mailchimp
+    domains:
+      - "mailchimp.com"
+    patterns:
+      - "email-templates|blocks-subscribe-email|cjs-email-templates|@ourharvest\\/email-templates|mailchimp-api-v3|node-mandrill|mailchimp|@mailchimp\\/mailchimp_marketing|passport-mailchimp|react-mailchimp-form|@mailchimp\\/mailchimp_transactional|mailchimp-v3|gatsby-plugin-mailchimp|hubot-mailchimp|chimp-wrapper|mailchimp-nodejs|vuepress-plugin-mailchimp|mandrill-webhook-validator|node-mandrill-retry|mailchimp-lite|mailchimpify|tilloo-plugin-mandrill|vue-mailchimp-subscribe|vue-mailchimp-email-signup-form|@mindik\\/mailchimp-nestjs|react-mailchimp-email-signup-form|@ntegral\\/nestjs-mailchimp|mailchimp-api-v3-next|use-mailchimp-form|mailchimp-v3-api|mailchimp-api-wherewolf|mailchimp-react|gatsby-source-mailchimp|@nodepit\\/mailchimp|mailchimp-api-js|@gatsby-mdx-suite\\/mdx-mailchimp|sneakemail|react-verlay-mailchimp-form|transacemail|@rogovdm\\/gatsby-source-mailchimp|@vagalumedigital\\/gatsby-plugin-mailchimp-api|mailchimp-subscribe|mailchimp-import|mcms-node-newsletter|mailtruck|node-red-contrib-mailchimp|rimp|mandrill-send-promise|mailchimp-node|mcsub|@eyedea-sockets\\/mailchimp|node-red-contrib-mandrill|nodebb-plugin-mailchimp"
+    tags:

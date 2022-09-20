@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Schibsted
+    name: Schibsted
+    domains:
+      - "schibsted.com"
+    patterns:
+      - "@adv-ui\\/boros-tcf|@adv-ui\\/boros-tcf-stub|@schibstedspain\\/adit-webads|@schibstedspain\\/boros-cmp|@schibstedspain\\/openads|cz-crm|@schibsted\\/sourcepoint|@schibstedspain\\/sui-studio|lbc-prettier|@s-ui\\/cz|@schibstedspain\\/commit-release-manager"
+    tags:

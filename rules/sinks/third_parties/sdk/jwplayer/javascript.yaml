@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Jwplayer
+    name: Jwplayer
+    domains:
+      - "jwplayer.com"
+    patterns:
+      - "react-native-jw-media-player|jwplayer-api|react-native-jw-media-player-applicaster|nativescript-jwplayer-web|jwplayer|php2js|react-jwplayer|jwplayer-node|react-jw-player|vmap-kit|ember-jwplayer|source-scraper-jwplayer-runner|@ryanwalters\\/react-jw-player|@zerointermittency\\/jwplayer|@bianjp\\/jwplayer|vegas-react-jw-player|react-jw-player-ts|ng2-jwplayer|storyteq-connector-jw-player|nativescript-jwplayer|bas-meteor-jwplayer|oddworks-jwplayer-provider|jwplayer-scraper|@cpwc\\/jwplayer"
+    tags:

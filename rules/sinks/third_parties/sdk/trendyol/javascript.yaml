@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Trendyol
+    name: Trendyol
+    domains:
+      - "trendyol.com"
+    patterns:
+      - "@trendyol-js\\/cdn|@trendyol-js\\/safe-redirect|@trendyol\\/gateway.authorization|@trendyol\\/venus-ui-core|@trendyol\\/web-gateway-middleware|@trendyol\\/web-gateway-response|@trendyol\\/web-services|@trendyol\\/sc-ui-kit|@trendyol\\/sc-utils|@trendyol-js\\/grace|@trendyol\\/baklava|@trendyol\\/cookie-helper|@trendyol\\/web-storage-manager|@trendyol\\/web-url-helpers|@trendyol\\/web-utility"
+    tags:

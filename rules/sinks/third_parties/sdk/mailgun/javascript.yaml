@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mailgun
+    name: Mailgun
+    domains:
+      - "mailgun.com"
+    patterns:
+      - "sender-js|email-service|nodemailer-mailgun-transport|nodemailer-mailgunapi-transport|mailgun-nodemailer-transport|mailgun.js|mailgun-validate-email|campaign|keystone-email|loopback-connector-mailgun|mailgun-es6|nodebb-plugin-emailer-mailgun|winston-mailgun|optune-mailer|simple-mail-sender-server|obey-type-email-mailgun|ts-mailgun|@nextnm\\/nestjs-mailgun|mailgun-send|b-mailer|mailgun-js-sdk|machinepack-mailgun|mailgun-stream|digger-mailgun|wisekaa03-mailgun.js|nestjs-mailgun|@paralect\\/email-service|@paralect\\/mailgun-js|@iwe\\/mailgun.js|@emech\\/nestjs-common|@petition-blitz\\/email-verifiers|mail-confirm|@mindik\\/mailgun-nestjs|mailgun-es6-error-handled|@nuteruls\\/mailgun-js-sdk|moleculer-mailgun|mailgun-node-js|mailgun-validate|mailgunny|bip-pod-mailgun|@kohanajs\\/mod-mail-adapter-mailgun|mailgun-rest|sails-hook-mailgun|fastify-mailgun|expresser-mailer|sinopia-htaccess-gpg-email|postgun-xvi|@auxilin\\/email-service|mailgun-api|express-boilerplate|bz-mailer|mailmake|@chance\\/mailgun-js|jodot-tailnmail|email-engine|mailgun-mailer|bs-mailgun|mailgun-js"
+    tags:

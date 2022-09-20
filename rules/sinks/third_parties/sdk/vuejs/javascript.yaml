@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Vuejs.Apollo
+    name: Vuejs Apollo
+    domains:
+      - "apollo.vuejs.org"
+    patterns:
+      - "@vue\\/apollo-composable|@vue\\/apollo-util|@vue\\/apollo-option|@vue\\/apollo-ssr"
+    tags:

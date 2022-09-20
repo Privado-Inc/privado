@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Shopify
+    name: Shopify
+    domains:
+      - "shopify.com"
+    patterns:
+      - "shopify-buy"
+    tags:
+
+  - id: ThirdParties.SDK.Shopify
+    name: Shopify
+    domains:
+      - "shopify.in"
+    patterns:
+      - "gatsby-source-shopify"
+    tags:

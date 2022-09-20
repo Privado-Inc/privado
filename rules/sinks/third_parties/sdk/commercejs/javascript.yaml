@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Commercejs
+    name: Commercejs
+    domains:
+      - "commercejs.com"
+    patterns:
+      - "@chec\\/commerce.js|commerce-components|@chec\\/react-commercejs-hooks"
+    tags:

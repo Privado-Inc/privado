@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Moneris
+    name: Moneris
+    domains:
+      - "moneris.com"
+    patterns:
+      - "moneris|react-native-moneris|monerisplus-node|42-cent-moneris|moneris-checkout|@orcden\\/od-moneris-hosted-payment"
+    tags:
