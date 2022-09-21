@@ -1,10 +1,10 @@
 # Sources
 
-The journey of tracking personal data starts from “sources”. They are variables, classes and structures in the code which represent personal data. Sources are divided into 22 categories. There is a separate file for each category. You can see them in the (rules/sources)[https://github.com/Privado-Inc/privado/tree/main/rules/sources] folder. Each file in the folder contains the rules for data elements belonging to that category.
+The journey of tracking personal data starts from “sources”. They are variables, classes and structures in the code which represent personal data. Sources are divided into 22 categories. There is a separate file for each category. You can see them in the [rules/sources](https://github.com/Privado-Inc/privado/tree/main/rules/sources) folder. Each file in the folder contains the rules for data elements belonging to that category.
 
 ### Example
 
-From the `account_data.yaml` (file)[https://github.com/Privado-Inc/privado/blob/main/rules/sources/account_data.yaml]
+From the `account_data.yaml` [file](https://github.com/Privado-Inc/privado/blob/main/rules/sources/account_data.yaml)
 
 ```yaml
 sources:

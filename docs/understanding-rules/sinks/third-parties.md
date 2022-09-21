@@ -23,4 +23,4 @@ The rules for third parties are under directory `rules/sinks/third_parties/`:
        |  |        |__default.rule
        |  |     |...
 
-Privado currently has coverage for the popular third parties including AWS, GCP, Azure, Stripe, Twilio, etc. The list is available (here)[https://github.com/Privado-Inc/privado/tree/main/rules/sinks/third_parties]
+Privado currently has coverage for the popular third parties including AWS, GCP, Azure, Stripe, Twilio, etc. The list is available [here](https://github.com/Privado-Inc/privado/tree/main/rules/sinks/third_parties).

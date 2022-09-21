@@ -24,4 +24,4 @@ Directory `rules/sinks/storages`:
    
 ```
 
-Privado currently supports 23 popular databases and libraries. The full list is available (here)[https://github.com/Privado-Inc/privado/tree/main/rules/sinks/storages].
+Privado currently supports 23 popular databases and libraries. The full list is available [here](https://github.com/Privado-Inc/privado/tree/main/rules/sinks/storages).

@@ -1,6 +1,6 @@
 # Leakages
 
-Personal and sensitive data going to logs or console without masking or encryption can expose the data to unauthorised access. This is an important use- case for the Security and Data Protection teams.
+Personal and sensitive data going to logs or console without masking or encryption can expose the data to unauthorised access. This is an important use-case for Security and Data Protection teams.
 
 Privado helps you track such harmful data leakages.
 
