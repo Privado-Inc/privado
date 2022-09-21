@@ -4,21 +4,15 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Github.Tiagodanin
-    name: Github Tiagodanin
+  - id: ThirdParties.SDK.Github
+    name: Github
     domains:
-      - "TiagoDanin.github.io"
+      - "github.com"
     patterns:
-      - "telegraf-getchatmembers"
+      - "passport-github|octokit|nodegit|remark-github|git-url-parse|github-url-from-git|react-github-btn|github-url-from-username-repo|netlify-cms-backend-github|github-webhook-handler|gitbook-plugin-mermaid|gitbook-plugin-mermaid-gb3|github-current-user|passport-github2|gitbook-plugin-page-toc|gitbook-plugin-panel|gitbook-plugin-sequence-diagrams|gitbook-plugin-theme-api|gitbook-plugin-toc"
     tags:
 
-  - id: ThirdParties.SDK.Github.Aavanzyl
-    name: Github Aavanzyl
-    domains:
-      - "aavanzyl.github.io"
-    patterns:
-      - "@ngx-tiny\\/quill-editor"
-    tags:
+  # also contains community hosted github packages (these names are prefixed with "Github")
 
   - id: ThirdParties.SDK.Github.Admob-plus
     name: Github Admob-plus
@@ -26,14 +20,6 @@ sinks:
       - "admob-plus.github.io"
     patterns:
       - "admob-plus-cordova|gdevelop-cordova-admob-plus|@admob-plus\\/capacitor|@admob-plus\\/ionic|@admob-plus\\/react-native|cordova-admob-plus-nl"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Akarshsatija
-    name: Github Akarshsatija
-    domains:
-      - "akarshsatija.github.io"
-    patterns:
-      - "mandrill-node"
     tags:
 
   - id: ThirdParties.SDK.Github.Angulartics
@@ -44,52 +30,12 @@ sinks:
       - "angulartics2|angulartics|angulartics-piwik"
     tags:
 
-  - id: ThirdParties.SDK.Github.Arjunkomath
-    name: Github Arjunkomath
-    domains:
-      - "arjunkomath.github.io"
-    patterns:
-      - "freshdesk-api"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Aws-amplify
-    name: Github Aws-amplify
-    domains:
-      - "aws-amplify.github.io"
-    patterns:
-      - "@microsystems\\/pubsub"
-    tags:
-
   - id: ThirdParties.SDK.Github.Bamlab
     name: Github Bamlab
     domains:
       - "bamlab.github.io"
     patterns:
       - "@bam.tech\\/react-native-batch"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Benwinding
-    name: Github Benwinding
-    domains:
-      - "benwinding.github.io"
-    patterns:
-      - "quill-image-compress"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Ciricc
-    name: Github Ciricc
-    domains:
-      - "ciricc.github.io"
-    patterns:
-      - "easyvk"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Cloverhearts
-    name: Github Cloverhearts
-    domains:
-      - "cloverhearts.github.io"
-    patterns:
-      - "quilljs-markdown"
     tags:
 
   - id: ThirdParties.SDK.Github.Codaxy
@@ -108,86 +54,6 @@ sinks:
       - "contactsnag"
     tags:
 
-  - id: ThirdParties.SDK.Github.Crunchwrapsupreme
-    name: Github Crunchwrapsupreme
-    domains:
-      - "crunchwrapsupreme.github.io"
-    patterns:
-      - "twitv2-stream"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Curtcommander
-    name: Github Curtcommander
-    domains:
-      - "curtcommander.github.io"
-    patterns:
-      - "utils-google-drive"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Cyphercodes
-    name: Github Cyphercodes
-    domains:
-      - "cyphercodes.github.io"
-    patterns:
-      - "location-picker"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Danielgtaylor
-    name: Github Danielgtaylor
-    domains:
-      - "danielgtaylor.github.io"
-    patterns:
-      - "nesh"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Dbartholomae
-    name: Github Dbartholomae
-    domains:
-      - "dbartholomae.github.io"
-    patterns:
-      - "@lambda-middleware\\/utils|@lambda-middleware\\/compose|@lambda-middleware\\/http-error-handler|@lambda-middleware\\/http-header-normalizer|@lambda-middleware\\/cors|@lambda-middleware\\/class-validator|@lambda-middleware\\/json-serializer|@lambda-middleware\\/do-not-wait"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Dimoreira
-    name: Github Dimoreira
-    domains:
-      - "dimoreira.github.io"
-    patterns:
-      - "mailgun-email-validation"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Disparity
-    name: Github Disparity
-    domains:
-      - "disparity.github.io"
-    patterns:
-      - "angular-pusher-bridge"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Distributhor
-    name: Github Distributhor
-    domains:
-      - "distributhor.github.io"
-    patterns:
-      - "paygate-sdk"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Ellisonleao
-    name: Github Ellisonleao
-    domains:
-      - "ellisonleao.github.io"
-    patterns:
-      - "sharer.js"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Facebook
-    name: Github Facebook
-    domains:
-      - "facebook.github.io"
-    patterns:
-      - "@gatsbyjs\\/relay-compiler|@vincentriemer\\/relay-runtime|@coral-forks\\/relay-runtime|@dbslone\\/relay-runtime|@boltline\\/relay-runtime|@dww\\/relay-compiler|@mattkrick\\/relay-runtime|@coral-forks\\/relay-compiler|@vincentriemer\\/relay-compiler|dww-relay-compiler|relay-config"
-    tags:
-
   - id: ThirdParties.SDK.Github.Firefly-jugnu
     name: Github Firefly-jugnu
     domains:
@@ -204,60 +70,12 @@ sinks:
       - "flamelink"
     tags:
 
-  - id: ThirdParties.SDK.Github.Floydspace
-    name: Github Floydspace
-    domains:
-      - "floydspace.github.io"
-    patterns:
-      - "persistent-dataloader|aws-lambda-nodejs-esbuild|dynamodb-migrations-tool|serverless-esbuild|@dathuis\\/serverless-esbuild"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Flyween
-    name: Github Flyween
-    domains:
-      - "flyween.github.io"
-    patterns:
-      - "vue3-quill"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Fortesl
-    name: Github Fortesl
-    domains:
-      - "fortesl.github.io"
-    patterns:
-      - "thestore"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Galenwarren
-    name: Github Galenwarren
-    domains:
-      - "galenwarren.github.io"
-    patterns:
-      - "vuex-rx-sync"
-    tags:
-
-  - id: ThirdParties.SDK.Github
-    name: Github
-    domains:
-      - "github.com"
-    patterns:
-      - "passport-github|octokit|nodegit|remark-github|git-url-parse|github-url-from-git|react-github-btn|github-url-from-username-repo|netlify-cms-backend-github|github-webhook-handler|gitbook-plugin-mermaid|gitbook-plugin-mermaid-gb3|github-current-user|passport-github2|gitbook-plugin-page-toc|gitbook-plugin-panel|gitbook-plugin-sequence-diagrams|gitbook-plugin-theme-api|gitbook-plugin-toc"
-    tags:
-
   - id: ThirdParties.SDK.Github
     name: Github
     domains:
       - "github.io"
     patterns:
       - "gatsby-remark-external-links|gatsby-plugin-netlify-cms"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Gkushang
-    name: Github Gkushang
-    domains:
-      - "gkushang.github.io"
-    patterns:
-      - "codeceptjs-lwc-example"
     tags:
 
   - id: ThirdParties.SDK.Github.Googlewebcomponents
@@ -268,52 +86,12 @@ sinks:
       - "@google-web-components\\/google-youtube"
     tags:
 
-  - id: ThirdParties.SDK.Github.Graphql-extended
-    name: Github Graphql-extended
-    domains:
-      - "graphql-extended.github.io"
-    patterns:
-      - "gqlx-apollo-express-server"
-    tags:
-
   - id: ThirdParties.SDK.Github.Hashbite
     name: Github Hashbite
     domains:
       - "hashbite.github.io"
     patterns:
       - "@consent-manager\\/integration-linkedin|@consent-manager\\/integration-matomo"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Iangoodnight
-    name: Github Iangoodnight
-    domains:
-      - "iangoodnight.github.io"
-    patterns:
-      - "slapfiliate"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Icaliman
-    name: Github Icaliman
-    domains:
-      - "icaliman.github.io"
-    patterns:
-      - "d-analytics"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Iderekli
-    name: Github Iderekli
-    domains:
-      - "iderekli.github.io"
-    patterns:
-      - "amap-js"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Innocces
-    name: Github Innocces
-    domains:
-      - "innocces.github.io"
-    patterns:
-      - "taro-hooks"
     tags:
 
   - id: ThirdParties.SDK.Github.Itsa
@@ -324,36 +102,12 @@ sinks:
       - "itsa-mollie-payment-promise"
     tags:
 
-  - id: ThirdParties.SDK.Github.Jandenma
-    name: Github Jandenma
-    domains:
-      - "jandenma.github.io"
-    patterns:
-      - "pglink-lite"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Jeff-tian
-    name: Github Jeff-tian
-    domains:
-      - "jeff-tian.github.io"
-    patterns:
-      - "passport-weapp"
-    tags:
-
   - id: ThirdParties.SDK.Github.Jenyus-org
     name: Github Jenyus-org
     domains:
       - "jenyus-org.github.io"
     patterns:
       - "@jenyus-org\\/nestjs-graphql-utils|@jenyus-org\\/graphql-utils"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Leviwheatcroft
-    name: Github Leviwheatcroft
-    domains:
-      - "leviwheatcroft.github.io"
-    patterns:
-      - "metalsmith-debug-ui"
     tags:
 
   - id: ThirdParties.SDK.Github.Log4js-node
@@ -364,54 +118,6 @@ sinks:
       - "@log4js-node\\/slack|@xanthous\\/log4js-to-slack|@log4js-node\\/mailgun|@log4js-node\\/loggly"
     tags:
 
-  - id: ThirdParties.SDK.Github.Lvarayut
-    name: Github Lvarayut
-    domains:
-      - "lvarayut.github.io"
-    patterns:
-      - "generator-relay-fullstack"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Lycwed
-    name: Github Lycwed
-    domains:
-      - "lycwed.github.io"
-    patterns:
-      - "lycwed-cordova-plugin-admob-free"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Maximepvrt
-    name: Github Maximepvrt
-    domains:
-      - "maximepvrt.github.io"
-    patterns:
-      - "angular-google-gapi"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Micooz
-    name: Github Micooz
-    domains:
-      - "micooz.github.io"
-    patterns:
-      - "better-sharer.js"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Mrrefactoring
-    name: Github Mrrefactoring
-    domains:
-      - "mrrefactoring.github.io"
-    patterns:
-      - "confluence.js"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Navarasu
-    name: Github Navarasu
-    domains:
-      - "navarasu.github.io"
-    patterns:
-      - "serverless-ruby-layer"
-    tags:
-
   - id: ThirdParties.SDK.Github.Ng-maps
     name: Github Ng-maps
     domains:
@@ -420,36 +126,12 @@ sinks:
       - "@ng-maps\\/google|@ng-maps\\/shapes|@ng-maps\\/places|@ng-maps\\/marker-clusterer"
     tags:
 
-  - id: ThirdParties.SDK.Github.Ngblaylock
-    name: Github Ngblaylock
-    domains:
-      - "ngblaylock.github.io"
-    patterns:
-      - "extract-gsheet"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Owencalvin
-    name: Github Owencalvin
-    domains:
-      - "owencalvin.github.io"
-    patterns:
-      - "graphql-composer|graphql-composer-decorators"
-    tags:
-
   - id: ThirdParties.SDK.Github.Paypal
     name: Github Paypal
     domains:
       - "paypal.github.io"
     patterns:
       - "@paypal\\/react-paypal-js"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Puyodead1
-    name: Github Puyodead1
-    domains:
-      - "puyodead1.github.io"
-    patterns:
-      - "quick-spotify-wrapper"
     tags:
 
   - id: ThirdParties.SDK.Github.React-native-share
@@ -492,162 +174,10 @@ sinks:
       - "req-json"
     tags:
 
-  - id: ThirdParties.SDK.Github.Rickyruiz
-    name: Github Rickyruiz
-    domains:
-      - "rickyruiz.github.io"
-    patterns:
-      - "vue-azure-maps"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Rjfun
-    name: Github Rjfun
-    domains:
-      - "rjfun.github.io"
-    patterns:
-      - "cordova-facebook-audnet-sdk|cordova-plugin-nativeaudio|cordova-plugin-httpd|cordova-plugin-iflyspeech|cordova-plugin-extension|cordova-plugin-mmedia|cordova-plugin-nativeaudio2|cordova-plugin-bye|cordova-plugin-sms-manager|cordova-plugin-admob-inmobi|cordova-plugin-sms|ipa-deploy|cordova-plugin-qq|smartqq-bot|mixin-pro|cordova-plugin-iad|plugin-verify|aa-cordova-plugin-sms|cordova-plugin-appleiap|cordova-plugin-admob-mmedia"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Ryandrewjohnson
-    name: Github Ryandrewjohnson
-    domains:
-      - "ryandrewjohnson.github.io"
-    patterns:
-      - "angular-editme"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Sakitam-fdd
-    name: Github Sakitam-fdd
-    domains:
-      - "sakitam-fdd.github.io"
-    patterns:
-      - "wind-layer"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Sbolel
-    name: Github Sbolel
-    domains:
-      - "sbolel.github.io"
-    patterns:
-      - "express-pug-starter"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Serverless-guy
-    name: Github Serverless-guy
-    domains:
-      - "serverless-guy.github.io"
-    patterns:
-      - "@serverless-guy\\/lambda"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Sfdx-isv
-    name: Github Sfdx-isv
-    domains:
-      - "sfdx-isv.github.io"
-    patterns:
-      - "sfdx-falcon"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Shellyln
-    name: Github Shellyln
-    domains:
-      - "shellyln.github.io"
-    patterns:
-      - "tynder"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Snowdreams1006
-    name: Github Snowdreams1006
-    domains:
-      - "snowdreams1006.github.io"
-    patterns:
-      - "gitbook-plugin-copyright"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Takahitomiyamoto
-    name: Github Takahitomiyamoto
-    domains:
-      - "takahitomiyamoto.github.io"
-    patterns:
-      - "heat-sfdx-metadata"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Tomchentw
-    name: Github Tomchentw
-    domains:
-      - "tomchentw.github.io"
-    patterns:
-      - "maxwells-react-google-maps|@codens\\/codens-react-google-maps|react-google-maps-temp|react-google-maps-tmp|@arcadian-digital\\/react-google-maps|react-google-maps-appeal"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Tomitank
-    name: Github Tomitank
-    domains:
-      - "tomitank.github.io"
-    patterns:
-      - "cordova-plugin-admob-tomitank"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Uiwjs
-    name: Github Uiwjs
-    domains:
-      - "uiwjs.github.io"
-    patterns:
-      - "@uiw\\/react-amap-map|@uiw\\/react-amap-utils|@uiw\\/react-amap-circle|@uiw\\/react-amap-text|@uiw\\/react-amap-types|@uiw\\/react-amap-require-script|@uiw\\/react-amap|@uiw\\/react-amap-polygon|@uiw\\/react-amap-map-type-control|@uiw\\/react-amap-geolocation|@uiw\\/react-amap-scale-control|@uiw\\/react-amap-auto-complete|@uiw\\/react-amap-info-window|@uiw\\/react-amap-bezier-curve|@uiw\\/react-amap-weather|@uiw\\/react-amap-api-loader|@uiw\\/react-amap-hawk-eye-control|@uiw\\/react-amap-ellipse|@uiw\\/react-amap-marker|@uiw\\/react-amap-polyline|@uiw\\/react-amap-control-bar-control|@uiw\\/react-amap-mass-marks|@uiw\\/react-amap-circle-marker|@uiw\\/react-amap-context-menu|@uiw\\/react-amap-rectangle|@uiw\\/react-amap-tool-bar-control|@uiw\\/react-amap-polygon-editor"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Useems
-    name: Github Useems
-    domains:
-      - "useems.github.io"
-    patterns:
-      - "openai-nodejs"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Noreply.Users
-    name: Github Noreply Users
-    domains:
-      - "users.noreply.github.com"
-    patterns:
-      - "@smcloudstore\\/google-cloud-storage"
-    tags:
-
   - id: ThirdParties.SDK.Github.Ventx
     name: Github Ventx
     domains:
       - "ventx.github.io"
     patterns:
       - "@ventx\\/ler53s3"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Vikramtiwari
-    name: Github Vikramtiwari
-    domains:
-      - "vikramtiwari.github.io"
-    patterns:
-      - "asynclog"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Xieziyu
-    name: Github Xieziyu
-    domains:
-      - "xieziyu.github.io"
-    patterns:
-      - "ngx-amap"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Yh-yunchuang-fe
-    name: Github Yh-yunchuang-fe
-    domains:
-      - "yh-yunchuang-fe.github.io"
-    patterns:
-      - "@yhyc\\/oak-weui"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Yoriiis
-    name: Github Yoriiis
-    domains:
-      - "yoriiis.github.io"
-    patterns:
-      - "vlitejs"
     tags:

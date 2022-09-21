@@ -11,19 +11,3 @@ sinks:
     patterns:
       - "netlify-cms-backend-gitlab|@devx\\/plugin-gitlab-backend"
     tags:
-
-  - id: ThirdParties.SDK.Gitlab.Shiroy
-    name: Gitlab Shiroy
-    domains:
-      - "shiroy.gitlab.io"
-    patterns:
-      - "@eryldor\\/cidr"
-    tags:
-
-  - id: ThirdParties.SDK.Gitlab.Td7x
-    name: Gitlab Td7x
-    domains:
-      - "td7x.gitlab.io"
-    patterns:
-      - "@td7x\\/s6"
-    tags:

@@ -9,13 +9,5 @@ sinks:
     domains:
       - "bitbucket.com"
     patterns:
-      - "bitbucket"
-    tags:
-
-  - id: ThirdParties.SDK.Bitbucket
-    name: Bitbucket
-    domains:
-      - "bitbucket.org"
-    patterns:
-      - "netlify-cms-backend-bitbucket"
+      - "bitbucket|netlify-cms-backend-bitbucket"
     tags:
