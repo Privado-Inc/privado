@@ -1,6 +1,6 @@
 # Storages
 
-The database related rules are stored under this. There is a separate directory for each vendor such as MySQL, MongoDB, etc. At the lowest level, rules are stored as per the programming languages. There will be a file for every language. The rules which are applicable to all the programming languages are stored in the default.rule file.
+The database related rules are stored under this sub-category of a sink. There is a separate directory for each vendor such as MySQL, MongoDB, etc. At the lowest level, rules are stored as per the programming languages. There will be a file for every language. The rules which are applicable to all the programming languages are stored in the default.rule file.
 
 Directory `rules/sinks/storages`:
 
@@ -24,4 +24,4 @@ Directory `rules/sinks/storages`:
    
 ```
 
-Privado currently supports 23 popular databases and libraries. The full list is available HERE.
+Privado currently supports 23 popular databases and libraries. The full list is available (here)[https://github.com/Privado-Inc/privado/tree/main/rules/sinks/storages].
