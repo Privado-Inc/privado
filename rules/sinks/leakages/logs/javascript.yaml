@@ -1,0 +1,7 @@
+sinks:
+
+  - id: Leakages.Log.Console
+    name: Log Console
+    patterns:
+      - "(?i).*console.(log|error|info)|pkg.log4js.getLogger.debug"
+    tags:
