@@ -3,5 +3,11 @@ sinks:
   - id: Leakages.Log.Console
     name: Log Console
     patterns:
-      - "(?i).*console.(log|error|info)|pkg.log4js.getLogger.debug"
+      - "pkg.console.(?:log|error|info|warn|debug)"
     tags:
+
+  - id: Leakages.Log.Log4js
+    name: Log4js
+    patterns:
+      - "pkg.log4js.(?:error|info|warn|debug)"
+    tags:    
