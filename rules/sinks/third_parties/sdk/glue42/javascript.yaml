@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Glue42.Docs
+    name: Glue42 Docs
+    domains:
+      - "docs.glue42.com"
+    patterns:
+      - "@glue42\\/web-worker"
+    tags:
+
+  - id: ThirdParties.SDK.Glue42
+    name: Glue42
+    domains:
+      - "glue42.com"
+    patterns:
+      - "@glue42\\/desktop|@glue42\\/gateway-web|@glue42\\/web-platform|@glue42\\/fdc3|@glue42\\/office|@glue42\\/theme|@glue42\\/ng-glue|@glue42\\/web-gns|@glue42\\/ng|@glue42\\/launchpad-ui-react|@glue42\\/electron|@glue42\\/gateway-ws|@glue42\\/ws-gateway|@glue42\\/bbg-market-data|@glue42\\/react-hooks|@glue42\\/web|@glue42\\/core|@glue42\\/workspaces-api"
+    tags:

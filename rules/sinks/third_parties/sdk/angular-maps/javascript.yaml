@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Angular-maps
+    name: Angular-maps
+    domains:
+      - "angular-maps.com"
+    patterns:
+      - "flatx-agm-map|@agm\\/core|@agm\\/js-marker-clusterer|@agm\\/snazzy-info-window|@agm\\/markerclusterer|@agm\\/drawing|agm-core|agm-spiderfier|forked-agm-map|@arin-pang-agm\\/snazzy-info-window|agm-spiderfier1|movebe-agm|@ajqua\\/core|@pedroviniv\\/agm-core|ngx-agm|@agme\\/core|@bkoury\\/agm-core|@ruisebastiao\\/core|angular-google-maps-marker"
+    tags:

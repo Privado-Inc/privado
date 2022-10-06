@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Scandit
+    name: Scandit
+    domains:
+      - "scandit.com"
+    patterns:
+      - "scandit-react-native-datacapture-core|scandit-react-native-datacapture-barcode|scandit-react-native|scandit-react-native-datacapture-parser|scandit-react-native-datacapture-id|scandit-react-native-datacapture-text|vue-scandit|scandit-sdk"
+    tags:

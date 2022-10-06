@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Telerik
+    name: Telerik
+    domains:
+      - "telerik.com"
+    patterns:
+      - "nativescript-facebook|@nativescript\\/social-share|@progress\\/kendo-theme-default|@progress\\/kendo-react-labels|@progress\\/kendo-drawing|@progress\\/kendo-react-form|@progress\\/kendo-react-treeview|@progress\\/kendo-react-excel-export|@progress\\/kendo-licensing|@progress\\/kendo-data-query|@progress\\/kendo-react-indicators|@progress\\/kendo-react-progressbars|@progress\\/kendo-react-data-tools|@progress\\/kendo-react-intl|@progress\\/kendo-react-listview|@progress\\/kendo-react-pdf|@progress\\/kendo-react-upload|@progress\\/kendo-react-grid|@progress\\/kendo-react-layout|@progress\\/kendo-react-inputs|@progress\\/kendo-react-dropdowns"
+    tags:

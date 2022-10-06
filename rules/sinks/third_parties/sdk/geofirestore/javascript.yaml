@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Geofirestore.Core
+    name: Geofirestore Core
+    domains:
+      - "core.geofirestore.com"
+    patterns:
+      - "geofirestore-core"
+    tags:
+
+  - id: ThirdParties.SDK.Geofirestore
+    name: Geofirestore
+    domains:
+      - "geofirestore.com"
+    patterns:
+      - "geofirestore"
+    tags:
