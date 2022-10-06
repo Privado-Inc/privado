@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Northxsouth
+    name: Northxsouth
+    domains:
+      - "northxsouth.co"
+    patterns:
+      - "@northxsouth\\/google-fonts|@northxsouth\\/gatsby-plugin-google-fonts"
+    tags:

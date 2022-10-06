@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amplitude
+    name: Amplitude
+    domains:
+      - "amplitude.com"
+    patterns:
+      - "amplitude-js|react-amplitude-hooks|amplitude|amplitude-viewer|read-audio|react-native-amplitude-analytics|@analytics\\/amplitude|@itly\\/plugin-amplitude-node|vue-amplitude|@segment\\/analytics.js-integration-amplitude|gatsby-plugin-amplitude-analytics|@amplitude\\/react-amplitude|vue-amplitude-js|react-amplitude|gatsby-plugin-amplitude|@mntm\\/stats|@uptechworks\\/analytics-service-angular|@suttj\\/amplitude-js|@csod-oss\\/tracker-vendor-amplitude|node-amplitude|@rudderstack\\/rudder-integration-amplitude-react-native|@shawacademynpm\\/gatsby-plugin-amplitude-analytics|djipav|react-native-amplitude-sdk|@jtran\\/amplitude-js|@exiasr\\/gatsby-plugin-amplitude-analytics|amplitude-vue|@quintoandar\\/storybook-amplitude|@amplitude\\/analytics-connector"
+    tags:

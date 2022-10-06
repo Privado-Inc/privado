@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Loggly
+    name: Loggly
+    domains:
+      - "loggly.com"
+    patterns:
+      - "hubot-loggly-slack|cloudwatch-console-logger|winston-sentry-raven-transport|loggly|winston-loggly-bulk|node-loggly-bulk|bunyan-loggly|@gojob\\/winston-bugsnag|jog|loggly-jslogger|stdloggly|ngx-loggly-logger|flannel|config-logger|pino-sentry|winston-transport-sentry-node|express-loggly|@szymon.dukla\\/node-loggly-bulk|@schibstedspain\\/bunyan-loggly|shweta-node|good-loggly|@saucesteals\\/winston-transport-sentry-node|react-native-loggly-jslogger|react-loggly-jslogger|simple-loggly|sideshift-pino-sentry|@ignite\\/loggly-jslogger|pino-loggly|@onenorth\\/express-loggly-iis|universal-loggly|yet-another-logger|winston-loggly-transport|@tsed\\/logger-loggly|telemetry|logstar|log-file-remover|vue-loggly|@brick-city\\/loggerello|@townscript\\/logger|react-logging-error-boundary|logtry|expresser-logger-loggly|angular-loggly-mixin|samplejavas|ngx-loggly-logger-with-fields|lylog|book-loggly|stream2loggly|winston-logger-setup|leo-logger|@graphprotocol\\/pino-sentry-simple"
+    tags:

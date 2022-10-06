@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Booster
+    name: Booster
+    domains:
+      - "booster.cloud"
+    patterns:
+      - "@boostercloud\\/rocket-storage-aws-infrastructure|@boostercloud\\/rocket-batch-file-process-aws-infrastructure|@boostercloud\\/rocket-auth-aws-infrastructure"
+    tags:

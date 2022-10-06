@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Datafire
+    name: Datafire
+    domains:
+      - "datafire.io"
+    patterns:
+      - "@datafire\\/google_cloudtrace|@datafire\\/google_cloudfunctions|@datafire\\/google_clouderrorreporting|@datafire\\/google_cloudbilling|@datafire\\/google_cloudresourcemanager|@datafire\\/google_cloudkms|@datafire\\/google_clouduseraccounts|@datafire\\/google_cloudmonitoring|@datafire\\/google_cloudbuild|@datafire\\/google_clouddebugger|@datafire\\/sendgrid|@datafire\\/google_youtube|@datafire\\/google_youtubeanalytics|@datafire\\/google_youtubereporting"
+    tags:

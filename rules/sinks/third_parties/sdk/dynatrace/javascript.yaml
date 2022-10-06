@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Dynatrace.Barista
+    name: Dynatrace Barista
+    domains:
+      - "barista.dynatrace.com"
+    patterns:
+      - "@dynatrace\\/barista-components"
+    tags:
+
+  - id: ThirdParties.SDK.Dynatrace
+    name: Dynatrace
+    domains:
+      - "dynatrace.com"
+    patterns:
+      - "@dynatrace\\/oneagent-sdk|@sketchmine\\/sketch-file-format|key2dyn|@dynatrace\\/oneagent|@sketchmine\\/code-analyzer|@sketchmine\\/sketch-builder|@sketchmine\\/app-builder|@sketchmine\\/sketch-validator|@dynatrace\\/dtrum-api-types|@dynatrace\\/ngx-groundhog|@dynatrace\\/ngx-groundhog-devkit|@dynatrace\\/react-native-plugin|@sketchmine\\/sketch-file-builder|@dynatrace\\/cordova-plugin"
+    tags:

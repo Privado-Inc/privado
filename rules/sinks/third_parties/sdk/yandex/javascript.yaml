@@ -1,0 +1,29 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Yandex.Appmetrica
+    name: Yandex Appmetrica
+    domains:
+      - "appmetrica.yandex.com"
+    patterns:
+      - "yandex-appmetrica-plugin-cordova|react-native-appmetrica|react-native-appmetrica-push-sdk|@npm_redstart\\/react-native-appmetrica|react-native-appmetrica-yandex|react-native-appmetrica-up|react-native-appmetrica-next"
+    tags:
+
+  - id: ThirdParties.SDK.Yandex
+    name: Yandex
+    domains:
+      - "yandex.com"
+    patterns:
+      - "extended-google-translate-api"
+    tags:
+
+  - id: ThirdParties.SDK.Yandex
+    name: Yandex
+    domains:
+      - "yandex.ru"
+    patterns:
+      - "crypto-bot-api|@arateg\\/logger|jira.js|react-google-autocomplete|wrapme|merge-change|react-native-vkontakte-login"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Pusher
+    name: Pusher
+    domains:
+      - "pusher.com"
+    patterns:
+      - "messaging-module|react-native-pusher-push-notifications|vue-echo|react-native-pusher-push-notifications-extended|aea-nrc-pjs|juicyapp-webrtc|pusher-lambda-promise|pencil-pusher|react-realtime|react-native-realtime-pusher|bip-pod-pusher|pusher-js|vue-echo-laravel|laravel-echo-updated|laravel-echo-ionic|silicon-laravel-echo|pusher|angular-laravel-echo|use-pusher|angular-laravel-echo-edge|mongoose-pusher|hiepnguyen-laravel-echo|neoption-echo|pusher-websocket-iso|laravel-echo-sc|adonis-pusher|cycle-pusher|laravel-echo|pusher-nativescript|node-red-node-pusher|pusher-ps-cache|util-pusher-x|@pusher\\/push-notifications-server|winston-pusher|@harelpls\\/use-pusher|pusher-angular|pusher-js-auth|vue-pusher|node-pusher|react-pusher-codeby|react-pusher|opfplatform|larasocket-js|react-pusher-hoc|liquid-qex|@elasticprojects\\/pusher-js|@soketi\\/soketi|@soketi\\/pws|@petarslavnic\\/react-pusher|ngx-laravel-echo|pusher-vue|sails-service-pusher|dropperjs|pusher-status|aerostat|@goatlab\\/sockets-pusherrn|byteskode-push|helpscout-pusher-js-auth"
+    tags:

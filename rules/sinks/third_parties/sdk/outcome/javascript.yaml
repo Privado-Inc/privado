@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Outcome
+    name: Outcome
+    domains:
+      - "outcome.co"
+    patterns:
+      - "@outcome-co\\/verdaccio-google-cloud"
+    tags:
+
+  - id: ThirdParties.SDK.Outcome
+    name: Outcome
+    domains:
+      - "outcome.life"
+    patterns:
+      - "react-native-keycloak"
+    tags:

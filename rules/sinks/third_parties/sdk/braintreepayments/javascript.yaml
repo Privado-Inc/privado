@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Braintreepayments
+    name: Braintreepayments
+    domains:
+      - "braintreepayments.com"
+    patterns:
+      - "cordova-plugin-braintree|payment-fields|loopback-component-braintree|braintree|braintree-web|braintree-web-drop-in-react|braintree-angular|braintree-validation|react-braintree-fields|42-cent-braintree|braintree-spartacus-core|react-native-braintree-dropin-ui|braintree-web-react|braintree-dropin-react|vue-braintree-hosted-fields|braintree_encryption|@iteratorsmobile\\/react-native-karhoo-sdk|react-native-braintree-payments-drop-in|braintree-dropin-vue|nestjs-braintree|react-native-braintree-drop-in-module|braintree-spartacus-storefront|react-native-webview-braintree|@moovenda\\/capacitor-braintree"
+    tags:

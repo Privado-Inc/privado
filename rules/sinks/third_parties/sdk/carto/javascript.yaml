@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Carto
+    name: Carto
+    domains:
+      - "carto.com"
+    patterns:
+      - "@carto\\/react|@carto\\/react-widgets|@carto\\/cra-template-base-2|@carto\\/cra-template|@carto\\/cra-template-sample-app|@deck.gl\\/carto|windshaft|@carto\\/react-core|@carto\\/react-ui|@carto\\/react-workers|@carto\\/react-api|@carto\\/react-auth|@carto\\/do-catalog|@nativescript-community\\/ui-carto|@carto\\/cra-template-sample-app-2|@vizzuality\\/layer-manager-provider-carto|@carto\\/cra-template-sample-app-3|@carto\\/cra-template-cn|kosmtik-map-compare|tangram.cartodb|cartoassets|@carto\\/cra-template-cloud-native|@carto\\/react-basemaps|mapboxgl-draw-rectangle-drag|@carto\\/cra-template-base-3|@carto\\/cra-template-base-3-typescript"
+    tags:

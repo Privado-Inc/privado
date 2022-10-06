@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Estimote
+    name: Estimote
+    domains:
+      - "estimote.com"
+    patterns:
+      - "react-native-estimote|node-beacon-scanner|node-beacon-scanner-duplicates-check|cordova-plugin-estimote|@estimote\\/react-native-proximity|node-red-contrib-beacon-scanner|@ansgomez\\/node-beacon-scanner|@nois\\/react-native-beacons-manager|@experience-os\\/react-native-beacons-manager|@hkpuits\\/react-native-beacons-manager"
+    tags:

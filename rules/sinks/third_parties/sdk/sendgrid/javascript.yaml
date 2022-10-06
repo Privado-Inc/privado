@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Sendgrid
+    name: Sendgrid
+    domains:
+      - "sendgrid.com"
+    patterns:
+      - "@sendgrid\\/mail|@sendgrid\\/helpers|sendgrid-rest|smtpapi|@sendgrid\\/inbound-mail-parser|@sendgrid\\/eventwebhook|@sendgrid\\/contact-importer|nodebb-plugin-emailer-sendgrid|mailman|@cocreate\\/sendgrid|@ntegral\\/nestjs-sendgrid|email-verification-code-sendgrid|ghost-email-service|sendgrid-mail|@naturalcycles\\/sendgrid-helpers|node-red-contrib-sendgrid|bloggify-sendgrid|sendgrid-extended|sendgrid-mustacher|parse-server-sendgrid-adapter|loopback-sendgrid-connector|posteon|react-native-sendgrid|@kumologica\\/kumologica-contrib-sendgrid|gcrypto|@sendgrid\\/ui-components|@innocells\\/parse-server-mail-template-sendgrid-adapter|@meanie\\/mail-composer|nodejsamazingenerator|adonis-sendgrid-mail|@messageraft\\/sendgrid|devercode-sendgrid|sendgrid-nodejs-custom|moralis-server-sendgrid-email-adapter|sendgrid-v3-node|parse-server-sendgrid-template-adapter|voilab-send|gell-sendgrid|sendgrid-proxy|parse-server-sendgrid-customizable-adapter|sendgrid-event-logger|seneca-sendgrid-mail|nunjucks-emailer|node-sendgrid|@mehulbaid\\/nest-sendgrid|ne-sendgrid|smtp-to-sendgrid-gateway|apigum-sdk|sendgrid"
+    tags:

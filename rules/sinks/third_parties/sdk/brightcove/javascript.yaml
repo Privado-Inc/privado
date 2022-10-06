@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Brightcove
+    name: Brightcove
+    domains:
+      - "brightcove.com"
+    patterns:
+      - "@brightcove\\/react-player-loader|@brightcove\\/player-loader|@times-components\\/video|@bolt\\/components-brightcove-player|brightcove-react-player|react-native-brightcove-player|react-native-brightcove-ima-player|brightcove|js-player-module-brightcove|@times-components\\/brightcove-video|oddworks-brightcove-provider|@myamsani\\/brightcove-playback"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Tapdaq
+    name: Tapdaq
+    domains:
+      - "tapdaq.com"
+    patterns:
+      - "@tapdaq\\/cordova-admob-adapter|@tapdaq\\/cordova-applovin-adapter|@tapdaq\\/cordova-maio-adapter|@tapdaq\\/cordova-youappi-adapter|@tapdaq\\/cordova-pangle-adapter|@tapdaq\\/cordova-fan-adapter|@tapdaq\\/cordova-sdk|@tapdaq\\/cordova-vungle-adapter|@tapdaq\\/cordova-adcolony-adapter|@tapdaq\\/cordova-chartboost-adapter|@tapdaq\\/cordova-unityads-adapter|@tapdaq\\/cordova-tapjoy-adapter|@tapdaq\\/cordova-inmobi-adapter|@tapdaq\\/cordova-ironsource-adapter|@tapdaq\\/cordova-mintegral-adapter|react-native-tapdaq"
+    tags:

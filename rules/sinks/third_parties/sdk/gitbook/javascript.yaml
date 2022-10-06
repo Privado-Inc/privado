@@ -1,0 +1,29 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Gitbook.Aep-sdks
+    name: Gitbook Aep-sdks
+    domains:
+      - "aep-sdks.gitbook.io"
+    patterns:
+      - "@adobe\\/react-native-aepedgeidentity|@adobe\\/react-native-acpanalytics|react-native-pvt-acpanalytics|@adobe\\/react-native-aepedge"
+    tags:
+
+  - id: ThirdParties.SDK.Gitbook.Cjho88793
+    name: Gitbook Cjho88793
+    domains:
+      - "cjho88793.gitbook.io"
+    patterns:
+      - "flame.db"
+    tags:
+
+  - id: ThirdParties.SDK.Gitbook.Shiftcode
+    name: Gitbook Shiftcode
+    domains:
+      - "shiftcode.gitbook.io"
+    patterns:
+      - "@shiftcoders\\/dynamo-easy|@env0\\/dynamo-easy"
+    tags:

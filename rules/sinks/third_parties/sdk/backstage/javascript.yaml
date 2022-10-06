@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Backstage
+    name: Backstage
+    domains:
+      - "backstage.io"
+    patterns:
+      - "@backstage\\/plugin-gcp-projects|@backstage\\/plugin-cloudbuild|@backstage\\/plugin-catalog-graphql|@backstage\\/plugin-graphql-backend|@backstage\\/plugin-newrelic|@backstage\\/plugin-scaffolder|@backstage\\/plugin-search|@backstage\\/plugin-app-backend|@backstage\\/plugin-catalog|@backstage\\/core-app-api|@backstage\\/config|@backstage\\/plugin-search-backend-node|@backstage\\/plugin-github-actions|@backstage\\/plugin-catalog-react|@backstage\\/plugin-catalog-backend-module-ldap|@backstage\\/plugin-catalog-common|@backstage\\/plugin-permission-node|@backstage\\/plugin-catalog-graph|@backstage\\/plugin-search-backend|@backstage\\/plugin-org|@backstage\\/plugin-tech-radar|@backstage\\/plugin-user-settings|@backstage\\/core-plugin-api|@backstage\\/plugin-catalog-import|@backstage\\/integration-react|@backstage\\/plugin-catalog-backend|@backstage\\/plugin-scaffolder-backend|@backstage\\/app-defaults|@backstage\\/backend-common|@backstage\\/plugin-auth-backend|@backstage\\/plugin-proxy-backend|@backstage\\/catalog-model|@backstage\\/core-components|@backstage\\/plugin-permission-common|@backstage\\/backend-tasks|@amplitude\\/utils|@backstage\\/plugin-shortcuts|@backstage\\/plugin-search-react|@backstage\\/plugin-explore|@backstage\\/plugin-home|@backstage\\/plugin-permission-backend|@backstage\\/plugin-search-backend-module-pg|@backstage\\/plugin-todo|@backstage\\/plugin-todo-backend|@loblaw\\/backstage-plugin-gitlab"
+    tags:

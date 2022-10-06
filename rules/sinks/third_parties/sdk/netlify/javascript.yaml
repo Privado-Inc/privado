@@ -1,0 +1,117 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Netlify.Bright-tech
+    name: Netlify Bright-tech
+    domains:
+      - "bright-tech.netlify.app"
+    patterns:
+      - "tele-bot-api|googleapis-node"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Desolid
+    name: Netlify Desolid
+    domains:
+      - "desolid.netlify.app"
+    patterns:
+      - "desolid-admin"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Elfin
+    name: Netlify Elfin
+    domains:
+      - "elfin.netlify.app"
+    patterns:
+      - "@11in\\/cloudinary"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Gatsby-transformer-cloudinary
+    name: Netlify Gatsby-transformer-cloudinary
+    domains:
+      - "gatsby-transformer-cloudinary.netlify.com"
+    patterns:
+      - "gatsby-transformer-cloudinary"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify
+    name: Netlify
+    domains:
+      - "netlify.com"
+    patterns:
+      - "netlify-plugin-cache|netlify-identity-widget|netlify-cms-core|netlify-plugin-onboarding|netlify-cms-lib-widgets|netlify-cms-widget-file|netlify-cms-lib-auth|netlify-cms-app"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Njmyers
+    name: Netlify Njmyers
+    domains:
+      - "njmyers.netlify.com"
+    patterns:
+      - "react-youtube-component|@njmyers\\/react-you-tube"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Nuxtfire
+    name: Netlify Nuxtfire
+    domains:
+      - "nuxtfire.netlify.com"
+    patterns:
+      - "nuxt-fire"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.React-address-autocomplete
+    name: Netlify React-address-autocomplete
+    domains:
+      - "react-address-autocomplete.netlify.com"
+    patterns:
+      - "@alduncanson\\/react-address-autocomplete"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.React-google-maps-api-docs
+    name: Netlify React-google-maps-api-docs
+    domains:
+      - "react-google-maps-api-docs.netlify.app"
+    patterns:
+      - "@react-google-maps\\/api|@byrekt\\/react-google-maps-api|@capaj\\/react-google-maps-api|@capaj\\/react-google-maps-marker-clusterer|@react-google-maps\\/infobox|@react-google-maps\\/marker-clusterer"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.React-google-maps-api-docs
+    name: Netlify React-google-maps-api-docs
+    domains:
+      - "react-google-maps-api-docs.netlify.com"
+    patterns:
+      - "@slorber\\/react-google-maps|react-google-maps-api"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Sgts
+    name: Netlify Sgts
+    domains:
+      - "sgts.netlify.com"
+    patterns:
+      - "simple-graphql-to-typescript"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Storybook-addon-headless
+    name: Netlify Storybook-addon-headless
+    domains:
+      - "storybook-addon-headless.netlify.com"
+    patterns:
+      - "storybook-addon-headless"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Vue-intercom
+    name: Netlify Vue-intercom
+    domains:
+      - "vue-intercom.netlify.com"
+    patterns:
+      - "@mathieustan\\/vue-intercom"
+    tags:
+
+  - id: ThirdParties.SDK.Netlify.Vue3paystack
+    name: Netlify Vue3paystack
+    domains:
+      - "vue3paystack.netlify.app"
+    patterns:
+      - "vue3-paystack"
+    tags:
