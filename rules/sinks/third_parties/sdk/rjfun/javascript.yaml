@@ -1,4 +1,4 @@
-rules: 
+sinks: 
 
   - id: ThirdParties.SDK.GitHubRJFun.Rjfun
     name: Github Rjfun
