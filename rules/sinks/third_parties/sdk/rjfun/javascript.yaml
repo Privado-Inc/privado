@@ -1,9 +1,0 @@
-sinks: 
-
-  - id: ThirdParties.SDK.GitHubRJFun.Rjfun
-    name: Github Rjfun
-    domains:
-      - "rjfun.github.io"
-    patterns:
-      - "cordova-facebook-audnet-sdk|cordova-plugin-nativeaudio|cordova-plugin-httpd|cordova-plugin-iflyspeech|cordova-plugin-extension|cordova-plugin-mmedia|cordova-plugin-nativeaudio2|cordova-plugin-bye|cordova-plugin-sms-manager|cordova-plugin-admob-inmobi|cordova-plugin-sms|ipa-deploy|cordova-plugin-qq|smartqq-bot|mixin-pro|cordova-plugin-iad|plugin-verify|aa-cordova-plugin-sms|cordova-plugin-appleiap|cordova-plugin-admob-mmedia"
-    tags:
