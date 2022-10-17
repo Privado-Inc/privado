@@ -9,5 +9,5 @@ sinks:
     domains:
       - "twilio.com"
     patterns:
-      - "(?i)(com[.]twilio[.](sdk|jwt|http|rest|base|security|twiml|Twilio)).*"
+      - "(?i)(com[.]twilio.*(sdk|jwt|http|rest|base|security|twiml|Twilio|connect|disconnect|release|initialize|getState|createDevice)).*"
     tags:
