@@ -57,7 +57,7 @@ sinks:
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(com[.]google[.]firebase|com[.]google[.]android[.]gms[.]measurement).*"
+      - "(?i)(com[.]google[.]firebase(?![.]crashlytics)|com[.]google[.]android[.]gms[.]measurement).*"
     tags:
     
   - id: ThirdParties.SDK.Google.Fit
