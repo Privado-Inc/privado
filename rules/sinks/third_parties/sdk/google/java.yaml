@@ -108,3 +108,10 @@ sinks:
       - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar|com[.]google[.]android[.]gms[.](games|wallet)).*"
     tags:
     
+  - id: ThirdParties.SDK.Google.Crashlytics
+    name: Google Crashlytics
+    domains:
+      - "crashlytics.google.com"
+    patterns:
+      - "(?i)(com[.]crashlytics|com.firebase.crashlytics|com.google.firebase.crashlytics).*"
+    tags: 
