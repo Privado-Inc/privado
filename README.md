@@ -6,6 +6,8 @@ Privado is an open-source static code analysis tool to discover data flows in th
 
 <img src="https://user-images.githubusercontent.com/80044360/186333819-779bfff5-d7a2-4bba-88e9-0ca866e1ee81.gif" width="600px">
 
+# Supported languages
+Currently, only Java is supported, but JS/TS support is arriving soon! We're also working on modifying the architecture to make it easier to accept community contributions to language support.
 
 # Quick Start
 
@@ -87,9 +89,6 @@ Our free cloud platform can be used to generate RoPA reports for one or more syn
 
 ## Data Safety Report
 A Data Safety Report is a privacy form needed to publish any Android app on the Play Store. Most of the time, filling out a report means developers asking around the team to find what data they're collecting, spending hours reading SDK docs to see where information gets shared and navigating the complex Playstore form. With our scan, we pre-fill data types that are collected and shared, and our wizard guides you through generating the report.
-
-# Supported languages
-Currently, only Java is supported in the open-source project. As part of the Enterprise offering, Privado supports all languages. We are working on modifying the architecture to make it easier to accept community contributions to language support.
 
 # Contribute
 Please check out our [contribution page](https://docs.privado.ai/extra/contributing) if you love this project and would like to contribute.
