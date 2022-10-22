@@ -5,5 +5,5 @@ sinks:
     domains:
       - scylladb.com
     patterns:
-      - "(scylla-migration|@skyring\/scylladown|composeaddresstranslator|node-scylla).*"
+      - (scylla-migration|@skyring\/scylladown|composeaddresstranslator|node-scylla).*
     tags: 
