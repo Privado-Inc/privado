@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.AmazonS3.ReadAndWrite
+    name: Amazon S3
+    domains:
+      - aws.amazon.com
+    patterns: 
+      - "mongo-dump-s3-2|mongodb-dump-backup-aws-s3|cloudrail-si|node-mongodump-s3|amazons3-files-copier|node-document-storage-amazons3|@filesrocket\/amazons3|filesrocket-amazons3|rf-amazons3-upload|@royal-fox\/rf-amazons3-upload"
+    tags:
+
+
+
+
+
+
+
+
