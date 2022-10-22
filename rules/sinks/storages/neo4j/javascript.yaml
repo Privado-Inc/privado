@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.Neo4jGraphDatabase.ReadAndWrite
+    name: Neo4j Graph Database
+    domains:
+      - neo4j.com
+    patterns:
+      - "(neo4j|node-neo4j|connect-neo4j-user|cypher-stream|neodb|neo4j-client-sso|opentelemetry-instrumentation-neo4j|ogmneo|moneo|neo4j-module|connect-neo4j|@ambassify\/neo4j-retried|neo4j-io|apoc|neo4jkb|highlightjs-cypher|neo4j-stream|@mathix420\/graphql|grunt-neo4j|neo4jd3|neo4j-driver-lite|neo4jv1|@brakebein\/nest-neo4j|dodex-quarkus|neo4j-query|guaphy|@nhogs\/nestjs-neo4j|loopback-connector-neo4j-graph|cypher-talker|neo4j-redis|neo4j-transactions|@pandaai\/graphql-fork|neo4j-bulk|neoprene|seneca-seraph|co-cypher|cypher-query-language-builder|cgkb|neo-for-nest|@sonibble-creators\/neo4j-nest|nc-neo4j|neo4j-driver-core|neo4j-ha-bolt-driver|javascript-cypher|graphviz-config-template|neo4j-data-migrations|graph-acl|neo4j-js|ts-neo4j-parser|qcypher|neocy|node2neo-schema|neo4j-driver-bolt-connection|sgnm-neo4j|nirsky-test-neo4j|ineo|neo4j-seed|neo4j-qb|neo4j-typescript|hemera-neo4j-store|hyperflat|neo4j-embedded|fluent-cypher|@elie222\/neo4jd3|neo4jd3_extended|graphology-neo4j|neode-nestjs|popoto-neo4j-graph-app|popoto|dans-neo4j-graphql|@next-auth\/neo4j-adapter|node2neo-model|node2neo|@neode\/express|neo-forgery|mongo4j|active-graph-record|@neo4j\/graphql-ogm|@markonis\/neo4j|@duoduo-oba\/neo4jd3|neo4j-graph-renderer|@neo4j\/graphql|qcphyer|swql2cypher|base-autoritativa-connectors|pragmaticsolutionjs|@thecodenebula\/cypher-fluent-js|neo4j-driver|simple-neo4j-wrapper|generator-soa|@neo4j\/browser-lambda-parser|rainbird-neo4j|@dbc-tech\/nest-neo4j|neodash|neovis.js|seraph-model|@jerni\/store-neo4j|@talentsec\/neo4j-viz|neo4j-graphviz|weaver-connector-neo4j|opennames-to-neo4j|neo4j-browser|bloom-harvesting-neo4j-import|neo4j-supervisor|react-sigma|neo4j-migrate|neodm|sails-neo4j|neo4-js|neo4ts|@v-doc\/neorm|@jekel18\/neorm).*" 
+    tags:

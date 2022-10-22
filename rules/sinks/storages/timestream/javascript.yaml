@@ -1,0 +1,10 @@
+sinks:
+
+  - id: Storages.AmazonTimestream.ReadAndWrite
+    name: Amazon Timestream
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(@polybit\/ti|stream-joins|timestream-aggregates|logstreamtool|timestream-aggregates-strings|mqtt-aws-timestream|timestream-ops|streamlined|timestream-filters|timestream-gen|ts-rollup|@copper\/plugin-timestream|timestream|@nordicsemiconductor\/timestream-helpers|fastify-aws-timestream|@aws-sdk\/client-timestream-write|@aws-sdk\/client-timestream-query|@aws-cdk\/aws-timestream|@trivikr-test\/client-timestream-write-esm|@trivikr-test\/client-timestream-write-esm-wrapper|@trivikr-test\/client-timestream-query-esm|@trivikr-test\/client-timestream-query-esm-wrapper|@mattnick\/aws-timestream-easy|@trivikr-test\/client-timestream-write|@trivikr-test\/client-timestream-query|signalk-to-timestream-lambda|timestreamdb|timestream_processing|@dustfoundation\/timestream-kit|signalk-to-timestream|amazon_timestream_processing|@build-in-the-cloud\/ssl-checker-cdk|timestream-helpers|@datafire\/amazonaws_timestream_write|@datafire\/amazonaws_timestream_query|timestream-browser).*"
+    tags:

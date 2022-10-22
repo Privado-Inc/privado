@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.MySQL.ReadAndWrite
+    name: MySQL
+    domains:
+      - mysql.com
+    patterns: 
+      - "(mysql2|sql-template-strings|common-errors|tunnel-ssh|@mysql\/xdevapi|mysql-promise|egg-mysql|mysqlconnector|gimlet|mysql-abstraction|hapi-plugin-mysql|my-sql|sqlutils|mariasql|ah-sequelize-plugin|knex-schema-inspector|aws-xray-sdk-mysql|promise-mysql|@hyoga\/mysql|nodeadmin|zion-egg-mysql|@naturalcycles\/db-lib|sharp-db|machinepack-mysql|mysql-live-select|@zhennann\/mysql2|yesql|mysql-simple-query|larvitdb|schemart|anytv-node-mysql|mysql-await|k|persistanz|sql-dao|@spacex2020\/mybatis-mapper|zongji|mysqldesc|nodejs-mysql|mysqlspec|ts-sql|cls-mysql|phplike|mybatis-mapper|@wmp-sbd\/aws-xray-sdk-mysql|@evershop\/mysql-query-builder|mysql2-import|directus|akeke_sequelize_egg_mysql_model|mysql|denque|sqlstring|ali-h-mysql|@ln-maf\/mysql|pool-mysql|jugglingdb|mysql2-promise|@grouparoo\/mysql|winston-mysql|sync-mysql|itsa-mysql-promise|db3|marv-mysql-driver|async-mysql|mysql-parse|think-mysql-dyh|mysql2-extended|mongo-mysql|@nodejscart\/mysql-query-builder|egg-mysql-x|ali-mysql-client|@sematext\/logagent|adocker-mysql|nk-mysql|data-elevator-mysql|@aponica\/goosemgr-mysqlgoose-js|apeman-proto-mysql|egg-mysql-ex|mysql-connection-pool-manager|sails-mysql|think-model-mysql|think-model|like-mysql|simple-mysql-orm|think-model-abstract|mysql-qb|easier_query|@loke\/mysql-orm|think-model-mysql-v2|@axiosleo\/orm-mysql|sails-mysql-atomic).*"
+    tags:
