@@ -2,9 +2,7 @@
 [![slack](https://img.shields.io/badge/slack-privado-5A34D9.svg?logo=slack)](https://join.slack.com/t/privado-community/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)
 [![docs](https://img.shields.io/badge/docs-gitbook-brightgreen.svg?logo=gitbook)](https://docs.privado.ai)
 
-Privado is an open-source static code analysis tool to discover data flows in the code. It detects more than 120 Personal Information data elements being processed and further maps the data flow from the point of collection to "sinks" such as external third parties, databases, logs, and internal APIs.
-
-The entire list of data elements detected by the tool can be found [here](docs/extra/data%20element%20list.csv)
+Privado is an open-source static code analysis tool to discover data flows in the code. It detects more than 120 Personal Information [data elements](docs/extra/data%20element%20list.csv) being processed and further maps the data flow from the point of collection to "sinks" such as external third parties, databases, logs, and internal APIs.
 
 <img src="https://user-images.githubusercontent.com/80044360/186333819-779bfff5-d7a2-4bba-88e9-0ca866e1ee81.gif" width="600px">
 
