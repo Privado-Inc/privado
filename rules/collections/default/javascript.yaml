@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.Express
+    name: Express framework restendpoint
+    patterns: 
+      - "express.post"
+    tags:
