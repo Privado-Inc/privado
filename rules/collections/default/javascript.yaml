@@ -2,5 +2,5 @@ collections:
   - id: Collections.Express
     name: Express framework restendpoint
     patterns: 
-      - "express.post"
+      - "express.(post|get|all)"
     tags:
