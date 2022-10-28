@@ -6,5 +6,5 @@ sinks:
       - hbase.apache.org
       - apache.org
     patterns:
-      - (hbase-rest-cli|btsc|byter|hbase-client|node-thrift2-hbase|hbase-thrift2-client|thunderclap|ryba|yildiz|neso-job-common|node-hbase-thrift2|io-hbase|okey-hbase-thrift2|phoenix-client|winston-hbase|bigtable-erd-generator|@xa-neso\/job-common|node-red-contrib-hadoopmqttbridge|hbase|@tg1518\/hbase|hbase2|crawler-hbase|thrift-hbase-client|ripple-hbase-client|node-hbase|hbase-rpc-client|@alicloud\/hbase20190101|hequelize|phoenix-proxy|hbase-doc-zh|hbase-wrapper|node-thrift1-hbase|node-thrift-hbase|node-hbase-thrift2-datatype|hbase-thrift|@clouddb\/hbase-core|object-hbase-mapping).*
+      - "(?:hbase-rest-cli|btsc|byter|hbase-client|node-thrift2-hbase|hbase-thrift2-client|thunderclap|ryba|yildiz|neso-job-common|node-hbase-thrift2|io-hbase|okey-hbase-thrift2|phoenix-client|winston-hbase|bigtable-erd-generator|@xa-neso/job-common|node-red-contrib-hadoopmqttbridge|hbase|@tg1518/hbase|hbase2|crawler-hbase|thrift-hbase-client|ripple-hbase-client|node-hbase|hbase-rpc-client|@alicloud/hbase20190101|hequelize|phoenix-proxy|hbase-doc-zh|hbase-wrapper|node-thrift1-hbase|node-thrift-hbase|node-hbase-thrift2-datatype|hbase-thrift|@clouddb/hbase-core|object-hbase-mapping).*"
     tags:

@@ -6,5 +6,5 @@ sinks:
       - cloud.google.com
       - google.com
     patterns:
-      - (bigtable-kafka-connect|@google-cloud\/bigtable|hypertable-driver|vertical-db|yildiz|b-cell|vertical-client|vertical-server|bigtable-erd-generator|tablelize|@maxim_mazurok\/gapi.client.bigtableadmin|@maxim_mazurok\/gapi.client.bigtableadmin-v2|@googleapis\/bigtableadmin|@types\/gapi.client.bigtableadmin|@types\/gapi.client.bigtableadmin-v2|bigtable-client|js-data-bigtable|el-bigtable|@datafire\/google_bigtableadmin|@bigtable\/ng-bigtable).*
+      - "(?:bigtable-kafka-connect|@google-cloud/bigtable|hypertable-driver|vertical-db|yildiz|b-cell|vertical-client|vertical-server|bigtable-erd-generator|tablelize|@maxim_mazurok/gapi.client.bigtableadmin|@maxim_mazurok/gapi.client.bigtableadmin-v2|@googleapis/bigtableadmin|@types/gapi.client.bigtableadmin|@types/gapi.client.bigtableadmin-v2|bigtable-client|js-data-bigtable|el-bigtable|@datafire/google_bigtableadmin|@bigtable/ng-bigtable).*"
     tags:
