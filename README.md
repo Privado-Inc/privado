@@ -11,7 +11,7 @@ Currently, only Java is supported, but JS/TS support is arriving soon! We're als
 
 # Quick Start
 
-Follow these simple steps to get started with Privado.
+First, make sure you have [Docker](https://docs.docker.com/get-docker/) installed on your system, then follow these simple steps to get started with Privado.
 
 ### Download the Privado CLI
 
