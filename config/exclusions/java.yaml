@@ -2,7 +2,7 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - ".*/src/test/.*"
+      - "(.*/src/test/.*)|/Test|Test[.]"
 
   - id: Exclusions.Empty
     name: Exclude file which cannot be read
