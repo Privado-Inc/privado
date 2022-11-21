@@ -1,0 +1,10 @@
+sinkSkipList:
+  - id: SinkSkipList.ThirdParties
+    name: Skip Third Party Sinks
+    patterns:
+      - "(?i)(android\\.|javax\\.|androidx\\.|okhttp3\\.|io.grpc\\.|io.netty\\.|org.apache.http\\.|org.json|org.junit\\.|org.apache.commons\\.|org.apache.tomcat|org.springframework\\.|com.fasterxml.jackson\\.|org.apache.hadoop\\.|org.apache.giraph\\.|org.javatuples\\.|org.antlr\\.|junit.framework\\.|io.reactivex\\.|com.bumptech.glide|com.google.protobuf|com.google.testing|com.google.common.*).*"
+
+  - id: SinkSkipList.BuiltInLib
+    name: Skip built in language libraries
+    patterns:
+      - "(?i)(<empty>|iterator.*|assert.*|void\\..*|java\\..*|ANY\\..*|<operator>\\..*|<operators>\\..*|<unresolvedNamespace.*>.).*"
