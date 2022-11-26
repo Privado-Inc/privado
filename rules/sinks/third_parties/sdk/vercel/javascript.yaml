@@ -1,0 +1,45 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Vercel.Benzene
+    name: Vercel Benzene
+    domains:
+      - "benzene.vercel.app"
+    patterns:
+      - "@benzene\\/http|@benzene\\/core"
+    tags:
+
+  - id: ThirdParties.SDK.Vercel.Davincipaints
+    name: Vercel Davincipaints
+    domains:
+      - "davincipaints.vercel.app"
+    patterns:
+      - "react-davinci-editor"
+    tags:
+
+  - id: ThirdParties.SDK.Vercel.Msw-sb
+    name: Vercel Msw-sb
+    domains:
+      - "msw-sb.vercel.app"
+    patterns:
+      - "msw-storybook-addon"
+    tags:
+
+  - id: ThirdParties.SDK.Vercel.Nestjs-telegraf
+    name: Vercel Nestjs-telegraf
+    domains:
+      - "nestjs-telegraf.vercel.app"
+    patterns:
+      - "nestjs-telegraf"
+    tags:
+
+  - id: ThirdParties.SDK.Vercel
+    name: Vercel
+    domains:
+      - "vercel.com"
+    patterns:
+      - "@plainheart\\/google-translate-api"
+    tags:

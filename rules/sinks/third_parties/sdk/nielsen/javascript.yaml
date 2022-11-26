@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Nielsen.Global
+    name: Nielsen Global
+    domains:
+      - "global.nielsen.com"
+    patterns:
+      - "@segment\\/analytics.js-integration-nielsen-dcr|@segment\\/analytics.js-integration-nielsen-dtvr"
+    tags:

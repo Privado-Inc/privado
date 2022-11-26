@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Braze
+    name: Braze
+    domains:
+      - "braze.com"
+    patterns:
+      - "@braze\\/web-sdk-no-amd|@rudderstack\\/rudder-integration-braze-react-native|@segment\\/analytics.js-integration-appboy|@vivianhealth\\/braze-segment-debounce|@itly\\/plugin-braze-node|@braze\\/service-worker|react-native-appboy-sdk|appboy-web-sdk|@braze\\/web-sdk|@braze\\/web-sdk-core|brazejs"
+    tags:

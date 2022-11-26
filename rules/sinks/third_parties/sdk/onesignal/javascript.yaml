@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Onesignal
+    name: Onesignal
+    domains:
+      - "onesignal.com"
+    patterns:
+      - "react-native-onesignal|onesignal-node|node-opensignal-api|nativescript-onesignal|simple-onesignal|onesignal|1signal|onesignal-push-icon|react-onesignal|@vtex\\/gatsby-plugin-onesignal|react-native-onesignal-vannguyen|onesignal-expo-plugin|onesignal-vue|ngx-onesignal|todesktop-push-receiver|onesignal-ngx|node-onesignal|onesignal-website-sdk-types|loopback-connector-onesignal|studo.js|ngx-onesignal-plus|nodebb-plugin-onesignal"
+    tags:

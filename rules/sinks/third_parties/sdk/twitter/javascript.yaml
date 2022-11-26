@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Twitter
+    name: Twitter
+    domains:
+      - "twitter.com"
+    patterns:
+      - "twitter-woeid|ngx-twitter-api|twitterize|twi-js|tweets|twitint|@cybercat-stu\\/twitter-pack|retweet|chirp-rest|hello-twitter|sinos-river-level-twitter|twitter-puppeteer|@studiolabs\\/react-native-simple-twitter|promised-twitter|weibo|expo-mopub|twitter|node-twitter-api|login-with-twitter|twitter-ng|twitter-stream-api|twitter-lite|twitter-fetcher|twitter-scrape|twitter-api|twitter-rest|twitter-pin-auth|tuiter|twitter2mongodb|twitter-1.1|react-native-twitter|tweet-tweet|bacon-and-eggs|twitter2return|twit-thread|twitter-rest-lite|@sugarcube\\/plugin-twitter|unio|chirp-stream|tstream|auth1-twitter|twit|node-red-contrib-twitter-stream|twitter-api-v2|klout|twitter-request|twitter-node-sdk|nodejs-snowflake|twitterer.js|stream-tweets|vinelib|easy-twitter|hashtag-count|get-tweet|tweet-fetcher|twode|rite|twitter-v2|bank-fan|twitreq|twitter-d|twitter-autohook|@cocreate\\/twitter|codebird|blerg|gatsby-source-twitter|tscraper|twit-core|twttr|twitterlib|node-red-contrib-twitter-follow|@frizz925\\/twitter|twitter-error-handler|twitter-auth-await|node-red-contrib-twitter|twitter-types|twitter-v2-withproxy|twitter.js|react-native-simple-twitter|@paulxuca\\/twitter-lite|twitter-login|flutter|twitter-lite-v2|react-native-twitter-lite|twitter-v1-oauth|@kossnocorp\\/twitter-lite|promised-twit|@silverbirder\\/cotlin|bird|twoot|temp-twitter-v2|ts-twitter-provider|vue-login-with-twitter|twitter-video|flatten-tweet|tweets-to-json|node-seen|react-native-tweet|twitterfetcher|twitter-promise|twtrbot|giffer-adapter-twitter|twitter-server|@aestetype\\/node-social-api|mdptwitterlite|@theowenyoung\\/gatsby-source-twitter|quick-twitter-bot|twii|ptrpt-twitter|fetch-tweets|weibo-timestamp|passport-twitter|passport-twitter-token"
+    tags:

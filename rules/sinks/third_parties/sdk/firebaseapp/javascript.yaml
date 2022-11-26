@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Firebaseapp.Ngx-auth-firebaseui
+    name: Firebaseapp Ngx-auth-firebaseui
+    domains:
+      - "ngx-auth-firebaseui.firebaseapp.com"
+    patterns:
+      - "ngx-auth-firebaseui|@asithade\\/ngx-auth-firebaseui"
+    tags:

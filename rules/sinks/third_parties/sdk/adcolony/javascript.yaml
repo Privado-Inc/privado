@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Adcolony
+    name: Adcolony
+    domains:
+      - "adcolony.com"
+    patterns:
+      - "cordova-plugin-ad-adcolony|@wowmaking\\/react-native-iron-source-adcolony|chadori-mobile-ironsource-adcolony|@wowmaking\\/react-native-iron-source-mintegral|@ironsource-plus\\/mediation-adcolony|cocoon-plugin-ads-ios-mopub-adcolony"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.ScyllaDB.ReadAndWrite
+    name: ScyllaDB
+    domains:
+      - scylladb.com
+    patterns:
+      - "(?:scylla-migration|@skyring/scylladown|composeaddresstranslator|node-scylla).*"
+    tags: 

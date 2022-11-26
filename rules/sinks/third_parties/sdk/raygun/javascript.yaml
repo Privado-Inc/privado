@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Raygun
+    name: Raygun
+    domains:
+      - "raygun.com"
+    patterns:
+      - "raygun-apm"
+    tags:
+
+  - id: ThirdParties.SDK.Raygun
+    name: Raygun
+    domains:
+      - "raygun.io"
+    patterns:
+      - "raygun4reactnative|raygun|raygun4js"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Liangyali
+    name: Liangyali
+    domains:
+      - "liangyali.com"
+    patterns:
+      - "passport-wechat|li-wechat|@zhennann\\/passport-wechat|passport-wechat-x"
+    tags:

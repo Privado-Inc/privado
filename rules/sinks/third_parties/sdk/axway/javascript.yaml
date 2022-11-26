@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Axway.Platform
+    name: Axway Platform
+    domains:
+      - "platform.axway.com"
+    patterns:
+      - "@axway\\/api-builder|@axway\\/api-builder-plugin-fn-dot|@axway\\/api-builder-plugin-ft-timer|@axway\\/serviceconnector-ce|@axway\\/api-builder-plugin-ft-solace|arrow-flow-invoke|@axway\\/api-builder-sdk|@axway\\/api-builder-uri-utils|@axway\\/api-builder-project-utils|@axway\\/api-builder-config|@axway\\/flow|axway-flow-graph|@axway\\/axway-flow-authorization|@axway\\/requester|@axway\\/api-builder-plugin-fn-swagger|@axway\\/api-builder-flow-invoke|axway-flow|nodehandler-utils|arrow-admin-ui|arrow-endpoint|@axway\\/api-builder-plugin-fn-base64|@axway\\/api-builder-plugin-fn-json|@axway\\/api-builder-plugin-fn-javascript|@axway\\/api-builder-admin|@axway\\/api-builder-plugin-ft-cron"
+    tags:
