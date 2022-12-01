@@ -7,9 +7,17 @@ semantics:
   - signature: "android.text.TextUtils.isEmpty:boolean(java.lang.String)"
     flow: "1->-1"
   
+  - signature: "android.text.TextUtils.isEmpty:<unresolvedSignature>(1)"
+    flow: "1->-1"
+  
   - signature: "org.apache.http.HttpResponse.getStatusLine:org.apache.http.StatusLine()"
     flow: "0->0"
 
+  - signature: "org.apache.http.HttpResponse.getStatusLine:<unresolvedSignature>(0)"
+    flow: "0->0"
+
   - signature: "org.apache.http.StatusLine.getStatusCode:boolean()"
+
+  - signature: "org.apache.http.StatusLine.getStatusCode:<unresolvedSignature>(0)"
 
   
