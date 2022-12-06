@@ -4,7 +4,7 @@
 sinks:
 
   - id: Storages.Elasticsearch.Read
-    name: Elasticsearch(Read)
+    name: Solr(Read)
     domains:
       - elastic.co
     patterns:
@@ -12,7 +12,7 @@ sinks:
     tags:
 
   - id: Storages.Elasticsearch.Write
-    name: Elasticsearch(Write)
+    name: Solr(Write)
     domains:
       - elastic.co
     patterns:
