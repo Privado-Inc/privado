@@ -4,7 +4,7 @@
 sinks:
 
   - id: Storages.ApacheCassandra.ReadAndWrite
-    name: Apache Cassandra
+    name: Ben's Database Type
     domains:
       - cassandra.apache.org
       - apache.org
