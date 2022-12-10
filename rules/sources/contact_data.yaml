@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)(.*(?<!(ip|mac|email|server|logical|physical|port|public|private)[-_]?)address)|(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)|(?:pin|zip|postal|metro)[-_\\[<'. ]{0,2}code|(?:delivery|pickup)[^\\s/(;)#|,=!>]{0,10}(?:location|position)|house[^\\s/(;)#|,=!>]{0,2}(?:number|no)|address[-_.]{0,2}line"
+      - "(?i)(.*(?<!(ip|mac|email|server|logical|physical|port|public|private|inet|cc|bcc|to|data|internet|host)[-_]?)address)|(?:home|house|billing|mailing|shipping|contact|delivery|office|person|policyholder|insurer|claimant)[^\\s/(;)#|,=!>]{0,10}(?:address|addr)|(?:pin|zip|postal|metro)[-_\\[<'. ]{0,2}code|(?:delivery|pickup)[^\\s/(;)#|,=!>]{0,10}(?:location|position)|house[^\\s/(;)#|,=!>]{0,2}(?:number|no)|address[-_.]{0,2}line]"
     tags:
       law: GDPR
   

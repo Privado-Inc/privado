@@ -2,10 +2,12 @@
 [![slack](https://img.shields.io/badge/slack-privado-5A34D9.svg?logo=slack)](https://join.slack.com/t/privado-community/shared_invite/zt-yk5zcxh3-gj8sS9w6SvL5lNYZLMbIpw)
 [![docs](https://img.shields.io/badge/docs-gitbook-brightgreen.svg?logo=gitbook)](https://docs.privado.ai)
 
-Privado is an open-source static code analysis tool to discover data flows in the code. It detects Personally Identifiable Information (PII) being processed and further maps the data flow from the point of collection to "sinks" such as external third parties, databases, logs, and internal APIs.
+Privado is an open-source static code analysis tool to discover data flows in the code. It detects more than 110 [personal data elements](docs/extra/data%20element%20list.csv) being processed and further maps the data flow from the point of collection to "sinks" such as external third parties, databases, logs, and internal APIs.
 
 <img src="https://user-images.githubusercontent.com/80044360/186333819-779bfff5-d7a2-4bba-88e9-0ca866e1ee81.gif" width="600px">
 
+# Supported languages
+Currently, only Java is supported, but JS/TS support is arriving soon! We're also working on modifying the architecture to make it easier to accept community contributions to language support.
 
 # Quick Start
 
@@ -87,9 +89,6 @@ Our free cloud platform can be used to generate RoPA reports for one or more syn
 
 ## Data Safety Report
 A Data Safety Report is a privacy form needed to publish any Android app on the Play Store. Most of the time, filling out a report means developers asking around the team to find what data they're collecting, spending hours reading SDK docs to see where information gets shared and navigating the complex Playstore form. With our scan, we pre-fill data types that are collected and shared, and our wizard guides you through generating the report.
-
-# Supported languages
-Currently, only Java is supported in the open-source project. As part of the Enterprise offering, Privado supports all languages. We are working on modifying the architecture to make it easier to accept community contributions to language support.
 
 # Contribute
 Please check out our [contribution page](https://docs.privado.ai/extra/contributing) if you love this project and would like to contribute.
