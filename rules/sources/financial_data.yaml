@@ -36,7 +36,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i).*(virtual[^\\s/(;)#|,=!>]{0,5}payment[^\\s/(;)#|,=!>]{0,5}address|virtual[^\\s/(;)#|,=!>]{0,5}payment|upi[-_\\[<'.]{0,2}id)|(merchant|payee|payment|retailer|dealer|seller|vendor)[-_]{0,1}vpa|vpa[-_]{0,1}id"
+      - "(?i).*(virtual[^\\s/(;)#|,=!>]{0,5}payment[^\\s/(;)#|,=!>]{0,5}address|virtual[^\\s/(;)#|,=!>]{0,5}payment|upi[-_\\[<'.]{0,2}id)|(merchant|payee|payment|retailer|dealer|seller|vendor)[-_]{0,1}vpa|vpa[-_]{0,1}id])"
     tags:
       law: GDPR
 
