@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sendgrid.com"
     patterns:
-      - "(?i)(clj-sendgrid|com[.]flozano[.]sendgrid|com[.]sendgrid[.]labs|com[.]sendgrid).*(add|set|send|api).*:.*"
+      - "(?i)(clj-sendgrid|com[.]flozano[.]sendgrid|com[.]sendgrid[.]labs|com[.]sendgrid).*(add|set|send|api|mail|make|attempt|APICallback).*:.*"
     tags:
