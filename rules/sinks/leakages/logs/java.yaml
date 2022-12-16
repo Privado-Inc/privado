@@ -15,7 +15,7 @@ sinks:
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|log|[.](d|v)[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|log|trace|[.](d|v|t)[:]).*"
     tags:
   
   - id: Leakages.Log.Info
