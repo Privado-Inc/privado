@@ -1,0 +1,7 @@
+sinks:
+  - id: Storages.Android.CookieManager
+    name: Android Cookie Manager
+    patterns:
+      - "(?i)(.*)(set|save)(cookie|token)([s]?)(.*)"
+    tags:
+      law: GDPR
