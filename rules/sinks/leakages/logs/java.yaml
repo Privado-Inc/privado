@@ -3,7 +3,7 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:error|severe|fatal|[.]e[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:wtf|error|severe|fatal|[.]e[:]).*"
     tags:
     
   - id: Leakages.Log.Warn
@@ -28,4 +28,10 @@ sinks:
     name: Log Console
     patterns: 
       - "(?i)(java.io.PrintStream|android.util.(?:Log){0,1}Printer).(?:print|println|write).*"
+    tags:
+
+  - id: Leakages.Log.equals
+    name: Log Equal
+    patterns:
+      - "(?i)(?:org.slf4j.Logger).*(?:equals).*"
     tags:
