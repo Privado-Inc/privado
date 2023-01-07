@@ -30,7 +30,7 @@ sinks:
       - "(?i)(java.io.PrintStream|android.util.(?:Log){0,1}Printer).(?:print|println|write).*"
     tags:
 
-  - id: Leakages.Log.equals
+  - id: Leakages.Log.Equals
     name: Log Equal
     patterns:
       - "(?i)(?:org.slf4j.Logger).*(?:equals).*"
