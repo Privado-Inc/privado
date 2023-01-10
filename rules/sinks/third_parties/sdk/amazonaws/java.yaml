@@ -4,10 +4,138 @@
 
 sinks:
 
+  - id: ThirdParties.SDK.Amazonaws.S3
+    name: Amazonaws S3
+    domains:
+      - "s3.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]s3).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Scala
+    name: Amazonaws Scala
+    domains:
+      - "scala.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]scala).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Kinesis
+    name: Amazonaws Kinesis
+    domains:
+      - "kinesis.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]kinesis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ManagedBlockchain
+    name: Amazonaws ManagedBlockchain
+    domains:
+      - "managedblockchain.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]managedblockchain).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Glacier
+    name: Amazonaws Glacier
+    domains:
+      - "glacier.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]glacier).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.EBS
+    name: Amazonaws EBS
+    domains:
+      - "ebs.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]ebs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticFileSystem
+    name: Amazonaws ElasticFileSystem
+    domains:
+      - "elasticfilesystem.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]elasticfilesystem).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.FSx
+    name: Amazonaws FSx
+    domains:
+      - "fsx.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]fsx).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Backup
+    name: Amazonaws Backup
+    domains:
+      - "backup.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]backup).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.DRS
+    name: Amazonaws DRS
+    domains:
+      - "drs.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]drs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Snowball
+    name: Amazonaws Snowball
+    domains:
+      - "snowball.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]snowball).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.StorageGateway
+    name: Amazonaws StorageGateway
+    domains:
+      - "storagegateway.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]storagegateway).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.eventbridge
+    name: Amazonaws EventBridge
+    domains:
+      - "eventBridge.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]eventbridge).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SQS
+    name: Amazonaws SQS
+    domains:
+      - "sqs.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]sqs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.StepFunctions
+    name: Amazonaws StepFunctions
+    domains:
+      - "stepfunctions.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]stepfunctions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.GroundStation
+    name: Amazonaws GroundStation
+    domains:
+      - "groundstation.services.amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]groundstation).*"
+    tags:
+
   - id: ThirdParties.SDK.Amazonaws
     name: Amazonaws
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]s3|com[.]amazonaws[.]scala|com[.]amazonaws).*"
+      - "(?i)(com[.]amazonaws).*"
     tags:
