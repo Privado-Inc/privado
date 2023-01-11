@@ -1,6 +1,0 @@
-sinks:
-  - id: Storages.Android.SharedPreferences
-    name: Android Shared Preferences
-    patterns:
-      - "(?i)(android.os.bundle.)(putstring)(.*)"
-    tags:
