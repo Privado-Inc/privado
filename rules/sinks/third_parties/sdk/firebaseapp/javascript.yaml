@@ -11,3 +11,59 @@ sinks:
     patterns:
       - "ngx-auth-firebaseui|@asithade\\/ngx-auth-firebaseui"
     tags:
+
+  - id: ThirdParties.SDK.Firebaseapp.React-firebase-hooks
+    name: Firebaseapp React-firebase-hooks
+    domains:
+      - "react-firebase-hooks.firebaseapp.com"
+    patterns:
+      - "react-firebase-hooks|@use-firebase/app"
+    tags:
+
+  - id: ThirdParties.SDK.Firebaseapp.Firebase-admin
+    name: Firebaseapp Firebase-admin
+    domains:
+      - "firebase.googleapis.com"
+    patterns:
+      - "firebase-admin|@firebase/admin"
+    tags:
+
+  - id: Firebase.SDK.Authentication
+    name: Firebase Authentication
+    domains:
+      - "firebase.com", "google.com", "facebook.com", "apple.com"
+    patterns:
+      # There is no specific regex pattern for Firebase Authentication, as the SDK allows users to sign in using multiple providers, each with their own pattern.
+    tags:
+
+  - id: Firebase.SDK.Realtime-Database
+    name: Firebase Realtime Database
+    domains:
+      - "firebaseio.com"
+    patterns:
+      - "https://[YOUR_APP_NAME].firebaseio.com"
+    tags:
+
+  - id: Firebase.SDK.Cloud-Firestore
+    name: Firebase Cloud Firestore
+    domains:
+      - "firestore.googleapis.com"
+    patterns:
+      - "https://firestore.googleapis.com/v1/projects/[YOUR_PROJECT_ID]/databases/(default)/documents/"
+    tags:
+
+  - id: Firebase.SDK.Cloud-Storage
+    name: Firebase Cloud Storage
+    domains:
+      - "storage.googleapis.com"
+    patterns:
+      - "https://storage.googleapis.com/[YOUR_BUCKET_NAME]"
+    tags:
+
+  - id: Firebase.SDK.Cloud-Messaging
+    name: Firebase Cloud Messaging
+    domains:
+      - "fcm.googleapis.com"
+    patterns:
+      - "https://fcm.googleapis.com/v1/projects/[YOUR_PROJECT_ID]/messages"
+    tags:
