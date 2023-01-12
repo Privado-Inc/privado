@@ -30,8 +30,8 @@ sinks:
       - "(?i)(java.io.PrintStream|android.util.(?:Log){0,1}Printer).(?:print|println|write).*"
     tags:
 
-  - id: Leakages.Log.Equals
-    name: Log Equal
+  - id: Leakages.Log.IP
+    name: IP Address
     patterns:
-      - "(?i)(?:org.slf4j.Logger).*(?:equals).*"
+      - "(?i)(\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)"
     tags:
