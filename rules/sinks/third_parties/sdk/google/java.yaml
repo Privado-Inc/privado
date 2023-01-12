@@ -20,14 +20,191 @@ sinks:
       - "(?i)(com[.]google[.]api[.]services[.]analytics|com[.]google[.]android[.]gms[.]analytics).*"
     tags:
 
-  - id: ThirdParties.SDK.Google.Cloud
-    name: Google Cloud
+  - id: ThirdParties.SDK.Google.Cloud.Storage
+    name: Google Cloud Storage
+    domains:
+      - "storage.cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]storage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Datastore
+    name: Google Cloud Datastore
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]storage|com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]datastore|com[.]google[.]cloud).*"
+      - "(?i)(com[.]google[.]cloud[.]datastore|com[.]google[.]cloud[.]grpc).*"
     tags:
-    
+
+  - id: ThirdParties.SDK.Google.Cloud.Spanner
+    name: Google Cloud Spanner
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]spanner|com[.]google[.]cloud[.]grpc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Firestore
+    name: Google Cloud Firestore
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]firestore|com[.]google[.]cloud[.]grpc[.]firestore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataflow
+    name: Google Cloud Dataflow
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]grpc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SQL
+    name: Google Cloud SQL
+    domains:
+      - "cloud.google.com/sql/"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]sql|com[.]google[.]cloud[.]grpc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DLP
+    name: Google Cloud Data Loss Prevention
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]privacy[.]dlp[.]v2|com[.]google[.]privacy[.]dlp[.]v2[.]DlpServiceClient).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Memorystore
+    name: Google Cloud Memorystore
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]redis[.]v1|com[.]google[.]cloud[.]redis[.]v1[.]CloudRedisClient).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Pubsub
+    name: Google Cloud Pub/Sub
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Bigquery
+    name: Google Cloud BigQuery
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]bigquery|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Google.Cloud.Vision
+    name: Google Cloud Vision
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]vision|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Translation
+    name: Google Cloud Translation
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]translate|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Speech-to-Text
+    name: Google Cloud Speech-to-Text
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]speech|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Text-to-Speech
+    name: Google Cloud Text-to-Speech
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]texttospeech|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Natural-language
+    name: Google Cloud Natural Language
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]language|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AutoML
+    name: Google Cloud AutoML
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]automl|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.IAM
+    name: Google Cloud IAM
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]iam|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataproc
+    name: Google Cloud Dataproc
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataproc|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Data-Catalog
+    name: Google Cloud Data Catalog
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datacatalog|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataprep
+    name: Google Cloud Dataprep
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataprep|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Datalab
+    name: Google Cloud Datalab
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datalab|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Endpoints
+    name: Google Cloud Endpoints
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]endpoints|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Machine-Learning-Engine
+    name: Google Cloud Machine Learning Engine
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]mlengine|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+    tags:
+
   - id: ThirdParties.SDK.Google.CloudMessaging
     name: Google Cloud Messaging
     domains:
