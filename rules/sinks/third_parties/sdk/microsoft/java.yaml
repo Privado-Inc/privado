@@ -4,10 +4,474 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Microsoft.Azure
-    name: Microsoft Azure
+  - id: ThirdParties.SDK.Microsoft.Azure.Functions
+    name: Microsoft Azure Functions
     domains:
       - "azure.microsoft.com"
     patterns:
-      - "(?i)(com[.]microsoft[.]azure[.]functions|com[.]microsoft[.]azure[.]android|com[.]microsoft[.]azure|com[.]microsoft[.]appcenter|com[.]microsoft[.]azure[.]applicationinsights|com[.]microsoft[.]azure[.]appplatform|com[.]microsoft[.]azure[.]appservice|com[.]microsoft[.]azure[.]authorization|com[.]microsoft[.]azure[.]cognitiveservices|com[.]microsoft[.]azure[.]compute|com[.]microsoft[.]azure[.]containerservice|com[.]microsoft[.]azure[.]datafactory|com[.]microsoft[.]azure[.]dns|com[.]microsoft[.]azure[.]eventhubs|com[.]microsoft[.]azure[.]healthcareapis|com[.]microsoft[.]azure[.]iothub-java-client|com[.]microsoft[.]azure[.]keyvault|com[.]microsoft[.]azure[.]locks|com[.]microsoft[.]azure[.]monitor|com[.]microsoft[.]azure[.]network|com[.]microsoft[.]azure[.]operationsmanagement|com[.]microsoft[.]azure[.]policy|com[.]microsoft[.]azure[.]recoveryservices[.]backup|com[.]microsoft[.]azure[.]resourcehealth|com[.]microsoft[.]azure[.]resources|com[.]microsoft[.]azure[.]sdk[.]iot[.]deps|com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning[.]security|com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning|com[.]microsoft[.]azure[.]sdk[.]iot|com[.]microsoft[.]azure[.]spatialanchors|com[.]microsoft[.]azure[.]storage|com[.]microsoft[.]bingads|com[.]microsoft[.]cognitiveservices[.]speech|com[.]microsoft[.]graph|com[.]microsoft[.]windowsazure[.]storage[.]microsoft-windowsazure-storage-sdk|com[.]microsoft[.]windowsazure[.]storage|com[.]microsoft[.]windowsazure).*"
+      - "(?i)(com[.]microsoft[.]azure[.]functions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Android
+    name: Microsoft Azure Android
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]android).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.App-Center
+    name: Microsoft Azure App Center
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com.microsoft.appcenter).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Application-Insights
+    name: Microsoft Azure Application Insights
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]applicationinsights).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.App-Service
+    name: Microsoft Azure App Service
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]appservice).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Compute
+    name: Microsoft Azure Compute
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]compute).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Container-Service
+    name: Microsoft Container Service
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]containerservice).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DNS
+    name: Microsoft Azure DNS
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]dns).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Healthcare
+    name: Microsoft Azure Healthcare
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)("com[.]microsoft[.]azure[.]healthcareapis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Monitor
+    name: Microsoft Azure Monitor
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]monitor).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Network
+    name: Microsoft Azure Network
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]network).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Operations-Management
+    name: Microsoft Azure Operations Management
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]operationsmanagement).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Policy
+    name: Microsoft Azure Policy
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]policy).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Backup
+    name: Microsoft Azure Backup
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]recoveryservices[.]backup).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Resource-Health
+    name: Microsoft Azure Resource Health
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]resourcehealth).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Resource-Manager
+    name: Microsoft Azure Resource Manager
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]resources).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoT
+    name: Microsoft Azure IoT
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]sdk[.]iot[.]deps|com[.]microsoft[.]azure[.]sdk[.]iot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoT-Provisioning-Security
+    name: Microsoft Azure IoT Provisioning Security
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning[.]security).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoT-Device-Provisioning
+    name: Microsoft Azure IoT Device Provisioning
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Spatial-Anchors
+    name: Microsoft Azure Spatial Anchors
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]azure[.]spatialanchors).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Bing Ads
+    name: Microsoft Azure Bing Ads
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]bingads).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Windows
+    name: Microsoft Azure Windows
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]windowsazure).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Cognitive-Services-Speech
+    name: Microsoft Azure Cognitive Services Speech
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]cognitiveservices[.]speech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Graph
+    name: Microsoft Graph
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(com[.]microsoft[.]graph).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Eventhubs
+    name: Microsoft Azure Event Hubs
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]eventhubs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Stream-Analytics
+    name: Microsoft Azure Stream Analytics
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]streamanalytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Data-Factory
+    name: Microsoft Azure Data Factory
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]datafactory).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Data-Lake-Storage
+    name: Microsoft Azure Data Lake Storage
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]data[.]lake[.]store).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Cognitive-Services
+    name: Microsoft Azure Cognitive Services
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]cognitiveservices|com[.]azure[.]ai[.]cognitiveservices).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.SQL-Database
+    name: Microsoft Azure SQL Database
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]cosmosdb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Blob-Storage
+    name: Microsoft Azure Blob Storage
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]storage[.]blob).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Key-Vault
+    name: Microsoft Azure Key Vault
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]security[.]keyvault).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CosmosDB
+    name: Microsoft Azure Cosmos DB
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]cosmos).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CosmosDB-Table
+    name: Microsoft Azure Cosmos DB Table
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]data[.]table).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Search
+    name: Microsoft Azure Search
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]search[.]documents).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Machine-Learning
+    name: Microsoft Azure Machine Learning
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]metricsadvisor).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Media-Services
+    name: Microsoft Azure Media Services
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]mediaservices).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Identity
+    name: Microsoft Azure Identity
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]identity).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Storage
+    name: Microsoft Azure Storage
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]storage|com[.]microsoft[.]windowsazure[.]storage[.]microsoft-windowsazure-storage-sdk|com[.]microsoft[.]windowsazure[.]storage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoT-Hub
+    name: Microsoft Azure IoT Hub
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]sdk[.]iot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Data-Lake-Analytics
+    name: Microsoft Azure Data Lake Analytics
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]data[.]lake[.]analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Event-Grid
+    name: Microsoft Azure Event Grid
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]eventgrid).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Personalizer
+    name: Microsoft Azure Personalizer
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]personalizer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Face
+    name: Microsoft Azure Face
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]face).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Computer-Vision
+    name: Microsoft Azure Computer Vision
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]vision[.]computervision).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Text-Analytics
+    name: Microsoft Azure Text Analytics
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]textanalytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Communication-Services
+    name: Microsoft Azure Communication Services
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]communication).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Speech
+    name: Microsoft Azure Speech
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]speech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.LanguageUnderstanding
+    name: Microsoft Azure Language Understanding
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]language).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Text-to-Speech
+    name: Microsoft Azure Text-to-Speech
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]ai[.]texttospeech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Bot-Framework
+    name: Microsoft Azure Bot Framework
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]bot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Personal-Data
+    name: Microsoft Azure Personal Data
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]personalization).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Power-BI
+    name: Microsoft Azure Power BI
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]powerbi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Dynamics365
+    name: Microsoft Azure Dynamics 365
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]dynamics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Power-Platform
+    name: Microsoft Azure Power Platform
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]powerplatform).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Power-Apps
+    name: Microsoft Azure Power Apps
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]powerapps).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Databricks
+    name: Microsoft Azure Databricks
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]databricks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Time-Series-Insights
+    name: Microsoft Azure Time Series Insights
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]timeseriesinsights).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Notification-Hubs
+    name: Microsoft Azure Notification Hubs
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i)(com[.]azure[.]notificationhubs).*"
     tags:
