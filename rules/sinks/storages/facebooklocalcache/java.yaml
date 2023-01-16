@@ -1,0 +1,14 @@
+sinks:
+  - id: Storages.Facebook.LocalCache
+    name: Facebook Android Local Cache
+    patterns:
+      - "(?i)(.*)(com.facebook.Session.saveTokenToCache:void(com.facebook.AccessToken))(.*)"
+      - "(?i)(.*)(com.facebook.TestSession.setTokenInfo:void(com.facebook.AccessToken))(.*)"
+    tags:
+      law: GDPR
+  - id: Storages.Facebook.SaveCookie
+    name: Facebook Android Cookie
+    patterns:
+      - "(?i)(.*)(com.facebook.AuthorizationClient$WebViewAuthHandler.saveCookieToken:void(java.lang.String))(.*)"
+    tags:
+      law: GDPR
