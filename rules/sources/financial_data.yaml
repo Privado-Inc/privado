@@ -42,7 +42,7 @@ sources:
   - id: Data.Sensitive.FinancialData.PaymentNonce
     name: Payment Nonce
     category: Financial Data
-    isSensitive: True
+    isSensitive: False
     sensitivity: Medium
     patterns:
       - "(?i)(.*)(payment[s]?)(nonce)(.*)"
