@@ -41,7 +41,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]spanner|com[.]google[.]cloud[.]grpc).*"
+      - "(?i)(com[.]google[.]cloud[.]spanner).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Firestore
@@ -49,7 +49,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]firestore|com[.]google[.]cloud[.]grpc[.]firestore).*"
+      - "(?i)(com[.]google[.]cloud[.]firestore).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Dataflow
@@ -57,7 +57,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]grpc).*"
+      - "(?i)(com[.]google[.]cloud[.]dataflow).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.SQL
@@ -65,7 +65,7 @@ sinks:
     domains:
       - "cloud.google.com/sql/"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]sql|com[.]google[.]cloud[.]grpc).*"
+      - "(?i)(com[.]google[.]cloud[.]sql).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.DLP
@@ -89,7 +89,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]api[.]client).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Bigquery
@@ -97,7 +97,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]bigquery|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]bigquery).*"
     tags:
 
 
@@ -106,7 +106,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]vision|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]vision).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Translation
@@ -114,7 +114,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]translate|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]translate).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Speech-to-Text
@@ -122,7 +122,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]speech|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]speech).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Text-to-Speech
@@ -130,7 +130,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]texttospeech|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]texttospeech).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Natural-language
@@ -138,7 +138,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]language|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]language).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.AutoML
@@ -146,7 +146,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]automl|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]automl).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.IAM
@@ -154,7 +154,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]iam|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]iam).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Dataproc
@@ -162,7 +162,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]dataproc|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]dataproc).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Data-Catalog
@@ -170,7 +170,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]datacatalog|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]datacatalog).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Dataprep
@@ -178,7 +178,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]dataprep|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]dataprep).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Datalab
@@ -186,7 +186,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]datalab|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]datalab).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Endpoints
@@ -194,7 +194,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]endpoints|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]endpoints).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Machine-Learning-Engine
@@ -202,7 +202,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]mlengine|com[.]google[.]cloud[.]grpc|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]mlengine).*"
     tags:
 
   - id: ThirdParties.SDK.Google.CloudMessaging
