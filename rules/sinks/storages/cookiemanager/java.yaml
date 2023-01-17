@@ -2,7 +2,6 @@ sinks:
   - id: Storages.Android.CookieManager
     name: Android Cookie Manager
     patterns:
-      - "(?i)(.*)(android.webkit.CookieManager.setCookie:<unresolvedSignature>(2))(.*)"
-      - "(?i)(.*)(android.webkit.CookieManager.setCookie:void(2))(.*)"
+      - "(?i)(.*)(android.webkit.CookieManager.setCookie(.*)"
     tags:
       law: GDPR

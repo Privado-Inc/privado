@@ -2,8 +2,7 @@ sinks:
   - id: Storages.Facebook.LocalCache
     name: Facebook Android Local Cache
     patterns:
-      - "(?i)(.*)(com.facebook.Session.saveTokenToCache:void(com.facebook.AccessToken))(.*)"
-      - "(?i)(.*)(com.facebook.TestSession.setTokenInfo:void(com.facebook.AccessToken))(.*)"
+      - "(?i)(.*)(com.facebook.Session.saveTokenToCache(.*)"
     tags:
       law: GDPR
   - id: Storages.Facebook.SaveCookie
