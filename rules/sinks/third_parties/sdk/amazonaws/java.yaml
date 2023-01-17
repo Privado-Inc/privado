@@ -12,18 +12,10 @@ sinks:
       - "(?i)(com[.]amazonaws[.]s3).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.Scala
-    name: Amazonaws Scala
-    domains:
-      - "scala.amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]scala).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.Kinesis
     name: Amazonaws Kinesis
     domains:
-      - "kinesis.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]kinesis).*"
     tags:
@@ -31,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ManagedBlockchain
     name: Amazonaws ManagedBlockchain
     domains:
-      - "managedblockchain.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]managedblockchain).*"
     tags:
@@ -39,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Glacier
     name: Amazonaws Glacier
     domains:
-      - "glacier.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]glacier).*"
     tags:
@@ -47,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.EBS
     name: Amazonaws EBS
     domains:
-      - "ebs.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]ebs).*"
     tags:
@@ -55,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ElasticFileSystem
     name: Amazonaws ElasticFileSystem
     domains:
-      - "elasticfilesystem.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]elasticfilesystem).*"
     tags:
@@ -63,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.FSx
     name: Amazonaws FSx
     domains:
-      - "fsx.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]fsx).*"
     tags:
@@ -71,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Backup
     name: Amazonaws Backup
     domains:
-      - "backup.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]backup).*"
     tags:
@@ -79,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.DRS
     name: Amazonaws DRS
     domains:
-      - "drs.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]drs).*"
     tags:
@@ -87,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Snowball
     name: Amazonaws Snowball
     domains:
-      - "snowball.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]snowball).*"
     tags:
@@ -95,15 +87,15 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.StorageGateway
     name: Amazonaws StorageGateway
     domains:
-      - "storagegateway.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]storagegateway).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.eventbridge
+  - id: ThirdParties.SDK.Amazonaws.Eventbridge
     name: Amazonaws EventBridge
     domains:
-      - "eventBridge.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]eventbridge).*"
     tags:
@@ -111,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SQS
     name: Amazonaws SQS
     domains:
-      - "sqs.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]sqs).*"
     tags:
@@ -119,7 +111,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.StepFunctions
     name: Amazonaws StepFunctions
     domains:
-      - "stepfunctions.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]stepfunctions).*"
     tags:
@@ -127,15 +119,344 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.GroundStation
     name: Amazonaws GroundStation
     domains:
-      - "groundstation.services.amazonaws.com"
+      - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]groundstation).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws
-    name: Amazonaws
+  - id: ThirdParties.SDK.Amazonaws.Elasticsearch
+    name: Amazonaws Elasticsearch
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws).*"
+      - "(?i)(com[.]amazonaws[.]services[.]elasticsearch).*"
     tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Transcribe
+    name: Amazonaws Transcribe
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]transcribe).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Personalize
+    name: Amazonaws Personalize
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]personalize).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Translate
+    name: Amazonaws Translate
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]translate).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Comprehend
+    name: Amazonaws Comprehend
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]comprehend).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleEmailService
+    name: Amazonaws Simple Email Service
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]ses).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleNotificationService
+    name: Amazonaws Simple Notification Service
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]sns).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Rekognition
+    name: Amazonaws Rekognition
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]rekognition).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.TranscribeMedical
+    name: Amazonaws Transcribe Medical
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]transcribemedical').*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.TranscribeAutomaticSpeechRecognition
+    name: Amazonaws Transcribe Automatic Speech Recognition
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]transcribeasr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.TranscribeStreaming
+    name: Amazonaws Transcribe Streaming
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]transcribestreaming).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Connect
+    name: Amazonaws Connect
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]connect).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleDB
+    name: Amazonaws SimpleDB
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]simpledb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Elasticache
+    name: Amazonaws Elasticache
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]elasticache).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticFileSystem
+    name: Amazonaws Elastic File System
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]efs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticContainerRegistry
+    name: Amazonaws Elastic Container Registry
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]ecr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticContainerService
+    name: Amazonaws Elastic Container Service
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]ecs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticKubernetesService
+    name: Amazonaws Elastic Kubernetes Service
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]eks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.AppSync
+    name: Amazonaws AppSync
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]appsync).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticMapReduce
+    name: Amazonaws Elastic MapReduce
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]elasticmapreduce).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.QuickSight
+    name: Amazonaws QuickSight
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]quickSight ).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Forecast
+    name: Amazonaws Forecast
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]forecast).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.FraudDetector
+    name: Amazonaws Fraud Detector
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]frauddetector).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.KinesisDataFirehose
+    name: Amazonaws Kinesis Data Firehose
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]kinesisfirehose).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Pinpoint
+    name: Amazonaws Pinpoint
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]pinpoint).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.AppStream
+    name: Amazonaws AppStream
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]appstream).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ComprehendMedical
+    name: Amazonaws Comprehend Medical
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]comprehendmedical).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SageMaker
+    name: Amazonaws SageMaker
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]sagemaker).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Textract
+    name: Amazonaws Textract
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]textract).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.TranslateMedical
+    name: Amazonaws Translate Medical
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]translatemedical).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.TranslateCustom
+    name: Amazonaws Translate Custom
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]translatecustom).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Kendra
+    name: Amazonaws Kendra
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]kendra).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Neptune
+    name: Amazonaws Neptune
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]neptune).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Timestream
+    name: Amazonaws Timestream
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]timestreamquery).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.QuantumLedgerDatabase
+    name: Amazonaws Quantum Ledger Database
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]qldb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.DocumentDB
+    name: Amazonaws DocumentDB
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]docdb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Keyspaces
+    name: Amazonaws Keyspaces
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]keyspaces).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleWorkflowService
+    name: Amazonaws Simple Workflow Service
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]simpleworkflow).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.CloudWatch
+    name: Amazonaws CloudWatch
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]cloudwatch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.CloudFormation
+    name: Amazonaws CloudFormation
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]cloudformation).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.CloudTrail
+    name: Amazonaws CloudTrail
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]cloudtrail).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Config
+    name: Amazonaws Config
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]config).*"
+    tags:
+
