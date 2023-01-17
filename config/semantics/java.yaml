@@ -27,7 +27,7 @@ semantics:
   - signature: "com.braintreepayments.api.models.PaymentMethodNonce.getNonce:<unresolvedSignature>(0)"
     flow: "0->-1"
 
-  - signature: "com.braintreepayments.api.models.PaymentMethodNonce.getNonce:java.lang.String(0)"
+  - signature: "com.braintreepayments.api.models.PaymentMethodNonce.getNonce:java.lang.String()"
     flow: "0->-1"
 
   - signature: "java.lang.String.split:java.lang.String[](java.lang.String)"
