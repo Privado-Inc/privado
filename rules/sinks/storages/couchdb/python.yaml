@@ -1,0 +1,30 @@
+# Sink Rules for storage database Apache Couch DB - https://couchdb.apache.org/
+
+sinks:
+
+  - id: Storages.ApacheCouchDb.Read
+    name: Apache Couch DB(Read)
+    domains:
+      - couchdb.apache.org
+      - apache.org
+    patterns:
+      - "(i?)(?:couchdb).*(?:find|get|get.{0,1}attachment|list|put.{0,1}attachment).*"
+    tags:
+
+  - id: Storages.ApacheCouchDb.Write
+    name: Apache Couch DB(Write)
+    domains:
+      - couchdb.apache.org
+      - apache.org
+    patterns:
+      - "(i?)(?:couchdb).*(?:create|put.{0,1}attachment|delete|update).*"
+    tags:
+
+- id: Storages.ApacheCouchDb.ReadAndWrite
+    name: Apache Couch DB
+    domains:
+      - couchdb.apache.org
+      - apache.org
+    patterns:
+      - "(i?)(?:couchdb).*(?:query|save).*"
+    tags:

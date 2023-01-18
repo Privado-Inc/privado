@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.AmazonS3.Read
+    name: Amazon S3
+    domains:
+      - aws.amazon.com
+    patterns: 
+      - "(i?)boto\d{0,1}.*(?:bucket|download_file|upload_file|download_fileobj|presigned_url).*"
+    tags:
