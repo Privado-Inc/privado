@@ -45,9 +45,9 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)^(user|person|customer|under|years|yrs|human)?(age)"
-      - "(?i)^(age)(of)(human|years|yrs|user|person|customer)?$"
-      - "(?i)^(is)(minor|child|adult|major|underage|legal)$"
+      - "(?i)^(user|person|customer|under|years|yrs|human)?(_)?(of|in)?(_)?(age)$"
+      - "(?i)^(age)(_)?(of|in)?(_)?(human|years|yrs|user|person|customer)?$"
+      - "(?i)^(is)(_)?(minor|child|adult|major|underage|legal)$"
     tags:
       law: GDPR
 
