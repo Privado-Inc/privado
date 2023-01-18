@@ -1,0 +1,28 @@
+
+# Sink Rules for storage database MySQL - https://www.mysql.com/
+
+sinks:
+
+  - id: Storages.MySQL.Read
+    name: MySQL(Read)
+    domains:
+      - mysql.com
+    patterns: 
+      - "(i?)(?:mysql.*connector|mysqldb|flask_mysqldb).*(?:get|find|fetch).*"
+    tags:
+
+  - id: Storages.MySQL.Write
+    name: MySQL(Write)
+    domains:
+      - mysql.com
+    patterns: 
+      - "(i?)(?:mysql.*connector|mysqldb|flask_mysqldb).*(?:insert|update|remove|delete).*"
+    tags:
+  
+  - id: Storages.MySQL.ReadAndWrite
+    name: MySQL
+    domains:
+      - mysql.com
+    patterns:
+      - "(i?)(?:mysql.*connector|mysqldb|flask_mysqldb).*(?:execute).*"
+    tags:

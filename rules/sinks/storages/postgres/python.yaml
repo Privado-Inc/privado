@@ -1,0 +1,16 @@
+sinks:
+  - id: Storages.Postgres.ReadAndWrite
+    name: Postgres Sql
+    domains:
+      - postgresql.org
+    patterns:
+      - "(i?)(psycopg.*cursor.*execute.*)"
+    tags:
+
+  - id: Storages.Postgres.Read
+    name: Postgres Sql(Read)
+    domains:
+      - postgresql.org
+    patterns:
+      - "(i?)psycopg.*cursor.*fetch.*"
+    tags:
