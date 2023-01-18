@@ -257,7 +257,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ecr|com[.]amazonaws[.]services[.]ecrpublic).*"
+      - "(?i)(com[.]amazonaws[.]services[.]ecr).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.ElasticContainerService
@@ -489,7 +489,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]lexruntime|com[.]amazonaws[.]services[.]lexruntimev2).*"
+      - "(?i)(com[.]amazonaws[.]services[.]lexruntime).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Batch
@@ -537,7 +537,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]opsworkscm|com[.]amazonaws[.]services[.]opsworks).*"
+      - "(?i)(com[.]amazonaws[.]services[.]opsworks).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.XRay
@@ -610,7 +610,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]greengrass|com[.]amazonaws[.]services[.]greengrassv2).*"
+      - "(?i)(com[.]amazonaws[.]services[.]greengrass).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.MarketplaceEntitlement
@@ -634,7 +634,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]pinpointsmsvoice|com[.]amazonaws[.]services[.]pinpointsmsvoicev2).*"
+      - "(?i)(com[.]amazonaws[.]services[.]pinpointsmsvoice).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.RelationalDatabaseService
@@ -979,7 +979,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]waf|com[.]amazonaws[.]services[.]wafv2).*"
+      - "(?i)(com[.]amazonaws[.]services[.]waf).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Prometheus
@@ -1235,7 +1235,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]opensearchserverless|com[.]amazonaws[.]services[.]opensearch).*"
+      - "(?i)(com[.]amazonaws[.]services[.]opensearch).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.KinesisVideoWebRTCStorage
@@ -1275,7 +1275,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]supportapp|com[.]amazonaws[.]services[.]support).*"
+      - "(?i)(com[.]amazonaws[.]services[.]support).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.ChimeSDKVoice
@@ -1443,7 +1443,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]inspector|com[.]amazonaws[.]services[.]inspector2).*"
+      - "(?i)(com[.]amazonaws[.]services[.]inspector).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Devicefarm
