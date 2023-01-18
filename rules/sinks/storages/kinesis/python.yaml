@@ -1,0 +1,22 @@
+
+# Sink Rules for storage database Amazon Kinesis - https://aws.amazon.com/kinesis/
+
+sinks:
+
+  - id: Storages.AmazonKinesis.Read
+    name: Amazon Kinesis(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(i?)boto\d{0,1}.*kinesis.*client.*(?:get|fetch|find).*"
+    tags:
+
+  - id: Storages.AmazonKinesis.Write
+    name: Amazon Kinesis(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(i?)boto\d{0,1}.*kinesis.*client.*(?:put|update|replace|add).*"
+    tags:
