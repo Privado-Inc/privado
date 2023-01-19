@@ -17,7 +17,7 @@ sinks:
     domains:
       - "amplitude.com"
     patterns:
-      - "(?i)(com[.]amplitude[:][analytics]).*"
+      - "(?i)(com[.]amplitude[.]analytics).*"
     tags:
 
   - id: ThirdParties.SDK.Java
@@ -25,7 +25,7 @@ sinks:
     domains:
       - "amplitude.com"
     patterns:
-      - "(?i)(com[.]amplitude[:][java]).*"
+      - "(?i)(com[.]amplitude[.]java).*"
     tags:
 
   - id: ThirdParties.SDK.Amplitude.Experiment
@@ -33,5 +33,5 @@ sinks:
     domains:
       - "amplitude.com"
     patterns:
-      - "(?i)(com[.]amplitude[:][experiment]).*"
+      - "(?i)(com[.]amplitude[.]experiment).*"
     tags:
