@@ -9,7 +9,7 @@ sinks:
     domains:
       - "segment.com"
     patterns:
-      - "(?i)(com[.]segment[.]analytics[.]android|com[.]segment[.]analytics[.]java|io[.]segment[.]analytics[.]android).*"
+      - "(?i)(com[.]segment[.]analytics[.]android|io[.]segment[.]analytics[.]android).*"
     tags:
 
   - id: ThirdParties.SDK.Segment.Java
@@ -20,58 +20,10 @@ sinks:
       - "(?i)(com[.]segment[.]analytics[.]java).*"
     tags:
 
-  - id: ThirdParties.SDK.Segment.Javascript
-    name: Segment Analytics Javascript
-    domains:
-      - "segment.com"
-    patterns:
-      - "(?i)(com[.]segment[.]analytics[.]javascript).*"
-    tags:
-
-  - id: ThirdParties.SDK.Segment.Python
-    name: Segment Analytics Python
-    domains:
-      - "segment.com"
-    patterns:
-      - "(?i)(com[.]segment[.]analytics[.]python|io[.]segment[.]analytics[.]python).*"
-    tags:
-
-  - id: ThirdParties.SDK.Segment.Ruby
-    name: Segment Analytics Ruby
-    domains:
-      - "segment.com"
-    patterns:
-      - "(?i)(com[.]segment[.]analytics[.]ruby|io[.]segment[.]analytics[.]ruby).*"
-    tags:
-
-  - id: ThirdParties.SDK.Segment.IOS
-    name: Segment Analytics IOS
-    domains:
-      - "segment.com"
-    patterns:
-      - "(?i)(com[.]segment[.]analytics[.]ios).*"
-    tags:
-
-  - id: ThirdParties.SDK.Segment.Kotlin
-    name: Segment Analytics Kotlin
-    domains:
-      - "segment.com"
-    patterns:
-      - "(?i)(com[.]segment[.]analytics[.]kotlin).*"
-    tags:
-
   - id: ThirdParties.SDK.Segment.API
     name: Segment API
     domains:
       - "segment.com"
     patterns:
       - "(?i)(com[.]segment[.]api).*"
-    tags:
-
-  - id: ThirdParties.SDK.Segment.php
-    name: Segment Analytics PHP
-    domains:
-      - "segment.com"
-    patterns:
-      - "(?i)(io[.]segment[.]analytics[.]php|com[.]segment[.]analytics[.]php).*"
     tags:
