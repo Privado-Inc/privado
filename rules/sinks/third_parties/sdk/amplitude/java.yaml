@@ -9,5 +9,29 @@ sinks:
     domains:
       - "amplitude.com"
     patterns:
-      - "(?i)(com[.]amplitude|com[.]rudderstack[.]android[.]amplitude|com[.]rudderstack[.]android[.]integration[.]amplitude).*"
+      - "(?i)(com[.]rudderstack[.]android[.]amplitude|com[.]rudderstack[.]android[.]integration[.]amplitude).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amplitude.Analytics
+    name: Amplitude Analytics
+    domains:
+      - "amplitude.com"
+    patterns:
+      - "(?i)(com[.]amplitude[:][analytics]).*"
+    tags:
+
+  - id: ThirdParties.SDK.Java
+    name: Amplitude Java
+    domains:
+      - "amplitude.com"
+    patterns:
+      - "(?i)(com[.]amplitude[:][java]).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amplitude.Experiment
+    name: Amplitude Experiment
+    domains:
+      - "amplitude.com"
+    patterns:
+      - "(?i)(com[.]amplitude[:][experiment]).*"
     tags:
