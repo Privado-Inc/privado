@@ -4,8 +4,8 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Amplitude
-    name: Amplitude
+  - id: ThirdParties.SDK.Amplitude.Rudderstack
+    name: Amplitude Rudderstack
     domains:
       - "amplitude.com"
     patterns:
