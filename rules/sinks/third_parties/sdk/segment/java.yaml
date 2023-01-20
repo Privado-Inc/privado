@@ -27,3 +27,99 @@ sinks:
     patterns:
       - "(?i)(com[.]segment[.]api).*"
     tags:
+
+  - id: ThirdParties.SDK.Segment.Internal
+    name: Segment Analytics Internal
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]internal).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Integrations
+    name: Segment Analytics Integrations
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]integrations).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Analytics
+    name: Segment Analytics
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]Analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Cartographer
+    name: Segment Analytics Cartographer
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]Cartographer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Crypto
+    name: Segment Analytics Crypto
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]Crypto).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.GetDeviceIdTask
+    name: Segment Analytics GetDeviceIdTask
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]GetDeviceIdTask).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Options
+    name: Segment Analytics Options
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]Options).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Properties
+    name: Segment Analytics Properties
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]Properties).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.QueueFile
+    name: Segment Analytics QueueFile
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]QueueFile).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.Traits
+    name: Segment Analytics Traits
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]Traits).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.ValueMap
+    name: Segment Analytics ValueMap
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]ValueMap).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment.WebhookIntegration
+    name: Segment Analytics WebhookIntegration
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(com[.]segment[.]analytics[.]WebhookIntegration).*"
+    tags:
