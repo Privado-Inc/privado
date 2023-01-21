@@ -1,0 +1,13 @@
+
+# Sink Rules for storage database Azure Cosmos DB - https://azure.microsoft.com/en-us/services/cosmos-db/
+
+sinks:
+
+  - id: Storages.AzureCosmosDb
+    name: Azure Cosmos DB
+    domains:
+      - azure.microsoft.com
+      - microsoft.com
+    patterns:
+      - "(i?).*(?:azure.*cosmos).*(?:create.{0,1}item|read.{0,1}item|delete.{0,1}item|query).*"
+    tags:
