@@ -5,5 +5,5 @@ sinks:
     domains:
       - aws.amazon.com
     patterns: 
-      - "(i?)boto\d{0,1}.*(?:bucket|download_file|upload_file|download_fileobj|presigned_url).*"
+      - "(i?)boto.*(?:bucket|download.{0,1}file|upload.{0,1}file|download.{0,1}fileobj|presigned.{0,1}url).*"
     tags:

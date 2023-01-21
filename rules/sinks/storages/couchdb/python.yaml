@@ -20,7 +20,7 @@ sinks:
       - "(i?)(?:couchdb).*(?:create|put.{0,1}attachment|delete|update).*"
     tags:
 
-- id: Storages.ApacheCouchDb.ReadAndWrite
+  - id: Storages.ApacheCouchDb.ReadAndWrite
     name: Apache Couch DB
     domains:
       - couchdb.apache.org
