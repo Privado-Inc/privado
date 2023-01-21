@@ -9,7 +9,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)boto\d{0,1}.*kinesis.*client.*(?:get|fetch|find).*"
+      - "(i?)boto.*kinesis.*client.*(?:get|fetch|find).*"
     tags:
 
   - id: Storages.AmazonKinesis.Write
@@ -18,5 +18,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)boto\d{0,1}.*kinesis.*client.*(?:put|update|replace|add).*"
+      - "(i?)boto.*kinesis.*client.*(?:put|update|replace|add).*"
     tags:
