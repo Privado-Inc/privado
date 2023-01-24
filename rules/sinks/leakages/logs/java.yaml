@@ -3,7 +3,7 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:error|severe|fatal|[.]e[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.apache.logging.log4j|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:wtf|error|severe|fatal|[.]e[:]).*"
     tags:
     
   - id: Leakages.Log.Warn
