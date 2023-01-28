@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no|id)|.*_SSN|SSN|.*_ssn|ssn"
+      - "(?i)(social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no|id)|.*_ssn|ssn)"
     tags:
       law: GDPR
       
@@ -35,7 +35,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)tax[^\\s/(;)#|,=!>]{0,3}payer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|tin|(i|a|p)tin"
+      - "(?i)(tax[^\\s/(;)#|,=!>]{0,3}payer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|tin|(i|a|p)tin)"
     tags:
       law: GDPR
       
@@ -45,7 +45,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)employer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|ein"
+      - "(?i)(employer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|ein)"
     tags:
       law: GDPR
 
