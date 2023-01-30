@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Schema31
+    name: Schema31
+    domains:
+      - "schema31.it"
+    patterns:
+      - "(?i)(gcloud_storage_api).*"
+    tags:

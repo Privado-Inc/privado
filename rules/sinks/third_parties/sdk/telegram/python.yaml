@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Telegram
+    name: Telegram
+    domains:
+      - "telegram.org"
+    patterns:
+      - "(?i)(python-telegram-bot|telegram-cloud|python-telegram-bot-api|telethon|telegraph).*"
+    tags:

@@ -9,5 +9,6 @@ sinks:
     domains:
       - "sendgrid.com"
     patterns:
+      - "(?i)(sendgrid|sendgrid-dependency|sendgrid-django|flask-sendgrid|apache-airflow-providers-sendgrid).*"
       - "(?i)(sendgrid.*(?:send|message|post).*|django[.]core[.]mail.*send.*|flask[_]sendgrid.*send.*)"
     tags:

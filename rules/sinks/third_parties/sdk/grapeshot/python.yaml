@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Grapeshot
+    name: Grapeshot
+    domains:
+      - "grapeshot.com"
+    patterns:
+      - "(?i)(grapeshot-signal-sdk).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amazom.Aws
+    name: Amazom Aws
+    domains:
+      - "aws.amazom.com"
+    patterns:
+      - "(?i)(aws_helper|templates-s3|pip-s3-proxy|pys3utils|S3-Utils|s3url|s3url2uri|url-for-s3|s3-parse-url|ctodd-python-lib-aws|awss3lib|s3file).*"
+    tags:
