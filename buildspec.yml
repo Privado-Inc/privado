@@ -32,6 +32,7 @@ phases:
         fi
       - TAG_2=$VERSION
       - TAG_3=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
+      - echo $TAG_1
 
   build:
     commands:
