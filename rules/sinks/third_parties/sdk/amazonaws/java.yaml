@@ -9,7 +9,7 @@ sinks:
     domains:
       - "s3.amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]s3).*"
+      - "(?i)(com[.]amazonaws[.]services[.]s3).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.S3Outposts
@@ -17,7 +17,7 @@ sinks:
     domains:
       - "s3.amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]s3outposts).*"
+      - "(?i)(com[.]amazonaws[.]services[.]s3outposts).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Kinesis
@@ -76,12 +76,12 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]backup).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.DRS
-    name: Amazonaws DRS
+  - id: ThirdParties.SDK.Amazonaws.DisasterRecoveryService
+    name: Amazonaws Disaster Recovery Service
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]drs).*"
+      - "(?i)(com[.]amazonaws[.]services[.]disasterrecovery).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Snowball
@@ -177,7 +177,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ses).*"
+      - "(?i)(com[.]amazonaws[.]services[.]simpleemail).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SimpleNotificationService
@@ -201,15 +201,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]transcribemedical').*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.TranscribeAutomaticSpeechRecognition
-    name: Amazonaws Transcribe Automatic Speech Recognition
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]transcribeasr).*"
+      - "(?i)(com[.]amazonaws[.]services[.]transcribemedical).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.TranscribeStreaming
@@ -297,7 +289,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]quickSight ).*"
+      - "(?i)(com[.]amazonaws[.]services[.]quickSight).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Forecast
@@ -372,14 +364,6 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]translatemedical).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.TranslateCustom
-    name: Amazonaws Translate Custom
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]translatecustom).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.Kendra
     name: Amazonaws Kendra
     domains:
@@ -404,28 +388,12 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]timestreamquery|com[.]amazonaws[.]services[.]timestreamwrite).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.QuantumLedgerDatabase
-    name: Amazonaws Quantum Ledger Database
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]qldb).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.DocumentDB
     name: Amazonaws DocumentDB
     domains:
       - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]docdb).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Keyspaces
-    name: Amazonaws Keyspaces
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]keyspaces).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SimpleWorkflowService
@@ -588,13 +556,20 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]servicecatalog).*"
     tags:
 
-
   - id: ThirdParties.SDK.Amazonaws.ApplicationAutoScaling
     name: Amazonaws Application Auto Scaling
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]autoscaling).*"
+      - "(?i)(com[.]amazonaws[.]services[.]applicationautoscaling).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.ApplicationCatalog
+    name: Amazonaws Application Catalog
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(com[.]amazonaws[.]services[.]applicationcatalog).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.ApplicationDiscovery
@@ -602,7 +577,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]applicationdiscovery).*"
+      - "(?i)(com[.]amazonaws[.]services[.]discovery).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Greengrass
@@ -645,28 +620,12 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]rds).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.PersonalizeEvents
-    name: Amazonaws Personalize Events
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]personalizeevents).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.AugmentedAI
     name: Amazonaws Augmented AI
     domains:
       - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]augmentedairuntime).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.ForecastQuery
-    name: Amazonaws Forecast Query
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]forecastquery).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.RDSData
@@ -757,12 +716,12 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]finspace).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.SSMIncidentManager
-    name: Amazonaws SSM Incident Manager
+  - id: ThirdParties.SDK.Amazonaws.SSM
+    name: Amazonaws SSM
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ssmincidents).*"
+      - "(?i)(com[.]amazonaws[.]services[.]ssm).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.ApplicationCostProfiler
@@ -797,14 +756,6 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]lookoutforvision).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.SageMakerEdgeManager
-    name: Amazonaws SageMaker Edge Manager
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]sagemakeredgemanager).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.IoTWireless
     name: Amazonaws IoT Wireless
     domains:
@@ -834,7 +785,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]codeartifact ).*"
+      - "(?i)(com[.]amazonaws[.]services[.]codeartifact).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.MarketplaceCommerceAnalytics
@@ -925,14 +876,6 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]lookoutmetrics).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.SSMContacts
-    name: Amazonaws SSM Contacts
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ssmcontacts).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.ElastiCache
     name: Amazonaws ElastiCache
     domains:
@@ -998,28 +941,12 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]lookoutequipment).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.SSMSAP
-    name: Amazonaws SSM SAP
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ssmsap).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.SecurityLake
     name: Amazonaws SecurityLake
     domains:
       - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]securitylake).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.SageMakerGeospatial
-    name: Amazonaws SageMaker Geospatial
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]sagemakergeospatial).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.KendraRanking
@@ -1134,14 +1061,6 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]migrationhubconfig|com[.]amazonaws[.]services[.]migrationhubstrategyrecommendations|com[.]amazonaws[.]services[.]migrationhubrefactorspaces).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.SageMakerFeatureStoreRuntime
-    name: Amazonaws SageMaker Feature Store Runtime
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]sagemakerfeaturestoreruntime).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.KafkaConnect
     name: Amazonaws Kafka Connect
     domains:
@@ -1172,14 +1091,6 @@ sinks:
       - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]pipes).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.SageMakerMetrics
-    name: Amazonaws SageMaker Metrics
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]sagemakermetrics).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.GameSparks
