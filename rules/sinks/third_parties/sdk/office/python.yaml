@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Office
+    name: Office
+    domains:
+      - "office.com"
+    patterns:
+      - "(?i)(Office365-REST-Python-Client).*"
+    tags:

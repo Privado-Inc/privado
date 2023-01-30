@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Datadoghq
+    name: Datadoghq
+    domains:
+      - "datadoghq.com"
+    patterns:
+      - "(?i)(datadog|ddtrace|watchgod|datadog-log|datadog_api_client|datadog-api-client|datadog_api_client|apache-airflow-providers-datadog|datadog-lambda).*"
+    tags:

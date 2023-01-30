@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Spotify
+    name: Spotify
+    domains:
+      - "spotify.com"
+    patterns:
+      - "(?i)(spotify|spotify2tidal|spotify2py|helga-spotify|aiohttp-spotify|spotify2musicbrainz|spotify[.]py|spotify2piratebay|spotify-bot|spotify-backup|spotify2csv|spotify-webapi|rofi-spotify|spotify-python|spotify-lite|pycri-spotify|spotify_tensorflow|tekore).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Facebook
+    name: Facebook
+    domains:
+      - "facebook.com"
+    patterns:
+      - "(?i)(facebook-sdk|PyMessager|facebook-python-sdk|facebook_business|facebook-python-wrapper|fblib|pygram|facebook-py-sdk|facebook-sdk-python|django4facebook|frasco-facebook|facebook-business|Facebook_PyBot|mautrix-facebook|facebook-datastore|pyramid_facebook|facebook_wordcloud|xmldirector[.]facebook|jmbo-facebook|kinto-facebook|django-facebook2|tap-facebook|ecl_facebook|tapioca-facebook|facebook-totem|arcane-facebook|facebookads|fbadSpace|listenclosely-whatsapp|whatsapp-cli|whatsapp-web|whatsapp-assistant|ongair-whatsapp|whatsapp-converter|cm-whatsapp|sl-whatsapp3|sl-whatsapp2|whatsapp-api|botbuilder-sangam-twilio-whatsapp-adapter|alas-ce0-whatsapp|Social|fbprophet|apache-airflow-providers-facebook).*"
+    tags:

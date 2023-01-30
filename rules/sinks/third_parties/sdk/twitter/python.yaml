@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Twitter
+    name: Twitter
+    domains:
+      - "twitter.com"
+    patterns:
+      - "(?i)(twitter-ads|twittersdk|twitter-ads-v2|twitter-sdk|twitter-python-sdk|twitter|TwitterSDK|twitter-text|twitter-spider|twitter-monitor|django-twitter|db2twitter|tapioca-twitter|tap-twitter|twitter-blocklist|tweepy|twitter-text-py|twython|python-twitter|TwitterAPI).*"
+    tags:

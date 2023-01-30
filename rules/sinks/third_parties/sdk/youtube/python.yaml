@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Youtube
+    name: Youtube
+    domains:
+      - "youtube.com"
+    patterns:
+      - "(?i)(youtube-sdk-py|youtube-python-sdk|youtube3|youtube-data-py|python-youtube|py-youtube|youtube_dl|sphinxcontrib-youtube|youtube-cue|youtube-cli|youtube-streamer|youtube-django|youtube-python|youtube-dl2|youtube-batch|youtube-archivist|youtube_watcher|youtube-sentiment|youtube-unofficial|youtube-dlc|mac-youtube|Youtube2Images|youtube-cl|youtube-websearch|youtube-search|fs[.]youtube|YouTube-ff|youtube[.]py|youtube-metrics|youtube2ipfs|Youtube-scrapper|selenium-youtube|youtube-stream|youtube-related|youtube-tool|youtube-downloader|youtube-extract|youtube-search-python|youtube_search|youtube-dl).*"
+    tags:

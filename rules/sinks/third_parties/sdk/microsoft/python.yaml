@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Microsoft
+    name: Microsoft
+    domains:
+      - "microsoft.com"
+    patterns:
+      - "(?i)(k4a|azure-cosmos|msgraph-core|azure-functions|azure-devtools|dapr|onedrivesdk|applicationinsights|asposecellscloud|azure-mgmt-web|azure-template|azure-mgmt-redis|azure-databricks-sdk-python|azure-iot-deviceupdate|azure-identity|azure-loganalytics|azure-mgmt-storageimportexport|azuresdkoplib|azure-mgmt-communication|azure-mgmt-policyinsights|azure-mgmt-regionmove|azure-mgmt-privatedns|azure-mgmt-managementpartner|azure-mgmt-labservices|azure-mgmt-managedservices|azure-mgmt-serialconsole|azure-mgmt-automation|azure-mgmt-databricks|azure-mgmt-customproviders|azure-mgmt-redhatopenshift|azure-mgmt-automanage|azure-mgmt-commerce|azure-mgmt-azurestack|azure-mgmt-machinelearningservices|azure-mgmt-resourcemover|azure-synapse-monitoring|azure-mgmt-securityinsight|azure-mgmt-agfood|azure-mgmt-desktopvirtualization|azure-mgmt-agrifood|azure-mgmt-changeanalysis|azure-mgmt-confidentialledger|azure-mgmt-recoveryservicessiterecovery|azure-mgmt-dataprotection|azure-mgmt-resourceconnector|azure-mgmt-resourcehealth|azure-mgmt-guestconfig|azure-mgmt-fluidrelay|azure-mgmt-connectedvmware|msrestazure|azure-storage-blob|azure-mgmt-costmanagement|azure-storage-file-share|azure-mgmt-search|azure-mgmt-sql|azure-mgmt-subscription|azure-mgmt-servicefabric|azure-mgmt-eventhub|azure-mgmt-applicationinsights|azure-nspkg|azure-storage-common|azure-mgmt-datafactory|azure-keyvault|azure-mgmt-eventgrid|azure-mgmt-core|azure-graphrbac|azure-mgmt-managementgroups|azure-mgmt-dns|azure-mgmt-trafficmanager|azure-mgmt-monitor|azure-mgmt-authorization|azure-mgmt-cdn|azure-mgmt-containerservice|azure-mgmt-storage|azure-keyvault-secrets|azure-mgmt-datalake-store|azure-keyvault-keys|azure-mgmt-logic|azure-storage-queue|azure-mgmt-resourcegraph|msoffcrypto-tool|azure-mgmt-keyvault|azure-mgmt-advisor|adal|azure-mgmt-resource|azure-common|msal-extensions|azure-mgmt-batch|azure-mgmt-cosmosdb|azure-mgmt-apimanagement|azure-cosmosdb-nspkg|azure-storage-file|azure-mgmt-network|azure-cosmosdb-table|azure-mgmt-compute|azure-core|azure-mgmt-containerregistry|azure-mgmt-rdbms|azure-mgmt-iothub|azure-mgmt-msi|azure-mgmt-cognitiveservices|azure-mgmt-hdinsight|azure-mgmt-containerinstance|azure-mgmt-frontdoor|azure|office365-rest-python-client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure
+    name: Microsoft Azure
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure[.]identity|azure[.]storage[.]blob|azure[.]keyvault[.]secrets|azure-kusto-data|azure-keyvault-certificates|azure-mgmt-security|azure_storage|azure-datalake-store|azure-mgmt-nspkg|azure-batch|apache-airflow-providers-microsoft-azure|azure-mgmt-datalake-nspkg|azure-storage-file-datalake|azure-eventhub|azure-servicebus|aioazuredevops).*"
+    tags:

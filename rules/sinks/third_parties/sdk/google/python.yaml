@@ -1,0 +1,53 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Google
+    name: Google
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(google-cloud-vision|google-auth-oauthlib|googledatastore|bdtranslate|pyfcm|caliban|ndb|django-fcm|anom|binderhub|google-cloud-storage|google-api-python-client|google-auth|wiser-gcloud-storage|gcloud|gcloud-rest-bigquery|gcloud-aio-bigquery|gcloud-rest-auth|gcloud-aio-storage|gcloud-rest-kms|django-gcloud-storage|gcloud-aio-core|gcloud-aio-datastore|gcloud-rest-pubsub|gcloud-aio-kms|google-cloud-monitoring|gcloud-aio-run|gcloud-aio-auth|gcloud-rest-datastore|gcloud-aio-pubsub|gcloud-rest-storage|wiser-gcloud-firestore|asyncio-gcloud-ml-engine|gcreds|gcdu|cs-storage|apprentice|gapic-google-cloud-speech-v1beta1|gapic-google-cloud-language-v1|gapic-google-cloud-datastore-v1|gapic-google-cloud-language-v1beta2|gapic-google-cloud-vision-v1|googleapis-common-protos|firebase|django-rest-firebase-auth|firebase-admin|djangorestframework-firebase|flask-firebase-admin|python-firebase|async-firebase|firebase-auth|firebase-client|firebase-idtoken|singleton-firebase|firebase-data|firebase-fave|firebase-fireup|django-firebase|igeFirebase|django-google-maps|google-crc32c|google-cloud-appengine-logging|grpc-google-iam-v1|googleads|google-cloud-audit-log|google-cloud-bigquery|pytesseract|google_api_python_client|google_auth_oauthlib|aws-google-auth|pygsheets|gspread|pydrive|cloud-sql-python-connector|google-cloud-spanner|google-cloud-bigtable|google-cloud-spanner|google-cloud-bigtable|google-cloud-firestore|google-api-core|google-resumable-media|google-cloud-core|google-auth-httplib2|google-cloud-logging|googlemaps|cloudml-hypertune|gax-google-pubsub-v1|grpc-google-pubsub-v1|gax-google-logging-v2|grpc-google-logging-v2|google_auth|google-gax|google-reauth|gmusicapi|google-apitools|pydata-google-auth).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Spreadsheets
+    name: Google Spreadsheets
+    domains:
+      - "spreadsheets.google.com"
+    patterns:
+      - "(?i)(gspread-dataframe).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud
+    name: Google Cloud
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(google-cloud|google-cloud-pubsub|pybigquery|google-cloud-datastore|google-cloud-error-reporting|google-cloud-language|google-python-cloud-debugger|googletrans|google_images_download|gTTS|GoogleAppEngineCloudStorageClient|google-cloud-videointelligence|googleappenginecloudstorageclient|googleappenginepipeline|google-cloud-translate|google-cloud-dlp|google-cloud-tasks|grpcio-gcp|google_trans_new|google_pasta|google-cloud-texttospeech|google-cloud-bigquery-storage|google-cloud-dataplex|google-cloud-dataproc-metastore|google-cloud-os-login|apache-airflow-providers-google|google-cloud-bigquery-datatransfer|google-cloud-build|google-cloud-dataproc|google-cloud-secret-manager|google-cloud-container|google-cloud-datacatalog|google-cloud-kms|google-cloud-aiplatform|google-cloud-speech|google-cloud-automl|google-cloud-workflows|google-cloud-memcache|google-cloud-orchestration-airflow|google-nest-sdm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Duo
+    name: Google Duo
+    domains:
+      - "duo.google.com"
+    patterns:
+      - "(?i)(duo-client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Firebase
+    name: Google Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(firebase_admin).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "admob.google.com"
+    patterns:
+      - "(?i)(google-ads).*"
+    tags:
