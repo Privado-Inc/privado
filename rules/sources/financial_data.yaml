@@ -66,7 +66,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax"
+      - "(?i)(tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax|(form|name|box|item)1099)"
     tags:
       law: GDPR
   
@@ -139,3 +139,14 @@ sources:
       - "(?i).*(gym[^\\s/(;)#|,=!>]{0,10}membership|free[^\\s/(;)#|,=!>]{0,10}(?:lunch|snacks|breakfast|drinks|dinner)|employee[^\\s/(;)#|,=!>]{0,10}discount|employee[^\\s/(;)#|,=!>]{0,10}assistance[^\\s/(;)#|,=!>]{0,10}program|company[^\\s/(;)#|,=!>]{0,10}car|(?:retirement|pension)[^\\s/(;)#|,=!>]{0,10}plan|performance[^\\s/(;)#|,=!>]{0,10}bonus|(?:life|medical|dental|vision)[^\\s/(;)#|,=!>]{0,10}insurance|flexible[^\\s/(;)#|,=!>]{0,10}hours|company[^\\s/(;)#|,=!>]{0,10}shuttle|relocation[^\\s/(;)#|,=!>]{0,10}bonus|(?:paternity|maternity)[^\\s/(;)#|,=!>]{0,10}leave)"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.FinancialData.InsuranceNumber
+    name: Insurance Number
+    category: Financial Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*(insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|insurance[^\\s/(;)#|,=!>]*claim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
+    tags:
+      law: GDPR
+
