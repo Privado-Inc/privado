@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sentry.io"
     patterns:
-      - "(?i)(sentry-sdk|sentry_sdk|sentry_dramatiq|sentry|policy_sentry|structlog-sentry-lambda|sentry-sdk-scrapy|scrapy-sentry-sdk|sentry-sdk-custom|sentry-scrapy|sentry-sqs-transport|dj-sentry|django-q-sentry|kolibri-sentry-plugin|sentry-dramatiq|sentry-falcon|shy-sentry|h-pyramid-sentry|forumsentry|zappa-sentry|sentry-asgi|raven|sentry-whatsapp|sentry-relay|sentry-arroyo|sentry-flake8|snuba-sdk|django-sentry|sentry_sdk|structlog-sentry).*"
+      - "(?i)(sentry-sdk|sentry_dramatiq|sentry|policy_sentry|structlog-sentry-lambda|sentry-sdk-scrapy|scrapy-sentry-sdk|sentry-sdk-custom|sentry-scrapy|sentry-sqs-transport|dj-sentry|django-q-sentry|kolibri-sentry-plugin|sentry-dramatiq|sentry-falcon|shy-sentry|h-pyramid-sentry|forumsentry|zappa-sentry|sentry-asgi|raven|sentry-whatsapp|sentry-relay|sentry-arroyo|sentry-flake8|snuba-sdk|django-sentry|sentry_sdk|structlog-sentry).*"
     tags:

@@ -10,4 +10,5 @@ sinks:
       - "slack.com"
     patterns:
       - "(?i)(django-slack|slack-sdk|slack-discovery-sdk|slack_sdk|slackclient|slackeventsapi|apache-airflow-providers-slack|slack-webhook).*"
+      - "(?i)((slack_sdk|django-slack).*message|slack[_]webhook.*post)"
     tags:
