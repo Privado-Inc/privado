@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Amazonc.Aws
-    name: Amazonc Aws
+  - id: ThirdParties.SDK.Aliyun
+    name: Aliyun
     domains:
-      - "aws.amazonc.com"
+      - "aliyun.com"
     patterns:
-      - "(?i)(target_redshift).*"
+      - "(?i)(aliyun-python-sdk-acm|aliyunsdk|aliyunauth|requests-aliyun).*"
     tags:

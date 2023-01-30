@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Elastic
-    name: Elastic
+  - id: ThirdParties.SDK.Alipay
+    name: Alipay
     domains:
-      - "elastic.co"
+      - "alipay.com"
     patterns:
-      - "(?i)(elasticsearch|apache_airflow_providers_elasticsearch).*"
+      - "(?i)(alipay).*"
     tags:

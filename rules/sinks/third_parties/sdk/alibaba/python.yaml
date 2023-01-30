@@ -9,5 +9,5 @@ sinks:
     domains:
       - "alibaba.com"
     patterns:
-      - "(?i)(acm-sdk-python|tablestore).*"
+      - "(?i)(acm-sdk-python|tablestore|ACMClient[.]).*"
     tags:
