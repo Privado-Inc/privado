@@ -9,5 +9,5 @@ sinks:
     domains:
       - "blockchain.info"
     patterns:
-      - "(?i)(python-blockchain-api).*"
+      - "(?i)(blockchain_api).*"
     tags:

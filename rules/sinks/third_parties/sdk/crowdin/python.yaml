@@ -9,5 +9,5 @@ sinks:
     domains:
       - "crowdin.com"
     patterns:
-      - "(?i)(crowdin-api-client).*"
+      - "(?i)(crowdin_api|CrowdinClient).*"
     tags:

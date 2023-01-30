@@ -9,5 +9,5 @@ sinks:
     domains:
       - "belvo.com"
     patterns:
-      - "(?i)(belvo-python).*"
+      - "(?i)(belvo[.]).*"
     tags:

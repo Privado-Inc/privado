@@ -9,5 +9,5 @@ sinks:
     domains:
       - "coinuma.com"
     patterns:
-      - "(?i)(coinuma-sdk).*"
+      - "(?i)(coinuma_sdk).*"
     tags:

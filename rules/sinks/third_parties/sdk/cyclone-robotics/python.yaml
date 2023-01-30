@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cyclone-robotics.com"
     patterns:
-      - "(?i)(feishu-python-sdk).*"
+      - "(?i)(feishu).*"
     tags:

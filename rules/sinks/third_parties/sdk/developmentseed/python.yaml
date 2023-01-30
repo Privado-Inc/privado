@@ -9,5 +9,5 @@ sinks:
     domains:
       - "developmentseed.com"
     patterns:
-      - "(?i)(rio-cogeo).*"
+      - "(?i)(rio_cogeo).*"
     tags:

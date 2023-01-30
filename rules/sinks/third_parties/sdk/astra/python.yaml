@@ -9,5 +9,5 @@ sinks:
     domains:
       - "astra.finance"
     patterns:
-      - "(?i)(astra-python).*"
+      - "(?i)(astra).*"
     tags:

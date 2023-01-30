@@ -9,5 +9,5 @@ sinks:
     domains:
       - "blocknative.com"
     patterns:
-      - "(?i)(blocknative-sdk).*"
+      - "(?i)(blocknative).*"
     tags:

@@ -9,6 +9,9 @@ sinks:
     domains:
       - "s3.amazonaws.com"
     patterns:
+      - "(?i)(aws_cdk.*[.]aws_s3).*"
+      - "(?i)(aws_cdk.*[.]aws_s3_assets).*"
+      - "(?i)(aws_cdk.*[.]aws_s3_notifications).*"
       - "(?i)(aws_helper|s3transfer|templates-s3|pip-s3-proxy|pys3utils|s3utils|s3url|s3url2uri|url_for_s3|s3_parse_url|ctodd_python_lib_aws|awss3lib|s3file|mypy_boto3_s3|s3_encryption|mypy_boto3_s3|pip_services3_aws|bits3).*"
     tags:
   
@@ -18,7 +21,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(mypy_boto3_sqs|aws_cdk[.]aws_sqs).*"
+      - "(?i)(mypy_boto3_sqs|aws_cdk.*[.]aws_sqs).*"
     tags:
   
 
@@ -28,6 +31,7 @@ sinks:
       - "amazonaws.com"
     patterns:
       - "(?i)(pyathena).*"
+      - "(?i)(aws_cdk.*[.]aws_athena).*"
     tags:
   
 
@@ -37,6 +41,7 @@ sinks:
       - "amazonaws.com"
     patterns:
       - "(?i)(aws_rds|mypy_boto3_rds).*"
+      - "(?i)(aws_cdk.*[.]aws_rds).*"
     tags:
   
 
@@ -46,15 +51,59 @@ sinks:
       - "amazonaws.com"
     patterns:
       - "(?i)(smsframework_amazon_sns).*"
+      - "(?i)(aws_cdk.*[.]aws_sns).*"
+      - "(?i)(aws_cdk.*[.]aws_sns_subscriptions).*"
     tags:
-  
+
+
+  - id: ThirdParties.SDK.Amazonaws.SES
+    name: Amazonaws SES
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_ses|django_amazon_ses|amazon-ses-template-editor).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.SSM
+    name: Amazonaws SSM
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_ssmcontacts).*"
+      - "(?i)(aws_cdk.*[.]aws_ssm).*"
+      - "(?i)(aws_cdk.*[.]aws_ssmincidents).*"
+      - "(?i)(mypy_boto3_ssm|mypy_boto3_secretsmanager|SSMParameter).*"
+    tags:
+
 
   - id: ThirdParties.SDK.Amazonaws.EC2
     name: Amazonaws EC2
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(mypy_boto3_ec2|ec2_metadata|ec2-metadata).*"
+      - "(?i)(aws_cdk.*[.]aws_ec2).*"
+      - "(?i)(mypy_boto3_ec2|ec2_metadata).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.ECS
+    name: Amazonaws ECS
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_ecs).*"
+      - "(?i)(aws_cdk.*[.]aws_ecs_patterns).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.Amplify
+    name: Amazonaws Amplify
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_amplify).*"
+      - "(?i)(aws_cdk.*[.]aws_amplifyuibuilder).*"
     tags:
 
 
@@ -63,6 +112,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
+      - "(?i)(aws_cdk.*[.]aws_redshift).*"
       - "(?i)(django-redshift-backend|target_redshift|redshift_connector|redshift-connector|mypy-boto3-redshift-data|pandas-amazon-redshift).*"
     tags:
 
@@ -72,7 +122,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(ad_api[.]|python-amazon-ad-api|amazon-ad-sdk|aws-adfs|amazon-ad|amazon-advertising|tap-amazon-ads-dsp|python-amazon-advertising-api).*"
+      - "(?i)(ad_api[.]api|amazon-ad-sdk|aws-adfs|amazon-ad|amazon-advertising|tap-amazon-ads-dsp|python-amazon-advertising-api).*"
     tags:
   
 
@@ -81,7 +131,8 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(aws-lambda|aws_lambda|aws_cdk[.]aws_lambda|chalice|torchlambda|mypy-boto3-lambda|aws-lambda-powertools|awslambdaric|pylambda|aws-xray-lambda-segment-shim|opentelemetry-instrumentation-aws-lambda).*"
+      - "(?i)(aws_cdk.*[.]aws_lambda_python).*"
+      - "(?i)(aws-lambda|aws_lambda|aws_cdk.*[.]aws_lambda|chalice|torchlambda|mypy-boto3-lambda|aws-lambda-powertools|awslambdaric|pylambda|aws-xray-lambda-segment-shim|opentelemetry-instrumentation-aws-lambda).*"
     tags:
 
 
@@ -90,7 +141,7 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(dynamodb-encryption-sdk|dynamo3|mypy-boto3-dynamodb|dynamodump|aws_cdk[.]aws_dynamodb|pynamodb|pynamodb-attributes).*"
+      - "(?i)(dynamodb-encryption-sdk|dynamo3|mypy_boto3_dynamodb|dynamodump|aws_cdk.*[.]aws_dynamodb|pynamodb).*"
     tags:
   
 
@@ -99,17 +150,22 @@ sinks:
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(logtron_aws|logtron-aws|aws-monitoring|aws_monitoring|awslogs|watchtower).*"
+      - "(?i)(aws_cdk.*[.]aws_cloudwatch).*"
+      - "(?i)(logtron_aws|aws_monitoring|awslogs|watchtower).*"
     tags:
   
+
   - id: ThirdParties.SDK.Amazonaws.CloudFormation
     name: Amazonaws CloudFormation
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(mypy-boto3-cloudformation|mypy_boto3_cloudformation).*"
+      - "(?i)(aws_cdk.*[.]aws_cloudformation).*"
+      - "(?i)(aws_cdk.*[.]aws_cloudfront).*"
+      - "(?i)(mypy_boto3_cloudformation).*"
     tags:
   
+
   - id: ThirdParties.SDK.Amazonaws.Alexa
     name: Amazonaws Alexa
     domains:
@@ -118,26 +174,79 @@ sinks:
       - "(?i)(ask-alexa-pykit|ask_alexa_pykit|PyForAlexa|ask-sdk|ask_sdk|sinricpro).*"
     tags:
 
+
   - id: ThirdParties.SDK.Amazonaws.Aurora
     name: Amazonaws Aurora
     domains:
       - "amazonaws.com"
     patterns:
-      - "(?i)(aurora-data-api|aurora_data_api).*"
+      - "(?i)(aurora_data_api).*"
     tags:
   
+
   - id: ThirdParties.SDK.Amazonaws.Kinesis
     name: Amazonaws Kinesis
     domains:
       - "amazonaws.com"
     patterns:
       - "(?i)(amazon_kclpy).*"
+      - "(?i)(aws_cdk.*[.]aws_kinesisanalytics).*"
+      - "(?i)(aws_cdk.*[.]aws_kinesis).*"
+      - "(?i)(aws_cdk.*[.]aws_kinesisfirehose).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws
-    name: Amazon
+
+  - id: ThirdParties.SDK.Amazonaws.Cognito
+    name: Amazonaws Cognito
     domains:
-      - "amazon.com"
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(cognitojwt).*"
+      - "(?i)(aws_cdk.*[.]aws_cognito).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.ElasticLoadBalancing
+    name: Amazon ElasticLoadBalancing
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_elasticloadbalancing).*"
+      - "(?i)(aws_cdk.*[.]aws_elasticloadbalancingv2).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.EKS
+    name: Amazon EKS
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_eks).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Amazonaws.SageMaker
+    name: Amazon SageMaker
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(sagemaker).*"
+      - "(?i)(aws_cdk.*[.]aws_sagemaker).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Amazonaws.Elasticsearch
+    name: Amazonaws Elasticsearch
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)(aws_cdk.*[.]aws_elasticsearch).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazon.Aws
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com"
     patterns:
       - "(?i)(boto).*"
       - "(?i)(frauddetector).*"
@@ -145,14 +254,7 @@ sinks:
       - "(?i)(lookoutequipment).*"
       - "(?i)(pyqldb).*"
       - "(?i)(qldbshell).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazon.Aws
-    name: Amazon Aws
-    domains:
-      - "aws.amazon.com"
-    patterns:
-      - "(?i)(aws_requests_auth|requests-aws4auth|requests_aws_sign|aws_sam_translator|cognitojwt|zappa|aws-cdk-lib|aws_requests_auth|mypy-boto3-events|opentelemetry-instrumentation-boto|mypy-boto3-ssm|mypy-boto3-secretsmanager|django-boto|opentelemetry-instrumentation-botocore|amazon-selenium|amazon-mws|Amazon-crawler|amazon-kclpy|amazon-dash|amazon-paapi5|scrape-amazon|django-amazon|amazon[.]ion|Python-Amazon|amazon-buddy|amazon-braket-schemas|amazon-textract-prettyprinter|mint-amazon-tagger|amazon-buy-bot|python-amazon-mws|amazon-dax-client|amazon-textract-overlayer|django-amazon-translate|amazon-textract-caller|collective[.]portlet[.]amazon|amazon-affiliate-url|zs-amazon-buddy|pay_with_amazon|python-amazon-paapi|amazon-textract-geofinder|openlabs_amazon_mws|amazon_kclpy-ext|amazon-wishlist-pricewatch|rgmining-amazon-dataset|amazon-textract-helper|stylelens-crawl-amazon|django-amazon-ses|fio_amazon_mws|tap-amazon-sp|tap-amazon-mws|aws_cdk[.]aws_ivs-alpha|boto3-meiqia|python-amazon-sp-api|oblcc-amazon-inspector-v2|python-amazon-product-api|amazon-sp-api-clients|Phils-Amazon-Price-Tracker|python-amazon-unthrottled-paapi|p3_amazon_jp_tool|Amazon-Arbitrage-Master-Sheet|amazon-textract-pipeline-pagedimensions|django-amazon-price-monitor|python-amazon-mws-tools|apache-airflow-providers-amazon|django-oscar-amazon-payments|singer-tap-amazon-mws|amazon-lex-bot-deploy|amazon-ses-template-editor|scrapy-amazon-robot-middleware3|sagemaker-huggingface-inference-toolkit|gc-boto|boto-patch|boto-mws|boto|boto-brimley|aws_xray_sdk|awswrangler|aws-crypto|AWS-Manager|cloudfn-aws|aws-profile|pymacaron-aws|aws-ext|nysa-aws|aws-sync|aws-2fa|fondat-aws|aws-amicleaner|aws-orgs|aws-checker|aws-credentials|aws-ssh|aio-aws|aws-top|aws-encrytpion|aws-bunker|aws-crpyto|aws-secrets|aws-syndicate|bgu-aws|aws-status|aws-mfa|odincontrib[.]aws|riffdog-aws|aws-saving|osbot-aws|aws-parallelcluster|aws-timely|spring-aws|aws-encyrption|frasco-aws|aws-socks|aws-allowlister|aws-parsecf|aws-apimatic|mfa-aws|thumbor-aws|orchard-aws|aws-psycopg2|aws-vapor|vulcan-aws|aws-rotate|aws-switchrole|navio-aws|aws-satella|aws-keyring|aws-jupyter|aws-connector|aws-works|aws-session|aws-organized|AWS-Police|pulumi-aws|grapher-aws|aws-secretsmanager|aws_client|aws-fed|JT-AWS|django-aws|openapi4aws|waldur-aws|aws-secret|exr-aws|aws-login|aws-mlops|requests-aws|aws-encrytpion-sdk|aws-encyrption-sdk|aws-infrastructure-sdk|aws-orbit-sdk|aws-encrpytion-sdk|opentelemetry-sdk-extension-aws|types-aws-xray-sdk|awsencrpytion|aws-cdk-ssm-sdk-parameter|aws-jupyter-proxy|aws-encryption-sdk-cli|aws-sso-cred-restore|aws-encyrption-sdk-cli|aws-encrpytion-sdk-cli|Datamart-AWS-CloudTrails-SDK|aws-encrytpion-sdk-cli|awsencyrption|awsencyrptionsdk|awsencryptionsdk|awsencryption|awsencrytpionsdk|awsencrpytionsdk|awsencrytpion|aws-encrpytion|aws-encryption|awscyrpto|aws-encyrption-cli|awsencyrptioncli|aws-encrpytion-cli|awsencrpytionsdkcli|aws-encryption-cli|awsencryptioncli|awsencryptionsdkcli|awsencrytpioncli|awsencrpytioncli|aws-cyrpto|awsencrytpionsdkcli|awscrpyto|aws-crytpo|awsencyrptionsdkcli|awscrypto|aws-encrytpion-cli|madeira|imposter|sagemaker-pytorch-inference|amazon-braket-default-simulator|sagemaker-container-support|xraysink|amazon-braket-pennylane-plugin|awsiotclient|spotty|aws-sso-credential-process|vpc-free|arabela|aws-data-api-python-sdk|amazon-braket-ocean-plugin|aws-hcs-cli|aws-secretsmanager-caching|assumerole|kloudy|awscli|awsxmltojson|awshelpers|httpaws|amazon-connect-decryption-lib|requests-auth-aws-sigv4|caws|pinkboto|iam-starter|sagemaker|aws-xray-sdk|aws-encryption-sdk|amazon-braket-sdk|awsprocesscreds|amazon-transcribe|awsiotsdk|amazon_pay|AWSIoTDeviceDefenderAgentSDK|AWSIoTPythonSDK|awscli-login|datastore[.]aws|remotecv_aws|coto|aiobotocore|StarCluster|threadlocal-aws|aws|okta-aws).*"
+      - "(?i)(aws_requests_auth|requests-aws4auth|requests_aws_sign|aws_sam_translator|zappa|aws-cdk-lib|aws_requests_auth|mypy-boto3-events|opentelemetry-instrumentation-boto|django-boto|opentelemetry-instrumentation-botocore|amazon-selenium|amazon-mws|Amazon-crawler|amazon-kclpy|amazon-dash|amazon-paapi5|scrape-amazon|django-amazon|amazon[.]ion|Python-Amazon|amazon-buddy|amazon-braket-schemas|amazon-textract-prettyprinter|mint-amazon-tagger|amazon-buy-bot|python-amazon-mws|amazon-dax-client|amazon-textract-overlayer|django-amazon-translate|amazon-textract-caller|collective[.]portlet[.]amazon|amazon-affiliate-url|zs-amazon-buddy|pay_with_amazon|python-amazon-paapi|amazon-textract-geofinder|openlabs_amazon_mws|amazon_kclpy-ext|amazon-wishlist-pricewatch|rgmining-amazon-dataset|amazon-textract-helper|stylelens-crawl-amazon|fio_amazon_mws|tap-amazon-sp|tap-amazon-mws|aws_cdk.*[.]aws_ivs-alpha|boto3-meiqia|python-amazon-sp-api|oblcc-amazon-inspector-v2|python-amazon-product-api|amazon-sp-api-clients|Phils-Amazon-Price-Tracker|python-amazon-unthrottled-paapi|p3_amazon_jp_tool|Amazon-Arbitrage-Master-Sheet|amazon-textract-pipeline-pagedimensions|django-amazon-price-monitor|python-amazon-mws-tools|apache-airflow-providers-amazon|django-oscar-amazon-payments|singer-tap-amazon-mws|amazon-lex-bot-deploy|scrapy-amazon-robot-middleware3|gc-boto|boto-patch|boto-mws|boto|boto-brimley|aws_xray_sdk|awswrangler|aws-crypto|AWS-Manager|cloudfn-aws|aws-profile|pymacaron-aws|aws-ext|nysa-aws|aws-sync|aws-2fa|fondat-aws|aws-amicleaner|aws-orgs|aws-checker|aws-credentials|aws-ssh|aio-aws|aws-top|aws-encrytpion|aws-bunker|aws-crpyto|aws-secrets|aws-syndicate|bgu-aws|aws-status|aws-mfa|odincontrib[.]aws|riffdog-aws|aws-saving|osbot-aws|aws-parallelcluster|aws-timely|spring-aws|aws-encyrption|frasco-aws|aws-socks|aws-allowlister|aws-parsecf|aws-apimatic|mfa-aws|thumbor-aws|orchard-aws|aws-psycopg2|aws-vapor|vulcan-aws|aws-rotate|aws-switchrole|navio-aws|aws-satella|aws-keyring|aws-jupyter|aws-connector|aws-works|aws-session|aws-organized|AWS-Police|pulumi-aws|grapher-aws|aws-secretsmanager|aws_client|aws-fed|JT-AWS|django-aws|openapi4aws|waldur-aws|aws-secret|exr-aws|aws-login|aws-mlops|requests-aws|aws-encrytpion-sdk|aws-encyrption-sdk|aws-infrastructure-sdk|aws-orbit-sdk|aws-encrpytion-sdk|opentelemetry-sdk-extension-aws|types-aws-xray-sdk|awsencrpytion|aws-jupyter-proxy|aws-encryption-sdk-cli|aws-sso-cred-restore|aws-encyrption-sdk-cli|aws-encrpytion-sdk-cli|Datamart-AWS-CloudTrails-SDK|aws-encrytpion-sdk-cli|awsencyrption|awsencyrptionsdk|awsencryptionsdk|awsencryption|awsencrytpionsdk|awsencrpytionsdk|awsencrytpion|aws-encrpytion|aws-encryption|awscyrpto|aws-encyrption-cli|awsencyrptioncli|aws-encrpytion-cli|awsencrpytionsdkcli|aws-encryption-cli|awsencryptioncli|awsencryptionsdkcli|awsencrytpioncli|awsencrpytioncli|aws-cyrpto|awsencrytpionsdkcli|awscrpyto|aws-crytpo|awsencyrptionsdkcli|awscrypto|aws-encrytpion-cli|madeira|imposter|amazon-braket-default-simulator|xraysink|amazon-braket-pennylane-plugin|awsiotclient|spotty|aws-sso-credential-process|vpc-free|arabela|aws-data-api-python-sdk|amazon-braket-ocean-plugin|aws-hcs-cli|aws-secretsmanager-caching|assumerole|kloudy|awscli|awsxmltojson|awshelpers|httpaws|amazon-connect-decryption-lib|requests-auth-aws-sigv4|caws|pinkboto|iam-starter|aws-xray-sdk|aws-encryption-sdk|amazon-braket-sdk|awsprocesscreds|amazon-transcribe|awsiotsdk|amazon_pay|AWSIoTDeviceDefenderAgentSDK|AWSIoTPythonSDK|awscli-login|datastore[.]aws|remotecv_aws|coto|aiobotocore|StarCluster|threadlocal-aws|okta-aws).*"
     tags:
   
   - id: ThirdParties.SDK.Amazonaws.CDK
@@ -160,196 +262,153 @@ sinks:
     domains:
       - "amazon.com"
     patterns:
-      - "(?i)(aws_cdk[.]aws_datasync).*"
-      - "(?i)(aws_cdk[.]aws_apigatewayv2).*"
-      - "(?i)(aws_cdk[.]aws_codeguruprofiler).*"
-      - "(?i)(aws_cdk[.]aws_healthlake).*"
-      - "(?i)(aws_cdk[.]aws_apprunner).*"
-      - "(?i)(aws_cdk[.]aws_rum).*"
-      - "(?i)(aws_cdk[.]aws_codestar).*"
-      - "(?i)(aws_cdk[.]aws_codestarnotifications).*"
-      - "(?i)(aws_cdk[.]aws_synthetics).*"
-      - "(?i)(aws_cdk[.]aws_emr).*"
-      - "(?i)(aws_cdk[.]aws_ssmcontacts).*"
-      - "(?i)(aws_cdk[.]aws_transfer).*"
-      - "(?i)(aws_cdk[.]aws_elasticloadbalancing).*"
-      - "(?i)(aws_cdk[.]aws_signer).*"
-      - "(?i)(aws_cdk[.]aws_iotwireless).*"
-      - "(?i)(aws_cdk[.]aws_workspaces).*"
-      - "(?i)(aws_cdk[.]aws_lookoutvision).*"
-      - "(?i)(aws_cdk[.]aws_iotfleethub).*"
-      - "(?i)(aws_cdk[.]aws_quicksight).*"
-      - "(?i)(aws_cdk[.]aws_inspector).*"
-      - "(?i)(aws_cdk[.]aws_elasticloadbalancingv2).*"
-      - "(?i)(aws_cdk[.]aws_resiliencehub).*"
-      - "(?i)(aws_cdk[.]aws_customerprofiles).*"
-      - "(?i)(aws_cdk[.]aws_wisdom).*"
-      - "(?i)(aws_cdk[.]aws_resourcegroups).*"
-      - "(?i)(aws_cdk[.]aws_fms).*"
-      - "(?i)(aws_cdk[.]aws_efs).*"
-      - "(?i)(aws_cdk[.]aws_codestarconnections).*"
-      - "(?i)(aws_cdk[.]aws_gamelift).*"
-      - "(?i)(aws_cdk[.]aws_imagebuilder).*"
-      - "(?i)(aws_cdk[.]aws_robomaker).*"
-      - "(?i)(aws_cdk[.]aws_networkfirewall).*"
-      - "(?i)(aws_cdk[.]aws_batch).*"
-      - "(?i)(aws_cdk[.]aws_rekognition).*"
-      - "(?i)(aws_cdk[.]aws_mediaconvert).*"
-      - "(?i)(aws_cdk[.]aws_datapipeline).*"
-      - "(?i)(aws_cdk[.]aws_sdb).*"
-      - "(?i)(aws_cdk[.]aws_appconfig).*"
-      - "(?i)(aws_cdk[.]aws_glue).*"
-      - "(?i)(aws_cdk[.]aws_devopsguru).*"
-      - "(?i)(aws_cdk[.]aws_cur).*"
-      - "(?i)(aws_cdk[.]aws_lightsail).*"
-      - "(?i)(aws_cdk[.]aws_amplify).*"
-      - "(?i)(aws_cdk[.]aws_fsx).*"
-      - "(?i)(aws_cdk[.]aws_sso).*"
-      - "(?i)(aws_cdk[.]aws_pinpoint).*"
-      - "(?i)(aws_cdk[.]aws_kendra).*"
-      - "(?i)(aws_cdk[.]aws_lex).*"
-      - "(?i)(aws_cdk[.]aws_docdb).*"
-      - "(?i)(aws_cdk[.]aws_ivs).*"
-      - "(?i)(aws_cdk[.]aws_timestream).*"
-      - "(?i)(aws_cdk[.]aws_ec2).*"
-      - "(?i)(aws_cdk[.]aws_cloudtrail).*"
-      - "(?i)(aws_cdk[.]aws_acmpca).*"
-      - "(?i)(aws_cdk[.]aws_eventschemas).*"
-      - "(?i)(aws_cdk[.]aws_cloud9).*"
-      - "(?i)(aws_cdk[.]aws_auditmanager).*"
-      - "(?i)(aws_cdk[.]aws_aps).*"
-      - "(?i)(aws_cdk[.]aws_mwaa).*"
-      - "(?i)(aws_cdk[.]aws_codepipeline).*"
-      - "(?i)(aws_cdk[.]aws_fis).*"
-      - "(?i)(aws_cdk[.]aws_appflow).*"
-      - "(?i)(aws_cdk[.]aws_lookoutequipment).*"
-      - "(?i)(aws_cdk[.]aws_appsync).*"
-      - "(?i)(aws_cdk[.]aws_databrew).*"
-      - "(?i)(aws_cdk[.]aws_greengrassv2).*"
-      - "(?i)(aws_cdk[.]aws_kinesis).*"
-      - "(?i)(aws_cdk[.]aws_mediaconnect).*"
-      - "(?i)(aws_cdk[.]aws_opsworks).*"
-      - "(?i)(aws_cdk[.]aws_servicecatalogappregistry).*"
-      - "(?i)(aws_cdk[.]aws_ram).*"
-      - "(?i)(aws_cdk[.]aws_xray).*"
-      - "(?i)(aws_cdk[.]aws_pinpointemail).*"
-      - "(?i)(aws_cdk[.]aws_codebuild).*"
-      - "(?i)(aws_cdk[.]aws_emrcontainers).*"
-      - "(?i)(aws_cdk[.]aws_elasticsearch).*"
-      - "(?i)(aws_cdk[.]aws_ssmincidents).*"
-      - "(?i)(aws_cdk[.]aws_sam).*"
-      - "(?i)(aws_cdk[.]aws_guardduty).*"
-      - "(?i)(aws_cdk[.]aws_ecr).*"
-      - "(?i)(aws_cdk[.]aws_securityhub).*"
-      - "(?i)(aws_cdk[.]aws_codegurureviewer).*"
-      - "(?i)(aws_cdk[.]aws_budgets).*"
-      - "(?i)(aws_cdk[.]aws_chatbot).*"
-      - "(?i)(aws_cdk[.]aws_kms).*"
-      - "(?i)(aws_cdk[.]aws_backup).*"
-      - "(?i)(aws_cdk[.]aws_waf).*"
-      - "(?i)(aws_cdk[.]aws_frauddetector).*"
-      - "(?i)(aws_cdk[.]aws_refactorspaces).*"
-      - "(?i)(aws_cdk[.]aws_amplifyuibuilder).*"
-      - "(?i)(aws_cdk[.]aws_sns).*"
-      - "(?i)(aws_cdk[.]aws_kinesisfirehose).*"
-      - "(?i)(aws_cdk[.]aws_iotthingsgraph).*"
-      - "(?i)(aws_cdk[.]aws_s3).*"
-      - "(?i)(aws_cdk[.]aws_events).*"
-      - "(?i)(aws_cdk[.]aws_panorama).*"
-      - "(?i)(aws_cdk[.]aws_config).*"
-      - "(?i)(aws_cdk[.]aws_msk).*"
-      - "(?i)(aws_cdk[.]aws_cloudformation).*"
-      - "(?i)(aws_cdk[.]aws_elasticache).*"
-      - "(?i)(aws_cdk[.]aws_eks).*"
-      - "(?i)(aws_cdk[.]aws_codeartifact).*"
-      - "(?i)(aws_cdk[.]aws_servicecatalog).*"
-      - "(?i)(aws_cdk[.]aws_codecommit).*"
-      - "(?i)(aws_cdk[.]aws_lakeformation).*"
-      - "(?i)(aws_cdk[.]aws_wafv2).*"
-      - "(?i)(aws_cdk[.]aws_directoryservice).*"
-      - "(?i)(aws_cdk[.]aws_iotanalytics).*"
-      - "(?i)(aws_cdk[.]aws_cassandra).*"
-      - "(?i)(aws_cdk[.]aws_athena).*"
-      - "(?i)(aws_cdk[.]aws_servicediscovery).*"
-      - "(?i)(aws_cdk[.]aws_macie).*"
-      - "(?i)(aws_cdk[.]aws_ce).*"
-      - "(?i)(aws_cdk[.]aws_appmesh).*"
-      - "(?i)(aws_cdk[.]aws_logs).*"
-      - "(?i)(aws_cdk[.]aws_ssm).*"
-      - "(?i)(aws_cdk[.]aws_stepfunctions).*"
-      - "(?i)(aws_cdk[.]aws_qldb).*"
-      - "(?i)(aws_cdk[.]aws_opsworkscm).*"
-      - "(?i)(aws_cdk[.]aws_kinesisanalytics).*"
-      - "(?i)(aws_cdk[.]aws_cloudfront).*"
-      - "(?i)(aws_cdk[.]aws_appstream).*"
-      - "(?i)(aws_cdk[.]aws_appintegrations).*"
-      - "(?i)(aws_cdk[.]aws_evidently).*"
-      - "(?i)(aws_cdk[.]aws_apigateway).*"
-      - "(?i)(aws_cdk[.]aws_route53).*"
-      - "(?i)(aws_cdk[.]aws_mediapackage).*"
-      - "(?i)(aws_cdk[.]aws_autoscalingplans).*"
-      - "(?i)(aws_cdk[.]aws_memorydb).*"
-      - "(?i)(aws_cdk[.]aws_secretsmanager).*"
-      - "(?i)(aws_cdk[.]aws_networkmanager).*"
-      - "(?i)(aws_cdk[.]aws_nimblestudio).*"
-      - "(?i)(aws_cdk[.]aws_applicationautoscaling).*"
-      - "(?i)(aws_cdk[.]aws_opensearchservice).*"
-      - "(?i)(aws_cdk[.]aws_globalaccelerator).*"
-      - "(?i)(aws_cdk[.]aws_autoscaling).*"
-      - "(?i)(aws_cdk[.]aws_sagemaker).*"
-      - "(?i)(aws_cdk[.]aws_elasticbeanstalk).*"
-      - "(?i)(aws_cdk[.]aws_mediastore).*"
-      - "(?i)(aws_cdk[.]aws_wafregional).*"
-      - "(?i)(aws_cdk[.]aws_iotsitewise).*"
-      - "(?i)(aws_cdk[.]aws_dlm).*"
-      - "(?i)(aws_cdk[.]aws_licensemanager).*"
-      - "(?i)(aws_cdk[.]aws_cloudwatch).*"
-      - "(?i)(aws_cdk[.]aws_lookoutmetrics).*"
-      - "(?i)(aws_cdk[.]aws_redshift).*"
-      - "(?i)(aws_cdk[.]aws_accessanalyzer).*"
-      - "(?i)(aws_cdk[.]aws_quickstarts).*"
-      - "(?i)(aws_cdk[.]aws_iotevents).*"
-      - "(?i)(aws_cdk[.]aws_detective).*"
-      - "(?i)(aws_cdk[.]aws_finspace).*"
-      - "(?i)(aws_cdk[.]aws_ses).*"
-      - "(?i)(aws_cdk[.]aws_medialive).*"
-      - "(?i)(aws_cdk[.]aws_amazonmq).*"
-      - "(?i)(aws_cdk[.]aws_iotcoredeviceadvisor).*"
-      - "(?i)(aws_cdk[.]aws_location).*"
-      - "(?i)(aws_cdk[.]aws_applicationinsights).*"
-      - "(?i)(aws_cdk[.]aws_ecs).*"
-      - "(?i)(aws_cdk[.]core).*"
-      - "(?i)(aws_cdk[.]aws_servicediscovery).*"
-      - "(?i)(aws_cdk[.]aws_ecs).*"
-      - "(?i)(aws_cdk[.]aws_autoscaling).*"
-      - "(?i)(aws_cdk[.]aws_ecs_patterns).*"
-      - "(?i)(aws_cdk[.]aws_iam).*"
-      - "(?i)(aws_cdk[.]aws_ec2).*"
-      - "(?i)(aws_cdk[.]core).*"
-      - "(?i)(aws_cdk[.]aws_elasticloadbalancingv2).*"
-      - "(?i)(aws_cdk[.]aws_ecs_patterns).*"
-      - "(?i)(aws_cdk[.]aws_ssm).*"
-      - "(?i)(aws_cdk[.]aws_logs).*"
-      - "(?i)(aws_cdk[.]aws_appmesh).*"
-      - "(?i)(aws_cdk[.]aws_ec2).*"
-      - "(?i)(aws_cdk[.]aws_events_targets).*"
-      - "(?i)(aws_cdk[.]aws_iam).*"
-      - "(?i)(aws_cdk[.]aws_lambda_python).*"
-      - "(?i)(aws_cdk[.]aws_s3_notifications).*"
-      - "(?i)(aws_cdk[.]aws_ecr_assets).*"
-      - "(?i)(aws_cdk[.]custom-resources).*"
-      - "(?i)(aws_cdk[.]aws_autoscaling_hooktargets).*"
-      - "(?i)(aws_cdk[.]aws_route53_targets).*"
-      - "(?i)(aws_cdk[.]aws_cognito).*"
-      - "(?i)(aws_cdk[.]aws_autoscaling_common).*"
-      - "(?i)(aws_cdk[.]aws_certificatemanager).*"
-      - "(?i)(aws_cdk[.]aws_ecs).*"
-      - "(?i)(aws_cdk[.]region_info).*"
-      - "(?i)(aws_cdk[.]aws_sns_subscriptions).*"
-      - "(?i)(aws_cdk[.]aws_s3_assets).*"
-      - "(?i)(aws_cdk[.]cx_api).*"
-      - "(?i)(aws_cdk[.]cloud_assembly_schema).*"
-      - "(?i)(aws_cdk[.]assets).*"
-      - "(?i)(aws_cdk[.]aws_rds).*"
-      - "(?i)(aws_cdk[.]aws_neptune).*"
+      - "(?i)(aws_cdk.*[.]core).*"
+      - "(?i)(aws_cdk.*[.]aws_datasync).*"
+      - "(?i)(aws_cdk.*[.]aws_apigatewayv2).*"
+      - "(?i)(aws_cdk.*[.]aws_codeguruprofiler).*"
+      - "(?i)(aws_cdk.*[.]aws_healthlake).*"
+      - "(?i)(aws_cdk.*[.]aws_apprunner).*"
+      - "(?i)(aws_cdk.*[.]aws_rum).*"
+      - "(?i)(aws_cdk.*[.]aws_codestar).*"
+      - "(?i)(aws_cdk.*[.]aws_codestarnotifications).*"
+      - "(?i)(aws_cdk.*[.]aws_synthetics).*"
+      - "(?i)(aws_cdk.*[.]aws_emr).*"
+      - "(?i)(aws_cdk.*[.]aws_transfer).*"
+      - "(?i)(aws_cdk.*[.]aws_signer).*"
+      - "(?i)(aws_cdk.*[.]aws_iotwireless).*"
+      - "(?i)(aws_cdk.*[.]aws_workspaces).*"
+      - "(?i)(aws_cdk.*[.]aws_lookoutvision).*"
+      - "(?i)(aws_cdk.*[.]aws_iotfleethub).*"
+      - "(?i)(aws_cdk.*[.]aws_quicksight).*"
+      - "(?i)(aws_cdk.*[.]aws_inspector).*"
+      - "(?i)(aws_cdk.*[.]aws_resiliencehub).*"
+      - "(?i)(aws_cdk.*[.]aws_customerprofiles).*"
+      - "(?i)(aws_cdk.*[.]aws_wisdom).*"
+      - "(?i)(aws_cdk.*[.]aws_resourcegroups).*"
+      - "(?i)(aws_cdk.*[.]aws_fms).*"
+      - "(?i)(aws_cdk.*[.]aws_efs).*"
+      - "(?i)(aws_cdk.*[.]aws_codestarconnections).*"
+      - "(?i)(aws_cdk.*[.]aws_gamelift).*"
+      - "(?i)(aws_cdk.*[.]aws_imagebuilder).*"
+      - "(?i)(aws_cdk.*[.]aws_robomaker).*"
+      - "(?i)(aws_cdk.*[.]aws_networkfirewall).*"
+      - "(?i)(aws_cdk.*[.]aws_batch).*"
+      - "(?i)(aws_cdk.*[.]aws_rekognition).*"
+      - "(?i)(aws_cdk.*[.]aws_mediaconvert).*"
+      - "(?i)(aws_cdk.*[.]aws_datapipeline).*"
+      - "(?i)(aws_cdk.*[.]aws_sdb).*"
+      - "(?i)(aws_cdk.*[.]aws_appconfig).*"
+      - "(?i)(aws_cdk.*[.]aws_glue).*"
+      - "(?i)(aws_cdk.*[.]aws_devopsguru).*"
+      - "(?i)(aws_cdk.*[.]aws_cur).*"
+      - "(?i)(aws_cdk.*[.]aws_lightsail).*"
+      - "(?i)(aws_cdk.*[.]aws_fsx).*"
+      - "(?i)(aws_cdk.*[.]aws_sso).*"
+      - "(?i)(aws_cdk.*[.]aws_pinpoint).*"
+      - "(?i)(aws_cdk.*[.]aws_kendra).*"
+      - "(?i)(aws_cdk.*[.]aws_lex).*"
+      - "(?i)(aws_cdk.*[.]aws_docdb).*"
+      - "(?i)(aws_cdk.*[.]aws_ivs).*"
+      - "(?i)(aws_cdk.*[.]aws_timestream).*"
+      - "(?i)(aws_cdk.*[.]aws_cloudtrail).*"
+      - "(?i)(aws_cdk.*[.]aws_acmpca).*"
+      - "(?i)(aws_cdk.*[.]aws_eventschemas).*"
+      - "(?i)(aws_cdk.*[.]aws_cloud9).*"
+      - "(?i)(aws_cdk.*[.]aws_auditmanager).*"
+      - "(?i)(aws_cdk.*[.]aws_aps).*"
+      - "(?i)(aws_cdk.*[.]aws_mwaa).*"
+      - "(?i)(aws_cdk.*[.]aws_codepipeline).*"
+      - "(?i)(aws_cdk.*[.]aws_fis).*"
+      - "(?i)(aws_cdk.*[.]aws_appflow).*"
+      - "(?i)(aws_cdk.*[.]aws_lookoutequipment).*"
+      - "(?i)(aws_cdk.*[.]aws_appsync).*"
+      - "(?i)(aws_cdk.*[.]aws_databrew).*"
+      - "(?i)(aws_cdk.*[.]aws_greengrassv2).*"
+      - "(?i)(aws_cdk.*[.]aws_mediaconnect).*"
+      - "(?i)(aws_cdk.*[.]aws_opsworks).*"
+      - "(?i)(aws_cdk.*[.]aws_servicecatalogappregistry).*"
+      - "(?i)(aws_cdk.*[.]aws_ram).*"
+      - "(?i)(aws_cdk.*[.]aws_xray).*"
+      - "(?i)(aws_cdk.*[.]aws_pinpointemail).*"
+      - "(?i)(aws_cdk.*[.]aws_codebuild).*"
+      - "(?i)(aws_cdk.*[.]aws_emrcontainers).*"
+      - "(?i)(aws_cdk.*[.]aws_sam).*"
+      - "(?i)(aws_cdk.*[.]aws_guardduty).*"
+      - "(?i)(aws_cdk.*[.]aws_ecr).*"
+      - "(?i)(aws_cdk.*[.]aws_securityhub).*"
+      - "(?i)(aws_cdk.*[.]aws_codegurureviewer).*"
+      - "(?i)(aws_cdk.*[.]aws_budgets).*"
+      - "(?i)(aws_cdk.*[.]aws_chatbot).*"
+      - "(?i)(aws_cdk.*[.]aws_kms).*"
+      - "(?i)(aws_cdk.*[.]aws_backup).*"
+      - "(?i)(aws_cdk.*[.]aws_waf).*"
+      - "(?i)(aws_cdk.*[.]aws_frauddetector).*"
+      - "(?i)(aws_cdk.*[.]aws_refactorspaces).*"
+      - "(?i)(aws_cdk.*[.]aws_iotthingsgraph).*"
+      - "(?i)(aws_cdk.*[.]aws_events).*"
+      - "(?i)(aws_cdk.*[.]aws_panorama).*"
+      - "(?i)(aws_cdk.*[.]aws_config).*"
+      - "(?i)(aws_cdk.*[.]aws_msk).*"
+      - "(?i)(aws_cdk.*[.]aws_elasticache).*"
+      - "(?i)(aws_cdk.*[.]aws_codeartifact).*"
+      - "(?i)(aws_cdk.*[.]aws_servicecatalog).*"
+      - "(?i)(aws_cdk.*[.]aws_codecommit).*"
+      - "(?i)(aws_cdk.*[.]aws_lakeformation).*"
+      - "(?i)(aws_cdk.*[.]aws_wafv2).*"
+      - "(?i)(aws_cdk.*[.]aws_directoryservice).*"
+      - "(?i)(aws_cdk.*[.]aws_iotanalytics).*"
+      - "(?i)(aws_cdk.*[.]aws_cassandra).*"
+      - "(?i)(aws_cdk.*[.]aws_servicediscovery).*"
+      - "(?i)(aws_cdk.*[.]aws_macie).*"
+      - "(?i)(aws_cdk.*[.]aws_ce).*"
+      - "(?i)(aws_cdk.*[.]aws_appmesh).*"
+      - "(?i)(aws_cdk.*[.]aws_logs).*"
+      - "(?i)(aws_cdk.*[.]aws_stepfunctions).*"
+      - "(?i)(aws_cdk.*[.]aws_qldb).*"
+      - "(?i)(aws_cdk.*[.]aws_opsworkscm).*"
+      - "(?i)(aws_cdk.*[.]aws_appstream).*"
+      - "(?i)(aws_cdk.*[.]aws_appintegrations).*"
+      - "(?i)(aws_cdk.*[.]aws_evidently).*"
+      - "(?i)(aws_cdk.*[.]aws_apigateway).*"
+      - "(?i)(aws_cdk.*[.]aws_route53).*"
+      - "(?i)(aws_cdk.*[.]aws_mediapackage).*"
+      - "(?i)(aws_cdk.*[.]aws_autoscalingplans).*"
+      - "(?i)(aws_cdk.*[.]aws_memorydb).*"
+      - "(?i)(aws_cdk.*[.]aws_secretsmanager).*"
+      - "(?i)(aws_cdk.*[.]aws_networkmanager).*"
+      - "(?i)(aws_cdk.*[.]aws_nimblestudio).*"
+      - "(?i)(aws_cdk.*[.]aws_applicationautoscaling).*"
+      - "(?i)(aws_cdk.*[.]aws_opensearchservice).*"
+      - "(?i)(aws_cdk.*[.]aws_globalaccelerator).*"
+      - "(?i)(aws_cdk.*[.]aws_autoscaling).*"
+      - "(?i)(aws_cdk.*[.]aws_elasticbeanstalk).*"
+      - "(?i)(aws_cdk.*[.]aws_mediastore).*"
+      - "(?i)(aws_cdk.*[.]aws_wafregional).*"
+      - "(?i)(aws_cdk.*[.]aws_iotsitewise).*"
+      - "(?i)(aws_cdk.*[.]aws_dlm).*"
+      - "(?i)(aws_cdk.*[.]aws_licensemanager).*"
+      - "(?i)(aws_cdk.*[.]aws_lookoutmetrics).*"
+      - "(?i)(aws_cdk.*[.]aws_accessanalyzer).*"
+      - "(?i)(aws_cdk.*[.]aws_quickstarts).*"
+      - "(?i)(aws_cdk.*[.]aws_iotevents).*"
+      - "(?i)(aws_cdk.*[.]aws_detective).*"
+      - "(?i)(aws_cdk.*[.]aws_finspace).*"
+      - "(?i)(aws_cdk.*[.]aws_medialive).*"
+      - "(?i)(aws_cdk.*[.]aws_amazonmq).*"
+      - "(?i)(aws_cdk.*[.]aws_iotcoredeviceadvisor).*"
+      - "(?i)(aws_cdk.*[.]aws_location).*"
+      - "(?i)(aws_cdk.*[.]aws_applicationinsights).*"
+      - "(?i)(aws_cdk.*[.]aws_iam).*"
+      - "(?i)(aws_cdk.*[.]aws_events_targets).*"
+      - "(?i)(aws_cdk.*[.]aws_ecr_assets).*"
+      - "(?i)(aws_cdk.*[.]custom-resources).*"
+      - "(?i)(aws_cdk.*[.]aws_autoscaling_hooktargets).*"
+      - "(?i)(aws_cdk.*[.]aws_route53_targets).*"
+      - "(?i)(aws_cdk.*[.]aws_autoscaling_common).*"
+      - "(?i)(aws_cdk.*[.]aws_certificatemanager).*"
+      - "(?i)(aws_cdk.*[.]region_info).*"
+      - "(?i)(aws_cdk.*[.]cx_api).*"
+      - "(?i)(aws_cdk.*[.]cloud_assembly_schema).*"
+      - "(?i)(aws_cdk.*[.]assets).*"
+      - "(?i)(aws_cdk.*[.]aws_neptune).*"
     tags:

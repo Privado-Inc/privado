@@ -9,5 +9,5 @@ sinks:
     domains:
       - "discord.com"
     patterns:
-      - "(?i)(discord[.]py|discord_notify|apache-airflow-providers-discord|twitchAPI).*"
+      - "(?i)(discord|twitchAPI).*"
     tags:

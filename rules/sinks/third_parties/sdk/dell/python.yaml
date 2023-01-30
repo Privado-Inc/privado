@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dell.com"
     patterns:
-      - "(?i)(omsdk|python-ecsclient).*"
+      - "(?i)(omsdk|ecsclient).*"
     tags:

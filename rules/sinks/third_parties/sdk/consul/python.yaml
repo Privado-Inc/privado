@@ -9,5 +9,5 @@ sinks:
     domains:
       - "consul.io"
     patterns:
-      - "(?i)(python-consul).*"
+      - "(?i)(consul).*"
     tags:

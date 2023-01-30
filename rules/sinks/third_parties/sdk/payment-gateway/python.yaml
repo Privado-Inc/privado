@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Danielhall
-    name: Danielhall
+  - id: ThirdParties.SDK.Payment.Gateways
+    name: Payment Gateways
     domains:
-      - "danielhall.me"
+      - "chargebee.com"
     patterns:
-      - "(?i)(lifx-sdk).*"
+      - "(?i)(get_gateway).*"
     tags:

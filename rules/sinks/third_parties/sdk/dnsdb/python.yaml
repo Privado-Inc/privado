@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dnsdb.io"
     patterns:
-      - "(?i)(dnsdb-python-sdk).*"
+      - "(?i)(dnsdb).*"
     tags:

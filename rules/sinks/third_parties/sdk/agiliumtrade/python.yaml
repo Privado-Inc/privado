@@ -9,5 +9,5 @@ sinks:
     domains:
       - "agiliumtrade.ai"
     patterns:
-      - "(?i)(metaapi_cloud_sdk|metaapi_cloud_copyfactory_sdk|metaapi-cloud-sdk).*"
+      - "(?i)(metaapi_cloud_sdk).*"
     tags:

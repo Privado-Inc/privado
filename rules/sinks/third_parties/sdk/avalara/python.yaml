@@ -9,5 +9,5 @@ sinks:
     domains:
       - "avalara.com"
     patterns:
-      - "(?i)(Avalara).*"
+      - "(?i)(avalara).*"
     tags:

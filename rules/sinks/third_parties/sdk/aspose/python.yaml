@@ -9,5 +9,5 @@ sinks:
     domains:
       - "aspose.com"
     patterns:
-      - "(?i)(aspose-tasks-cloud).*"
+      - "(?i)(asposetaskscloud).*"
     tags:

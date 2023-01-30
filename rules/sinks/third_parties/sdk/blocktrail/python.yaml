@@ -9,5 +9,5 @@ sinks:
     domains:
       - "blocktrail.com"
     patterns:
-      - "(?i)(blocktrail-sdk).*"
+      - "(?i)(blocktrail).*"
     tags:

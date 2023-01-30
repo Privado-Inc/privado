@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cognite.com"
     patterns:
-      - "(?i)(cognite-sdk).*"
+      - "(?i)(cognite).*"
     tags:

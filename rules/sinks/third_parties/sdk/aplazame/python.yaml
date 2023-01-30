@@ -9,5 +9,5 @@ sinks:
     domains:
       - "aplazame.com"
     patterns:
-      - "(?i)(aplazame-sdk).*"
+      - "(?i)(aplazame_sdk).*"
     tags:

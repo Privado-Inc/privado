@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cohesity.com"
     patterns:
-      - "(?i)(cohesity_management_sdk).*"
+      - "(?i)(CohesityClient).*"
     tags:

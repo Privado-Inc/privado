@@ -9,5 +9,5 @@ sinks:
     domains:
       - "docusign.com"
     patterns:
-      - "(?i)(docusign-esign).*"
+      - "(?i)(docusign_esign).*"
     tags:

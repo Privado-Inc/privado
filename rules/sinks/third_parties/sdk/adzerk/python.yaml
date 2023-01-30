@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adzerk.com"
     patterns:
-      - "(?i)(adzerk-decision-sdk).*"
+      - "(?i)(adzerk_decision_sdk).*"
     tags:

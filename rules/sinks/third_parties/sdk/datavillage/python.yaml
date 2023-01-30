@@ -9,5 +9,5 @@ sinks:
     domains:
       - "datavillage.me"
     patterns:
-      - "(?i)(datavillage-sdk).*"
+      - "(?i)(datavillage).*"
     tags:

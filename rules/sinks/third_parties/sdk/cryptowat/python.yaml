@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cryptowat.ch"
     patterns:
-      - "(?i)(cryptowatch-sdk).*"
+      - "(?i)(cryptowatch).*"
     tags:

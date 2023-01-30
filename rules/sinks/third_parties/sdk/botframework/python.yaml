@@ -9,5 +9,5 @@ sinks:
     domains:
       - "botframework.com"
     patterns:
-      - "(?i)(botbuilder-core|botbuilder-ai).*"
+      - "(?i)(botbuilder.*(core|ai)).*"
     tags:

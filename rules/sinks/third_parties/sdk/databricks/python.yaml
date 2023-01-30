@@ -9,5 +9,5 @@ sinks:
     domains:
       - "databricks.com"
     patterns:
-      - "(?i)(dbx|databricks-cli|apache-airflow-providers-databricks|databricks-sql-connector).*"
+      - "(?i)(dbx|databricks).*"
     tags:

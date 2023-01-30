@@ -9,5 +9,5 @@ sinks:
     domains:
       - "currencycloud.com"
     patterns:
-      - "(?i)(currencycloud-python-client).*"
+      - "(?i)(currencycloud).*"
     tags:

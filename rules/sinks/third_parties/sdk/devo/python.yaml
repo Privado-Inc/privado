@@ -9,5 +9,5 @@ sinks:
     domains:
       - "devo.com"
     patterns:
-      - "(?i)(devo-sdk).*"
+      - "(?i)(devo).*"
     tags:

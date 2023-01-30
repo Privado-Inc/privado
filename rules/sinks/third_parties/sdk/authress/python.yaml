@@ -9,5 +9,5 @@ sinks:
     domains:
       - "authress.io"
     patterns:
-      - "(?i)(authress-sdk).*"
+      - "(?i)(authress_sdk).*"
     tags:

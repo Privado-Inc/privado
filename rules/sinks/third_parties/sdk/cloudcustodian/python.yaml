@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cloudcustodian.io"
     patterns:
-      - "(?i)(c7n|c7n-org).*"
+      - "(?i)(c7n).*"
     tags:

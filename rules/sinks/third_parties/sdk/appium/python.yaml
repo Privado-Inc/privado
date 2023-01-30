@@ -9,5 +9,5 @@ sinks:
     domains:
       - "appium.io"
     patterns:
-      - "(?i)(Appium_Python_Client).*"
+      - "(?i)(appium).*"
     tags:

@@ -9,7 +9,23 @@ sinks:
     domains:
       - "google.com"
     patterns:
-      - "(?i)(google-cloud-vision|google-auth-oauthlib|googledatastore|bdtranslate|pyfcm|caliban|ndb|django-fcm|anom|binderhub|google-cloud-storage|google-api-python-client|google-auth|wiser-gcloud-storage|gcloud|gcloud-rest-bigquery|gcloud-aio-bigquery|gcloud-rest-auth|gcloud-aio-storage|gcloud-rest-kms|django-gcloud-storage|gcloud-aio-core|gcloud-aio-datastore|gcloud-rest-pubsub|gcloud-aio-kms|google-cloud-monitoring|gcloud-aio-run|gcloud-aio-auth|gcloud-rest-datastore|gcloud-aio-pubsub|gcloud-rest-storage|wiser-gcloud-firestore|asyncio-gcloud-ml-engine|gcreds|gcdu|cs-storage|apprentice|gapic-google-cloud-speech-v1beta1|gapic-google-cloud-language-v1|gapic-google-cloud-datastore-v1|gapic-google-cloud-language-v1beta2|gapic-google-cloud-vision-v1|googleapis-common-protos|firebase|django-rest-firebase-auth|firebase-admin|djangorestframework-firebase|flask-firebase-admin|python-firebase|async-firebase|firebase-auth|firebase-client|firebase-idtoken|singleton-firebase|firebase-data|firebase-fave|firebase-fireup|django-firebase|igeFirebase|django-google-maps|google-crc32c|google-cloud-appengine-logging|grpc-google-iam-v1|googleads|google-cloud-audit-log|google-cloud-bigquery|pytesseract|google_api_python_client|google_auth_oauthlib|aws-google-auth|pygsheets|gspread|pydrive|cloud-sql-python-connector|google-cloud-spanner|google-cloud-bigtable|google-cloud-spanner|google-cloud-bigtable|google-cloud-firestore|google-api-core|google-resumable-media|google-cloud-core|google-auth-httplib2|google-cloud-logging|googlemaps|cloudml-hypertune|gax-google-pubsub-v1|grpc-google-pubsub-v1|gax-google-logging-v2|grpc-google-logging-v2|google_auth|google-gax|google-reauth|gmusicapi|google-apitools|pydata-google-auth).*"
+      - "(?i)(gmusicapi|pyfcm|caliban|ndb|fcm|anom|binderhub|gcdu|apprentice).*"
+      - "(?i)(google_api_python_client).*"
+      - "(?i)(gapic_google_cloud_speech_v1beta1).*"
+      - "(?i)(gapic_google_cloud_language_v1).*"
+      - "(?i)(gapic_google_cloud_language_v1beta2).*"
+      - "(?i)(gapic_google_cloud_vision_v1).*"
+      - "(?i)(googleapis_common_protos).*"
+      - "(?i)(google_crc32c).*"
+      - "(?i)(grpc_google_iam_v1).*"
+      - "(?i)(google_api_python_client).*"
+      - "(?i)(pytesseract).*"
+      - "(?i)(google_api_core).*"
+      - "(?i)(google_resumable_media).*"
+      - "(?i)(cloudml_hypertune).*"
+      - "(?i)((gax|grpc)_google_logging_v2).*"
+      - "(?i)(google_gax).*"
+      - "(?i)(google_apitools).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Spreadsheets
@@ -17,7 +33,7 @@ sinks:
     domains:
       - "spreadsheets.google.com"
     patterns:
-      - "(?i)(gspread-dataframe).*"
+      - "(?i)(gspread_dataframe|pygsheets|gspread).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud
@@ -25,7 +41,140 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(google-cloud|google-cloud-pubsub|pybigquery|google-cloud-datastore|google-cloud-error-reporting|google-cloud-language|google-python-cloud-debugger|googletrans|google_images_download|gTTS|GoogleAppEngineCloudStorageClient|google-cloud-videointelligence|googleappenginecloudstorageclient|googleappenginepipeline|google-cloud-translate|google-cloud-dlp|google-cloud-tasks|grpcio-gcp|google_trans_new|google_pasta|google-cloud-texttospeech|google-cloud-bigquery-storage|google-cloud-dataplex|google-cloud-dataproc-metastore|google-cloud-os-login|apache-airflow-providers-google|google-cloud-bigquery-datatransfer|google-cloud-build|google-cloud-dataproc|google-cloud-secret-manager|google-cloud-container|google-cloud-datacatalog|google-cloud-kms|google-cloud-aiplatform|google-cloud-speech|google-cloud-automl|google-cloud-workflows|google-cloud-memcache|google-cloud-orchestration-airflow|google-nest-sdm).*"
+      - "(?i)(google.*cloud.*[.]core).*"
+      - "(?i)(google.*cloud.*[.]error-reporting).*"
+      - "(?i)(google.*cloud.*[.]vision).*"
+      - "(?i)(google.*cloud.*[.]audit_log).*"
+      - "(?i)(google.*cloud.*[.]logging).*"
+      - "(?i)(google.*cloud.*[.]language).*"
+      - "(?i)(google.*cloud.*[.]videointelligence).*"
+      - "(?i)(google.*cloud.*[.]dlp).*"
+      - "(?i)(google.*cloud.*[.]monitoring).*"
+      - "(?i)(google.*cloud.*[.]appengine_logging).*"
+      - "(?i)(google.*cloud.*[.]tasks).*"
+      - "(?i)(google.*cloud.*[.]texttospeech).*"
+      - "(?i)(google.*cloud.*[.]dataplex).*"
+      - "(?i)(google.*cloud.*[.]dataproc-metastore).*"
+      - "(?i)(google.*cloud.*[.]os-login).*"
+      - "(?i)(google.*cloud.*[.]build).*"
+      - "(?i)(google.*cloud.*[.]dataproc).*"
+      - "(?i)(google.*cloud.*[.]secret-manager).*"
+      - "(?i)(google.*cloud.*[.]container).*"
+      - "(?i)(google.*cloud.*[.]datacatalog).*"
+      - "(?i)(google.*cloud.*[.]aiplatform).*"
+      - "(?i)(google.*cloud.*[.]speech).*"
+      - "(?i)(google.*cloud.*[.]automl).*"
+      - "(?i)(google.*cloud.*[.]workflows).*"
+      - "(?i)(google.*cloud.*[.]memcache).*"
+      - "(?i)(google.*cloud.*[.]spanner).*"
+      - "(?i)(google.*cloud.*[.]bigtable).*"
+      - "(?i)(google.*cloud.*[.]spanner).*"
+      - "(?i)(google.*cloud.*[.]bigtable).*"
+      - "(?i)(google.*cloud.*[.]orchestration-airflow).*"
+      - "(?i)(googleclouddebugger|gTTS).*"
+      - "(?i)(googleappenginepipeline|google_nest_sdm).*"
+      - "(?i)(grpc_gcp|google_pasta|gcloud).*"
+      - "(?i)(apache-airflow-providers-google).*"
+      - "(?i)(asyncio_gcloud_ml_engine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.BigQuery
+    name: Google BigQuery
+    domains:
+      - "bigquery.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]bigquery).*"
+      - "(?i)(pybigquery|gcloud.*(rest|aio).*[.]bigquery).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.PubSub
+    name: Google PubSub
+    domains:
+      - "pubsub.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]pubsub).*"
+      - "(?i)(gax_google_pubsub_v1).*"
+      - "(?i)(grpc_google_pubsub_v1).*"
+      - "(?i)(gcloud.*(rest|aio).*[.]pubsub).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Auth
+    name: Google Auth
+    domains:
+      - "auth.cloud.google.com"
+    patterns:
+      - "(?i)(google.*auth|gcreds).*"
+      - "(?i)(google.*cloud.*[.]auth).*"
+      - "(?i)(gcloud.*(rest|aio).*[.]auth).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.Cloud Translation
+    name: Google CloudTranslation
+    domains:
+      - "trans.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]translate_v2).*"
+      - "(?i)(googletrans|google_trans_new|bdtranslate).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.DataStore
+    name: Google DataStore
+    domains:
+      - "datastore.cloud.google.com"
+    patterns:
+      - "(?i)(gapic_google_cloud_datastore_v1).*"
+      - "(?i)(google-cloud-datastore|googledatastore|DatastoreAdminClient).*"
+      - "(?i)(google.*cloud.*[.]datastore|gcloud.*(rest|aio).*[.]datastore).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Storage
+    name: Google Storage
+    domains:
+      - "storage.cloud.google.com"
+    patterns:
+      - "(?i)(wiser.*gcloud.*storage).*"
+      - "(?i)(django_gcloud_storage).*"
+      - "(?i)(cs_storage).*"
+      - "(?i)(googleappenginecloudstorageclient).*"
+      - "(?i)(google.*cloud.*[.]storage|gcloud.*(rest|aio).*[.]storage).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Firestore
+    name: Google Firestore
+    domains:
+      - "firestore.cloud.google.com"
+    patterns:
+      - "(?i)(wiser.*gcloud.*firestore).*"
+      - "(?i)(google.*cloud.*[.]firestore).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.KMS
+    name: Google KMS
+    domains:
+      - "kms.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]kms|gcloud.*(rest|aio).*[.]kms).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.Maps
+    name: Google Maps
+    domains:
+      - "maps.google.com"
+    patterns:
+      - "(?i)(googlemaps|google_maps).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Drive
+    name: Google Drive
+    domains:
+      - "drive.google.com"
+    patterns:
+      - "(?i)(pydrive|google_images_download).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Duo
@@ -33,21 +182,23 @@ sinks:
     domains:
       - "duo.google.com"
     patterns:
-      - "(?i)(duo-client).*"
+      - "(?i)(duo_client).*"
     tags:
+
 
   - id: ThirdParties.SDK.Google.Firebase
     name: Google Firebase
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(firebase_admin).*"
+      - "(?i)(firebase).*"
     tags:
+
 
   - id: ThirdParties.SDK.Google.Admob
     name: Google Admob
     domains:
       - "admob.google.com"
     patterns:
-      - "(?i)(google-ads).*"
+      - "(?i)(google.ads|googleads).*"
     tags:

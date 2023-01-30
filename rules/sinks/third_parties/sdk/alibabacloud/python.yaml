@@ -9,5 +9,5 @@ sinks:
     domains:
       - "alibabacloud.com"
     patterns:
-      - "(?i)(apache-airflow-providers-alibaba|airflow[.]providers[.]alibaba[.]cloud).*"
+      - "(?i)(airflow[.]providers[.]alibaba[.]cloud).*"
     tags:

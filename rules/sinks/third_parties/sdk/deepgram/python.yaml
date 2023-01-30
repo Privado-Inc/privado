@@ -9,5 +9,5 @@ sinks:
     domains:
       - "deepgram.com"
     patterns:
-      - "(?i)(deepgram-sdk).*"
+      - "(?i)(deepgram).*"
     tags:

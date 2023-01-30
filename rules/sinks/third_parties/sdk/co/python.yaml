@@ -9,7 +9,7 @@ sinks:
     domains:
       - "sdk-gaming.co.uk"
     patterns:
-      - "(?i)(pyirsdk).*"
+      - "(?i)(irsdk).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Quantanalytics

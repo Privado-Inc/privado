@@ -9,5 +9,5 @@ sinks:
     domains:
       - "asana.com"
     patterns:
-      - "(?i)(apache-airflow-providers-asana|asana).*"
+      - "(?i)(airflow.*providers.*asana|asana).*"
     tags:

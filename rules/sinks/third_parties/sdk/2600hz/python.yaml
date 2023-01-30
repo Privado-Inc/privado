@@ -9,5 +9,5 @@ sinks:
     domains:
       - "docs.2600hz.com"
     patterns:
-      - "(?i)(kazoo-api|kazoo_api|kazooapi).*"
+      - "(?i)(kazoo.api|kazoo_api|kazooapi).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dingtalk.com"
     patterns:
-      - "(?i)(dingtalk-sdk|DingRobotPy).*"
+      - "(?i)(dingtalk|DingRobotPy).*"
     tags:

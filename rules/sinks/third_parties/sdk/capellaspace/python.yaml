@@ -9,5 +9,5 @@ sinks:
     domains:
       - "capellaspace.com"
     patterns:
-      - "(?i)(capella-console-client).*"
+      - "(?i)(capella_console_client).*"
     tags:

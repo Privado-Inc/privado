@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dwavesys.com"
     patterns:
-      - "(?i)(dwave-system).*"
+      - "(?i)(dwave_system).*"
     tags:

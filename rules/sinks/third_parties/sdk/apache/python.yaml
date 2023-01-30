@@ -17,7 +17,7 @@ sinks:
     domains:
       - "libcloud.apache.org"
     patterns:
-      - "(?i)(apache-libcloud).*"
+      - "(?i)(libcloud).*"
     tags:
 
   - id: ThirdParties.SDK.Apache.Pinot

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bazaarvoice.com"
     patterns:
-      - "(?i)(python-hmac-auth).*"
+      - "(?i)(python_hmac_auth).*"
     tags:

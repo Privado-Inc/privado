@@ -9,5 +9,5 @@ sinks:
     domains:
       - "deeplabcut.org"
     patterns:
-      - "(?i)(deeplabcut-live).*"
+      - "(?i)(deeplabcut).*"
     tags:

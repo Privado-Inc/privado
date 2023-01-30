@@ -9,5 +9,5 @@ sinks:
     domains:
       - "aliyun.com"
     patterns:
-      - "(?i)(aliyun-python-sdk-acm|aliyunsdk|aliyunauth|requests-aliyun).*"
+      - "(?i)(aliyunsdk|aliyunauth).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "balena.io"
     patterns:
-      - "(?i)(balena-sdk).*"
+      - "(?i)(balena).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "clickhouse.com"
     patterns:
-      - "(?i)(infi[.]clickhouse-orm).*"
+      - "(?i)(clickhouse_orm).*"
     tags:

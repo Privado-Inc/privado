@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dashborg.net"
     patterns:
-      - "(?i)(dashborg-python-sdk).*"
+      - "(?i)(dashborg).*"
     tags:
