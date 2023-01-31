@@ -9,5 +9,5 @@ sinks:
     domains:
       - "instagram.com"
     patterns:
-      - "(?i)(python-instagram).*"
+      - "(?i)(InstagramAPI|instagram.client).*"
     tags:

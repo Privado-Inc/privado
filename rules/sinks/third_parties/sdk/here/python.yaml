@@ -9,5 +9,5 @@ sinks:
     domains:
       - "here.com"
     patterns:
-      - "(?i)(here_map_widget_for_jupyter|here_content|here_inspector|here_geopandas_adapter|here_geotiles|here_platform).*"
+      - "(?i)(here_map_widget|here_geopandas_adapter|here_oauth).*"
     tags:

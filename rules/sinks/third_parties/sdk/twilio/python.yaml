@@ -9,5 +9,5 @@ sinks:
     domains:
       - "twilio.com"
     patterns:
-      - "(?i)(django-twilio|twilio).*"
+      - "(?i)(twilio).*"
     tags:

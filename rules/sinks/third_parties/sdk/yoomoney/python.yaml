@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yoomoney.ru"
     patterns:
-      - "(?i)(yookassa|yookassa-payout).*"
+      - "(?i)(yookassa).*"
     tags:

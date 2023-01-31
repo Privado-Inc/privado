@@ -9,5 +9,5 @@ sinks:
     domains:
       - "openapitools.org"
     patterns:
-      - "(?i)(openapi-client).*"
+      - "(?i)(openapi).*"
     tags:

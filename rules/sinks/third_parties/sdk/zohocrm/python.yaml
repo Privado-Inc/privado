@@ -9,5 +9,5 @@ sinks:
     domains:
       - "zohocrm.com"
     patterns:
-      - "(?i)(zohocrmsdk2_1).*"
+      - "(?i)(zcrmsdk).*"
     tags:

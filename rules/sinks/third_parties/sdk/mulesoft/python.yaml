@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mulesoft.com"
     patterns:
-      - "(?i)(pycloudhub|ts-dataweave).*"
+      - "(?i)(cloudhub|ts_dataweave).*"
     tags:

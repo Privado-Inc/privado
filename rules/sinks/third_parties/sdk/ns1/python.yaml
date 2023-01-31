@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ns1.com"
     patterns:
-      - "(?i)(ns1-python|nsone).*"
+      - "(?i)(ns1|nsone).*"
     tags:

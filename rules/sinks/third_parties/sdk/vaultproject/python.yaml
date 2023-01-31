@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vaultproject.io"
     patterns:
-      - "(?i)(apache-airflow-providers-hashicorp).*"
+      - "(?i)(airflow.*providers.*hashicorp).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "looker.com"
     patterns:
-      - "(?i)(looker-sdk|looker_sdk).*"
+      - "(?i)(looker_sdk).*"
     tags:

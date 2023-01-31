@@ -9,5 +9,5 @@ sinks:
     domains:
       - "travis-ci.com"
     patterns:
-      - "(?i)(TravisPy).*"
+      - "(?i)(travispy).*"
     tags:

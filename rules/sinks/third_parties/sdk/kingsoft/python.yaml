@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kingsoft.com"
     patterns:
-      - "(?i)(ksc-sdk-python).*"
+      - "(?i)(kscore.*session).*"
     tags:

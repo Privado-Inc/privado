@@ -9,5 +9,5 @@ sinks:
     domains:
       - "opentelemetry.io"
     patterns:
-      - "(?i)(opentelemetry-api|opentelemetry-sdk|opentelemetry).*"
+      - "(?i)(opentelemetry).*"
     tags:

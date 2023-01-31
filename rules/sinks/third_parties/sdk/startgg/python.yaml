@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uzh.Lists.Gc3
-    name: Uzh Lists Gc3
+  - id: ThirdParties.SDK.StartGG
+    name: Start GG
     domains:
-      - "gc3.lists.uzh.ch"
+      - "start.gg"
     patterns:
-      - "(?i)(elasticluster).*"
+      - "(?i)(smashggpy).*"
     tags:

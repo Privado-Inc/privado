@@ -9,5 +9,5 @@ sinks:
     domains:
       - "prestodb.io"
     patterns:
-      - "(?i)(apache-airflow-providers-presto|presto-python-client).*"
+      - "(?i)(airflow.*providers.*presto|prestodb).*"
     tags:

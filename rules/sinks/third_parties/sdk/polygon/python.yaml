@@ -9,5 +9,5 @@ sinks:
     domains:
       - "polygon.io"
     patterns:
-      - "(?i)(polygon-api-client).*"
+      - "(?i)(polygon).*"
     tags:

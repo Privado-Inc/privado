@@ -9,5 +9,5 @@ sinks:
     domains:
       - "medium.com"
     patterns:
-      - "(?i)(medium|PyMedium|python-medium).*"
+      - "(?i)(medium|pymedium).*"
     tags:

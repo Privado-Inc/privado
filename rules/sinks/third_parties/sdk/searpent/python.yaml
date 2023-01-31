@@ -9,5 +9,5 @@ sinks:
     domains:
       - "searpent.com"
     patterns:
-      - "(?i)(searpent-classy-sdk).*"
+      - "(?i)(classy_sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "scaleapi.com"
     patterns:
-      - "(?i)(scale-nucleus).*"
+      - "(?i)(scaleapi|scale_nucleus).*"
     tags:

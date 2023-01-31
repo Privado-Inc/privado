@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pactflow.io"
     patterns:
-      - "(?i)(pact-python).*"
+      - "(?i)(pact).*"
     tags:

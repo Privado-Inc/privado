@@ -9,5 +9,5 @@ sinks:
     domains:
       - "onesignal.com"
     patterns:
-      - "(?i)(onesignal-notifications|onesignal-sdk|onesignal|OneSignalPythonSDK|onesignal-client|onesignal-python|django-onesignal|onesignal-django|cloudwright-onesignal|pybossa-onesignal|onesignalapi|LLOneSignal).*"
+      - "(?i)(onesignal|cloudwright_onesignal|pbsonesignal).*"
     tags:

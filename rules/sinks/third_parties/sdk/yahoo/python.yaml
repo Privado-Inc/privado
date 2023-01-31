@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yahoo.com"
     patterns:
-      - "(?i)(yfinance|fix-yahoo-finance).*"
+      - "(?i)(yfinance|yahoo_finance|yahoo_finance_pynterface).*"
     tags:

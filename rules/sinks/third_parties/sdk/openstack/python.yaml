@@ -9,5 +9,5 @@ sinks:
     domains:
       - "openstack.org"
     patterns:
-      - "(?i)(pyrax|keystoneauth1|python-cinderclient).*"
+      - "(?i)(pyrax|keystoneauth1|cinderclient).*"
     tags:

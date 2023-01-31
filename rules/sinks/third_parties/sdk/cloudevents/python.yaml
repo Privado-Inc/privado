@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Talkiq
-    name: Talkiq
+  - id: ThirdParties.SDK.CloudEvents
+    name: CloudEvents
     domains:
-      - "talkiq.com"
+      - "cloudevents.io"
     patterns:
-      - "(?i)(gcloud-aio-taskqueue|gcloud-rest-taskqueue).*"
+      - "(?i)(cloudevents).*"
     tags:

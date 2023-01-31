@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hyperwallet.com"
     patterns:
-      - "(?i)(hyperwallet-sdk).*"
+      - "(?i)(hyperwallet).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "researchspace.com"
     patterns:
-      - "(?i)(rspace-client).*"
+      - "(?i)(rspace_client).*"
     tags:

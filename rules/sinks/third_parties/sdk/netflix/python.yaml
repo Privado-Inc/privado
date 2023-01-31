@@ -9,5 +9,5 @@ sinks:
     domains:
       - "netflix.com"
     patterns:
-      - "(?i)(python-netflix|netflix|netflix_roulette|NetflixRouletteAPI|pyflix2).*"
+      - "(?i)(netflix|.*NetflixAPI|netflix_roulette|pyflix2).*"
     tags:

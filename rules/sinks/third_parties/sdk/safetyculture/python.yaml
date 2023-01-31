@@ -9,5 +9,5 @@ sinks:
     domains:
       - "safetyculture.io"
     patterns:
-      - "(?i)(safetyculture-sdk-python).*"
+      - "(?i)(safetypy).*"
     tags:

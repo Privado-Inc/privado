@@ -9,5 +9,5 @@ sinks:
     domains:
       - "spotify.com"
     patterns:
-      - "(?i)(spotify|spotify2tidal|spotify2py|helga-spotify|aiohttp-spotify|spotify2musicbrainz|spotify[.]py|spotify2piratebay|spotify-bot|spotify-backup|spotify2csv|spotify-webapi|rofi-spotify|spotify-python|spotify-lite|pycri-spotify|spotify_tensorflow|tekore).*"
+      - "(?i)(spotify|helga_spotify|aiohttp_spotify|rofi_spotify|pycri_spotify|tekore).*"
     tags:

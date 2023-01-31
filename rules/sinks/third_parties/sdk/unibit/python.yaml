@@ -9,5 +9,5 @@ sinks:
     domains:
       - "unibit.ai"
     patterns:
-      - "(?i)(python-unibit).*"
+      - "(?i)(unibit_api_v2).*"
     tags:

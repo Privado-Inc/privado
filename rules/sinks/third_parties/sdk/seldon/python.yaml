@@ -9,5 +9,5 @@ sinks:
     domains:
       - "seldon.io"
     patterns:
-      - "(?i)(seldon-core).*"
+      - "(?i)(seldon).*"
     tags:

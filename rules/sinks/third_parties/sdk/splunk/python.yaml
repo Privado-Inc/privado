@@ -9,13 +9,5 @@ sinks:
     domains:
       - "splunk.com"
     patterns:
-      - "(?i)(splunk-cloud-sdk|splunk_sdk|splunklib|splunk-opentelemetry|hass_splunk).*"
-    tags:
-
-  - id: ThirdParties.SDK.Splunk
-    name: Splunk
-    domains:
-      - "splunk.io"
-    patterns:
-      - "(?i)(splunk-handler).*"
+      - "(?i)(splunk_sdk|splunklib|splunk_opentelemetry|hass_splunk|splunk_toolbox).*"
     tags:

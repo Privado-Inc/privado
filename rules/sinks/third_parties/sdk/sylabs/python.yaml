@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sylabs.io"
     patterns:
-      - "(?i)(apache-airflow-providers-singularity).*"
+      - "(?i)(airflow.*providers.*singularity).*"
     tags:

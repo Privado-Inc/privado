@@ -9,5 +9,5 @@ sinks:
     domains:
       - "modzy.com"
     patterns:
-      - "(?i)(modzy-sdk).*"
+      - "(?i)(modzy).*"
     tags:

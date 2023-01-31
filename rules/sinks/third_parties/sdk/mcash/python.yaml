@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mcash.no"
     patterns:
-      - "(?i)(mcash-mapi-client).*"
+      - "(?i)(mcash.*client).*"
     tags:

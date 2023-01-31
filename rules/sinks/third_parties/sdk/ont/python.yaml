@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ont.io"
     patterns:
-      - "(?i)(ontology-python-sdk).*"
+      - "(?i)(ontology).*"
     tags:

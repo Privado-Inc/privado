@@ -9,5 +9,5 @@ sinks:
     domains:
       - "predicsis.com"
     patterns:
-      - "(?i)(predicsis_ml_sdk).*"
+      - "(?i)(predicsis).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "surgehq.ai"
     patterns:
-      - "(?i)(surge-api).*"
+      - "(?i)(surge).*"
     tags:

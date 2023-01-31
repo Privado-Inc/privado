@@ -9,5 +9,5 @@ sinks:
     domains:
       - "satori.com"
     patterns:
-      - "(?i)(satori-rtm-sdk).*"
+      - "(?i)(satori).*"
     tags:

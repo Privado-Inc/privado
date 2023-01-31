@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tuya.com"
     patterns:
-      - "(?i)(tuya-iot-py-sdk|tuya-connector-python).*"
+      - "(?i)(tuya_iot|tuya_connector).*"
     tags:

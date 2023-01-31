@@ -9,5 +9,5 @@ sinks:
     domains:
       - "opsgenie.com"
     patterns:
-      - "(?i)(opsgenie-sdk).*"
+      - "(?i)(opsgenie).*"
     tags:

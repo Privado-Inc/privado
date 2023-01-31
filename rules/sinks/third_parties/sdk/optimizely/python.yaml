@@ -9,5 +9,5 @@ sinks:
     domains:
       - "optimizely.com"
     patterns:
-      - "(?i)(optimizely-sdk).*"
+      - "(?i)(optimizely).*"
     tags:

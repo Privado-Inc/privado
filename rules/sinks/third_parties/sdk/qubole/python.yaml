@@ -9,5 +9,5 @@ sinks:
     domains:
       - "qubole.com"
     patterns:
-      - "(?i)(qds_sdk|qds-sdk|apache-airflow-providers-qubole).*"
+      - "(?i)(qds_sdk.*qubole|airflow.*providers.*qubole).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "rackspace.com"
     patterns:
-      - "(?i)(python-cloudbackup-sdk).*"
+      - "(?i)(rackspace|pyrax).*"
     tags:

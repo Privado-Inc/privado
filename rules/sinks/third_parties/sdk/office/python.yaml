@@ -9,5 +9,5 @@ sinks:
     domains:
       - "office.com"
     patterns:
-      - "(?i)(Office365-REST-Python-Client).*"
+      - "(?i)(office365[.]|Office365-REST-Python-Client).*"
     tags:

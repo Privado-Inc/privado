@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yunpian.com"
     patterns:
-      - "(?i)(yunpian-python-sdk).*"
+      - "(?i)(yunpian_python_sdk).*"
     tags:

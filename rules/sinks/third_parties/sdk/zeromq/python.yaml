@@ -9,5 +9,5 @@ sinks:
     domains:
       - "zeromq.org"
     patterns:
-      - "(?i)(pyzmq).*"
+      - "(?i)(zmq).*"
     tags:

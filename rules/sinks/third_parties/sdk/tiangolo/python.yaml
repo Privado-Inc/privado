@@ -9,5 +9,5 @@ sinks:
     domains:
       - "fastapi.tiangolo.com"
     patterns:
-      - "(?i)(sse-starlette).*"
+      - "(?i)(sse_starlette).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "obrisk.com"
     patterns:
-      - "(?i)(Paywx).*"
+      - "(?i)(paywx).*"
     tags:

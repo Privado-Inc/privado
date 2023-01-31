@@ -9,5 +9,5 @@ sinks:
     domains:
       - "upcloud.com"
     patterns:
-      - "(?i)(upcloud-api).*"
+      - "(?i)(upcloud).*"
     tags:

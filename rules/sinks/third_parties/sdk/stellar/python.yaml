@@ -9,5 +9,5 @@ sinks:
     domains:
       - "stellar.org"
     patterns:
-      - "(?i)(stellar-sdk).*"
+      - "(?i)(stellar).*"
     tags:

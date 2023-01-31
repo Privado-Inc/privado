@@ -9,5 +9,5 @@ sinks:
     domains:
       - "payu.in"
     patterns:
-      - "(?i)(payu-sdk).*"
+      - "(?i)(payu_sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "neutrinoapi.com"
     patterns:
-      - "(?i)(neutrino_api).*"
+      - "(?i)(neutrino_api|.*NeutrinoApiClient).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "twitter.com"
     patterns:
-      - "(?i)(twitter-ads|twittersdk|twitter-ads-v2|twitter-sdk|twitter-python-sdk|twitter|TwitterSDK|twitter-text|twitter-spider|twitter-monitor|django-twitter|db2twitter|tapioca-twitter|tap-twitter|twitter-blocklist|tweepy|twitter-text-py|twython|python-twitter|TwitterAPI).*"
+      - "(?i)(twitter|db2twitter|tapioca_twitter|tap_twitter|tweepy|twython|TwitterAPI).*"
     tags:

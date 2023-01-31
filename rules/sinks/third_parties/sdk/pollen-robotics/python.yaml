@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pollen-robotics.com"
     patterns:
-      - "(?i)(reachy-sdk).*"
+      - "(?i)(reachy_sdk).*"
     tags:

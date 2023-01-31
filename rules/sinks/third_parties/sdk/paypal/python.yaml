@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paypal.com"
     patterns:
-      - "(?i)(paypal-checkout-serversdk|paypal-payouts-sdk|paypalrestsdk|django-oscar-paypal|paypal|django-paypal2|django-paypal|lfs-paypal|paypal_api|dj-paypal|paypal-rest|djangoshop-paypal|waldur-paypal|flask-paypal|getpaid[.]paypal|ofxstatement-paypal|paypal_reporter|paypal-casinos).*"
+      - "(?i)(paypal|lfspaypal|waldur_paypal|getpaid[.]paypal|ofxstatement_paypal).*"
     tags:

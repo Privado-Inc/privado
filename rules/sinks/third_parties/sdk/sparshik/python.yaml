@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sparshik.com"
     patterns:
-      - "(?i)(sparshik-kyc).*"
+      - "(?i)(sparshik).*"
     tags:

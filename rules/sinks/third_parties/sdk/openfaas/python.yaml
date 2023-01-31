@@ -9,5 +9,5 @@ sinks:
     domains:
       - "openfaas.com"
     patterns:
-      - "(?i)(apache-airflow-providers-openfaas).*"
+      - "(?i).*(openfaas).*"
     tags:

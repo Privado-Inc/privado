@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yubico.com"
     patterns:
-      - "(?i)(yubico-client).*"
+      - "(?i)(yubico_client).*"
     tags:

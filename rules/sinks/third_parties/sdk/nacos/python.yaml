@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nacos.io"
     patterns:
-      - "(?i)(nacos-sdk-python|KcangNacos).*"
+      - "(?i)(nacos|KcangNacos).*"
     tags:

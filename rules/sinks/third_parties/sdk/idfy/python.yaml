@@ -9,5 +9,5 @@ sinks:
     domains:
       - "idfy.io"
     patterns:
-      - "(?i)(idfy-sdk).*"
+      - "(?i)(idfy_sdk).*"
     tags:

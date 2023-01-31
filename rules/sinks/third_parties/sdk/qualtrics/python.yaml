@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Schema31
-    name: Schema31
+  - id: ThirdParties.SDK.Qualtrics
+    name: Qualtrics
     domains:
-      - "schema31.it"
+      - "qualtrics.com"
     patterns:
-      - "(?i)(gcloud_storage_api).*"
+      - "(?i)(pyqualtrics|qualtrics).*"
     tags:

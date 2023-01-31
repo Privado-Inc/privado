@@ -9,5 +9,5 @@ sinks:
     domains:
       - "upwork.com"
     patterns:
-      - "(?i)(Flask-Upwork|python-upwork|python-upwork-oauth2).*"
+      - "(?i)(upwork|odesk).*"
     tags:

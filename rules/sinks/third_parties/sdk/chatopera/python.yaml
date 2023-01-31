@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Indiana
-    name: Indiana
+  - id: ThirdParties.SDK.Chatopera
+    name: Chatopera
     domains:
-      - "indiana.edu"
+      - "chatopera.com"
     patterns:
-      - "(?i)(htrc).*"
+      - "(?i)(insuranceqa_data).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "smartsheet.com"
     patterns:
-      - "(?i)(smartsheet-python-sdk).*"
+      - "(?i)(smartsheet).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "tralahtek.com"
     patterns:
-      - "(?i)(pytekmomoapi|pytekcoopbank).*"
+      - "(?i)(tekmomoapi|tekcoopbank).*"
     tags:

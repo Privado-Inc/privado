@@ -9,5 +9,5 @@ sinks:
     domains:
       - "opensensemap.org"
     patterns:
-      - "(?i)(opensensemap-api).*"
+      - "(?i)(opensensemap_api).*"
     tags:

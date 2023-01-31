@@ -9,5 +9,5 @@ sinks:
     domains:
       - "veracode.com"
     patterns:
-      - "(?i)(veracode-api-signing|veracode-python).*"
+      - "(?i)(veracode).*"
     tags:

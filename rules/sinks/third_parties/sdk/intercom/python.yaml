@@ -9,7 +9,7 @@ sinks:
     domains:
       - "intercom.io"
     patterns:
-      - "(?i)(django-intercom|aa-intercom|intercom_python|axiioss-intercom|python-intercom|tap-intercom|intercomic|django-intercom-io).*"
+      - "(?i)(django_intercom|aa_intercom|intercom|tap_intercom).*"
     tags:
 
   - id: ThirdParties.SDK.Intercom

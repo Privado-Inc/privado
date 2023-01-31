@@ -9,5 +9,5 @@ sinks:
     domains:
       - "ucloud.cn"
     patterns:
-      - "(?i)(ucloud-sdk-python3|ucloud-sdk-python2).*"
+      - "(?i)(ucloud).*"
     tags:

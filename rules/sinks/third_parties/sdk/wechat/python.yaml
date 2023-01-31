@@ -9,5 +9,5 @@ sinks:
     domains:
       - "wechat.com"
     patterns:
-      - "(?i)(WeRoBot|wechat|weixin-python|python-weixin|weixin-sdk|simpleweixin|wechatOauth|weixin).*"
+      - "(?i)(werobot|wechat|weixin|simpleweixin|wechatOauth|weixin).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vantiv.com"
     patterns:
-      - "(?i)(PayFacMpSdk|CnpChargebackSdk).*"
+      - "(?i)(PayFacMpSdk|CnpChargebackSdk|cnpsdk).*"
     tags:

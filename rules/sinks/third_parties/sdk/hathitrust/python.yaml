@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Micosoft
-    name: Micosoft
+  - id: ThirdParties.SDK.Hathitrust
+    name: Hathitrust
     domains:
-      - "micosoft.com"
+      - "hathitrust.org"
     patterns:
-      - "(?i)(xlrd).*"
+      - "(?i)(htrc).*"
     tags:

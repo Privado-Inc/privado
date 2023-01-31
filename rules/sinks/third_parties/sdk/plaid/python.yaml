@@ -9,5 +9,5 @@ sinks:
     domains:
       - "plaid.com"
     patterns:
-      - "(?i)(plaid-python|plaid).*"
+      - "(?i)(plaid).*"
     tags:

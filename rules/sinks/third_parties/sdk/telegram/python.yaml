@@ -9,5 +9,5 @@ sinks:
     domains:
       - "telegram.org"
     patterns:
-      - "(?i)(python-telegram-bot|telegram-cloud|python-telegram-bot-api|telethon|telegraph).*"
+      - "(?i)(telegram|telethon|telegraph).*"
     tags:

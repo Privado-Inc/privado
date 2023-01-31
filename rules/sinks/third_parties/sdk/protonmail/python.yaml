@@ -9,5 +9,5 @@ sinks:
     domains:
       - "protonmail.com"
     patterns:
-      - "(?i)(pyovpn-as).*"
+      - "(?i)(pyovpn_as).*"
     tags:

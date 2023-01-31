@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pagerduty.com"
     patterns:
-      - "(?i)(apache-airflow-providers-pagerduty).*"
+      - "(?i).*(pagerduty).*"
     tags:

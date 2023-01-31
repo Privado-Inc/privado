@@ -9,5 +9,5 @@ sinks:
     domains:
       - "luno.com"
     patterns:
-      - "(?i)(luno-python).*"
+      - "(?i)(luno_python).*"
     tags:

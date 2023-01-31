@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vertica.com"
     patterns:
-      - "(?i)(vertica-python|apache-airflow-providers-vertica).*"
+      - "(?i)(vertica|airflow.*providers.*vertica).*"
     tags:

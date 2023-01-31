@@ -9,5 +9,5 @@ sinks:
     domains:
       - "maxmind.com"
     patterns:
-      - "(?i)(maxminddb-geolite2|geoip2).*"
+      - "(?i)(geolite2|geoip2).*"
     tags:

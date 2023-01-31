@@ -9,5 +9,5 @@ sinks:
     domains:
       - "runwayml.com"
     patterns:
-      - "(?i)(runway-python).*"
+      - "(?i)(runway).*"
     tags:

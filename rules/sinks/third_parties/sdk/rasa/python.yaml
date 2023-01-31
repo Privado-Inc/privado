@@ -9,5 +9,5 @@ sinks:
     domains:
       - "rasa.com"
     patterns:
-      - "(?i)(rasa_sdk).*"
+      - "(?i)(rasa).*"
     tags:

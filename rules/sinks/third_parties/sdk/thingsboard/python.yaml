@@ -9,5 +9,5 @@ sinks:
     domains:
       - "thingsboard.io"
     patterns:
-      - "(?i)(tb-mqtt-client).*"
+      - "(?i)(tb_device_mqtt).*"
     tags:

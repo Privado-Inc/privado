@@ -9,5 +9,5 @@ sinks:
     domains:
       - "launchdarkly.com"
     patterns:
-      - "(?i)(launchdarkly-server-sdk).*"
+      - "(?i)(ldclient).*"
     tags:

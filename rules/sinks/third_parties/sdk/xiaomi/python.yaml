@@ -9,5 +9,5 @@ sinks:
     domains:
       - "xiaomi.com"
     patterns:
-      - "(?i)(galaxy-sdk-python|galaxy-fds-sdk).*"
+      - "(?i)(sds.table.ttypes|galaxy_fds_sdk).*"
     tags:

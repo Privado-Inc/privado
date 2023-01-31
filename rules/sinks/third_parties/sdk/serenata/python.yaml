@@ -9,5 +9,5 @@ sinks:
     domains:
       - "serenata.ai"
     patterns:
-      - "(?i)(serenata-toolbox).*"
+      - "(?i)(serenata_toolbox).*"
     tags:

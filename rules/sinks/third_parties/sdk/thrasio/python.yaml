@@ -9,5 +9,5 @@ sinks:
     domains:
       - "thrasio.com"
     patterns:
-      - "(?i)(thrasio-service-core|thrasio_commons|thrasio-ingestion-platform).*"
+      - "(?i)(thrasio_service_core|thrasio_commons|thrasio_ingestion_platform).*"
     tags:

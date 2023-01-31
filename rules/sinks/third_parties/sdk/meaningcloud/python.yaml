@@ -9,5 +9,5 @@ sinks:
     domains:
       - "meaningcloud.com"
     patterns:
-      - "(?i)(MeaningCloud-python).*"
+      - "(?i)(meaningcloud).*"
     tags:

@@ -75,7 +75,7 @@ sinks:
       - "(?i)(googleappenginepipeline|google_nest_sdm).*"
       - "(?i)(grpc_gcp|google_pasta|gcloud).*"
       - "(?i)(apache-airflow-providers-google).*"
-      - "(?i)(asyncio_gcloud_ml_engine).*"
+      - "(?i)(asyncio_gcloud_ml_engine|gcloudc[.]db).*"
     tags:
 
   - id: ThirdParties.SDK.Google.BigQuery

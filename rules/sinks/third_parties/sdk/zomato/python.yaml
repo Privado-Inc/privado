@@ -9,5 +9,5 @@ sinks:
     domains:
       - "zomato.com"
     patterns:
-      - "(?i)(zomato-sdk).*"
+      - "(?i)(zomato).*"
     tags:

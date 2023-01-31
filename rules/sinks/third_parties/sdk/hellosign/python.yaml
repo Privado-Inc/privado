@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hellosign.com"
     patterns:
-      - "(?i)(hellosign-python-sdk).*"
+      - "(?i)(hellosign_sdk).*"
     tags:

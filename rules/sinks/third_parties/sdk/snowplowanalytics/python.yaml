@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Snowplowanalytics
     name: Snowplowanalytics
     domains:
-      - "snowplowanalytics.com"
+      - "snowplow.io"
     patterns:
-      - "(?i)(minimal-snowplow-tracker|snowplow_tracker).*"
+      - "(?i)(minimal_snowplow_tracker|snowplow_tracker).*"
     tags:

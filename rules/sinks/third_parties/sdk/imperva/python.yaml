@@ -9,5 +9,5 @@ sinks:
     domains:
       - "imperva.com"
     patterns:
-      - "(?i)(imperva-sdk).*"
+      - "(?i)(imperva_sdk).*"
     tags:

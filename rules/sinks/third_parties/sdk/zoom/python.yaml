@@ -9,5 +9,5 @@ sinks:
     domains:
       - "zoom.us"
     patterns:
-      - "(?i)(zoomconnect-sdk).*"
+      - "(?i)(zoomconnect_sdk).*"
     tags:

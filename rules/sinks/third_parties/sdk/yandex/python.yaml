@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cloud.yandex.com"
     patterns:
-      - "(?i)(yandexcloud|apache-airflow-providers-yandex).*"
+      - "(?i)(yandexcloud|airflow.*providers.*yandex).*"
     tags:

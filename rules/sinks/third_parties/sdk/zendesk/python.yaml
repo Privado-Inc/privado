@@ -17,5 +17,5 @@ sinks:
     domains:
       - "zendesk.com"
     patterns:
-      - "(?i)(zenpy|apache-airflow-providers-zendesk).*"
+      - "(?i)(zenpy|airflow.*providers.*zendesk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "wikepedia.com"
     patterns:
-      - "(?i)(Wikipedia-API).*"
+      - "(?i)(wikipediaapi).*"
     tags:

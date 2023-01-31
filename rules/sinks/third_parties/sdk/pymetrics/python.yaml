@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pymetrics.com"
     patterns:
-      - "(?i)(pymetrics-assessment-api-client).*"
+      - "(?i)(pymetrics_assessment_api_client).*"
     tags:

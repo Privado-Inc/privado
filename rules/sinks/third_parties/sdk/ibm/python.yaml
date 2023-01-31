@@ -9,7 +9,7 @@ sinks:
     domains:
       - "ibm.com"
     patterns:
-      - "(?i)(ibm-watson|ibm-cos-sdk|ibm-cloud-sdk-core|ibmcloud-python-sdk|lithops).*"
+      - "(?i)(ibm_watson|ibm_cos|ibm_cloud_sdk_core|ibmcloud_python_sdk|lithops).*"
     tags:
 
   - id: ThirdParties.SDK.Ibm.Cloud
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "cloud.ibm.com"
     patterns:
-      - "(?i)(cloudant|apache-airflow-providers-cloudant).*"
+      - "(?i)(cloudant|airflow.*providers.*cloudant).*"
     tags:

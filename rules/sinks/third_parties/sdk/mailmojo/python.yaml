@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mailmojo.no"
     patterns:
-      - "(?i)(mailmojo-sdk).*"
+      - "(?i)(mailmojo_sdk).*"
     tags:

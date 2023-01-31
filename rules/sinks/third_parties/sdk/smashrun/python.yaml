@@ -9,5 +9,5 @@ sinks:
     domains:
       - "smashrun.com"
     patterns:
-      - "(?i)(smashrun-client).*"
+      - "(?i)(smashrun).*"
     tags:

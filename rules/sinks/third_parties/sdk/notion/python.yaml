@@ -9,5 +9,5 @@ sinks:
     domains:
       - "notion.com"
     patterns:
-      - "(?i)(notion-sdk-py|notional|notion-sdk|notion).*"
+      - "(?i)(notion).*"
     tags:

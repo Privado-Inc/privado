@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Ota.P
-    name: Ota P
+  - id: ThirdParties.SDK.Juno
+    name: Juno
     domains:
-      - "p.ota.to"
+      - "juno.com"
     patterns:
-      - "(?i)(django-gcloud-connectors|gcloud-tasks-emulator).*"
+      - "(?i)(junopy).*"
     tags:

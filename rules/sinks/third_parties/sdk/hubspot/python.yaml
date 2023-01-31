@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hubspot.com"
     patterns:
-      - "(?i)(hubspot-api-client|hubspot).*"
+      - "(?i)(hubspot).*"
     tags:

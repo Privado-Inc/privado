@@ -9,5 +9,5 @@ sinks:
     domains:
       - "withings.com"
     patterns:
-      - "(?i)(withings-api).*"
+      - "(?i)(withings_api).*"
     tags:

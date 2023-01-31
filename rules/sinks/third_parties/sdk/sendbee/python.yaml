@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sendbee.io"
     patterns:
-      - "(?i)(sendbee-api).*"
+      - "(?i)(sendbee_api).*"
     tags:

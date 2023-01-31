@@ -9,5 +9,5 @@ sinks:
     domains:
       - "spotinst.com"
     patterns:
-      - "(?i)(spotinst-sdk2).*"
+      - "(?i)(spotinst).*"
     tags:

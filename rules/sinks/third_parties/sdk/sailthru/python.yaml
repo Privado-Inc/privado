@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sailthru.com"
     patterns:
-      - "(?i)(sailthru-client).*"
+      - "(?i)(sailthru|sailthru_client).*"
     tags:

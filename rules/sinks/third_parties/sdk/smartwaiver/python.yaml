@@ -9,5 +9,5 @@ sinks:
     domains:
       - "smartwaiver.com"
     patterns:
-      - "(?i)(smartwaiver-sdk).*"
+      - "(?i)(smartwaiver).*"
     tags:

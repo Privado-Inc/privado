@@ -9,5 +9,5 @@ sinks:
     domains:
       - "treasure-data.com"
     patterns:
-      - "(?i)(pyTD).*"
+      - "(?i)(pytd).*"
     tags:

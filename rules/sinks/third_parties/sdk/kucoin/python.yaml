@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kucoin.com"
     patterns:
-      - "(?i)(kucoin-python|kucoin-futures-python).*"
+      - "(?i)(kucoin.*(client|ws_client)|kucoin_futures).*"
     tags:

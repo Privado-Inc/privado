@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nem.software"
     patterns:
-      - "(?i)(symbol-sdk-core-python).*"
+      - "(?i)(symbolchain).*"
     tags:

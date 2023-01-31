@@ -9,5 +9,5 @@ sinks:
     domains:
       - "newrelic.com"
     patterns:
-      - "(?i)(newrelic-telemetry-sdk|newrelic).*"
+      - "(?i)(newrelic).*"
     tags:

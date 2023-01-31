@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sendinblue.com"
     patterns:
-      - "(?i)(sib-api-v3-sdk).*"
+      - "(?i)(sib_api_v3_sdk).*"
     tags:

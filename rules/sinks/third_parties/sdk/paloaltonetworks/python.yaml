@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paloaltonetworks.com"
     patterns:
-      - "(?i)(pan-os-python).*"
+      - "(?i)(panos).*"
     tags:

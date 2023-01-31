@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sijmusic.info"
     patterns:
-      - "(?i)(bitrix24-python-sdk).*"
+      - "(?i)(bitrix24).*"
     tags:

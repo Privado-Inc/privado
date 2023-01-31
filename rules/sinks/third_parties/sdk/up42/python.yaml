@@ -9,5 +9,5 @@ sinks:
     domains:
       - "up42.com"
     patterns:
-      - "(?i)(up42-py).*"
+      - "(?i)(up42).*"
     tags:

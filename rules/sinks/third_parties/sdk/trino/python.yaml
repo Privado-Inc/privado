@@ -9,5 +9,5 @@ sinks:
     domains:
       - "trino.io"
     patterns:
-      - "(?i)(apache-airflow-providers-trino).*"
+      - "(?i)(airflow.*providers.*trino).*"
     tags:

@@ -9,7 +9,7 @@ sinks:
     domains:
       - "segment.com"
     patterns:
-      - "(?i)(analytics-python|segment-analytics-python|segment[.]analytics|analytics[.]write_key|segment).*"
+      - "(?i)(segment.*analytics|analytics[.]write_key|segment).*"
     tags:
 
   - id: ThirdParties.SDK.Segment
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "segment.io"
     patterns:
-      - "(?i)(apache-airflow-providers-segment).*"
+      - "(?i)(airflow.*providers.*segment).*"
     tags:

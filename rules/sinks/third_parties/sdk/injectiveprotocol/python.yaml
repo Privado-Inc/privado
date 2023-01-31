@@ -9,5 +9,5 @@ sinks:
     domains:
       - "injectiveprotocol.com"
     patterns:
-      - "(?i)(injective-py).*"
+      - "(?i)(pyinjective).*"
     tags:

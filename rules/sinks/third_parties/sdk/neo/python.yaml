@@ -9,5 +9,5 @@ sinks:
     domains:
       - "neo.org"
     patterns:
-      - "(?i)(neo-python|neo-mamba|midea).*"
+      - "(?i)(neo[.]|midea).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "snowflake.com"
     patterns:
-      - "(?i)(snowflake-connector-python|snowflake-sqlalchemy|snowflake).*"
+      - "(?i)(snowflake_connector_python|snowflake).*"
     tags:

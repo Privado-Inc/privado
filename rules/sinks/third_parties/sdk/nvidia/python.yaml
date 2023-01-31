@@ -9,5 +9,5 @@ sinks:
     domains:
       - "nvidia.com"
     patterns:
-      - "(?i)(nvidia-ml-py3).*"
+      - "(?i)(pynvml).*"
     tags:

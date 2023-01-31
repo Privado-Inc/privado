@@ -9,5 +9,5 @@ sinks:
     domains:
       - "magic.link"
     patterns:
-      - "(?i)(magic-admin).*"
+      - "(?i)(magic_admin).*"
     tags:

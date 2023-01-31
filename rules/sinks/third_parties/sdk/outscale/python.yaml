@@ -9,5 +9,5 @@ sinks:
     domains:
       - "outscale.com"
     patterns:
-      - "(?i)(osc-sdk-python).*"
+      - "(?i)(osc_sdk_python).*"
     tags:

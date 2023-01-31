@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yunify.com"
     patterns:
-      - "(?i)(qingcloud-sdk|qingstor-sdk).*"
+      - "(?i)(qingcloud|qingstor.sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sap.com"
     patterns:
-      - "(?i)(iot-services-sdk).*"
+      - "(?i)(iot_services_sdk).*"
     tags:
