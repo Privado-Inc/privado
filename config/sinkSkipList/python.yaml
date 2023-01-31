@@ -1,0 +1,10 @@
+sinkSkipList:
+  - id: SinkSkipList.ThirdParties
+    name: Skip Third Party Sinks
+    patterns:
+      - "(?i)(android\\.).*"
+
+  - id: SinkSkipList.BuiltInLib
+    name: Skip built in language libraries
+    patterns:
+      - "(?i)(<empty>|iterator|assert|void\\.|int|byte|java\\.|ANY\\.|<operator>\\.|<operators>\\.|<unresolvedNamespace.*>.).*"

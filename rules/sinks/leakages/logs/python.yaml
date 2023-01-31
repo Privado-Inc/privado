@@ -27,5 +27,5 @@ sinks:
   - id: Leakages.Log.Console
     name: Log Console
     patterns: 
-      - "print"
+      - ".*print"
     tags:
