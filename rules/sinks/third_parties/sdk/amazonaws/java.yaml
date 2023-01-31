@@ -876,45 +876,12 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]lookoutmetrics).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.ElastiCache
-    name: Amazonaws ElastiCache
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]elasticache).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.Redshift
     name: Amazonaws Redshift
     domains:
       - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]redshift).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.RedshiftDataAPI
-    name: Amazonaws Redshift Data API
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]redshiftdataapi).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.SSOOIDC
-    name: Amazonaws SSO OIDC
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ssooidc).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.SSOAdmin
-    name: Amazonaws SSO Admin
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]ssoadmin).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.WAF
@@ -947,14 +914,6 @@ sinks:
       - "amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]securitylake).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.KendraRanking
-    name: Amazonaws Kendra Ranking
-    domains:
-      - "amazonaws.com"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]kendraranking).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.ElasticTranscoder
