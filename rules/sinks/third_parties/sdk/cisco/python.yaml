@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cisco.com"
     patterns:
-      - "(?i)(ciscoaxl|ciscoris|ciscoisesdk|intersight|ciscodnacapphosting|ucsmsdk|imcsdk|UcsSdk|dnacentersdk|virlsdk|arya|AryaLogger|mdssdk|ThousandEyesSDK|ciscosparkapi).*"
+      - "(?i)(ciscoaxl|ciscoris|ciscoisesdk|intersight|ciscodnacapphosting|ucsmsdk|imcsdk|UcsSdk|dnacentersdk|virlsdk|arya|AryaLogger|mdssdk|thousandeyessdk|ciscosparkapi).*"
     tags:

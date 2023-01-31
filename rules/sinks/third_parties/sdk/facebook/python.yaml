@@ -9,5 +9,13 @@ sinks:
     domains:
       - "facebook.com"
     patterns:
-      - "(?i)(facebook-sdk|PyMessager|facebook-python-sdk|facebook_business|facebook-python-wrapper|fblib|pygram|facebook-py-sdk|facebook-sdk-python|django4facebook|frasco-facebook|facebook-business|Facebook_PyBot|mautrix-facebook|facebook-datastore|pyramid_facebook|facebook_wordcloud|xmldirector[.]facebook|jmbo-facebook|kinto-facebook|django-facebook2|tap-facebook|ecl_facebook|tapioca-facebook|facebook-totem|arcane-facebook|facebookads|fbadSpace|listenclosely-whatsapp|whatsapp-cli|whatsapp-web|whatsapp-assistant|ongair-whatsapp|whatsapp-converter|cm-whatsapp|sl-whatsapp3|sl-whatsapp2|whatsapp-api|botbuilder-sangam-twilio-whatsapp-adapter|alas-ce0-whatsapp|Social|fbprophet|apache-airflow-providers-facebook).*"
+      - "(?i)(facebook.*GraphAPI|pymessager.*message|facebook_business|fblib.*core|facebook_sdk|django_facebook|pyramid_facebook|facebook_wordcloud|xmldirector[.]facebook|jmbo_facebook|kinto_facebook|ecl_facebook|tapioca_facebook|arcane_facebook|facebookads|fbadSpace|fbprophet|airflow.*providers.*facebook).*"
+    tags:
+  
+  - id: ThirdParties.SDK.WhatsApp
+    name: WhatsApp
+    domains:
+      - "whatsapp.com"
+    patterns:
+      - "(?i)(listenclosely_whatsapp|whatsapp_cli|whatsapp_web|whatsapp_assistant|ongair_whatsapp|whatsapp_converter|cm_whatsapp|sl_whatsapp|whatsapp_api|botbuilder.sangam.twilio.whatsapp|alas_ce0_whatsapp|social).*"
     tags:

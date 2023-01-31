@@ -9,5 +9,5 @@ sinks:
     domains:
       - "plotly.com"
     patterns:
-      - "(?i)(dash-table|dash-core-components|dash-renderer|dash-html-components|dash-extensions|dash_bootstrap_components|dash-enterprise-auth).*"
+      - "(?i)(dash_table|dash_core_components|dash_renderer|dash_html_components|dash_extensions|dash_bootstrap_components|dash_enterprise_auth).*"
     tags:

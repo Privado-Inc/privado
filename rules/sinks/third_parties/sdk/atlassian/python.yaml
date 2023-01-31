@@ -9,13 +9,37 @@ sinks:
     domains:
       - "atlassian.com"
     patterns:
-      - "(?i)(jirator|django-atlassian|confluence-rest-library|cloudwright-atlassian-jira|atlassian-python-api|atlassian-python-api-cti|sphinxcontrib-confluencebuilder|jira|apache-airflow-providers-opsgenie|apache-airflow-providers-jira|atlassian_python_api).*"
+      - "(?i)(django_atlassian|atlassian).*"
     tags:
   
   - id: ThirdParties.SDK.Atlassian.Confluence
     name: Atlassian Confluence
     domains:
-      - "atlassian.com"
+      - "confluence.atlassian.com"
     patterns:
-      - "(?i)(pyfluence).*"
+      - "(?i)(pyfluence|confluence.*client|sphinxcontrib.confluencebuilder).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.JIRA
+    name: Atlassian JIRA
+    domains:
+      - "jira.atlassian.com"
+    patterns:
+      - "(?i)(cloudwright_atlassian_jira|jira|airflow.*providers.*jira).*"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Bitbucket
+    name: Atlassian Bitbucket
+    domains:
+      - "bitbucket.atlassian.com"
+    patterns:
+      - "(?i)(atlassian.*bitbucket|airflow.*providers.*bitbucket).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.Opsgenie
+    name: Atlassian Opsgenie
+    domains:
+      - "opsgenie.atlassian.com"
+    patterns:
+      - "(?i)(opsgenie|atlassian.*opsgenie|airflow.*providers.*opsgenie).*"
     tags:

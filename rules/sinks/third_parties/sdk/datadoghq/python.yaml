@@ -9,5 +9,5 @@ sinks:
     domains:
       - "datadoghq.com"
     patterns:
-      - "(?i)(datadog|ddtrace|watchgod|datadog-log|datadog_api_client|datadog-api-client|datadog_api_client|apache-airflow-providers-datadog|datadog-lambda).*"
+      - "(?i)(datadog|ddtrace|django_datadog_logger|datadoglog|datadog_api_client|airflow.*providers.*datadog|datadog_lambda).*"
     tags:

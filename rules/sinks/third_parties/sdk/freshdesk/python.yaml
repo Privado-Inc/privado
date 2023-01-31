@@ -9,5 +9,5 @@ sinks:
     domains:
       - "freshdesk.com"
     patterns:
-      - "(?i)(django-freshdesk|django-freshdesk-sso|python-freshdesk-client|tap-freshdesk|python-freshdesk|authentic2-idp-freshdesk|django-triflesoft-freshdesk|freshdesk-help-center-backer|pyfd|concierge-freshdesk-plugin|freshdesk-api-client).*"
+      - "(?i)(freshdesk|tap_freshdesk|authentic2_idp_freshdesk|django_triflesoft_freshdesk|pyfd|concierge_freshdesk_plugin|freshdesk_api_client).*"
     tags:

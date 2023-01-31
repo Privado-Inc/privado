@@ -9,5 +9,5 @@ sinks:
     domains:
       - "linkedin.com"
     patterns:
-      - "(?i)(linkedin-api|linkedin|tapioca-linkedin|linkedin-sdk|python-linkedin|linkedin-py|python3-linkedin|linkedin-client|python-linkedin-v2).*"
+      - "(?i)(linkedin_api|linkedin|tapioca_linkedin|bot_linkedin).*"
     tags:

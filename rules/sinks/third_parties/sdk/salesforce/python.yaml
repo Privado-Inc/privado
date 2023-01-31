@@ -9,5 +9,5 @@ sinks:
     domains:
       - "salesforce.com"
     patterns:
-      - "(?i)(salesforce-python-sdk|salesforce_pandas|salesforce|Salesforce-FuelSDK|salesforce_batch|salesforce-reporting|cloudwright-salesforce|salesforce-bulk-2-7|simple-salesforce|salesforce-analytics|salesforce-basic|salesforce-python|simple-salesforce-2-7|salesforce-bulk|boardex-salesforce|fondat-salesforce|salesforce-bulkipy|simple_salesforce|apache-airflow-providers-salesforce).*"
+      - "(?i)(salesforce|sforce|salesforce_pandas|salesforce_bulk_python|FuelSDK|salesforce_batch|salesforce_reporting|cloudwright_salesforce|simple_salesforce|salesforce_basic|boardex_salesforce|fondat_salesforce|salesforce_bulkipy|airflow.*providers.*salesforce).*"
     tags:

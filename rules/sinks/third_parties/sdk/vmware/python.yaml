@@ -9,5 +9,6 @@ sinks:
     domains:
       - "vmware.com"
     patterns:
-      - "(?i)(carbon-black-cloud-sdk|pyVirtualize|pyvmomi|saltext[.]vmware|vmware-exporter|vmware_backup|vmware-nsxlib|vmware-clones|oslo[.]vmware|vmware-nsx|vmware-vspc|purepyvmware|pyvcloud|vmguestlib|vpoller|vmjuggler|vvv-vra|vcd-cli).*"
+      - "(?i)(cbc_sdk|cbc_binary_toolkit).*"
+      - "(?i)(pyVirtualize|pyvmomi|ezmomi|saltext[.]vmware|vmware_exporter|vmware_backup|vmware_clones|oslo[.]vmware|vmware_nsx|vmware_vspc|purepyvmware|pyvcloud|vmguestlib|vpoller|vmjuggler|vvv_vra|vcd).*"
     tags:
