@@ -9,5 +9,5 @@ sinks:
     domains:
       - "fatfi.sh"
     patterns:
-      - "(?i)(aquarium-python-api).*"
+      - "(?i)(aquarium).*"
     tags:

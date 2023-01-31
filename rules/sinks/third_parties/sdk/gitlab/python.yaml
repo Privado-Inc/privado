@@ -9,5 +9,5 @@ sinks:
     domains:
       - "gitlab.com"
     patterns:
-      - "(?i)(python-gitlab|python_gitlab|gitlab).*"
+      - "(?i)(gitlab).*"
     tags:

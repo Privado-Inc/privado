@@ -9,5 +9,5 @@ sinks:
     domains:
       - "groupdocs.cloud"
     patterns:
-      - "(?i)(groupdocs-conversion-cloud|groupdocs-viewer-cloud|groupdocs-signature-cloud).*"
+      - "(?i)(groupdocs_conversion_cloud|groupdocs_viewer_cloud|groupdocs_signature_cloud).*"
     tags:

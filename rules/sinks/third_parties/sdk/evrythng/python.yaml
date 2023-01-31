@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Elatic
-    name: Elatic
+  - id: ThirdParties.SDK.Evrythng
+    name: Evrythng
     domains:
-      - "elatic.co"
+      - "evrythng.com"
     patterns:
-      - "(?i)(elasticsearch-dbapi).*"
+      - "(?i)(evrythng).*"
     tags:

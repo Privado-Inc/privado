@@ -9,5 +9,5 @@ sinks:
     domains:
       - "flipr.ai"
     patterns:
-      - "(?i)(flipr-api).*"
+      - "(?i)(flipr_api|FliprAPIRestClient).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "grapeshot.com"
     patterns:
-      - "(?i)(grapeshot-signal-sdk).*"
+      - "(?i)(grapeshot_signal).*"
     tags:

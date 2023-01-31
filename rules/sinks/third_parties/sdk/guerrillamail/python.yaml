@@ -9,5 +9,5 @@ sinks:
     domains:
       - "guerrillamail.com"
     patterns:
-      - "(?i)(python-guerrillamail).*"
+      - "(?i)(guerrillamail).*"
     tags:

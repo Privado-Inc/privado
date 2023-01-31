@@ -9,5 +9,5 @@ sinks:
     domains:
       - "freebox.fr"
     patterns:
-      - "(?i)(freebox-api).*"
+      - "(?i)(freebox_api).*"
     tags:

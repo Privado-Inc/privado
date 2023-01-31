@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dynotx.com"
     patterns:
-      - "(?i)(hera-workflows).*"
+      - "(?i)(hera[.]).*"
     tags:

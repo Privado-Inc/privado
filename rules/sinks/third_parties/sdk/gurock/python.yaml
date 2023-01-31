@@ -9,5 +9,5 @@ sinks:
     domains:
       - "gurock.com"
     patterns:
-      - "(?i)(testrail-api).*"
+      - "(?i)(testrail_api).*"
     tags:

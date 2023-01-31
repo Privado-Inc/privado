@@ -9,5 +9,5 @@ sinks:
     domains:
       - "fivem.net"
     patterns:
-      - "(?i)(fivem-api).*"
+      - "(?i)(fivem.*(server|player)).*"
     tags:

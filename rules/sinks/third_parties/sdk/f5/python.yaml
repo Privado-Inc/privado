@@ -9,5 +9,5 @@ sinks:
     domains:
       - "f5.com"
     patterns:
-      - "(?i)(f5-icontrol-rest|f5-sdk).*"
+      - "(?i)(f5.bigip|icontrol.*(session|authtoken|exceptions)|iControlRESTSession).*"
     tags:

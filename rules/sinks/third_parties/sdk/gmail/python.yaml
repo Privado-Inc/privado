@@ -9,5 +9,21 @@ sinks:
     domains:
       - "gmail.com"
     patterns:
-      - "(?i)(pyqualtrics|cloudevents|wordcloud|terrasnek|smashggpy|remita-billing-gateway|junopy).*"
+      - "(?i)(terrasnek|smashggpy|junopy).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Qualtrics
+    name: Qualtrics
+    domains:
+      - "qualtrics.com"
+    patterns:
+      - "(?i)(pyqualtrics|qualtrics).*"
+    tags:
+
+  - id: ThirdParties.SDK.CloudEvents
+    name: CloudEvents
+    domains:
+      - "cloudevents.io"
+    patterns:
+      - "(?i)(cloudevents).*"
     tags:

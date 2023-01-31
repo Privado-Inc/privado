@@ -9,5 +9,5 @@ sinks:
     domains:
       - "exadel.com"
     patterns:
-      - "(?i)(compreface-sdk).*"
+      - "(?i)(compreface).*"
     tags:

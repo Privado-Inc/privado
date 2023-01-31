@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Gooee
-    name: Gooee
+  - id: ThirdParties.SDK.Remita
+    name: Remita
     domains:
-      - "gooee.com"
+      - "remita.net"
     patterns:
-      - "(?i)(python-evrythng).*"
+      - "(?i)(remita_billing_gateway|RemitaBillingGateway).*"
     tags:
+  

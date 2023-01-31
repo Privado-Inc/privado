@@ -9,5 +9,5 @@ sinks:
     domains:
       - "github.com"
     patterns:
-      - "(?i)(PyGithub|mdx_gh_links|ghp-import|sphinxcontrib_github_alt|apache-airflow-providers-github|github3[.]py).*"
+      - "(?i)(github|mdx_gh_links|ghp_import|sphinxcontrib_github_alt|airflow.*providers.*github).*"
     tags:

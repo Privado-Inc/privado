@@ -9,5 +9,5 @@ sinks:
     domains:
       - "elastic.co"
     patterns:
-      - "(?i)(elasticsearch|apache_airflow_providers_elasticsearch).*"
+      - "(?i).*(elasticsearch).*"
     tags:

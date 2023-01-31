@@ -9,5 +9,5 @@ sinks:
     domains:
       - "grpc.io"
     patterns:
-      - "(?i)(grpcio-opentracing|grpc).*"
+      - "(?i)(grpc).*"
     tags:

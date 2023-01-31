@@ -9,5 +9,5 @@ sinks:
     domains:
       - "heartex.ai"
     patterns:
-      - "(?i)(pyheartex).*"
+      - "(?i)(htx[.]).*"
     tags:

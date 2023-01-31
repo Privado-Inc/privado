@@ -9,5 +9,5 @@ sinks:
     domains:
       - "globus.org"
     patterns:
-      - "(?i)(globus-cli|globus-sdk).*"
+      - "(?i)(globus).*"
     tags:

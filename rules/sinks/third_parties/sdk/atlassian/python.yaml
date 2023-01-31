@@ -9,5 +9,13 @@ sinks:
     domains:
       - "atlassian.com"
     patterns:
-      - "(?i)(pyfluence|jirator|django-atlassian|confluence-rest-library|cloudwright-atlassian-jira|atlassian-python-api|atlassian-python-api-cti|sphinxcontrib-confluencebuilder|jira|apache-airflow-providers-opsgenie|apache-airflow-providers-jira|atlassian_python_api).*"
+      - "(?i)(jirator|django-atlassian|confluence-rest-library|cloudwright-atlassian-jira|atlassian-python-api|atlassian-python-api-cti|sphinxcontrib-confluencebuilder|jira|apache-airflow-providers-opsgenie|apache-airflow-providers-jira|atlassian_python_api).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.Confluence
+    name: Atlassian Confluence
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "(?i)(pyfluence).*"
     tags:

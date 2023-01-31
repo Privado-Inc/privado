@@ -9,5 +9,5 @@ sinks:
     domains:
       - "getdbt.com"
     patterns:
-      - "(?i)(dbt|dbt-snowflake|dbt-core|dbt-redshift|dbt-bigquery|dbt-postgres).*"
+      - "(?i)(dbt|dbt_snowflake|dbt_core|dbt_redshift|dbt_bigquery|dbt_postgres).*"
     tags:

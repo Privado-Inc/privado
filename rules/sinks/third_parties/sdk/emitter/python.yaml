@@ -9,5 +9,5 @@ sinks:
     domains:
       - "emitter.io"
     patterns:
-      - "(?i)(emitter-io).*"
+      - "(?i)(emitter.*(subscribe|publish|connect)).*"
     tags:

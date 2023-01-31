@@ -9,5 +9,5 @@ sinks:
     domains:
       - "exponea.com"
     patterns:
-      - "(?i)(exponea-python-sdk).*"
+      - "(?i)(exponea_python_sdk).*"
     tags:

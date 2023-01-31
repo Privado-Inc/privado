@@ -9,5 +9,5 @@ sinks:
     domains:
       - "exasol.com"
     patterns:
-      - "(?i)(apache-airflow-providers-exasol).*"
+      - "(?i)(airflow.*providers.*exasol).*"
     tags:
