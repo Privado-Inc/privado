@@ -9,7 +9,7 @@ sinks:
     domains:
       - "microsoft.com"
     patterns:
-      - "(?i)(k4a|azure_cosmos|msgraph_core|azure_functions|azure_devtools|dapr|onedrivesdk|applicationinsights|asposecellscloud|azure_mgmt-web|azure_template|azure_mgmt-redis|azure_databricks-sdk-python|azure_iot-deviceupdate|azure_identity|azure_loganalytics|azure_mgmt-storageimportexport|azuresdkoplib|azure_mgmt_communication|azure_mgmt_policyinsights|azure_mgmt_regionmove|azure_mgmt_privatedns|azure_mgmt-managementpartner|azure_mgmt-labservices|azure_mgmt-managedservices|azure_mgmt-serialconsole|azure_mgmt-automation|azure_mgmt-databricks|azure_mgmt-customproviders|azure_mgmt-redhatopenshift|azure_mgmt-automanage|azure_mgmt-commerce|azure_mgmt-azurestack|azure_mgmt-machinelearningservices|azure_mgmt-resourcemover|azure_synapse-monitoring|azure_mgmt-securityinsight|azure_mgmt-agfood|azure_mgmt-desktopvirtualization|azure_mgmt-agrifood|azure_mgmt-changeanalysis|azure_mgmt-confidentialledger|azure_mgmt-recoveryservicessiterecovery|azure_mgmt-dataprotection|azure_mgmt-resourceconnector|azure_mgmt-resourcehealth|azure_mgmt-guestconfig|azure_mgmt-fluidrelay|azure_mgmt-connectedvmware|msrestazure|azure_storage-blob|azure_mgmt-costmanagement|azure_storage-file-share|azure_mgmt-search|azure_mgmt-sql|azure_mgmt-subscription|azure_mgmt-servicefabric|azure_mgmt-eventhub|azure_mgmt-applicationinsights|azure_nspkg|azure_storage-common|azure_mgmt-datafactory|azure_keyvault|azure_mgmt-eventgrid|azure_mgmt-core|azure_graphrbac|azure_mgmt-managementgroups|azure_mgmt-dns|azure_mgmt-trafficmanager|azure_mgmt-monitor|azure_mgmt-authorization|azure_mgmt-cdn|azure_mgmt-containerservice|azure_mgmt-storage|azure_keyvault-secrets|azure_mgmt-datalake-store|azure_keyvault-keys|azure_mgmt-logic|azure_storage-queue|azure_mgmt-resourcegraph|msoffcrypto-tool|azure_mgmt-keyvault|azure_mgmt-advisor|adal|azure_mgmt-resource|azure_common|msal-extensions|azure_mgmt-batch|azure_mgmt-cosmosdb|azure_mgmt-apimanagement|azure_cosmosdb-nspkg|azure_storage-file|azure_mgmt-network|azure_cosmosdb-table|azure_mgmt-compute|azure_core|azure_mgmt-containerregistry|azure_mgmt-rdbms|azure_mgmt-iothub|azure_mgmt-msi|azure_mgmt-cognitiveservices|azure_mgmt-hdinsight|azure_mgmt-containerinstance|azure_mgmt-frontdoor|azure|office365-rest-python-client).*"
+      - "(?i)(k4a|msal_extensions|msgraph_core|dapr|onedrivesdk|applicationinsights|asposecellscloud|adal|msoffcrypto_tool|office365.).*"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure
@@ -17,7 +17,9 @@ sinks:
     domains:
       - "azure.microsoft.com"
     patterns:
-      - "(?i)(azure[.]identity|azure[.]storage[.]blob|azure[.]keyvault[.]secrets|azure_kusto_data|azure_keyvault-certificates|azure_mgmt-security|azure_storage|azure_datalake-store|azure_mgmt-nspkg|azure_batch|apache-airflow-providers-microsoft-azure|azure_mgmt-datalake-nspkg|azure_storage-file-datalake|azure_eventhub|azure_servicebus|aioazuredevops).*"
+      - "(?i)(airflow.providers.microsoft.*azure|aioazuredevops|azuresdkoplib|msrestazure).*"
+      - "(?i)(azure.(core|common|kusto.data|batch|servicebus|devtools|template|loganalytics|nspkg|graphrbac)).*"
+      - "(?i)(azure.mgmt.(regionmove|managementpartner|labservices|managedservices|serialconsole|automation|customproviders|redhatopenshift|automanage|commerce|azurestack|machinelearningservices|resourcemover|agfood|desktopvirtualization|agrifood|changeanalysis|confidentialledger|dataprotection|resourceconnector|resourcehealth|guestconfig|fluidrelay|connectedvmware|costmanagement|sql|subscription|servicefabric|applicationinsights|core|managementgroups|trafficmanager|authorization|cdn|logic|resourcegraph|advisor|resource|batch|apimanagement|containerregistry|rdbms|msi|hdinsight|containerinstance|frontdoor|nspkg|security|web|redis)).*"
     tags:
 
   - id: ThirdParties.SDK.Micosoft.Excel
@@ -27,3 +29,252 @@ sinks:
     patterns:
       - "(?i)(xlrd).*"
     tags:
+  
+  - id: ThirdParties.SDK.Azure.Storage
+    name: Micosoft Azure Storage
+    domains:
+      - "azure.micosoft.com"
+    patterns:
+      - "(?i)(azure.mgmt.storageimportexport|azure.storage.file|azure.storage.common|azure.storage.blob|azure.mgmt.storage|azure.storage.queue).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Azure.Cosmosdb
+    name: Micosoft Azure Cosmosdb
+    domains:
+      - "azure.micosoft.com"
+    patterns:
+      - "(?i)(azure.cosmos|azure.cosmosdb.nspkg|azure.cosmosdb.table|azure.mgmt.cosmosdb).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Microsoft.Azure.Identity
+    name: Microsoft Azure Identity
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.identity|azure.mgmt.identity).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Functions
+    name: Microsoft Azure Functions
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.functions|azure.mgmt.functions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DNS
+    name: Microsoft Azure DNS
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.(dns|privatedns)|azure.mgmt.(dns|privatedns)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Databricks
+    name: Microsoft Azure Databricks
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.databricks|azure.mgmt.databricks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Key-Vault
+    name: Microsoft Azure Key Vault
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.keyvault|azure.mgmt.keyvault).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Compute
+    name: Microsoft Azure Compute
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.compute|azure.mgmt.compute).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Container-Service
+    name: Microsoft Container Service
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.containerservice|azure.mgmt.containerservice).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Healthcare
+    name: Microsoft Azure Healthcare
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.healthcareapis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Monitor
+    name: Microsoft Azure Monitor
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.(monitor|synapse.monitoring)|azure.*mgmt.*monitor).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Network
+    name: Microsoft Azure Network
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.network|azure.mgmt.network).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Policy
+    name: Microsoft Azure Policy
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.policyinsights).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Backup
+    name: Microsoft Azure Backup
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.recoveryservicessiterecovery).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Eventhubs
+    name: Microsoft Azure Event Hubs
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.eventhub|azure.mgmt.eventhub).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Microsoft.Azure.DataFactory
+    name: Microsoft Azure Data Factory
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.datafactory|azure.mgmt.datafactory).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Datalake
+    name: Microsoft Azure Datalake
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.datalake.(store|nspkg|analytics)|azure.mgmt.datalake.(store|nspkg|analytics)).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Microsoft.Azure.Cognitive-Services
+    name: Microsoft Azure Cognitive Services
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.cognitiveservices|azure.mgmt.cognitiveservices).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Search
+    name: Microsoft Azure Search
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.search|azure.mgmt.search).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoT-Hub
+    name: Microsoft Azure IoT Hub
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.(iothub|iot.deviceupdate)|azure.mgmt.(iothub|iot.deviceupdate)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.EventGrid
+    name: Microsoft Azure EventGrid
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.eventgrid|azure.mgmt.eventgrid).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Bot-Framework
+    name: Microsoft Azure Bot Framework
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.bot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Communication-Services
+    name: Microsoft Azure Communication Services
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.communication|azure.mgmt.communication).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.PowerBI
+    name: Microsoft Azure PowerBI
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.powerbi|azure.mgmt.powerbi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Dynamics365
+    name: Microsoft Azure Dynamics 365
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.dynamics|azure.mgmt.dynamics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Stream-Analytics
+    name: Microsoft Azure Stream Analytics
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.streamanalytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Logz
+    name: Microsoft Azure Logz
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.mgmt.logz).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Datadog
+    name: Microsoft Azure Datadog
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.mgmt.datadog).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Personalizer
+    name: Microsoft Azure Personalizer
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.cognitiveservices.personalizer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Securityinsight
+    name: Microsoft Azure Securityinsight
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.securityinsight|azure.mgmt.securityinsight).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
+    name: Microsoft Azure MachineLearning
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(azure.ai.ml|azure.mgmt.machinelearningservices).*"
+    tags:
+
