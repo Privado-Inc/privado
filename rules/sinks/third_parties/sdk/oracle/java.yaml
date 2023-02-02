@@ -52,14 +52,6 @@ sinks:
       - "(?i)(com[.]oracle[.]bmc[.]dns).*"
     tags:
 
-  - id: ThirdParties.SDK.Oracle
-    name: Oracle
-    domains:
-      - "oracle.com"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc).*"
-    tags:
-
   - id: ThirdParties.SDK.Oracle.Email
     name: Oracle Email
     domains:
