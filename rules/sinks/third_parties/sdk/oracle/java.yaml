@@ -155,31 +155,7 @@ sinks:
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]model).*"
     tags:
-
-  - id: ThirdParties.SDK.Oracle.Requests
-    name: Oracle Request
-    domains:
-      - "oracle.com"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]requests).*"
-    tags:
-
-  - id: ThirdParties.SDK.Oracle.Responses
-    name: Oracle Responses
-    domains:
-      - "oracle.com"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]responses).*"
-    tags:
-
-  - id: ThirdParties.SDK.Oracle.Util
-    name: Oracle Util
-    domains:
-      - "oracle.com"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]util).*"
-    tags:
-
+    
   - id: ThirdParties.SDK.Oracle.Waiter
     name: Oracle Waiter
     domains:
