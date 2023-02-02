@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i).*(cookies|cookie)"
+      - "(?i).*(cookie([s]?$))"
     tags:
       law: GDPR
 
@@ -38,7 +38,7 @@ sources:
       - "(?i)mac[^\\s/(;)#|,=!>]{0,2}(?:address|ip)|ip[^\\s/(;)#|,=!>]{0,2}mac"
     tags:
       law: GDPR
-    
+
   - id: Data.Sensitive.OnlineIdentifiers.Pixel
     name: Pixel
     category: Online Identifiers
