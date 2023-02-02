@@ -12,14 +12,14 @@ sinks:
       - "(?i)(aws_cdk.*[.]aws_s3).*"
       - "(?i)(aws_cdk.*[.]aws_s3_assets).*"
       - "(?i)(aws_cdk.*[.]aws_s3_notifications).*"
-      - "(?i)(aws_helper|s3transfer|templates-s3|pip-s3-proxy|pys3utils|s3utils|s3url|s3url2uri|url_for_s3|s3_parse_url|ctodd_python_lib_aws|awss3lib|s3file|mypy_boto3_s3|s3_encryption|mypy_boto3_s3|pip_services3_aws|bits3).*"
+      - "(?i)(aws_helper|s3transfer|templates_s3|s3utils|s3url|url_for_s3|s3_parse_url|ctodd_python_lib_aws|awss3lib|s3file|mypy_boto3_s3|s3_encryption|mypy_boto3_s3|pip_services3_aws|bits3).py.*"
     tags:
   
 
   - id: ThirdParties.SDK.Amazonaws.SQS
     name: Amazonaws SQS
     domains:
-      - "amazonaws.com"
+      - "sqs.amazonaws.com"
     patterns:
       - "(?i)(mypy_boto3_sqs|aws_cdk.*[.]aws_sqs).*"
     tags:
@@ -28,7 +28,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Athena
     name: Amazonaws Athena
     domains:
-      - "amazonaws.com"
+      - "athena.amazonaws.com"
     patterns:
       - "(?i)(pyathena).*"
       - "(?i)(aws_cdk.*[.]aws_athena).*"
@@ -38,7 +38,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.RDS
     name: Amazonaws RDS
     domains:
-      - "amazonaws.com"
+      - "rds.amazonaws.com"
     patterns:
       - "(?i)(aws_rds|mypy_boto3_rds).*"
       - "(?i)(aws_cdk.*[.]aws_rds).*"
@@ -48,7 +48,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SNS
     name: Amazonaws SNS
     domains:
-      - "amazonaws.com"
+      - "sns.amazonaws.com"
     patterns:
       - "(?i)(smsframework_amazon_sns).*"
       - "(?i)(aws_cdk.*[.]aws_sns).*"
@@ -59,7 +59,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SES
     name: Amazonaws SES
     domains:
-      - "amazonaws.com"
+      - "ses.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_ses|django_amazon_ses|amazon-ses-template-editor).*"
     tags:
@@ -68,7 +68,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SSM
     name: Amazonaws SSM
     domains:
-      - "amazonaws.com"
+      - "ssm.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_ssmcontacts).*"
       - "(?i)(aws_cdk.*[.]aws_ssm).*"
@@ -80,7 +80,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.EC2
     name: Amazonaws EC2
     domains:
-      - "amazonaws.com"
+      - "ec2.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_ec2).*"
       - "(?i)(mypy_boto3_ec2|ec2_metadata).*"
@@ -90,7 +90,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ECS
     name: Amazonaws ECS
     domains:
-      - "amazonaws.com"
+      - "ecs.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_ecs).*"
       - "(?i)(aws_cdk.*[.]aws_ecs_patterns).*"
@@ -100,7 +100,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Amplify
     name: Amazonaws Amplify
     domains:
-      - "amazonaws.com"
+      - "amplify.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_amplify).*"
       - "(?i)(aws_cdk.*[.]aws_amplifyuibuilder).*"
@@ -110,7 +110,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Redshift
     name: Amazonaws Redshift
     domains:
-      - "amazonaws.com"
+      - "redshift.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_redshift).*"
       - "(?i)(django-redshift-backend|target_redshift|redshift_connector|redshift-connector|mypy-boto3-redshift-data|pandas-amazon-redshift).*"
@@ -120,7 +120,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Ads
     name: Amazonaws Ads
     domains:
-      - "amazonaws.com"
+      - "ads.amazonaws.com"
     patterns:
       - "(?i)(ad_api[.]api|amazon-ad-sdk|aws-adfs|amazon-ad|amazon-advertising|tap-amazon-ads-dsp|python-amazon-advertising-api).*"
     tags:
@@ -129,7 +129,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Lambda
     name: Amazonaws Lamba
     domains:
-      - "amazonaws.com"
+      - "lambda.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_lambda_python).*"
       - "(?i)(aws-lambda|aws_lambda|aws_cdk.*[.]aws_lambda|chalice|torchlambda|mypy-boto3-lambda|aws-lambda-powertools|awslambdaric|pylambda|aws-xray-lambda-segment-shim|opentelemetry-instrumentation-aws-lambda).*"
@@ -139,7 +139,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Dynamodb
     name: Amazonaws Dynamodb
     domains:
-      - "amazonaws.com"
+      - "dynamodb.amazonaws.com"
     patterns:
       - "(?i)(dynamodb-encryption-sdk|dynamo3|mypy_boto3_dynamodb|dynamodump|aws_cdk.*[.]aws_dynamodb|pynamodb).*"
     tags:
@@ -148,7 +148,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.CloudWatchLogs
     name: Amazonaws CloudWatch Logs
     domains:
-      - "amazonaws.com"
+      - "cloudwatch.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_cloudwatch).*"
       - "(?i)(logtron_aws|aws_monitoring|awslogs|watchtower).*"
@@ -158,7 +158,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.CloudFormation
     name: Amazonaws CloudFormation
     domains:
-      - "amazonaws.com"
+      - "cloudformation.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_cloudformation).*"
       - "(?i)(aws_cdk.*[.]aws_cloudfront).*"
@@ -169,7 +169,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Alexa
     name: Amazonaws Alexa
     domains:
-      - "amazonaws.com"
+      - "alexa.amazonaws.com"
     patterns:
       - "(?i)(ask-alexa-pykit|ask_alexa_pykit|PyForAlexa|ask-sdk|ask_sdk|sinricpro).*"
     tags:
@@ -178,7 +178,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Aurora
     name: Amazonaws Aurora
     domains:
-      - "amazonaws.com"
+      - "aurora.amazonaws.com"
     patterns:
       - "(?i)(aurora_data_api).*"
     tags:
@@ -187,7 +187,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Kinesis
     name: Amazonaws Kinesis
     domains:
-      - "amazonaws.com"
+      - "kinesis.amazonaws.com"
     patterns:
       - "(?i)(amazon_kclpy).*"
       - "(?i)(aws_cdk.*[.]aws_kinesisanalytics).*"
@@ -199,7 +199,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Cognito
     name: Amazonaws Cognito
     domains:
-      - "amazonaws.com"
+      - "cognito.amazonaws.com"
     patterns:
       - "(?i)(cognitojwt).*"
       - "(?i)(aws_cdk.*[.]aws_cognito).*"
@@ -209,7 +209,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ElasticLoadBalancing
     name: Amazon ElasticLoadBalancing
     domains:
-      - "amazonaws.com"
+      - "elb.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_elasticloadbalancing).*"
       - "(?i)(aws_cdk.*[.]aws_elasticloadbalancingv2).*"
@@ -219,7 +219,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.EKS
     name: Amazon EKS
     domains:
-      - "amazonaws.com"
+      - "eks.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_eks).*"
     tags:
@@ -228,23 +228,23 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SageMaker
     name: Amazon SageMaker
     domains:
-      - "amazonaws.com"
+      - "sagemaker.amazonaws.com"
     patterns:
-      - "(?i)(sagemaker).*"
+      - "(?i)(sagemaker).py.*"
       - "(?i)(aws_cdk.*[.]aws_sagemaker).*"
     tags:
   
   - id: ThirdParties.SDK.Amazonaws.Elasticsearch
     name: Amazonaws Elasticsearch
     domains:
-      - "amazonaws.com"
+      - "elasticsearch.amazonaws.com"
     patterns:
       - "(?i)(aws_cdk.*[.]aws_elasticsearch).*"
     tags:
 
 
   - id: ThirdParties.SDK.Amazon.Aws
-    name: Amazon Aws
+    name: Amazon AWS
     domains:
       - "aws.amazon.com"
     patterns:
@@ -252,9 +252,11 @@ sinks:
       - "(?i)(frauddetector).*"
       - "(?i)(lookoutvision).*"
       - "(?i)(lookoutequipment).*"
-      - "(?i)(pyqldb).*"
-      - "(?i)(qldbshell).*"
-      - "(?i)(aws_requests_auth|requests-aws4auth|requests_aws_sign|aws_sam_translator|zappa|aws-cdk-lib|aws_requests_auth|mypy-boto3-events|opentelemetry-instrumentation-boto|django-boto|opentelemetry-instrumentation-botocore|amazon-selenium|amazon-mws|Amazon-crawler|amazon-kclpy|amazon-dash|amazon-paapi5|scrape-amazon|django-amazon|amazon[.]ion|Python-Amazon|amazon-buddy|amazon-braket-schemas|amazon-textract-prettyprinter|mint-amazon-tagger|amazon-buy-bot|python-amazon-mws|amazon-dax-client|amazon-textract-overlayer|django-amazon-translate|amazon-textract-caller|collective[.]portlet[.]amazon|amazon-affiliate-url|zs-amazon-buddy|pay_with_amazon|python-amazon-paapi|amazon-textract-geofinder|openlabs_amazon_mws|amazon_kclpy-ext|amazon-wishlist-pricewatch|rgmining-amazon-dataset|amazon-textract-helper|stylelens-crawl-amazon|fio_amazon_mws|tap-amazon-sp|tap-amazon-mws|aws_cdk.*[.]aws_ivs-alpha|boto3-meiqia|python-amazon-sp-api|oblcc-amazon-inspector-v2|python-amazon-product-api|amazon-sp-api-clients|Phils-Amazon-Price-Tracker|python-amazon-unthrottled-paapi|p3_amazon_jp_tool|Amazon-Arbitrage-Master-Sheet|amazon-textract-pipeline-pagedimensions|django-amazon-price-monitor|python-amazon-mws-tools|apache-airflow-providers-amazon|django-oscar-amazon-payments|singer-tap-amazon-mws|amazon-lex-bot-deploy|scrapy-amazon-robot-middleware3|gc-boto|boto-patch|boto-mws|boto|boto-brimley|aws_xray_sdk|awswrangler|aws-crypto|AWS-Manager|cloudfn-aws|aws-profile|pymacaron-aws|aws-ext|nysa-aws|aws-sync|aws-2fa|fondat-aws|aws-amicleaner|aws-orgs|aws-checker|aws-credentials|aws-ssh|aio-aws|aws-top|aws-encrytpion|aws-bunker|aws-crpyto|aws-secrets|aws-syndicate|bgu-aws|aws-status|aws-mfa|odincontrib[.]aws|riffdog-aws|aws-saving|osbot-aws|aws-parallelcluster|aws-timely|spring-aws|aws-encyrption|frasco-aws|aws-socks|aws-allowlister|aws-parsecf|aws-apimatic|mfa-aws|thumbor-aws|orchard-aws|aws-psycopg2|aws-vapor|vulcan-aws|aws-rotate|aws-switchrole|navio-aws|aws-satella|aws-keyring|aws-jupyter|aws-connector|aws-works|aws-session|aws-organized|AWS-Police|pulumi-aws|grapher-aws|aws-secretsmanager|aws_client|aws-fed|JT-AWS|django-aws|openapi4aws|waldur-aws|aws-secret|exr-aws|aws-login|aws-mlops|requests-aws|aws-encrytpion-sdk|aws-encyrption-sdk|aws-infrastructure-sdk|aws-orbit-sdk|aws-encrpytion-sdk|opentelemetry-sdk-extension-aws|types-aws-xray-sdk|awsencrpytion|aws-jupyter-proxy|aws-encryption-sdk-cli|aws-sso-cred-restore|aws-encyrption-sdk-cli|aws-encrpytion-sdk-cli|Datamart-AWS-CloudTrails-SDK|aws-encrytpion-sdk-cli|awsencyrption|awsencyrptionsdk|awsencryptionsdk|awsencryption|awsencrytpionsdk|awsencrpytionsdk|awsencrytpion|aws-encrpytion|aws-encryption|awscyrpto|aws-encyrption-cli|awsencyrptioncli|aws-encrpytion-cli|awsencrpytionsdkcli|aws-encryption-cli|awsencryptioncli|awsencryptionsdkcli|awsencrytpioncli|awsencrpytioncli|aws-cyrpto|awsencrytpionsdkcli|awscrpyto|aws-crytpo|awsencyrptionsdkcli|awscrypto|aws-encrytpion-cli|madeira|imposter|amazon-braket-default-simulator|xraysink|amazon-braket-pennylane-plugin|awsiotclient|spotty|aws-sso-credential-process|vpc-free|arabela|aws-data-api-python-sdk|amazon-braket-ocean-plugin|aws-hcs-cli|aws-secretsmanager-caching|assumerole|kloudy|awscli|awsxmltojson|awshelpers|httpaws|amazon-connect-decryption-lib|requests-auth-aws-sigv4|caws|pinkboto|iam-starter|aws-xray-sdk|aws-encryption-sdk|amazon-braket-sdk|awsprocesscreds|amazon-transcribe|awsiotsdk|amazon_pay|AWSIoTDeviceDefenderAgentSDK|AWSIoTPythonSDK|awscli-login|datastore[.]aws|remotecv_aws|coto|aiobotocore|StarCluster|threadlocal-aws|okta-aws).*"
+      - "(?i)(pyqldb).py.*"
+      - "(?i)(qldbshell).py.*"
+      - "(?i)(AWS_Manager|mypy_boto3_events|opentelemetry_instrumentation_boto|amazon_selenium|amazon_mws|amazon_kclpy|amazon_dash|amazon_paapi|scrape_amazon|amazon[.]ion|Python_Amazon|amazon_buddy|amazon_braket_schemas|amazon_textract_prettyprinter|mint_amazon_tagger|amazon_buy_bot|amazon_dax_client|amazon_textract_overlayer|django_amazon_translate|amazon_textract_caller|collective[.]portlet[.]amazon|amazon_affiliate_url|zs_amazon_buddy|pay_with_amazon|amazon_textract_geofinder|openlabs_amazon_mws|amazon_kclpy_ext|amazon_wishlist_pricewatch|rgmining_amazon_dataset|amazon_textract_helper|stylelens_crawl_amazon|fio_amazon_mws|tap_amazon_sp|tap_amazon_mws|python_amazon_sp_api|oblcc_amazon_inspector_v2|python_amazon_product_api|amazon_sp_api_clients|Phils_Amazon_Price_Tracker|python_amazon_unthrottled_paapi|p3_amazon_jp_tool|Amazon_Arbitrage_Master_Sheet|amazon_textract_pipeline_pagedimensions|python_amazon_mws_tools|apache_airflow_providers_amazon|django_oscar_amazon_payments|singer_tap_amazon_mws|amazon_lex_bot_deploy|scrapy_amazon_robot_middleware3|gc_boto|pymacaron_aws|nysa_aws|fondat_aws|aio_aws|bgu_aws|cloudfn_aws|AWS_Police|navio_aws|pulumi_aws|grapher_aws|requests_aws|JT_AWS|openapi4aws|waldur_aws|exr_aws|opentelemetry_sdk_extension_aws|types_aws_xray_sdk|Datamart_AWS_CloudTrails_SDK|amazon_braket_pennylane_plugin|amazon_connect_decryption_lib|amazon_braket_default_simulator|amazon_braket_ocean_plugin|requests_auth_aws_sigv4|amazon_braket_sdk|amazon_transcribe|amazon_pay|awscli_login|datastore[.]aws|remotecv_aws|threadlocal_aws|okta_aws|odincontrib[.]aws|riffdog_aws|spring_aws|frasco_aws|mfa_aws|thumbor_aws|orchard_aws|vulcan_aws|osbot_aws).*"
+      - "(?i)(aws_xray_sdk|aws_crypto|aws_profile|aws_ext|aws_sync|aws_2fa|aws_amicleaner|aws_orgs|aws_checker|aws_requests_auth|aws_sam_translator|aws_credentials|aws_ssh|aws_top|aws_encrytpion|aws_bunker|aws_crpyto|aws_secrets|aws_syndicate|aws_status|aws_mfa|aws_saving|aws_parallelcluster|aws_timely|aws_encyrption|aws_socks|aws_allowlister|aws_parsecf|aws_apimatic|aws_psycopg2|aws_vapor|aws_rotate|aws_switchrole|aws_satella|aws_keyring|aws_jupyter|aws_connector|aws_works|aws_session|aws_organized|aws_secretsmanager|aws_client|aws_fed|aws_secret|aws_login|aws_mlops|aws_infrastructure_sdk|aws_orbit_sdk|aws_jupyter_proxy|aws_sso_cred_restore|aws_encryption|aws_sso_credential_process|aws_data_api_python_sdk|aws_hcs_cli|aws_xray_sdk).py.*"
+      - "(?i)(awscrypto|awswrangler|awsiotclient|spotty|arabela|madeira|imposter|xraysink|assumerole|kloudy|awscli|awsxmltojson|awshelpers|httpaws|pinkboto|coto|zappa|aiobotocore|StarCluster|awsiotsdk|awsprocesscreds|AWSIoTDeviceDefenderAgentSDK|AWSIoTPythonSDK).py.*"
     tags:
   
   - id: ThirdParties.SDK.Amazonaws.CDK
@@ -267,6 +269,7 @@ sinks:
       - "(?i)(aws_cdk.*[.]aws_apigatewayv2).*"
       - "(?i)(aws_cdk.*[.]aws_codeguruprofiler).*"
       - "(?i)(aws_cdk.*[.]aws_healthlake).*"
+      - "(?i)(aws_cdk.*[.]aws_ivs_alpha).*"
       - "(?i)(aws_cdk.*[.]aws_apprunner).*"
       - "(?i)(aws_cdk.*[.]aws_rum).*"
       - "(?i)(aws_cdk.*[.]aws_codestar).*"

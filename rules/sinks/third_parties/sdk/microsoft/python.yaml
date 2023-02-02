@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure
     name: Microsoft Azure
     domains:
-      - "azure.microsoft.com"
+      - ".azure.com"
     patterns:
       - "(?i)(airflow.providers.microsoft.*azure|aioazuredevops|azuresdkoplib|msrestazure).*"
       - "(?i)(azure.(core|common|kusto.data|batch|servicebus|devtools|template|loganalytics|nspkg|graphrbac)).*"
@@ -33,7 +33,7 @@ sinks:
   - id: ThirdParties.SDK.Azure.Storage
     name: Micosoft Azure Storage
     domains:
-      - "azure.micosoft.com"
+      - "storage.azure.com"
     patterns:
       - "(?i)(azure.mgmt.storageimportexport|azure.storage.file|azure.storage.common|azure.storage.blob|azure.mgmt.storage|azure.storage.queue).*"
     tags:
@@ -41,7 +41,7 @@ sinks:
   - id: ThirdParties.SDK.Azure.Cosmosdb
     name: Micosoft Azure Cosmosdb
     domains:
-      - "azure.micosoft.com"
+      - "cosmosdb.azure.com"
     patterns:
       - "(?i)(azure.cosmos|azure.cosmosdb.nspkg|azure.cosmosdb.table|azure.mgmt.cosmosdb).*"
     tags:
@@ -49,7 +49,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Identity
     name: Microsoft Azure Identity
     domains:
-      - "azure.microsoft.com"
+      - "identity.azure.com"
     patterns:
       - "(?i)(azure.identity|azure.mgmt.identity).*"
     tags:
@@ -57,7 +57,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Functions
     name: Microsoft Azure Functions
     domains:
-      - "azure.microsoft.com"
+      - "functions.azure.com"
     patterns:
       - "(?i)(azure.functions|azure.mgmt.functions).*"
     tags:
@@ -65,7 +65,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.DNS
     name: Microsoft Azure DNS
     domains:
-      - "azure.microsoft.com"
+      - "dns.azure.com"
     patterns:
       - "(?i)(azure.(dns|privatedns)|azure.mgmt.(dns|privatedns)).*"
     tags:
@@ -73,7 +73,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Databricks
     name: Microsoft Azure Databricks
     domains:
-      - "azure.microsoft.com"
+      - "databricks.azure.com"
     patterns:
       - "(?i)(azure.databricks|azure.mgmt.databricks).*"
     tags:
@@ -81,7 +81,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Key-Vault
     name: Microsoft Azure Key Vault
     domains:
-      - "azure.microsoft.com"
+      - "keyvault.azure.com"
     patterns:
       - "(?i)(azure.keyvault|azure.mgmt.keyvault).*"
     tags:
@@ -89,7 +89,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Compute
     name: Microsoft Azure Compute
     domains:
-      - "azure.microsoft.com"
+      - "compute.azure.com"
     patterns:
       - "(?i)(azure.compute|azure.mgmt.compute).*"
     tags:
@@ -97,7 +97,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Container-Service
     name: Microsoft Container Service
     domains:
-      - "azure.microsoft.com"
+      - "containerservice.azure.com"
     patterns:
       - "(?i)(azure.containerservice|azure.mgmt.containerservice).*"
     tags:
@@ -105,7 +105,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Healthcare
     name: Microsoft Azure Healthcare
     domains:
-      - "azure.microsoft.com"
+      - "healthcare.azure.com"
     patterns:
       - "(?i)(azure.healthcareapis).*"
     tags:
@@ -113,7 +113,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Monitor
     name: Microsoft Azure Monitor
     domains:
-      - "azure.microsoft.com"
+      - "monitor.azure.com"
     patterns:
       - "(?i)(azure.(monitor|synapse.monitoring)|azure.*mgmt.*monitor).*"
     tags:
@@ -121,7 +121,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Network
     name: Microsoft Azure Network
     domains:
-      - "azure.microsoft.com"
+      - "network.azure.com"
     patterns:
       - "(?i)(azure.network|azure.mgmt.network).*"
     tags:
@@ -129,7 +129,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Policy
     name: Microsoft Azure Policy
     domains:
-      - "azure.microsoft.com"
+      - "policy.azure.com"
     patterns:
       - "(?i)(azure.policyinsights).*"
     tags:
@@ -137,23 +137,23 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Backup
     name: Microsoft Azure Backup
     domains:
-      - "azure.microsoft.com"
+      - "backup.azure.com"
     patterns:
       - "(?i)(azure.recoveryservicessiterecovery).*"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure.Eventhubs
-    name: Microsoft Azure Event Hubs
+    name: Microsoft Azure EventHubs
     domains:
-      - "azure.microsoft.com"
+      - "eventhubs.azure.com"
     patterns:
       - "(?i)(azure.eventhub|azure.mgmt.eventhub).*"
     tags:
   
   - id: ThirdParties.SDK.Microsoft.Azure.DataFactory
-    name: Microsoft Azure Data Factory
+    name: Microsoft Azure DataFactory
     domains:
-      - "azure.microsoft.com"
+      - "datafactory.azure.com"
     patterns:
       - "(?i)(azure.datafactory|azure.mgmt.datafactory).*"
     tags:
@@ -161,7 +161,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Datalake
     name: Microsoft Azure Datalake
     domains:
-      - "azure.microsoft.com"
+      - "datalake.azure.com"
     patterns:
       - "(?i)(azure.datalake.(store|nspkg|analytics)|azure.mgmt.datalake.(store|nspkg|analytics)).*"
     tags:
@@ -169,7 +169,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Cognitive-Services
     name: Microsoft Azure Cognitive Services
     domains:
-      - "azure.microsoft.com"
+      - "cognitiveservices.azure.com"
     patterns:
       - "(?i)(azure.cognitiveservices|azure.mgmt.cognitiveservices).*"
     tags:
@@ -177,15 +177,15 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Search
     name: Microsoft Azure Search
     domains:
-      - "azure.microsoft.com"
+      - "search.azure.com"
     patterns:
       - "(?i)(azure.search|azure.mgmt.search).*"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure.IoT-Hub
-    name: Microsoft Azure IoT Hub
+    name: Microsoft Azure IoT-Hub
     domains:
-      - "azure.microsoft.com"
+      - "iothub.azure.com"
     patterns:
       - "(?i)(azure.(iothub|iot.deviceupdate)|azure.mgmt.(iothub|iot.deviceupdate)).*"
     tags:
@@ -193,7 +193,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.EventGrid
     name: Microsoft Azure EventGrid
     domains:
-      - "azure.microsoft.com"
+      - "eventgrid.azure.com"
     patterns:
       - "(?i)(azure.eventgrid|azure.mgmt.eventgrid).*"
     tags:
@@ -201,7 +201,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Bot-Framework
     name: Microsoft Azure Bot Framework
     domains:
-      - "azure.microsoft.com"
+      - "bot.azure.com"
     patterns:
       - "(?i)(azure.bot).*"
     tags:
@@ -209,7 +209,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Communication-Services
     name: Microsoft Azure Communication Services
     domains:
-      - "azure.microsoft.com"
+      - "communication.azure.com"
     patterns:
       - "(?i)(azure.communication|azure.mgmt.communication).*"
     tags:
@@ -217,7 +217,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.PowerBI
     name: Microsoft Azure PowerBI
     domains:
-      - "azure.microsoft.com"
+      - "powerbi.azure.com"
     patterns:
       - "(?i)(azure.powerbi|azure.mgmt.powerbi).*"
     tags:
@@ -225,7 +225,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Dynamics365
     name: Microsoft Azure Dynamics 365
     domains:
-      - "azure.microsoft.com"
+      - "dynamics365.azure.com"
     patterns:
       - "(?i)(azure.dynamics|azure.mgmt.dynamics).*"
     tags:
@@ -233,7 +233,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Stream-Analytics
     name: Microsoft Azure Stream Analytics
     domains:
-      - "azure.microsoft.com"
+      - "streamanalytics.azure.com"
     patterns:
       - "(?i)(azure.streamanalytics).*"
     tags:
@@ -241,7 +241,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Logz
     name: Microsoft Azure Logz
     domains:
-      - "azure.microsoft.com"
+      - "logz.azure.com"
     patterns:
       - "(?i)(azure.mgmt.logz).*"
     tags:
@@ -249,7 +249,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Datadog
     name: Microsoft Azure Datadog
     domains:
-      - "azure.microsoft.com"
+      - "datadog.azure.com"
     patterns:
       - "(?i)(azure.mgmt.datadog).*"
     tags:
@@ -257,7 +257,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Personalizer
     name: Microsoft Azure Personalizer
     domains:
-      - "azure.microsoft.com"
+      - "personalizer.azure.com"
     patterns:
       - "(?i)(azure.cognitiveservices.personalizer).*"
     tags:
@@ -265,7 +265,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Securityinsight
     name: Microsoft Azure Securityinsight
     domains:
-      - "azure.microsoft.com"
+      - "securityinsight.azure.com"
     patterns:
       - "(?i)(azure.securityinsight|azure.mgmt.securityinsight).*"
     tags:
@@ -273,7 +273,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
     name: Microsoft Azure MachineLearning
     domains:
-      - "azure.microsoft.com"
+      - "machinelearning.azure.com"
     patterns:
       - "(?i)(azure.ai.ml|azure.mgmt.machinelearningservices).*"
     tags:
