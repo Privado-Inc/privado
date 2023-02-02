@@ -73,7 +73,7 @@ sinks:
     domains:
       - "azure.microsoft.com"
     patterns:
-      - "(?i)("com[.]microsoft[.]azure[.]healthcareapis).*"
+      - "(?i)(com[.]microsoft[.]azure[.]healthcareapis).*"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure.Monitor
