@@ -1,0 +1,41 @@
+sinks:
+
+  - id: Messaging.Queue.Kafka.Producer
+    name: Apache Kafka (Producer)
+    domains:
+      - apache.com
+    patterns: 
+      - "(?i).*(org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]).*"
+    tags:
+
+  - id: Messaging.Queue.AMQP.Rabbit.Producer
+    name: JMS (Producer)
+    domains:
+      - springframework.org
+    patterns: 
+      - "(?i).*(org[.]springframework[.]amqp[.]rabbit[.]core[.]RabbitTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]).*"
+    tags:
+
+  - id: Messaging.Service.JMS.Producer
+    name: JMS (Producer)
+    domains:
+      - springframework.org
+    patterns: 
+      - "(?i).*(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]|(jakarta[.]jms[.]JMSProducer|javax[.]jms[.]MessageProducer)[.](send|setProperty)[:]).*"
+    tags:
+
+  - id: Messaging.Service.AmazonSQS.Producer
+    name: JMS (Producer)
+    domains:
+      - springframework.org
+    patterns: 
+      - "(?i).*(com[.]amazonaws[.]services[.]sqs[.]model[.]SendMessageRequest[.](set|with)MessageBody[:]).*"
+    tags:
+
+  - id: Messaging.Service.JMS.Consumer
+    name: JMS (Consumer)
+    domains:
+      - springframework.org
+    patterns: 
+      - "(?i).*(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doReceive|receive)[:]|(jakarta[.]jms[.]JMSConsumer|javax[.]jms[.]MessageConsumer)[.](receive|receiveBody|receiveNoWait|receiveBodyNoWait)[:]).*"
+    tags:
