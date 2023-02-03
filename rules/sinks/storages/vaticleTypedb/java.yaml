@@ -8,5 +8,5 @@ sinks:
     domains:
       - vaticle.com
     patterns:
-      - "(i?).*com[.]vaticle[.]type(?:db|ql)[.].*"
+      - "(?i).*com[.]vaticle[.]type(?:db|ql)[.].*"
     tags:

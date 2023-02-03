@@ -6,5 +6,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)boto.*(?:sign.{0,1}up|confirm.{0,1}sign.{0,1}up|resend.{0,1}confirmation.{0,1}code|forgot.{0,1}password|confirm.{0,1}forgot.{0,1}password|initiate.{0,1}auth|admin.{0,1}get.{0,1}user|confirm.{0,1}device|list.{0,1}users).*"
+      - "(?i)boto.*(?:sign.{0,1}up|confirm.{0,1}sign.{0,1}up|resend.{0,1}confirmation.{0,1}code|forgot.{0,1}password|confirm.{0,1}forgot.{0,1}password|initiate.{0,1}auth|admin.{0,1}get.{0,1}user|confirm.{0,1}device|list.{0,1}users).*"
     tags:

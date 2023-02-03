@@ -8,7 +8,7 @@ sinks:
     domains:
       - mongodb.com
     patterns: 
-      - "(i?)pymongo.*client.*(?:find|aggregate).*"
+      - "(?i)pymongo.*client.*(?:find|aggregate).*"
     tags:
 
   - id: Storages.MongoDB.Write
@@ -16,5 +16,5 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(i?)pymongo.*client.*(?:insert|delete|remove|update).*"
+      - "(?i)pymongo.*client.*(?:insert|delete|remove|update).*"
     tags:

@@ -5,5 +5,5 @@ sinks:
     domains:
       - arangodb.com
     patterns: 
-      - "(i?)pyarango.*(?:createdocument|save|query|get|list|head|select|view|find|search|match).*"
+      - "(?i)pyarango.*(?:createdocument|save|query|get|list|head|select|view|find|search|match).*"
     tags:

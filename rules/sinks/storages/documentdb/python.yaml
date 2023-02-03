@@ -9,7 +9,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)boto.*(?:find.{0,1}one).*"
+      - "(?i)boto.*(?:find.{0,1}one).*"
     tags:
 
   - id: Storages.AmazonDocumentDB.Write
@@ -18,5 +18,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)boto.*(?:insert.{0,1}(?:one|many)).*"
+      - "(?i)boto.*(?:insert.{0,1}(?:one|many)).*"
     tags:

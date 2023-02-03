@@ -8,5 +8,5 @@ sinks:
     domains:
       - hazelcast.org
     patterns:
-      - "(i?)hazelcast.*(?:replace|put|get|add|remove).*"
+      - "(?i)hazelcast.*(?:replace|put|get|add|remove).*"
     tags:

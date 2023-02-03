@@ -8,7 +8,7 @@ sinks:
     domains:
       - elastic.co
     patterns:
-      - "(i?)elasticsearch.*(?:search|scan|get)"
+      - "(?i)elasticsearch.*(?:search|scan|get)"
     tags:
 
   - id: Storages.Elasticsearch.Write
@@ -16,5 +16,5 @@ sinks:
     domains:
       - elastic.co
     patterns:
-       - "(i?)elasticsearch.*(?:update|delete|put)"
+       - "(?i)elasticsearch.*(?:update|delete|put)"
     tags:

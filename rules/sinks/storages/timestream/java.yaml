@@ -9,7 +9,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?).*(?:TimestreamQueryAsyncClient|TimestreamQueryAsyncClientBuilder|TimestreamQueryBaseClientBuilder|TimestreamQueryClient|TimestreamQueryClientBuilder|com[.]amazonaws[.]services[.]timestreamquery).*"
+      - "(?i).*(?:TimestreamQueryAsyncClient|TimestreamQueryAsyncClientBuilder|TimestreamQueryBaseClientBuilder|TimestreamQueryClient|TimestreamQueryClientBuilder|com[.]amazonaws[.]services[.]timestreamquery).*"
     tags:
 
   - id: Storages.AmazonTimestream.Write
@@ -18,5 +18,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?).*(?:TimestreamWriteAsyncClient|TimestreamWriteAsyncClientBuilder|TimestreamWriteBaseClientBuilder|TimestreamWriteClient|TimestreamWriteClientBuilder|com[.]amazonaws[.]services[.]timestreamwrite).*"
+      - "(?i).*(?:TimestreamWriteAsyncClient|TimestreamWriteAsyncClientBuilder|TimestreamWriteBaseClientBuilder|TimestreamWriteClient|TimestreamWriteClientBuilder|com[.]amazonaws[.]services[.]timestreamwrite).*"
     tags:
