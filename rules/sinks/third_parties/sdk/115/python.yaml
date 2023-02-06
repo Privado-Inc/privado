@@ -5,7 +5,7 @@
 sinks:
 
   - id: ThirdParties.SDK.115
-    name: 115
+    name: "115"
     domains:
       - "115.com"
     patterns:
