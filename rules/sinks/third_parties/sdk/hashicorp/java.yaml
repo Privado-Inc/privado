@@ -4,10 +4,42 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Hashicorp
-    name: Hashicorp
+  - id: ThirdParties.SDK.Hashicorp.Nomad
+    name: Hashicorp Nomad
     domains:
       - "hashicorp.com"
     patterns:
       - "(?i)(com[.]hashicorp[.]nomad).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hashicorp.Terraform
+    name: Hashicorp Terraform
+    domains:
+      - "hashicorp.com"
+    patterns:
+      - "(?i)(com[.]hashicorp[.]terraform).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hashicorp.Vault
+    name: Hashicorp Vault
+    domains:
+      - "hashicorp.com"
+    patterns:
+      - "(?i)(com[.]hashicorp[.]vault).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hashicorp.Consul
+    name: Hashicorp Consul
+    domains:
+      - "hashicorp.com"
+    patterns:
+      - "(?i)(com[.]hashicorp[.]consul).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hashicorp.Packer
+    name: Hashicorp Packer
+    domains:
+      - "hashicorp.com"
+    patterns:
+      - "(?i)(com[.]hashicorp[.]packer).*"
     tags:
