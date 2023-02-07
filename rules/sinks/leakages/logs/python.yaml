@@ -3,25 +3,25 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
-      - "(?i).*(?:log|logger).*(?:error|severe|fatal|e).*"
+      - "(?i).*(?:log|logger).*(?:error|severe|fatal).*"
     tags:
     
   - id: Leakages.Log.Warn
     name: Log Warn
     patterns:
-      - "(?i).*(?:log|logger).*(warn|warning|w).*"
+      - "(?i).*(?:log|logger).*(warn|warning).*"
     tags:
   
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i).*(?:log|logger).*(debug|log|trace|(d|v|t)).*"
+      - "(?i).*(?:log|logger).*(debug|log|trace).*"
     tags:
   
   - id: Leakages.Log.Info
     name: Log Info
     patterns:
-      - "(?i).*(?:log|logger).*(info|i).*"
+      - "(?i).*(?:log|logger).*(info).*"
     tags:
   
   - id: Leakages.Log.Console

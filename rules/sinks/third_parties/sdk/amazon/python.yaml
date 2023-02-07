@@ -236,7 +236,7 @@ sinks:
     domains:
       - "aws.amazon.com"
     patterns:
-      - "(?i)(boto).*"
+      - "(?i)(boto|awswrangler).*"
       - "(?i)(frauddetector).*"
       - "(?i)(lookoutvision).*"
       - "(?i)(lookoutequipment).*"

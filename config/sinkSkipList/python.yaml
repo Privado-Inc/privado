@@ -7,4 +7,4 @@ sinkSkipList:
   - id: SinkSkipList.BuiltInLib
     name: Skip built in language libraries
     patterns:
-      - "(?i)(<empty>|<operator>\\.|<operators>\\.|<unresolvedNamespace.*>.).*"
+      - "(?i)(<empty>|<operator>\\.|<operators>\\.|<unresolvedNamespace.*>.|dict\\.|list\\.|str\\.).*"
