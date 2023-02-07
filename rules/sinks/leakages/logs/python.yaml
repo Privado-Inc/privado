@@ -15,7 +15,8 @@ sinks:
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i).*(?:log|logger).*(debug|log|trace).*"
+      - "(?i).*(?:log|logger).*(debug|trace).*"
+      - "(?i).*(?:logger).*(log).*"
     tags:
   
   - id: Leakages.Log.Info
