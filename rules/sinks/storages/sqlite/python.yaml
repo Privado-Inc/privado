@@ -8,5 +8,5 @@ sinks:
     domains:
       - sqlite.org
     patterns: 
-      - "(?i)(sqlite.*execute|sqlalchemy.*(?:add|query|find|insert).*)"
+      - "(?i)(sqlite.*(execute|executemany|executescript|write|read|commit|rollback|close|connect|cursor|fetchone|fetchmany|fetchall|create_aggregate))"
     tags:
