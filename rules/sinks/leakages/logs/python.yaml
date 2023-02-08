@@ -25,6 +25,12 @@ sinks:
       - "(?i).*(?:log|logger).*(info).*"
     tags:
   
+  - id: Leakages.Log
+    name: Log
+    patterns:
+      - "(?i).*[.]log"
+    tags:
+
   - id: Leakages.Log.Console
     name: Log Console
     patterns: 
