@@ -2,7 +2,9 @@ sinkSkipList:
   - id: SinkSkipList.ThirdParties
     name: Skip Third Party Sinks
     patterns:
-      - "(?i)(android\\.).*"
+      - "(dict|list|str|tuple|int)\\.__.*"
+      - "(django.*\\.py).*"
+      - "(?i)(builtins|json|re|copy|argparse|datetime|time|decimal|collections|asyncio|subprocess|pytest|logging|traceback|sys|os|oss2|unittest|base64|dateutil|importlib|socket|urllib3|urllib|io|uuid|gzip|math|bson|random)\\.py.*"
 
   - id: SinkSkipList.BuiltInLib
     name: Skip built in language libraries
