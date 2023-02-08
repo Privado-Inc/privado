@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.FastAPI
+    name: FastAPI framework restendpoint
+    patterns: 
+      - "(?i)fastapi.py.*(post|get|all|delete|put|patch|head|subscribe|unsubscribe).*"
+    tags:
