@@ -1,0 +1,10 @@
+# Sink Rules for storage database Neo4j Graph Database - https://neo4j.com/
+
+sinks:
+  - id: Storages.Redis.Write
+    name: Redis Database(Read)
+    domains:
+      - redis.io
+    patterns:
+      - "(?i)(com.)(.*)database.dao.APIKeyDAO.)(save|set|write|)(to)?(Redis)?(.*)"
+    tags:
