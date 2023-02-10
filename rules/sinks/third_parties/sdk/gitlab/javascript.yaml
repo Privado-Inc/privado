@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Gitlab
+    name: Gitlab
+    domains:
+      - "gitlab.com"
+    patterns:
+      - "netlify-cms-backend-gitlab|@devx\\/plugin-gitlab-backend"
+    tags:

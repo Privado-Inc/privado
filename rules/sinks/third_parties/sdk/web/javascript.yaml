@@ -1,0 +1,37 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Web.Angularfire-wrappers-demo
+    name: Web Angularfire-wrappers-demo
+    domains:
+      - "angularfire-wrappers-demo.web.app"
+    patterns:
+      - "angularfire-storage-wrapper"
+    tags:
+
+  - id: ThirdParties.SDK.Web.Bs-angular-g-maps
+    name: Web Bs-angular-g-maps
+    domains:
+      - "bs-angular-g-maps.web.app"
+    patterns:
+      - "@bespunky\\/angular-google-maps"
+    tags:
+
+  - id: ThirdParties.SDK.Web.Smile-track
+    name: Web Smile-track
+    domains:
+      - "smile-track.web.app"
+    patterns:
+      - "smile-track"
+    tags:
+
+  - id: ThirdParties.SDK.Web
+    name: Web
+    domains:
+      - "web.de"
+    patterns:
+      - "@spurreiter\\/geocoder"
+    tags:

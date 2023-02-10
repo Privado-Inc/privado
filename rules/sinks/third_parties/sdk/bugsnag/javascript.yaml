@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Bugsnag
+    name: Bugsnag
+    domains:
+      - "bugsnag.com"
+    patterns:
+      - "cabin|@bugsnag\\/expo|epic-logger|vite-plugin-bugsnag|bunyan-bugsnag|bugsnag-roku|nest-bugsnag|@wizbii\\/nest-bugsnag|winston-bugsnag|@ssut\\/nest-bugsnag|bugsnag-browser-lite|@werkspot\\/decrypterror|nest-bugsnag-remade|paperplane-bugsnag|@articulate\\/paperplane-bugsnag|@keyrock\\/winston-bugsnag-transport|adonis-bugsnag|@bugsnag\\/js|@bugsnag\\/source-maps|@bugsnag\\/react-native|axe|sensitive-fields|@nkaurelien\\/nest-bugsnag|winston-3-bugsnag-transport"
+    tags:

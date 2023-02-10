@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Bjerk
+    name: Bjerk
+    domains:
+      - "bjerk.io"
+    patterns:
+      - "pubsub-http-handler|gcl-slack|pulumi-wordpress|@cobraz\\/pulumi-gcp-scaffold"
+    tags:

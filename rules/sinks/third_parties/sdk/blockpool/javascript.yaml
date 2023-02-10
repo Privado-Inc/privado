@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Blockpool
+    name: Blockpool
+    domains:
+      - "blockpool.io"
+    patterns:
+      - "@blockpool-io\\/core-error-tracker-raygun"
+    tags:

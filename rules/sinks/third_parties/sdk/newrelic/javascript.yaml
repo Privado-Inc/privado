@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Newrelic
+    name: Newrelic
+    domains:
+      - "newrelic.com"
+    patterns:
+      - "node-insights|newrelic-config|browserslist-new-relic|@newrelic\\/native-metrics|@cdktf\\/provider-newrelic|express-requests-logger-newrelic|sails-hook-newrelic|newrelic-delete-old-servers|bunyan-newrelic-stream|statuspage-controller|@paperbits\\/newrelic|tedious-newrelic|newrelic-agent-winston|gitpgdump|env-newrelic|koa-newrelic-route|newrelic-winston|winston-to-newrelic-logs|node-nmlogger|log4js-node-newrelic|newrelic-api|dbc-node-newrelic-wrapper|@cheevr\\/metrics|statsd-newrelic-backend|@newrelic\\/gatsby-theme-newrelic|koa-newrelic|console-to-winston-newrelic|@newrelic\\/statsd-infra-backend|newrelic-plus|nr-page-duration|@frubana\\/adonis-newrelic|koa2-newrelic|bolt-newrelic|cloudq|newrelic-winston-transport|ember-new-relic|@jasonmit\\/ember-new-relic|@newrelic\\/mysql|newrelic"
+    tags:

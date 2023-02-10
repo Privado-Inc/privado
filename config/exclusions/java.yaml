@@ -2,7 +2,12 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - ".*/src/test/.*"
+      - "(.*/src/test/.*)|/Test[A-Z]|Test[.]"
+  
+  - id: Exclusions.Invalid.Properties
+    name: Exclude invalid properties file
+    patterns:
+      - ".*/WEB-INF/.*properties"
 
   - id: Exclusions.Empty
     name: Exclude file which cannot be read

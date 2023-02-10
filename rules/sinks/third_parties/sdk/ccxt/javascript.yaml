@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Ccxt
+    name: Ccxt
+    domains:
+      - "ccxt.trade"
+    patterns:
+      - "ccxt|ccxt-okex-garik|@ango-ya\\/ccxt|sdfgsgsdg|guyo13-ccxt|ccxt-mxc|@mareksokol\\/ccxt|kamiswiss-ccxt|ccxt-external-mb|@madnai\\/ccxt"
+    tags:

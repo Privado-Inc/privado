@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Snowplowanalytics.Docs
+    name: Snowplowanalytics Docs
+    domains:
+      - "docs.snowplowanalytics.com"
+    patterns:
+      - "@snowplow\\/node-tracker|@snowplow\\/react-native-tracker"
+    tags:
+
+  - id: ThirdParties.SDK.Snowplowanalytics
+    name: Snowplowanalytics
+    domains:
+      - "snowplowanalytics.com"
+    patterns:
+      - "snowplow-react-native-tracker|@analytics\\/snowplow|@comparaonline\\/event-tracker|promoted-snowplow-logger|snowplow-analytics-sdk|@snowplow\\/roku-tracker|@ringierag\\/snowplow-reactjs-native-tracker|@datacamp\\/react-native-snowplow-tracker|@studyportals\\/snowplow-tracker"
+    tags:

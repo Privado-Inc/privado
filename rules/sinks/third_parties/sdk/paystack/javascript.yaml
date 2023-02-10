@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Paystack
+    name: Paystack
+    domains:
+      - "paystack.com"
+    patterns:
+      - "paystack|paystack-transfer|vue-paystack2|node-paystack|sails-hook-paystack|machinepack-paystack|paystack-endpoint|react-paystack|nativescript-paystack|cordova-plugin-paystack|vue-paystack|paystack-node|angular4-paystack|@paystack\\/inline-js|@paystack\\/checkout-js|nestjs-paystack|next-paystack|react-native-paystack|nuxt-paystack|@chzdo_apps\\/react-paystack-flutter-payment|@chukwukaemi\\/paystack|svelte-paystack|angular-paystack|paystack-transaction-charges-to-cus|paystack-simple"
+    tags:

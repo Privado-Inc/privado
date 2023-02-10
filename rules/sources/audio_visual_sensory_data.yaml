@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)(?:audio|microphone|phone)[^\\s/(;)#|,=!>]{0,5}(?:feed|clip|recording)"
+      - "(?i)(?:audio|microphone|phone|call)[^\\s/(;)#|,=!>]{0,5}(?:feed|clip|recording|record)[^\\s/(;)#|,=!>]{0,2}"
     tags:
       law: GDPR
 

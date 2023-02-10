@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Dropbox
+    name: Dropbox
+    domains:
+      - "dropbox.com"
+    patterns:
+      - "cloudrail-si|dropbox-streaming-upload|rem|dropbox-sdk|dropboxdb|react-dropbox-chooser|dropbox-stream|node-dropbox-v2|imgbox-js|dropbox-file-picker|boxing|pcapi|dropbox-fetch|dropbox|dropbox-v2-api|node-dropbox|dbox|dropbox-fs|node-dropbox-copia|drbx-js|dropbox_session_upload"
+    tags:

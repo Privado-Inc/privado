@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Culqi
+    name: Culqi
+    domains:
+      - "culqi.com"
+    patterns:
+      - "culqi2|culqi2-node|culqi-node|culqi|ng-culqi"
+    tags:
+
+  - id: ThirdParties.SDK.Culqi.Docs
+    name: Culqi Docs
+    domains:
+      - "docs.culqi.com"
+    patterns:
+      - "vue-culqi-checkout"
+    tags:

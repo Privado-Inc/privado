@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Uxcam
+    name: Uxcam
+    domains:
+      - "uxcam.com"
+    patterns:
+      - "react-native-ux-cam|cordova-uxcam|nativescript-uxcam|@guivieiras\\/capacitor-app-analytic|@guivieiras\\/capacitor-app-analytics"
+    tags:

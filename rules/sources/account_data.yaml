@@ -35,7 +35,17 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i).*(?<!db|database|sql|jira).*((?:user)[^\\s/(;)#|,=!>]{0,5}(?:psw|pswd)|password|passwrd)"
+      - "(?i)(.*(?<!(db|database|jira|sql|postgres|mongo|aws)[^\\s/(;)#|,=!>]{0,3})(pwd|psw|pswd|password|passwrd))"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.AccountData.Mnemonic
+    name: Mnemonic
+    category: Account Data
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i).*(mnemonic)"
     tags:
       law: GDPR
 
@@ -45,6 +55,6 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i).*(?<!db|database|sql|jira).*(?:account|customer|person|user|organization|company)[^\\s/(;)#|,=!>]{0,8}name"
+      - "(?i)(.*(?<!(db|database|jira|sql|postgres|mongo|aws)[^\\s/(;)#|,=!>]{0,3})user[^\\s/(;)#|,=!>]{0,3}name)|(.*(account|customer|doctor|patient|teacher|student|person|organi[zs]ation|company)[^\\s/(;)#|,=!>]{0,3}name)"
     tags:
       law: GDPR

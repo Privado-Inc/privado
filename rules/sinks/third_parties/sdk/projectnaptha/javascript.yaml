@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Projectnaptha.Tesseract
+    name: Projectnaptha Tesseract
+    domains:
+      - "tesseract.projectnaptha.com"
+    patterns:
+      - "tesseract.js|tesseract.js-core|tesseract-js|tesseract.ts|tesseract.js-node|tesseract.js-utils|react-tesseract-ocr|node-red-contrib-tesseract"
+    tags:

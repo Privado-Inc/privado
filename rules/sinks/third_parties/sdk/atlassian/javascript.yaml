@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Atlassian
+    name: Atlassian
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "stash-auth|confluence-api|hipchatter|atlassian-connect-express|stride-api|atlassian-connect-validator|atlassian-crowd|jira2md|passport-atlassian-oauth|atlas-connect|atlassian-openapi|atlassian-connect-express-hipchat|passport-atlassian-crowd|vue-aui|atlassian-confluence|atlassian-oauth2|vue-aui-jira-extras|generator-atlassian-connect|ya-bitbucket|j2m|atlassian-connect-express-redis|atlassian-crowd-patched|@kenchan0130\\/markdown-to-atlassian-wiki-markup|md-to-adf|ac-koa|@restqa\\/restqdata|ace-abotars|ac-koa-hipchat|ac-node|opsgenie-sdk-revived|@spartez\\/vue-atlaskit-next|@atlassian\\/browserslist-config-server|atlassian-connect-auth|ac-node-hipchat|ac-koa-hipchat-keenio|stash-api|confluence-starter-core|bitbucket-changelog|@seibert\\/atlassian-connect-tooling|@spartez\\/vue-atlaskit|storybook-jira-addon|@atlassian\\/wrm-troubleshooting|passport-atlassian-oauth2|atlassian-jira|atlassian-connect-firestore|confluence-restapi|joplin-plugin-jira-issue|atlassian-connect-express-ssl|atlassian-connect-express-encryption|@jan-frei\\/atlassian-connect-express|jira-worklog-manager|jira2markdown|@webda\\/confluence-api|verdaccio-bitbucket|@cdk-cloudformation\\/atlassian-opsgenie-team|@cdk-cloudformation\\/atlassian-opsgenie-integration|@cdk-cloudformation\\/atlassian-opsgenie-user|atlassian-connect-express-encryption-v2|k15t-aui-ng2|spark-build|@jangolano\\/atlassian|confluence-mdk|pull-request-stash|jiraptor|adf-validator|bitbucket-connect|gatsby-source-atlassian|@atlassian\\/confluence-web-components|stasher|karma-atlassian-soy|gassian|feebs|atlassian-devbox|karma-bamboo|flow-bamboo-reporter|passport-atlassian-crowd2|stash-creview|sinopia-bitbucket|jira-git|hipchat-exec|@atlassian\\/jira"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Ecosystem
+    name: Atlassian Ecosystem
+    domains:
+      - "ecosystem.atlassian.net"
+    patterns:
+      - "@atlassian\\/johnson"
+    tags:

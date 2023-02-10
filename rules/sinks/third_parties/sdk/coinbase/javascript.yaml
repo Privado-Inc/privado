@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Coinbase
+    name: Coinbase
+    domains:
+      - "coinbase.com"
+    patterns:
+      - "coinbase-node|coinbase|walletlink|cryptox|coinbase-pro|gdax-synced|coinbase-commerce-node|@d3fc\\/d3fc-financial-feed|zabo-sdk-js|react-coinbase-commerce|ccxws|shrimpy-node|@bpanel\\/price|cipher-ethereum|btcaverage|coinbase-pro-api|ccashcow-web|gdax-l2-orderbook|ccashcow-server|fme-gdax|insomnia-plugin-coinbase-apikey-auth|trading-indicator|coinbase-api-fork|coinbase-commerce|zabo-sdk-react-native|walletlink-e|passport-coinbase-oauth2|gdax-assistant|passport-coinbase|@lunch-money\\/coinbase-to-lunch-money|reimagined-umbrella|coinbase-pro-node-api|coinbase-api|ccex-api|node-red-contrib-coinbase|gdax-flash-limit|coinbase-service|@0xcmp\\/gdax|toshi"
+    tags:

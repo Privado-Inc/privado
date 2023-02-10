@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Goldstack
+    name: Goldstack
+    domains:
+      - "goldstack.party"
+    patterns:
+      - "@goldstack\\/template-lambda-express|@goldstack\\/utils-s3|@goldstack\\/template-s3|@goldstack\\/template-nextjs"
+    tags:

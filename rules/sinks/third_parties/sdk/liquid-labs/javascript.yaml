@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Liquid-labs
+    name: Liquid-labs
+    domains:
+      - "liquid-labs.com"
+    patterns:
+      - "@liquid-labs\\/cloud-sql-proxy|@liquid-labs\\/liquid-dev-cloudsql"
+    tags:
