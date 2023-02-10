@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Sentry
+    name: Sentry
+    domains:
+      - "sentry.io"
+    patterns:
+      - "(?i)(sentry|raven|policy_sentry|structlog_sentry_lambda|scrapy_sentry_sdk|sentry_sdk_custom|sentry_sdk|django_q_sentry|kolibri_sentry_plugin|shy_sentry|h_pyramid_sentry|forumsentry|zappa_sentry|snuba_sdk|structlog_sentry).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Stripe
+    name: Stripe
+    domains:
+      - "stripe.com"
+    patterns:
+      - "(?i)(stripe|tapioca_stripe|collective[.]stripe|types_stripe|grvlms_stripe|aa_stripe|nameko_stripe|drf_stripe|snapflow_stripe|async_stripe|djangoshop_stripe|tornado_stripe).*"
+    tags:

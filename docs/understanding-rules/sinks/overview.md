@@ -12,7 +12,7 @@ sinks:
     domains:
       - aws.amazon.com
     patterns: 
-      - "(i?).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:get|list|head|select).*"
+      - "(?i).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:get|list|head|select).*"
     tags:
 
   - id: Storages.AmazonS3.Write
@@ -20,7 +20,7 @@ sinks:
     domains:
       - aws.amazon.com
     patterns: 
-      - "(i?).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:abortMultipartUpload|completeMultipartUpload|copy|create|delete|put|uploadPart).*"
+      - "(?i).*(?:AmazonS3ClientBuilder|S3Client[.]builder|AmazonS3EncryptionClient|software.amazon.awssdk.services.s3).*(?:abortMultipartUpload|completeMultipartUpload|copy|create|delete|put|uploadPart).*"
     tags:
 ```
 

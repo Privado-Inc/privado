@@ -1,0 +1,22 @@
+
+# Sink Rules for storage database Amazon DocumentDB - https://aws.amazon.com/documentdb/
+
+sinks:
+
+  - id: Storages.AmazonDocumentDB.Read
+    name: Amazon DocumentDB(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)boto.*(?:find.{0,1}one).*"
+    tags:
+
+  - id: Storages.AmazonDocumentDB.Write
+    name: Amazon DocumentDB(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)boto.*(?:insert.{0,1}(?:one|many)).*"
+    tags:
