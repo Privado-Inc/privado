@@ -9,5 +9,5 @@ sinks:
       - cloud.google.com
       - google.com
     patterns:
-      - "(i?).*com[.]google[.]cloud[.]bigquery.*"
+      - "(?i).*com[.]google[.]cloud[.]bigquery.*"
     tags:

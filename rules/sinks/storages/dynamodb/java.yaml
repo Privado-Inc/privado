@@ -9,7 +9,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchE|e)xecuteStatement|executeTransaction)[:].*)))"
+      - "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchE|e)xecuteStatement|executeTransaction)[:].*)))"
     tags:
 
   - id: Storages.AmazonDynamoDB.Read
@@ -18,7 +18,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchG|g)etItem|query|scan|transactGetItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchLoad|load|parallelScan|query|queryPage|scan|scanPage|transactionLoad)[:].*))"
+      - "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchG|g)etItem|query|scan|transactGetItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchLoad|load|parallelScan|query|queryPage|scan|scanPage|transactionLoad)[:].*))"
     tags:
 
   - id: Storages.AmazonDynamoDB.Write
@@ -27,5 +27,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchWrite|delete|put|update)Item|transactWriteItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchWrite|delete|save|transactionWrite)[:].*))"
+      - "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchWrite|delete|put|update)Item|transactWriteItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchWrite|delete|save|transactionWrite)[:].*))"
     tags:

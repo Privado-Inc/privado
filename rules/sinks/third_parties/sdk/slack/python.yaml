@@ -1,0 +1,14 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Slack
+    name: Slack
+    domains:
+      - "slack.com"
+    patterns:
+      - "(?i)(slack_discovery_sdk|slack_sdk|slackclient|slackeventsapi|airflow.*providers.*slack|slack_webhook).*"
+      - "(?i)((slack_sdk|django_slack).*message|slack[_]webhook.*post)"
+    tags:

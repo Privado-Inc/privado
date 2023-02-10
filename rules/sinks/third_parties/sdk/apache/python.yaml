@@ -1,0 +1,29 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Apache.Thrift
+    name: Apache Thrift
+    domains:
+      - "thrift.apache.org"
+    patterns:
+      - "(?i)(thrift).*"
+    tags:
+
+  - id: ThirdParties.SDK.Apache.Libcloud
+    name: Apache Libcloud
+    domains:
+      - "libcloud.apache.org"
+    patterns:
+      - "(?i)(libcloud).*"
+    tags:
+
+  - id: ThirdParties.SDK.Apache.Pinot
+    name: Apache Pinot
+    domains:
+      - "pinot.apache.org"
+    patterns:
+      - "(?i)(pinotdb).*"
+    tags:

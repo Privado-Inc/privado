@@ -9,7 +9,7 @@ sinks:
       - azure.microsoft.com
       - microsoft.com
     patterns:
-      - "(i?).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:read|readItem|readMany|readAll|query|get|find|list|select).*"
+      - "(?i).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:read|readItem|readMany|readAll|query|get|find|list|select).*"
     tags:
 
   - id: Storages.AzureCosmosDb.Write
@@ -18,5 +18,5 @@ sinks:
       - azure.microsoft.com
       - microsoft.com
     patterns:
-      - "(i?).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:upsert|create|patch|delete|replace|set|update|save).*"
+      - "(?i).*(?:com[.]azure[.]cosmos[.]|CosmosClientBuilder|CosmosClient|CosmosDatabase|CosmosContainer|CosmosAsyncContainer|CosmosAsyncClient|CosmosAsyncScripts|CosmosAsyncStoredProcedure).*(?:upsert|create|patch|delete|replace|set|update|save).*"
     tags:

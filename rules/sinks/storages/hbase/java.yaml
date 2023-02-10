@@ -9,5 +9,5 @@ sinks:
       - hbase.apache.org
       - apache.org
     patterns:
-      - "(i?).*org[.]apache[.]hadoop[.]hbase[.].*"
+      - "(?i).*org[.]apache[.]hadoop[.]hbase[.].*"
     tags:

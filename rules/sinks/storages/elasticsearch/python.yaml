@@ -1,0 +1,20 @@
+
+# Sink Rules for storage database Elasticsearch - https://www.elastic.co/elasticsearch/
+
+sinks:
+
+  - id: Storages.Elasticsearch.Read
+    name: Elasticsearch(Read)
+    domains:
+      - elastic.co
+    patterns:
+      - "(?i)elasticsearch.*(?:search|scan|get)"
+    tags:
+
+  - id: Storages.Elasticsearch.Write
+    name: Elasticsearch(Write)
+    domains:
+      - elastic.co
+    patterns:
+       - "(?i)elasticsearch.*(?:update|delete|put)"
+    tags:
