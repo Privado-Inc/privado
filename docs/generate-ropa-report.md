@@ -6,7 +6,7 @@ Before generating the ROPA report, ensure that you have scanned the repository o
 
 Privado’s cloud dashboard can be used to generate a Record of Processing Activity (ROPA) report using a self-serve wizard. Learn more about ROPA reports and their requirements here. Generating the ROPA report is an easy 6 step process. To access the report generator, navigate to the desired repository → Click on the **Create ROPA Report button** to start the process.
 
-![](<.gitbook/assets/image (1).png>)
+![](<.gitbook/assets/image (1) (1).png>)
 
 **1. Repo Details**
 

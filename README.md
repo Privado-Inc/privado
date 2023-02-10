@@ -7,7 +7,8 @@ Privado is an open-source static code analysis tool to discover data flows in th
 <img src="https://user-images.githubusercontent.com/80044360/186333819-779bfff5-d7a2-4bba-88e9-0ca866e1ee81.gif" width="600px">
 
 # Supported languages
-Currently, only Java is supported, but JS/TS support is arriving soon! We're also working on modifying the architecture to make it easier to accept community contributions to language support.
+We support Java in GA and Python in alpha. Our Enterprise offering covers all programming languages, and we're working on adding support for more languages to OSS. Support for JS/TS is coming soon!
+
 
 # Quick Start
 
