@@ -10,7 +10,7 @@ sinks:
       - "google.com"
     patterns:
       - "(?i)(gmusicapi|pyfcm|caliban|ndb|fcm|anom|binderhub|gcdu|apprentice).*"
-      - "(?i)(google_api_python_client).*"
+      - "(?i)(googleapiclient).*"
       - "(?i)(gapic_google_cloud_speech_v1beta1).*"
       - "(?i)(gapic_google_cloud_language_v1).*"
       - "(?i)(gapic_google_cloud_language_v1beta2).*"
@@ -18,9 +18,8 @@ sinks:
       - "(?i)(googleapis_common_protos).*"
       - "(?i)(google_crc32c).*"
       - "(?i)(grpc_google_iam_v1).*"
-      - "(?i)(google_api_python_client).*"
       - "(?i)(pytesseract).*"
-      - "(?i)(google_api_core).*"
+      - "(?i)(google_api_core|googleapi).*"
       - "(?i)(google_resumable_media).*"
       - "(?i)(cloudml_hypertune).*"
       - "(?i)((gax|grpc)_google_logging_v2).*"
@@ -201,4 +200,12 @@ sinks:
       - "admob.google.com"
     patterns:
       - "(?i)(google.ads|googleads).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(google.analytics).*"
     tags:
