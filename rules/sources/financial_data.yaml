@@ -43,7 +43,7 @@ sources:
     name: Payment Nonce
     category: Financial Data
     isSensitive: False
-    sensitivity: Medium
+    sensitivity: medium
     patterns:
       - "(?i)(.*)(payment[s]?)(nonce)(.*)"
     tags:
