@@ -62,7 +62,7 @@ Data Safety Report is a privacy form that is needed to publish any Android app o
 
 ## Supported languages
 
-Java is the first language we support. As part of the Enterprise offering, Privado supports all languages. To open source a language, the architecture change is required so that community contributions can be made easily. We are working on open sourcing support for the other languages.
+We support Java in GA and Python in alpha. Our Enterprise offering covers all programming languages, and we're working on adding support for more languages to OSS. Support for JS/TS is coming soon!
 
 ## Contribute
 
