@@ -87,7 +87,11 @@ Our free cloud platform can be used to generate RoPA reports for a single, as we
 Data Safety Report is a privacy form that is needed to publish any Android app on the Play Store. Currently, to fill the data safety form developers have to ask around in the team to find what data they are collecting, spend hours reading the documentation of SDKs to find data shared, and navigate the complex Playstore form. With our scan, we pre-fill data types collected, shared, and guide you with our wizard to generate the data safety report.
 
 # Supported languages
-Java is the first language we support. As part of the Enterprise offering, Privado supports all languages. To open source a language, the architecture change is required so that community contributions can be made easily. We are working on open sourcing support for the other languages.
+Our static code analysis technology currently supports the following programming languages:
+ - Java (General Availability)
+ - Python (Alpha support)
+
+Our Enterprise offering supports all programming languages. To enable open sourcing for a language, we require an architectural change that allows for easy community contributions. We are actively working towards open sourcing support for additional languages in the future.
 
 # Contribute
 If you love this project and would like to contribute, please check out our contribution page.
