@@ -1247,7 +1247,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SimpleSystemsManagement
     name: Amazonaws Simple Systems Management
     domains:
-      - "amazonaws.com"
+      - "simplesystemsmanagement.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]simplesystemsmanagement).*"
     tags:
@@ -1255,7 +1255,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.CloudHSM
     name: Amazonaws Cloud HSM
     domains:
-      - "amazonaws.com"
+      - "cloudhsm.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]cloudhsm).*"
     tags:
@@ -1263,7 +1263,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Lambda
     name: Amazonaws Lambda
     domains:
-      - "amazonaws.com"
+      - "lambda.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]lambda).*"
     tags:
@@ -1271,7 +1271,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Route53
     name: Amazonaws Route53
     domains:
-      - "amazonaws.com"
+      - "route53.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]route53recoverycontrolconfig|com[.]amazonaws[.]services[.]route53recoverycluster|com[.]amazonaws[.]services[.]route53recoveryreadiness).*"
     tags:
@@ -1279,7 +1279,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.KMS
     name: Amazonaws KMS
     domains:
-      - "amazonaws.com"
+      - "kms.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]kms).*"
     tags:
@@ -1287,7 +1287,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ResilienceHub
     name: Amazonaws ResilienceHub
     domains:
-      - "amazonaws.com"
+      - "resiliencehub.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]resiliencehub).*"
     tags:
@@ -1295,7 +1295,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.CertificateManager
     name: Amazonaws Certificate Manager
     domains:
-      - "amazonaws.com"
+      - "certificatemanager.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]certificatemanager).*"
     tags:
@@ -1303,7 +1303,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.AppConfig
     name: Amazonaws AppConfig
     domains:
-      - "amazonaws.com"
+      - "appconfig.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]appconfig).*"
     tags:
@@ -1311,7 +1311,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ImportExport
     name: Amazonaws Import Export
     domains:
-      - "amazonaws.com"
+      - "importexport.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]importexport).*"
     tags:
@@ -1319,7 +1319,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.AppRunner
     name: Amazonaws AppRunner
     domains:
-      - "amazonaws.com"
+      - "apprunner.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]apprunner).*"
     tags:
@@ -1327,7 +1327,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.MemoryDB
     name: Amazonaws MemoryDB
     domains:
-      - "amazonaws.com"
+      - "memorydb.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]memorydb).*"
     tags:
@@ -1335,7 +1335,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Account
     name: Amazonaws Account
     domains:
-      - "amazonaws.com"
+      - "account.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]account).*"
     tags:
@@ -1343,7 +1343,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.DataPipeline
     name: Amazonaws DataPipeline
     domains:
-      - "amazonaws.com"
+      - "datapipeline.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]datapipeline).*"
     tags:
@@ -1351,7 +1351,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.VoiceID
     name: Amazonaws VoiceID
     domains:
-      - "amazonaws.com"
+      - "voiceid.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]voiceid).*"
     tags:
@@ -1359,7 +1359,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.AppRegistry
     name: Amazonaws App Registry
     domains:
-      - "amazonaws.com"
+      - "appregistry.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]appregistry).*"
     tags:
@@ -1367,7 +1367,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ManagedGrafana
     name: Amazonaws ManagedGrafana
     domains:
-      - "amazonaws.com"
+      - "managedgrafana.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]managedgrafana).*"
     tags:
@@ -1375,7 +1375,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.IdentityManagement
     name: Amazonaws IdentityManagement
     domains:
-      - "amazonaws.com"
+      - "identitymanagement.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]identitymanagement).*"
     tags:
@@ -1383,7 +1383,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.MWAA
     name: Amazonaws MWAA
     domains:
-      - "amazonaws.com"
+      - "mwaa.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]mwaa).*"
     tags:
@@ -1391,7 +1391,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.AppIntegration
     name: Amazonaws App Integration
     domains:
-      - "amazonaws.com"
+      - "appintegration.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]appintegration).*"
     tags:
@@ -1399,7 +1399,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.DirectConnect
     name: Amazonaws DirectConnect
     domains:
-      - "amazonaws.com"
+      - "directconnect.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]directconnect).*"
     tags:
@@ -1407,7 +1407,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SecurityToken
     name: Amazonaws Security Token
     domains:
-      - "amazonaws.com"
+      - "securitytoken.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]securitytoken).*"
     tags:
@@ -1415,7 +1415,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.SnowDeviceManagement
     name: Amazonaws Snow Device Management
     domains:
-      - "amazonaws.com"
+      - "snowdevicemanagement.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]snowdevicemanagement).*"
     tags:
@@ -1423,7 +1423,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.ElasticBeanStalk
     name: Amazonaws ElasticBeanStalk
     domains:
-      - "amazonaws.com"
+      - "elasticbeanstalk.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]elasticbeanstalk).*"
     tags:
@@ -1431,7 +1431,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.GlueDataBrew
     name: Amazonaws GlueDataBrew
     domains:
-      - "amazonaws.com"
+      - "gluedatabrew.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]gluedatabrew).*"
     tags:
@@ -1439,7 +1439,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.CloudControlAPI
     name: Amazonaws CloudControl API
     domains:
-      - "amazonaws.com"
+      - "cloudcontrolapi.amazonaws.com"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]cloudcontrolapi).*"
     tags:
