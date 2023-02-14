@@ -9,6 +9,6 @@ sinks:
     domains:
       - "buyapowa.com"
     patterns:
-      - "(?i)(integrations.*buyapowa|BYPWClient).*"
+      - "(?i)(integrations.*buyapowa|.*bypwclient).*"
     tags:
   

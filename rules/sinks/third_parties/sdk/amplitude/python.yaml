@@ -9,6 +9,6 @@ sinks:
     domains:
       - "amplitude.com"
     patterns:
-      - "(?i)(amplitude|integrations.*amplitude|.*(AmplitudeLogger|AmplitudeClient|AmplitudeReportFileProcessor)).*"
+      - "(?i)(amplitude|integrations.*amplitude|.*(amplitudelogger|amplitudeclient|amplitudereportfileprocessor)).*"
     tags:
   
