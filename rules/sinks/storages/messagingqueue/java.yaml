@@ -29,7 +29,7 @@ sinks:
     domains:
       - amazonaws.com
     patterns: 
-      - "(?i).*(com[.]amazonaws[.]services[.]sqs[.]model[.]SendMessageRequest[.](set|with)MessageBody[:]).*"
+      - "(?i).*(com[.]amazonaws[.]services[.]sqs[.](model[.]SendMessageRequest[.](set|with)MessageBody[:]|AmazonSQS[.](sendMessage|sendMessageBatch))).*"
     tags:
 
   - id: Messaging.Service.JMS.Consumer
