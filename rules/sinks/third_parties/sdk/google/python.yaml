@@ -209,3 +209,11 @@ sinks:
     patterns:
       - "(?i)(google.analytics).*"
     tags:
+
+  - id: ThirdParties.SDK.Google.Playstore
+    name: Google Playstore
+    domains:
+      - "play.google.com"
+    patterns:
+      - "(?i)(integrations.*google_play|google_play_scraper|playstore_search_results_scraper|playstore|playkit).*"
+    tags:
