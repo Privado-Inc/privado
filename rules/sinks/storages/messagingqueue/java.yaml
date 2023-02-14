@@ -9,9 +9,9 @@ sinks:
     tags:
 
   - id: Messaging.Queue.AMQP.Rabbit.Producer
-    name: JMS (Producer)
+    name: RabbitMq (Producer)
     domains:
-      - springframework.org
+      - rabbitmq.com
     patterns: 
       - "(?i).*(org[.]springframework[.]amqp[.]rabbit[.]core[.]RabbitTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]).*"
     tags:
@@ -25,9 +25,9 @@ sinks:
     tags:
 
   - id: Messaging.Service.AmazonSQS.Producer
-    name: JMS (Producer)
+    name: Amazon SQS (Producer)
     domains:
-      - springframework.org
+      - amazonaws.com
     patterns: 
       - "(?i).*(com[.]amazonaws[.]services[.]sqs[.]model[.]SendMessageRequest[.](set|with)MessageBody[:]).*"
     tags:
