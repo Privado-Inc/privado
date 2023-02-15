@@ -76,14 +76,6 @@ sinks:
       - "(?i)(com[.]aliyun[.]dataIntegration).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.Elasticsearch
-    name: Aliyun Elasticsearch
-    domains:
-      - "elasticsearch.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]elasticsearch).*"
-    tags:
-
   - id: ThirdParties.SDK.Aliyun.ApsaraDB
     name: Aliyun ApsaraDB
     domains:
@@ -169,7 +161,7 @@ sinks:
     domains:
       - "personalizedrecommendation.aliyun.com"
     patterns:
-      - "(?i)(com[.]aliyun[.]recommendation).*"
+      - "(?i)(com[.]aliyun[.]recommendation|com[.]aliyun[.]pr).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.SpeechRecognition
@@ -306,22 +298,6 @@ sinks:
       - "personalizedcontentrecommendation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]pcr).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.PersonalizedRecommendation
-    name: Aliyun Personalized Recommendation
-    domains:
-      - "personalizedrecommendation.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]pr).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.VideoIntelligence
-    name: Aliyun Video Intelligence
-    domains:
-      - "videointelligence.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]video).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.TextToSpeech
@@ -653,10 +629,10 @@ sinks:
       - "(?i)(com[.]aliyun[.]bss).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.CloudBase
-    name: Aliyun Cloud Base
+  - id: ThirdParties.SDK.Aliyun.CertificateAuthenticationService
+    name: Aliyun Cloud Certificate Authentication Service
     domains:
-      - "cloudbase.aliyun.com"
+      - "certificateauthenticationservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cas).*"
     tags:
@@ -938,7 +914,7 @@ sinks:
     domains:
       - "elasticsearch.aliyun.com"
     patterns:
-      - "(?i)(com[.]aliyun[.]es).*"
+      - "(?i)(com[.]aliyun[.]es|com[.]aliyun[.]elasticsearch).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.FastOpenAnalyticsService
@@ -1074,7 +1050,7 @@ sinks:
     domains:
       - "imagesegmentation.aliyun.com"
     patterns:
-      - "(?i)(com[.]aliyun[.].imageseg).*"
+      - "(?i)(com[.]aliyun[.]imageseg).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.IntelligentTestingAsAService
@@ -1294,7 +1270,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Aliyun.PAIStudioService
-    name: Aliyun Cloud Base
+    name: Aliyun PAI
     domains:
       - "paistudioservice.aliyun.com"
     patterns:
