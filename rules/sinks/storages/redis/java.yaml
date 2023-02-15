@@ -1,5 +1,3 @@
-# Sink Rules for storage database Neo4j Graph Database - https://neo4j.com/
-
 sinks:
   - id: Storages.Redis.Redisson.Read
     name: Redisson Redis(Read)
