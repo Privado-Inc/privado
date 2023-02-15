@@ -108,7 +108,6 @@ sinks:
       - "(?i)(com[.]google[.]cloud[.]bigquery).*"
     tags:
 
-
   - id: ThirdParties.SDK.Google.Cloud.Vision
     name: Google Cloud Vision
     domains:
@@ -546,7 +545,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]contactcenterinsights ).*"
+      - "(?i)(com[.]google[.]cloud[.]contactcenterinsights).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.ComputeEngine
