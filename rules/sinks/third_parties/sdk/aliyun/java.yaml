@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataProcessingAgreement
     name: Aliyun Data Processing Agreement
     domains:
-      - "aliyun.com"
+      - "dataprocessingagreement.dataprocessingagreement.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dpa).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ArchiveStorageService
     name: Aliyun Archive Storage Service
     domains:
-      - "aliyun.com"
+      - "archivestorageservice.archivestoargeservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oas).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MessageService
     name: Aliyun Message Service
     domains:
-      - "aliyun.com"
+      - "messageservice.messageservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mns).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpenServices
     name: Aliyun Open Services
     domains:
-      - "aliyun.com"
+      - "openservices.openservices.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]openservices).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ObjectStorageService
     name: Aliyun Object Storage Service
     domains:
-      - "aliyun.com"
+      - "objectstorageservice.objectstorageservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oss).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataLakeAnalytics
     name: Aliyun DataLake Analytics
     domains:
-      - "aliyun.com"
+      - "datalakeanalytics.datalakeanalytics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dla).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataHub
     name: Aliyun DataHub
     domains:
-      - "aliyun.com"
+      - "datahub.datahub.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]datahub).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataWorks
     name: Aliyun DataWorks
     domains:
-      - "aliyun.com"
+      - "dataworks.dataworks.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dataworks).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataIntegration
     name: Aliyun DataIntegration
     domains:
-      - "aliyun.com"
+      - "dataintegration.dataintegration.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dataIntegration).*"
     tags:
@@ -79,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Elasticsearch
     name: Aliyun Elasticsearch
     domains:
-      - "aliyun.com"
+      - "elasticsearch.elasticsearch.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]elasticsearch).*"
     tags:
@@ -87,7 +87,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ApsaraDB
     name: Aliyun ApsaraDB
     domains:
-      - "aliyun.com"
+      - "apsaradb.apsaradb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]apsaradb).*"
     tags:
@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ApsaraDBForGDB
     name: Aliyun ApsaraDB for GDB
     domains:
-      - "aliyun.com"
+      - "apsaradbforgdb.apsaradbforgdb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]gdb).*"
     tags:
@@ -103,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MaxCompute
     name: Aliyun MaxCompute
     domains:
-      - "aliyun.com"
+      - "maxcompute.maxcompute.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]odps).*"
     tags:
@@ -111,7 +111,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.QuickBI
     name: Aliyun QuickBI
     domains:
-      - "aliyun.com"
+      - "quickbi.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]quickbi).*"
     tags:
@@ -119,7 +119,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataV
     name: Aliyun DataV
     domains:
-      - "aliyun.com"
+      - "datav.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]datav).*"
     tags:
@@ -127,7 +127,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.EMap
     name: Aliyun EMap
     domains:
-      - "aliyun.com"
+      - "emap.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]emap|com[.]aliyun[.]emr).*"
     tags:
@@ -135,7 +135,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Streaming
     name: Aliyun Streaming
     domains:
-      - "aliyun.com"
+      - "streaming.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]stream).*"
     tags:
@@ -143,7 +143,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.LogService
     name: Aliyun Log Service
     domains:
-      - "aliyun.com"
+      - "logservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]log).*"
     tags:
@@ -151,7 +151,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SimpleLogService
     name: Aliyun Simple Log Service
     domains:
-      - "aliyun.com"
+      - "simplelogservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]sls).*"
     tags:
@@ -159,7 +159,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MachineLearningPlatform
     name: Aliyun Machine Learning Platform for AI
     domains:
-      - "aliyun.com"
+      - "machinelearningplatform.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]pai).*"
     tags:
@@ -167,7 +167,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PersonalizedRecommendation
     name: Aliyun Personalized Recommendation
     domains:
-      - "aliyun.com"
+      - "personalizedrecommendation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]recommendation).*"
     tags:
@@ -175,7 +175,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SpeechRecognition
     name: Aliyun Speech Recognition
     domains:
-      - "aliyun.com"
+      - "speechrecognition.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]speech).*"
     tags:
@@ -183,7 +183,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.NaturalLanguageProcessing
     name: Aliyun Natural Language Processing
     domains:
-      - "aliyun.com"
+      - "naturallanguageprocessing.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]nlp).*"
     tags:
@@ -191,7 +191,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageSearch
     name: Aliyun Image Search
     domains:
-      - "aliyun.com"
+      - "imagesearch.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]imagesearch).*"
     tags:
@@ -199,7 +199,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VideoIntelligence
     name: Aliyun Video Intelligence
     domains:
-      - "aliyun.com"
+      - "videointelligence.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]video).*"
     tags:
@@ -207,7 +207,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.FunctionCompute
     name: Aliyun Function Compute
     domains:
-      - "aliyun.com"
+      - "functioncompute.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]fc).*"
     tags:
@@ -215,7 +215,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ContainerService
     name: Aliyun Container Service
     domains:
-      - "aliyun.com"
+      - "containerservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]container).*"
     tags:
@@ -223,7 +223,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ContainerRegistry
     name: Aliyun Container Registry
     domains:
-      - "aliyun.com"
+      - "containerregistry.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]acr).*"
     tags:
@@ -231,7 +231,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ACM
     name: Aliyun ACM
     domains:
-      - "aliyun.com"
+      - "acm.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]acm).*"
     tags:
@@ -239,7 +239,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ServerlessApplicationRepository
     name: Aliyun Serverless Application Repository
     domains:
-      - "aliyun.com"
+      - "serverlessapplicationrepository.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]sar).*"
     tags:
@@ -247,7 +247,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudResourceManager
     name: Aliyun Cloud Resource Manager
     domains:
-      - "aliyun.com"
+      - "cloudresourcemanager.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]crm).*"
     tags:
@@ -255,7 +255,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ResourceAccessManagement
     name: Aliyun Resource Access Management
     domains:
-      - "aliyun.com"
+      - "resourceaccessmanagement.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ram).*"
     tags:
@@ -263,7 +263,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudDataLakeAnalytics
     name: Aliyun Cloud Data Lake Analytics
     domains:
-      - "aliyun.com"
+      - "clouddatalakeanalytics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cdrs).*"
     tags:
@@ -271,7 +271,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudDataService
     name: Aliyun Cloud Data Service
     domains:
-      - "aliyun.com"
+      - "clouddataservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cds).*"
     tags:
@@ -279,7 +279,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudDataTransport
     name: Aliyun Cloud Data Transport
     domains:
-      - "aliyun.com"
+      - "clouddatatransport.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cdt).*"
     tags:
@@ -287,7 +287,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudTableStore
     name: Aliyun Cloud Table Store
     domains:
-      - "aliyun.com"
+      - "cloudtablestore.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]tablestore).*"
     tags:
@@ -295,7 +295,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.IoT
     name: Aliyun IoT
     domains:
-      - "aliyun.com"
+      - "iot.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]iot).*"
     tags:
@@ -303,7 +303,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PersonalizedContentRecommendation
     name: Aliyun Personalized Content Recommendation
     domains:
-      - "aliyun.com"
+      - "personalizedcontentrecommendation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]pcr).*"
     tags:
@@ -311,7 +311,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PersonalizedRecommendation
     name: Aliyun Personalized Recommendation
     domains:
-      - "aliyun.com"
+      - "personalizedrecommendation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]pr).*"
     tags:
@@ -319,7 +319,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VideoIntelligence
     name: Aliyun Video Intelligence
     domains:
-      - "aliyun.com"
+      - "videointelligence.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]video).*"
     tags:
@@ -327,7 +327,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.TextToSpeech
     name: Aliyun Text To Speech
     domains:
-      - "aliyun.com"
+      - "texttospeech.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]tts).*"
     tags:
@@ -335,7 +335,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AutomaticSpeechRecognition
     name: Aliyun Automatic Speech Recognition
     domains:
-      - "aliyun.com"
+      - "automaticspeechrecognition.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]asr).*"
     tags:
@@ -343,7 +343,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.NaturalLanguageUnderstanding
     name: Aliyun Natural Language Understanding
     domains:
-      - "aliyun.com"
+      - "naturallanguageunderstanding.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]nlu).*"
     tags:
@@ -351,7 +351,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DialogueTranscription
     name: Aliyun Dialogue Transcription
     domains:
-      - "aliyun.com"
+      - "dialoguetranscription.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dlt).*"
     tags:
@@ -359,7 +359,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudVision
     name: Aliyun Cloud Vision
     domains:
-      - "aliyun.com"
+      - "cloudvision.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cv).*"
     tags:
@@ -367,7 +367,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudTranslation
     name: Aliyun Cloud Translation
     domains:
-      - "aliyun.com"
+      - "cloudtranslation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ct).*"
     tags:
@@ -375,7 +375,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudSpeechToText
     name: Aliyun Cloud SpeechToText
     domains:
-      - "aliyun.com"
+      - "cloudspeechtotext.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]stt).*"
     tags:
@@ -383,7 +383,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudTextToSpeech
     name: Aliyun Cloud TextToSpeech
     domains:
-      - "aliyun.com"
+      - "cloudtexttospeech.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]tts).*"
     tags:
@@ -391,7 +391,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudLiveStreaming
     name: Aliyun Cloud Live Streaming
     domains:
-      - "aliyun.com"
+      - "cloudlivestreaming.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cls).*"
     tags:
@@ -399,7 +399,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudRDS
     name: Aliyun Cloud RDS
     domains:
-      - "aliyun.com"
+      - "cloudrds.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]rds).*"
     tags:
@@ -407,7 +407,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudDNS
     name: Aliyun Cloud DNS
     domains:
-      - "aliyun.com"
+      - "clouddns.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dns|com[.]aliyun[.]alidns).*"
     tags:
@@ -415,7 +415,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudCDN
     name: Aliyun Cloud CDN
     domains:
-      - "aliyun.com"
+      - "cloudcdn.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cdn).*"
     tags:
@@ -423,7 +423,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudECS
     name: Aliyun Cloud ECS
     domains:
-      - "aliyun.com"
+      - "cloudecs.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ecs).*"
     tags:
@@ -432,7 +432,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudMonitor
     name: Aliyun Cloud Monitor
     domains:
-      - "aliyun.com"
+      - "cloudmonitor.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]monitor).*"
     tags:
@@ -440,7 +440,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudSecurity
     name: Aliyun Cloud Security
     domains:
-      - "aliyun.com"
+      - "cloudsecurity.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]security).*"
     tags:
@@ -448,7 +448,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudBase
     name: Aliyun Cloud Base
     domains:
-      - "aliyun.com"
+      - "cloudbase.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]base).*"
     tags:
@@ -456,7 +456,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ApplicationAutoScaling
     name: Aliyun Application Auto Scaling
     domains:
-      - "aliyun.com"
+      - "applicationautoscaling.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ahas[.]apenapi).*"
     tags:
@@ -464,7 +464,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ActionTrail
     name: Aliyun ActionTrail
     domains:
-      - "aliyun.com"
+      - "actiontrail.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]actiontrail).*"
     tags:
@@ -472,7 +472,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AnalyticDB
     name: Aliyun AnalyticDB
     domains:
-      - "aliyun.com"
+      - "analyticdb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]adb).*"
     tags:
@@ -480,7 +480,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AddressPurification
     name: Aliyun Address Purification
     domains:
-      - "aliyun.com"
+      - "addresspurification.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]addresspurification).*"
     tags:
@@ -488,7 +488,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Aegis
     name: Aliyun Aegis
     domains:
-      - "aliyun.com"
+      - "aegis.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]aegis).*"
     tags:
@@ -496,7 +496,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AntiFraudService
     name: Aliyun Anti Fraud Service
     domains:
-      - "aliyun.com"
+      - "antifraudservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]afs).*"
     tags:
@@ -504,7 +504,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Agency
     name: Aliyun Agency
     domains:
-      - "aliyun.com"
+      - "agency.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]agency).*"
     tags:
@@ -512,7 +512,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AccessAuditingService
     name: Aliyun Access Auditing Service
     domains:
-      - "aliyun.com"
+      - "accessauditingservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]aas).*"
     tags:
@@ -520,7 +520,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CustomerCareService
     name: Aliyun Customer Care Service
     domains:
-      - "aliyun.com"
+      - "customercareservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]aiccs).*"
     tags:
@@ -528,7 +528,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AIRecommendation
     name: Aliyun AI Recommendation
     domains:
-      - "aliyun.com"
+      - "airecommendation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]airec).*"
     tags:
@@ -536,7 +536,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AIWorkspace
     name: Aliyun AIWorkspace
     domains:
-      - "aliyun.com"
+      - "aiworkspace.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]aiworkspace).*"
     tags:
@@ -544,7 +544,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.LoadBalancer
     name: Aliyun Load Balancer
     domains:
-      - "aliyun.com"
+      - "loadbalancer.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]alb).*"
     tags:
@@ -552,15 +552,15 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Green
     name: Aliyun Green
     domains:
-      - "aliyun.com"
+      - "green.aliyun.com"
     patterns:
-      - "(?i)(com[.]aliyun[.]aligreen|com[.]aliyun[.]green).*"
+    - "(?i)(com[.]aliyun[.]aligreen|com[.]aliyun[.]green).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.AliKafka
     name: Aliyun AliKafka
     domains:
-      - "aliyun.com"
+      - "alikafka.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]alikafka).*"
     tags:
@@ -568,7 +568,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MachineTranslation
     name: Aliyun Machine Translation
     domains:
-      - "aliyun.com"
+      - "machinetranslation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]alimt).*"
     tags:
@@ -576,7 +576,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.NLP
     name: Aliyun NLP
     domains:
-      - "aliyun.com"
+      - "nlp.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]alinlp).*"
     tags:
@@ -584,7 +584,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Authentication
     name: Aliyun Authentication
     domains:
-      - "aliyun.com"
+      - "authentication.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]aliyunauth).*"
     tags:
@@ -592,7 +592,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudVideoCall
     name: Aliyun Cloud Video Call
     domains:
-      - "aliyun.com"
+      - "cloudvideocall.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]aliyuncvc).*"
     tags:
@@ -600,7 +600,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AntiDDoSPro
     name: Aliyun Anti DDoS Pro
     domains:
-      - "aliyun.com"
+      - "antiddospro.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]antiddospublic).*"
     tags:
@@ -608,7 +608,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Appmallsservice
     name: Aliyun Appmallsservice
     domains:
-      - "aliyun.com"
+      - "appmallsservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]appmallsservice).*"
     tags:
@@ -616,7 +616,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AppStreamCenter
     name: Aliyun AppStreamCenter
     domains:
-      - "aliyun.com"
+      - "appstreamcenter.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]appstreamcenter).*"
     tags:
@@ -624,7 +624,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RealTimeMonitoringService
     name: Aliyun RealTime Monitoring Service
     domains:
-      - "aliyun.com"
+      - "realtimemonitoringservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]arms).*"
     tags:
@@ -632,7 +632,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.BaaS
     name: Aliyun Cloud BaaS
     domains:
-      - "aliyun.com"
+      - "baas.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]baas).*"
     tags:
@@ -640,7 +640,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.BatchCompute
     name: Aliyun BatchCompute
     domains:
-      - "aliyun.com"
+      - "batchcompute.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]batchcompute).*"
     tags:
@@ -648,7 +648,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.BillingandSubscription
     name: Aliyun Billing and Subscription
     domains:
-      - "aliyun.com"
+      - "billingandsubscription.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]bss).*"
     tags:
@@ -656,7 +656,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudBase
     name: Aliyun Cloud Base
     domains:
-      - "aliyun.com"
+      - "cloudbase.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cas).*"
     tags:
@@ -664,7 +664,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudEnterpriseNetwork
     name: Aliyun Cloud Enterprise Network
     domains:
-      - "aliyun.com"
+      - "cloudenterprisenetwork.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cbn).*"
     tags:
@@ -672,7 +672,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CCS
     name: Aliyun CCS
     domains:
-      - "aliyun.com"
+      - "ccs.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ccs).*"
     tags:
@@ -680,7 +680,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudFunction
     name: Aliyun Cloud Function
     domains:
-      - "aliyun.com"
+      - "cloudfunction.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cf).*"
     tags:
@@ -688,7 +688,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Chatbot
     name: Aliyun Chatbot
     domains:
-      - "aliyun.com"
+      - "chatbot.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]chatbot).*"
     tags:
@@ -696,7 +696,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ClickHouseService
     name: Aliyun ClickHouse Service
     domains:
-      - "aliyun.com"
+      - "clickhouseservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]clickhouse).*"
     tags:
@@ -704,7 +704,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudAPI
     name: Aliyun Cloud API
     domains:
-      - "aliyun.com"
+      - "cloudapi.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudapi).*"
     tags:
@@ -712,7 +712,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudAuthService
     name: Aliyun CloudAuth Service
     domains:
-      - "aliyun.com"
+      - "cloudauthservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudauth).*"
     tags:
@@ -720,7 +720,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudGameService
     name: Aliyun Cloud Game Service
     domains:
-      - "aliyun.com"
+      - "cloudgameservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudgame).*"
     tags:
@@ -728,7 +728,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudMarketing
     name: Aliyun Cloud Marketing
     domains:
-      - "aliyun.com"
+      - "cloudmarketing.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudmarketing).*"
     tags:
@@ -736,7 +736,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudPhoto
     name: Aliyun Cloud Photo
     domains:
-      - "aliyun.com"
+      - "cloudphoto.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudphoto).*"
     tags:
@@ -744,7 +744,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudMonitorService
     name: Aliyun CloudMonitor Service
     domains:
-      - "aliyun.com"
+      - "cloudmonitorservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cms).*"
     tags:
@@ -752,7 +752,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudCodeUpService
     name: Aliyun Cloud CodeUp Service
     domains:
-      - "aliyun.com"
+      - "cloudcodeupservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]codeup).*"
     tags:
@@ -760,7 +760,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ComputeNest
     name: Aliyun Compute Nest
     domains:
-      - "aliyun.com"
+      - "computenest.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]computenest).*"
     tags:
@@ -768,7 +768,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudBus Service
     name: Aliyun Cloud Bus Service
     domains:
-      - "aliyun.com"
+      - "cloudbus service.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]csb).*"
     tags:
@@ -776,7 +776,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CustomerAnalytics
     name: Aliyun Customer Analytics
     domains:
-      - "aliyun.com"
+      - "customeranalytics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cusanalytic).*"
     tags:
@@ -784,7 +784,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataAnalytics
     name: Aliyun Data Analytics
     domains:
-      - "aliyun.com"
+      - "dataanalytics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]das).*"
     tags:
@@ -792,7 +792,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataBackup
     name: Aliyun Data Backup
     domains:
-      - "aliyun.com"
+      - "databackup.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dbs).*"
     tags:
@@ -800,7 +800,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DynamicContentDeliveryNetwork
     name: Aliyun Dynamic Content Delivery Network
     domains:
-      - "aliyun.com"
+      - "dynamiccontentdeliverynetwork.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dcdn).*"
     tags:
@@ -808,7 +808,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DomainDataIntelligence
     name: Aliyun Domain Data Intelligence
     domains:
-      - "aliyun.com"
+      - "domaindataintelligence.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ddi).*"
     tags:
@@ -816,7 +816,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DistributedDenialOfService
     name: Aliyun Distributed Denial of Service
     domains:
-      - "aliyun.com"
+      - "distributeddenialofservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ddoscoo).*"
     tags:
@@ -824,7 +824,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DatabaseService
     name: Aliyun Database Service
     domains:
-      - "aliyun.com"
+      - "databaseservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dds).*"
     tags:
@@ -832,7 +832,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DirectMail
     name: Aliyun DirectMail
     domains:
-      - "aliyun.com"
+      - "directmail.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dm).*"
     tags:
@@ -840,7 +840,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ClickHouse
     name: Aliyun ClickHouse
     domains:
-      - "aliyun.com"
+      - "clickhouse.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]clickhouse).*"
     tags:
@@ -848,7 +848,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DistributedRelationalDatabaseService
     name: Aliyun Distributed Relational Database Service
     domains:
-      - "aliyun.com"
+      - "distributedrelationaldatabaseservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]drds).*"
     tags:
@@ -856,7 +856,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.IoTOpenAPI
     name: Aliyun IoT OpenAPI
     domains:
-      - "aliyun.com"
+      - "iotopenapi.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dyiotapi).*"
     tags:
@@ -864,7 +864,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SMS
     name: Aliyun SMS
     domains:
-      - "aliyun.com"
+      - "sms.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dysmsapi).*"
     tags:
@@ -872,7 +872,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VoiceMessagingService
     name: Aliyun Voice Messaging Service
     domains:
-      - "aliyun.com"
+      - "voicemessagingservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dyvms).*"
     tags:
@@ -880,7 +880,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.EnterpriseApplicationIntegration
     name: Aliyun Enterprise Application Integration
     domains:
-      - "aliyun.com"
+      - "enterpriseapplicationintegration.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]eais).*"
     tags:
@@ -888,7 +888,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ElasticBlockStorage
     name: Aliyun Elastic Block Storage
     domains:
-      - "aliyun.com"
+      - "elasticblockstorage.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ebs).*"
     tags:
@@ -896,7 +896,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ElasticContainerInstance
     name: Aliyun Elastic Container Instance
     domains:
-      - "aliyun.com"
+      - "elasticcontainerinstance.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]eci).*"
     tags:
@@ -904,7 +904,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ElasticContainerServiceForApplication
     name: Aliyun Elastic Container Service for Application
     domains:
-      - "aliyun.com"
+      - "elasticcontainerserviceforapplication.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]edas).*"
     tags:
@@ -912,7 +912,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ElasticFileSystem
     name: Aliyun Elastic File System
     domains:
-      - "aliyun.com"
+      - "elasticfilesystem.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]efs).*"
     tags:
@@ -920,7 +920,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ElasticHighPerformanceComputing
     name: Aliyun Elastic High Performance Computing
     domains:
-      - "aliyun.com"
+      - "elastichighperformancecomputing.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ehpc).*"
     tags:
@@ -928,7 +928,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.EnterpriseMobileApplicationService
     name: Aliyun Enterprise Mobile Application Service
     domains:
-      - "aliyun.com"
+      - "enterprisemobileapplicationservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]emas).*"
     tags:
@@ -936,7 +936,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ElasticSearch
     name: Aliyun Elasticsearch
     domains:
-      - "aliyun.com"
+      - "elasticsearch.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]es).*"
     tags:
@@ -944,7 +944,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.FastOpenAnalyticsService
     name: Aliyun Fast Open Analytics Service
     domains:
-      - "aliyun.com"
+      - "fastopenanalyticsservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]foas).*"
     tags:
@@ -952,7 +952,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.FileStorageService
     name: Aliyun File Storage Service
     domains:
-      - "aliyun.com"
+      - "filestorageservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]fss).*"
     tags:
@@ -960,7 +960,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.GeoIP
     name: Aliyun GeoIP
     domains:
-      - "aliyun.com"
+      - "geoip.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]geoip).*"
     tags:
@@ -968,7 +968,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.GlobalTimeSeries
     name: Aliyun Global Time Series
     domains:
-      - "aliyun.com"
+      - "globaltimeseries.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]gts).*"
     tags:
@@ -976,7 +976,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HBase
     name: Aliyun HBase
     domains:
-      - "aliyun.com"
+      - "hbase.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]hbase).*"
     tags:
@@ -984,7 +984,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HybridBackupRecovery
     name: Aliyun Hybrid Backup Recovery
     domains:
-      - "aliyun.com"
+      - "hybridbackuprecovery.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]hbr).*"
     tags:
@@ -992,7 +992,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HybridDB
     name: Aliyun HybridDB
     domains:
-      - "aliyun.com"
+      - "hybriddb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]hdr).*"
     tags:
@@ -1000,7 +1000,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HiTSDB
     name: Aliyun HiTSDB
     domains:
-      - "aliyun.com"
+      - "hitsdb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]hitsdb).*"
     tags:
@@ -1008,7 +1008,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HighPerformanceComputing
     name: Aliyun High Performance Computing
     domains:
-      - "aliyun.com"
+      - "highperformancecomputing.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]hpc).*"
     tags:
@@ -1016,7 +1016,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HardwareSecurityModule
     name: Aliyun Hardware Security Module
     domains:
-      - "aliyun.com"
+      - "hardwaresecuritymodule.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]hsm).*"
     tags:
@@ -1024,7 +1024,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.HTTPDNS
     name: Aliyun HTTP DNS
     domains:
-      - "aliyun.com"
+      - "httpdns.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]httpdns).*"
     tags:
@@ -1032,7 +1032,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.IdentityAsAService
     name: Aliyun Identity As A Service
     domains:
-      - "aliyun.com"
+      - "identityasaservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]idaas).*"
     tags:
@@ -1040,7 +1040,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageAuditService
     name: Aliyun ImageAudit service
     domains:
-      - "aliyun.com"
+      - "imageauditservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]imageaudit).*"
     tags:
@@ -1048,7 +1048,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageEnhancementService
     name: Aliyun Image Enhancement service
     domains:
-      - "aliyun.com"
+      - "imageenhancementservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]imageenhan).*"
     tags:
@@ -1056,7 +1056,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageProcessService
     name: Aliyun Image Process Service
     domains:
-      - "aliyun.com"
+      - "imageprocessservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]imageprocess).*"
     tags:
@@ -1064,7 +1064,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageRecognition
     name: Aliyun Image Recognition
     domains:
-      - "aliyun.com"
+      - "imagerecognition.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]imagerecog).*"
     tags:
@@ -1072,7 +1072,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageSegmentation
     name: Aliyun Image Segmentation
     domains:
-      - "aliyun.com"
+      - "imagesegmentation.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.].imageseg).*"
     tags:
@@ -1080,7 +1080,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.IntelligentTestingAsAService
     name: Aliyun Intelligent Testing as a Service
     domains:
-      - "aliyun.com"
+      - "intelligenttestingasaservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]itaas).*"
     tags:
@@ -1088,7 +1088,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ImageAndVideoProcessingService
     name: Aliyun Image and Video Processing Service
     domains:
-      - "aliyun.com"
+      - "imageandvideoprocessingservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ivpd).*"
     tags:
@@ -1096,7 +1096,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.KeyManagementService
     name: Aliyun Key Management Service
     domains:
-      - "aliyun.com"
+      - "keymanagementservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]kms).*"
     tags:
@@ -1104,7 +1104,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.LedgerDB
     name: Aliyun LedgerDB
     domains:
-      - "aliyun.com"
+      - "ledgerdb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ledgerdb).*"
     tags:
@@ -1112,7 +1112,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.LiveService
     name: Aliyun Live Service
     domains:
-      - "aliyun.com"
+      - "liveservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]live).*"
     tags:
@@ -1120,7 +1120,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudMarketplace
     name: Aliyun Cloud Marketplace
     domains:
-      - "aliyun.com"
+      - "cloudmarketplace.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]market).*"
     tags:
@@ -1128,7 +1128,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MessageHub
     name: Aliyun Message Hub
     domains:
-      - "aliyun.com"
+      - "messagehub.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mhub).*"
     tags:
@@ -1136,7 +1136,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MobileOpenPlatform
     name: Aliyun Mobile Open Platform
     domains:
-      - "aliyun.com"
+      - "mobileopenplatform.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mopen).*"
     tags:
@@ -1144,7 +1144,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MobilePlatformAsAService
     name: Aliyun Mobile Platform as a Service
     domains:
-      - "aliyun.com"
+      - "mobileplatformasaservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mpaas).*"
     tags:
@@ -1152,7 +1152,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ServerlessPlatform
     name: Aliyun Serverless Platform
     domains:
-      - "aliyun.com"
+      - "serverlessplatform.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mpserverless).*"
     tags:
@@ -1160,7 +1160,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MicroServiceEngine
     name: Aliyun MicroService Engine
     domains:
-      - "aliyun.com"
+      - "microserviceengine.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mse).*"
     tags:
@@ -1168,7 +1168,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MediaTranscodingService
     name: Aliyun Media Transcoding Service
     domains:
-      - "aliyun.com"
+      - "mediatranscodingservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mts).*"
     tags:
@@ -1176,7 +1176,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MultimediaAIService
     name: Aliyun MultimediaAIService
     domains:
-      - "aliyun.com"
+      - "multimediaaiservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]multimediaai).*"
     tags:
@@ -1184,7 +1184,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.NetworkAttachedStorage
     name: Aliyun Network Attached Storage
     domains:
-      - "aliyun.com"
+      - "networkattachedstorage.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]nas).*"
     tags:
@@ -1192,7 +1192,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.NetworkAnalytics
     name: Aliyun Network Analytics
     domains:
-      - "aliyun.com"
+      - "networkanalytics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]netana).*"
     tags:
@@ -1200,7 +1200,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.NonLineOfBusinessService
     name: Aliyun Non Line Of Business Service
     domains:
-      - "aliyun.com"
+      - "nonlineofbusinessservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]nlb).*"
     tags:
@@ -1208,7 +1208,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpenAPIManagement
     name: Aliyun OpenAPI Management
     domains:
-      - "aliyun.com"
+      - "openapimanagement.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oam).*"
     tags:
@@ -1216,7 +1216,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ObjectDetectionService
     name: Aliyun Object Detection Service
     domains:
-      - "aliyun.com"
+      - "objectdetectionservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]objectdet).*"
     tags:
@@ -1224,7 +1224,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpticalCharacterRecognition
     name: Aliyun Optical Character Recognition
     domains:
-      - "aliyun.com"
+      - "opticalcharacterrecognition.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ocr).*"
     tags:
@@ -1232,7 +1232,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ObjectCacheService
     name: Aliyun Object Cache Service
     domains:
-      - "aliyun.com"
+      - "objectcacheservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ocs).*"
     tags:
@@ -1240,7 +1240,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpenMessagingService
     name: Aliyun Open Messaging Service
     domains:
-      - "aliyun.com"
+      - "openmessagingservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oms).*"
     tags:
@@ -1248,7 +1248,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpenNotificationService
     name: Aliyun Open Notification Service
     domains:
-      - "aliyun.com"
+      - "opennotificationservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ons).*"
     tags:
@@ -1256,7 +1256,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OperationsOrchestrationService
     name: Aliyun Operations Orchestration Service
     domains:
-      - "aliyun.com"
+      - "operationsorchestrationservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oos).*"
     tags:
@@ -1264,7 +1264,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpenSearch
     name: Aliyun Open Search
     domains:
-      - "aliyun.com"
+      - "opensearch.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]opensearch).*"
     tags:
@@ -1272,7 +1272,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.TableStore
     name: Aliyun Table Store
     domains:
-      - "aliyun.com"
+      - "tablestore.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ots).*"
     tags:
@@ -1280,7 +1280,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OutboundbotService
     name: Aliyun Outboundbot Service
     domains:
-      - "aliyun.com"
+      - "outboundbotservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]outboundbot).*"
     tags:
@@ -1288,7 +1288,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PAIElasticDataSetAccelerator
     name: Aliyun PAI Elastic DataSet Accelerator
     domains:
-      - "aliyun.com"
+      - "paielasticdatasetaccelerator.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]paielasticdatasetaccelerator).*"
     tags:
@@ -1296,7 +1296,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PAIStudioService
     name: Aliyun Cloud Base
     domains:
-      - "aliyun.com"
+      - "paistudioservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]paistudio).*"
     tags:
@@ -1304,7 +1304,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PetaData
     name: Aliyun PetaData
     domains:
-      - "aliyun.com"
+      - "petadata.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]petadata).*"
     tags:
@@ -1312,7 +1312,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PolarDB
     name: Aliyun PolarDB
     domains:
-      - "aliyun.com"
+      - "polardb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]polardb).*"
     tags:
@@ -1320,7 +1320,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PremiumPics
     name: Aliyun Premium Pics
     domains:
-      - "aliyun.com"
+      - "premiumpics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]premiumpics).*"
     tags:
@@ -1328,7 +1328,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PrivateLink
     name: Aliyun PrivateLink
     domains:
-      - "aliyun.com"
+      - "privatelink.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]privatelink).*"
     tags:
@@ -1336,7 +1336,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PublicAndPrivateZone
     name: Aliyun Public And Private Zone
     domains:
-      - "aliyun.com"
+      - "publicandprivatezone.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]pvtz).*"
     tags:
@@ -1344,7 +1344,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.QualityCheck
     name: Aliyun Quality Check
     domains:
-      - "aliyun.com"
+      - "qualitycheck.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]qualitycheck).*"
     tags:
@@ -1352,7 +1352,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RapidDevelopmentConsole
     name: Aliyun Rapid Development Console
     domains:
-      - "aliyun.com"
+      - "rapiddevelopmentconsole.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]rdc).*"
     tags:
@@ -1360,7 +1360,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.AliyunResourceManager
     name: Aliyun Resource Manager
     domains:
-      - "aliyun.com"
+      - "aliyunresourcemanager.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]resourcemanager).*"
     tags:
@@ -1368,7 +1368,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RetailAdvanceQuestionAnswering
     name: Aliyun Retail Advance Question Answering
     domains:
-      - "aliyun.com"
+      - "retailadvancequestionanswering.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]retailadvqa).*"
     tags:
@@ -1376,7 +1376,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RetailBot
     name: Aliyun RetailBot
     domains:
-      - "aliyun.com"
+      - "retailbot.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]retailbot).*"
     tags:
@@ -1384,7 +1384,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RetailCloud
     name: Aliyun RetailCloud
     domains:
-      - "aliyun.com"
+      - "retailcloud.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]retailcloud).*"
     tags:
@@ -1392,7 +1392,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RetailIR
     name: Aliyun RetailIR
     domains:
-      - "aliyun.com"
+      - "retailir.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]retailir).*"
     tags:
@@ -1400,7 +1400,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RobotStudios
     name: Aliyun Robot Studios
     domains:
-      - "aliyun.com"
+      - "robotstudios.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]robotstudios).*"
     tags:
@@ -1408,7 +1408,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RoboticOperatingSystem
     name: Aliyun Robotic Operating System
     domains:
-      - "aliyun.com"
+      - "roboticoperatingsystem.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ros).*"
     tags:
@@ -1416,7 +1416,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RealTimeCommunication
     name: Aliyun RealTime Communication
     domains:
-      - "aliyun.com"
+      - "realtimecommunication.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]rtc).*"
     tags:
@@ -1424,7 +1424,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SimpleApplicationEngine
     name: Aliyun Simple Application Engine
     domains:
-      - "aliyun.com"
+      - "simpleapplicationengine.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]sae).*"
     tags:
@@ -1432,7 +1432,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SecurityAssertionService
     name: Aliyun Security Assertion Service
     domains:
-      - "aliyun.com"
+      - "securityassertionservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]sas).*"
     tags:
@@ -1440,7 +1440,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SmartDataDiscoveryAndProtection
     name: Aliyun Smart Data Discovery And Protection
     domains:
-      - "aliyun.com"
+      - "smartdatadiscoveryandprotection.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]sddp).*"
     tags:
@@ -1448,7 +1448,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SimpleLoadBalancer
     name: Aliyun Simple Load Balancer
     domains:
-      - "aliyun.com"
+      - "simpleloadbalancer.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]slb).*"
     tags:
@@ -1456,7 +1456,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SmartAccessGateway
     name: Aliyun Smart Access Gateway
     domains:
-      - "aliyun.com"
+      - "smartaccessgateway.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]smartag).*"
     tags:
@@ -1464,7 +1464,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SimpleMessageService
     name: Aliyun Simple Message Service
     domains:
-      - "aliyun.com"
+      - "simplemessageservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]smc).*"
     tags:
@@ -1472,7 +1472,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SecurityTokenService
     name: Aliyun Security Token Service
     domains:
-      - "aliyun.com"
+      - "securitytokenservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]sts).*"
     tags:
@@ -1480,7 +1480,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SimpleWebApplicationService
     name: Aliyun Simple Web Application Service
     domains:
-      - "aliyun.com"
+      - "simplewebapplicationservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]swas).*"
     tags:
@@ -1488,7 +1488,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.TableStoreDataSourceReader
     name: Aliyun Table Store Data Source Reader
     domains:
-      - "aliyun.com"
+      - "tablestoredatasourcereader.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]tdsr).*"
     tags:
@@ -1496,7 +1496,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VisionAI
     name: Aliyun Vision AI
     domains:
-      - "aliyun.com"
+      - "visionai.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]visionai).*"
     tags:
@@ -1504,7 +1504,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VOD
     name: Aliyun VOD
     domains:
-      - "aliyun.com"
+      - "vod.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]vod).*"
     tags:
@@ -1512,7 +1512,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VPC
     name: Aliyun VPC
     domains:
-      - "aliyun.com"
+      - "vpc.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]vpc).*"
     tags:
@@ -1520,7 +1520,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.VideoSurveillance
     name: Aliyun Video Surveillance
     domains:
-      - "aliyun.com"
+      - "videosurveillance.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]vs).*"
     tags:
@@ -1528,7 +1528,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.WebApplicationFirewall
     name: Aliyun Web Application Firewall
     domains:
-      - "aliyun.com"
+      - "webapplicationfirewall.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]waf).*"
     tags:
@@ -1536,7 +1536,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.XTrace
     name: Aliyun XTrace
     domains:
-      - "aliyun.com"
+      - "xtrace.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]xtrace).*"
     tags:
