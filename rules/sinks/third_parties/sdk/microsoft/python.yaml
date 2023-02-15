@@ -11,6 +11,14 @@ sinks:
     patterns:
       - "(?i)(k4a|msal_extensions|msgraph_core|dapr|onedrivesdk|applicationinsights|asposecellscloud|adal|msoffcrypto_tool|office365.).*"
     tags:
+  
+  - id: ThirdParties.SDK.Microsoft.Authentication
+    name: Microsoft Authentication
+    domains:
+      - "authentication.microsoft.com"
+    patterns:
+      - "(?i)(msal.*(ConfidentialClientApplication|PublicClientApplication)).*"
+    tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure
     name: Microsoft Azure
