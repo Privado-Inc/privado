@@ -9,7 +9,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?).*(?:KinesisAsyncClient|KinesisClient|software.amazon.awssdk.services.kinesis).*(describe|get|list|subscribe).*"
+      - "(?i).*(?:KinesisAsyncClient|KinesisClient|software.amazon.awssdk.services.kinesis).*(describe|get|list|subscribe).*"
     tags:
 
   - id: Storages.AmazonKinesis.Write
@@ -18,5 +18,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(i?).*(?:KinesisAsyncClient|KinesisClient|software.amazon.awssdk.services.kinesis).*(add|create|delete|merge|put|remove|update|set|send).*"
+      - "(?i).*(?:KinesisAsyncClient|KinesisClient|software.amazon.awssdk.services.kinesis).*(add|create|delete|merge|put|remove|update|set|send).*"
     tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Plotly
+    name: Plotly
+    domains:
+      - "plotly.com"
+    patterns:
+      - "(?i)(dash_table|dash_core_components|dash_renderer|dash_html_components|dash_extensions|dash_bootstrap_components|dash_enterprise_auth).*"
+    tags:

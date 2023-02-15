@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Co.Sdk-gaming
+    name: Co Sdk-gaming
+    domains:
+      - "sdk-gaming.co.uk"
+    patterns:
+      - "(?i)(irsdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Quantanalytics
+    name: Co Quantanalytics
+    domains:
+      - "quantanalytics.co.uk"
+    patterns:
+      - "(?i)(quantstats).*"
+    tags:

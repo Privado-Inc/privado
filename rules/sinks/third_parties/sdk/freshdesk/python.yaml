@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Freshdesk
+    name: Freshdesk
+    domains:
+      - "freshdesk.com"
+    patterns:
+      - "(?i)(freshdesk|tap_freshdesk|authentic2_idp_freshdesk|django_triflesoft_freshdesk|pyfd|concierge_freshdesk_plugin|freshdesk_api_client).*"
+    tags:

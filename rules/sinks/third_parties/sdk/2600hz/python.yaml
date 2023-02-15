@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.2600hzDocs
+    name: 2600hz Docs
+    domains:
+      - "docs.2600hz.com"
+    patterns:
+      - "(?i)(kazoo.api|kazoo_api|kazooapi).*"
+    tags:

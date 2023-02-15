@@ -9,5 +9,5 @@ sinks:
       - cassandra.apache.org
       - apache.org
     patterns:
-      - "(i?).*(?:CassandraConnector|Cluster[.]builder|com[.]datastax[.]oss|com[.]datastax[.]driver[.]core|com[.]noorq[.]casser|org[.]eclipse[.]jnosql[.]mapping[.]cassandra).*"
+      - "(?i).*(?:CassandraConnector|Cluster[.]builder|com[.]datastax[.]oss|com[.]datastax[.]driver[.]core|com[.]noorq[.]casser|org[.]eclipse[.]jnosql[.]mapping[.]cassandra).*"
     tags:

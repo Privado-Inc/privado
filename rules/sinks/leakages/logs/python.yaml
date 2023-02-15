@@ -1,0 +1,38 @@
+sinks:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i).*(?:log|logger).*(?:error|severe|fatal).*"
+    tags:
+    
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i).*(?:log|logger).*(warn|warning).*"
+    tags:
+  
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i).*(?:log|logger).*(debug|trace).*"
+      - "(?i).*(?:logger).*(log).*"
+    tags:
+  
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i).*(?:log|logger).*(info).*"
+    tags:
+  
+  - id: Leakages.Log
+    name: Log
+    patterns:
+      - "(?i).*[.]log"
+    tags:
+
+  - id: Leakages.Log.Console
+    name: Log Console
+    patterns: 
+      - "builtins[.]py:<module>[.]print"
+    tags:

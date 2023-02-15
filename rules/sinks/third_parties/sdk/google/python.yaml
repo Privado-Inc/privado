@@ -1,0 +1,219 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Google
+    name: Google
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(gmusicapi|pyfcm|caliban|ndb|fcm|anom|binderhub|gcdu|apprentice).*"
+      - "(?i)(googleapiclient).*"
+      - "(?i)(gapic_google_cloud_speech_v1beta1).*"
+      - "(?i)(gapic_google_cloud_language_v1).*"
+      - "(?i)(gapic_google_cloud_language_v1beta2).*"
+      - "(?i)(gapic_google_cloud_vision_v1).*"
+      - "(?i)(googleapis_common_protos).*"
+      - "(?i)(google_crc32c).*"
+      - "(?i)(grpc_google_iam_v1).*"
+      - "(?i)(pytesseract).*"
+      - "(?i)(google_api_core|googleapi).*"
+      - "(?i)(google_resumable_media).*"
+      - "(?i)(cloudml_hypertune).*"
+      - "(?i)((gax|grpc)_google_logging_v2).*"
+      - "(?i)(google_gax).*"
+      - "(?i)(google_apitools).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Spreadsheets
+    name: Google Spreadsheets
+    domains:
+      - "spreadsheets.google.com"
+    patterns:
+      - "(?i)(gspread_dataframe|pygsheets|gspread).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud
+    name: Google Cloud
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]core).*"
+      - "(?i)(google.*cloud.*[.]error-reporting).*"
+      - "(?i)(google.*cloud.*[.]vision).*"
+      - "(?i)(google.*cloud.*[.]audit_log).*"
+      - "(?i)(google.*cloud.*[.]logging).*"
+      - "(?i)(google.*cloud.*[.]language).*"
+      - "(?i)(google.*cloud.*[.]videointelligence).*"
+      - "(?i)(google.*cloud.*[.]dlp).*"
+      - "(?i)(google.*cloud.*[.]monitoring).*"
+      - "(?i)(google.*cloud.*[.]appengine_logging).*"
+      - "(?i)(google.*cloud.*[.]tasks).*"
+      - "(?i)(google.*cloud.*[.]texttospeech).*"
+      - "(?i)(google.*cloud.*[.]dataplex).*"
+      - "(?i)(google.*cloud.*[.]dataproc-metastore).*"
+      - "(?i)(google.*cloud.*[.]os-login).*"
+      - "(?i)(google.*cloud.*[.]build).*"
+      - "(?i)(google.*cloud.*[.]dataproc).*"
+      - "(?i)(google.*cloud.*[.]secret-manager).*"
+      - "(?i)(google.*cloud.*[.]container).*"
+      - "(?i)(google.*cloud.*[.]datacatalog).*"
+      - "(?i)(google.*cloud.*[.]aiplatform).*"
+      - "(?i)(google.*cloud.*[.]speech).*"
+      - "(?i)(google.*cloud.*[.]automl).*"
+      - "(?i)(google.*cloud.*[.]workflows).*"
+      - "(?i)(google.*cloud.*[.]memcache).*"
+      - "(?i)(google.*cloud.*[.]spanner).*"
+      - "(?i)(google.*cloud.*[.]bigtable).*"
+      - "(?i)(google.*cloud.*[.]spanner).*"
+      - "(?i)(google.*cloud.*[.]bigtable).*"
+      - "(?i)(google.*cloud.*[.]orchestration-airflow).*"
+      - "(?i)(googleclouddebugger|gTTS).*"
+      - "(?i)(googleappenginepipeline|google_nest_sdm).*"
+      - "(?i)(grpc_gcp|google_pasta|gcloud).*"
+      - "(?i)(apache-airflow-providers-google).*"
+      - "(?i)(asyncio_gcloud_ml_engine|gcloudc[.]db).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.BigQuery
+    name: Google BigQuery
+    domains:
+      - "bigquery.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]bigquery).*"
+      - "(?i)(pybigquery|gcloud.*(rest|aio).*[.]bigquery).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.PubSub
+    name: Google PubSub
+    domains:
+      - "pubsub.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]pubsub).*"
+      - "(?i)(gax_google_pubsub_v1).*"
+      - "(?i)(grpc_google_pubsub_v1).*"
+      - "(?i)(gcloud.*(rest|aio).*[.]pubsub).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Auth
+    name: Google Auth
+    domains:
+      - "auth.cloud.google.com"
+    patterns:
+      - "(?i)(google.*auth|gcreds).*"
+      - "(?i)(google.*cloud.*[.]auth).*"
+      - "(?i)(gcloud.*(rest|aio).*[.]auth).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.Cloud Translation
+    name: Google CloudTranslation
+    domains:
+      - "trans.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]translate_v2).*"
+      - "(?i)(googletrans|google_trans_new|bdtranslate).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.DataStore
+    name: Google DataStore
+    domains:
+      - "datastore.cloud.google.com"
+    patterns:
+      - "(?i)(gapic_google_cloud_datastore_v1).*"
+      - "(?i)(google-cloud-datastore|googledatastore|DatastoreAdminClient).*"
+      - "(?i)(google.*cloud.*[.]datastore|gcloud.*(rest|aio).*[.]datastore).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Storage
+    name: Google Storage
+    domains:
+      - "storage.cloud.google.com"
+    patterns:
+      - "(?i)(wiser.*gcloud.*storage).*"
+      - "(?i)(django_gcloud_storage).*"
+      - "(?i)(cs_storage).*"
+      - "(?i)(googleappenginecloudstorageclient).*"
+      - "(?i)(google.*cloud.*[.]storage|gcloud.*(rest|aio).*[.]storage).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Firestore
+    name: Google Firestore
+    domains:
+      - "firestore.cloud.google.com"
+    patterns:
+      - "(?i)(wiser.*gcloud.*firestore).*"
+      - "(?i)(google.*cloud.*[.]firestore).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.KMS
+    name: Google KMS
+    domains:
+      - "kms.cloud.google.com"
+    patterns:
+      - "(?i)(google.*cloud.*[.]kms|gcloud.*(rest|aio).*[.]kms).*"
+    tags:
+  
+
+  - id: ThirdParties.SDK.Google.Maps
+    name: Google Maps
+    domains:
+      - "maps.google.com"
+    patterns:
+      - "(?i)(googlemaps|google_maps).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Drive
+    name: Google Drive
+    domains:
+      - "drive.google.com"
+    patterns:
+      - "(?i)(pydrive|google_images_download).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Duo
+    name: Google Duo
+    domains:
+      - "duo.google.com"
+    patterns:
+      - "(?i)(duo_client).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Google.Firebase
+    name: Google Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(firebase).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "admob.google.com"
+    patterns:
+      - "(?i)(google.ads|googleads).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(google.analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Playstore
+    name: Google Playstore
+    domains:
+      - "play.google.com"
+    patterns:
+      - "(?i)(integrations.*google_play|google_play_scraper|playstore_search_results_scraper|playstore|playkit).*"
+    tags:

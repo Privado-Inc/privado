@@ -8,5 +8,5 @@ sinks:
     domains:
       - scylladb.com
     patterns:
-      - "(i?).*com[.]scylladb[.]java-driver.*"
+      - "(?i).*com[.]scylladb[.]java-driver.*"
     tags: 
