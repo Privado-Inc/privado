@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataProcessingAgreement
     name: Aliyun Data Processing Agreement
     domains:
-      - "dataprocessingagreement.dataprocessingagreement.aliyun.com"
+      - "dataprocessingagreement.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dpa).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ArchiveStorageService
     name: Aliyun Archive Storage Service
     domains:
-      - "archivestorageservice.archivestoargeservice.aliyun.com"
+      - "archivestoargeservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oas).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MessageService
     name: Aliyun Message Service
     domains:
-      - "messageservice.messageservice.aliyun.com"
+      - "messageservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]mns).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpenServices
     name: Aliyun Open Services
     domains:
-      - "openservices.openservices.aliyun.com"
+      - "openservices.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]openservices).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ObjectStorageService
     name: Aliyun Object Storage Service
     domains:
-      - "objectstorageservice.objectstorageservice.aliyun.com"
+      - "objectstorageservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oss).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataLakeAnalytics
     name: Aliyun DataLake Analytics
     domains:
-      - "datalakeanalytics.datalakeanalytics.aliyun.com"
+      - "datalakeanalytics.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dla).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataHub
     name: Aliyun DataHub
     domains:
-      - "datahub.datahub.aliyun.com"
+      - "datahub.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]datahub).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataWorks
     name: Aliyun DataWorks
     domains:
-      - "dataworks.dataworks.aliyun.com"
+      - "dataworks.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dataworks).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.DataIntegration
     name: Aliyun DataIntegration
     domains:
-      - "dataintegration.dataintegration.aliyun.com"
+      - "dataintegration.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]dataIntegration).*"
     tags:
@@ -79,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.Elasticsearch
     name: Aliyun Elasticsearch
     domains:
-      - "elasticsearch.elasticsearch.aliyun.com"
+      - "elasticsearch.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]elasticsearch).*"
     tags:
@@ -87,7 +87,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ApsaraDB
     name: Aliyun ApsaraDB
     domains:
-      - "apsaradb.apsaradb.aliyun.com"
+      - "apsaradb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]apsaradb).*"
     tags:
@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ApsaraDBForGDB
     name: Aliyun ApsaraDB for GDB
     domains:
-      - "apsaradbforgdb.apsaradbforgdb.aliyun.com"
+      - "apsaradbforgdb.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]gdb).*"
     tags:
@@ -103,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.MaxCompute
     name: Aliyun MaxCompute
     domains:
-      - "maxcompute.maxcompute.aliyun.com"
+      - "maxcompute.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]odps).*"
     tags:
