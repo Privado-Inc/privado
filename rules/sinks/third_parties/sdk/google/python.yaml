@@ -109,7 +109,7 @@ sinks:
     tags:
   
 
-  - id: ThirdParties.SDK.Google.Cloud Translation
+  - id: ThirdParties.SDK.Google.CloudTranslation
     name: Google CloudTranslation
     domains:
       - "trans.cloud.google.com"
