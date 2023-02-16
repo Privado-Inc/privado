@@ -511,7 +511,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.GoldenGate
     name: Oracle Golden Gate
     domains:
-      - "goldengateoracle.com"
+      - "goldengate.oracle.com"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]goldengate).*"
     tags:
