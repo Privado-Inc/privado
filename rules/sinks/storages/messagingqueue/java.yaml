@@ -31,6 +31,14 @@ sinks:
     patterns: 
       - "(?i).*(com[.]amazonaws[.]services[.]sqs[.](model[.]SendMessageRequest[.](set|with)MessageBody[:]|AmazonSQS[.](sendMessage|sendMessageBatch))).*"
     tags:
+    
+  - id: Messaging.Service.AmazonSQS.Consumer
+    name: Amazon SQS (Consumer)
+    domains:
+      - amazonaws.com
+    patterns: 
+      - "(?i).*(com[.]amazonaws[.]services[.]sqs[.]AmazonSQS[.](receiveMessage|receiveMessageBatch|deleteMessage|deleteMessageBatch)).*"
+    tags:
 
   - id: Messaging.Service.JMS.Consumer
     name: JMS (Consumer)
