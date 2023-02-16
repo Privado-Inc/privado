@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Amplitude.Rudderstack
     name: Amplitude Rudderstack
     domains:
-      - "amplitude.com"
+      - "rudderstack.amplitude.com"
     patterns:
       - "(?i)(com[.]rudderstack[.]android[.]amplitude|com[.]rudderstack[.]android[.]integration[.]amplitude).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Amplitude.Analytics
     name: Amplitude Analytics
     domains:
-      - "amplitude.com"
+      - "analytics.amplitude.com"
     patterns:
       - "(?i)(com[.]amplitude[.]analytics).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Java
     name: Amplitude Java
     domains:
-      - "amplitude.com"
+      - "java.amplitude.com"
     patterns:
       - "(?i)(com[.]amplitude[.]java).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Amplitude.Experiment
     name: Amplitude Experiment
     domains:
-      - "amplitude.com"
+      - "experiment.amplitude.com"
     patterns:
       - "(?i)(com[.]amplitude[.]experiment).*"
     tags:
