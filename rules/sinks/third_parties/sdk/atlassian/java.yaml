@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.BitbucketServer
     name: Atlassian Bitbucket Server
     domains:
-      - "atlassian.com"
+      - "bitbucket.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]bitbucket[.]server).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.JiraPlugins
     name: Atlassian Jira Plugins
     domains:
-      - "atlassian.com"
+      - "jiraplugins.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]jira[.]plugins).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.JiraREST
     name: Atlassian Jira REST
     domains:
-      - "atlassian.com"
+      - "jirarest.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]jira[.]rest).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.RM
     name: Atlassian RM
     domains:
-      - "atlassian.com"
+      - "rm.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]rm).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.Confluence
     name: Atlassian Confluence
     domains:
-      - "atlassian.com"
+      - "confluence.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]confluence).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.Crowd
     name: Atlassian Crowd
     domains:
-      - "atlassian.com"
+      - "crowd.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]crowd).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.Connect
     name: Atlassian Connect
     domains:
-      - "atlassian.com"
+      - "connect.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]connect).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.Stash
     name: Atlassian Stash
     domains:
-      - "atlassian.com"
+      - "stash.atlassian.com"
     patterns:
       - "(?i)(com[.]atlassian[.]stash).*"
     tags:
