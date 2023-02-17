@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Snowflake
-    name: Snowflake
+  - id: ThirdParties.SDK.Buyapowa
+    name: Buyapowa
     domains:
-      - "snowflake.com"
+      - "buyapowa.com"
     patterns:
-      - "(?i)(snowflake.*connector|snowflake|airflow.*snowflake).*"
+      - "(?i)(integrations.*buyapowa|.*bypwclient).*"
     tags:
+  

@@ -1,5 +1,4 @@
 sources:
-  
   - id: Data.Sensitive.FinancialData.BankAccountDetails
     name: Bank Account Details
     category: Financial Data
@@ -9,7 +8,7 @@ sources:
       - "(?i).*((?<!question)bank[^\\s/(;)#|,=!>]*(?:name|account|details|detail|address|country|(swift|bic)-code|(swift|bic)_code)|bank[^\\s/(;)#|,=!>]*account[^\\s/(;)#|,=!>]*details|(swift|bic)[-_]code|(swift|bic)code)"
     tags:
       law: GDPR
-      
+
   - id: Data.Sensitive.FinancialData.CardIssuer
     name: Card Issuer
     category: Financial Data
@@ -40,6 +39,16 @@ sources:
     tags:
       law: GDPR
 
+  - id: Data.Sensitive.FinancialData.PaymentNonce
+    name: Payment Nonce
+    category: Financial Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(.*)(payment[s]?)(nonce)(.*)"
+    tags:
+      law: GDPR
+
   - id: Data.Sensitive.FinancialData.PaymentMode
     name: Payment Mode
     category: Financial Data
@@ -59,7 +68,7 @@ sources:
       - "(?i).*((?:credit|cibil|crisil|fico|schufa)[^\\s/(;)#|,=!>]{0,10}score)"
     tags:
       law: GDPR
-    
+
   - id: Data.Sensitive.FinancialData.TaxInformation
     name: Tax Information
     category: Financial Data
@@ -69,7 +78,7 @@ sources:
       - "(?i)(tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax|(form|name|box|item)1099)"
     tags:
       law: GDPR
-  
+
   - id: Data.Sensitive.FinancialData.RetirementAccountInformation
     name: Retirement Account Information
     category: Financial Data
@@ -109,7 +118,7 @@ sources:
       - "(?i).*((?:dearness|houserent|entertainment|overtime|compensatory|conveyance|leave[^\\s/(;)#|,=!>]{0,10}travel|medical|periodicals|books|withholding|personal|employment|child|basic[^\\s/(;)#|,=!>]{0,10}tax|travel|maternity|paternity)[^\\s/(;)#|,=!>]{0,10}allowance)"
     tags:
       law: GDPR
-  
+
   - id: Data.Sensitive.FinancialData.StockorEquityGrants
     name: Stock or Equity Grants
     category: Financial Data

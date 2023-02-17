@@ -11,11 +11,19 @@ sinks:
     patterns:
       - "(?i)(k4a|msal_extensions|msgraph_core|dapr|onedrivesdk|applicationinsights|asposecellscloud|adal|msoffcrypto_tool|office365.).*"
     tags:
+  
+  - id: ThirdParties.SDK.Microsoft.Authentication
+    name: Microsoft Authentication
+    domains:
+      - "authentication.microsoft.com"
+    patterns:
+      - "(?i)(msal.*(ConfidentialClientApplication|PublicClientApplication)).*"
+    tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure
     name: Microsoft Azure
     domains:
-      - ".azure.com"
+      - "azure.com"
     patterns:
       - "(?i)(airflow.providers.microsoft.*azure|aioazuredevops|azuresdkoplib|msrestazure).*"
       - "(?i)(azure.(core|common|kusto.data|batch|servicebus|devtools|template|loganalytics|nspkg|graphrbac)).*"
@@ -49,7 +57,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Identity
     name: Microsoft Azure Identity
     domains:
-      - "identity.azure.com"
+      - "azure.microsoft.com/en-in/products/category/identity"
     patterns:
       - "(?i)(azure.identity|azure.mgmt.identity).*"
     tags:
@@ -113,7 +121,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Monitor
     name: Microsoft Azure Monitor
     domains:
-      - "monitor.azure.com"
+      - "azure.microsoft.com/en-us/products/monitor"
     patterns:
       - "(?i)(azure.(monitor|synapse.monitoring)|azure.*mgmt.*monitor).*"
     tags:
