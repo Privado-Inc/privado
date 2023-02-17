@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Intercom
+    name: Intercom
+    domains:
+      - "intercom.io"
+    patterns:
+      - "(?i)(django_intercom|aa_intercom|intercom|tap_intercom).*"
+    tags:
+
+  - id: ThirdParties.SDK.Intercom
+    name: Intercom
+    domains:
+      - "intercom.com"
+    patterns:
+      - "(?i)(intercom).*"
+    tags:

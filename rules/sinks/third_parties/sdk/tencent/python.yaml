@@ -1,0 +1,16 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Tencent.Cloud
+    name: Tencent Cloud
+    domains:
+      - "cloud.tencent.com"
+    patterns:
+      - "(?i)(qcloud_cos|QcloudApi|qcloudsms|tencentyun_porndetect|qcloud_image).*"
+      - "(?i).*(CosClient).*"
+      - "(?i)(cmq.*(queue|account|topic)|cos_lib3).*"
+      - "(?i)(tencent.*cloud|tencentcloud|tencent.mta.*client).*"
+    tags:
