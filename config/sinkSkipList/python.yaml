@@ -4,8 +4,9 @@ sinkSkipList:
     patterns:
       - "(dict|list|str|tuple|int)\\.__.*"
       - "(django.*\\.py).*"
-      - "\\/[.]py.*"
-      - "(?i)(builtins|operator|ast|json|html2text|yaml|re|copy|argparse|datetime|time|decimal|collections|asyncio|subprocess|pytest|logging|traceback|sys|os|oss2|unittest|base64|dateutil|importlib|socket|urllib3|urllib|io|uuid|gzip|math|bson|random)\\.py.*"
+      - "\\/.*[.]py.*"
+      - "__builtin\\..*"
+      - "(?i)(builtins|operator|ast|jwt|hashlib|six|glob|json|html2text|yaml|re|copy|argparse|datetime|time|decimal|collections|asyncio|subprocess|pytest|logging|traceback|sys|os|oss2|unittest|base64|dateutil|importlib|socket|urllib3|urllib|io|uuid|gzip|math|bson|random|xmltodict|shutil|tempfile)\\.py.*"
 
   - id: SinkSkipList.BuiltInLib
     name: Skip built in language libraries
