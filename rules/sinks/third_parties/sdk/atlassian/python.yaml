@@ -1,0 +1,45 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Atlassian
+    name: Atlassian
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "(?i)(django_atlassian|atlassian).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.Confluence
+    name: Atlassian Confluence
+    domains:
+      - "confluence.atlassian.com"
+    patterns:
+      - "(?i)(pyfluence|confluence.*client|sphinxcontrib.confluencebuilder).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.JIRA
+    name: Atlassian JIRA
+    domains:
+      - "jira.atlassian.com"
+    patterns:
+      - "(?i)(cloudwright_atlassian_jira|jira|airflow.*providers.*jira).*"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Bitbucket
+    name: Atlassian Bitbucket
+    domains:
+      - "bitbucket.atlassian.com"
+    patterns:
+      - "(?i)(atlassian.*bitbucket|airflow.*providers.*bitbucket).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.Opsgenie
+    name: Atlassian Opsgenie
+    domains:
+      - "opsgenie.atlassian.com"
+    patterns:
+      - "(?i)(opsgenie|atlassian.*opsgenie|airflow.*providers.*opsgenie).*"
+    tags:

@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Segment
+    name: Segment
+    domains:
+      - "segment.com"
+    patterns:
+      - "(?i)(segment.*analytics|analytics[.]write_key|segment).*"
+    tags:
+
+  - id: ThirdParties.SDK.Segment
+    name: Segment
+    domains:
+      - "segment.io"
+    patterns:
+      - "(?i)(airflow.*providers.*segment).*"
+    tags:

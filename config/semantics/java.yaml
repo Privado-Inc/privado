@@ -5,9 +5,9 @@
 
 semantics:
   - signature: "android.text.TextUtils.isEmpty:boolean(java.lang.String)"
-  
+
   - signature: "android.text.TextUtils.isEmpty:<unresolvedSignature>(1)"
-  
+
   - signature: "org.apache.http.HttpResponse.getStatusLine:org.apache.http.StatusLine()"
     flow: "0->0"
 
@@ -20,6 +20,18 @@ semantics:
 
   - signature: "javax.persistence.Query.setParameter:<unresolvedSignature>(2)"
     flow: "1->0 2->0"
-  
+
   - signature: "javax.persistence.EntityManager.find:<unresolvedSignature>(2)"
+    flow: "0->-1 1->-1 2->-1"
+
+  - signature: "com.braintreepayments.api.models.PaymentMethodNonce.getNonce:<unresolvedSignature>(0)"
+    flow: "0->-1"
+
+  - signature: "com.braintreepayments.api.models.PaymentMethodNonce.getNonce:java.lang.String()"
+    flow: "0->-1"
+
+  - signature: "java.lang.String.split:java.lang.String[](java.lang.String)"
+    flow: "0->-1 1->-1"
+
+  - signature: "java.lang.String.replace:java.lang.String(java.lang.CharSequence,java.lang.CharSequence)"
     flow: "0->-1 1->-1 2->-1"

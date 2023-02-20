@@ -32,5 +32,5 @@ collections:
   - id: Collections.Annotation.Retrofit
     name: Retrofit Interface Annotation
     patterns:
-      - "GET|POST|Query"
+      - "GET|POST"
     tags:

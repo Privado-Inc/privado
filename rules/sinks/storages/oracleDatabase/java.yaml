@@ -8,5 +8,5 @@ sinks:
     domains:
       - oracle.com
     patterns:
-      - "(i?).*jdbc:oracle:.*|.*oracle[.]jdbc[.]pool[.]OracleDataSource.*(?:executeQuery|execute).*" 
+      - "(?i).*jdbc:oracle:.*|.*oracle[.]jdbc[.]pool[.]OracleDataSource.*(?:executeQuery|execute).*" 
     tags:

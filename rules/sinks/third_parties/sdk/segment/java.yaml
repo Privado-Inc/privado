@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Android
     name: Segment Analytics Android
     domains:
-      - "segment.com"
+      - "analyticsandroid.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]android|io[.]segment[.]analytics[.]android).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Java
     name: Segment Analytics Java
     domains:
-      - "segment.com"
+      - "analyticsjava.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]java).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.API
     name: Segment API
     domains:
-      - "segment.com"
+      - "api.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]api).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Internal
     name: Segment Analytics Internal
     domains:
-      - "segment.com"
+      - "analyticsinternal.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]internal).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Integrations
     name: Segment Analytics Integrations
     domains:
-      - "segment.com"
+      - "analyticsintegrations.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]integrations).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Analytics
     name: Segment Analytics
     domains:
-      - "segment.com"
+      - "analytics.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Analytics).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Cartographer
     name: Segment Analytics Cartographer
     domains:
-      - "segment.com"
+      - "analyticscartographer.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Cartographer).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Crypto
     name: Segment Analytics Crypto
     domains:
-      - "segment.com"
+      - "analyticscrypto.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Crypto).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.GetDeviceIdTask
     name: Segment Analytics GetDeviceIdTask
     domains:
-      - "segment.com"
+      - "analyticsgetdeviceidtask.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]GetDeviceIdTask).*"
     tags:
@@ -79,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Options
     name: Segment Analytics Options
     domains:
-      - "segment.com"
+      - "analyticsoptions.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Options).*"
     tags:
@@ -87,7 +87,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Properties
     name: Segment Analytics Properties
     domains:
-      - "segment.com"
+      - "analyticsproperties.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Properties).*"
     tags:
@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.QueueFile
     name: Segment Analytics QueueFile
     domains:
-      - "segment.com"
+      - "analyticsqueuefile.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]QueueFile).*"
     tags:
@@ -103,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Traits
     name: Segment Analytics Traits
     domains:
-      - "segment.com"
+      - "analyticstraits.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Traits).*"
     tags:
@@ -111,7 +111,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.ValueMap
     name: Segment Analytics ValueMap
     domains:
-      - "segment.com"
+      - "analyticsvaluemap.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]ValueMap).*"
     tags:
@@ -119,7 +119,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.WebhookIntegration
     name: Segment Analytics WebhookIntegration
     domains:
-      - "segment.com"
+      - "analyticswebhookintegration.segment.com"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]WebhookIntegration).*"
     tags:

@@ -1,0 +1,21 @@
+
+# Sink Rules for storage database Amazon Dynamo DB - https://aws.amazon.com/dynamodb/
+
+sinks:
+  - id: Storages.AmazonDynamoDB.Read
+    name: Amazon Dynamo DB(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)boto.*(?:get.{0,1}item|query).*"
+    tags:
+
+  - id: Storages.AmazonDynamoDB.Write
+    name: Amazon Dynamo DB(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)boto.*(?:delete.{0,1}item|put.{0,1}item).*"
+    tags:
