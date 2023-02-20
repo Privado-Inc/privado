@@ -1,0 +1,9 @@
+systemConfig:
+  - key: apiHttpLibraries
+    value: (?i)(request|aiohttp|treq|grequests|urllib|http|uplink|httoop|flask_restful|tornado.httpclient|pycurl|bs4|.*(HttpClient)).*
+
+  - key: apiSinks
+    value: (?i).*(?:url|client|get|set|post|put|patch|delete|head|options|request|feed|trigger|init|find|send|receive|redirect|fetch|execute|response|pool|client|http|load|list|trace|remove|write|provider|host|access|info_read|select|perform).*
+
+  - key: apiIdentifier
+    value: (?i).*((hook|base|authorize|provider|endpoint|installation)(s){0,1}_url|(slack|web)_hook|(rest|api)_endpoint).*
