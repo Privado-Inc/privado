@@ -1,0 +1,42 @@
+sinks:
+  - id: Storages.Redis.Redisson.Read
+    name: Redisson Redis(Read)
+    domains:
+      - redis.io
+      - redisson.pro
+    patterns:
+      - (?i)(org.redisson.api.RedissonClient[.])(m|p)?(get)(list|map|bucket|range|del|ex)?(:)(.*)
+      - (?i)(org.redisson.api.RedissonClient[.])(get)((pattern)?topic)(:)(.*)
+      - (?i)(org.redisson.api.RedissonClient[.])(get)((binary)?stream)(:)(.*)
+      - (?i)(org.redisson.api.RedissonClient[.])(lcs|strlen|substr)(:)(.*)
+    tags:
+
+  - id: Storages.Redis.Redisson.Write
+    name: Redisson Redis(Write)
+    domains:
+      - redis.io
+      - redisson.pro
+    patterns:
+      - (?i)(org.redisson.api.RedissonClient.getset:)(.*)
+      - (?i)(org.redisson.api.RedissonClient[.])(m|h|p)?(set)(one|user|range|nx|ex)?(:)(.*)
+      - (?i)(org.redisson.api.RedissonClient[.])(incr|decr)(by(float)?)?(:)(.*)
+    tags:
+
+  - id: Storages.Redis.Jedis.Read
+    name: Jedis Redis(Read)
+    domains:
+      - redis.io
+    patterns:
+      - (?i)(redis.clients.jedis[.](providers.ClusterConnectionProvider|connection)[.])(get)(node[s]?|one|raw)?(:)(.*)
+      - (?i)(redis.clients.jedis[.](providers.ClusterConnectionProvider|connection)[.])(get)((objectmulti)?bulk|integer|statuscode)(reply)(:)(.*)
+      - (?i)(redis.clients.jedis.CommandObjects[.])(m|h|p)?(get)(all|del)?(:)(.*)
+    tags:
+
+  - id: Storages.Redis.Jedis.Write
+    name: Jedis Redis(Write)
+    domains:
+      - redis.io
+    patterns:
+      - (?i)(redis.clients.jedis.CommandObjects.getset:)(.*)
+      - (?i)(redis.clients.jedis.CommandObjects[.])(m|h|p)?(set)(one|user|range|nx|ex)?(:)(.*)
+    tags:
