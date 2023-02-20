@@ -552,7 +552,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudCodeUpService
     name: Aliyun Cloud CodeUp Service
     domains:
-      - "codeup.aliyun.com/"
+      - "codeup.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]codeup).*"
     tags:
@@ -872,7 +872,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudMarketplace
     name: Aliyun Cloud Marketplace
     domains:
-      - "marketplace.alibabacloud.com/"
+      - "marketplace.alibabacloud.com"
     patterns:
       - "(?i)(com[.]aliyun[.]market).*"
     tags:
