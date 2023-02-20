@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.BitbucketServer
     name: Atlassian Bitbucket Server
     domains:
-      - "bitbucket.atlassian.com"
+      - "bitbucket.org"
     patterns:
       - "(?i)(com[.]atlassian[.]bitbucket[.]server).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.JiraPlugins
     name: Atlassian Jira Plugins
     domains:
-      - "jiraplugins.atlassian.com"
+      - "marketplace.atlassian.com/addons/app/jira"
     patterns:
       - "(?i)(com[.]atlassian[.]jira[.]plugins).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.JiraREST
     name: Atlassian Jira REST
     domains:
-      - "jirarest.atlassian.com"
+      - "developer.atlassian.com/cloud/jira/platform/rest"
     patterns:
       - "(?i)(com[.]atlassian[.]jira[.]rest).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.RM
     name: Atlassian RM
     domains:
-      - "rm.atlassian.com"
+      - "atlassian.com/rm"
     patterns:
       - "(?i)(com[.]atlassian[.]rm).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.Confluence
     name: Atlassian Confluence
     domains:
-      - "confluence.atlassian.com"
+      - "atlassian.com/software/confluence"
     patterns:
       - "(?i)(com[.]atlassian[.]confluence).*"
     tags:
@@ -47,23 +47,55 @@ sinks:
   - id: ThirdParties.SDK.Atlassian.Crowd
     name: Atlassian Crowd
     domains:
-      - "crowd.atlassian.com"
+      - "atlassian.com/software/crowd"
     patterns:
       - "(?i)(com[.]atlassian[.]crowd).*"
     tags:
 
-  - id: ThirdParties.SDK.Atlassian.Connect
-    name: Atlassian Connect
+  - id: ThirdParties.SDK.Atlassian.Trello
+    name: Atlassian Trello
     domains:
-      - "connect.atlassian.com"
+      - "trello.com"
     patterns:
-      - "(?i)(com[.]atlassian[.]connect).*"
+      - "(?i)(com[.]trello).*"
     tags:
 
-  - id: ThirdParties.SDK.Atlassian.Stash
-    name: Atlassian Stash
+  - id: ThirdParties.SDK.Atlassian.Bamboo
+    name: Atlassian Bamboo
     domains:
-      - "stash.atlassian.com"
+      - "atlassian.com/software/bamboo"
     patterns:
-      - "(?i)(com[.]atlassian[.]stash).*"
+      - "(?i)(com[.]atlassian[.]bamboo).*"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Fisheye
+    name: Atlassian Fisheye
+    domains:
+      - "atlassian.com/software/fisheye"
+    patterns:
+      - "(?i)(com[.]atlassian[.]fisheye).*"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Crucible
+    name: Atlassian Crucible
+    domains:
+      - "atlassian.com/software/crucible"
+    patterns:
+      - "(?i)(com[.]atlassian[.]crucible).*"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Access
+    name: Atlassian Access
+    domains:
+      - "atlassian.com/software/access"
+    patterns:
+      - "(?i)(com[.]atlassian[.]access).*"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Opsgenie
+    name: Atlassian Opsgenie
+    domains:
+      - "atlassian.com/software/opsgenie"
+    patterns:
+      - "(?i)(com[.]atlassian[.]opsgenie).*"
     tags:

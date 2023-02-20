@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.BlazeDS
     name: Adobe BlazeDS
     domains:
-      - "blazeds.adobe.com"
+      - "opensource.adobe.com/projects/blazeds"
     patterns:
       - "(?i)(com[.]adobe[.]blazeds).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Cairngorm
     name: Adobe Cairngorm
     domains:
-      - "cairngorm.adobe.com"
+      - "cairngormdocs.org"
     patterns:
       - "(?i)(com[.]adobe[.]cairngorm).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Social
     name: Adobe Social
     domains:
-      - "social.adobe.com"
+      - "adobe.com/in/creativecloud/social-media"
     patterns:
       - "(?i)(com[.]adobe[.]cq[.]social).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Robotlegs
     name: Adobe Robotlegs
     domains:
-      - "robotlegs.adobe.com"
+      - "robotlegs.github.io/robotlegs-framework"
     patterns:
       - "(?i)(com[.]adobe[.]robotlegs).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Parsley
     name: Adobe Parsley
     domains:
-      - "parsley.adobe.com"
+      - "developer.adobe.com/parsley"
     patterns:
       - "(?i)(com[.]adobe[.]parsley).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Mate
     name: Adobe Mate
     domains:
-      - "mate.adobe.com"
+      - "mate.asfusion.com"
     patterns:
       - "(?i)(com[.]adobe[.]mate).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Swiz
     name: Adobe Swiz
     domains:
-      - "swiz.adobe.com"
+      - "swizframework.org"
     patterns:
       - "(?i)(com[.]adobe[.]swiz).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.IdentityServices
     name: Adobe Identity Services
     domains:
-      - "identityservices.adobe.com"
+      - "developer.adobe.com/identity-services"
     patterns:
       - "(?i)(com[.]adobe[.]marketing[.]mobile[.]identity).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.AudienceManager
     name: Adobe Audience Manager
     domains:
-      - "audiencemanager.adobe.com"
+      - "developer.adobe.com/audience-manager"
     patterns:
       - "(?i)(com[.]adobe[.]marketing[.]mobile[.]audiencemanager|com[.]adobe[.]audiencemanager).*"
     tags:
@@ -79,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.MarketingCloudAnalytics
     name: Adobe Marketing Cloud Analytics
     domains:
-      - "marketingcloudanalytics.adobe.com"
+      - "developer.adobe.com/analytics-apis"
     patterns:
       - "(?i)(com[.]adobe[.]marketing[.]mobile[.]analytics).*"
     tags:
@@ -87,7 +87,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Campaign
     name: Adobe Campaign
     domains:
-      - "campaign.adobe.com"
+      - "experienceleague.adobe.com/docs/campaign-standard"
     patterns:
       - "(?i)(com[.]adobe[.]marketing[.]mobile[.]campaign|com[.]adobe[.]campaign).*"
     tags:
@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Target
     name: Adobe Target
     domains:
-      - "target.adobe.com"
+      - "developer.adobe.com/target"
     patterns:
       - "(?i)(com[.]adobe[.]marketing[.]mobile[.]target|com[.]adobe[.]target).*"
     tags:
@@ -103,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Signal
     name: Adobe Signal
     domains:
-      - "signal.adobe.com"
+      - "adobe.com/signal"
     patterns:
       - "(?i)(com[.]adobe[.]marketing[.]mobile[.]signal).*"
     tags:
@@ -111,7 +111,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.AEM
     name: Adobe AEM
     domains:
-      - "aem.adobe.com"
+      - "adobe.com/experience-manager"
     patterns:
       - "(?i)(com[.]adobe[.]aem).*"
     tags:
@@ -119,7 +119,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Flex
     name: Adobe Flex
     domains:
-      - "flex.adobe.com"
+      - "adobe.com/products/flex"
     patterns:
       - "(?i)(com[.]adobe[.]flex).*"
     tags:
@@ -127,7 +127,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Granite
     name: Adobe Granite
     domains:
-      - "granite.adobe.com"
+      - "adobe.com/granite"
     patterns:
       - "(?i)(com[.]adobe[.]granite).*"
     tags:
@@ -135,7 +135,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.ExtensibleMetadataPlatform
     name: Adobe Extensible Metadata Platform
     domains:
-      - "extensiblemetadataplatform.adobe.com"
+      - "adobe.com/xmp"
     patterns:
       - "(?i)(com[.]adobe[.]xmp).*"
     tags:
@@ -143,7 +143,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Analytics
     name: Adobe Analytics
     domains:
-      - "analytics.adobe.com"
+      - "developer.adobe.com/analytics-apis"
     patterns:
       - "(?i)(com[.]adobe[.]analytics).*"
     tags:
@@ -151,7 +151,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.CreativeCloud
     name: Adobe Creative Cloud
     domains:
-      - "creativecloud.adobe.com"
+      - "adobe.com/in/creativecloud"
     patterns:
       - "(?i)(com[.]adobe[.]creativesdk|com[.]adobe[.]creativecloud).*"
     tags:
@@ -159,7 +159,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.DocumentCloud
     name: Adobe Document Cloud
     domains:
-      - "documentcloud.adobe.com"
+      - "developer.adobe.com/document-services/homepage"
     patterns:
       - "(?i)(com[.]adobe[.]dc|com[.]adobe[.]documentcloud).*"
     tags:
@@ -167,7 +167,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.ExperienceCloud
     name: Adobe Experience Cloud
     domains:
-      - "experiencecloud.adobe.com"
+      - "developer.adobe.com/experience-platform"
     patterns:
       - "(?i)(com[.]adobe[.]experiencecloud).*"
     tags:
@@ -175,7 +175,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Stock
     name: Adobe Stock
     domains:
-      - "stock.adobe.com"
+      - "developer.adobe.com/stock"
     patterns:
       - "(?i)(com[.]adobe[.]stock).*"
     tags:
@@ -183,7 +183,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.XD
     name: Adobe XD
     domains:
-      - "xd.adobe.com"
+      - "www.adobe.com/products/xd"
     patterns:
       - "(?i)(com[.]adobe[.]xd).*"
     tags:
@@ -191,7 +191,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.PremiereRush
     name: Adobe PremiereRush
     domains:
-      - "premiererush.adobe.com"
+      - "adobe.com/in/products/premiere-rush"
     patterns:
       - "(?i)(com[.]adobe[.]premiererush).*"
     tags:
@@ -199,7 +199,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Acrobat
     name: Adobe Acrobat
     domains:
-      - "acrobat.adobe.com"
+      - "adobe.com/in/acrobat"
     patterns:
       - "(?i)(com[.]adobe[.]acrobat).*"
     tags:
@@ -207,7 +207,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.Sensei
     name: Adobe Sensei
     domains:
-      - "sensei.adobe.com"
+      - "adobe.com/in/sensei"
     patterns:
       - "(?i)(com[.]adobe[.]sensei).*"
     tags:
