@@ -869,14 +869,6 @@ sinks:
       - "(?i)(com[.]aliyun[.]market).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.MessageHub
-    name: Aliyun Message Hub
-    domains:
-      - "alibabacloud.com/product/message-service"
-    patterns:
-      - "(?i)().*"
-    tags:
-
   - id: ThirdParties.SDK.Aliyun.MobileOpenPlatform
     name: Aliyun Mobile Open Platform
     domains:
@@ -963,14 +955,6 @@ sinks:
       - "openmessagingservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]oms).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.OpenNotificationService
-    name: Aliyun Open Notification Service
-    domains:
-      - "opennotificationservice.aliyun.com"
-    patterns:
-      - "(?i)().*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.OperationOrchestrationService
