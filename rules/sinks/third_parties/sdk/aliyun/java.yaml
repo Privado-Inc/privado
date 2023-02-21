@@ -233,7 +233,7 @@ sinks:
     domains:
       - "alibabacloud.com/product/table-store"
     patterns:
-      - "(?i)(com[.]aliyun[.]tablestore|com[.]aliyun[.]ots)).*"
+      - "(?i)(com[.]aliyun[.]tablestore|com[.]aliyun[.]ots).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.IoT
