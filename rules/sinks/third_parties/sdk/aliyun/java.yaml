@@ -9,7 +9,7 @@ sinks:
     domains:
       - "alibabacloud.com/product/message-service"
     patterns:
-      - "(?i)(com[.]aliyun[.]mns).*"
+      - "(?i)(com[.]aliyun[.]mns|com[.]aliyun[.]mhub|com[.]aliyun[.]ons|com[.]aliyun[.]oms).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.ObjectStorageService
@@ -121,7 +121,7 @@ sinks:
     domains:
       - "alibabacloud.com/product/machine-learning"
     patterns:
-      - "(?i)(com[.]aliyun[.]pai).*"
+      - "(?i)(com[.]aliyun[.]pai|com[.]aliyun[.]paistudio|com[.]aliyun[.]paielasticdatasetaccelerator).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.PersonalizedRecommendation
@@ -137,7 +137,7 @@ sinks:
     domains:
       - "alibabacloud.com/product/intelligent-speech-interaction"
     patterns:
-      - "(?i)(com[.]aliyun[.]speech|com[.]aliyun[.]asr|com[.]aliyun[.]stt|com[.]aliyun[.]tts|com[.]aliyun[.]dlt).*"
+      - "(?i)(com[.]aliyun[.]speech|com[.]aliyun[.]asr|com[.]aliyun[.]stt|com[.]aliyun[.]tts|com[.]aliyun[.]dlt|com[.]aliyun[.]dyvms).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.ImageSearch
@@ -464,7 +464,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.BillingandSubscription
     name: Aliyun Billing and Subscription
     domains:
-      - "billingandsubscription.aliyun.com"
+      - "alibabacloud.com/help/en/bss-openapi"
     patterns:
       - "(?i)(com[.]aliyun[.]bss).*"
     tags:
@@ -520,7 +520,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CloudAuthService
     name: Aliyun CloudAuth Service
     domains:
-      - ""
+      - "cloudauthservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudauth).*"
     tags:
@@ -645,18 +645,10 @@ sinks:
       - "(?i)(com[.]aliyun[.]dysmsapi).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.VoiceMessagingService
-    name: Aliyun Voice Messaging Service
+  - id: ThirdParties.SDK.Aliyun.ElasticAcceleratedComputingInstance
+    name: Aliyun Elastic Accelerated Computing Instances
     domains:
-      - "voicemessagingservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]dyvms).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.EnterpriseApplicationIntegration
-    name: Aliyun Enterprise Application Integration
-    domains:
-      - "enterpriseapplicationintegration.aliyun.com"
+      - "cn.aliyun.com/product/ecs/eais"
     patterns:
       - "(?i)(com[.]aliyun[.]eais).*"
     tags:
@@ -882,7 +874,7 @@ sinks:
     domains:
       - "alibabacloud.com/product/message-service"
     patterns:
-      - "(?i)(com[.]aliyun[.]mhub).*"
+      - "(?i)().*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.MobileOpenPlatform
@@ -952,7 +944,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OpticalCharacterRecognition
     name: Aliyun Optical Character Recognition
     domains:
-      - "opticalcharacterrecognition.aliyun.com"
+      - "ai.aliyun.com/ocr"
     patterns:
       - "(?i)(com[.]aliyun[.]ocr).*"
     tags:
@@ -978,7 +970,7 @@ sinks:
     domains:
       - "opennotificationservice.aliyun.com"
     patterns:
-      - "(?i)(com[.]aliyun[.]ons).*"
+      - "(?i)().*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.OperationOrchestrationService
@@ -1003,22 +995,6 @@ sinks:
       - "outboundbotservice.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]outboundbot).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.PAIElasticDataSetAccelerator
-    name: Aliyun PAI Elastic DataSet Accelerator
-    domains:
-      - "paielasticdatasetaccelerator.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]paielasticdatasetaccelerator).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.PAIStudioService
-    name: Aliyun PAI
-    domains:
-      - "paistudioservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]paistudio).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.PetaData
@@ -1064,7 +1040,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RapidDevelopmentConsole
     name: Aliyun Rapid Development Console
     domains:
-      - "rapiddevelopmentconsole.aliyun.com"
+      - "cn.aliyun.com/product/rdc"
     patterns:
       - "(?i)(com[.]aliyun[.]rdc).*"
     tags:
@@ -1088,7 +1064,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RobotStudios
     name: Aliyun Robot Studios
     domains:
-      - "robotstudios.aliyun.com"
+      - "alibabacloud.com/product/rpa"
     patterns:
       - "(?i)(com[.]aliyun[.]robotstudios).*"
     tags:
@@ -1096,7 +1072,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RoboticOperatingSystem
     name: Aliyun Robotic Operating System
     domains:
-      - "roboticoperatingsystem.aliyun.com"
+      - "roboticos.aliyun.com"
     patterns:
       - "(?i)(com[.]aliyun[.]ros).*"
     tags:
@@ -1104,7 +1080,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RealTimeCommunication
     name: Aliyun RealTime Communication
     domains:
-      - "realtimecommunication.aliyun.com"
+      - "cn.aliyun.com/product/rtc"
     patterns:
       - "(?i)(com[.]aliyun[.]rtc).*"
     tags:
@@ -1112,7 +1088,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SimpleApplicationEngine
     name: Aliyun Simple Application Engine
     domains:
-      - "simpleapplicationengine.aliyun.com"
+      - "alibabacloud.com/product/severless-application-engine"
     patterns:
       - "(?i)(com[.]aliyun[.]sae|com[.]aliyun[.]sar).*"
     tags:
@@ -1128,7 +1104,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SmartDataDiscoveryAndProtection
     name: Aliyun Smart Data Discovery And Protection
     domains:
-      - "smartdatadiscoveryandprotection.aliyun.com"
+      - "alibabacloud.com/product/sddp"
     patterns:
       - "(?i)(com[.]aliyun[.]sddp).*"
     tags:
@@ -1152,7 +1128,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.SecurityTokenService
     name: Aliyun Security Token Service
     domains:
-      - "securitytokenservice.aliyun.com"
+      - "alibabacloud.com/help/en/resource-access-management/latest/what-is-sts"
     patterns:
       - "(?i)(com[.]aliyun[.]sts).*"
     tags:
