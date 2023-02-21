@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Hashicorp.Nomad
     name: Hashicorp Nomad
     domains:
-      - "nomad.hashicorp.com"
+      - "nomadproject.io"
     patterns:
       - "(?i)(com[.]hashicorp[.]nomad).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Hashicorp.Terraform
     name: Hashicorp Terraform
     domains:
-      - "terraform.hashicorp.com"
+      - "terraform.io"
     patterns:
       - "(?i)(com[.]hashicorp[.]terraform).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Hashicorp.Vault
     name: Hashicorp Vault
     domains:
-      - "vault.hashicorp.com"
+      - "vaultproject.io"
     patterns:
       - "(?i)(com[.]hashicorp[.]vault).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Hashicorp.Consul
     name: Hashicorp Consul
     domains:
-      - "consul.hashicorp.com"
+      - "consul.io"
     patterns:
       - "(?i)(com[.]hashicorp[.]consul).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Hashicorp.Packer
     name: Hashicorp Packer
     domains:
-      - "packer.hashicorp.com"
+      - "packer.io"
     patterns:
       - "(?i)(com[.]hashicorp[.]packer).*"
     tags:
