@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Auth
     name: Oracle Auth
     domains:
-      - "oracle.com/"
+      - "oracle.com/in/security/cloud-security/identity-cloud/"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]auth).*"
     tags:
@@ -103,17 +103,9 @@ sinks:
   - id: ThirdParties.SDK.Oracle.CircuitBreaker
     name: Oracle CircuitBreaker
     domains:
-      - "oracle.com/"
+      - "docs.oracle.com/cd/E86025_01/html/E86027/gnzqd.html/"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]circuitbreaker).*"
-    tags:
-
-  - id: ThirdParties.SDK.Oracle.Common
-    name: Oracle Common
-    domains:
-      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/common"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]common).*"
     tags:
 
   - id: ThirdParties.SDK.Oracle.Encryption
@@ -124,28 +116,12 @@ sinks:
       - "(?i)(com[.]oracle[.]bmc[.]encryption).*"
     tags:
 
-  - id: ThirdParties.SDK.Oracle.Helper
-    name: Oracle Helper
-    domains:
-      - "oracle-help.com/"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]helper).*"
-    tags:
-
   - id: ThirdParties.SDK.Oracle.HTTP
     name: Oracle HTTP
     domains:
-      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/http"
+      - "docs.oracle.com/cd/E28280_01/web.1111/e10144/intro_ohs.htm"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]http).*"
-    tags:
-
-  - id: ThirdParties.SDK.Oracle.Internal
-    name: Oracle Internal
-    domains:
-      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/internal"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]internal).*"
     tags:
 
   - id: ThirdParties.SDK.Oracle.Model
@@ -154,14 +130,6 @@ sinks:
       - "oracle.com/in/database/sqldeveloper/technologies/sql-data-modeler/"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]model).*"
-    tags:
-    
-  - id: ThirdParties.SDK.Oracle.Waiter
-    name: Oracle Waiter
-    domains:
-      - "oracle.com/"
-    patterns:
-      - "(?i)(com[.]oracle[.]bmc[.]waiter).*"
     tags:
 
   - id: ThirdParties.SDK.Oracle.ResourceSearch
@@ -175,7 +143,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.KeyManagement
     name: Oracle Key Management
     domains:
-      - ".oracle.com/en-us/iaas/Content/KeyManagement/"
+      - "oracle.com/en-us/iaas/Content/KeyManagement/"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]keymanagement).*"
     tags:
@@ -183,7 +151,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.AnnouncementsService
     name: Oracle Announcements Service
     domains:
-      - ".oracle.com/"
+      - "docs.oracle.com/en-us/iaas/Content/General/Concepts/announcements.htm"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]announcementsservice).*"
     tags:
@@ -199,7 +167,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Waas
     name: Oracle Waas
     domains:
-      - ".oracle.com/en-us/iaas/pl-sql-sdk/doc/dbms_cloud_oci_ws_waas."
+      - "docs.oracle.com/en-us/iaas/pl-sql-sdk/doc/waas-package.html"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]waas).*"
     tags:
@@ -223,7 +191,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Ons
     name: Oracle Ons
     domains:
-      - "oracle.com/"
+      - "docs.oracle.com/en-us/iaas/pl-sql-sdk/doc/ons-package.html"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]ons).*"
     tags:
@@ -231,7 +199,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Autoscaling
     name: Oracle Autoscaling
     domains:
-      - "oracle.com/"
+      - "docs.oracle.com/en-us/iaas/Content/Compute/Tasks/autoscalinginstancepools.htm"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]autoscaling).*"
     tags:
@@ -263,7 +231,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Oce
     name: Oracle Oce
     domains:
-      - "oracle.com/database/technologies/oraclecertificationenvironment."
+      - "oracle.com/database/technologies/oraclecertificationenvironment"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]oce).*"
     tags:
@@ -271,7 +239,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Oda
     name: Oracle Oda
     domains:
-      - "oracle.com/database/technologies/database-appliance."
+      - "oracle.com/database/technologies/database-appliance"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]oda).*"
     tags:
@@ -295,7 +263,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.OsManagement
     name: Oracle OsManagement
     domains:
-      - ".oracle.com/en-us/iaas/os-management/home."
+      - "oracle.com/en-us/iaas/os-management/home/"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]osmanagement).*"
     tags:
@@ -311,7 +279,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Apigateway
     name: Oracle Apigateway
     domains:
-      - ".oracle.com/en-us/iaas/Content/APIGateway/Concepts/apigatewayoverview."
+      - "oracle.com/en-us/iaas/Content/APIGateway/Concepts/apigatewayoverview"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]apigateway).*"
     tags:
@@ -319,7 +287,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.ApplicationMigration
     name: Oracle Application Migration
     domains:
-      - ".oracle.com/en-us/iaas/application-migration/home."
+      - "oracle.com/en-us/iaas/application-migration/home"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]applicationmigration).*"
     tags:
@@ -359,7 +327,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Secrets
     name: Oracle Secrets
     domains:
-      - ".oracle.com/en-us/iaas/Content/KeyManagement/Tasks/managingsecrets"
+      - "oracle.com/en-us/iaas/Content/KeyManagement/Tasks/managingsecrets"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]secrets).*"
     tags:
@@ -383,7 +351,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Cims
     name: Oracle Cims
     domains:
-      - ".oracle.com/en-us/iaas/pl-sql-sdk/doc/cims-package."
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/cims-package"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]cims).*"
     tags:
@@ -407,7 +375,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.DataIntegration
     name: Oracle DataIntegration
     domains:
-      - "oracle.com/middleware/technologies/data-integration."
+      - "oracle.com/middleware/technologies/data-integration"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]dataintegration).*"
     tags:
@@ -415,7 +383,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Ocvp
     name: Oracle Ocvp
     domains:
-      - ".oracle.com/en-us/iaas/pl-sql-sdk/doc/ocvp-package."
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/ocvp-package"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]ocvp).*"
     tags:
@@ -431,7 +399,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Logging
     name: Oracle Logging
     domains:
-      - ".oracle.com/en-us/iaas/Content/Logging/Concepts/logging"
+      - "oracle.com/en-us/iaas/Content/Logging/Concepts/logging"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]logging).*"
     tags:
@@ -439,7 +407,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.LogAnalytics
     name: Oracle Log Analytics
     domains:
-      - ".oracle.com/en-us/iaas/logging-analytics/index."
+      - "oracle.com/en-us/iaas/logging-analytics/index"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]loganalytics).*"
     tags:
@@ -463,7 +431,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Opsi
     name: Oracle Opsi
     domains:
-      - ".oracle.com/en-us/iaas/pl-sql-sdk/doc/opsi-operations-insights-package."
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/opsi-operations-insights-package"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]opsi).*"
     tags:
@@ -471,7 +439,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.ComputeInstanceAgent
     name: Oracle Compute Instance Agent
     domains:
-      - ".oracle.com/en-us/iaas/Content/Compute/Concepts/computeoverview."
+      - "oracle.com/en-us/iaas/Content/Compute/Concepts/computeoverview"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]computeinstanceagent).*"
     tags:
@@ -479,7 +447,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Optimizer
     name: Oracle Optimizer
     domains:
-      - "oracle.com/database/technologies/dbbi-tech-info-optmztn."
+      - "oracle.com/database/technologies/dbbi-tech-info-optmztn"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]optimizer).*"
     tags:
@@ -495,7 +463,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Artifacts
     name: Oracle Artifacts
     domains:
-      - ".oracle.com/en-us/iaas/Content/artifacts/overview."
+      - "oracle.com/en-us/iaas/Content/artifacts/overview"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]artifacts).*"
     tags:
@@ -519,7 +487,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.NetworkLoadBalancer
     name: Oracle Network Load Balancer
     domains:
-      - ".oracle.com/en-us/iaas/Content/NetworkLoadBalancer/home."
+      - "oracle.com/en-us/iaas/Content/NetworkLoadBalancer/home"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]networkloadbalancer).*"
     tags:
@@ -535,7 +503,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.ServiceCatalog
     name: Oracle Service Catalog
     domains:
-      - ".oracle.com/en-us/iaas/Content/Marketplace/Tasks/servicecatalog."
+      - "oracle.com/en-us/iaas/Content/Marketplace/Tasks/servicecatalog"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]servicecatalog).*"
     tags:
@@ -559,7 +527,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Jms
     name: Oracle Jms
     domains:
-      - "oracle.com/technical-resources/articles/java/intro-java-message-service."
+      - "oracle.com/technical-resources/articles/java/intro-java-message-service"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]jms).*"
     tags:
@@ -783,7 +751,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.AiDocument
     name: Oracle Ai Document
     domains:
-      - "https://www.oracle.com/in/artificial-intelligence/document-understanding"
+      - "oracle.com/in/artificial-intelligence/document-understanding"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]aidocument).*"
     tags:
@@ -791,7 +759,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Queue
     name: Oracle Queue
     domains:
-      - "https://docs.oracle.com/database/121/ADQUE"
+      - "docs.oracle.com/database/121/ADQUE"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]queue).*"
     tags:

@@ -183,7 +183,7 @@ sinks:
   - id: ThirdParties.SDK.Adobe.XD
     name: Adobe XD
     domains:
-      - "www.adobe.com/products/xd"
+      - "adobe.com/products/xd"
     patterns:
       - "(?i)(com[.]adobe[.]xd).*"
     tags:

@@ -799,7 +799,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Honeycode
     name: Amazonaws Honeycode
     domains:
-      - "www.honeycode.aws/"
+      - "honeycode.aws/"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]honeycode).*"
     tags:
@@ -975,7 +975,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.KafkaConnect
     name: Amazonaws Kafka Connect
     domains:
-      - "www.amazonaws.cn/en/msk/"
+      - "amazonaws.cn/en/msk/"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]kafkaconnect).*"
     tags:
