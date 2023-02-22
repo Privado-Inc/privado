@@ -82,6 +82,7 @@ sinks:
       - "alibabacloud.com/product/quickbi"
     patterns:
       - "(?i)(com[.]aliyun[.]quickbi).*"
+      - "(?i)(com[.]aliyun[.]foas).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.DataV
@@ -114,6 +115,7 @@ sinks:
       - "alibabacloud.com/product/log-service"
     patterns:
       - "(?i)(com[.]aliyun[.]sls|com[.]aliyun[.]log).*"
+      - "(?i)(com[.]aliyun[.]geoip).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.MachineLearningPlatform
@@ -146,6 +148,10 @@ sinks:
       - "alibabacloud.com/product/imagesearch"
     patterns:
       - "(?i)(com[.]aliyun[.]imagesearch).*"
+      - "(?i)(com[.]aliyun[.]imagerecog).*"
+      - "(?i)(com[.]aliyun[.]imageprocess).*"
+      - "(?i)(com[.]aliyun[.]imageenhan).*"
+      - "(?i)(com[.]aliyun[.]imageseg).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.VideoIntelligence
@@ -341,14 +347,6 @@ sinks:
       - "(?i)(com[.]aliyun[.]adb).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.AddressPurification
-    name: Aliyun Address Purification
-    domains:
-      - "addresspurification.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]addresspurification).*"
-    tags:
-
   - id: ThirdParties.SDK.Aliyun.Aegis
     name: Aliyun Aegis
     domains:
@@ -363,14 +361,6 @@ sinks:
       - "alibabacloud.com/product/fraud-detection"
     patterns:
       - "(?i)(com[.]aliyun[.]afs).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.AccessAuditingService
-    name: Aliyun Access Auditing Service
-    domains:
-      - "accessauditingservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]aas).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.CustomerCareService
@@ -427,12 +417,14 @@ sinks:
       - "alibabacloud.com/product/ddos"
     patterns:
       - "(?i)(com[.]aliyun[.]antiddospublic).*"
+      - "(?i)(com[.]aliyun[.]addresspurification).*"
+      - "(?i)(com[.]aliyun[.]aas).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.AppStreamCenter
     name: Aliyun AppStreamCenter
     domains:
-      - "appstreamcenter.aliyun.com"
+      - "alibabacloud.com/solutions/multimedia/livestreaming"
     patterns:
       - "(?i)(com[.]aliyun[.]appstreamcenter).*"
     tags:
@@ -488,7 +480,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.CCS
     name: Aliyun CCS
     domains:
-      - "ccs.aliyun.com"
+      - "alibabacloud.com/customers/clouder-cc"
     patterns:
       - "(?i)(com[.]aliyun[.]ccs).*"
     tags:
@@ -515,14 +507,6 @@ sinks:
       - "alibabacloud.com/product/api-gateway"
     patterns:
       - "(?i)(com[.]aliyun[.]cloudapi).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.CloudAuthService
-    name: Aliyun CloudAuth Service
-    domains:
-      - "cloudauthservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]cloudauth).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.CloudGameService
@@ -597,12 +581,14 @@ sinks:
       - "(?i)(com[.]aliyun[.]dcdn).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.DomainDataIntelligence
-    name: Aliyun Domain Data Intelligence
+  - id: ThirdParties.SDK.Aliyun.DataIntelligence
+    name: Aliyun Data Intelligence
     domains:
-      - "domaindataintelligence.aliyun.com"
+      - "alibabacloud.com/solutions/ai/data-intelligence"
     patterns:
       - "(?i)(com[.]aliyun[.]ddi).*"
+      - "(?i)(com[.]aliyun[.]itaas).*"
+      - "(?i)(com[.]aliyun[.]visionai).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.DatabaseService
@@ -693,36 +679,12 @@ sinks:
       - "(?i)(com[.]aliyun[.]es|com[.]aliyun[.]elasticsearch).*"
     tags:
 
-  - id: ThirdParties.SDK.Aliyun.FastOpenAnalyticsService
-    name: Aliyun Fast Open Analytics Service
-    domains:
-      - "fastopenanalyticsservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]foas).*"
-    tags:
-
   - id: ThirdParties.SDK.Aliyun.FileStorageService
     name: Aliyun File Storage Service
     domains:
       - "alibabacloud.com/product/nas"
     patterns:
       - "(?i)(com[.]aliyun[.]fss|com[.]aliyun[.]efs|com[.]aliyun[.]nas).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.GeoIP
-    name: Aliyun GeoIP
-    domains:
-      - "geoip.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]geoip).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.GlobalTimeSeries
-    name: Aliyun Global Time Series
-    domains:
-      - "globaltimeseries.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]gts).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.HBase
@@ -755,6 +717,7 @@ sinks:
       - "alibabacloud.com/product/hitsdb"
     patterns:
       - "(?i)(com[.]aliyun[.]hitsdb).*"
+      - "(?i)(com[.]aliyun[.]gts).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.HardwareSecurityModule
@@ -779,6 +742,7 @@ sinks:
       - "alibabacloud.com/product/identity-as-a-service-idaas"
     patterns:
       - "(?i)(com[.]aliyun[.]idaas).*"
+      - "(?i)(com[.]aliyun[.]cloudauth).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.ImageAuditService
@@ -787,46 +751,6 @@ sinks:
       - "alibabacloud.com/product/content-moderation"
     patterns:
       - "(?i)(com[.]aliyun[.]imageaudit).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.ImageEnhancementService
-    name: Aliyun Image Enhancement service
-    domains:
-      - "imageenhancementservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]imageenhan).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.ImageProcessService
-    name: Aliyun Image Process Service
-    domains:
-      - "imageprocessservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]imageprocess).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.ImageRecognition
-    name: Aliyun Image Recognition
-    domains:
-      - "imagerecognition.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]imagerecog).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.ImageSegmentation
-    name: Aliyun Image Segmentation
-    domains:
-      - "imagesegmentation.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]imageseg).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.IntelligentTestingAsAService
-    name: Aliyun Intelligent Testing as a Service
-    domains:
-      - "intelligenttestingasaservice.aliyun.com"
-    patterns:
-      - "(?i)(com[.]aliyun[.]itaas).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.ImageAndVideoProcessingService
@@ -936,7 +860,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ObjectDetectionService
     name: Aliyun Object Detection Service
     domains:
-      - "objectdetectionservice.aliyun.com"
+      - "alibabacloud.com/help/en/machine-learning-platform-for-ai/latest/object-detection"
     patterns:
       - "(?i)(com[.]aliyun[.]objectdet).*"
     tags:
@@ -952,7 +876,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.ObjectCacheService
     name: Aliyun Object Cache Service
     domains:
-      - "objectcacheservice.aliyun.com"
+      - "alibabacloud.com/help/en/object-storage-service"
     patterns:
       - "(?i)(com[.]aliyun[.]ocs).*"
     tags:
@@ -992,7 +916,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.OutboundbotService
     name: Aliyun Outboundbot Service
     domains:
-      - "outboundbotservice.aliyun.com"
+      - "alibabacloud.com/product/bot"
     patterns:
       - "(?i)(com[.]aliyun[.]outboundbot).*"
     tags:
@@ -1000,7 +924,7 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.PetaData
     name: Aliyun PetaData
     domains:
-      - "petadata.aliyun.com"
+      - "alibabacloud.com/help/en/petadata/latest/3d262b"
     patterns:
       - "(?i)(com[.]aliyun[.]petadata).*"
     tags:
@@ -1048,33 +972,19 @@ sinks:
   - id: ThirdParties.SDK.Aliyun.RetailCloud
     name: Aliyun RetailCloud
     domains:
-      - "retailcloud.aliyun.com"
+      - "alibabacloud.com/solutions/retail"
     patterns:
       - "(?i)(com[.]aliyun[.]retailcloud).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.RetailIR
-    name: Aliyun RetailIR
-    domains:
-      - "retailir.aliyun.com"
-    patterns:
       - "(?i)(com[.]aliyun[.]retailir).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.RobotStudios
-    name: Aliyun Robot Studios
-    domains:
-      - "alibabacloud.com/product/rpa"
-    patterns:
-      - "(?i)(com[.]aliyun[.]robotstudios).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.RoboticOperatingSystem
     name: Aliyun Robotic Operating System
     domains:
-      - "roboticos.aliyun.com"
+      - "alibabacloud.com/product/rpa"
     patterns:
       - "(?i)(com[.]aliyun[.]ros).*"
+      - "(?i)(com[.]aliyun[.]robotstudios).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.RealTimeCommunication
@@ -1139,14 +1049,6 @@ sinks:
       - "alibabacloud.com/product/swas"
     patterns:
       - "(?i)(com[.]aliyun[.]swas).*"
-    tags:
-
-  - id: ThirdParties.SDK.Aliyun.VisionAI
-    name: Aliyun Vision AI
-    domains:
-      - "alibabacloud.com/solutions/ai/data-intelligence"
-    patterns:
-      - "(?i)(com[.]aliyun[.]visionai).*"
     tags:
 
   - id: ThirdParties.SDK.Aliyun.VOD
