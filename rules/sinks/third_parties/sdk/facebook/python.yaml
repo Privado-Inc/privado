@@ -17,5 +17,5 @@ sinks:
     domains:
       - "whatsapp.com"
     patterns:
-      - "(?i)(listenclosely_whatsapp|whatsapp_cli|whatsapp_web|whatsapp_assistant|ongair_whatsapp|whatsapp_converter|cm_whatsapp|sl_whatsapp|whatsapp_api|botbuilder.sangam.twilio.whatsapp|alas_ce0_whatsapp|social).*"
+      - "(?i)(listenclosely_whatsapp|whatsapp_cli|whatsapp_web|whatsapp_assistant|ongair_whatsapp|whatsapp_converter|cm_whatsapp|sl_whatsapp|whatsapp_api|botbuilder.sangam.twilio.whatsapp|alas_ce0_whatsapp).*"
     tags:
