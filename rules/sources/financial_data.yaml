@@ -158,4 +158,3 @@ sources:
       - "(?i).*(insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|insurance[^\\s/(;)#|,=!>]*claim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
     tags:
       law: GDPR
-
