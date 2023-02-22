@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Android
     name: Segment Analytics Android
     domains:
-      - "analyticsandroid.segment.com"
+      - "segment.com/analyticsandroid"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]android|io[.]segment[.]analytics[.]android).*"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Java
     name: Segment Analytics Java
     domains:
-      - "analyticsjava.segment.com"
+      - "segment.com/analyticsjava"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]java).*"
     tags:
@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.API
     name: Segment API
     domains:
-      - "api.segment.com"
+      - "segment.com/api"
     patterns:
       - "(?i)(com[.]segment[.]api).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Internal
     name: Segment Analytics Internal
     domains:
-      - "analyticsinternal.segment.com"
+      - "segment.com/analyticsinternal"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]internal).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Integrations
     name: Segment Analytics Integrations
     domains:
-      - "analyticsintegrations.segment.com"
+      - "segment.com/analyticsintegrations"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]integrations).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Analytics
     name: Segment Analytics
     domains:
-      - "analytics.segment.com"
+      - "segment.com/analytics"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Analytics).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Cartographer
     name: Segment Analytics Cartographer
     domains:
-      - "analyticscartographer.segment.com"
+      - "segment.com/analyticscartographer"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Cartographer).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Crypto
     name: Segment Analytics Crypto
     domains:
-      - "analyticscrypto.segment.com"
+      - "segment.com/analyticscrypto"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Crypto).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.GetDeviceIdTask
     name: Segment Analytics GetDeviceIdTask
     domains:
-      - "analyticsgetdeviceidtask.segment.com"
+      - "segment.com/analyticsgetdeviceidtask"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]GetDeviceIdTask).*"
     tags:
@@ -79,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Options
     name: Segment Analytics Options
     domains:
-      - "analyticsoptions.segment.com"
+      - "segment.com/analyticsoptions"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Options).*"
     tags:
@@ -87,7 +87,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Properties
     name: Segment Analytics Properties
     domains:
-      - "analyticsproperties.segment.com"
+      - "segment.com/analyticsproperties"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Properties).*"
     tags:
@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.QueueFile
     name: Segment Analytics QueueFile
     domains:
-      - "analyticsqueuefile.segment.com"
+      - "segment.com/analyticsqueuefile"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]QueueFile).*"
     tags:
@@ -103,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.Traits
     name: Segment Analytics Traits
     domains:
-      - "analyticstraits.segment.com"
+      - "segment.com/analyticstraits"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]Traits).*"
     tags:
@@ -111,7 +111,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.ValueMap
     name: Segment Analytics ValueMap
     domains:
-      - "analyticsvaluemap.segment.com"
+      - "segment.com/analyticsvaluemap"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]ValueMap).*"
     tags:
@@ -119,7 +119,7 @@ sinks:
   - id: ThirdParties.SDK.Segment.WebhookIntegration
     name: Segment Analytics WebhookIntegration
     domains:
-      - "analyticswebhookintegration.segment.com"
+      - "segment.com/analyticswebhookintegration"
     patterns:
       - "(?i)(com[.]segment[.]analytics[.]WebhookIntegration).*"
     tags:
