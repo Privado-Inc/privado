@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Analytics
     name: Google Analytics
     domains:
-      - "analytics.google.com/"
+      - "analytics.google.com"
     patterns:
       - "(?i)(com[.]google[.]api[.]services[.]analytics|com[.]google[.]android[.]gms[.]analytics).*"
     tags:
@@ -223,7 +223,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Cloud.ServiceUsage
     name: Google Cloud Service Usage
     domains:
-      - "cloud.google.com/service-usage/"
+      - "cloud.google.com/service-usage"
     patterns:
       - "(?i)(com[.]google[.]cloud[.]serviceusage).*"
     tags:
@@ -727,7 +727,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Cloud.Billing
     name: Google Cloud Billing
     domains:
-      - "cloud.google.com/billing/"
+      - "cloud.google.com/billing"
     patterns:
       - "(?i)(com[.]google[.]cloud[.]billing).*"
     tags:
@@ -879,7 +879,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Cloud.Datalab
     name: Google Cloud Datalab
     domains:
-      - "cloud.google.com/datalab/"
+      - "cloud.google.com/datalab"
     patterns:
       - "(?i)(com[.]google[.]cloud[.]datalab).*"
     tags:
@@ -911,7 +911,7 @@ sinks:
   - id: ThirdParties.SDK.Google.DoubleClick
     name: Google DoubleClick
     domains:
-      - "thinkwithgoogle.com/intl/en-apac/marketing-strategies/automation/doubleclick-digital-marketing-platform/"
+      - "thinkwithgoogle.com/intl/en-apac/marketing-strategies/automation/doubleclick-digital-marketing-platform"
     patterns:
       - "(?i)(com[.]google[.]doubleclick).*"
     tags:
@@ -919,7 +919,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Drive
     name: Google Drive
     domains:
-      - "google.com/drive/"
+      - "google.com/drive"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]drive).*"
     tags:
@@ -927,7 +927,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Firebase
     name: Google Firebase
     domains:
-      - "firebase.google.com/"
+      - "firebase.google.com"
     patterns:
       - "(?i)(com[.]google[.]firebase(?![.]crashlytics)|com[.]google[.]android[.]gms[.]measurement).*"
     tags:
@@ -935,7 +935,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Fit
     name: Google Fit
     domains:
-      - "google.com/fit/"
+      - "google.com/fit"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]fitness).*"
     tags:
@@ -951,7 +951,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Location
     name: Google Location Services
     domains:
-      - "mapsplatform.google.com/"
+      - "mapsplatform.google.com"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]location).*"
     tags:
@@ -967,7 +967,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Pay
     name: Google Pay
     domains:
-      - "pay.google.com/"
+      - "pay.google.com"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]pay).*"
     tags:
@@ -975,7 +975,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Play
     name: Google Play Services
     domains:
-      - "play.google.com/"
+      - "play.google.com"
     patterns:
       - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar|com[.]google[.]android[.]gms[.](games|wallet)).*"
     tags:

@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Functions
     name: Microsoft Azure Functions
     domains:
-      - "azure.microsoft.com/en-us/products/functions/"
+      - "azure.microsoft.com/en-us/products/functions"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]functions).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.AppService
     name: Microsoft Azure App Service
     domains:
-      - "azure.microsoft.com/en-us/products/app-service/"
+      - "azure.microsoft.com/en-us/products/app-service"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]appservice).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Compute
     name: Microsoft Azure Compute
     domains:
-      - "azure.microsoft.com/en-us/products/category/compute/"
+      - "azure.microsoft.com/en-us/products/category/compute"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]compute).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.ContainerService
     name: Microsoft Container Service
     domains:
-      - "azure.microsoft.com/en-us/products/category/containers/"
+      - "azure.microsoft.com/en-us/products/category/containers"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]containerservice).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.DNS
     name: Microsoft Azure DNS
     domains:
-      - "azure.microsoft.com/en-us/products/dns/"
+      - "azure.microsoft.com/en-us/products/dns"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]dns).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Healthcare
     name: Microsoft Azure Healthcare
     domains:
-      - "azure.microsoft.com/en-in/solutions/industries/healthcare/"
+      - "azure.microsoft.com/en-in/solutions/industries/healthcare"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]healthcareapis).*"
     tags:
@@ -119,7 +119,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.ResourceHealth
     name: Microsoft Azure Resource Health
     domains:
-      - "azure.microsoft.com/en-in/get-started/azure-portal/service-health/"
+      - "azure.microsoft.com/en-in/get-started/azure-portal/service-health"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]resourcehealth).*"
     tags:
@@ -127,7 +127,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.ResourceManager
     name: Microsoft Azure Resource Manager
     domains:
-      - "azure.microsoft.com/en-us/get-started/azure-portal/resource-manager/"
+      - "azure.microsoft.com/en-us/get-started/azure-portal/resource-manager"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]resources).*"
     tags:
@@ -135,7 +135,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.IoT
     name: Microsoft Azure IoT
     domains:
-      - "azure.microsoft.com/en-in/solutions/iot/"
+      - "azure.microsoft.com/en-in/solutions/iot"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]sdk[.]iot[.]deps|com[.]microsoft[.]azure[.]sdk[.]iot).*"
     tags:
@@ -143,7 +143,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.IoTDeviceProvisioning
     name: Microsoft Azure IoT Device Provisioning
     domains:
-      - "learn.microsoft.com/en-us/azure/iot-dps/"
+      - "learn.microsoft.com/en-us/azure/iot-dps"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]sdk[.]iot[.]provisioning).*"
     tags:
@@ -151,7 +151,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.SpatialAnchors
     name: Microsoft Azure Spatial Anchors
     domains:
-      - "azure.microsoft.com/en-us/products/spatial-anchors/"
+      - "azure.microsoft.com/en-us/products/spatial-anchors"
     patterns:
       - "(?i)(com[.]microsoft[.]azure[.]spatialanchors).*"
     tags:
@@ -167,7 +167,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Windows
     name: Microsoft Azure Windows
     domains:
-      - "azure.microsoft.com/en-us/products/virtual-desktop/"
+      - "azure.microsoft.com/en-us/products/virtual-desktop"
     patterns:
       - "(?i)(com[.]microsoft[.]windowsazure).*"
     tags:
@@ -191,7 +191,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Eventhubs
     name: Microsoft Azure Event Hubs
     domains:
-      - "azure.microsoft.com/en-us/products/event-hubs/"
+      - "azure.microsoft.com/en-us/products/event-hubs"
     patterns:
       - "(?i)(com[.]azure[.]eventhubs).*"
     tags:
@@ -207,7 +207,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.DataFactory
     name: Microsoft Azure Data Factory
     domains:
-      - "azure.microsoft.com/en-us/products/data-factory/"
+      - "azure.microsoft.com/en-us/products/data-factory"
     patterns:
       - "(?i)(com[.]azure[.]datafactory).*"
     tags:
@@ -223,7 +223,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.CognitiveServices
     name: Microsoft Azure Cognitive Services
     domains:
-      - "azure.microsoft.com/en-us/products/cognitive-services/"
+      - "azure.microsoft.com/en-us/products/cognitive-services"
     patterns:
       - "(?i)(com[.]azure[.]cognitiveservices|com[.]azure[.]ai[.]cognitiveservices).*"
     tags:
@@ -255,7 +255,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.CosmosDB
     name: Microsoft Azure Cosmos DB
     domains:
-      - "cosmos.azure.com/"
+      - "cosmos.azure.com"
     patterns:
       - "(?i)(com[.]azure[.]cosmos).*"
     tags:
@@ -271,7 +271,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Search
     name: Microsoft Azure Search
     domains:
-      - "azure.microsoft.com/en-us/products/search/"
+      - "azure.microsoft.com/en-us/products/search"
     patterns:
       - "(?i)(com[.]azure[.]search[.]documents).*"
     tags:
@@ -279,7 +279,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
     name: Microsoft Azure Machine Learning
     domains:
-      - "azure.microsoft.com/en-us/products/machine-learning/"
+      - "azure.microsoft.com/en-us/products/machine-learning"
     patterns:
       - "(?i)(com[.]azure[.]ai[.]metricsadvisor).*"
     tags:
@@ -303,7 +303,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Storage
     name: Microsoft Azure Storage
     domains:
-      - "azure.microsoft.com/en-us/products/category/storage/"
+      - "azure.microsoft.com/en-us/products/category/storage"
     patterns:
       - "(?i)(com[.]azure[.]storage|com[.]microsoft[.]windowsazure[.]storage[.]microsoft-windowsazure-storage-sdk|com[.]microsoft[.]windowsazure[.]storage).*"
     tags:
@@ -311,7 +311,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.IoTHub
     name: Microsoft Azure IoT Hub
     domains:
-      - "azure.microsoft.com/en-in/products/iot-hub/"
+      - "azure.microsoft.com/en-in/products/iot-hub"
     patterns:
       - "(?i)(com[.]azure[.]sdk[.]iot).*"
     tags:
@@ -367,7 +367,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.CommunicationServices
     name: Microsoft Azure Communication Services
     domains:
-      - "azure.microsoft.com/en-us/products/communication-services/"
+      - "azure.microsoft.com/en-us/products/communication-services"
     patterns:
       - "(?i)(com[.]azure[.]communication).*"
     tags:
@@ -375,7 +375,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Speech
     name: Microsoft Azure Speech
     domains:
-      - "azure.microsoft.com/en-us/products/cognitive-services/speech-services/"
+      - "azure.microsoft.com/en-us/products/cognitive-services/speech-services"
     patterns:
       - "(?i)(com[.]azure[.]ai[.]speech).*"
     tags:
@@ -383,7 +383,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.LanguageUnderstanding
     name: Microsoft Azure Language Understanding
     domains:
-      - "azure.microsoft.com/en-us/products/cognitive-services/conversational-language-understanding/"
+      - "azure.microsoft.com/en-us/products/cognitive-services/conversational-language-understanding"
     patterns:
       - "(?i)(com[.]azure[.]ai[.]language).*"
     tags:
@@ -391,7 +391,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.TexttoSpeech
     name: Microsoft Azure Text-to-Speech
     domains:
-      - "azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/"
+      - "azure.microsoft.com/en-us/products/cognitive-services/text-to-speech"
     patterns:
       - "(?i)(com[.]azure[.]ai[.]texttospeech).*"
     tags:
@@ -399,7 +399,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.BotFramework
     name: Microsoft Azure Bot Framework
     domains:
-      - "dev.botframework.com/"
+      - "dev.botframework.com"
     patterns:
       - "(?i)(com[.]azure[.]bot).*"
     tags:
@@ -407,7 +407,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.PersonalData
     name: Microsoft Azure Personal Data
     domains:
-      - "azure.microsoft.com/en-in/privacy-data-management/"
+      - "azure.microsoft.com/en-in/privacy-data-management"
     patterns:
       - "(?i)(com[.]azure[.]personalization).*"
     tags:
@@ -423,7 +423,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Dynamics365
     name: Microsoft Azure Dynamics 365
     domains:
-      - "azure.microsoft.com/en-in/solutions/dynamics/"
+      - "azure.microsoft.com/en-in/solutions/dynamics"
     patterns:
       - "(?i)(com[.]azure[.]dynamics).*"
     tags:
@@ -439,7 +439,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.PowerApps
     name: Microsoft Azure Power Apps
     domains:
-      - "powerapps.microsoft.com/en-in/"
+      - "powerapps.microsoft.com/en-in"
     patterns:
       - "(?i)(com[.]azure[.]powerapps).*"
     tags:
@@ -447,7 +447,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Databricks
     name: Microsoft Azure Databricks
     domains:
-      - "azure.microsoft.com/en-us/products/databricks/"
+      - "azure.microsoft.com/en-us/products/databricks"
     patterns:
       - "(?i)(com[.]azure[.]databricks).*"
     tags:
@@ -455,7 +455,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.TimeSeriesInsights
     name: Microsoft Azure Time Series Insights
     domains:
-      - "azure.microsoft.com/en-us/products/time-series-insights/"
+      - "azure.microsoft.com/en-us/products/time-series-insights"
     patterns:
       - "(?i)(com[.]azure[.]timeseriesinsights).*"
     tags:

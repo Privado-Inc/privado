@@ -23,7 +23,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.ContainerEngine
     name: Oracle ContainerEngine
     domains:
-      - "oracle.com/in/cloud/cloud-native/container-engine-kubernetes/"
+      - "oracle.com/in/cloud/cloud-native/container-engine-kubernetes"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]containerengine).*"
     tags:
@@ -31,7 +31,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Core
     name: Oracle Core
     domains:
-      - "oracle.com/industries/financial-services/banking/core-banking/"
+      - "oracle.com/industries/financial-services/banking/core-banking"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]core).*"
     tags:
@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Database
     name: Oracle Database
     domains:
-      - "oracle.com/in/database/"
+      - "oracle.com/in/database"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]database).*"
     tags:
@@ -47,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.DNS
     name: Oracle DNS
     domains:
-      - "oracle.com/in/cloud/networking/dns/"
+      - "oracle.com/in/cloud/networking/dns"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]dns).*"
     tags:
@@ -55,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Email
     name: Oracle Email
     domains:
-      - "oracle.com/in/cloud/networking/email-delivery/"
+      - "oracle.com/in/cloud/networking/email-delivery"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]email).*"
     tags:
@@ -63,7 +63,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.FileStorage
     name: Oracle FileStorage
     domains:
-      - "oracle.com/in/cloud/storage/file-storage/"
+      - "oracle.com/in/cloud/storage/file-storage"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]filestorage).*"
     tags:
@@ -71,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Identity
     name: Oracle Identity
     domains:
-      - "oracle.com/in/security/identity-management/"
+      - "oracle.com/in/security/identity-management"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]identity).*"
     tags:
@@ -79,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.LoadBalancer
     name: Oracle LoadBalancer
     domains:
-      - "oracle.com/in/cloud/networking/load-balancing/"
+      - "oracle.com/in/cloud/networking/load-balancing"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]loadbalancer).*"
     tags:
@@ -87,7 +87,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.ObjectStorage
     name: Oracle ObjectStorage
     domains:
-      - "oracle.com/in/cloud/storage/object-storage/"
+      - "oracle.com/in/cloud/storage/object-storage"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]objectstorage).*"
     tags:
@@ -95,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Auth
     name: Oracle Auth
     domains:
-      - "oracle.com/in/security/cloud-security/identity-cloud/"
+      - "oracle.com/in/security/cloud-security/identity-cloud"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]auth).*"
     tags:
@@ -103,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.CircuitBreaker
     name: Oracle CircuitBreaker
     domains:
-      - "docs.oracle.com/cd/E86025_01/html/E86027/gnzqd.html/"
+      - "docs.oracle.com/cd/E86025_01/html/E86027/gnzqd.html"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]circuitbreaker).*"
     tags:
@@ -127,7 +127,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Model
     name: Oracle Model
     domains:
-      - "oracle.com/in/database/sqldeveloper/technologies/sql-data-modeler/"
+      - "oracle.com/in/database/sqldeveloper/technologies/sql-data-modeler"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]model).*"
     tags:
@@ -135,7 +135,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.ResourceSearch
     name: Oracle Resource Search
     domains:
-      - "oracle.com/in/technical-resources/"
+      - "oracle.com/in/technical-resources"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]resourcesearch).*"
     tags:
@@ -143,7 +143,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.KeyManagement
     name: Oracle Key Management
     domains:
-      - "oracle.com/en-us/iaas/Content/KeyManagement/"
+      - "oracle.com/en-us/iaas/Content/KeyManagement"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]keymanagement).*"
     tags:
@@ -159,7 +159,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Healthchecks
     name: Oracle Healthchecks
     domains:
-      - "oracle.com/cloud/networking/health-checks/"
+      - "oracle.com/cloud/networking/health-checks"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]healthchecks).*"
     tags:
@@ -175,7 +175,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Monitoring
     name: Oracle Monitoring
     domains:
-      - "oracle.com/in/devops/monitoring/"
+      - "oracle.com/in/devops/monitoring"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]monitoring).*"
     tags:
@@ -223,7 +223,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Dts
     name: Oracle Dts
     domains:
-      - "oracle.com/in/cloud/storage/data-transfer/"
+      - "oracle.com/in/cloud/storage/data-transfer"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]dts).*"
     tags:
@@ -247,7 +247,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Analytics
     name: Oracle Analytics
     domains:
-      - "oracle.com/in/business-analytics/"
+      - "oracle.com/in/business-analytics"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]analytics).*"
     tags:
@@ -255,7 +255,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Integration
     name: Oracle Integration
     domains:
-      - "oracle.com/in/integration/"
+      - "oracle.com/in/integration"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]integration).*"
     tags:
@@ -263,7 +263,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.OsManagement
     name: Oracle OsManagement
     domains:
-      - "oracle.com/en-us/iaas/os-management/home/"
+      - "oracle.com/en-us/iaas/os-management/home"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]osmanagement).*"
     tags:
@@ -295,7 +295,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.DataCatalog
     name: Oracle DataCatalog
     domains:
-      - "oracle.com/in/big-data/data-catalog/"
+      - "oracle.com/in/big-data/data-catalog"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]datacatalog).*"
     tags:
@@ -303,7 +303,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.DataFlow
     name: Oracle Data Flow
     domains:
-      - "oracle.com/in/big-data/data-flow/"
+      - "oracle.com/in/big-data/data-flow"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]dataflow).*"
     tags:
@@ -311,7 +311,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.DataScience
     name: Oracle DataScience
     domains:
-      - "oracle.com/in/artificial-intelligence/data-science/"
+      - "oracle.com/in/artificial-intelligence/data-science"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]datascience).*"
     tags:
@@ -319,7 +319,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Nosql
     name: Oracle Nosql
     domains:
-      - "oracle.com/database/nosql/technologies/nosql/"
+      - "oracle.com/database/nosql/technologies/nosql"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]nosql).*"
     tags:
@@ -335,7 +335,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Vault
     name: Oracle Vault
     domains:
-      - "oracle.com/in/security/database-security/database-vault/"
+      - "oracle.com/in/security/database-security/database-vault"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]vault).*"
     tags:
@@ -343,7 +343,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Bds
     name: Oracle Bds
     domains:
-      - "oracle.com/in/big-data/big-data-service/"
+      - "oracle.com/in/big-data/big-data-service"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]bds).*"
     tags:
@@ -359,7 +359,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.DataSafe
     name: Oracle Data Safe
     domains:
-      - "oracle.com/in/security/database-security/data-safe/"
+      - "oracle.com/in/security/database-security/data-safe"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]datasafe).*"
     tags:
@@ -367,7 +367,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Mysql
     name: Oracle Mysql
     domains:
-      - "oracle.com/in/mysql/"
+      - "oracle.com/in/mysql"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]mysql).*"
     tags:
@@ -391,7 +391,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Blockchain
     name: Oracle Blockchain
     domains:
-      - "oracle.com/in/blockchain/"
+      - "oracle.com/in/blockchain"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]blockchain).*"
     tags:
@@ -455,7 +455,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Rover
     name: Oracle Rover
     domains:
-      - "oracle.com/in/cloud/roving-edge-infrastructure/"
+      - "oracle.com/in/cloud/roving-edge-infrastructure"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]rover).*"
     tags:
@@ -471,7 +471,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Apm
     name: Oracle Apm
     domains:
-      - "oracle.com/in/manageability/application-performance-monitoring/"
+      - "oracle.com/in/manageability/application-performance-monitoring"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]apm).*"
     tags:
@@ -479,7 +479,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.GoldenGate
     name: Oracle Golden Gate
     domains:
-      - "oracle.com/in/integration/goldengate/"
+      - "oracle.com/in/integration/goldengate"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]goldengate).*"
     tags:
@@ -495,7 +495,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.VulnerabilityScanning
     name: Oracle Vulnerability Scanning
     domains:
-      - "oracle.com/in/security/cloud-security/vulnerability-scanning-service/"
+      - "oracle.com/in/security/cloud-security/vulnerability-scanning-service"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]vulnerabilityscanning).*"
     tags:
@@ -511,7 +511,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.AiLanguage
     name: Oracle AiLanguage
     domains:
-      - "oracle.com/in/artificial-intelligence/language/"
+      - "oracle.com/in/artificial-intelligence/language"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]ailanguage).*"
     tags:
@@ -519,7 +519,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Bastion
     name: Oracle Bastion
     domains:
-      - "oracle.com/in/security/cloud-security/bastion/"
+      - "oracle.com/in/security/cloud-security/bastion"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]bastion).*"
     tags:
@@ -535,7 +535,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Devops
     name: Oracle Devops
     domains:
-      - "oracle.com/in/devops/devops-service/"
+      - "oracle.com/in/devops/devops-service"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]devops).*"
     tags:
@@ -711,7 +711,7 @@ sinks:
   - id: ThirdParties.SDK.Oracle.Opensearch
     name: Oracle Opensearch
     domains:
-      - "oracle.com/in/cloud/search/"
+      - "oracle.com/in/cloud/search"
     patterns:
       - "(?i)(com[.]oracle[.]bmc[.]opensearch).*"
     tags:
