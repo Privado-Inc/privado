@@ -4,10 +4,762 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Oracle
-    name: Oracle
+  - id: ThirdParties.SDK.Oracle.OCISDK
+    name: Oracle OCI SDK
     domains:
-      - "oracle.com"
+      - "oracle.com/in/cloud"
     patterns:
-      - "(?i)(com[.]oracle[.]oci[.]sdk|com[.]oracle[.]bmc).*"
+      - "(?i)(com[.]oracle[.]oci[.]sdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Audit
+    name: Oracle Audit
+    domains:
+      - "oracle-base.com/articles/8i/auditing"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]audit).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ContainerEngine
+    name: Oracle ContainerEngine
+    domains:
+      - "oracle.com/in/cloud/cloud-native/container-engine-kubernetes"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]containerengine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Core
+    name: Oracle Core
+    domains:
+      - "oracle.com/industries/financial-services/banking/core-banking"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Database
+    name: Oracle Database
+    domains:
+      - "oracle.com/in/database"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]database).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DNS
+    name: Oracle DNS
+    domains:
+      - "oracle.com/in/cloud/networking/dns"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]dns).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Email
+    name: Oracle Email
+    domains:
+      - "oracle.com/in/cloud/networking/email-delivery"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]email).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.FileStorage
+    name: Oracle FileStorage
+    domains:
+      - "oracle.com/in/cloud/storage/file-storage"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]filestorage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Identity
+    name: Oracle Identity
+    domains:
+      - "oracle.com/in/security/identity-management"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]identity).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.LoadBalancer
+    name: Oracle LoadBalancer
+    domains:
+      - "oracle.com/in/cloud/networking/load-balancing"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]loadbalancer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ObjectStorage
+    name: Oracle ObjectStorage
+    domains:
+      - "oracle.com/in/cloud/storage/object-storage"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]objectstorage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Auth
+    name: Oracle Auth
+    domains:
+      - "oracle.com/in/security/cloud-security/identity-cloud"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]auth).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.CircuitBreaker
+    name: Oracle CircuitBreaker
+    domains:
+      - "docs.oracle.com/cd/E86025_01/html/E86027/gnzqd.html"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]circuitbreaker).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Encryption
+    name: Oracle Encryption
+    domains:
+      - "oracle.com/in/security"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]encryption).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.HTTP
+    name: Oracle HTTP
+    domains:
+      - "docs.oracle.com/cd/E28280_01/web.1111/e10144/intro_ohs.htm"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]http).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Model
+    name: Oracle Model
+    domains:
+      - "oracle.com/in/database/sqldeveloper/technologies/sql-data-modeler"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]model).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ResourceSearch
+    name: Oracle Resource Search
+    domains:
+      - "oracle.com/in/technical-resources"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]resourcesearch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.KeyManagement
+    name: Oracle Key Management
+    domains:
+      - "oracle.com/en-us/iaas/Content/KeyManagement"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]keymanagement).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.AnnouncementsService
+    name: Oracle Announcements Service
+    domains:
+      - "docs.oracle.com/en-us/iaas/Content/General/Concepts/announcements.htm"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]announcementsservice).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Healthchecks
+    name: Oracle Healthchecks
+    domains:
+      - "oracle.com/cloud/networking/health-checks"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]healthchecks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Waas
+    name: Oracle Waas
+    domains:
+      - "docs.oracle.com/en-us/iaas/pl-sql-sdk/doc/waas-package.html"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]waas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Monitoring
+    name: Oracle Monitoring
+    domains:
+      - "oracle.com/in/devops/monitoring"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]monitoring).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ResourceManager
+    name: Oracle Resource Manager
+    domains:
+      - "oracle.com/in/devops/resource-manager"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]resourcemanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Ons
+    name: Oracle Ons
+    domains:
+      - "docs.oracle.com/en-us/iaas/pl-sql-sdk/doc/ons-package.html"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]ons).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Autoscaling
+    name: Oracle Autoscaling
+    domains:
+      - "docs.oracle.com/en-us/iaas/Content/Compute/Tasks/autoscalinginstancepools.htm"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]autoscaling).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Functions
+    name: Oracle Functions
+    domains:
+      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/functions"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]functions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Events
+    name: Oracle Events
+    domains:
+      - "search.oracle.com/events"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]events).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Dts
+    name: Oracle Dts
+    domains:
+      - "oracle.com/in/cloud/storage/data-transfer"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]dts).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Oce
+    name: Oracle Oce
+    domains:
+      - "oracle.com/database/technologies/oraclecertificationenvironment"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]oce).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Oda
+    name: Oracle Oda
+    domains:
+      - "oracle.com/database/technologies/database-appliance"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]oda).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Analytics
+    name: Oracle Analytics
+    domains:
+      - "oracle.com/in/business-analytics"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Integration
+    name: Oracle Integration
+    domains:
+      - "oracle.com/in/integration"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]integration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.OsManagement
+    name: Oracle OsManagement
+    domains:
+      - "oracle.com/en-us/iaas/os-management/home"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]osmanagement).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Marketplace
+    name: Oracle Marketplace
+    domains:
+      - "cloudmarketplace.oracle.com/marketplace/en_US/homePage.jspx"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]marketplace).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Apigateway
+    name: Oracle Apigateway
+    domains:
+      - "oracle.com/en-us/iaas/Content/APIGateway/Concepts/apigatewayoverview"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]apigateway).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ApplicationMigration
+    name: Oracle Application Migration
+    domains:
+      - "oracle.com/en-us/iaas/application-migration/home"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]applicationmigration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DataCatalog
+    name: Oracle DataCatalog
+    domains:
+      - "oracle.com/in/big-data/data-catalog"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]datacatalog).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DataFlow
+    name: Oracle Data Flow
+    domains:
+      - "oracle.com/in/big-data/data-flow"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]dataflow).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DataScience
+    name: Oracle DataScience
+    domains:
+      - "oracle.com/in/artificial-intelligence/data-science"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]datascience).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Nosql
+    name: Oracle Nosql
+    domains:
+      - "oracle.com/database/nosql/technologies/nosql"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]nosql).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Secrets
+    name: Oracle Secrets
+    domains:
+      - "oracle.com/en-us/iaas/Content/KeyManagement/Tasks/managingsecrets"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]secrets).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Vault
+    name: Oracle Vault
+    domains:
+      - "oracle.com/in/security/database-security/database-vault"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]vault).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Bds
+    name: Oracle Bds
+    domains:
+      - "oracle.com/in/big-data/big-data-service"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]bds).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Cims
+    name: Oracle Cims
+    domains:
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/cims-package"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]cims).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DataSafe
+    name: Oracle Data Safe
+    domains:
+      - "oracle.com/in/security/database-security/data-safe"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]datasafe).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Mysql
+    name: Oracle Mysql
+    domains:
+      - "oracle.com/in/mysql"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]mysql).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DataIntegration
+    name: Oracle DataIntegration
+    domains:
+      - "oracle.com/middleware/technologies/data-integration"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]dataintegration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Ocvp
+    name: Oracle Ocvp
+    domains:
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/ocvp-package"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]ocvp).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Blockchain
+    name: Oracle Blockchain
+    domains:
+      - "oracle.com/in/blockchain"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]blockchain).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Logging
+    name: Oracle Logging
+    domains:
+      - "oracle.com/en-us/iaas/Content/Logging/Concepts/logging"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]logging).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.LogAnalytics
+    name: Oracle Log Analytics
+    domains:
+      - "oracle.com/en-us/iaas/logging-analytics/index"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]loganalytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Sch
+    name: Oracle Sch
+    domains:
+      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/sch"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]sch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.CloudGuard
+    name: Oracle Cloud Guard
+    domains:
+      - "oracle.com/in/security/cloud-security/cloud-guard"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]cloudguard).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Opsi
+    name: Oracle Opsi
+    domains:
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/opsi-operations-insights-package"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]opsi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ComputeInstanceAgent
+    name: Oracle Compute Instance Agent
+    domains:
+      - "oracle.com/en-us/iaas/Content/Compute/Concepts/computeoverview"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]computeinstanceagent).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Optimizer
+    name: Oracle Optimizer
+    domains:
+      - "oracle.com/database/technologies/dbbi-tech-info-optmztn"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]optimizer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Rover
+    name: Oracle Rover
+    domains:
+      - "oracle.com/in/cloud/roving-edge-infrastructure"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]rover).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Artifacts
+    name: Oracle Artifacts
+    domains:
+      - "oracle.com/en-us/iaas/Content/artifacts/overview"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]artifacts).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Apm
+    name: Oracle Apm
+    domains:
+      - "oracle.com/in/manageability/application-performance-monitoring"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]apm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.GoldenGate
+    name: Oracle Golden Gate
+    domains:
+      - "oracle.com/in/integration/goldengate"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]goldengate).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.NetworkLoadBalancer
+    name: Oracle Network Load Balancer
+    domains:
+      - "oracle.com/en-us/iaas/Content/NetworkLoadBalancer/home"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]networkloadbalancer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.VulnerabilityScanning
+    name: Oracle Vulnerability Scanning
+    domains:
+      - "oracle.com/in/security/cloud-security/vulnerability-scanning-service"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]vulnerabilityscanning).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ServiceCatalog
+    name: Oracle Service Catalog
+    domains:
+      - "oracle.com/en-us/iaas/Content/Marketplace/Tasks/servicecatalog"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]servicecatalog).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.AiLanguage
+    name: Oracle AiLanguage
+    domains:
+      - "oracle.com/in/artificial-intelligence/language"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]ailanguage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Bastion
+    name: Oracle Bastion
+    domains:
+      - "oracle.com/in/security/cloud-security/bastion"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]bastion).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Jms
+    name: Oracle Jms
+    domains:
+      - "oracle.com/technical-resources/articles/java/intro-java-message-service"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]jms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Devops
+    name: Oracle Devops
+    domains:
+      - "oracle.com/in/devops/devops-service"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]devops).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DataLabeling
+    name: Oracle Data Labeling
+    domains:
+      - "oracle.com/in/artificial-intelligence/data-labeling"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]Datalabeling).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Waf
+    name: Oracle Waf
+    domains:
+      - "oracle.com/in/security/cloud-security/web-application-firewall"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]waf).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Certificates
+    name: Oracle Certificates
+    domains:
+      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/certificates"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]certificates).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Usage
+    name: Oracle Usage
+    domains:
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/usage-api"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]usage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.AppmgmtControl
+    name: Oracle Appmgmt Control
+    domains:
+      - "oracle.com/en-us/iaas/tools/oci-cli/3.23.0/oci_cli_docs/cmdref/appmgmt-control"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]appmgmtcontrol).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.OspGateway
+    name: Oracle Osp Gateway
+    domains:
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/osp-gateway"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]ospgateway).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.VisualBuilder
+    name: Oracle Visual Builder
+    domains:
+      - "oracle.com/en/cloud/paas/app-builder-cloud"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]visualbuilder).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Osub
+    name: Oracle Osub
+    domains:
+      - "oracle.com/en-us/iaas/pl-sql-sdk/doc/osub"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]osub).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DashboardService
+    name: Oracle Dashboard Service
+    domains:
+      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/dashboardservice"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]dashboardservice).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.AiVision
+    name: Oracle AiVision
+    domains:
+      - "oracle.com/in/artificial-intelligence/vision"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]aivision).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.AiSpeech
+    name: Oracle AiSpeech
+    domains:
+      - "oracle.com/in/artificial-intelligence/speech"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]aispeech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.StackMonitoring
+    name: Oracle Stack Monitoring
+    domains:
+      - "oracle.com/en-us/iaas/stack-monitoring"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]stackmonitoring).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ServiceMesh
+    name: Oracle Service Mesh
+    domains:
+      - "oracle.com/in/cloud/cloud-native/service-mesh"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]servicemesh).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Adm
+    name: Oracle Adm
+    domains:
+      - "oracle.com/en-us/iaas/Content/application-dependency-management"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]adm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.LicenseManager
+    name: Oracle License Manager
+    domains:
+      - "oracle.com/in/corporate/license-management-services"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]licensemanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Waa
+    name: Oracle Waa
+    domains:
+      - "oracle.com/en-us/iaas/Content/web-app-acceleration"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]waa).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.NetworkFirewall
+    name: Oracle Network Firewall
+    domains:
+      - "oracle.com/security/cloud-security/network-firewall"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]networkfirewall).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.VnMonitoring
+    name: Oracle Vn Monitoring
+    domains:
+      - "oracle.com/en-us/iaas/tools/java/3.4.0/com/oracle/bmc/monitoring"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]vnmonitoring).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.EmWarehouse
+    name: Oracle Em Warehouse
+    domains:
+      - "oracle.com/en-us/iaas/operations-insights/doc/em-warehouse"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]emwarehouse).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Lockbox
+    name: Oracle Lockbox
+    domains:
+      - "oracle.com/cd/A60725_05/html/comnls/us/ar/lokbox"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]lockbox).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.FusionApps
+    name: Oracle FusionApps
+    domains:
+      - "fusionappsoer.oracle.com"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]fusionapps).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Opensearch
+    name: Oracle Opensearch
+    domains:
+      - "oracle.com/in/cloud/search"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]opensearch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.CloudMigrations
+    name: Oracle Cloud Migrations
+    domains:
+      - "oracle.com/in/database/technologies/cloud-migration"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]cloudmigrations).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.CloudBridge
+    name: Oracle Cloud Bridge
+    domains:
+      - "cloudbridgesolution.com"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]cloudbridge).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.DisasterRecovery
+    name: Oracle Disaster Recovery
+    domains:
+      - "oracle.com/cloud/backup-and-disaster-recovery"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]disasterrecovery).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.ContainerInstances
+    name: Oracle Container Instances
+    domains:
+      - "oracle.com/in/cloud/cloud-native/container-instances"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]containerinstances).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.AiDocument
+    name: Oracle Ai Document
+    domains:
+      - "oracle.com/in/artificial-intelligence/document-understanding"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]aidocument).*"
+    tags:
+
+  - id: ThirdParties.SDK.Oracle.Queue
+    name: Oracle Queue
+    domains:
+      - "docs.oracle.com/database/121/ADQUE"
+    patterns:
+      - "(?i)(com[.]oracle[.]bmc[.]queue).*"
     tags:
