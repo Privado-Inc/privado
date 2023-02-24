@@ -88,7 +88,7 @@ Apart from getting a comprehensive outlook of your data practices for Privacy Au
 
 Our free cloud platform can be used to generate RoPA reports for one or more synced repositories.
 
-## Data Safety Report
+## Data Safety Report 
 A Data Safety Report is a privacy form needed to publish any Android app on the Play Store. Most of the time, filling out a report means developers asking around the team to find what data they're collecting, spending hours reading SDK docs to see where information gets shared and navigating the complex Playstore form. With our scan, we pre-fill data types that are collected and shared, and our wizard guides you through generating the report.
 
 # Contribute
