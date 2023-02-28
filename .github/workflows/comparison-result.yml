@@ -70,7 +70,7 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
       - name: Post results to slack
         uses: MeilCli/slack-upload-file@v3
-        with:
+        with: 
           slack_token: ${{ secrets.SLACK_TOKEN }}
           channel_id: ${{ secrets.SLACK_CHANNEL_ID }}
           file_path: "/home/runner/work/privado/privado/result-${{github.event.number}}.zip"
