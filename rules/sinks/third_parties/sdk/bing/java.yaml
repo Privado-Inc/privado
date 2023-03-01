@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bing.com"
     patterns:
-      - "(?i)(com[.]microsoft[.]bing).*"
+      - "(?i)(com[.]microsoft[.]bing(?!ads)).*"
     tags:
