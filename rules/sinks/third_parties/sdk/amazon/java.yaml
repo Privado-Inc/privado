@@ -9,7 +9,7 @@ sinks:
     domains:
       - "amazon.com"
     patterns:
-      - "(?i)(com[.]amazon[.]alexa|com[.]amazon[.]android|com[.]amazon[.]redshift|software[.]amazon[.]awscdk|software[.]amazon[.]awsconstructs|software[.]amazon[.]awssdk|software[.]amazon[.]ion|software[.]amazon[.]jsii|software[.]amazon[.]kinesis|software[.]amazon[.]konstruk|software[.]amazon[.]smithy).*"
+      - "(?i)(com[.]amazon[.]alexa|com[.]amazon[.]android|software[.]amazon[.]awscdk|software[.]amazon[.]awsconstructs|software[.]amazon[.]ion|software[.]amazon[.]jsii|software[.]amazon[.]konstruk|software[.]amazon[.]smithy).*"
     tags:
 
   - id: ThirdParties.SDK.Amazon.Aws
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "aws.amazon.com"
     patterns:
-      - "(?i)(com[.]amazon[.]emr|com[.]amazon[.]redshift|com[.]amazonaws[.]lambda|com[.]amazonaws[.]secretsmanager|com[.]amazonaws|software[.]amazon[.]awssdk).*"
+      - "(?i)(com[.]amazonaws[.]secretsmanager|software[.]amazon[.]awssdk).*"
     tags:
