@@ -8,7 +8,7 @@ sinks:
     domains:
       - mysql.com
     patterns: 
-      - "(?i)(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:get|find|fetch).*"
+      - "(?i).*(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:get|find|fetch).*"
     tags:
 
   - id: Storages.MySQL.Write
@@ -16,7 +16,7 @@ sinks:
     domains:
       - mysql.com
     patterns: 
-      - "(?i)(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:insert|update|remove|delete).*"
+      - "(?i).*(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:insert|update|remove|delete).*"
     tags:
   
   - id: Storages.MySQL.ReadAndWrite
@@ -24,6 +24,6 @@ sinks:
     domains:
       - mysql.com
     patterns:
-      - "(?i)(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:execute|connect).*"
-      - "(?i)(aiomysql|oursql).*(create_pool|create_engine|acquire|execute|cursor|fetchone).*"
+      - "(?i).*(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:execute|connect).*"
+      - "(?i).*(aiomysql|oursql).*(create_pool|create_engine|acquire|execute|cursor|fetchone).*"
     tags:
