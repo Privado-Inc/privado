@@ -8,8 +8,8 @@ sinks:
     domains:
       - mongodb.com
     patterns: 
-      - "(?i)(mongoengine|flask_mongoengine).*"
-      - "(?i)(pymongo|flask_pymongo|motor.*MotorClient).*(?:find|aggregate|count|get|list).*"
+      - "(?i).*(mongoengine|flask_mongoengine).*"
+      - "(?i).*(pymongo|flask_pymongo|motor.*MotorClient).*(?:find|aggregate|count|get|list).*"
     tags:
 
   - id: Storages.MongoDB.Write
@@ -17,6 +17,6 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(?i)(pymongo|flask_pymongo|motor.*MotorClient).*(?:update|replace)one.*"
-      - "(?i)(pymongo|flask_pymongo|motor.*MotorClient).*(?:insert|delete|write|upload|remove|update|bulk|drop).*"
+      - "(?i).*(pymongo|flask_pymongo|motor.*MotorClient).*(?:update|replace)one.*"
+      - "(?i).*(pymongo|flask_pymongo|motor.*MotorClient).*(?:insert|delete|write|upload|remove|update|bulk|drop).*"
     tags:
