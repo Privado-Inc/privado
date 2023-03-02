@@ -25,7 +25,7 @@ sinks:
     domains:
       - "aws.amazon.com/kinesis"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]kinesis).*"
+      - "(?i)(com[.]amazonaws[.]services[.]kinesis|software[.]amazon[.]kinesis).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.ManagedBlockchain
@@ -273,7 +273,7 @@ sinks:
     domains:
       - "aws.amazon.com/emr"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]elasticmapreduce).*"
+      - "(?i)(com[.]amazonaws[.]services[.]elasticmapreduce|com[.]amazon[.]emr).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.QuickSight
@@ -865,7 +865,7 @@ sinks:
     domains:
       - "aws.amazon.com/redshift"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]redshift).*"
+      - "(?i)(com[.]amazonaws[.]services[.]redshift|com[.]amazon[.]redshift).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.WAF
@@ -1265,7 +1265,7 @@ sinks:
     domains:
       - "aws.amazon.com/lambda"
     patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]lambda).*"
+      - "(?i)(com[.]amazonaws[.]services[.]lambda|com[.]amazonaws[.]lambda).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Route53
