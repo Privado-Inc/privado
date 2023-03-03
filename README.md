@@ -49,7 +49,7 @@ To visualize the results and generate reports, you can create a free account at 
 3. Data Governance Engineers
 4. Security Engineers
 5. Mobile App Developers
-6. Developers
+6. Developers 
     
 # How does it help?
 Privado lets Engineers ask contextual questions about the usage of sensitive data at scale.  
