@@ -8,6 +8,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
+      - "(?i)boto.*dynamodb.*"
       - "(?i)boto.*(?:get.{0,1}item|query).*"
     tags:
 
