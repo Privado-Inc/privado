@@ -9,5 +9,5 @@ sinks:
       - hbase.apache.org
       - apache.org
     patterns:
-      - "(?i)(?:happybase|hbase|cdata.{0,1}apachehbase).*(?:replace|put|get|add|remove|scan).*"
+      - "(?i).*(?:happybase|hbase|cdata.{0,1}apachehbase).*(?:replace|put|get|add|remove|scan).*"
     tags:

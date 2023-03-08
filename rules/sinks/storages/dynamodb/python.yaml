@@ -9,7 +9,7 @@ sinks:
       - amazon.com
     patterns:
       - "(?i)boto.*dynamodb.*"
-      - "(?i)boto.*(?:get.{0,1}item|query).*"
+      - "(?i).*boto.*(?:get.{0,1}item|query).*"
     tags:
 
   - id: Storages.AmazonDynamoDB.Write
@@ -18,5 +18,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(?i)boto.*(?:delete.{0,1}item|put.{0,1}item).*"
+      - "(?i).*boto.*(?:delete.{0,1}item|put.{0,1}item).*"
     tags:
