@@ -20,18 +20,890 @@ sinks:
       - "(?i)(com[.]google[.]api[.]services[.]analytics|com[.]google[.]android[.]gms[.]analytics).*"
     tags:
 
-  - id: ThirdParties.SDK.Google.Cloud
-    name: Google Cloud
+  - id: ThirdParties.SDK.Google.Cloud.Storage
+    name: Google Cloud Storage
     domains:
-      - "cloud.google.com"
+      - "cloud.google.com/storage"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]storage|com[.]google[.]cloud[.]dataflow|com[.]google[.]cloud[.]datastore|com[.]google[.]cloud).*"
+      - "(?i)(com[.]google[.]cloud[.]storage).*"
     tags:
-    
+
+  - id: ThirdParties.SDK.Google.Cloud.Datastore
+    name: Google Cloud Datastore
+    domains:
+      - "cloud.google.com/datastore"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datastore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Spanner
+    name: Google Cloud Spanner
+    domains:
+      - "cloud.google.com/spanner"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]spanner).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Firestore
+    name: Google Cloud Firestore
+    domains:
+      - "cloud.google.com/firestore"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]firestore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataflow
+    name: Google Cloud Dataflow
+    domains:
+      - "cloud.google.com/dataflow"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataflow).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SQL
+    name: Google Cloud SQL
+    domains:
+      - "cloud.google.com/sql"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]sql).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DLP
+    name: Google Cloud Data Loss Prevention
+    domains:
+      - "cloud.google.com/dlp"
+    patterns:
+      - "(?i)(com[.]google[.]privacy[.]dlp).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.MemorystoreForMemcache
+    name: Google Cloud Memorystore For Memcache
+    domains:
+      - "cloud.google.com/memorystore/docs/memcached"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]memcache).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.MemorystoreForRedis
+    name: Google Cloud Memorystore For Redis
+    domains:
+      - "cloud.google.com/memorystore/docs/redis"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]redis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Pubsub
+    name: Google Cloud Pub/Sub
+    domains:
+      - "cloud.google.com/pubsub"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]api[.]client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Bigquery
+    name: Google Cloud BigQuery
+    domains:
+      - "cloud.google.com/bigquery"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]bigquery).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Vision
+    name: Google Cloud Vision
+    domains:
+      - "cloud.google.com/vision"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]vision).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Translation
+    name: Google Cloud Translation
+    domains:
+      - "cloud.google.com/translate"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]translate).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SpeechToText
+    name: Google Cloud Speech-to-Text
+    domains:
+      - "cloud.google.com/speech-to-text"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]speech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.TextToSpeech
+    name: Google Cloud Text-to-Speech
+    domains:
+      - "cloud.google.com/text-to-speech"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]texttospeech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.NaturalLanguage
+    name: Google Cloud Natural Language
+    domains:
+      - "cloud.google.com/natural-language"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]language).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AutoML
+    name: Google Cloud AutoML
+    domains:
+      - "cloud.google.com/automl"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]automl).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Workflows
+    name: Google Cloud Workflows
+    domains:
+      - "cloud.google.com/workflows"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]workflows).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.WebSecurityScanner
+    name: Google Cloud WebSecurityScanner
+    domains:
+      - "cloud.google.com/security-command-center"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]websecurityscanner).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.WebRisk
+    name: Google Cloud WebRisk
+    domains:
+      - "cloud.google.com/web-risk"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]webrisk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.VirtualPrivateCloud
+    name: Google Cloud Virtual Private Cloud
+    domains:
+      - "cloud.google.com/vpc"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]vpcaccess).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.VideoStitcher
+    name: Google Cloud Video Stitcher
+    domains:
+      - "cloud.google.com/video-stitcher"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]video[.]stitcher).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.VideoIntelligence
+    name: Google Cloud Video Intelligence
+    domains:
+      - "cloud.google.com/video-intelligence"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]videointelligence).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.VertexAIWorkbench
+    name: Google Cloud Vertex AI Workbench
+    domains:
+      - "cloud.google.com/vertex-ai-workbench"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]notebooks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.TranscoderAPI
+    name: Google Cloud Transcoder API
+    domains:
+      - "cloud.google.com/transcoder"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]video[.]transcoder).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ServiceUsage
+    name: Google Cloud Service Usage
+    domains:
+      - "cloud.google.com/service-usage"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]serviceusage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ServiceManagementAPI
+    name: Google Cloud Service Management API
+    domains:
+      - "cloud.google.com/service-infrastructure"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]servicemanagement).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ServiceDirectory
+    name: Google Cloud Service Directory
+    domains:
+      - "cloud.google.com/service-directory"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]servicedirectory).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ServiceControlAPI
+    name: Google Cloud Service Control API
+    domains:
+      - "cloud.google.com/vpc-service-controls"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]servicecontrol).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ServiceCatalog
+    name: Google Cloud Service Catalog
+    domains:
+      - "cloud.google.com/service-catalog"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]privatecatalog).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SecurityCommandCenter
+    name: Google Cloud Security Command Center
+    domains:
+      - "cloud.google.com/security-command-center"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]securitycenter).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SecretManager
+    name: Google Cloud Secret Manager
+    domains:
+      - "cloud.google.com/secret-manager"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]secretmanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.RetailAPI
+    name: Google Cloud Retail API
+    domains:
+      - "cloud.google.com/retail"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]retail).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ResourceManager
+    name: Google Cloud Resource Manager
+    domains:
+      - "cloud.google.com/resource-manager"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]resourcemanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Recommender
+    name: Google Cloud Recommender
+    domains:
+      - "cloud.google.com/recommender"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]recommender).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.RecommendationsAI
+    name: Google Cloud Recommendations AI
+    domains:
+      - "cloud.google.com/recommendations"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]recommendationengine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ReCAPTCHAEnterprise
+    name: Google Cloud ReCAPTCHA Enterprise
+    domains:
+      - "cloud.google.com/recaptcha-enterprise"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]recaptchaenterprise).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.PublicCertificateAuthority
+    name: Google Cloud Public Certificate Authority
+    domains:
+      - "cloud.google.com/certificate-authority-service"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]security[.]publicca).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.PrivateCertificateAuthority
+    name: Google Cloud Private Certificate Authority
+    domains:
+      - "cloud.google.com/certificate-authority-service"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]security[.]privateca).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.GRPC
+    name: Google Cloud GRPC
+    domains:
+      - "cloud.google.com/endpoints/docs/grpc"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]grpc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.PhishingProtection
+    name: Google Cloud Phishing Protection
+    domains:
+      - "cloud.google.com/phishing-protection"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]phishingprotection).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.OrganizationPolicy
+    name: Google Cloud Organization Policy
+    domains:
+      - "cloud.google.com/resource-manager/docs/organization-policy/overview"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]orgpolicy).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.NetworkSecurity
+    name: Google Cloud Network Security
+    domains:
+      - "cloud.google.com/security"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]networksecurity).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.NetworkManagement
+    name: Google Cloud Network Management
+    domains:
+      - "cloud.google.com/network-intelligence-center"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]networkmanagement).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.NetworkConnectivity
+    name: Google Cloud Network Connectivity
+    domains:
+      - "cloud.google.com/network-connectivity-center"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]networkconnectivity).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.MigrateToVirtualMachines
+    name: Google Cloud Migrate to Virtual Machines
+    domains:
+      - "cloud.google.com/migrate/virtual-machines"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]vmmigration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.MediaTranslation
+    name: Google Cloud Media Translation
+    domains:
+      - "cloud.google.com/media-translation"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]mediatranslation).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ManagedService
+    name: Google Cloud Managed Service
+    domains:
+      - "cloud.google.com/partners/msp-initiative"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]managedidentities).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.LiveStream
+    name: Google Cloud Live Stream
+    domains:
+      - "cloud.google.com/livestream"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]video[.]livestream).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.KubernetesEngine
+    name: Google Cloud Kubernetes Engine
+    domains:
+      - "cloud.google.com/containers"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]container).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.IoT
+    name: Google Cloud IoT
+    domains:
+      - "cloud.google.com/iot-core"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]iot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.VMwareEngine
+    name: Google Cloud VMware Engine
+    domains:
+      - "cloud.google.com/vmware-engine"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]vmwareengine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Deploy
+    name: Google Cloud Deploy
+    domains:
+      - "cloud.google.com/deploy"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]deploy).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.GKE
+    name: Google Cloud GKE
+    domains:
+      - "cloud.google.com/kubernetes-engine"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]gke).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.GameServers
+    name: Google Cloud Game Servers
+    domains:
+      - "cloud.google.com/solutions/games"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]gaming).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Eventarc
+    name: Google Cloud Eventarc
+    domains:
+      - "cloud.google.com/eventarc"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]eventarc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ErrorReporting
+    name: Google Cloud Error Reporting
+    domains:
+      - "cloud.google.com/error-reporting"
+    patterns:
+      - "(?i)(com[.]google[.]devtools[.]clouderrorreporting).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.EnterpriseKnowledgeGraph
+    name: Google Cloud Enterprise Knowledge Graph
+    domains:
+      - "cloud.google.com/enterprise-knowledge-graph"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]enterpriseknowledgegraph).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DocumentAIWarehouse
+    name: Google Cloud Document AI Warehouse
+    domains:
+      - "cloud.google.com/document-ai-warehouse"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]contentwarehouse).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DocumentAI
+    name: Google Cloud Document AI
+    domains:
+      - "cloud.google.com/document-ai"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]documentai).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DiscoveryEngine
+    name: Google Cloud Discovery Engine
+    domains:
+      - "cloud.google.com/discovery-engine"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]discoveryengine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dialogflow
+    name: Google Dialogflow
+    domains:
+      - "cloud.google.com/dialogflow"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dialogflow).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Datastream
+    name: Google Cloud Datastream
+    domains:
+      - "cloud.google.com/datastream"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datastream).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataplex
+    name: Google Cloud Dataplex
+    domains:
+      - "cloud.google.com/dataplex"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataplex).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataform
+    name: Google Cloud Dataform
+    domains:
+      - "cloud.google.com/dataform"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataform).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ContactCenterAIInsights
+    name: Google Cloud Contact Center AI Insights
+    domains:
+      - "cloud.google.com/contact-center/insights"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]contactcenterinsights).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ComputeEngine
+    name: Google Cloud Compute Engine
+    domains:
+      - "cloud.google.com/compute"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]compute).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Trace
+    name: Google Cloud Trace
+    domains:
+      - "cloud.google.com/trace"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]trace).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.TPU
+    name: Google Cloud TPU
+    domains:
+      - "cloud.google.com/tpu"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]tpu).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Tasks
+    name: Google Cloud Tasks
+    domains:
+      - "cloud.google.com/tasks"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]tasks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.TalentSolution
+    name: Google Cloud Talent Solution
+    domains:
+      - "cloud.google.com/solutions/talent-solution"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]talent).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Shell
+    name: Google Cloud Shell
+    domains:
+      - "cloud.google.com/shell"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]shell).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Scheduler
+    name: Google Cloud Scheduler
+    domains:
+      - "cloud.google.com/scheduler"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]scheduler).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Run
+    name: Google Cloud Run
+    domains:
+      - "cloud.google.com/run"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]run).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Profiler
+    name: Google Cloud Profiler
+    domains:
+      - "cloud.google.com/profiler/docs"
+    patterns:
+      - "(?i)(com[.]google[.]devtools[.]cloudprofiler).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.OS
+    name: Google Cloud OS
+    domains:
+      - "cloud.google.com/compute/docs/images/os-details"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]os).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.OptimizationAI
+    name: Google Cloud Optimization AI
+    domains:
+      - "cloud.google.com/optimization"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]optimization).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Monitoring
+    name: Google Cloud Monitoring
+    domains:
+      - "cloud.google.com/monitoring"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]monitoring).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.LifeSciences
+    name: Google Life Sciences
+    domains:
+      - "cloud.google.com/life-sciences"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]lifesciences).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.KeyManagementService
+    name: Google Cloud Key Management Service
+    domains:
+      - "cloud.google.com/security-key-management"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]kms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.IDS
+    name: Google Cloud IDS
+    domains:
+      - "cloud.google.com/intrusion-detection-system"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]ids).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Functions
+    name: Google Cloud Functions
+    domains:
+      - "cloud.google.com/functions"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]functions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Domains
+    name: Google Cloud Domains
+    domains:
+      - "cloud.google.com/domains"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]domains).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DNS
+    name: Google Cloud DNS
+    domains:
+      - "cloud.google.com/dns"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dns).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DatabaseMigrationService
+    name: Google Cloud Database Migration Service
+    domains:
+      - "cloud.google.com/database-migration"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]clouddms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DataFusion
+    name: Google Cloud Data Fusion
+    domains:
+      - "cloud.google.com/data-fusion"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datafusion).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Composer
+    name: Google Cloud Composer
+    domains:
+      - "cloud.google.com/composer"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]orchestration[.]airflow[.]service).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Build
+    name: Google Cloud Build
+    domains:
+      - "cloud.google.com/build"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]devtools[.]cloudbuild).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Billing
+    name: Google Cloud Billing
+    domains:
+      - "cloud.google.com/billing"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]billing).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AssetInventory
+    name: Google Cloud Asset Inventory
+    domains:
+      - "cloud.google.com/asset-inventory"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]asset).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ChannelServices
+    name: Google Cloud Channel Services
+    domains:
+      - "cloud.google.com/channel"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]channel).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.CertificateManager
+    name: Google Cloud Certificate Manager
+    domains:
+      - "cloud.google.com/certificate-manager"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]certificatemanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.BinaryAuthorization
+    name: Google Cloud Binary Authorization
+    domains:
+      - "cloud.google.com/binary-authorization"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]binaryauthorization).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Batch
+    name: Google Cloud Batch
+    domains:
+      - "cloud.google.com/batch"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]batch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.BareMetalSolution
+    name: Google Cloud Bare Metal Solution
+    domains:
+      - "cloud.google.com/bare-metal"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]baremetalsolution).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AssuredWorkloads
+    name: Google Cloud Assured Workloads
+    domains:
+      - "cloud.google.com/assured-workloads"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]assuredworkloads).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ArtifactRegistry
+    name: Google Cloud Artifact Registry
+    domains:
+      - "cloud.google.com/artifact-registry"
+    patterns:
+      - "(?i)(com[.]google[.]devtools[.]artifactregistry).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AppEngineAdmin
+    name: Google Cloud App Engine Admin
+    domains:
+      - "cloud.google.com/appengine"
+    patterns:
+      - "(?i)(com[.]google[.]appengine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.ApigeeConnect
+    name: Google Cloud Apigee Connect
+    domains:
+      - "cloud.google.com/apigee"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]apigeeconnect).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.APIGateway
+    name: Google Cloud API Gateway
+    domains:
+      - "cloud.google.com/api-gateway"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]apigateway).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AIPlatform
+    name: Google Cloud AI Platform
+    domains:
+      - "cloud.google.com/ai-platform"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]aiplatform).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AccessContextManager
+    name: Google Cloud Access Context Manager
+    domains:
+      - "cloud.google.com/access-context-manager"
+    patterns:
+      - "(?i)(com[.]google[.]identity[.]accesscontextmanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AccessApproval
+    name: Google Cloud Access Approval
+    domains:
+      - "cloud.google.com/cloud-provider-access-management/access-approval"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]accessapproval).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.IAM
+    name: Google Cloud IAM
+    domains:
+      - "cloud.google.com/iam"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]iam).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataproc
+    name: Google Cloud Dataproc
+    domains:
+      - "cloud.google.com/dataproc"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataproc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.DataCatalog
+    name: Google Cloud Data Catalog
+    domains:
+      - "cloud.google.com/data-catalog/docs/concepts/overview"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datacatalog).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Dataprep
+    name: Google Cloud Dataprep
+    domains:
+      - "cloud.google.com/dataprep"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]dataprep).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Datalab
+    name: Google Cloud Datalab
+    domains:
+      - "cloud.google.com/datalab"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]datalab).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Endpoints
+    name: Google Cloud Endpoints
+    domains:
+      - "cloud.google.com/endpoints"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]endpoints).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.MachineLearningEngine
+    name: Google Cloud Machine Learning Engine
+    domains:
+      - "cloud.google.com/ai-platform/docs/technical-overview"
+    patterns:
+      - "(?i)(com[.]google[.]cloud[.]mlengine).*"
+    tags:
+
   - id: ThirdParties.SDK.Google.CloudMessaging
     name: Google Cloud Messaging
     domains:
-      - "cloud.google.com"
+      - "developers.google.com/cloud-messaging"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]cloudmessaging|com[.]google[.]android[.]gms[.]gcm).*"
     tags:
@@ -39,7 +911,7 @@ sinks:
   - id: ThirdParties.SDK.Google.DoubleClick
     name: Google DoubleClick
     domains:
-      - "marketingplatform.google.com"
+      - "thinkwithgoogle.com/intl/en-apac/marketing-strategies/automation/doubleclick-digital-marketing-platform"
     patterns:
       - "(?i)(com[.]google[.]doubleclick).*"
     tags:
@@ -47,7 +919,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Drive
     name: Google Drive
     domains:
-      - "drive.google.com"
+      - "google.com/drive"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]drive).*"
     tags:
@@ -63,7 +935,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Fit
     name: Google Fit
     domains:
-      - "google.com"
+      - "google.com/fit"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]fitness).*"
     tags:
@@ -79,7 +951,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Location
     name: Google Location Services
     domains:
-      - "google.com"
+      - "mapsplatform.google.com"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]location).*"
     tags:
@@ -87,7 +959,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Maps
     name: Google Maps
     domains:
-      - "maps.google.com"
+      - "google.com/maps"
     patterns:
       - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps|com[.]google[.]android[.]gms[.]maps).*"
     tags:
@@ -111,7 +983,7 @@ sinks:
   - id: ThirdParties.SDK.Google.Crashlytics
     name: Google Crashlytics
     domains:
-      - "crashlytics.google.com"
+      - "firebase.google.com/docs/crashlytics"
     patterns:
       - "(?i)(com[.]crashlytics|com.firebase.crashlytics|com.google.firebase.crashlytics).*"
     tags: 

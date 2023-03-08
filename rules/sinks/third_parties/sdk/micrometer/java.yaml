@@ -9,5 +9,5 @@ sinks:
     domains:
       - "micrometer.io"
     patterns:
-      - "(?i)(io[.]micrometer).*"
+      - "(io.micrometer(?!.*(util|internal)).*)"
     tags:
