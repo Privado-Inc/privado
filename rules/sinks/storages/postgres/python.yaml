@@ -4,7 +4,8 @@ sinks:
     domains:
       - postgresql.org
     patterns:
-      - "(?i).*(psycopg.*cursor.*execute.*)"
+      - "(?i).*(psycopg.*connect).*"
+      - "(?i).*(psycopg.*execute).*"
     tags:
 
   - id: Storages.Postgres.Read
@@ -12,5 +13,5 @@ sinks:
     domains:
       - postgresql.org
     patterns:
-      - "(?i).*psycopg.*cursor.*fetch.*"
+      - "(?i).*psycopg.*fetch.*"
     tags:
