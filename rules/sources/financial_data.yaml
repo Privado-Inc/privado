@@ -1,4 +1,5 @@
 sources:
+  
   - id: Data.Sensitive.FinancialData.BankAccountDetails
     name: Bank Account Details
     category: Financial Data
@@ -8,7 +9,7 @@ sources:
       - "(?i).*((?<!question)bank[^\\s/(;)#|,=!>]*(?:name|account|details|detail|address|country|(swift|bic)-code|(swift|bic)_code)|bank[^\\s/(;)#|,=!>]*account[^\\s/(;)#|,=!>]*details|(swift|bic)[-_]code|(swift|bic)code)"
     tags:
       law: GDPR
-
+      
   - id: Data.Sensitive.FinancialData.CardIssuer
     name: Card Issuer
     category: Financial Data
@@ -39,16 +40,6 @@ sources:
     tags:
       law: GDPR
 
-  - id: Data.Sensitive.FinancialData.PaymentNonce
-    name: Payment Nonce
-    category: Financial Data
-    isSensitive: False
-    sensitivity: medium
-    patterns:
-      - "(?i)(.*)(payment[s]?)(nonce)(.*)"
-    tags:
-      law: GDPR
-
   - id: Data.Sensitive.FinancialData.PaymentMode
     name: Payment Mode
     category: Financial Data
@@ -68,17 +59,17 @@ sources:
       - "(?i).*((?:credit|cibil|crisil|fico|schufa)[^\\s/(;)#|,=!>]{0,10}score)"
     tags:
       law: GDPR
-
+    
   - id: Data.Sensitive.FinancialData.TaxInformation
     name: Tax Information
     category: Financial Data
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)(tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax|(form|name|box|item)1099)"
+      - "(?i)tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax"
     tags:
       law: GDPR
-
+  
   - id: Data.Sensitive.FinancialData.RetirementAccountInformation
     name: Retirement Account Information
     category: Financial Data
@@ -118,7 +109,7 @@ sources:
       - "(?i).*((?:dearness|houserent|entertainment|overtime|compensatory|conveyance|leave[^\\s/(;)#|,=!>]{0,10}travel|medical|periodicals|books|withholding|personal|employment|child|basic[^\\s/(;)#|,=!>]{0,10}tax|travel|maternity|paternity)[^\\s/(;)#|,=!>]{0,10}allowance)"
     tags:
       law: GDPR
-
+  
   - id: Data.Sensitive.FinancialData.StockorEquityGrants
     name: Stock or Equity Grants
     category: Financial Data
@@ -146,15 +137,5 @@ sources:
     sensitivity: medium
     patterns:
       - "(?i).*(gym[^\\s/(;)#|,=!>]{0,10}membership|free[^\\s/(;)#|,=!>]{0,10}(?:lunch|snacks|breakfast|drinks|dinner)|employee[^\\s/(;)#|,=!>]{0,10}discount|employee[^\\s/(;)#|,=!>]{0,10}assistance[^\\s/(;)#|,=!>]{0,10}program|company[^\\s/(;)#|,=!>]{0,10}car|(?:retirement|pension)[^\\s/(;)#|,=!>]{0,10}plan|performance[^\\s/(;)#|,=!>]{0,10}bonus|(?:life|medical|dental|vision)[^\\s/(;)#|,=!>]{0,10}insurance|flexible[^\\s/(;)#|,=!>]{0,10}hours|company[^\\s/(;)#|,=!>]{0,10}shuttle|relocation[^\\s/(;)#|,=!>]{0,10}bonus|(?:paternity|maternity)[^\\s/(;)#|,=!>]{0,10}leave)"
-    tags:
-      law: GDPR
-
-  - id: Data.Sensitive.FinancialData.InsuranceNumber
-    name: Insurance Number
-    category: Financial Data
-    isSensitive: True
-    sensitivity: high
-    patterns:
-      - "(?i).*(insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|insurance[^\\s/(;)#|,=!>]*claim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
     tags:
       law: GDPR

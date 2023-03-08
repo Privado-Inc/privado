@@ -4,11 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Buyapowa
-    name: Buyapowa
+  - id: ThirdParties.SDK.Jhuapl
+    name: Jhuapl
     domains:
-      - "buyapowa.com"
+      - "jhuapl.edu"
     patterns:
-      - "(?i)(integrations.*buyapowa|.*bypwclient).*"
+      - "(?i)(intern).*"
     tags:
-  

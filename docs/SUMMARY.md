@@ -8,12 +8,6 @@
 * [Running a Scan](getting-started-with-privado/running-a-scan.md)
 * [Understanding Results](getting-started-with-privado/understanding-the-results.md)
 * [Command Reference](getting-started-with-privado/command-reference.md)
-* [Understanding privado.json](getting-started-with-privado/understanding-privado.json/README.md)
-  * [Sources](getting-started-with-privado/understanding-privado.json/sources.md)
-  * [Processing](getting-started-with-privado/understanding-privado.json/processing.md)
-  * [Data Flow](getting-started-with-privado/understanding-privado.json/data-flow.md)
-  * [Collections](getting-started-with-privado/understanding-privado.json/collections.md)
-  * [Violations](getting-started-with-privado/understanding-privado.json/violations.md)
 
 ## Understanding Rules
 
@@ -27,10 +21,6 @@
   * [Internal APIs](understanding-rules/sinks/internal-apis.md)
 * [Collections](understanding-rules/collections.md)
 * [Policies](understanding-rules/policies.md)
-
-## Tutorials
-
-* [How to scan a repository using Privado](tutorials/command-reference.md)
 
 ## Customizing Privado
 

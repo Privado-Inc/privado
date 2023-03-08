@@ -9,7 +9,6 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(?i)(aws_cdk.*aws_docdb).*"
       - "(?i).*boto.*(?:find.{0,1}one).*"
     tags:
 
