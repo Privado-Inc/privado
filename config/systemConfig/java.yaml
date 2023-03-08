@@ -1,0 +1,12 @@
+systemConfig:
+  - key: apiHttpLibraries
+    value: ^(?i)(org.apache.http|okhttp|org.glassfish.jersey|com.mashape.unirest|java.net.http|java.net.URL|org.springframework.(web|core.io)|groovyx.net.http|org.asynchttpclient|kong.unirest.java|org.concordion.cubano.driver.http|javax.net.ssl).*
+
+  - key: ignoredSinks
+    value: (?i).*(?<=map|list|jsonobject|json|array|arrays|jsonnode|objectmapper|objectnode).*(put:|get:).*
+  
+  - key: apiSinks
+    value: (?i)(?:url|client|openConnection|request|execute|newCall|load|host|access|fetch|get|getInputStream|getApod|getForObject|getForEntity|list|set|put|post|proceed|trace|patch|Path|send|sendAsync|remove|delete|write|read|assignment|provider|exchange|postForEntity)
+
+  - key: apiIdentifier
+    value: (?i).*((hook|base|authorize|provider|endpoint|installation)(s){0,1}(_){0,1}url|(slack|web)(_){0,1}hook|(rest|api)(_){0,1}endpoint).*

@@ -9,16 +9,6 @@ sources:
     tags:
       law: GDPR
 
-  - id: Data.Sensitive.HealthData.HealthInsuranceNumber
-    name: Health Insurance Number
-    category: Health Data
-    isSensitive: True
-    sensitivity: high
-    patterns:
-      - "(?i).*((?:health|medical)[^\\s/(;)#|,=!>]*insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|mediclaim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
-    tags:
-      law: GDPR
-  
   - id: Data.Sensitive.HealthData.IllnessorMedicalCondition
     name: Illness or Medical Condition
     category: Health Data

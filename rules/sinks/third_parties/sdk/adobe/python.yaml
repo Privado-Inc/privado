@@ -9,5 +9,213 @@ sinks:
     domains:
       - "adobe.com"
     patterns:
-      - "(?i)(adobe_analytics|analytics.mayhem.adobe|adobesign|aep_sdk|adobe.pdfservices).*"
+      - "(?i)(analytics.mayhem.adobe|adobesign|adobe.pdfservices).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.ExperienceCloud
+    name: Adobe Experience Cloud
+    domains:
+      - "developer.adobe.com/experience-platform"
+    patterns:
+      - "(?i)(aep_sdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.AudienceManager
+    name: Adobe Audience Manager
+    domains:
+      - "developer.adobe.com/audience-manager"
+    patterns:
+      - "(?i)(adobe.*aam).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Adobe.Analytics
+    name: Adobe Analytics
+    domains:
+      - "developer.adobe.com/analytics-apis"
+    patterns:
+      - "(?i)(adobe.*analytics).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Adobe.BlazeDS
+    name: Adobe BlazeDS
+    domains:
+      - "opensource.adobe.com/projects/blazeds"
+    patterns:
+      - "(?i)(adobe.*blazeds).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Cairngorm
+    name: Adobe Cairngorm
+    domains:
+      - "cairngormdocs.org"
+    patterns:
+      - "(?i)(adobe.*cairngorm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Social
+    name: Adobe Social
+    domains:
+      - "adobe.com/in/creativecloud/social-media"
+    patterns:
+      - "(?i)(adobe.*cq.social).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Robotlegs
+    name: Adobe Robotlegs
+    domains:
+      - "robotlegs.github.io/robotlegs-framework"
+    patterns:
+      - "(?i)(adobe.*robotlegs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Parsley
+    name: Adobe Parsley
+    domains:
+      - "developer.adobe.com/parsley"
+    patterns:
+      - "(?i)(adobe.*parsley).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Mate
+    name: Adobe Mate
+    domains:
+      - "mate.asfusion.com"
+    patterns:
+      - "(?i)(adobe.*mate).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Swiz
+    name: Adobe Swiz
+    domains:
+      - "swizframework.org"
+    patterns:
+      - "(?i)(adobe.*swiz).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.MarketingCloudAnalytics
+    name: Adobe Marketing Cloud Analytics
+    domains:
+      - "developer.adobe.com/analytics-apis"
+    patterns:
+      - "(?i)(adobe.*marketing.mobile.analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Campaign
+    name: Adobe Campaign
+    domains:
+      - "experienceleague.adobe.com/docs/campaign-standard"
+    patterns:
+      - "(?i)(adobe.*marketing.mobile.campaign|adobe.*campaign).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Target
+    name: Adobe Target
+    domains:
+      - "developer.adobe.com/target"
+    patterns:
+      - "(?i)(adobe.*marketing.mobile.target|adobe.*target).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Signal
+    name: Adobe Signal
+    domains:
+      - "adobe.com/signal"
+    patterns:
+      - "(?i)(adobe.*marketing.mobile.signal).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.AEM
+    name: Adobe AEM
+    domains:
+      - "adobe.com/experience-manager"
+    patterns:
+      - "(?i)(adobe.*aem).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Flex
+    name: Adobe Flex
+    domains:
+      - "adobe.com/products/flex"
+    patterns:
+      - "(?i)(adobe.*flex).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Granite
+    name: Adobe Granite
+    domains:
+      - "adobe.com/granite"
+    patterns:
+      - "(?i)(adobe.*granite).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.ExtensibleMetadataPlatform
+    name: Adobe Extensible Metadata Platform
+    domains:
+      - "adobe.com/xmp"
+    patterns:
+      - "(?i)(adobe.*xmp).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.CreativeCloud
+    name: Adobe Creative Cloud
+    domains:
+      - "adobe.com/in/creativecloud"
+    patterns:
+      - "(?i)(adobe.*creativesdk|adobe.*creativecloud).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.DocumentCloud
+    name: Adobe Document Cloud
+    domains:
+      - "developer.adobe.com/document-services/homepage"
+    patterns:
+      - "(?i)(adobe.*dc|adobe.*documentcloud).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.ExperienceCloud
+    name: Adobe Experience Cloud
+    domains:
+      - "developer.adobe.com/experience-platform"
+    patterns:
+      - "(?i)(adobe.*experiencecloud).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Stock
+    name: Adobe Stock
+    domains:
+      - "developer.adobe.com/stock"
+    patterns:
+      - "(?i)(adobe.*stock).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.XD
+    name: Adobe XD
+    domains:
+      - "adobe.com/products/xd"
+    patterns:
+      - "(?i)(adobe.*xd).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.PremiereRush
+    name: Adobe PremiereRush
+    domains:
+      - "adobe.com/in/products/premiere-rush"
+    patterns:
+      - "(?i)(adobe.*premiererush).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Acrobat
+    name: Adobe Acrobat
+    domains:
+      - "adobe.com/in/acrobat"
+    patterns:
+      - "(?i)(adobe.*acrobat).*"
+    tags:
+
+  - id: ThirdParties.SDK.Adobe.Sensei
+    name: Adobe Sensei
+    domains:
+      - "adobe.com/in/sensei"
+    patterns:
+      - "(?i)(adobe.*sensei).*"
     tags:
