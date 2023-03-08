@@ -6,7 +6,8 @@ sinks:
   - id: Storages.CloudBigtable.ReadAndWrite
     name: Google Cloud Bigtable
     domains:
-      - cloud.google.com/bigquery
+      - cloud.google.com
+      - google.com
     patterns:
       - "(?i).*com[.]google[.]cloud[.]bigquery.*"
     tags:

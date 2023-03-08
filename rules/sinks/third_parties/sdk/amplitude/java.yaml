@@ -4,34 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Amplitude.Rudderstack
-    name: Amplitude Rudderstack
+  - id: ThirdParties.SDK.Amplitude
+    name: Amplitude
     domains:
-      - "partnerships.amplitude.com/English/directory/partner/1438522/rudderstack"
+      - "amplitude.com"
     patterns:
-      - "(?i)(com[.]rudderstack[.]android[.]amplitude|com[.]rudderstack[.]android[.]integration[.]amplitude).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amplitude.Analytics
-    name: Amplitude Analytics
-    domains:
-      - "amplitude.com/amplitude-analytics"
-    patterns:
-      - "(?i)(com[.]amplitude[.]analytics).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amplitude.CustomerDataPlatform
-    name: Amplitude Customer Data Platform
-    domains:
-      - "amplitude.com/customer-data-platform"
-    patterns:
-      - "(?i)(com[.]amplitude[.]java).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amplitude.Experiment
-    name: Amplitude Experiment
-    domains:
-      - "amplitude.com/amplitude-experiment"
-    patterns:
-      - "(?i)(com[.]amplitude[.]experiment).*"
+      - "(?i)(com[.]amplitude|com[.]rudderstack[.]android[.]amplitude|com[.]rudderstack[.]android[.]integration[.]amplitude).*"
     tags:

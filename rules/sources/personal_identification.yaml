@@ -18,7 +18,7 @@ sources:
       - "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|full)name"
     tags:
       law: GDPR
-
+  
   - id: Data.Sensitive.PersonalIdentification.Gender
     name: Gender
     category: Personal Identification
@@ -28,7 +28,7 @@ sources:
       - "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
     tags:
       law: GDPR
-
+  
   - id: Data.Sensitive.PersonalIdentification.LastName
     name: Last Name
     category: Personal Identification
@@ -38,15 +38,14 @@ sources:
       - "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)"
     tags:
       law: GDPR
-
+  
   - id: Data.Sensitive.PersonalIdentification.Age
     name: Age
     category: Personal Identification
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)^(user|person|customer|under|years|yrs|human)?(_)?(of|in)?(_)?(age)$"
-      - "(?i)^(age)(_)?(of|in)?(_)?(human|years|yrs|user|person|customer)?$"
+      - "(?i)age|is[_-]{0,1}(minor|major|adult|child)|(.*(age[^\\s/(;)#|,=!>]{0,10}(?:years|yrs)|(?:user|person|customer)[^\\s/(;)#|,=!>]{0,5}(?<!im|p|langu|us|aver)age))"
     tags:
       law: GDPR
 

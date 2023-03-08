@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mapbox.com"
     patterns:
-      - "(?i)(com[.]mapbox[.]mapboxsdk|com[.]wdtinc).*"
+      - "(?i)(com[.]mapbox[.]mapboxsdk).*"
     tags:

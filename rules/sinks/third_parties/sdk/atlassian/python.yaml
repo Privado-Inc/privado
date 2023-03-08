@@ -11,107 +11,35 @@ sinks:
     patterns:
       - "(?i)(django_atlassian|atlassian).*"
     tags:
-
-  - id: ThirdParties.SDK.Atlassian.BitbucketServer
-    name: Atlassian Bitbucket Server
+  
+  - id: ThirdParties.SDK.Atlassian.Confluence
+    name: Atlassian Confluence
     domains:
-      - "bitbucket.org"
+      - "confluence.atlassian.com"
     patterns:
-      - "(?i)(atlassian.*bitbucket|airflow.*providers.*bitbucket).*"
+      - "(?i)(pyfluence|confluence.*client|sphinxcontrib.confluencebuilder).*"
     tags:
-
-  - id: ThirdParties.SDK.Atlassian.JiraPlugins
-    name: Atlassian Jira Plugins
+  
+  - id: ThirdParties.SDK.Atlassian.JIRA
+    name: Atlassian JIRA
     domains:
-      - "marketplace.atlassian.com/addons/app/jira"
-    patterns:
-      - "(?i)(atlassian.*jira.plugins).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.JiraREST
-    name: Atlassian Jira REST
-    domains:
-      - "developer.atlassian.com/cloud/jira/platform/rest"
+      - "jira.atlassian.com"
     patterns:
       - "(?i)(cloudwright_atlassian_jira|jira|airflow.*providers.*jira).*"
     tags:
 
-  - id: ThirdParties.SDK.Atlassian.RM
-    name: Atlassian RM
+  - id: ThirdParties.SDK.Atlassian.Bitbucket
+    name: Atlassian Bitbucket
     domains:
-      - "atlassian.com/rm"
+      - "bitbucket.atlassian.com"
     patterns:
-      - "(?i)(atlassian.*rm).*"
+      - "(?i)(atlassian.*bitbucket|airflow.*providers.*bitbucket).*"
     tags:
   
-  - id: ThirdParties.SDK.Atlassian.ServiceDesk
-    name: Atlassian ServiceDesk
-    domains:
-      - "atlassian.com/blog/jira-service-desk/report-jira-service-desk-cost-effective-itsm-solution"
-    patterns:
-      - "(?i)(atlassian.*servicedesk).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Confluence
-    name: Atlassian Confluence
-    domains:
-      - "atlassian.com/software/confluence"
-    patterns:
-      - "(?i)(pyfluence|confluence.*client|sphinxcontrib.confluencebuilder).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Crowd
-    name: Atlassian Crowd
-    domains:
-      - "atlassian.com/software/crowd"
-    patterns:
-      - "(?i)(atlassian.*crowd).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Trello
-    name: Atlassian Trello
-    domains:
-      - "trello.com"
-    patterns:
-      - "(?i)(atlassian.*trello).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Bamboo
-    name: Atlassian Bamboo
-    domains:
-      - "atlassian.com/software/bamboo"
-    patterns:
-      - "(?i)(atlassian.*bamboo).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Fisheye
-    name: Atlassian Fisheye
-    domains:
-      - "atlassian.com/software/fisheye"
-    patterns:
-      - "(?i)(atlassian.*fisheye).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Crucible
-    name: Atlassian Crucible
-    domains:
-      - "atlassian.com/software/crucible"
-    patterns:
-      - "(?i)(atlassian.*crucible).*"
-    tags:
-
-  - id: ThirdParties.SDK.Atlassian.Access
-    name: Atlassian Access
-    domains:
-      - "atlassian.com/software/access"
-    patterns:
-      - "(?i)(atlassian.*access).*"
-    tags:
-
   - id: ThirdParties.SDK.Atlassian.Opsgenie
     name: Atlassian Opsgenie
     domains:
-      - "atlassian.com/software/opsgenie"
+      - "opsgenie.atlassian.com"
     patterns:
       - "(?i)(opsgenie|atlassian.*opsgenie|airflow.*providers.*opsgenie).*"
     tags:

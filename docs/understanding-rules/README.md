@@ -1,6 +1,6 @@
 # What are Rules?
 
-Privado has rules to answer contextual questions related to  personal data. The journey of tracking data starts from "sources". Sources are where data dictionary is defined. Privado identifies the variables, classes and structures matching sources and tracks the flows to third parties, databases and leakages which are called as "sinks". Threats are code or configuration implementation which have direct impact on data security and privacy. Policies allow you to enforce compliance and data governance rules. The rules present a single _common language_ which embed the knowledge of a privacy and data researcher about sources, sinks, data policies, threats to drive the code analysis engine
+Privado has rules to answer the contextual questions related to  personal data. The journey of tracking data starts from "sources". Sources are where data dictionary is defined. Privado identifies the variables, classes and structures matching sources and then further tracks the flows to third parties, databases and leakages which are called as "sinks". Threats are code or configuration implementation which has direct impact on the data security and privacy. Policies allow you to enforce compliance and data governance rules. The rules presents a single _common language_ which embeds all the knowledge of a privacy and data researcher about sources, sinks, data policies, threats to drive the code analysis engine
 
 ### Rule Structure
 
@@ -8,11 +8,7 @@ All Privado rules are defined in YAML format and generally have the following st
 
 <figure><img src="../.gitbook/assets/Rules YAML.jpg" alt=""><figcaption></figcaption></figure>
 
-The structure of a _rule_ varies a bit based on the types of rules that are defined. For example, 
-1. Source rules contains `isSensitive` as well as `sensitivity` keys so that, based on the values set, the source data is tagged appropriately  
-2. Policy rules contain `description` that is needed for the issue that gets created when policy is violated. They also contain `dataflow` as well as `repositories` on which the policy will be applied. 
-
-To learn more about rules, you can review the [rules](https://github.com/Privado-Inc/privado/tree/main/rules) directory on Github
+The structure of rule varies a bit based on the types of rules that are defined. For example, the Source rule contains `isSensitive` as well as `sensitivity` keys so that based on the values set, the source data is tagged appropriately. Simlarly,  policy rules contain `description` that is needed for the issue that gets created when policy is violated. It also contains `dataflow` as well as `repositories` on which the policy will be applied. To learn more about rules, you can review the [rules](https://github.com/Privado-Inc/privado/tree/main/rules) directory on Github
 
 ### Organization
 

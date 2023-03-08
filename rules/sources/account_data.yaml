@@ -35,7 +35,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)(.*(?<!(db|database|jira|sql|postgres|mongo|aws)[^\\s/(;)#|,=!>]{0,3})(pwd|psw|pswd|password|passwrd))"
+      - "(?i)(.*(?<!(db|database|jira|sql|postgres|mongo|aws)[^\\s/(;)#|,=!>]{0,3})(psw|pswd|password|passwrd))"
     tags:
       law: GDPR
 
