@@ -1,0 +1,11 @@
+sinks:
+  - id: Storages.ODBC.ReadAndWrite
+    name: ODBC DB
+    domains:
+      - pyodbc.org
+      - wiki.python.org/moin/ODBC
+    patterns:
+      - "(?i).*(pyodbc.*connect).*"
+      - "(?i).*(pyodbc.*(cursor|fetch)).*"
+      - "(?i).*(pyodbc.*execute).*"
+    tags:

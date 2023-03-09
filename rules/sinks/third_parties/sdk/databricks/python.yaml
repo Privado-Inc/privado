@@ -9,5 +9,5 @@ sinks:
     domains:
       - "databricks.com"
     patterns:
-      - "(?i)(dbx|databricks).*"
+      - "(?i)(dbx|.*databricks).*"
     tags:

@@ -101,6 +101,7 @@ sinks:
       - "aws.amazonaws.com/redshift"
     patterns:
       - "(?i)(aws_cdk.*aws_redshift).*"
+      - "(?i)(.*redshift.*query)"
       - "(?i)(django_redshift_backend|target_redshift|redshift_connector|redshift_connector|mypy_boto3_redshift_data|pandas_amazon_redshift).*"
     tags:
 

@@ -1,6 +1,6 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: (?i)(request|aiohttp|treq|grequests|urllib|http|uplink|httoop|flask_restful|tornado.httpclient|pycurl|bs4|.*(HttpClient)).*
+    value: (?i)(request|retry|retriable|aiohttp|treq|grequests|urllib|http|uplink|httoop|flask_restful|tornado.httpclient|pycurl|bs4|.*(HttpClient)).*
 
   - key: apiSinks
     value: (?i).*(?:url(?!(open|encode))|client|get|set|post|put|patch|delete|head|options|request|feed|trigger|init|find|send|receive|redirect|fetch|execute|response|pool|client|http|load|list|trace|remove|write|provider|host|access|info_read|select|perform).*
