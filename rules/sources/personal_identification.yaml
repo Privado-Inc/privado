@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year))))"
+      - "(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|dt|month|year))))"
     tags:
       law: GDPR
 
