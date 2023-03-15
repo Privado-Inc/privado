@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Jhuapl
-    name: Jhuapl
+  - id: ThirdParties.SDK.SFTP
+    name: SFTP
     domains:
-      - "jhuapl.edu"
+      - "ssh.com"
     patterns:
-      - "(?i)(intern).*"
+      - "(?i)(sftp|airflow.*sftp|.*sftpclient|.*sftpoperator).*"
     tags:

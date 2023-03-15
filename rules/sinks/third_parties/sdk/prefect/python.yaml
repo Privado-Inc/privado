@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Snowflake
-    name: Snowflake
+  - id: ThirdParties.SDK.Prefect
+    name: Prefect
     domains:
-      - "snowflake.com"
+      - "prefect.io"
     patterns:
-      - "(?i)(snowflake.*connector|snowflake|airflow.*snowflake).*"
+      - "(?i)(prefect).*"
     tags:
