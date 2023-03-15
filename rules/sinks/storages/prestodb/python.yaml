@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Snowflake
-    name: Snowflake
+  - id: Storages.Prestodb
+    name: Prestodb
     domains:
-      - "snowflake.com"
+      - "prestodb.io"
     patterns:
-      - "(?i)(snowflake.*connector|snowflake|airflow.*snowflake).*"
+      - "(?i)(airflow.*providers.*presto|prestodb).*"
     tags:

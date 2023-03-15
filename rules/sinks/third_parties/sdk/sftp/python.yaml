@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Prestodb
-    name: Prestodb
+  - id: ThirdParties.SDK.SFTP
+    name: SFTP
     domains:
-      - "prestodb.io"
+      - "ssh.com"
     patterns:
-      - "(?i)(airflow.*providers.*presto|prestodb).*"
+      - "(?i)(sftp|airflow.*sftp|.*sftpclient|.*sftpoperator).*"
     tags:
