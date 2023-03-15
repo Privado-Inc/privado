@@ -9,5 +9,5 @@ sinks:
     domains:
       - "snowflake.com"
     patterns:
-      - "(?i)(snowflake.*connector|snowflake|airflow.*snowflake).*"
+      - "(?i).*snowflake.*"
     tags:
