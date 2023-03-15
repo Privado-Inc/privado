@@ -16,7 +16,7 @@ sinks:
     domains:
       - oracle.com
     patterns:
-      - "(?i)((java[.]sql[.](Statement|PreparedStatement)[.](executeUpdate|executeLargeUpdate).*)|(.*repository.*[.](save.*|delete.*)[:].*)|(org[.]springframework[.]jdbc[.]core[.]JdbcTemplate[.].*update[:].*))" 
+      - "(?i)((java[.]sql[.](Statement|PreparedStatement)[.](executeUpdate|executeLargeUpdate).*)|(org[.]springframework[.]jdbc[.]core[.]JdbcTemplate[.].*update[:].*))"
     tags:
 
   - id: Storages.SpringFramework.Jdbc.Read
@@ -24,5 +24,5 @@ sinks:
     domains:
       - oracle.com
     patterns:
-      - "(?i)((java[.]sql[.](Statement|PreparedStatement)[.](executeQuery).*)|(.*repository.*[.](count[:]long.*|find.*[:].*))|(org[.]springframework[.]jdbc[.]core[.]JdbcTemplate[.](query|execute).*[:].*))" 
+      - "(?i)((java[.]sql[.](Statement|PreparedStatement)[.](executeQuery).*)|(org[.]springframework[.]jdbc[.]core[.]JdbcTemplate[.](query|execute).*[:].*))"
     tags:
