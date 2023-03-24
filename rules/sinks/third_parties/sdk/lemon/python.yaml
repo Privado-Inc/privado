@@ -9,5 +9,5 @@ sinks:
     domains:
       - "lemon.markets"
     patterns:
-      - "(?i)(lemon).*"
+      - "(?i)(lemon.*api|lemon.*market_data|lemon.*trading).*"
     tags:

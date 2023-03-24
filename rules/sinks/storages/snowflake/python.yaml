@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Android SQLite - https://developer.android.com/
+
+sinks:
+
+  - id: Storages.Snowflake
+    name: Snowflake
+    domains:
+      - "snowflake.com"
+    patterns:
+      - "(?i).*snowflake.*"
+    tags:
