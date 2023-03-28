@@ -6,7 +6,7 @@ sinkSkipList:
       - "(django.*\\.py|selenium).*"
       - "\\/.*[.]py.*"
       - "(__builtin|cls|ModelClass|assoc|result)\\..*"
-      - "(?i)(builtins|stringio|operator|functools|ast|jwt|cookielib|hashlib|urlparse|hmac|six|glob|json|html2text|yaml|re|copy|argparse|datetime|time|decimal|collections|asyncio|subprocess|pytest|logging|traceback|sys|os|oss2|unittest|base64|dateutil|importlib|socket|urllib3|urllib|io|uuid|gzip|math|bson|random|xmltodict|shutil|tempfile)\\.py.*"
+      - "(?i)(builtins|stringio|operator|functools|ast|jwt|cookielib|hashlib|urlparse|hmac|six|glob|json|html2text|yaml|re|copy|argparse|datetime|time|decimal|collections|asyncio|subprocess|pytest|logging|traceback|sys|os|oss2|unittest|base64|dateutil|importlib|socket|urllib3|urllib|io|uuid|gzip|math|bson|random|xmltodict|shutil|tempfile).*"
 
   - id: SinkSkipList.BuiltInLib
     name: Skip built in language libraries
