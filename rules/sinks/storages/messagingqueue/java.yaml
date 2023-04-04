@@ -5,7 +5,15 @@ sinks:
     domains:
       - apache.com
     patterns: 
-      - "(?i).*(org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]).*"
+      - "(?i).*((org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute|produce|write)[:])|(org[.]apache[.]kafka[.]clients[.]producer[.]KafkaProducer[.](send|produce|write)[:])).*"
+    tags:
+
+  - id: Messaging.Queue.Kafka.Consumer
+    name: Apache Kafka (Consumer)
+    domains:
+      - apache.com
+    patterns:
+      - "(?i)((org[.]springframework[.]kafka[.]core[.]KafkaConsumer[.](receive|poll|subscribe)[:])|(org[.]apache[.]kafka[.]clients[.]consumer[.](ConsumerRecord|KafkaConsumer[.](subscribe|unsubscribe|assign|commit|seek|pause|resume)[:]))|(org[.]springframework[.]kafka[.]listener[.]MessageListener)|(org[.]springframework[.]kafka[.]listener[.]KafkaMessageListenerContainer)|(org[.]apache[.]kafka[.]common[.]serialization[.]StringDeserializer)).*"
     tags:
 
   - id: Messaging.Queue.AMQP.Rabbit.Producer
