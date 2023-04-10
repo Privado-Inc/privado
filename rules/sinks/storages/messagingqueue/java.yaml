@@ -21,7 +21,14 @@ sinks:
     domains:
       - springframework.org
     patterns: 
-      - "(?i).*(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]|(jakarta[.]jms[.]JMSProducer|javax[.]jms[.]MessageProducer)[.](send|setProperty)[:]).*"
+      - "(?i)(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]|(jakarta[.]jms[.]JMSProducer|javax[.]jms[.]MessageProducer)[.](send)[:]).*"
+      - "(?i)org.apache.qpid.jms.JmsMessageProducer.send[:].*"
+      - "(?i)org.eclipse.paho.client.mqttv3.MqttClient.publish[:].*"
+      - "(?i)com.ibm.mq.jms.MQQueueSender.send[:].*"
+      - "(?i)org.apache.camel.component.jms.JmsProducer.(process|onExchange)[:].*"
+      - "(?i)org.apache.nifi.jms.processors.JMSProducer.sendMessage[:].*"
+      - "(?i)org.apache.rocketmq.client.producer.DefaultMQProducer.send[:].*"
+
     tags:
 
   - id: Messaging.Service.AmazonSQS.Producer
@@ -45,5 +52,10 @@ sinks:
     domains:
       - springframework.org
     patterns: 
-      - "(?i).*(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doReceive|receive)[:]|(jakarta[.]jms[.]JMSConsumer|javax[.]jms[.]MessageConsumer)[.](receive|receiveBody|receiveNoWait|receiveBodyNoWait)[:]).*"
+      - "(?i)(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doReceive|receive)[:]|(jakarta[.]jms[.]JMSConsumer|javax[.]jms[.]MessageConsumer)[.](receive|receiveBody|receiveNoWait|receiveBodyNoWait)[:]).*"
+      - "(?i)org.apache.qpid.jms.JmsMessageProducer.receive[:].*"
+      - "(?i)org.eclipse.paho.client.mqttv3.MqttClient.(subscribe|messageArrived)[:].*"
+      - "(?i)com.ibm.mq.jms.MQQueueSender.receive[:].*"
+      - "(?i)org.apache.camel.component.jms.JmsConsumer.processMessage[:].*"
+      - "(?i)org.springframework.integration.jms.JmsSendingMessageHandler.onMessage[:].*"
     tags:
