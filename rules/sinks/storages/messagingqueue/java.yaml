@@ -5,7 +5,7 @@ sinks:
     domains:
       - apache.com
     patterns: 
-      - "(?i).*((org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute|commit|produce|write)[:])|(org[.]apache[.]kafka[.]clients[.]producer[.]KafkaProducer[.](sendOffsetsToTransaction|send|commit|produce|write|sendAsync)[:])|(com[.]salesforce[.]heroku[.]kafka[.]producer[.]HerokuKafkaProducer[.]send[:])|(io[.]confluent[.]kafka[.]serializers[.]KafkaAvroSerializer[.]serialize[:])|(io[.]lenses[.]kafka[.]client[.]producer[.]Producer[.]send)|(io[.]confluent[.]kafka[.]clients[.]producer[.]KafkaProducer[.]send)|(io[.]quarkus[.]kafka[.]producer[.]KafkaProducer[.]send)|(io.confluent.kafka.serializers.KafkaJsonSerializer.serialize)|(org[.]apache[.]kafka[.]clients[.]producer[.]ProducerRecord[.]<init>)).*"
+      - "(?i).*((org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute|commit|produce|write)[:])|(org[.]apache[.]kafka[.]clients[.]producer[.]KafkaProducer[.](sendOffsetsToTransaction|send|commit|produce|write|sendAsync)[:])|(com[.]salesforce[.]heroku[.]kafka[.]producer[.]HerokuKafkaProducer[.]send[:])|(io[.]lenses[.]kafka[.]client[.]producer[.]Producer[.]send)|(io[.]confluent[.]kafka[.]clients[.]producer[.]KafkaProducer[.]send)|(io[.]quarkus[.]kafka[.]producer[.]KafkaProducer[.]send)).*"
     tags:
 
   - id: Messaging.Queue.Kafka.Consumer
@@ -13,7 +13,7 @@ sinks:
     domains:
       - apache.com
     patterns:
-      - "(?i)((org[.]springframework[.]kafka[.]core[.]KafkaConsumer[.](receive|poll|subscribe)[:])|(org[.]apache[.]kafka[.]clients[.]consumer[.]Consumer[.](resume|commitAsync))|(org[.]apache[.]kafka[.]clients[.]consumer[.]((ConsumerRecord[.](partition|topic|count|value))|(KafkaConsumer[.](poll|receive|subscribe|unsubscribe|assign|commit|seek|pause|resume|close|commitAsync|beginningOffsets)[:])))|(org[.]springframework[.]kafka[.]listener[.]MessageListener[.]onMessage)|(org[.]springframework[.]kafka[.]listener[.]KafkaMessageListenerContainer[.](start|stop|pause|resume))|(org[.]apache[.]kafka[.]common[.]serialization[.]StringDeserializer[.]deserialize)|(com[.]salesforce[.]kafka[.]client[.]consumer[.]KafkaConsumer[.](subscribe|unsubscribe|assign|seek|seekToBeginning|seekToEnd|poll))|(org[.]springframework[.]kafka[.]core[.]DefaultKafkaConsumerFactory[.]<init>)|(org[.]apache[.]kafka[.]common[.]serialization[.]Consumer<K,V>[.]<init>)).*"
+      - "(?i)((org[.]springframework[.]kafka[.]core[.]KafkaConsumer[.](receive|poll|subscribe)[:])|(org[.]apache[.]kafka[.]clients[.]consumer[.]Consumer[.](resume|commitAsync))|(org[.]apache[.]kafka[.]clients[.]consumer[.]((ConsumerRecord[.](partition|topic|value))|(KafkaConsumer[.](poll|receive|subscribe|unsubscribe|assign|commit|seek|pause|resume|close|commitAsync)[:])))|(org[.]springframework[.]kafka[.]listener[.]MessageListener[.]onMessage)|(org[.]springframework[.]kafka[.]listener[.]KafkaMessageListenerContainer[.](start|stop|pause|resume))|(com[.]salesforce[.]kafka[.]client[.]consumer[.]KafkaConsumer[.](subscribe|unsubscribe|assign|seek|poll))).*"
     tags:
 
   - id: Messaging.Queue.AMQP.Rabbit.Producer
