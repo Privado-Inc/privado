@@ -9,7 +9,7 @@ sinks:
     domains:
       - "slack.com"
     patterns:
-      - "(?i)(slack_discovery_sdk|slack_sdk|slackclient|slackeventsapi|airflow.*providers.*slack|slack_webhook).*"
+      - "(?i)(slack_discovery_sdk|slack_sdk|slackclient|slackeventsapi|airflow.*providers.*slack.*|slack_webhook).*"
       - "(?i)((slack_sdk|django_slack).*message|slack[_]webhook.*post)"
       - "(?i).*slack_(hook|message).*"
     tags:
