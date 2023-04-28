@@ -1,0 +1,16 @@
+sinkSkipList:
+  - id: SinkSkipList.ThirdParties
+    name: Skip Third Party Sinks
+    patterns:
+      - "(HTMLAnchorElement|HTMLIFrameElement|HTMLElement).*"
+      - "<operator>\\..*"
+      - "JSON\\..*"
+      - "Date.*"
+      - "this.*"
+      - "__Runtime\\..*"
+      - "(?i)(Window|__ecma\\.|Document).*"
+
+  - id: SinkSkipList.BuiltInLib
+    name: Skip built in language libraries
+    patterns:
+      - "(?i)(bunyan|winston|moment|axios|gulp-|webpack-).*"
