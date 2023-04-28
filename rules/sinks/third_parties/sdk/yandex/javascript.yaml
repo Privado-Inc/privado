@@ -15,15 +15,15 @@ sinks:
   - id: ThirdParties.SDK.Yandex
     name: Yandex
     domains:
-      - "yandex.com"
-    patterns:
-      - "extended-google-translate-api"
-    tags:
-
-  - id: ThirdParties.SDK.Yandex
-    name: Yandex
-    domains:
       - "yandex.ru"
     patterns:
-      - "crypto-bot-api|@arateg\\/logger|jira.js|react-google-autocomplete|wrapme|merge-change|react-native-vkontakte-login"
+      - "crypto-bot-api"
+    tags:
+  
+  - id: ThirdParties.SDK.Vkontakte
+    name: Vkontakte
+    domains:
+      - "vk.com"
+    patterns:
+      - "react-native-vkontakte-login"
     tags:
