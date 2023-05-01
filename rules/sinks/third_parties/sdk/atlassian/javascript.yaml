@@ -31,3 +31,11 @@ sinks:
       - "hubot-jira|hubot-jira-connector|hubot-jira-issue-helper|hubot-jira-lotto"
       - "(huyhq-|@vmo11\\/)cz-jira-smart-commit"
     tags:
+  
+  - id: ThirdParties.SDK.Atlassian.BitbucketServer
+    name: Atlassian Bitbucket Server
+    domains:
+      - "bitbucket.org"
+    patterns:
+      - "bitbucket|netlify-cms-backend-bitbucket"
+    tags:
