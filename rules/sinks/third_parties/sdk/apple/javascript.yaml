@@ -9,5 +9,5 @@ sinks:
     domains:
       - "apple.com"
     patterns:
-      - "node-apple-receipt-verify"
+      - "node-apple-receipt-verify|app-store-validator"
     tags:

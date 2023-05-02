@@ -1,0 +1,20 @@
+exclusions:
+  - id: Exclusions.Test
+    name: Exclude test source code
+    patterns:
+      - "(.*/(test|spec)(s)?.*)|/Test[A-Z]|Test[.]"
+
+  - id: Exclusions.JavaScript.Packages
+    name: Exclude External JavaScript Packages
+    patterns:
+      - "(node_modules)/.*"
+
+  - id: Exclusions.JavaScript.MinifiedFiles
+    name: Exclude External JavaScript MinifiedFiles
+    patterns:
+      - ".*[.]min[.]js"
+
+  - id: Exclusions.Empty
+    name: Exclude file which cannot be read
+    patterns:
+      - "<empty>|<unknownFullName>"

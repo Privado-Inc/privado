@@ -19,3 +19,23 @@ sinks:
     patterns:
       - "@atlassian\\/johnson"
     tags:
+  
+  - id: ThirdParties.SDK.Atlassian.Jira
+    name: Atlassian Jira
+    domains:
+      - "atlassian.com/software/jira"
+    patterns:
+      - "jira.js|create-jira-release-notes|jira-activity|jira-term|@cn-shell\\/jira|jira-linkify|jira-wrapper|jira-track|jirascope|jira-miner"
+      - "@acumatica\\/jiraapi|@itentialopensource\\/adapter-jira|cz-jira-smart-commit-clone"
+      - "@roadiehq\\/backstage-plugin-jira|@devx\\/plugin-jira-backend|coc-jira-complete|alfred-jira-search"
+      - "hubot-jira|hubot-jira-connector|hubot-jira-issue-helper|hubot-jira-lotto"
+      - "(huyhq-|@vmo11\\/)cz-jira-smart-commit"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.BitbucketServer
+    name: Atlassian Bitbucket Server
+    domains:
+      - "bitbucket.org"
+    patterns:
+      - "bitbucket|netlify-cms-backend-bitbucket"
+    tags:
