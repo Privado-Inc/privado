@@ -8,3 +8,21 @@ sinks:
     patterns:
       - "(?:rxdb|follow|sqltomango|cradle|crypto-pouch|nano|@treehouses/cli|pouchdb-replication-stream|couchdb-promises|pouchdb-find|database-cleaner|couch-db|changes-stream|couch-admin|pub-keystore|typewiselite|cushion|polyclay|pouchdb|pouchdb-quick-search|couchster|fauxton|couchdb-change-events|couch-box|couch-nacl-permit|couchdb-bootstrap|docuri|superlogin|npm-registry-couchapp|putdoc|pouchdb-erase|couchdb-builder|connect-couchdb|couch-slouch|nano-option|couchdb-compile|tough-rate|couchdown|connect-cloudant-store|couchdb-push|couchdb-jwt|geopouch|filter-pouch|pouchdb-lru-cache|@zargu/couchdb-designer|changemachine|couchdb-create-index|translator-couch|angular-eha.couchdb-auth|moleculer-db-adapter-couchdb-nano|typed-nano|sneakerjs|node-red-contrib-cloudantplus|pouchdb-live-find|node-couchdb|@scienceai/create-error|@inator/pouchdb-users|pouchdb-validation-lib|pouchdb-quick-search-curltech|delta-pouch|@hoodie/task-client|couchdb-ensure|couchdb-calculate-session-id|stampee-couchdb-change-events|hoodie-server-task|pouchdb-live-query|couch-proxy-auth|couchdb-configure|designer|couchdb-client|pouchdb-quick-search-korean|spawn-pouchdb-server|couchdb-secure|roy-replicator|connect-nano|ouch-rx|@hoodie/store-server|couchdb-global-changes-stream|@hoodie/store-server-api|catlog|couchdb-api|resourceful|@stanlemon/react-couchdb-authentication|tibet|@hoodie/account-server|replicate-couchdb-cluster|noflo-couchdb|pouch-datalog|@prescrire/pouchdb-replication-stream|@stanlemon/react-pouchdb|node-couchdb-logger|sync-gateway|couchdb-request|@hoodie/account-server-api|pouchdb-admins|couchdb|save|couchdb-audit|couchdb-mkdb|couchdb-worker|couchdb-transactions|couchdb-iterator|jwt-couchdb|couch-login|couchdb-force|couchdb-ddoc-test|nano-doc-updater|@twilson63/palmetto-couchdb|hapi-auth-couchdb-cookie|pino-couchdb|@nicodejong/nest-couchdb|winston-couchdb|couchdb-merge|couchdb-howler|express-user-couchdb).*"
     tags:
+  
+  - id: Storages.PouchDb.ReadAndWrite
+    name: Pouch DB
+    domains:
+      - pouchdb.com
+    patterns:
+      - "pouchdb-core"
+      - ".*PouchDB"
+    tags:
+  
+  - id: Storages.RxDB.ReadAndWrite
+    name: RxDB
+    domains:
+      - rxdb.info
+    patterns:
+      - "rxdb"
+      - ".*(getRxStorageDexie|createRxDatabase|getRxStorageIndexedDB)"
+    tags:

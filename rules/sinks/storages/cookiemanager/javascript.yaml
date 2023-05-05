@@ -1,0 +1,19 @@
+sinks:
+  - id: Storages.Web.Cookie
+    name: Web Storage Cookie
+    patterns:
+      - "(?i).*(getCookie|setCookie|deleteCookie)"
+    tags:
+      law: GDPR
+  
+  - id: Storages.Web.LocalStorage
+    name: Web LocalStorage
+    patterns:
+      - "(?i)(localStorage).*(setItem|clear|removeItem|getItem)"
+    tags:
+  
+  - id: Storages.Web.SessionStorage
+    name: Web SessionStorage
+    patterns:
+      - "(?i)(storage|sessionstorage)(.*)(setItem|clear|removeItem|getItem)"
+    tags:
