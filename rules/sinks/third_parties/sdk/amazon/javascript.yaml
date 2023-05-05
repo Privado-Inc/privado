@@ -109,16 +109,6 @@ sinks:
       - "(?i)(@aws-cdk\\/aws-ecs).*"
     tags:
 
-  
-  - id: ThirdParties.SDK.Amazonaws.Dynamodb
-    name: Amazonaws Dynamodb
-    domains:
-      - "aws.amazonaws.com/dynamodb"
-    patterns:
-      - "(?i)(dynamodb-backup|@schedulino\\/aws-dynamodb-adapter|@scavasoft\\/aws-cdk-dynamodb-to-elasticsearch-stream|umzug-dynamodb-storage|dynamodbdown|@mcma\\/aws-dynamodb|dynamodb-stream-elasticsearch|serverless-dynamodb-pitr|dynamodb-backup-restore|bragg-dynamodb|@proak\\/dynamodb-stream-elasticsearch|claudiajs-dynamodb|dynamodb-wrapper|@aws-cdk\\/aws-dynamodb)"
-    tags:
-  
-
   - id: ThirdParties.SDK.Amazonaws.CloudWatchLogs
     name: Amazonaws CloudWatch Logs
     domains:
