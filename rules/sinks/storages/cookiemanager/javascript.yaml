@@ -2,7 +2,8 @@ sinks:
   - id: Storages.Web.Cookie
     name: Web Storage Cookie
     patterns:
-      - "(?i).*(getCookie|setCookie|deleteCookie)"
+      - "(?i).*(getCookie|setCookie|deleteCookie|removeCookie|useCookies)"
+      - "(?i)(cookie).*"
     tags:
       law: GDPR
   
