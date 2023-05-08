@@ -1,9 +1,0 @@
-sinks:
-
-  - id: Storages.Tortoise
-    name: Tortoise
-    domains:
-      - tortoise.github.io
-    patterns: 
-      - "(?i)(.*tortoise.*)"
-    tags:
