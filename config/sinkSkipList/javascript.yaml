@@ -15,5 +15,6 @@ sinkSkipList:
   - id: SinkSkipList.BuiltInLib
     name: Skip built in language libraries
     patterns:
-      - "(?i)(react\\:).*"
-      - "(?i)(bunyan|winston|ramda|styled|moment|axios|gulp-|webpack).*"
+      - "(?i)(react|next|angular|vue|lodash|rambda|express|jest|chai|mocha|d3|reactflow|cors)"
+      - "(?i)(react\\:|@angular\\/|react-router).*"
+      - "(?i)(bunyan|winston|ramda|styled|moment|redux|axios|gulp-|webpack|@(types|testing)(\\/|-)|eslint|axios|typescript|date-|zustand).*"
