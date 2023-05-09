@@ -3,7 +3,6 @@ sinks:
     name: Web Storage Cookie
     patterns:
       - "(?i).*(getCookie|setCookie|deleteCookie|removeCookie|useCookies)"
-      - "(?i)(cookie).*"
     tags:
       law: GDPR
   
