@@ -1,0 +1,45 @@
+auditConfig:
+  - id: AuditUtility.ApacheCommons
+    name: Apache Commons
+    patterns:
+      - '^org.apache.commons.*:commons.*'
+
+  - id: AuditUtility.GoogleGuava
+    name: Google guava
+    patterns:
+      - '^com.google.guava.*:guava.*'
+
+  - id: AuditUtility.CommonsIo
+    name: Commons Io
+    patterns:
+      - '^commons-io.*:commons-io.*'
+
+  - id: AuditUtility.ApacheLogging
+    name: Apache Logging Log4j
+    patterns:
+      - '^org.apache.logging.log4j.*:log4j-core.*'
+
+  - id: AuditUtility.Slf4j
+    name: Slf4j
+    patterns:
+      - '^org.slf4j.*:slf4j-api.*'
+
+  - id: AuditUtility.CommonsCodec
+    name: Commons Codec
+    patterns:
+      - '^commons-codec.*:commons-codec.*'
+
+  - id: AuditUtility.FasterXML
+    name: Fasterxml Core
+    patterns:
+      - '^com.fasterxml.jackson.core.*:jackson.*'
+
+  - id: AuditUtility.GoogleGson
+    name: Google Code Gson
+    patterns:
+      - '^com.google.code.gson.*:gson.*'
+
+  - id: AuditUtility.CommonsBeanutils
+    name: Commons Beanutils
+    patterns:
+      - '^commons-beanutils.*:commons-beanutils.*'
