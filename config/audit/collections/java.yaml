@@ -1,0 +1,40 @@
+auditConfig:
+  - id: AuditCollection.SpringBootFramework
+    name: Spring Framework Boot
+    patterns:
+      - '^org\.springframework\.boot.*:spring-boot-starter-web.*'
+
+  - id: AuditCollection.ApacheCXF
+    name: Apache CXF 
+    patterns:
+      - '^org\.apache\.cxf.*:cxf-rt-frontend-jaxrs.*'
+
+  - id: AuditCollection.GlassFishCore
+    name: ClassFish Core Server
+    patterns:
+      - '^org\.glassfish\.jersey\.core.*:jersey-server.*$'
+
+  - id: AuditCollection.JbossRestEasy
+    name: JBoss RestEasy
+    patterns:
+      - '^org\.jboss\.resteasy.*:resteasy-jaxrs.*'
+
+  - id: AuditCollection.ApacheAxis
+    name: Apache Axis
+    patterns:
+      - '^org\.apache\.axis.*:axis.*'
+  
+  - id: AuditCollection.TypesafePlay
+    name: Typesafe Play
+    patterns:
+      - '^com\.typesafe\.play.*:play-ws.*'
+
+  - id: AuditCollection.DropwizardCore
+    name: Dropwizard Core
+    patterns:
+      - '^io\.dropwizard.*:dropwizard-core.*'
+
+  - id: AuditCollection.JbossNativeCore
+    name: Jboss Native Core
+    patterns:
+      - '^org\.jboss\.ws.*:jboss-ws-native-core.*'
