@@ -102,4 +102,4 @@ auditConfig:
   - id: AuditUtility.JCommander
     name: JCommander
     patterns:
-      = '^com.beust.*:jcommander.*'
+      - '^com.beust.*:jcommander.*'
