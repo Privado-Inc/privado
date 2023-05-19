@@ -133,7 +133,7 @@ sinks:
     domains:
       - "maps.google.com"
     patterns:
-      - "@googlemaps|google.maps|vue.*-google-maps|google-map-react|react-google-map|gmaps-marker-clusterer|async-google-maps"
+      - "@googlemaps|google.maps|vue.*-google-maps|google-map-react|react-google-map|gmaps-marker-clusterer|async-google-maps|cx-google-maps"
     tags:
 
   - id: ThirdParties.SDK.Google.Marketingplatform

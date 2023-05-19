@@ -56,6 +56,14 @@ sinks:
       - "ssml-split|ssm-parameter-store|aws-ssm-inject-params|typescript-aws-ssm-helper|ssm-parameters"
       - "@aws-cdk\\/aws-ssm"
     tags:
+  
+  - id: ThirdParties.SDK.Amazonaws.SecurityToken
+    name: Amazonaws Security Token
+    domains:
+      - "wa.aws.amazon.com/wat.concept.sts.en.html"
+    patterns:
+      - "(?i)(@aws-sdk\\/client-sts).*"
+    tags:
 
   - id: ThirdParties.SDK.Amazon.Alexa
     name: Amazon Alexa
