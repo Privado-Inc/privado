@@ -15,7 +15,7 @@ sinks:
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i).*(?:console|logger|bunyan|winston|log4js|pino).*(debug|trace)|.*debuglog.*"
+      - "(?i).*(?:console|logger|bunyan|winston|log4js|pino).*(debug|trace)|.*debuglog.*|.*debug"
     tags:
   
   - id: Leakages.Log.Info
