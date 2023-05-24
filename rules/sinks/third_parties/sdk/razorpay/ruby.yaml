@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Razorpay
+    name: Razorpay
+    domains:
+      - "razorpay.com"
+    patterns:
+      - "(?i)(all|auth|capture|fetch|post|refund|refunds)"
+    tags:

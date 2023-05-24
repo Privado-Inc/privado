@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Bitly
+    name: Bitly
+    domains:
+      - "bitly.com"
+    patterns:
+      - "(?i)(login|shorten|api_key)"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Yahoo
+    name: Yahoo
+    domains:
+      - "yahoo.com"
+    patterns:
+      - "(?i)(format|historical_quotes|quote|quotes|splits|symbols)"
+    tags:

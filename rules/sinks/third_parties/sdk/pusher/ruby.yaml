@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Pusher
+    name: Pusher
+    domains:
+      - "pusher.com"
+    patterns:
+      - "(?i)(authenticate|notify|users|notification_(client|host|scheme))"
+    tags:

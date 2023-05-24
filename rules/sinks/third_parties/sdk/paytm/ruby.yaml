@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Paytm
+    name: Paytm
+    domains:
+      - "paytm.com"
+    patterns:
+      - "(?i)(credit_to_user|check_status).*"
+    tags:

@@ -1,0 +1,25 @@
+sinks:
+
+  - id: ThirdParties.SDK.Atlassian.BitbucketServer
+    name: Atlassian Bitbucket Server
+    domains:
+      - "bitbucket.org"
+    patterns:
+      - "(?i)(appendFilePathAndFragment|get_remote(_url)?|projectKey|repo(Url|Path))"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Confluence
+    name: Atlassian Confluence
+    domains:
+      - "atlassian.com/software/confluence"
+    patterns:
+      - "(?i)(add_labels|attach_binary_file|create_page_with(_no)?_parent|delete_attachment|update_page_with(_no)?_parent|storage_format)"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Trello
+    name: Atlassian Trello
+    domains:
+      - "trello.com"
+    patterns:
+      - "(?i)(activity_blocked|add_(attachment|checklist|comment|item|label|member)|attachments|authorize|avatar_(id|url)|board_(id|ids)?|card_(aging_type|id|labels|members)?|create_new_(checklist|option))"
+    tags:
