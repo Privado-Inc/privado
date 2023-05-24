@@ -1,0 +1,69 @@
+sinks:
+  - id: ThirdParties.SDK.Google.Cloud.DLP
+    name: Google Cloud Data Loss Prevention (DLP)
+    domains:
+      - "cloud.google.com/dlp"
+    patterns:
+      - "(?i).*?(inspect_content|redact_image|deidentify_content|reidentify_content|list_info_types|list_root_categories|list_info_types_of_category|create_detection_rule_set|delete_detection_rule_set).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Bigquery
+    name: Google Cloud BigQuery
+    domains:
+      - "cloud.google.com/bigquery"
+    patterns:
+      - "(?i).*?(create_dataset|delete_dataset|get_dataset|list_datasets|create_table|delete_table|get_table|list_tables|query|insert|update|upsert|delete).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Datastore
+    name: Google Cloud Datastore
+    domains:
+      - "cloud.google.com/datastore"
+    patterns:
+      - "(?i).*?(allocate_ids|begin_transaction|commit|lookup|run_query|rollback|query|insert|update|upsert|delete).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SecretManager
+    name: Google Cloud Secret Manager
+    domains:
+      - "cloud.google.com/secret-manager"
+    patterns:
+      - "(?i).*?(add_secret_version|create_secret|delete_secret|disable_secret_version|enable_secret_version|get_secret|list_secret_versions|list_secrets|set_iam_policy|get_iam_policy|test_iam_permissions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Spanner
+    name: Google Cloud Spanner
+    domains:
+      - "cloud.google.com/spanner"
+    patterns:
+      - "(?i).*?(create_instance|delete_instance|get_instance|list_instances|create_database|delete_database|get_database|list_databases|execute_sql|execute_streaming_sql|read|write|commit|rollback).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.PubSub
+    name: Google Cloud Pub/Sub
+    domains:
+      - "cloud.google.com/pubsub"
+    patterns:
+      - "(?i).*?(create_topic|delete_topic|get_topic|list_topics|publish|create_subscription|delete_subscription|get_subscription|list_subscriptions|pull|ack|modify_ack_deadline).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Logging
+    name: Google Cloud Logging
+    domains:
+      - "cloud.google.com/logging"
+    patterns:
+      - "(?i).*?(write|list_logs|list_log_entries|list_monitored_resource_descriptors|list_sinks|get_sink|create_sink|update_sink|delete_sink).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.KeyManagementService
+    name: Google Cloud Key Management Service
+    domains:
+      - "cloud.google.com/security-key-management"
+    patterns:
+      - "(?i).*?(create_key_ring|delete_key_ring|get_key_ring|list_key_rings|create_crypto_key|delete_crypto_key|get_crypto_key|list_crypto_keys|encrypt|decrypt|update_crypto_key|import_crypto_key_version|destroy_crypto_key_version|restore_crypto_key_version|add_crypto_key_version).*"
+    tags:
+
+
+
+
+

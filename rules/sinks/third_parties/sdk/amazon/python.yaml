@@ -496,7 +496,7 @@ sinks:
       - "(?i)(mypy_boto3_secretsmanager|aws_secrets|aws_secretsmanager|aws_secret).*"
     tags:
   
-    - id: ThirdParties.SDK.Amazonaws.CloudTrail
+  - id: ThirdParties.SDK.Amazonaws.CloudTrail
     name: Amazonaws CloudTrail
     domains:
       - "aws.amazon.com/cloudtrail"

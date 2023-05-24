@@ -1,0 +1,163 @@
+sinks:
+  - id: ThirdParties.SDK.Amazonaws.Lambda
+    name: Amazonaws Lambda
+    domains:
+      - "aws.amazon.com/lambda"
+    patterns:
+      - "(?i).*?(create_function|update_function_code|update_function_configuration|invoke|invoke_async).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SQS
+    name: Amazonaws SQS
+    domains:
+      - "aws.amazon.com/sqs"
+    patterns:
+      - "(?i).*?(send_message|send_message_batch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleNotificationService
+    name: Amazonaws Simple Notification Service
+    domains:
+      - "aws.amazon.com/sns"
+    patterns:
+      - "(?i).*?(publish).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.RelationalDatabaseService
+    name: Amazonaws Relational Database Service
+    domains:
+      - "aws.amazon.com/rds"
+    patterns:
+      - "(?i).*?(create_db_instance|delete_db_instance|modify_db_instance|restore_db_instance_from_db_snapshot|restore_db_instance_from_s3|restore_db_instance_to_point_in_time|start_db_instance|stop_db_instance|reboot_db_instance).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.KMS
+    name: Amazonaws KMS
+    domains:
+      - "aws.amazon.com/kms"
+    patterns:
+      - "(?i).*?(decrypt|encrypt|reencrypt|generate_data_key|generate_data_key_without_plaintext|generate_random).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SecretsManager
+    name: Amazonaws SecretsManager
+    domains:
+      - "aws.amazon.com/secrets-manager"
+    patterns:
+      - "(?i).*?(create_secret|put_secret_value|delete_secret|get_secret_value|update_secret|restore_secret|rotate_secret).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Glue
+    name: Amazonaws Glue
+    domains:
+      - "aws.amazon.com/glue"
+    patterns:
+      - "(?i).*?(create_database|delete_database|create_table|delete_table|get_table|update_table|batch_create_partition|batch_delete_partition|batch_get_partition|batch_stop_job_run|cancel_job_run|create_job|delete_job|get_job|get_job_run|get_job_runs|get_jobs|start_job_run|stop_job_run|update_job).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Comprehend
+    name: Amazonaws Comprehend
+    domains:
+      - "aws.amazon.com/comprehend"
+    patterns:
+      - "(?i).*?(detect_entities|detect_pii_entities|detect_sentiment|detect_syntax|start_entities_detection_job|start_pii_entities_detection_job|start_sentiment_detection_job|start_syntax_detection_job|stop_entities_detection_job|stop_pii_entities_detection_job|stop_sentiment_detection_job|stop_syntax_detection_job).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.CloudFormation
+    name: Amazonaws CloudFormation
+    domains:
+      - "aws.amazon.com/cloudformation"
+    patterns:
+      - "(?i).*?(create_stack|update_stack|delete_stack|describe_stack_events|describe_stack_resources|describe_stacks|get_template|validate_template).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.CloudWatch
+    name: Amazonaws CloudWatch
+    domains:
+      - "aws.amazon.com/cloudwatch"
+    patterns:
+      - "(?i).*?(put_metric_data|get_metric_data|get_metric_statistics|put_dashboard|delete_dashboards|list_dashboards|describe_alarms|put_metric_alarm|delete_alarms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.EC2
+    name: Amazonaws EC2
+    domains:
+      - "aws.amazon.com/ec2"
+    patterns:
+      - "(?i).*?(run_instances|start_instances|stop_instances|terminate_instances|describe_instances|describe_images|describe_snapshots|describe_volumes|create_snapshot|delete_snapshot|create_image|delete_image|create_volume|delete_volume|attach_volume|detach_volume).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleNotificationService
+    name: Amazonaws Simple Notification Service
+    domains:
+      - "aws.amazon.com/sns"
+    patterns:
+      - "(?i).*?(publish|subscribe|unsubscribe|create_topic|delete_topic|get_topic_attributes|set_topic_attributes|list_topics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SQS
+    name: Amazonaws SQS
+    domains:
+      - "aws.amazon.com/sqs"
+    patterns:
+      - "(?i).*?(send_message|send_message_batch|receive_message|delete_message|delete_message_batch|create_queue|delete_queue|get_queue_attributes|set_queue_attributes|list_queues).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.DynamoDB
+    name: Amazonaws DynamoDB
+    domains:
+      - "aws.amazon.com/dynamodb"
+    patterns:
+      - "(?i).*?(put_item|get_item|update_item|delete_item|scan|query|create_table|delete_table|describe_table).*"
+    tags:
+
+
+  - id: ThirdParties.SDK.Amazonaws.Kinesis
+    name: Amazonaws Kinesis
+    domains:
+      - "aws.amazon.com/kinesis"
+    patterns:
+      - "(?i).*?(put_record|put_records|get_records|describe_stream|create_stream|delete_stream|list_streams).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SSM
+    name: Amazonaws SSM
+    domains:
+      - "aws.amazon.com/systems-manager"
+    patterns:
+      - "(?i).*?(send_command|get_command_invocation|describe_instance_information|list_commands|delete_command|start_automation_execution|stop_automation_execution|put_parameter|get_parameter|describe_parameters|delete_parameter).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.StepFunctions
+    name: Amazonaws StepFunctions
+    domains:
+      - "aws.amazon.com/step-functions"
+    patterns:
+      - "(?i).*?(create_state_machine|start_execution|stop_execution|describe_state_machine|list_state_machines|delete_state_machine).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SimpleEmailService
+    name: Amazonaws Simple Email Service
+    domains:
+      - "aws.amazon.com/ses"
+    patterns:
+      - "(?i).*?(send_email|send_raw_email|delete_identity|describe_active_receipt_rule_set|describe_configuration_set|delete_configuration_set|create_configuration_set|create_configuration_set_event_destination).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.CognitoIdentity
+    name: Amazonaws Cognito Identity
+    domains:
+      - "aws.amazon.com/cognito"
+    patterns:
+      - "(?i).*?(create_identity_pool|delete_identity_pool|describe_identity_pool|list_identity_pools|get_credentials_for_identity|get_open_id_token|get_open_id_token_for_developer_identity|unlink_identity|update_identity_pool).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.S3
+    name: Amazon S3
+    domains:
+      - "aws.amazon.com/s3"
+    patterns:
+      - "(?i).*?(put_object|copy_object|delete_object|list_objects|list_buckets|get_object|head_object|create_bucket|delete_bucket).*"
+    tags:
