@@ -12,6 +12,302 @@ sinks:
       - "generator-azuresfjava|generator-azuresfcontainer|generator-azuresfcsharp|generator-azuresfguest|passport-azure-ad-oauth2|@azure\\/functions|@microsoft\\/applicationinsights-web|@microsoft\\/applicationinsights-react-js"
     tags:
 
+  - id: ThirdParties.SDK.Microsoft.Azure.Storage
+    name: Microsoft Azure Storage
+    domains:
+      - "core.windows.net"
+    patterns:
+      - "azure-storage|@azure\\/storage-blob|@azure\\/storage-queue|@azure\\/storage-table"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CosmoDB
+    name: Microsoft Azure CosmoDB
+    domains:
+      - "documents.azure.com"
+    patterns:
+      - "@azure\\/cosmos"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.EventHubs
+    name: Microsoft Azure Event Hubs
+    domains:
+      - "eventhubs.azure.com"
+    patterns:
+      - "@azure\\/event-hubs"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CognitiveServices
+    name: Microsoft Azure Cognitive Services
+    domains:
+      - "cognitiveservices.azure.com"
+    patterns:
+      - "@azure\/ai-.*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AppService
+    name: Microsoft Azure App Service
+    domains:
+      - "azurewebsites.net"
+    patterns:
+      - "@azure\\/appservice"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.KeyVault
+    name: Microsoft Azure Key Vault
+    domains:
+      - "vault.azure.net"
+    patterns:
+      - "@azure\\/keyvault"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoTHub
+    name: Microsoft Azure IoT Hub
+    domains:
+      - "azure-devices.net"
+    patterns:
+      - "@azure\\/iothub"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.ServiceBus
+    name: Microsoft Azure Service Bus
+    domains:
+      - "servicebus.windows.net"
+    patterns:
+      - "@azure\\/service-bus"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.EventGrid
+    name: Microsoft Azure Event Grid
+    domains:
+      - "eventgrid.azure.net"
+    patterns:
+      - "@azure\\/eventgrid"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
+    name: Microsoft Azure Machine Learning
+    domains:
+      - "ml.azure.com"
+    patterns:
+      - "@azure\\/ml"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DevOps
+    name: Microsoft Azure DevOps
+    domains:
+      - "dev.azure.com"
+    patterns:
+      - "@azure\\/devops"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Functions
+    name: Microsoft Azure Functions
+    domains:
+      - "azurewebsites.net"
+    patterns:
+      - "@azure\\/functions"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Monitor
+    name: Microsoft Azure Monitor
+    domains:
+      - "monitor.azure.com"
+    patterns:
+      - "@microsoft\\/applicationinsights"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.ContainerInstances
+    name: Microsoft Azure Container Instances
+    domains:
+      - "azure-container-instances.io"
+    patterns:
+      - "generator-azuresfcontainer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.StreamAnalytics
+    name: Microsoft Azure Stream Analytics
+    domains:
+      - "streamanalytics.azure.com"
+    patterns:
+      - "@azure\\/stream-analytics"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataLakeStorage
+    name: Microsoft Azure Data Lake Storage
+    domains:
+      - "dfs.core.windows.net"
+    patterns:
+      - "@azure\\/storage-file-datalake"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataExplorer
+    name: Microsoft Azure Data Explorer
+    domains:
+      - "Data Explorer"
+    patterns:
+      - "@azure\\/data-explorer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataShare
+    name: Microsoft Azure Data Share
+    domains:
+      - "datashare.azure.net"
+    patterns:
+      - "@azure\\/data-share"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataFactory
+    name: Microsoft Azure Data Factory
+    domains:
+      - "datafactory.azure.com"
+    patterns:
+      - "@azure\\/data-factory"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataCatalog
+    name: Microsoft Azure Data Catalog
+    domains:
+      - "datacatalog.azure.com"
+    patterns:
+      - "@azure\\/data-catalog"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataLakeAnalytics
+    name: Microsoft Azure Data Lake Analytics
+    domains:
+      - "analytics.azure.net"
+    patterns:
+      - "@azure\\/data-lake-analytics"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.VideoIndexer
+    name: Microsoft Azure Video Indexer
+    domains:
+      - "api.videoindexer.ai"
+    patterns:
+      - "@azure\\/video-indexer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Personalizer
+    name: Microsoft Azure Personalizer
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/ai-personalizer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.SpeechTranslation
+    name: Microsoft Azure Speech Translation
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/ai-translation"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Metrics
+    name: Microsoft Azure Metrics
+    domains:
+      - "api.cognitive.microsoft.com"
+    patterns:
+      - "@azure\\/ai-metrics-advisor"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.InkRecognizer
+    name: Microsoft Azure Ink Recognizer
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/ai-inkrecognizer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.VideoAnalyzer
+    name: Microsoft Azure Video Analyzer
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/video-analyzer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.ContainerRegistry
+    name: Microsoft Azure Container Registry
+    domains:
+      - "azurecr.io"
+    patterns:
+      - "@azure\\/container-registry"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Maps
+    name: Microsoft Azure Maps
+    domains:
+      - "atlas.microsoft.com"
+    patterns:
+      - "@azure\\/maps"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoTCentral
+    name: Microsoft Azure IoT Central
+    domains:
+      - "apps.azureiotcentral.com"
+    patterns:
+      - "@azure\\/iot-central"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Databricks
+    name: Microsoft Azure Databricks
+    domains:
+      - "databricks.com"
+    patterns:
+      - "@azure\\/databricks"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.HPCCache
+    name: Microsoft Azure HPC Cache
+    domains:
+      - "azure.net"
+    patterns:
+      - "@azure\\/hpc-cache"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CommunicationServices
+    name: Microsoft Azure CommunicationServices
+    domains:
+      - "communication.azure.com"
+    patterns:
+      - "@azure\\/communication"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Sphere
+    name: Microsoft Azure Sphere
+    domains:
+      - "sphere.azure.net"
+    patterns:
+      - "@azure\\/sphere"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Quantum
+    name: Microsoft Azure Quantum
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/quantum"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Bot
+    name: Microsoft Azure Bot
+    domains:
+      - "dev.botframework.com"
+    patterns:
+      - "@azure\\/bot-service"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Sentinel
+    name: Microsoft Azure Sentinel
+    domains:
+      - "azure.com"
+    patterns:
+      - "@azure\\/sentinel"
+    tags:
+
   - id: ThirdParties.SDK.Microsoft
     name: Microsoft
     domains:

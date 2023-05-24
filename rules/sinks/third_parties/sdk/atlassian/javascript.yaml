@@ -12,6 +12,68 @@ sinks:
       - "stash-auth|confluence-api|hipchatter|atlassian-connect-express|stride-api|atlassian-connect-validator|atlassian-crowd|jira2md|passport-atlassian-oauth|atlas-connect|atlassian-openapi|atlassian-connect-express-hipchat|passport-atlassian-crowd|vue-aui|atlassian-confluence|atlassian-oauth2|vue-aui-jira-extras|generator-atlassian-connect|ya-bitbucket|j2m|atlassian-connect-express-redis|atlassian-crowd-patched|@kenchan0130\\/markdown-to-atlassian-wiki-markup|md-to-adf|ac-koa|@restqa\\/restqdata|ace-abotars|ac-koa-hipchat|ac-node|opsgenie-sdk-revived|@spartez\\/vue-atlaskit-next|@atlassian\\/browserslist-config-server|atlassian-connect-auth|ac-node-hipchat|ac-koa-hipchat-keenio|stash-api|confluence-starter-core|bitbucket-changelog|@seibert\\/atlassian-connect-tooling|@spartez\\/vue-atlaskit|storybook-jira-addon|@atlassian\\/wrm-troubleshooting|passport-atlassian-oauth2|atlassian-jira|atlassian-connect-firestore|confluence-restapi|joplin-plugin-jira-issue|atlassian-connect-express-ssl|atlassian-connect-express-encryption|@jan-frei\\/atlassian-connect-express|jira-worklog-manager|jira2markdown|@webda\\/confluence-api|verdaccio-bitbucket|@cdk-cloudformation\\/atlassian-opsgenie-team|@cdk-cloudformation\\/atlassian-opsgenie-integration|@cdk-cloudformation\\/atlassian-opsgenie-user|atlassian-connect-express-encryption-v2|k15t-aui-ng2|spark-build|@jangolano\\/atlassian|confluence-mdk|pull-request-stash|jiraptor|adf-validator|bitbucket-connect|gatsby-source-atlassian|@atlassian\\/confluence-web-components|stasher|karma-atlassian-soy|gassian|feebs|atlassian-devbox|karma-bamboo|flow-bamboo-reporter|passport-atlassian-crowd2|stash-creview|sinopia-bitbucket|jira-git|hipchat-exec|@atlassian\\/jira"
     tags:
 
+  - id: ThirdParties.SDK.Atlassian.Confluence
+    name: Atlassian Confluence
+    domains:
+      - "atlassian.com/software/confluence"
+    patterns:
+      - "confluence-api|atlassian-confluence|confluence-starter-core|confluence-restapi|@webda\\/confluence-api|confluence-mdk|@atlassian\\/confluence-web-components"
+
+  - id: ThirdParties.SDK.Atlassian.HipChat
+    name: Atlassian HipChat
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "hipchatter|atlassian-connect-express-hipchat|ac-koa-hipchat|ac-koa-hipchat-keenio|hipchat-exec"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Opsgenie
+    name: Atlassian Opsgenie
+    domains:
+      - "atlassian.com/software/opsgenie"
+    patterns:
+      - "opsgenie-sdk-revived|@cdk-cloudformation\\/atlassian-opsgenie-team|@cdk-cloudformation\\/atlassian-opsgenie-integration|@cdk-cloudformation\\/atlassian-opsgenie-user"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Stride
+    name: Atlassian Stride
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "stride-api"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Crowd
+    name: Atlassian Crowd
+    domains:
+      - "atlassian.com/software/crowd"
+    patterns:
+      - "atlassian-crowd|passport-atlassian-crowd|atlassian-crowd-patched|passport-atlassian-crowd2"
+
+  - id: ThirdParties.SDK.Atlassian.Connect
+    name: Atlassian Connect
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "atlassian-connect-express|atlassian-connect-validator|atlas-connect|atlassian-connect-express-hipchat|generator-atlassian-connect|atlassian-connect-express-redis|atlassian-connect-auth|@seibert\\/atlassian-connect-tooling|atlassian-connect-firestore||atlassian-connect-express-ssl|atlassian-connect-express-encryption|@jan-frei\\/atlassian-connect-express|bitbucket-connect"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Auth
+    name: Atlassian Auth
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "atlassian-oauth2|passport-atlassian-oauth2|passport-atlassian-oauth"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Bamboo
+    name: Atlassian Bamboo
+    domains:
+      - "atlassian.com/software/bamboo"
+    patterns:
+      - "karma-bamboo|flow-bamboo-reporter"
+    tags:
+
   - id: ThirdParties.SDK.Atlassian.Ecosystem
     name: Atlassian Ecosystem
     domains:
@@ -37,5 +99,5 @@ sinks:
     domains:
       - "bitbucket.org"
     patterns:
-      - "bitbucket|netlify-cms-backend-bitbucket"
+      - "bitbucket|netlify-cms-backend-bitbucket|stash-auth|stash-api|pull-request-stash|stasher|stash-creview"
     tags:
