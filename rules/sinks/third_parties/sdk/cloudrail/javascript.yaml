@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Dropbox
-    name: Dropbox
+  - id: ThirdParties.SDK.Cloudrail
+    name: Cloudrail
     domains:
-      - "dropbox.com"
+      - "cloudrail.com"
     patterns:
-      - "dropbox|react-dropbox-chooser|imgbox-js|boxing|node-dropbox|dbox|drbx-js"
+      - "cloudrail-si"
     tags:
