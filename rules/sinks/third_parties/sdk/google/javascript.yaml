@@ -276,7 +276,7 @@ sinks:
     domains:
       - "firebase.google.com/products/crashlytics"
     patterns:
-      - "@elcoach\\/react-native-crashlytics|@minding\\/react-native-firebase-crashlytics|now-firebase-admin-database|react-native-fabric-crashlytics||@react-native-firebase\\/crashlytics"
+      - "@elcoach\\/react-native-crashlytics|@minding\\/react-native-firebase-crashlytics|now-firebase-admin-database|react-native-fabric-crashlytics|@react-native-firebase\\/crashlytics"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Firestore
