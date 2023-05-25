@@ -55,7 +55,7 @@ sinks:
     domains:
       - "atlassian.com"
     patterns:
-      - "atlassian-connect-express|atlassian-connect-validator|atlas-connect|generator-atlassian-connect|atlassian-connect-express-redis|atlassian-connect-auth|@seibert\\/atlassian-connect-tooling|atlassian-connect-firestore||atlassian-connect-express-ssl|atlassian-connect-express-encryption|@jan-frei\\/atlassian-connect-express|bitbucket-connect"
+      - "atlassian-connect-|@jan-frei\\/atlassian-connect-express|bitbucket-connect|@seibert\\/atlassian-connect-tooling|generator-atlassian-connect|atlas-connect"
     tags:
 
   - id: ThirdParties.SDK.Atlassian.Auth

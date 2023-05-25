@@ -170,7 +170,7 @@ sinks:
     domains:
       - "cloud.google.com/dialogflow"
     patterns:
-      - "|@google-cloud\\/dialogflow|@google-cloud\\/dialogflow-cx|devbricksx-js|dialogflow"
+      - "@google-cloud\\/dialogflow|@google-cloud\\/dialogflow-cx|devbricksx-js|dialogflow"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Vision

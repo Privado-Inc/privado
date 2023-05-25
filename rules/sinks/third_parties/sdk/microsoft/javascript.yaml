@@ -15,23 +15,15 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Storage
     name: Microsoft Azure Storage
     domains:
-      - "core.windows.net"
+      - "azure.microsoft.com/en-us/products/category/storage"
     patterns:
       - "azure-storage|@azure\\/storage-blob|@azure\\/storage-queue|@azure\\/storage-table"
-    tags:
-
-  - id: ThirdParties.SDK.Microsoft.Azure.CosmoDB
-    name: Microsoft Azure CosmoDB
-    domains:
-      - "documents.azure.com"
-    patterns:
-      - "@azure\\/cosmos"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure.EventHubs
     name: Microsoft Azure Event Hubs
     domains:
-      - "eventhubs.azure.com"
+      - "azure.microsoft.com/en-us/products/event-hubs"
     patterns:
       - "@azure\\/event-hubs"
     tags:
@@ -41,13 +33,13 @@ sinks:
     domains:
       - "cognitiveservices.azure.com"
     patterns:
-      - "@azure\/ai-.*"
+      - "@azure\\/ai-.*"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.AppService
     name: Microsoft Azure App Service
     domains:
-      - "azurewebsites.net"
+      - "azure.microsoft.com/en-us/products/app-service"
     patterns:
       - "@azure\\/appservice"
     tags:
@@ -55,7 +47,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.KeyVault
     name: Microsoft Azure Key Vault
     domains:
-      - "vault.azure.net"
+      - "azure.microsoft.com/en-us/products/key-vault"
     patterns:
       - "@azure\\/keyvault"
     tags:
@@ -63,7 +55,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.IoTHub
     name: Microsoft Azure IoT Hub
     domains:
-      - "azure-devices.net"
+      - "azure.microsoft.com/en-in/products/iot-hub"
     patterns:
       - "@azure\\/iothub"
     tags:
@@ -79,7 +71,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.EventGrid
     name: Microsoft Azure Event Grid
     domains:
-      - "eventgrid.azure.net"
+      - "azure.microsoft.com/en-us/products/event-grid"
     patterns:
       - "@azure\\/eventgrid"
     tags:
@@ -87,7 +79,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
     name: Microsoft Azure Machine Learning
     domains:
-      - "ml.azure.com"
+      - "azure.microsoft.com/en-us/products/machine-learning"
     patterns:
       - "@azure\\/ml"
     tags:
@@ -103,7 +95,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Functions
     name: Microsoft Azure Functions
     domains:
-      - "azurewebsites.net"
+      - "azure.microsoft.com/en-us/products/functions"
     patterns:
       - "@azure\\/functions"
     tags:
@@ -111,7 +103,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Monitor
     name: Microsoft Azure Monitor
     domains:
-      - "monitor.azure.com"
+      - "azure.microsoft.com/en-us/products/monitor"
     patterns:
       - "@microsoft\\/applicationinsights"
     tags:
@@ -127,7 +119,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.StreamAnalytics
     name: Microsoft Azure Stream Analytics
     domains:
-      - "streamanalytics.azure.com"
+      - "azure.microsoft.com/en-us/products/stream-analytics"
     patterns:
       - "@azure\\/stream-analytics"
     tags:
@@ -135,7 +127,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.DataLakeStorage
     name: Microsoft Azure Data Lake Storage
     domains:
-      - "dfs.core.windows.net"
+      - "azure.microsoft.com/en-us/products/storage/data-lake-storage"
     patterns:
       - "@azure\\/storage-file-datalake"
     tags:
@@ -175,7 +167,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.DataLakeAnalytics
     name: Microsoft Azure Data Lake Analytics
     domains:
-      - "analytics.azure.net"
+      - "azure.microsoft.com/en-us/products/data-lake-analytics"
     patterns:
       - "@azure\\/data-lake-analytics"
     tags:
@@ -191,7 +183,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Personalizer
     name: Microsoft Azure Personalizer
     domains:
-      - "azure.microsoft.com"
+      - "azure.microsoft.com/en-in/products/cognitive-services/personalizer"
     patterns:
       - "@azure\\/ai-personalizer"
     tags:
@@ -199,7 +191,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.SpeechTranslation
     name: Microsoft Azure Speech Translation
     domains:
-      - "azure.microsoft.com"
+      - "azure.microsoft.com/en-us/products/cognitive-services/speech-services"
     patterns:
       - "@azure\\/ai-translation"
     tags:
@@ -247,7 +239,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.IoTCentral
     name: Microsoft Azure IoT Central
     domains:
-      - "apps.azureiotcentral.com"
+      - "azure.microsoft.com/en-in/solutions/iot"
     patterns:
       - "@azure\\/iot-central"
     tags:
@@ -255,7 +247,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.Databricks
     name: Microsoft Azure Databricks
     domains:
-      - "databricks.com"
+      - "azure.microsoft.com/en-us/products/databricks"
     patterns:
       - "@azure\\/databricks"
     tags:
@@ -271,7 +263,7 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.CommunicationServices
     name: Microsoft Azure CommunicationServices
     domains:
-      - "communication.azure.com"
+      - "azure.microsoft.com/en-us/products/communication-services"
     patterns:
       - "@azure\\/communication"
     tags:
