@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Finitebox
-    name: Finitebox
+  - id: ThirdParties.SDK.Fingerprint
+    name: Fingerprint
     domains:
-      - "finitebox.com"
+      - "fingerprint.com"
     patterns:
-      - "node-gcm-iid"
+      - "@fingerprintjs\\/fingerprintjs"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Dropbox
-    name: Dropbox
+  - id: ThirdParties.SDK.Growthbook
+    name: Growthbook
     domains:
-      - "dropbox.com"
+      - "growthbook.io"
     patterns:
-      - "dropbox|react-dropbox-chooser|imgbox-js|boxing|node-dropbox|dbox|drbx-js"
+      - "@growthbook\\/growthbook"
     tags:

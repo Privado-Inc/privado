@@ -346,8 +346,9 @@ sinks:
   - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
     name: Microsoft Azure Machine Learning
     domains:
-      - "(?i)(azure.ai.ml|azure.mgmt.machinelearningservices).*"
+      - "azure.microsoft.com/en-us/products/machine-learning"
     patterns:
+      - "(?i)(azure.ai.ml|azure.mgmt.machinelearningservices).*"
       - "(?i)(azure.*ai.metricsadvisor).*"
     tags:
 
