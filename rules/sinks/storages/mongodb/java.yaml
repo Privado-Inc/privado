@@ -36,3 +36,19 @@ sinks:
     patterns:
       - "(?i)(.*[.]morphia[.]Datastore)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)|merge).*[:].*)|(.*[.]morphia[.]query[.]FieldEnd.*)"
     tags:
+    
+    - id: Storages.MongoDB.SpringRepository.Read
+    name: MongoDB(Read)
+    domains:
+      - mongodb.com
+    patterns: 
+      - "(?i)(org.springframework.data.mongodb.core.ReactiveMongoTemplate)[.]((find|get|getByKey|getByKeys|getCount|createAggregation|createQuery|queryByExample|exists).*)"
+    tags:
+
+  - id: Storages.MongoDB.SpringRepository.Write
+    name: MongoDB(Write)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)(org.springframework.data.mongodb.core.ReactiveMongoTemplate)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)).*)"
+    tags:
