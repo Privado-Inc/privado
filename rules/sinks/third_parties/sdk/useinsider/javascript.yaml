@@ -9,5 +9,5 @@ sinks:
     domains:
       - "useinsider.com"
     patterns:
-      - "react-native-insider|inq|insider-command-tree"
+      - "react-native-insider|insider-command-tree"
     tags:

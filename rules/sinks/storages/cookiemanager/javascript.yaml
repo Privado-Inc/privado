@@ -15,5 +15,5 @@ sinks:
   - id: Storages.Web.SessionStorage
     name: Web SessionStorage
     patterns:
-      - "(?i)(storage|sessionstorage)(.*)(setItem|clear|removeItem|getItem)"
+      - "(?i)(\\bstorage\\b|sessionstorage)(.*)(setItem|clear|removeItem|getItem)"
     tags:
