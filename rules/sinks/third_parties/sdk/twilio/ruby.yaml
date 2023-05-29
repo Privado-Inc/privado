@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Twilio
+    name: Twilio
+    domains:
+      - "twilio.com"
+    patterns:
+      - "(?i)(_generate_payload|account_sid|activites|activity_(durations|statistics)|actor_(sid|url|type)|address_(configurations|requirements)|address_sid|all_(activities|workspaces|reservations|task_queues|tasks)|available_capacity_percentage|available|phone_numbers|average_wait_time|average_task_acceptance_time|aws_credentials_sid|aws_s3_url|aws_storage_enabled|billing_periods)"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Clearbit
+    name: Cleabit
+    domains:
+      - "clearbit.com"
+    patterns:
+      - "(?i)(add_(domain|email)?|articles|custom_(reader|writer)|deep_(update|merge)|generate_signature|parse_for_(alias|group|identify|page|screen|track)|parse_values|queued_messages|seconds_to_utc_offset|symbolize_keys)"
+    tags:

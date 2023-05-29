@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Bing
+    name: Bing
+    domains:
+      - "bing.com"
+    patterns:
+      - "(?i)(ad_distribution|add_ad_groups|add_ads|add_campaigns|aggregation|appaleable|broad_match_bid|budget_type|disapproved_text|draft\\?|editorial_status|get_ad_groups_by_campaign_id|get_ad_groups_by_ids|get_ads_by_ids|monthly_budget|phrase_match_bid|pricing_model|poll_generate_report|update_ad_groups|update_(ads|campaigns))"
+    tags:

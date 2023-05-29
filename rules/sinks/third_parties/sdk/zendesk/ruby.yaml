@@ -1,0 +1,17 @@
+sinks:
+
+  - id: ThirdParties.SDK.Zendesk.RubyKafka
+    name: Zendesk Ruby Kafka
+    domains:
+      - "https://github.com/zendesk/ruby-kafka"
+    patterns:
+      - "(?i)(ack_message|abort(ing|ed)?_transaction|add_partitions_to_(txn|transaction)|assigned_partitions|brokers|commit_offsets(_if_neccessary)?|commit(ing)?_transaction|consumer|controller_broker|coordinator_(host|id|port)|create_partitions(_for)?|delete_topic(s)?|deliver_message(s)?|describe_configs|describe_group(s)?|disconnect|failed_messages|fetch_batch|fetch_from_partition|fetch_group_offsets|fetch_offsets|find_broker|find_codec(_by_id)?|handshake_messages|get_group_coordinator|first_(offset|sequence)|is_control_(batch|record)|last_offset_delta|last_stable_offset|leader(_epoch)?|next_(offset_for|sequence_for)|partition(_leader_epoch|_error_code|_id|_key|_offsets|s)?|process_(batch|message)|produce_message|producer_id|queue|send_and_receive_sasl_token|send_offsets_to_txn|subscribed_partitions|throttle_time_ms|trigger_heartbeat)"
+    tags:
+
+  - id: ThirdParties.SDK.Zendesk
+    name: Zendesk
+    domains:
+      - "zendesk.com"
+    patterns:
+      - "(?i)(adapter(_proc)?|add_action|add_all_condition|add_any_condition|associated_with|association(s)?|attribute_changes|attributes(_for_save)?|change_password|generate_path|get_next_page_data|get_response_body|handle_response|incremental_export|method_missing|model_key)"
+    tags:

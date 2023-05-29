@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Mapbox
+    name: Mapbox
+    domains:
+      - "mapbox.com"
+    patterns:
+      - "(?i)(assemble_params|directions|geocode_(forward|reverse)|map_matching|tilequery)"
+    tags:
