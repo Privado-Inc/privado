@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pubnub.com"
     patterns:
-      - "eon-map"
+      - "pubnub"
     tags:

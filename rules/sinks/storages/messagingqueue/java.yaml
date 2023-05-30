@@ -5,7 +5,15 @@ sinks:
     domains:
       - apache.com
     patterns: 
-      - "(?i).*(org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]).*"
+      - "(?i).*((org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute|commit|produce|write)[:])|(org[.]apache[.]kafka[.]clients[.]producer[.]KafkaProducer[.](sendOffsetsToTransaction|send|commit|produce|write|sendAsync)[:])|(com[.]salesforce[.]heroku[.]kafka[.]producer[.]HerokuKafkaProducer[.]send[:])|(io[.]lenses[.]kafka[.]client[.]producer[.]Producer[.]send)|(io[.]confluent[.]kafka[.]clients[.]producer[.]KafkaProducer[.]send)|(io[.]quarkus[.]kafka[.]producer[.]KafkaProducer[.]send)).*"
+    tags:
+
+  - id: Messaging.Queue.Kafka.Consumer
+    name: Apache Kafka (Consumer)
+    domains:
+      - apache.com
+    patterns:
+      - "(?i)((org[.]springframework[.]kafka[.]core[.]KafkaConsumer[.](receive|poll|subscribe)[:])|(org[.]apache[.]kafka[.]clients[.]consumer[.]Consumer[.](resume|commitAsync))|(org[.]apache[.]kafka[.]clients[.]consumer[.]((ConsumerRecord[.](partition|topic|value))|(KafkaConsumer[.](poll|receive|subscribe|unsubscribe|assign|commit|seek|pause|resume|close|commitAsync)[:])))|(org[.]springframework[.]kafka[.]listener[.]MessageListener[.]onMessage)|(org[.]springframework[.]kafka[.]listener[.]KafkaMessageListenerContainer[.](start|stop|pause|resume))|(com[.]salesforce[.]kafka[.]client[.]consumer[.]KafkaConsumer[.](subscribe|unsubscribe|assign|seek|poll))).*"
     tags:
 
   - id: Messaging.Queue.AMQP.Rabbit.Producer
@@ -21,7 +29,11 @@ sinks:
     domains:
       - springframework.org
     patterns: 
-      - "(?i).*(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]|(jakarta[.]jms[.]JMSProducer|javax[.]jms[.]MessageProducer)[.](send|setProperty)[:]).*"
+      - "(?i)(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]|(jakarta[.]jms[.]JMSProducer|javax[.]jms[.]MessageProducer)[.](send)[:]).*"
+      - "(?i)org.apache.qpid.jms.JmsMessageProducer.send[:].*"
+      - "(?i)com.ibm.mq.jms.MQQueueSender.send[:].*"
+      - "(?i)org.apache.camel.component.jms.JmsProducer.(process|onExchange)[:].*"
+      - "(?i)org.apache.nifi.jms.processors.JMSProducer.sendMessage[:].*"
     tags:
 
   - id: Messaging.Service.AmazonSQS.Producer
@@ -45,5 +57,25 @@ sinks:
     domains:
       - springframework.org
     patterns: 
-      - "(?i).*(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doReceive|receive)[:]|(jakarta[.]jms[.]JMSConsumer|javax[.]jms[.]MessageConsumer)[.](receive|receiveBody|receiveNoWait|receiveBodyNoWait)[:]).*"
+      - "(?i)(org[.]springframework[.]jms[.]core[.]JmsTemplate[.](doReceive|receive)[:]|(jakarta[.]jms[.]JMSConsumer|javax[.]jms[.]MessageConsumer)[.](receive|receiveBody|receiveNoWait|receiveBodyNoWait)[:]).*"
+      - "(?i)org.apache.qpid.jms.JmsMessageProducer.receive[:].*"
+      - "(?i)com.ibm.mq.jms.MQQueueSender.receive[:].*"
+      - "(?i)org.apache.camel.component.jms.JmsConsumer.processMessage[:].*"
+      - "(?i)org.springframework.integration.jms.JmsSendingMessageHandler.onMessage[:].*"
+    tags:
+
+  - id: Messaging.Queue.Mosquitto.Producer
+    name: Eclipse Mosquitto (Producer)
+    domains:
+      - mosquitto.org
+    patterns: 
+      - "(?i)org.eclipse.paho.client.mqttv3.MqttClient.publish[:].*"
+    tags:
+
+  - id: Messaging.Queue.Mosquitto.Consumer
+    name: Eclipse Mosquitto (Consumer)
+    domains:
+      - mosquitto.org
+    patterns: 
+      - "(?i)org.eclipse.paho.client.mqttv3.MqttClient.(subscribe|messageArrived)[:].*"
     tags:

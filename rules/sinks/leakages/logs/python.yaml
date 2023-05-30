@@ -24,6 +24,12 @@ sinks:
     patterns:
       - "(?i).*(?:log|logger).*(info).*"
     tags:
+
+  - id: Leakages.Log.Exception
+    name: Log Exception
+    patterns:
+      - "(?i).*(?:log|logger).*(exception).*"
+    tags:
   
   - id: Leakages.Log
     name: Log
@@ -34,5 +40,5 @@ sinks:
   - id: Leakages.Log.Console
     name: Log Console
     patterns: 
-      - "builtins[.]py:<module>[.]print"
+      - "__builtin\\.print"
     tags:

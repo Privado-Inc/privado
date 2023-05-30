@@ -9,5 +9,5 @@ sinks:
     domains:
       - "stripe.com"
     patterns:
-      - "(?i)(stripe|tapioca_stripe|collective[.]stripe|types_stripe|grvlms_stripe|aa_stripe|nameko_stripe|drf_stripe|snapflow_stripe|async_stripe|djangoshop_stripe|tornado_stripe).*"
+      - "(?i)(.*stripe|tapioca_stripe|collective[.]stripe|types_stripe|grvlms_stripe|aa_stripe|nameko_stripe|drf_stripe|snapflow_stripe|async_stripe|djangoshop_stripe|tornado_stripe).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "acumatica.com"
     patterns:
-      - "@acumatica\\/jiraapi"
+      - "acumsrc"
     tags:

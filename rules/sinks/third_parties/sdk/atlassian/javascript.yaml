@@ -9,7 +9,69 @@ sinks:
     domains:
       - "atlassian.com"
     patterns:
-      - "stash-auth|confluence-api|hipchatter|atlassian-connect-express|stride-api|atlassian-connect-validator|atlassian-crowd|jira2md|passport-atlassian-oauth|atlas-connect|atlassian-openapi|atlassian-connect-express-hipchat|passport-atlassian-crowd|vue-aui|atlassian-confluence|atlassian-oauth2|vue-aui-jira-extras|generator-atlassian-connect|ya-bitbucket|j2m|atlassian-connect-express-redis|atlassian-crowd-patched|@kenchan0130\\/markdown-to-atlassian-wiki-markup|md-to-adf|ac-koa|@restqa\\/restqdata|ace-abotars|ac-koa-hipchat|ac-node|opsgenie-sdk-revived|@spartez\\/vue-atlaskit-next|@atlassian\\/browserslist-config-server|atlassian-connect-auth|ac-node-hipchat|ac-koa-hipchat-keenio|stash-api|confluence-starter-core|bitbucket-changelog|@seibert\\/atlassian-connect-tooling|@spartez\\/vue-atlaskit|storybook-jira-addon|@atlassian\\/wrm-troubleshooting|passport-atlassian-oauth2|atlassian-jira|atlassian-connect-firestore|confluence-restapi|joplin-plugin-jira-issue|atlassian-connect-express-ssl|atlassian-connect-express-encryption|@jan-frei\\/atlassian-connect-express|jira-worklog-manager|jira2markdown|@webda\\/confluence-api|verdaccio-bitbucket|@cdk-cloudformation\\/atlassian-opsgenie-team|@cdk-cloudformation\\/atlassian-opsgenie-integration|@cdk-cloudformation\\/atlassian-opsgenie-user|atlassian-connect-express-encryption-v2|k15t-aui-ng2|spark-build|@jangolano\\/atlassian|confluence-mdk|pull-request-stash|jiraptor|adf-validator|bitbucket-connect|gatsby-source-atlassian|@atlassian\\/confluence-web-components|stasher|karma-atlassian-soy|gassian|feebs|atlassian-devbox|karma-bamboo|flow-bamboo-reporter|passport-atlassian-crowd2|stash-creview|sinopia-bitbucket|jira-git|hipchat-exec|@atlassian\\/jira"
+      - "jira2md|vue-aui|vue-aui-jira-extras|ya-bitbucket|j2m|@kenchan0130\\/markdown-to-atlassian-wiki-markup|md-to-adf|ac-koa|@restqa\\/restqdata|ace-abotars|ac-node|@spartez\\/vue-atlaskit-next|@atlassian\\/browserslist-config-server|bitbucket-changelog|@spartez\\/vue-atlaskit|storybook-jira-addon|@atlassian\\/wrm-troubleshooting|atlassian-jira|joplin-plugin-jira-issue|jira-worklog-manager|jira2markdown|verdaccio-bitbucket|k15t-aui-ng2|spark-build|@jangolano\\/atlassian|jiraptor|adf-validator|gatsby-source-atlassian|karma-atlassian-soy|gassian|feebs|atlassian-devbox|sinopia-bitbucket|jira-git|@atlassian\\/jira"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Confluence
+    name: Atlassian Confluence
+    domains:
+      - "atlassian.com/software/confluence"
+    patterns:
+      - "confluence-api|atlassian-confluence|confluence-starter-core|confluence-restapi|@webda\\/confluence-api|confluence-mdk|@atlassian\\/confluence-web-components"
+
+  - id: ThirdParties.SDK.Atlassian.HipChat
+    name: Atlassian HipChat
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "hipchatter|atlassian-connect-express-hipchat|ac-koa-hipchat|ac-koa-hipchat-keenio|hipchat-exec"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Opsgenie
+    name: Atlassian Opsgenie
+    domains:
+      - "atlassian.com/software/opsgenie"
+    patterns:
+      - "opsgenie-sdk-revived|@cdk-cloudformation\\/atlassian-opsgenie-team|@cdk-cloudformation\\/atlassian-opsgenie-integration|@cdk-cloudformation\\/atlassian-opsgenie-user"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Stride
+    name: Atlassian Stride
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "stride-api"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Crowd
+    name: Atlassian Crowd
+    domains:
+      - "atlassian.com/software/crowd"
+    patterns:
+      - "atlassian-crowd|passport-atlassian-crowd|atlassian-crowd-patched|passport-atlassian-crowd2"
+
+  - id: ThirdParties.SDK.Atlassian.Connect
+    name: Atlassian Connect
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "atlassian-connect-|@jan-frei\\/atlassian-connect-express|bitbucket-connect|@seibert\\/atlassian-connect-tooling|generator-atlassian-connect|atlas-connect"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Auth
+    name: Atlassian Auth
+    domains:
+      - "atlassian.com"
+    patterns:
+      - "atlassian-oauth2|passport-atlassian-oauth2|passport-atlassian-oauth"
+    tags:
+
+  - id: ThirdParties.SDK.Atlassian.Bamboo
+    name: Atlassian Bamboo
+    domains:
+      - "atlassian.com/software/bamboo"
+    patterns:
+      - "karma-bamboo|flow-bamboo-reporter"
     tags:
 
   - id: ThirdParties.SDK.Atlassian.Ecosystem
@@ -18,4 +80,24 @@ sinks:
       - "ecosystem.atlassian.net"
     patterns:
       - "@atlassian\\/johnson"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.Jira
+    name: Atlassian Jira
+    domains:
+      - "atlassian.com/software/jira"
+    patterns:
+      - "jira.js|create-jira-release-notes|jira-activity|jira-term|@cn-shell\\/jira|jira-linkify|jira-wrapper|jira-track|jirascope|jira-miner"
+      - "@acumatica\\/jiraapi|@itentialopensource\\/adapter-jira|cz-jira-smart-commit-clone"
+      - "@roadiehq\\/backstage-plugin-jira|@devx\\/plugin-jira-backend|coc-jira-complete|alfred-jira-search"
+      - "hubot-jira|hubot-jira-connector|hubot-jira-issue-helper|hubot-jira-lotto"
+      - "(huyhq-|@vmo11\\/)cz-jira-smart-commit"
+    tags:
+  
+  - id: ThirdParties.SDK.Atlassian.BitbucketServer
+    name: Atlassian Bitbucket Server
+    domains:
+      - "bitbucket.org"
+    patterns:
+      - "bitbucket|netlify-cms-backend-bitbucket|stash-auth|stash-api|pull-request-stash|stasher|stash-creview"
     tags:

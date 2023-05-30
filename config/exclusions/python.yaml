@@ -4,6 +4,11 @@ exclusions:
     patterns:
       - "(.*/test(s)?.*)|/Test[A-Z]|Test[.]"
 
+  - id: Exclusions.Python.Packages
+    name: Exclude External Python Packages
+    patterns:
+      - "(venv|site-packages)/.*"
+
   - id: Exclusions.Empty
     name: Exclude file which cannot be read
     patterns:

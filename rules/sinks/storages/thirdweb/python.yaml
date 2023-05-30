@@ -1,0 +1,13 @@
+
+# Sink Rules for storage database Android SQLite - https://developer.android.com/
+
+sinks:
+
+  - id: Storages.Thirdweb
+    name: Thirdweb
+    domains:
+      - thirdweb.com
+    patterns: 
+      - "(?:thirdweb).*"
+      - ".*(ThirdwebSDK).*"
+    tags:

@@ -1,0 +1,45 @@
+auditConfig:
+  - id: AuditWebClient.ApacheComponent 
+    name: Apache HTTP Component
+    patterns:
+      - '^org.apache.httpcomponents.*:httpclient.*'
+  
+  - id: AuditWebClient.SquareupOkHttp
+    name: Squareup OkHttp
+    patterns:
+      - '^com.squareup.okhttp3.*:okhttp.*'
+
+  - id: AuditWebClient.SquareupRetrofit
+    name: Squareup Retrofit
+    patterns:
+      - '^com.squareup.retrofit.*:retrofit.*'
+
+  - id: AuditWebClient.GithubOpenFeign
+    name: Github Open Feign
+    patterns:
+      - '^io.github.openfeign.*:feign-core.*'
+
+  - id: AuditWebClient.KonghqRest
+    name: Konghq Rest
+    patterns:
+      - '^com.konghq.*:unirest-java.*'
+
+  - id: AuditWebClient.AsynchHttp
+    name: Asynch Http
+    patterns:
+      - '^org.asynchttpclient.*:async-http-client.*'
+
+  - id: AuditWebClient.GlassfishJersey
+    name: GLassfish Jersey Core
+    patterns:
+      - '^org.glassfish.jersey.core.*:jersey-client.*'
+
+  - id: AuditWebClient.SpringFrameworkWeb
+    name: Spring Framework Web
+    patterns:
+      - '^org.springframework.*:spring-web.*'
+
+  - id: AuditWebClient.KtorClient
+    name: Ktor Client Core
+    patterns:
+      - '^io.ktor.*:ktor-client-core.*'

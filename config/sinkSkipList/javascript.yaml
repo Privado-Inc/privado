@@ -1,0 +1,20 @@
+sinkSkipList:
+  - id: SinkSkipList.ThirdParties
+    name: Skip Third Party Sinks
+    patterns:
+      - "(HTMLAnchorElement|HTMLIFrameElement|HTMLElement).*"
+      - "<operator>\\..*"
+      - "(?i)(string|number|array).*"
+      - "JSON\\..*"
+      - "(Date|Promise\\.).*"
+      - "this.*"
+      - "__Runtime\\..*"
+      - "(?i)(Window|__ecma\\.|Document).*"
+      - "src\\/.*|\\.\\.\\/.*"
+
+  - id: SinkSkipList.BuiltInLib
+    name: Skip built in language libraries
+    patterns:
+      - "(?i)(react|next|angular|vue|lodash|rambda|express|jest|chai|mocha|d3|reactflow|cors)"
+      - "(?i)(react\\:|@angular\\/|react-router).*"
+      - "(?i)(bunyan|winston|ramda|styled|moment|redux|axios|gulp-|webpack|@(types|testing)(\\/|-)|eslint|axios|typescript|date-|zustand).*"
