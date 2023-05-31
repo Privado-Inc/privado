@@ -9,5 +9,6 @@ sinks:
     domains:
       - "algolia.com"
     patterns:
+      - "(?i).*algoliaclient.*"
       - "algoliasearch|@algolia\\/requester-browser-xhr|@algolia\\/requester-common|@algolia\\/transporter"
     tags:

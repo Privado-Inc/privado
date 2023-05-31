@@ -9,5 +9,6 @@ sinks:
     domains:
       - "smartlook.com"
     patterns:
-      - "ng-smartlook|smartlook-react-native-wrapper|nuxt-smartlook|gridsome-plugin-smartlook|@adia-technology\\/policies-consent-widget|@smartlook\\/analytics.js-integration-smartlook"
+      - ".*Smartlook.*"
+      - "smartlook-client|ng-smartlook|smartlook-react-native-wrapper|nuxt-smartlook|gridsome-plugin-smartlook|@adia-technology\\/policies-consent-widget|@smartlook\\/analytics.js-integration-smartlook"
     tags:

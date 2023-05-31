@@ -12,12 +12,300 @@ sinks:
       - "generator-azuresfjava|generator-azuresfcontainer|generator-azuresfcsharp|generator-azuresfguest|passport-azure-ad-oauth2|@azure\\/functions|@microsoft\\/applicationinsights-web|@microsoft\\/applicationinsights-react-js"
     tags:
 
+  - id: ThirdParties.SDK.Microsoft.Azure.Storage
+    name: Microsoft Azure Storage
+    domains:
+      - "azure.microsoft.com/en-us/products/category/storage"
+    patterns:
+      - "azure-storage|@azure\\/storage-blob|@azure\\/storage-queue|@azure\\/storage-table"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.EventHubs
+    name: Microsoft Azure Event Hubs
+    domains:
+      - "azure.microsoft.com/en-us/products/event-hubs"
+    patterns:
+      - "@azure\\/event-hubs"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CognitiveServices
+    name: Microsoft Azure Cognitive Services
+    domains:
+      - "cognitiveservices.azure.com"
+    patterns:
+      - "@azure\\/ai-.*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AppService
+    name: Microsoft Azure App Service
+    domains:
+      - "azure.microsoft.com/en-us/products/app-service"
+    patterns:
+      - "@azure\\/appservice"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.KeyVault
+    name: Microsoft Azure Key Vault
+    domains:
+      - "azure.microsoft.com/en-us/products/key-vault"
+    patterns:
+      - "@azure\\/keyvault"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoTHub
+    name: Microsoft Azure IoT Hub
+    domains:
+      - "azure.microsoft.com/en-in/products/iot-hub"
+    patterns:
+      - "@azure\\/iothub"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.ServiceBus
+    name: Microsoft Azure Service Bus
+    domains:
+      - "servicebus.windows.net"
+    patterns:
+      - "@azure\\/service-bus"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.EventGrid
+    name: Microsoft Azure Event Grid
+    domains:
+      - "azure.microsoft.com/en-us/products/event-grid"
+    patterns:
+      - "@azure\\/eventgrid"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.MachineLearning
+    name: Microsoft Azure Machine Learning
+    domains:
+      - "azure.microsoft.com/en-us/products/machine-learning"
+    patterns:
+      - "@azure\\/ml"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DevOps
+    name: Microsoft Azure DevOps
+    domains:
+      - "dev.azure.com"
+    patterns:
+      - "@azure\\/devops"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Functions
+    name: Microsoft Azure Functions
+    domains:
+      - "azure.microsoft.com/en-us/products/functions"
+    patterns:
+      - "@azure\\/functions"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Monitor
+    name: Microsoft Azure Monitor
+    domains:
+      - "azure.microsoft.com/en-us/products/monitor"
+    patterns:
+      - "@microsoft\\/applicationinsights"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.ContainerInstances
+    name: Microsoft Azure Container Instances
+    domains:
+      - "azure-container-instances.io"
+    patterns:
+      - "generator-azuresfcontainer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.StreamAnalytics
+    name: Microsoft Azure Stream Analytics
+    domains:
+      - "azure.microsoft.com/en-us/products/stream-analytics"
+    patterns:
+      - "@azure\\/stream-analytics"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataLakeStorage
+    name: Microsoft Azure Data Lake Storage
+    domains:
+      - "azure.microsoft.com/en-us/products/storage/data-lake-storage"
+    patterns:
+      - "@azure\\/storage-file-datalake"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataExplorer
+    name: Microsoft Azure Data Explorer
+    domains:
+      - "Data Explorer"
+    patterns:
+      - "@azure\\/data-explorer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataShare
+    name: Microsoft Azure Data Share
+    domains:
+      - "datashare.azure.net"
+    patterns:
+      - "@azure\\/data-share"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataFactory
+    name: Microsoft Azure Data Factory
+    domains:
+      - "datafactory.azure.com"
+    patterns:
+      - "@azure\\/data-factory"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataCatalog
+    name: Microsoft Azure Data Catalog
+    domains:
+      - "datacatalog.azure.com"
+    patterns:
+      - "@azure\\/data-catalog"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DataLakeAnalytics
+    name: Microsoft Azure Data Lake Analytics
+    domains:
+      - "azure.microsoft.com/en-us/products/data-lake-analytics"
+    patterns:
+      - "@azure\\/data-lake-analytics"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.VideoIndexer
+    name: Microsoft Azure Video Indexer
+    domains:
+      - "api.videoindexer.ai"
+    patterns:
+      - "@azure\\/video-indexer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Personalizer
+    name: Microsoft Azure Personalizer
+    domains:
+      - "azure.microsoft.com/en-in/products/cognitive-services/personalizer"
+    patterns:
+      - "@azure\\/ai-personalizer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.SpeechTranslation
+    name: Microsoft Azure Speech Translation
+    domains:
+      - "azure.microsoft.com/en-us/products/cognitive-services/speech-services"
+    patterns:
+      - "@azure\\/ai-translation"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Metrics
+    name: Microsoft Azure Metrics
+    domains:
+      - "api.cognitive.microsoft.com"
+    patterns:
+      - "@azure\\/ai-metrics-advisor"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.InkRecognizer
+    name: Microsoft Azure Ink Recognizer
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/ai-inkrecognizer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.VideoAnalyzer
+    name: Microsoft Azure Video Analyzer
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/video-analyzer"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.ContainerRegistry
+    name: Microsoft Azure Container Registry
+    domains:
+      - "azurecr.io"
+    patterns:
+      - "@azure\\/container-registry"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Maps
+    name: Microsoft Azure Maps
+    domains:
+      - "atlas.microsoft.com"
+    patterns:
+      - "@azure\\/maps"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.IoTCentral
+    name: Microsoft Azure IoT Central
+    domains:
+      - "azure.microsoft.com/en-in/solutions/iot"
+    patterns:
+      - "@azure\\/iot-central"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Databricks
+    name: Microsoft Azure Databricks
+    domains:
+      - "azure.microsoft.com/en-us/products/databricks"
+    patterns:
+      - "@azure\\/databricks"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.HPCCache
+    name: Microsoft Azure HPC Cache
+    domains:
+      - "azure.net"
+    patterns:
+      - "@azure\\/hpc-cache"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.CommunicationServices
+    name: Microsoft Azure CommunicationServices
+    domains:
+      - "azure.microsoft.com/en-us/products/communication-services"
+    patterns:
+      - "@azure\\/communication"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Sphere
+    name: Microsoft Azure Sphere
+    domains:
+      - "sphere.azure.net"
+    patterns:
+      - "@azure\\/sphere"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Quantum
+    name: Microsoft Azure Quantum
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "@azure\\/quantum"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Bot
+    name: Microsoft Azure Bot
+    domains:
+      - "dev.botframework.com"
+    patterns:
+      - "@azure\\/bot-service"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Sentinel
+    name: Microsoft Azure Sentinel
+    domains:
+      - "azure.com"
+    patterns:
+      - "@azure\\/sentinel"
+    tags:
+
   - id: ThirdParties.SDK.Microsoft
     name: Microsoft
     domains:
       - "microsoft.com"
     patterns:
-      - "azure-sync|translate-platforms|@azure\\/ai-text-analytics|azure-storage-fs|@azure\\/storage-file-datalake|@azure\\/storage-queue|@azure\\/communication-chat|@microsoft\\/applicationinsights-rollup-es3|@azure\\/keyvault-certificates|@azure\\/communication-identity|@azure\\/ai-form-recognizer|deploy2|fogjs|@azure\\/monitor-opentelemetry-exporter|@azure\\/eventhubs-checkpointstore-blob|@azure\\/ai-metrics-advisor|@azure\\/container-registry|@azure\\/eventgrid|@azure\\/synapse-artifacts|@pebula\\/nesbus|@azure\\/mixed-reality-remote-rendering|@azure\\/iot-device-update|@itentialopensource\\/adapter-azure|@azure-rest\\/confidential-ledger|@azure-rest\\/purview-scanning|@azure-rest\\/purview-catalog|@azure-rest\\/agrifood-farming|@azure-rest\\/purview-account|@azure\\/quantum-jobs|snowmaker-refreshed|microservicebus-core|@azure-rest\\/purview-administration|azure-retail-prices|@azure\\/synapse-spark|dotansimha-applicationinsights|@azure\\/core-https|@azure\\/ai-anomaly-detector|@azure\\/synapse-managed-private-endpoints|@azure\\/synapse-access-control|@azure\\/synapse-monitoring|applicationinsights-express-middleware|@azure\\/iot-modelsrepository|@azure\\/eventhubs-checkpointstore-table|@grucloud\\/provider-azure|@azure-tools\\/communication-short-codes|azure-sas-token|ip-cloudy|cloud-region-shortener|@adenin\\/generator-cloud-function|react-appinsights-upgraded|@azure\\/core-crypto|@celastrina\\/semaphore|@azure\\/mixedreality-authentication|cloud-queue2|@azure-rest\\/synapse-access-control|azure-cookbook|azure-api|microservicebus-node|parse-server-azure-iothub-cloud-module|@azure\\/arm-vmwarecloudsimple|cloud-queue|azure-storage|azurite|@azure\\/arm-storage|azure-table-node|multer-azure-storage|ghost-azure-storage|multer-azure|nativescript-azure-storage|@directus\\/drive-azure|azure-storage-legacy|node-red-contrib-azure-storage|winston-azure-sw|@azure\\/arm-storage-profile-2020-09-01-hybrid|multer-azure-blob-storage|azure-queue-node|azure-mgmt-storage|winston-azure|azure-table-promise|azure-blob-list-stream|country-and-province|winston-azure-table-storage|azure-table-storage-async|odin-azure-storage-queue|nx-remotecache-azure|@galkin\\/multer-azure-blob-storage|azure-storage-as-promised|cerulean|winston-azure-blob|@vtfk\\/azure-storage-blob|azure-storage-proxy|@told\\/azure-blob-access|azure-block-upload|@azure\\/storage-file|adonis-drive-azure-storage|@cgignite\\/ignite-azure-storage|vue-azure-blob-upload|azure-blob-to-s3|strapi-provider-upload-azure-storage-blob|@azure\\/storage-blob-changefeed|winston-transport-blob-storage|multer-blob-storage|gatsby-source-azure-storage|multer-azure-blob|node-red-contrib-azure-blob-storage-aleph|skipper-azure|jsreport-azure-storage|@azure\\/arm-storagecache|node-red-contrib-azure-table-storage-aleph|@azure\\/arm-storagesync|@azure\\/arm-storageimportexport|catbox-azure-table|@jsreport\\/jsreport-azure-storage|log4js-azure-append-blob-appender|@azure\\/arm-storage-profile-2019-03-01-hybrid|keystone-storage-adapter-azure|node-red-contrib-azure-blob-storage|@egomobile\\/azure-storage|@mcma\\/azure-blob-storage|@neoxia-js\\/multer-azure|@azure\\/storage-datalake|@jsreport\\/jsreport-fs-store-azure-storage-persistence|winston-azuretable|node-red-contrib-azure-table-storage|oc-azure-storage-adapter|azure-blob-store|jsreport-fs-store-azure-storage-persistence|node-red-contrib-blob-storage-mac|dorsavi-storage|pino-azuretable|@mcma\\/azure-queue-worker-invoker|node-red-contrib-azure-blob-storage-asif|ghost-azure-storage-v2|node-red-contrib-azure-data-lake-storage|storage-azure|strapi-provider-upload-azure-storage-fileshare|node-red-contrib-azure-blob-storage-fix|react-native-azure-storage|react-native-azure-blob-storage-manager|express-session-azure|wingbot-mssql|imago-azure-storage|azure-storage-simple|azure-table-query-recursive|neneos-azure-storage-safestring|azu-js|kap-azure|node-red-contrib-azure-blob-storage-shubham|azure-storage-adapters|express-azure-blob|box-azure-migrate|@hobbytraceorg\\/azure-storage-browser|az-blob-temp|hubot-azure-brain|azurestoragebinder|azure-cdn-upload-plugin|put-blob|@warerebel\\/azureblobstoragehelper|@technocreatives\\/node-red-contrib-azure-face|passport-azure-oauth2|az-iot-bi|react-native-azure-cosmos-gremlin|@warerebel\\/azurerestauth|machinepack-azure|az-kudu|mobileservice-config|cordova-plugin-msal|azure-pipelines-logging|node-cosmos|@origyn\\/identity-azure-key-vault|validate-azure-ad-token|web-speech-profanity|azure-maps-control|@celastrina\\/transact|shared-access-signature|nextjs-azure-function|@mcma\\/azure-functions-api|cordova-plugin-ms-azure-mobile-apps|react-native-azure-ad|azure-iot-manager|botbuilder-adapter-vonage-js|azure-cognitiveservices-search|azure-ad-graph-expo|azure-cognitiveservices-vision|oauth2-api-azure|azure-devops-node-utilities|azure-ratecard-api-wrapper|markdown-translator|azure-functions-mongooser|@orta\\/markdown-translator|azure-cognitiveservices-language|re-az-authentication|cogserv-entity-linking|re-az-keyvault|azure-kusto-data|azure-kusto-ingest|azure-maps-rest|@capacitor-community\\/appcenter|@azure\\/arm-purview|@azure\\/arm-webpubsub|@azure\\/arm-quota|@azure\\/arm-extendedlocation|@azure\\/arm-videoanalyzer|react-native-azure-adal-sdk|@azure\\/arm-desktopvirtualization|microsoft-applicationinsights-angular5|@xopenapi\\/wework|generator-azure-node|azure-maps-animations|@azure\\/arm-orbital|@xopenapi\\/wework-1|@aciesai\\/azure-kusto-ingest|@axway\\/api-builder-plugin-dc-mssql|applicationinsights|@azure\\/core-tracing|@azure\\/core-auth|@azure\\/logger|@azure\\/core-http|@azure\\/storage-blob|@azure\\/abort-controller|@azure\\/identity|@azure\\/core-paging|@azure\\/core-lro|@azure\\/core-rest-pipeline|@microsoft\\/applicationinsights-core-js|@microsoft\\/applicationinsights-shims|@azure\\/cosmos|@azure\\/service-bus|@azure\\/keyvault-keys|@azure\\/event-hubs|@azure\\/ms-rest-azure-env|@azure\\/core-amqp|translatte|@azure\\/data-tables|@azure\\/communication-common|@azure\\/keyvault-secrets|@azure\\/core-util|@azure\\/app-configuration|@azure\\/core-xml|bluesky|@azure\\/communication-signaling|@azure\\/storage-file-share|playfab-sdk|@azure\\/web-pubsub|@azure\\/web-pubsub-express|@azure\\/digital-twins-core|@azure\\/mixed-reality-authentication|@microsoft\\/1ds-core-js|azure-scripty|@cfworker\\/cosmos|dynamicsmobile|azure-bake|@azure\\/template|@microsoft\\/1ds-post-js|@azure\\/communication-sms|@azure\\/monitor-query|@azure\\/keyvault-admin|@azure\\/identity-vscode|@itentialopensource\\/adapter-azure_aks|@azure\\/communication-network-traversal|@azure\\/identity-cache-persistence|@egomobile\\/microservices|@azure\\/communication-phone-numbers|@azure\\/video-analyzer-edge|azure-arm-managementGroups|@azure\\/arm-locks|@azure\\/arm-resources|@azure\\/arm-policy|react-native-msal|ms-rest-azure|@azure\\/ms-rest-nodeauth|@azure\\/ms-rest-browserauth|@azure\\/arm-managedapplications|@azure\\/arm-compute|azure-arm-managementgroups|@azure\\/arm-links|@azure\\/arm-network|@azure\\/arm-features|@azure\\/ms-rest-js|@azure\\/ms-rest-azure-js|passport-microsoft|netlify-cms-backend-azure|azure-devops-node-api|powerbi|powerbi-visuals-api|powerbi-visuals-tools"
+      - "azure-sync|translate-platforms|@azure\\/ai-text-analytics|azure-storage-fs|@azure\\/storage-file-datalake|@azure\\/storage-queue|@azure\\/communication-chat|@microsoft\\/applicationinsights-rollup-es3|@azure\\/keyvault-certificates|@azure\\/communication-identity|@azure\\/ai-form-recognizer|deploy2|fogjs|@azure\\/monitor-opentelemetry-exporter|@azure\\/eventhubs-checkpointstore-blob|@azure\\/ai-metrics-advisor|@azure\\/container-registry|@azure\\/eventgrid|@azure\\/synapse-artifacts|@pebula\\/nesbus|@azure\\/mixed-reality-remote-rendering|@azure\\/iot-device-update|@itentialopensource\\/adapter-azure|@azure-rest\\/confidential-ledger|@azure-rest\\/purview-scanning|@azure-rest\\/purview-catalog|@azure-rest\\/agrifood-farming|@azure-rest\\/purview-account|@azure\\/quantum-jobs|snowmaker-refreshed|microservicebus-core|@azure-rest\\/purview-administration|azure-retail-prices|@azure\\/synapse-spark|dotansimha-applicationinsights|@azure\\/core-https|@azure\\/ai-anomaly-detector|@azure\\/synapse-managed-private-endpoints|@azure\\/synapse-access-control|@azure\\/synapse-monitoring|applicationinsights-express-middleware|@azure\\/iot-modelsrepository|@azure\\/eventhubs-checkpointstore-table|@grucloud\\/provider-azure|@azure-tools\\/communication-short-codes|azure-sas-token|ip-cloudy|cloud-region-shortener|@adenin\\/generator-cloud-function|react-appinsights-upgraded|@azure\\/core-crypto|@celastrina\\/semaphore|@azure\\/mixedreality-authentication|cloud-queue2|@azure-rest\\/synapse-access-control|azure-cookbook|azure-api|microservicebus-node|parse-server-azure-iothub-cloud-module|@azure\\/arm-vmwarecloudsimple|cloud-queue|azure-storage|azurite|@azure\\/arm-storage|azure-table-node|multer-azure-storage|ghost-azure-storage|multer-azure|nativescript-azure-storage|@directus\\/drive-azure|azure-storage-legacy|node-red-contrib-azure-storage|winston-azure-sw|@azure\\/arm-storage-profile-2020-09-01-hybrid|multer-azure-blob-storage|azure-queue-node|azure-mgmt-storage|winston-azure|azure-table-promise|azure-blob-list-stream|country-and-province|winston-azure-table-storage|azure-table-storage-async|odin-azure-storage-queue|nx-remotecache-azure|@galkin\\/multer-azure-blob-storage|azure-storage-as-promised|cerulean|winston-azure-blob|@vtfk\\/azure-storage-blob|azure-storage-proxy|@told\\/azure-blob-access|azure-block-upload|@azure\\/storage-file|adonis-drive-azure-storage|@cgignite\\/ignite-azure-storage|vue-azure-blob-upload|azure-blob-to-s3|strapi-provider-upload-azure-storage-blob|@azure\\/storage-blob-changefeed|winston-transport-blob-storage|multer-blob-storage|gatsby-source-azure-storage|multer-azure-blob|node-red-contrib-azure-blob-storage-aleph|skipper-azure|jsreport-azure-storage|@azure\\/arm-storagecache|node-red-contrib-azure-table-storage-aleph|@azure\\/arm-storagesync|@azure\\/arm-storageimportexport|catbox-azure-table|@jsreport\\/jsreport-azure-storage|log4js-azure-append-blob-appender|@azure\\/arm-storage-profile-2019-03-01-hybrid|keystone-storage-adapter-azure|node-red-contrib-azure-blob-storage|@egomobile\\/azure-storage|@mcma\\/azure-blob-storage|@neoxia-js\\/multer-azure|@azure\\/storage-datalake|@jsreport\\/jsreport-fs-store-azure-storage-persistence|winston-azuretable|node-red-contrib-azure-table-storage|oc-azure-storage-adapter|azure-blob-store|jsreport-fs-store-azure-storage-persistence|node-red-contrib-blob-storage-mac|dorsavi-storage|pino-azuretable|@mcma\\/azure-queue-worker-invoker|node-red-contrib-azure-blob-storage-asif|ghost-azure-storage-v2|node-red-contrib-azure-data-lake-storage|storage-azure|strapi-provider-upload-azure-storage-fileshare|node-red-contrib-azure-blob-storage-fix|react-native-azure-storage|react-native-azure-blob-storage-manager|express-session-azure|wingbot-mssql|imago-azure-storage|azure-storage-simple|azure-table-query-recursive|neneos-azure-storage-safestring|azu-js|kap-azure|node-red-contrib-azure-blob-storage-shubham|azure-storage-adapters|express-azure-blob|box-azure-migrate|@hobbytraceorg\\/azure-storage-browser|az-blob-temp|hubot-azure-brain|azurestoragebinder|azure-cdn-upload-plugin|put-blob|@warerebel\\/azureblobstoragehelper|@technocreatives\\/node-red-contrib-azure-face|passport-azure-oauth2|az-iot-bi|react-native-azure-cosmos-gremlin|@warerebel\\/azurerestauth|machinepack-azure|az-kudu|mobileservice-config|cordova-plugin-msal|azure-pipelines-logging|node-cosmos|@origyn\\/identity-azure-key-vault|validate-azure-ad-token|web-speech-profanity|azure-maps-control|@celastrina\\/transact|shared-access-signature|nextjs-azure-function|@mcma\\/azure-functions-api|cordova-plugin-ms-azure-mobile-apps|react-native-azure-ad|azure-iot-manager|botbuilder-adapter-vonage-js|azure-cognitiveservices-search|azure-ad-graph-expo|azure-cognitiveservices-vision|oauth2-api-azure|azure-devops-node-utilities|azure-ratecard-api-wrapper|markdown-translator|azure-functions-mongooser|@orta\\/markdown-translator|azure-cognitiveservices-language|re-az-authentication|cogserv-entity-linking|re-az-keyvault|azure-kusto-data|azure-kusto-ingest|azure-maps-rest|@capacitor-community\\/appcenter|@azure\\/arm-purview|@azure\\/arm-webpubsub|@azure\\/arm-quota|@azure\\/arm-extendedlocation|@azure\\/arm-videoanalyzer|react-native-azure-adal-sdk|@azure\\/arm-desktopvirtualization|microsoft-applicationinsights-angular5|@xopenapi\\/wework|generator-azure-node|azure-maps-animations|@azure\\/arm-orbital|@xopenapi\\/wework-1|@aciesai\\/azure-kusto-ingest|@axway\\/api-builder-plugin-dc-mssql|applicationinsights|@azure\\/core-tracing|@azure\\/core-auth|@azure\\/logger|@azure\\/core-http|@azure\\/storage-blob|@azure\\/abort-controller|@azure\\/identity|@azure\\/core-paging|@azure\\/core-lro|@azure\\/core-rest-pipeline|@microsoft\\/applicationinsights-core-js|@microsoft\\/applicationinsights-shims|@azure\\/cosmos|@azure\\/service-bus|@azure\\/keyvault-keys|@azure\\/event-hubs|@azure\\/ms-rest-azure-env|@azure\\/core-amqp|translatte|@azure\\/data-tables|@azure\\/communication-common|@azure\\/keyvault-secrets|@azure\\/core-util|@azure\\/app-configuration|@azure\\/core-xml|bluesky|@azure\\/communication-signaling|@azure\\/storage-file-share|playfab-sdk|@azure\\/web-pubsub|@azure\\/web-pubsub-express|@azure\\/digital-twins-core|@azure\\/mixed-reality-authentication|@microsoft\\/1ds-core-js|azure-scripty|@cfworker\\/cosmos|dynamicsmobile|azure-bake|@azure\\/template|@microsoft\\/1ds-post-js|@azure\\/communication-sms|@azure\\/monitor-query|@azure\\/keyvault-admin|@azure\\/identity-vscode|@itentialopensource\\/adapter-azure_aks|@azure\\/communication-network-traversal|@azure\\/identity-cache-persistence|@egomobile\\/microservices|@azure\\/communication-phone-numbers|@azure\\/video-analyzer-edge|azure-arm-managementGroups|@azure\\/arm-locks|@azure\\/arm-resources|@azure\\/arm-policy|react-native-msal|ms-rest-azure|@azure\\/ms-rest-nodeauth|@azure\\/ms-rest-browserauth|@azure\\/arm-managedapplications|@azure\\/arm-compute|azure-arm-managementgroups|@azure\\/arm-links|@azure\\/arm-network|@azure\\/arm-features|@azure\\/ms-rest-js|@azure\\/ms-rest-azure-js|passport-microsoft|netlify-cms-backend-azure|azure-devops-node-api"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Powerbi
@@ -25,5 +313,5 @@ sinks:
     domains:
       - "powerbi.microsoft.com"
     patterns:
-      - "powerbi-report-authoring"
+      - "powerbi"
     tags:
