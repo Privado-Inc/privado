@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Pubnub
-    name: Pubnub
+  - id: ThirdParties.SDK.Cloudrail
+    name: Cloudrail
     domains:
-      - "pubnub.com"
+      - "cloudrail.com"
     patterns:
-      - "pubnub"
+      - "cloudrail-si"
     tags:

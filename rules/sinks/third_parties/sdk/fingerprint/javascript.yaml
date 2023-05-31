@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Actionherojs
-    name: Actionherojs
+  - id: ThirdParties.SDK.Fingerprint
+    name: Fingerprint
     domains:
-      - "actionherojs.com"
+      - "fingerprint.com"
     patterns:
-      - "ah-newrelic-plugin|ah-bugsnag-plugin"
+      - "@fingerprintjs\\/fingerprintjs"
     tags:

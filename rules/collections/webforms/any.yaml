@@ -2,5 +2,5 @@ collections:
   - id: Collections.Webforms
     name: Webform data collection
     patterns: 
-      - "^<(?i)(?:input|textarea|\\w{0,}TextBox|\\w{0,}Field)"
+      - "^<(?i)(?:\\w{0,}(input|upload)\\w{0,}|\\w{0,}(textarea|Text|TextBox|Select|Field|Autocomplete|Checkbox))"
     tags:

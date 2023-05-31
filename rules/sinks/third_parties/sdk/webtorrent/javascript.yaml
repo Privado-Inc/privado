@@ -1,13 +1,12 @@
-
 #  Sink rule for ThirdParty SDK
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
 sinks:
 
-  - id: ThirdParties.SDK.Finitebox
-    name: Finitebox
+  - id: ThirdParties.SDK.Webtorrent
+    name: Webtorrent
     domains:
-      - "finitebox.com"
+      - "webtorrent.io"
     patterns:
-      - "node-gcm-iid"
+      - "(?i)(webtorrent|bittorrent-dht|create-torrent|bittorrent-tracker).*"
     tags:

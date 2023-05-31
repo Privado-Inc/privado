@@ -38,14 +38,6 @@ sinks:
       - "@bam.tech\\/react-native-batch"
     tags:
 
-  - id: ThirdParties.SDK.Github.Codaxy
-    name: Github Codaxy
-    domains:
-      - "codaxy.github.io"
-    patterns:
-      - "cx-google-maps"
-    tags:
-
   - id: ThirdParties.SDK.Github.Contactlab
     name: Github Contactlab
     domains:
@@ -54,36 +46,20 @@ sinks:
       - "contactsnag"
     tags:
 
-  - id: ThirdParties.SDK.Github.Firefly-jugnu
-    name: Github Firefly-jugnu
+  - id: ThirdParties.SDK.Firefly-jugnu
+    name: Firefly-jugnu
     domains:
       - "firefly-jugnu.github.io"
     patterns:
       - "@fire-fly\\/jugnu"
     tags:
 
-  - id: ThirdParties.SDK.Github.Flamelink
-    name: Github Flamelink
+  - id: ThirdParties.SDK.Flamelink
+    name: Flamelink
     domains:
-      - "flamelink.github.io"
+      - "flamelink.io"
     patterns:
       - "flamelink"
-    tags:
-
-  - id: ThirdParties.SDK.Github
-    name: Github
-    domains:
-      - "github.io"
-    patterns:
-      - "gatsby-remark-external-links|gatsby-plugin-netlify-cms"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Googlewebcomponents
-    name: Github Googlewebcomponents
-    domains:
-      - "googlewebcomponents.github.io"
-    patterns:
-      - "@google-web-components\\/google-youtube"
     tags:
 
   - id: ThirdParties.SDK.Github.Hashbite
@@ -102,14 +78,6 @@ sinks:
       - "itsa-mollie-payment-promise"
     tags:
 
-  - id: ThirdParties.SDK.Github.Jenyus-org
-    name: Github Jenyus-org
-    domains:
-      - "jenyus-org.github.io"
-    patterns:
-      - "@jenyus-org\\/nestjs-graphql-utils|@jenyus-org\\/graphql-utils"
-    tags:
-
   - id: ThirdParties.SDK.Github.Log4js-node
     name: Github Log4js-node
     domains:
@@ -124,14 +92,6 @@ sinks:
       - "ng-maps.github.io"
     patterns:
       - "@ng-maps\\/google|@ng-maps\\/shapes|@ng-maps\\/places|@ng-maps\\/marker-clusterer"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Paypal
-    name: Github Paypal
-    domains:
-      - "paypal.github.io"
-    patterns:
-      - "@paypal\\/react-paypal-js"
     tags:
 
   - id: ThirdParties.SDK.Github.React-native-share
@@ -164,14 +124,6 @@ sinks:
       - "relay-tools.github.io"
     patterns:
       - "relay-hooks"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Req-json
-    name: Github Req-json
-    domains:
-      - "req-json.github.io"
-    patterns:
-      - "req-json"
     tags:
 
   - id: ThirdParties.SDK.Github.Ventx
