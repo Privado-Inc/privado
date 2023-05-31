@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.Webforms
+    name: Webform data collection
+    patterns: 
+      - "^<(?i)(?:\\w{0,}(input|upload)\\w{0,}|\\w{0,}(textarea|Text|TextBox|Select|Field|Autocomplete|Checkbox))"
+    tags:

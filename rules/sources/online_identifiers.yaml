@@ -35,7 +35,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)mac[^\\s/(;)#|,=!>]{0,2}(?:address|ip)|ip[^\\s/(;)#|,=!>]{0,2}mac"
+      - "(?i)(mac|ieee)[^\\s/(;)#|,=!>]{0,2}(?:address|ip)|ip[^\\s/(;)#|,=!>]{0,2}mac"
     tags:
       law: GDPR
 
@@ -55,6 +55,6 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i)idfa|idfv|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
+      - "(?i)idfa|idfv|aaid|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
     tags:
       law: GDPR

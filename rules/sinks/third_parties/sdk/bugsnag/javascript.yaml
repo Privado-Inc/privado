@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bugsnag.com"
     patterns:
-      - "cabin|@bugsnag\\/expo|epic-logger|vite-plugin-bugsnag|bunyan-bugsnag|bugsnag-roku|nest-bugsnag|@wizbii\\/nest-bugsnag|winston-bugsnag|@ssut\\/nest-bugsnag|bugsnag-browser-lite|@werkspot\\/decrypterror|nest-bugsnag-remade|paperplane-bugsnag|@articulate\\/paperplane-bugsnag|@keyrock\\/winston-bugsnag-transport|adonis-bugsnag|@bugsnag\\/js|@bugsnag\\/source-maps|@bugsnag\\/react-native|axe|sensitive-fields|@nkaurelien\\/nest-bugsnag|winston-3-bugsnag-transport"
+      - "ah-bugsnag-plugin|graphql-middleware-bugsnag|cabin|@bugsnag\\/expo|epic-logger|vite-plugin-bugsnag|bunyan-bugsnag|bugsnag-roku|nest-bugsnag|@wizbii\\/nest-bugsnag|winston-bugsnag|@ssut\\/nest-bugsnag|bugsnag-browser-lite|@werkspot\\/decrypterror|nest-bugsnag-remade|paperplane-bugsnag|@articulate\\/paperplane-bugsnag|@keyrock\\/winston-bugsnag-transport|adonis-bugsnag|@bugsnag\\/js|@bugsnag\\/source-maps|@bugsnag\\/react-native|axe|sensitive-fields|@nkaurelien\\/nest-bugsnag|winston-3-bugsnag-transport"
     tags:

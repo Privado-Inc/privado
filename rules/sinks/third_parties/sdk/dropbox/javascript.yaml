@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dropbox.com"
     patterns:
-      - "cloudrail-si|dropbox-streaming-upload|rem|dropbox-sdk|dropboxdb|react-dropbox-chooser|dropbox-stream|node-dropbox-v2|imgbox-js|dropbox-file-picker|boxing|pcapi|dropbox-fetch|dropbox|dropbox-v2-api|node-dropbox|dbox|dropbox-fs|node-dropbox-copia|drbx-js|dropbox_session_upload"
+      - "dropbox|react-dropbox-chooser|imgbox-js|boxing|node-dropbox|dbox|drbx-js"
     tags:

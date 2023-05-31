@@ -1,0 +1,105 @@
+auditConfig:
+  - id: AuditUtility.ApacheCommons
+    name: Apache Commons
+    patterns:
+      - '^org.apache.commons.*:commons.*'
+
+  - id: AuditUtility.GoogleGuava
+    name: Google guava
+    patterns:
+      - '^com.google.guava.*:guava.*'
+
+  - id: AuditUtility.CommonsIo
+    name: Commons Io
+    patterns:
+      - '^commons-io.*:commons-io.*'
+
+  - id: AuditUtility.CommonsCodec
+    name: Commons Codec
+    patterns:
+      - '^commons-codec.*:commons-codec.*'
+
+  - id: AuditUtility.FasterXML
+    name: Fasterxml Core
+    patterns:
+      - '^com.fasterxml.jackson.core.*:jackson.*'
+
+  - id: AuditUtility.GoogleGson
+    name: Google Code Gson
+    patterns:
+      - '^com.google.code.gson.*:gson.*'
+
+  - id: AuditUtility.CommonsBeanutils
+    name: Commons Beanutils
+    patterns:
+      - '^commons-beanutils.*:commons-beanutils.*'
+
+  - id: AuditUtility.CommonsCollection
+    name: Commons Collection
+    patterns: 
+      - '^commons-collections.*:commons-collections.*'
+
+  - id: AuditUtility.JodaTime
+    name: Joda Time
+    patterns: 
+      - '^joda-time.*:joda-time.*'
+
+  - id: AuditUtility.CommonsEmail
+    name: Commons Email
+    patterns: 
+      - '^commons-email.*:commons-email.*'
+
+  - id: AuditUtility.ApachePDFBox
+    name: Apache PDF Box
+    patterns: 
+      - '^org.apache.pdfbox.*:pdfbox.*'
+
+  - id: AuditUtility.MediaJai
+    name: Java Media Jai
+    patterns: 
+      - '^javax.media.*:.*core'
+
+  - id: AuditUtility.ApachePOI
+    name: Apache POI
+    patterns: 
+      - '^org.apache.poi.*:poi.*'
+
+  - id: AuditUtility.CommonsValidator
+    name: Commons Validator
+    patterns: 
+      - '^commons-validator.*:commons-validator.*'
+
+  - id: AuditUtility.GoogleInject
+    name: Google Inject
+    patterns: 
+      - '^com.google.inject.*:guice.*'
+
+  - id: AuditUtility.CommonsConfig
+    name: Commons Configuration
+    patterns: 
+      - '^commons-configuration.*:commons-configuration.*'
+
+  - id: AuditUtility.SnakeYAML
+    name: Snake YAML
+    patterns: 
+      - '^org.yaml.*:snakeyaml.*'
+
+  - id: AuditUtility.ByteBuddy
+    name: Byte Buddy
+    patterns: 
+      - '^net.bytebuddy.*:byte-buddy.*'
+
+  - id: AuditUtility.MapStruct
+    name: Map Struct
+    patterns: 
+      - '^org.mapstruct.*:mapstruct.*'
+
+  - id: AuditUtility.Dozer
+    name: Dozer Mapper
+    patterns: 
+      - '^com.github.dozermapper.*:dozer-core.*'
+
+  - id: AuditUtility.JCommander
+    name: JCommander
+    patterns:
+      - '^com.beust.*:jcommander.*'

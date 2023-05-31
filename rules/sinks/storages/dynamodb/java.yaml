@@ -9,6 +9,7 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
+      - "(?i).*(DynamoDbClient|DynamoDbResponse).*"
       - "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync)[.]((batchE|e)xecuteStatement|executeTransaction)[:].*)))"
     tags:
 

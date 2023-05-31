@@ -8,5 +8,5 @@ sinks:
     domains:
       - neo4j.com
     patterns:
-      - "(?i)(neo4j.*graphdatabase.*execute.*|py2neo.*graph.*append.*|neomodel.*config.*)"
+      - "(?i).*(neo4j.*graphdatabase.*execute.*|py2neo.*graph.*append.*|neomodel.*config.*)"
     tags:

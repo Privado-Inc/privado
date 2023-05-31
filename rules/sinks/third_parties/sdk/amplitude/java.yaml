@@ -17,7 +17,7 @@ sinks:
     domains:
       - "amplitude.com/amplitude-analytics"
     patterns:
-      - "(?i)(com[.]amplitude[.]analytics).*"
+      - "(?i)(com[.]amplitude[.]analytics|com[.]amplitude[.]android[.]Amplitude[.]track).*"
     tags:
 
   - id: ThirdParties.SDK.Amplitude.CustomerDataPlatform

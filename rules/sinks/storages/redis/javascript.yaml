@@ -1,0 +1,8 @@
+sinks:
+  - id: Storages.Redis.Read
+    name: Redis DB
+    domains:
+      - redis.io
+    patterns:
+      - (?i)(redis|connect-redis|ioredis|cache-manager|@socket.io\\/redis-adapter|@fastify\\/redis)
+    tags:

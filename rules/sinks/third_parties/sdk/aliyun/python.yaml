@@ -9,5 +9,1075 @@ sinks:
     domains:
       - "aliyun.com"
     patterns:
-      - "(?i)(aliyunsdk|aliyunauth).*"
+      - "(?i)(aliyunsdk|aliyunsdkcore|aliyunauth|aliyun_encryption_sdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ObjectStorageService
+    name: Aliyun Object Storage Service
+    domains:
+      - "alibabacloud.com/product/object-storage-service"
+    patterns:
+      - "(?i)(alibabacloud_oss_sdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MessageService
+    name: Aliyun Message Service
+    domains:
+      - "alibabacloud.com/product/message-service"
+    patterns:
+      - "(?i)(aliyun.*mns|aliyun.*mhub|aliyun.*ons|aliyun.*oms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataLakeAnalytics
+    name: Aliyun DataLake Analytics
+    domains:
+      - "alibabacloud.com/product/datalake-formation"
+    patterns:
+      - "(?i)(aliyun.*dla|aliyun.*das).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataHub
+    name: Aliyun DataHub
+    domains:
+      - "alibabacloud.com/product/datahub"
+    patterns:
+      - "(?i)(aliyun.*datahub).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataWorks
+    name: Aliyun DataWorks
+    domains:
+      - "alibabacloud.com/product/ide"
+    patterns:
+      - "(?i)(aliyun.*dataworks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataIntegration
+    name: Aliyun DataIntegration
+    domains:
+      - "alibabacloud.com/product/data-integration"
+    patterns:
+      - "(?i)(aliyun.*dataIntegration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ApsaraDB
+    name: Aliyun ApsaraDB
+    domains:
+      - "alibabacloud.com/product/databases"
+    patterns:
+      - "(?i)(aliyun.*apsaradb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ApsaraDBForGDB
+    name: Aliyun ApsaraDB for GDB
+    domains:
+      - "alibabacloud.com/product/apsarastack"
+    patterns:
+      - "(?i)(aliyun.*gdb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MaxCompute
+    name: Aliyun MaxCompute
+    domains:
+      - "alibabacloud.com/product/maxcompute"
+    patterns:
+      - "(?i)(aliyun.*odps).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.QuickBI
+    name: Aliyun QuickBI
+    domains:
+      - "alibabacloud.com/product/quickbi"
+    patterns:
+      - "(?i)(aliyun.*quickbi).*"
+      - "(?i)(aliyun.*foas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataV
+    name: Aliyun DataV
+    domains:
+      - "alibabacloud.com/product/datav"
+    patterns:
+      - "(?i)(aliyun.*datav).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.EMap
+    name: Aliyun EMap
+    domains:
+      - "alibabacloud.com/product/emapreduce"
+    patterns:
+      - "(?i)(aliyun.*emap|aliyun.*emr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.Streaming
+    name: Aliyun Streaming
+    domains:
+      - "alibabacloud.com/product/apsaravideo-for-live/rts"
+    patterns:
+      - "(?i)(aliyun.*stream).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SimpleLogService
+    name: Aliyun Simple Log Service
+    domains:
+      - "alibabacloud.com/product/log-service"
+    patterns:
+      - "(?i)(aliyun.*sls|aliyun.*log).*"
+      - "(?i)(aliyun.*geoip).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MachineLearningPlatform
+    name: Aliyun Machine Learning Platform for AI
+    domains:
+      - "alibabacloud.com/product/machine-learning"
+    patterns:
+      - "(?i)(aliyun.*pai|aliyun.*paistudio|aliyun.*paielasticdatasetaccelerator).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.PersonalizedRecommendation
+    name: Aliyun Personalized Recommendation
+    domains:
+      - "alibabacloud.com/solutions/personalized-content-recommendation"
+    patterns:
+      - "(?i)(aliyun.*recommendation|aliyun.*pr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.IntelligentSpeechInteraction
+    name: Aliyun Intelligent Speech Interaction
+    domains:
+      - "alibabacloud.com/product/intelligent-speech-interaction"
+    patterns:
+      - "(?i)(aliyun.*speech|aliyun.*asr|aliyun.*stt|aliyun.*tts|aliyun.*dlt|aliyun.*dyvms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ImageSearch
+    name: Aliyun Image Search
+    domains:
+      - "alibabacloud.com/product/imagesearch"
+    patterns:
+      - "(?i)(aliyun.*imagesearch).*"
+      - "(?i)(aliyun.*imagerecog).*"
+      - "(?i)(aliyun.*imageprocess).*"
+      - "(?i)(aliyun.*imageenhan).*"
+      - "(?i)(aliyun.*imageseg).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.VideoIntelligence
+    name: Aliyun Video Intelligence
+    domains:
+      - "videointelligence.aliyun.com"
+    patterns:
+      - "(?i)(aliyun.*video).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.FunctionCompute
+    name: Aliyun Function Compute
+    domains:
+      - "alibabacloud.com/product/function-compute"
+    patterns:
+      - "(?i)(aliyun.*fc|aliyun.*cf|aliyun.*mpserverless).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ContainerService
+    name: Aliyun Container Service
+    domains:
+      - "alibabacloud.com/product/kubernetes"
+    patterns:
+      - "(?i)(aliyun.*container).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ContainerRegistry
+    name: Aliyun Container Registry
+    domains:
+      - "alibabacloud.com/product/container-registry"
+    patterns:
+      - "(?i)(aliyun.*acr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ACM
+    name: Aliyun ACM
+    domains:
+      - "alibabacloud.com/product/acm"
+    patterns:
+      - "(?i)(aliyun.*acm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudResourceManager
+    name: Aliyun Cloud Resource Manager
+    domains:
+      - "alibabacloud.com/product/resource_management"
+    patterns:
+      - "(?i)(aliyun.*crm|aliyun.*resourcemanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ResourceAccessManagement
+    name: Aliyun Resource Access Management
+    domains:
+      - "alibabacloud.com/product/ram"
+    patterns:
+      - "(?i)(aliyun.*ram).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudDataLakeAnalytics
+    name: Aliyun Cloud Data Lake Analytics
+    domains:
+      - "alibabacloud.com/product/data-lake-analytics"
+    patterns:
+      - "(?i)(aliyun.*cdrs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudDataService
+    name: Aliyun Cloud Data Service
+    domains:
+      - "alibabacloud.com/product/data-management-service"
+    patterns:
+      - "(?i)(aliyun.*cds).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudDataTransport
+    name: Aliyun Cloud Data Transport
+    domains:
+      - "alibabacloud.com/product/data-transport"
+    patterns:
+      - "(?i)(aliyun.*cdt).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudTableStore
+    name: Aliyun Cloud Table Store
+    domains:
+      - "alibabacloud.com/product/table-store"
+    patterns:
+      - "(?i)(aliyun.*tablestore|aliyun.*ots).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.IoT
+    name: Aliyun IoT
+    domains:
+      - "alibabacloud.com/product/iot"
+    patterns:
+      - "(?i)(aliyun.*iot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.PersonalizedContentRecommendation
+    name: Aliyun Personalized Content Recommendation
+    domains:
+      - "alibabacloud.com/solutions/personalized-content-recommendation"
+    patterns:
+      - "(?i)(aliyun.*pcr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudVision
+    name: Aliyun Cloud Vision
+    domains:
+      - "alibabacloud.com/partner/cloud_vision_technology"
+    patterns:
+      - "(?i)(aliyun.*cv).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudLiveStreaming
+    name: Aliyun Cloud Live Streaming
+    domains:
+      - "alibabacloud.com/solutions/multimedia/livestreaming-ecommerce"
+    patterns:
+      - "(?i)(aliyun.*cls).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudRDS
+    name: Aliyun Cloud RDS
+    domains:
+      - "alibabacloud.com/product/apsaradb-for-rds-postgresql"
+    patterns:
+      - "(?i)(aliyun.*rds).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudDNS
+    name: Aliyun Cloud DNS
+    domains:
+      - "alibabacloud.com/product/dns"
+    patterns:
+      - "(?i)(aliyun.*dns|aliyun.*alidns).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudCDN
+    name: Aliyun Cloud CDN
+    domains:
+      - "alibabacloud.com/product/content-delivery-network"
+    patterns:
+      - "(?i)(aliyun.*cdn).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudECS
+    name: Aliyun Cloud ECS
+    domains:
+      - "alibabacloud.com/product/ecs"
+    patterns:
+      - "(?i)(aliyun.*ecs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudMonitor
+    name: Aliyun Cloud Monitor
+    domains:
+      - "alibabacloud.com/product/cloud-monitor"
+    patterns:
+      - "(?i)(aliyun.*monitor|aliyun.*cms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudSecurity
+    name: Aliyun Cloud Security
+    domains:
+      - "alibabacloud.com/product/security-center"
+    patterns:
+      - "(?i)(aliyun.*security).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ApplicationAutoScaling
+    name: Aliyun Application Auto Scaling
+    domains:
+      - "alibabacloud.com/product/auto-scaling"
+    patterns:
+      - "(?i)(aliyun.*ahas[.]apenapi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ActionTrail
+    name: Aliyun ActionTrail
+    domains:
+      - "alibabacloud.com/product/actiontrail"
+    patterns:
+      - "(?i)(aliyun.*actiontrail).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.AnalyticDB
+    name: Aliyun AnalyticDB
+    domains:
+      - "alibabacloud.com/product/analyticdb-for-mysql"
+    patterns:
+      - "(?i)(aliyun.*adb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.Aegis
+    name: Aliyun Aegis
+    domains:
+      - "alibabacloud.com/help/en/security-center"
+    patterns:
+      - "(?i)(aliyun.*aegis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.AntiFraudService
+    name: Aliyun Anti Fraud Service
+    domains:
+      - "alibabacloud.com/product/fraud-detection"
+    patterns:
+      - "(?i)(aliyun.*afs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CustomerCareService
+    name: Aliyun Customer Care Service
+    domains:
+      - "alibabacloud.com/solutions/telco/customer-engagement-enabler"
+    patterns:
+      - "(?i)(aliyun.*aiccs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.AIRecommendation
+    name: Aliyun AI Recommendation
+    domains:
+      - "alibabacloud.com/product/airec"
+    patterns:
+      - "(?i)(aliyun.*airec).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.LoadBalancer
+    name: Aliyun Load Balancer
+    domains:
+      - "alibabacloud.com/product/server-load-balancer"
+    patterns:
+      - "(?i)(aliyun.*alb|aliyun.*slb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.AliKafka
+    name: Aliyun AliKafka
+    domains:
+      - "alibabacloud.com/product/kafka"
+    patterns:
+      - "(?i)(aliyun.*alikafka).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MachineTranslation
+    name: Aliyun Machine Translation
+    domains:
+      - "alibabacloud.com/product/machine-translation"
+    patterns:
+      - "(?i)(aliyun.*alimt|aliyun.*nlp|aliyun.*alinlp|aliyun.*nlu|aliyun.*ct).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudVideoCall
+    name: Aliyun Cloud Video Call
+    domains:
+      - "meeting.alibabacloud.com"
+    patterns:
+      - "(?i)(aliyun.*aliyuncvc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.AntiDDoSPro
+    name: Aliyun Anti DDoS Pro
+    domains:
+      - "alibabacloud.com/product/ddos"
+    patterns:
+      - "(?i)(aliyun.*antiddospublic).*"
+      - "(?i)(aliyun.*addresspurification).*"
+      - "(?i)(aliyun.*aas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.AppStreamCenter
+    name: Aliyun AppStreamCenter
+    domains:
+      - "alibabacloud.com/solutions/multimedia/livestreaming"
+    patterns:
+      - "(?i)(aliyun.*appstreamcenter).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.RealTimeMonitoringService
+    name: Aliyun RealTime Monitoring Service
+    domains:
+      - "alibabacloud.com/product/arms"
+    patterns:
+      - "(?i)(aliyun.*arms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.BaaS
+    name: Aliyun Cloud BaaS
+    domains:
+      - "alibabacloud.com/product/baas"
+    patterns:
+      - "(?i)(aliyun.*baas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.BatchCompute
+    name: Aliyun BatchCompute
+    domains:
+      - "alibabacloud.com/product/batch-compute"
+    patterns:
+      - "(?i)(aliyun.*batchcompute).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.BillingandSubscription
+    name: Aliyun Billing and Subscription
+    domains:
+      - "alibabacloud.com/help/en/bss-openapi"
+    patterns:
+      - "(?i)(aliyun.*bss).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CertificateAuthenticationService
+    name: Aliyun Cloud Certificate Authentication Service
+    domains:
+      - "alibabacloud.com/product/certificates"
+    patterns:
+      - "(?i)(aliyun.*cas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudEnterpriseNetwork
+    name: Aliyun Cloud Enterprise Network
+    domains:
+      - "alibabacloud.com/product/cen"
+    patterns:
+      - "(?i)(aliyun.*cbn).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CCS
+    name: Aliyun CCS
+    domains:
+      - "alibabacloud.com/customers/clouder-cc"
+    patterns:
+      - "(?i)(aliyun.*ccs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.Chatbot
+    name: Aliyun Chatbot
+    domains:
+      - "alibabacloud.com/solutions/ai-chatbots"
+    patterns:
+      - "(?i)(aliyun.*chatbot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ClickHouseService
+    name: Aliyun ClickHouse Service
+    domains:
+      - "alibabacloud.com/product/clickhouse"
+    patterns:
+      - "(?i)(aliyun.*clickhouse).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudAPI
+    name: Aliyun Cloud API
+    domains:
+      - "alibabacloud.com/product/api-gateway"
+    patterns:
+      - "(?i)(aliyun.*cloudapi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudGameService
+    name: Aliyun Cloud Game Service
+    domains:
+      - "alibabacloud.com/solutions/gaming"
+    patterns:
+      - "(?i)(aliyun.*cloudgame).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudMarketing
+    name: Aliyun Cloud Marketing
+    domains:
+      - "alibabacloud.com/solutions/digital-marketing"
+    patterns:
+      - "(?i)(aliyun.*cloudmarketing).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudPhoto
+    name: Aliyun Cloud Photo
+    domains:
+      - "alibabacloud.com/product/drive-and-photo-service"
+    patterns:
+      - "(?i)(aliyun.*cloudphoto).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudCodeUpService
+    name: Aliyun Cloud CodeUp Service
+    domains:
+      - "codeup.aliyun.com"
+    patterns:
+      - "(?i)(aliyun.*codeup).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ComputeNest
+    name: Aliyun Compute Nest
+    domains:
+      - "alibabacloud.com/product/compute-nest"
+    patterns:
+      - "(?i)(aliyun.*computenest).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudBusService
+    name: Aliyun Cloud Bus Service
+    domains:
+      - "alibabacloud.com/product/eventbridge"
+    patterns:
+      - "(?i)(aliyun.*csb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CustomerAnalytics
+    name: Aliyun Customer Analytics
+    domains:
+      - "alibabacloud.com/solutions/mobile/analytics"
+    patterns:
+      - "(?i)(aliyun.*cusanalytic).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataBackup
+    name: Aliyun Data Backup
+    domains:
+      - "alibabacloud.com/product/database-backup"
+    patterns:
+      - "(?i)(aliyun.*dbs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DynamicContentDeliveryNetwork
+    name: Aliyun Dynamic Content Delivery Network
+    domains:
+      - "alibabacloud.com/product/dcdn"
+    patterns:
+      - "(?i)(aliyun.*dcdn).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DataIntelligence
+    name: Aliyun Data Intelligence
+    domains:
+      - "alibabacloud.com/solutions/ai/data-intelligence"
+    patterns:
+      - "(?i)(aliyun.*ddi).*"
+      - "(?i)(aliyun.*itaas).*"
+      - "(?i)(aliyun.*visionai).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DatabaseService
+    name: Aliyun Database Service
+    domains:
+      - "alibabacloud.com/product/databases"
+    patterns:
+      - "(?i)(aliyun.*dds).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DirectMail
+    name: Aliyun DirectMail
+    domains:
+      - "alibabacloud.com/product/directmail"
+    patterns:
+      - "(?i)(aliyun.*dm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.DistributedRelationalDatabaseService
+    name: Aliyun Distributed Relational Database Service
+    domains:
+      - "alibabacloud.com/product/polardb-x"
+    patterns:
+      - "(?i)(aliyun.*drds).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.IoTOpenAPI
+    name: Aliyun IoT OpenAPI
+    domains:
+      - "alibabacloud.com/product/openapiexplorer"
+    patterns:
+      - "(?i)(aliyun.*dyiotapi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SMS
+    name: Aliyun SMS
+    domains:
+      - "alibabacloud.com/product/short-message-service"
+    patterns:
+      - "(?i)(aliyun.*dysmsapi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ElasticAcceleratedComputingInstance
+    name: Aliyun Elastic Accelerated Computing Instances
+    domains:
+      - "cn.aliyun.com/product/ecs/eais"
+    patterns:
+      - "(?i)(aliyun.*eais).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ElasticBlockStorage
+    name: Aliyun Elastic Block Storage
+    domains:
+      - "alibabacloud.com/product/disk"
+    patterns:
+      - "(?i)(aliyun.*ebs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ElasticContainerInstance
+    name: Aliyun Elastic Container Instance
+    domains:
+      - "alibabacloud.com/product/elastic-container-instance"
+    patterns:
+      - "(?i)(aliyun.*eci|aliyun.*edas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ElasticHighPerformanceComputing
+    name: Aliyun Elastic High Performance Computing
+    domains:
+      - "alibabacloud.com/product/ehpc"
+    patterns:
+      - "(?i)(aliyun.*ehpc|aliyun.*hpc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.EnterpriseMobileApplicationService
+    name: Aliyun Enterprise Mobile Application Service
+    domains:
+      - "alibabacloud.com/product/mobile-testing"
+    patterns:
+      - "(?i)(aliyun.*emas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ElasticSearch
+    name: Aliyun Elasticsearch
+    domains:
+      - "alibabacloud.com/product/elasticsearch"
+    patterns:
+      - "(?i)(aliyun.*es|aliyun.*elasticsearch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.FileStorageService
+    name: Aliyun File Storage Service
+    domains:
+      - "alibabacloud.com/product/nas"
+    patterns:
+      - "(?i)(aliyun.*fss|aliyun.*efs|aliyun.*nas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.HBase
+    name: Aliyun HBase
+    domains:
+      - "alibabacloud.com/product/hbase"
+    patterns:
+      - "(?i)(aliyun.*hbase).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.HybridBackupRecovery
+    name: Aliyun Hybrid Backup Recovery
+    domains:
+      - "alibabacloud.com/product/hybrid-backup-recovery"
+    patterns:
+      - "(?i)(aliyun.*hbr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.HybridDB
+    name: Aliyun HybridDB
+    domains:
+      - "alibabacloud.com/products/hybriddb-for-mysql"
+    patterns:
+      - "(?i)(aliyun.*hdr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.HiTSDB
+    name: Aliyun HiTSDB
+    domains:
+      - "alibabacloud.com/product/hitsdb"
+    patterns:
+      - "(?i)(aliyun.*hitsdb).*"
+      - "(?i)(aliyun.*gts).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.HardwareSecurityModule
+    name: Aliyun Hardware Security Module
+    domains:
+      - "alibabacloud.com/product/cloudhsm"
+    patterns:
+      - "(?i)(aliyun.*hsm).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.HTTPDNS
+    name: Aliyun HTTP DNS
+    domains:
+      - "alibabacloud.com/product/emas/httpdns"
+    patterns:
+      - "(?i)(aliyun.*httpdns).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.IdentityAsAService
+    name: Aliyun Identity As A Service
+    domains:
+      - "alibabacloud.com/product/identity-as-a-service-idaas"
+    patterns:
+      - "(?i)(aliyun.*idaas).*"
+      - "(?i)(aliyun.*cloudauth).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ImageAuditService
+    name: Aliyun ImageAudit service
+    domains:
+      - "alibabacloud.com/product/content-moderation"
+    patterns:
+      - "(?i)(aliyun.*imageaudit).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ImageAndVideoProcessingService
+    name: Aliyun Image and Video Processing Service
+    domains:
+      - "alibabacloud.com/product/ivpd"
+    patterns:
+      - "(?i)(aliyun.*ivpd).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.KeyManagementService
+    name: Aliyun Key Management Service
+    domains:
+      - "alibabacloud.com/product/kms"
+    patterns:
+      - "(?i)(aliyun.*kms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.LedgerDB
+    name: Aliyun LedgerDB
+    domains:
+      - "alibabacloud.com/product/ledgerdb"
+    patterns:
+      - "(?i)(aliyun.*ledgerdb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.LiveService
+    name: Aliyun Live Service
+    domains:
+      - "alibabacloud.com/product/apsaravideo-for-live"
+    patterns:
+      - "(?i)(aliyun.*live).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.CloudMarketplace
+    name: Aliyun Cloud Marketplace
+    domains:
+      - "marketplace.alibabacloud.com"
+    patterns:
+      - "(?i)(aliyun.*market).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MobileOpenPlatform
+    name: Aliyun Mobile Open Platform
+    domains:
+      - "alibabacloud.com/product/mobile-app-development"
+    patterns:
+      - "(?i)(aliyun.*mopen).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MobilePlatformAsAService
+    name: Aliyun Mobile Platform as a Service
+    domains:
+      - "alibabacloud.com/product/mpaas"
+    patterns:
+      - "(?i)(aliyun.*mpaas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MicroServiceEngine
+    name: Aliyun MicroService Engine
+    domains:
+      - "alibabacloud.com/product/microservices-engine"
+    patterns:
+      - "(?i)(aliyun.*mse).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MediaTranscodingService
+    name: Aliyun Media Transcoding Service
+    domains:
+      - "alibabacloud.com/product/mts"
+    patterns:
+      - "(?i)(aliyun.*mts).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.MultimediaAIService
+    name: Aliyun MultimediaAIService
+    domains:
+      - "alibabacloud.com/solutions/multimedia"
+    patterns:
+      - "(?i)(aliyun.*multimediaai).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.NetworkAnalytics
+    name: Aliyun Network Analytics
+    domains:
+      - "alibabacloud.com/product/network-intelligent-service"
+    patterns:
+      - "(?i)(aliyun.*netana).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.OpenAPIManagement
+    name: Aliyun OpenAPI Management
+    domains:
+      - "next.api.alibabacloud.com/home"
+    patterns:
+      - "(?i)(aliyun.*oam).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ObjectDetectionService
+    name: Aliyun Object Detection Service
+    domains:
+      - "alibabacloud.com/help/en/machine-learning-platform-for-ai/latest/object-detection"
+    patterns:
+      - "(?i)(aliyun.*objectdet).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.OpticalCharacterRecognition
+    name: Aliyun Optical Character Recognition
+    domains:
+      - "ai.aliyun.com/ocr"
+    patterns:
+      - "(?i)(aliyun.*ocr).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ObjectCacheService
+    name: Aliyun Object Cache Service
+    domains:
+      - "alibabacloud.com/help/en/object-storage-service"
+    patterns:
+      - "(?i)(aliyun.*ocs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.OpenMessagingService
+    name: Aliyun Open Messaging Service
+    domains:
+      - "openmessagingservice.aliyun.com"
+    patterns:
+      - "(?i)(aliyun.*oms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.OperationOrchestrationService
+    name: Aliyun Operation Orchestration Service
+    domains:
+      - "alibabacloud.com/product/oos"
+    patterns:
+      - "(?i)(aliyun.*oos).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.OpenSearch
+    name: Aliyun Open Search
+    domains:
+      - "alibabacloud.com/product/opensearch"
+    patterns:
+      - "(?i)(aliyun.*opensearch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.OutboundbotService
+    name: Aliyun Outboundbot Service
+    domains:
+      - "alibabacloud.com/product/bot"
+    patterns:
+      - "(?i)(aliyun.*outboundbot).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.PetaData
+    name: Aliyun PetaData
+    domains:
+      - "alibabacloud.com/help/en/petadata/latest/3d262b"
+    patterns:
+      - "(?i)(aliyun.*petadata).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.PolarDB
+    name: Aliyun PolarDB
+    domains:
+      - "alibabacloud.com/product/polardb"
+    patterns:
+      - "(?i)(aliyun.*polardb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.PrivateLink
+    name: Aliyun PrivateLink
+    domains:
+      - "alibabacloud.com/product/private-link"
+    patterns:
+      - "(?i)(aliyun.*privatelink).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.PublicAndPrivateZone
+    name: Aliyun Public And Private Zone
+    domains:
+      - "alibabacloud.com/product/private-zone"
+    patterns:
+      - "(?i)(aliyun.*pvtz).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.QualityCheck
+    name: Aliyun Quality Check
+    domains:
+      - "qualitycheck.aliyun.com"
+    patterns:
+      - "(?i)(aliyun.*qualitycheck).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.RapidDevelopmentConsole
+    name: Aliyun Rapid Development Console
+    domains:
+      - "cn.aliyun.com/product/rdc"
+    patterns:
+      - "(?i)(aliyun.*rdc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.RetailCloud
+    name: Aliyun RetailCloud
+    domains:
+      - "alibabacloud.com/solutions/retail"
+    patterns:
+      - "(?i)(aliyun.*retailcloud).*"
+      - "(?i)(aliyun.*retailir).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.RoboticOperatingSystem
+    name: Aliyun Robotic Operating System
+    domains:
+      - "alibabacloud.com/product/rpa"
+    patterns:
+      - "(?i)(aliyun.*ros).*"
+      - "(?i)(aliyun.*robotstudios).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.RealTimeCommunication
+    name: Aliyun RealTime Communication
+    domains:
+      - "cn.aliyun.com/product/rtc"
+    patterns:
+      - "(?i)(aliyun.*rtc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SimpleApplicationEngine
+    name: Aliyun Simple Application Engine
+    domains:
+      - "alibabacloud.com/product/severless-application-engine"
+    patterns:
+      - "(?i)(aliyun.*sae|aliyun.*sar).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SecurityAssertionService
+    name: Aliyun Security Assertion Service
+    domains:
+      - "securityassertionservice.aliyun.com"
+    patterns:
+      - "(?i)(aliyun.*sas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SmartDataDiscoveryAndProtection
+    name: Aliyun Smart Data Discovery And Protection
+    domains:
+      - "alibabacloud.com/product/sddp"
+    patterns:
+      - "(?i)(aliyun.*sddp).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SmartAccessGateway
+    name: Aliyun Smart Access Gateway
+    domains:
+      - "alibabacloud.com/product/smart-access-gateway"
+    patterns:
+      - "(?i)(aliyun.*smartag).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.ServerMigrationCentre
+    name: Aliyun Server Migration Centre
+    domains:
+      - "alibabacloud.com/help/en/server-migration-center/latest/what-is-smc"
+    patterns:
+      - "(?i)(aliyun.*smc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SecurityTokenService
+    name: Aliyun Security Token Service
+    domains:
+      - "alibabacloud.com/help/en/resource-access-management/latest/what-is-sts"
+    patterns:
+      - "(?i)(aliyun.*sts).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.SimpleWebApplicationService
+    name: Aliyun Simple Web Application Service
+    domains:
+      - "alibabacloud.com/product/swas"
+    patterns:
+      - "(?i)(aliyun.*swas).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.VOD
+    name: Aliyun VOD
+    domains:
+      - "alibabacloud.com/product/apsaravideo-for-vod"
+    patterns:
+      - "(?i)(aliyun.*vod).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.VPC
+    name: Aliyun VPC
+    domains:
+      - "alibabacloud.com/product/vpc"
+    patterns:
+      - "(?i)(aliyun.*vpc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.VideoSurveillance
+    name: Aliyun Video Surveillance
+    domains:
+      - "alibabacloud.com/solutions/multimedia/video-monitoring"
+    patterns:
+      - "(?i)(aliyun.*vs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.WebApplicationFirewall
+    name: Aliyun Web Application Firewall
+    domains:
+      - "alibabacloud.com/product/web-application-firewall"
+    patterns:
+      - "(?i)(aliyun.*waf).*"
+    tags:
+
+  - id: ThirdParties.SDK.Aliyun.XTrace
+    name: Aliyun XTrace
+    domains:
+      - "alibabacloud.com/product/tracing-analysis"
+    patterns:
+      - "(?i)(aliyun.*xtrace).*"
     tags:

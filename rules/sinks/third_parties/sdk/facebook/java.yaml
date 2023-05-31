@@ -9,5 +9,5 @@ sinks:
     domains:
       - "facebook.com"
     patterns:
-      - "(?i)(cn[.]sharesdk[.]facebook|com[.]facebook[.]ads[.]sdk|com[.]facebook[.]airlift|com[.]facebook[.]android|com[.]facebook[.]api|com[.]facebook[.]drift|com[.]facebook[.]fresco[.]custom|com[.]facebook[.]fresco|com[.]facebook[.]infer[.]annotation|com[.]facebook[.]presto|com[.]facebook[.]rebound|com[.]facebook[.]shimmer|com[.]facebook[.]soloader|com[.]facebook[.]stetho|com[.]github[.]asne[.]facebook|com[.]google[.]code[.]facebookapi).*"
+      - "(?i)(com[.]facebook[.]login|com[.]facebook[.]appevents|com[.]facebook[.]FacebookSdk|cn[.]sharesdk[.]facebook|com[.]facebook[.]ads[.]sdk|com[.]facebook[.]airlift|com[.]facebook[.]android|com[.]facebook[.]api|com[.]facebook[.]drift|com[.]facebook[.]fresco[.]custom|com[.]facebook[.]fresco|com[.]facebook[.]infer[.]annotation|com[.]facebook[.]presto|com[.]facebook[.]rebound|com[.]facebook[.]shimmer|com[.]facebook[.]soloader|com[.]facebook[.]stetho|com[.]github[.]asne[.]facebook|com[.]google[.]code[.]facebookapi).*"
     tags:
