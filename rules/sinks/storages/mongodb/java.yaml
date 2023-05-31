@@ -37,7 +37,7 @@ sinks:
       - "(?i)(.*[.]morphia[.]Datastore)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)|merge).*[:].*)|(.*[.]morphia[.]query[.]FieldEnd.*)"
     tags:
     
-    - id: Storages.MongoDB.SpringRepository.Read
+  - id: Storages.MongoDB.SpringRepository.Read
     name: MongoDB(Read)
     domains:
       - mongodb.com
