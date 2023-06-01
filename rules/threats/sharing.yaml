@@ -46,3 +46,18 @@ threats:
     tags:
       "MSTG-STORAGE-4" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Determining-Whether-Sensitive-Data-Is-Shared-with-Third-Parties-MSTG-STORAGE-4"
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
+
+
+  - id: Threats.Sharing.isParameterHardcoded
+    name: "PII field passed as parameter should not be hardcoded"
+    type: Threat
+    description: "PII field passed as parameter should not be hardcoded"
+    fix: "If not implemented, implement the cookie consent managment module in application."   
+    dataFlow:
+      sources:
+        - Data.Sensitive.*             
+      sinks:
+        - "**"
+    repositories:                                                         
+      - "**"
+    tags:

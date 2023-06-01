@@ -1,5 +1,11 @@
 sinks:
 
+  - id: Leakages.Log.CustomerLogger
+    name: Custom Leakage Logger
+    patterns:
+      - "(?i)(portfolio).*(?:error|severe|fatal|warn|debug|trace|info|log|exception)"
+    tags:
+
   - id: Leakages.Log.Error
     name: Log Error
     patterns:

@@ -19,3 +19,21 @@ threats:
     tags:
       "MSTG-STORAGE-9" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Finding-Sensitive-Information-in-Auto-Generated-Screenshots-MSTG-STORAGE-9"
       "MITRE" : "Insecurity.MisconfiguredPermissions"
+
+  - id: Threats.CookieConsent.isCookieConsentMgmtModuleImplemented
+    name: "Not implemented Consent Management module"
+    type: Threat
+    description: "Accessing cookies but not found implementation for consent management module to ensure user’s consent is obtained before capturing PII details"
+    fix: "If not implemented, implement the cookie consent managment module in application."   
+    dataFlow:
+      sources:
+        - Data.Sensitive.OnlineIdentifiers.Cookies             
+      sinks:
+        - "**"
+    repositories:                                                         
+      - "**"
+    tags:
+      "CWE-359" : "https://cwe.mitre.org/data/definitions/359.html"
+      "CWE-532" : "https://cwe.mitre.org/data/definitions/532.html"
+      "MSTG-STORAGE-3" : "https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#Testing-Logs-for-Sensitive-Data-MSTG-STORAGE-3"
+      "MITRE" : "Sharing.Exposure"
