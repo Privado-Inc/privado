@@ -1,0 +1,13 @@
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  # org.gitlab4j.api.GitLabApi
+  - id: ThirdParties.SDK.Gitlab
+    name: Gitlab
+    domains:
+      - "gitlab.com"
+    patterns:
+      - "(?i)(org[.]gitlab4j[.]api).{0,30}Api.*"
+    tags:
