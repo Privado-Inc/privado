@@ -40,7 +40,7 @@ policies:
     action: Deny    
     dataFlow: 
       sources:
-        - Data.Sensitive.ContactData.*             
+        - Data.Sensitive.*             
       sinks:
         - Storages.*
     repositories:
@@ -59,22 +59,6 @@ policies:
   #   repositories:
   #     - "**"
   #   tags:
-  
-  # - id: Policy.Deny.Processing.InfosysPrivacyLoggerUsed
-  #   name: "Infosys Privacy Logger component is used and implemented in code"
-  #   type: Compliance
-  #   description: "Infosys Privacy Logger component is a reusable component available for Java, C#, etc that protects the logs from leaking PII data. This component needs to be used in all applications."
-  #   fix: "Talk to the Data Protection team: dataprotection@org.com"
-  #   action: Deny
-  #   dataFlow:
-  #     sources:
-  #       - Data.Sensitive.*
-  #     sinks:
-  #       - Leakages.Log.InfosysPortfolio.Logger
-  #   repositories:
-  #     - "**"
-  #   tags:
-  #     policyPurpose: "Security Audit"
 
   - id: Policy.Allow.Processing.FinancialData
     name: "Example: Don't use financial data outside of payments services"

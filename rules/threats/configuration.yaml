@@ -27,9 +27,7 @@ threats:
     fix: "If not implemented, implement the cookie consent managment module in application."   
     dataFlow:
       sources:
-        - Data.Sensitive.OnlineIdentifiers.Cookies             
-      sinks:
-        - "**"
+        - Data.Sensitive.OnlineIdentifiers.Cookies
     repositories:                                                         
       - "**"
     config:

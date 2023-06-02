@@ -1,19 +1,38 @@
 sinks:
-  - id: Storages.Web.Cookie
-    name: Web Storage Cookie
+  - id: Storages.Web.Cookie.Write
+    name: Web Storage Cookie(Write)
     patterns:
-      - "(?i).*(getCookie|setCookie|deleteCookie|removeCookie|useCookies)"
+      - "(?i).*(setCookie|deleteCookie|removeCookie)"
     tags:
       law: GDPR
   
-  - id: Storages.Web.LocalStorage
-    name: Web LocalStorage
+  - id: Storages.Web.LocalStorage.Write
+    name: Web LocalStorage(Write)
     patterns:
-      - "(?i)(localStorage).*(setItem|clear|removeItem|getItem)"
+      - "(?i)(localStorage).*(setItem|clear|removeItem)"
     tags:
   
-  - id: Storages.Web.SessionStorage
-    name: Web SessionStorage
+  - id: Storages.Web.SessionStorage.Write
+    name: Web SessionStorage(Write)
     patterns:
-      - "(?i)(\\bstorage\\b|sessionstorage)(.*)(setItem|clear|removeItem|getItem)"
+      - "(?i)(\\bstorage\\b|sessionstorage)(.*)(setItem|clear|removeItem)"
+    tags:
+  
+  - id: Storages.Web.Cookie.READ
+    name: Web Storage Cookie(READ)
+    patterns:
+      - "(?i).*(getCookie|useCookies)"
+    tags:
+      law: GDPR
+  
+  - id: Storages.Web.LocalStorage.READ
+    name: Web LocalStorage(READ)
+    patterns:
+      - "(?i)(localStorage).*(clear|getItem)"
+    tags:
+  
+  - id: Storages.Web.SessionStorage.READ
+    name: Web SessionStorage(READ)
+    patterns:
+      - "(?i)(\\bstorage\\b|sessionstorage)(.*)(getItem)"
     tags:
