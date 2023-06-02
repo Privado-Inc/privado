@@ -32,6 +32,8 @@ threats:
         - "**"
     repositories:                                                         
       - "**"
+    config:
+      cookieConsentMgmtModulePattern: "(ngx-cookieconsent).*"
     tags:
       "CWE-359" : "https://cwe.mitre.org/data/definitions/359.html"
       "CWE-532" : "https://cwe.mitre.org/data/definitions/532.html"

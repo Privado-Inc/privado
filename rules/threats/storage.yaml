@@ -60,10 +60,8 @@ threats:
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
     repositories:
       - "**"
-    # config:
-    #   retentionPeriods:
-    #     - Data.Sensitive.OnlineIdentifiers.Cookies: 30
-    #     - Data.Sensitive.OnlineIdentifiers.IPAddress: 20
+    config:
+      retentionPeriods: "Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber:7,Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber:7,Data.Sensitive.AccountData.AccountID:7,Data.Sensitive.PersonalIdentification.FirstName:30,Data.Sensitive.PersonalIdentification.LastName:30,Data.Sensitive.ContactData.PhoneNumber:30,Data.Sensitive.ContactData.Address:30,Data.Sensitive.PersonalIdentification.DateofBirth:30,Data.Sensitive.PersonalCharacteristics.Height:30,Data.Sensitive.PersonalCharacteristics.Weigth:30"
     tags:
       "MSTG-STORAGE-1" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2" 
       "MSTG-STORAGE-2" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
@@ -80,6 +78,11 @@ threats:
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
     repositories:
       - "**"
+    config:
+      PersonalCharacteristics: "Data.Sensitive.PersonalIdentification.FirstName,Data.Sensitive.PersonalIdentification.LastName,Data.Sensitive.PersonalIdentification.DateofBirth,Data.Sensitive.PersonalCharacteristics.Height,Data.Sensitive.PersonalCharacteristics.Weigth,Data.Sensitive.ContactData.PhoneNumber,Data.Sensitive.ContactData.Address"
+      NationalIdentity: "Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber,Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber"
+      PurchaseData: "Data.Sensitive.PurchaseData.OrderDetails,Data.Sensitive.PurchaseData.OfferDetails,Data.Sensitive.PurchaseData.ProductReturnHistory,Data.Sensitive.PurchaseData.PurchaseHistory"
+      FinancialData: "Data.Sensitive.FinancialData.BankAccountDetails,Data.Sensitive.FinancialData.CardNumber,Data.Sensitive.FinancialData.PaymentMode,Data.Sensitive.FinancialData.CreditScore,Data.Sensitive.FinancialData.Salary"
     tags:
       "MSTG-STORAGE-1" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2" 
       "MSTG-STORAGE-2" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"

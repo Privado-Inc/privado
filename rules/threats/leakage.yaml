@@ -28,8 +28,10 @@ threats:
       sources:
         - Data.Sensitive.*
       sinks:
-        - Leakages.Log.CustomerLogger
+        - Leakages.Log.*
     repositories:
       - "**"
+    config:
+      customLoggerModulePattern: "(?i)(portfolio).*(?:error|severe|fatal|warn|debug|trace|info|log|exception)"
     tags:
       "policyPurpose": "Security Audit"

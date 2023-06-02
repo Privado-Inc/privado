@@ -61,3 +61,17 @@ threats:
     repositories:                                                         
       - "**"
     tags:
+  
+  - id: Threats.Sharing.isObjectsWithPIIsPassedAsParameter
+    name: "Objects containing PIIs should not be passed as parameter"
+    type: Threat
+    description: "PII values in form of objects are passed between two functions. Need to capture this information."
+    fix: "If not implemented, implement the cookie consent managment module in application."   
+    dataFlow:
+      sources:
+        - Data.Sensitive.*             
+      sinks:
+        - "**"
+    repositories:                                                         
+      - "**"
+    tags:
