@@ -35,14 +35,14 @@ policies:
   - id: Policy.Deny.Sharing.PIISavedToDatabase
     name: "Don't save PII within cache or Storage"
     type: Compliance
-    description: "Policy to restrict storing PII in cache or Storage"
+    description: "Don't save PII to cache or Storage"
     fix: "Talk to the Data Protection team: dataprotection@org.com"
     action: Deny    
     dataFlow: 
       sources:
         - Data.Sensitive.*             
       sinks:
-        - Storages.*
+        - Storages.*Write
     repositories:
       - "**"
     tags:

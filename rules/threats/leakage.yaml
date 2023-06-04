@@ -1,6 +1,6 @@
 # This file contains policies related to data leakages such as writing sensitive data to log files, file system or streams.
 
-threats:   
+threats:
   - id: Threats.Leakage.isDataLeakingToLog
     name: "PII data is written to the log files"
     type: Threat
@@ -20,9 +20,9 @@ threats:
       "MITRE" : "Sharing.Exposure"
   
   - id: Threats.Leakage.CustomPrivacyLoggerMustbeUsed
-    name: "Custom Privacy Logger component not used"
+    name: "Infosys privacy logger required in all applications"
     type: Threat
-    description: "Custom Privacy Logger component is a reusable component available for Java, C#, etc that protects the logs from leaking PII data. This component needs to be used in all applications."
+    description: "Infosys Privacy Logger component is a reusable component available for Java, C#, etc that protects the logs from leaking PII data. This component needs to be used in all applications."
     fix: "Talk to the Data Protection team: dataprotection@org.com"
     repositories:
       - "**"

@@ -31,10 +31,10 @@ threats:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
   - id: Threats.Storage.isSamePIIShouldNotBePresentInMultipleTables
-    name: "Same PII should not be present in multiple tables" 
+    name: "{Data Element} found in multiple tables" 
     type: Threat
     description: >- 
-      Check whether same PII field(exact match) is mapped to different tables or not.
+      {Data Element} was found in multiple tables
     fix: >-
       Avoid storing same PII in multiple tables. 
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
@@ -44,13 +44,12 @@ threats:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
   - id: Threats.Storage.isPIIHavingDifferentRetentionPeriod
-    name: "PII field in table having different retention period should not allowed" 
+    name: "Retention policies for all field must match" 
     type: Threat
     description: >- 
-       If DB table contains several PII in the same row some of which have different retention period requirements from business/legal perspective, store them in different tables to facilitate deletion.
+      If table has multiple PII elements in the same row with different retention policies, store elements in a different table with elements that share the same retention policy
     fix: >-
       Create separate tables for fields having different retention period.
-      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
     repositories:
       - "**"
     config:
@@ -68,14 +67,12 @@ threats:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
   - id: Threats.Storage.isDifferentKindOfPIIStoredInDifferentTables
-    name: "Different kind of PII data should be stored in different tables" 
+    name: "Multiple PII categories saved to {table name}" 
     type: Threat
     description: >- 
-      External or shared data storage is globally accessible by all the apps on mobile. If app writes the sensitive data on external or shared storage, 
-      other apps can read the data leading to unauthorized access.
+      Table containing multiple PIIs must be of same category.
     fix: >-
-      App should not store sensitive data on the external or shared storage. In case, there is a necessity, the data must be encrypted. 
-      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
+      Create separate tables for fields belongs to different categories.
     repositories:
       - "**"
     config:

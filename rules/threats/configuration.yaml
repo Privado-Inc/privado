@@ -21,9 +21,9 @@ threats:
       "MITRE" : "Insecurity.MisconfiguredPermissions"
 
   - id: Threats.CookieConsent.isCookieConsentMgmtModuleImplemented
-    name: "Not implemented Consent Management module"
+    name: "Cookie access required use of consent management module"
     type: Threat
-    description: "Accessing cookies but not found implementation for consent management module to ensure user’s consent is obtained before capturing PII details"
+    description: "Cookie access detected without usage of consent management module"
     fix: "If not implemented, implement the cookie consent managment module in application."   
     dataFlow:
       sources:
