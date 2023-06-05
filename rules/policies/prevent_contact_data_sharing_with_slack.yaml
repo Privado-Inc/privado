@@ -31,21 +31,7 @@ policies:
       - "accounts.*"
 
     tags:
-  
-  - id: Policy.Deny.Sharing.PIISavedToDatabase
-    name: "{PII} saved to cache or Storage"
-    type: Compliance
-    description: "Don't save {PII} to cache or Storage"
-    fix: "Talk to the Data Protection team: dataprotection@org.com"
-    action: Deny    
-    dataFlow: 
-      sources:
-        - Data.Sensitive.*             
-      sinks:
-        - Storages.*Write
-    repositories:
-      - "**"
-    tags:
+
 
   - id: Policy.Allow.Processing.FinancialData
     name: "Example: Don't use financial data outside of payments services"

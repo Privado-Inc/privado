@@ -1,6 +1,6 @@
 # This file contains policies related to data leakages such as writing sensitive data to log files, file system or streams.
 
-threats:
+threats:   
   - id: Threats.Leakage.isDataLeakingToLog
     name: "PII data is written to the log files"
     type: Threat
@@ -18,15 +18,3 @@ threats:
       "CWE-532" : "https://cwe.mitre.org/data/definitions/532.html"
       "MSTG-STORAGE-3" : "https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#Testing-Logs-for-Sensitive-Data-MSTG-STORAGE-3"
       "MITRE" : "Sharing.Exposure"
-  
-  - id: Threats.Leakage.CustomPrivacyLoggerMustbeUsed
-    name: "Infosys privacy logger required in all applications"
-    type: Threat
-    description: "Infosys Privacy Logger component is a reusable component available for Java, C#, etc that protects the logs from leaking PII data. This component needs to be used in all applications."
-    fix: "Talk to the Data Protection team: dataprotection@org.com"
-    repositories:
-      - "**"
-    config:
-      customLoggerModulePattern: "(?i)(portfolio).*(?:error|severe|fatal|warn|debug|trace|info|log|exception)"
-    tags:
-      "policyPurpose": "Security Audit"
