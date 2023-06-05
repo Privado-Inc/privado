@@ -63,9 +63,9 @@ threats:
     tags:
   
   - id: Threats.Sharing.isObjectsWithPIIsPassedAsParameter
-    name: "{Object name} passed as parameter"
+    name: "{TableName} passed as parameter"
     type: Threat
-    description: "{Object name} contains PII and should not be passed as parameters."
+    description: "{TableName} contains PII and should not be passed as parameters."
     fix: "If not implemented, implement the cookie consent managment module in application."   
     dataFlow:
       sources:

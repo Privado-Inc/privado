@@ -33,9 +33,9 @@ policies:
     tags:
   
   - id: Policy.Deny.Sharing.PIISavedToDatabase
-    name: "{PII} saved to cache or Storage"
+    name: "{DataElement} saved to cache or Storage"
     type: Compliance
-    description: "Don't save {PII} to cache or Storage"
+    description: "Don't save {DataElement} to cache or Storage"
     fix: "Talk to the Data Protection team: dataprotection@org.com"
     action: Deny    
     dataFlow: 
@@ -47,17 +47,17 @@ policies:
       - "**"
     tags:
 
-  - id: Policy.Allow.Processing.FinancialData
-    name: "Example: Don't use financial data outside of payments services"
-    type: Compliance
-    description: "Policy to allow processing Financial Information only in payments services"
-    fix: "Talk to the Data Protection team: dataprotection@org.com"
-    action: Allow
-    dataFlow:
-      sources:
-        - "Data.Sensitive.FinancialData.*"
-    repositories:
-      - "payments-.*"
-    tags:
-      policyPurpose: "Security Audit"
+  # - id: Policy.Allow.Processing.FinancialData
+  #   name: "Example: Don't use financial data outside of payments services"
+  #   type: Compliance
+  #   description: "Policy to allow processing Financial Information only in payments services"
+  #   fix: "Talk to the Data Protection team: dataprotection@org.com"
+  #   action: Allow
+  #   dataFlow:
+  #     sources:
+  #       - "Data.Sensitive.FinancialData.*"
+  #   repositories:
+  #     - "payments-.*"
+  #   tags:
+  #     policyPurpose: "Security Audit"
   

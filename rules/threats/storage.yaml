@@ -31,10 +31,10 @@ threats:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
   - id: Threats.Storage.isSamePIIShouldNotBePresentInMultipleTables
-    name: "{Data Element} found in multiple tables" 
+    name: "{DataElement} found in multiple tables" 
     type: Threat
     description: >- 
-      {Data Element} was found in multiple tables
+      {DataElement} was found in multiple tables
     fix: >-
       Avoid storing same PII in multiple tables. 
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
@@ -56,18 +56,20 @@ threats:
       Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber: "7"
       Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber: "7"
       Data.Sensitive.AccountData.AccountID: "7"
-      Data.Sensitive.PersonalIdentification.FirstName: "30"
-      Data.Sensitive.PersonalIdentification.LastName: "30"
+      Data.Sensitive.PersonalIdentification.FirstName: "7"
+      Data.Sensitive.PersonalIdentification.LastName: "7"
       Data.Sensitive.ContactData.PhoneNumber: "30"
       Data.Sensitive.ContactData.Address: "30"
-      Data.Sensitive.PersonalIdentification.DateofBirth: "30"
+      Data.Sensitive.PersonalIdentification.DateofBirth: "7"
       Data.Sensitive.PersonalCharacteristics.Height: "30"
       Data.Sensitive.PersonalCharacteristics.Weigth: "30"
+      Data.Sensitive.PurchaseData.OrderDetails: "30"
+      Data.Sensitive.FinancialData.PaymentMode: "30"
     tags:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
   - id: Threats.Storage.isDifferentKindOfPIIStoredInDifferentTables
-    name: "Multiple PII categories saved to {table name}" 
+    name: "Multiple PII categories saved to {TableName}" 
     type: Threat
     description: >- 
       Table containing multiple PIIs must be of same category.
@@ -76,8 +78,7 @@ threats:
     repositories:
       - "**"
     config:
-      PersonalCharacteristics: "Data.Sensitive.PersonalIdentification.FirstName,Data.Sensitive.PersonalIdentification.LastName,Data.Sensitive.PersonalIdentification.DateofBirth,Data.Sensitive.PersonalCharacteristics.Height,Data.Sensitive.PersonalCharacteristics.Weigth,Data.Sensitive.ContactData.PhoneNumber,Data.Sensitive.ContactData.Address"
-      NationalIdentity: "Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber,Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber"
+      PersonalCharacteristics: "Data.Sensitive.PersonalIdentification.FirstName,Data.Sensitive.PersonalIdentification.LastName,Data.Sensitive.PersonalIdentification.DateofBirth,Data.Sensitive.PersonalCharacteristics.Height,Data.Sensitive.PersonalCharacteristics.Weigth,Data.Sensitive.ContactData.PhoneNumber,Data.Sensitive.ContactData.Address,Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber,Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber"
       PurchaseData: "Data.Sensitive.PurchaseData.OrderDetails,Data.Sensitive.PurchaseData.OfferDetails,Data.Sensitive.PurchaseData.ProductReturnHistory,Data.Sensitive.PurchaseData.PurchaseHistory"
       FinancialData: "Data.Sensitive.FinancialData.BankAccountDetails,Data.Sensitive.FinancialData.CardNumber,Data.Sensitive.FinancialData.PaymentMode,Data.Sensitive.FinancialData.CreditScore,Data.Sensitive.FinancialData.Salary"
     tags:
