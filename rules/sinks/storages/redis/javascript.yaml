@@ -1,8 +1,17 @@
 sinks:
   - id: Storages.Redis.Read
-    name: Redis DB
+    name: Redis DB(Read)
     domains:
       - redis.io
     patterns:
-      - (?i)(redis|connect-redis|ioredis|cache-manager|@socket.io\\/redis-adapter|@fastify\\/redis)
+      - (?i)(redis.*(get|hGetAll))
+      - (?i)(connect-redis|ioredis|cache-manager|@socket.io\\/redis-adapter|@fastify\\/redis)
+    tags:
+  
+  - id: Storages.Redis.Write
+    name: Redis DB(Write)
+    domains:
+      - redis.io
+    patterns:
+      - (?i)(redis.*(setex|set|hSet|add|sAdd))
     tags:
