@@ -29,3 +29,56 @@ threats:
       "MSTG-STORAGE-1" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2" 
       "MSTG-STORAGE-2" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
+  
+  - id: Threats.Storage.isSamePIIShouldNotBePresentInMultipleTables
+    name: "{Data Element} found in multiple tables" 
+    type: Threat
+    description: >- 
+      {Data Element} was found in multiple tables
+    fix: >-
+      Avoid storing same PII in multiple tables. 
+      Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
+    repositories:
+      - "**"
+    tags:
+      "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
+  
+  - id: Threats.Storage.isPIIHavingDifferentRetentionPeriod
+    name: "Retention policies for all field must match" 
+    type: Threat
+    description: >- 
+      If table has multiple PII elements in the same row with different retention policies, store elements in a different table with elements that share the same retention policy
+    fix: >-
+      Create separate tables for fields having different retention period.
+    repositories:
+      - "**"
+    config:
+      Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber: "7"
+      Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber: "7"
+      Data.Sensitive.AccountData.AccountID: "7"
+      Data.Sensitive.PersonalIdentification.FirstName: "30"
+      Data.Sensitive.PersonalIdentification.LastName: "30"
+      Data.Sensitive.ContactData.PhoneNumber: "30"
+      Data.Sensitive.ContactData.Address: "30"
+      Data.Sensitive.PersonalIdentification.DateofBirth: "30"
+      Data.Sensitive.PersonalCharacteristics.Height: "30"
+      Data.Sensitive.PersonalCharacteristics.Weigth: "30"
+    tags:
+      "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
+  
+  - id: Threats.Storage.isDifferentKindOfPIIStoredInDifferentTables
+    name: "Multiple PII categories saved to {table name}" 
+    type: Threat
+    description: >- 
+      Table containing multiple PIIs must be of same category.
+    fix: >-
+      Create separate tables for fields belongs to different categories.
+    repositories:
+      - "**"
+    config:
+      PersonalCharacteristics: "Data.Sensitive.PersonalIdentification.FirstName,Data.Sensitive.PersonalIdentification.LastName,Data.Sensitive.PersonalIdentification.DateofBirth,Data.Sensitive.PersonalCharacteristics.Height,Data.Sensitive.PersonalCharacteristics.Weigth,Data.Sensitive.ContactData.PhoneNumber,Data.Sensitive.ContactData.Address"
+      NationalIdentity: "Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber,Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber"
+      PurchaseData: "Data.Sensitive.PurchaseData.OrderDetails,Data.Sensitive.PurchaseData.OfferDetails,Data.Sensitive.PurchaseData.ProductReturnHistory,Data.Sensitive.PurchaseData.PurchaseHistory"
+      FinancialData: "Data.Sensitive.FinancialData.BankAccountDetails,Data.Sensitive.FinancialData.CardNumber,Data.Sensitive.FinancialData.PaymentMode,Data.Sensitive.FinancialData.CreditScore,Data.Sensitive.FinancialData.Salary"
+    tags:
+      "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
