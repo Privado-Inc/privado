@@ -33,9 +33,9 @@ policies:
     tags:
   
   - id: Policy.Deny.Sharing.PIISavedToDatabase
-    name: "Don't save PII within cache or Storage"
+    name: "{PII} saved to cache or Storage"
     type: Compliance
-    description: "Don't save PII to cache or Storage"
+    description: "Don't save {PII} to cache or Storage"
     fix: "Talk to the Data Protection team: dataprotection@org.com"
     action: Deny    
     dataFlow: 
@@ -46,19 +46,6 @@ policies:
     repositories:
       - "**"
     tags:
-  
-  # - id: Policy.Deny.Processing.ProtectionAgainstVisitorTracking
-  #   name: "Protection against tracking of visitors of websites via OnlineIdentifiers"
-  #   type: Compliance
-  #   description: "This pattern avoids the tracking of visitors of websites via cookies. It does this by deleting them at regular intervals or by disabling cookies completely."
-  #   fix: "Talk to the Data Protection team: dataprotection@org.com"
-  #   action: Deny    
-  #   dataFlow: 
-  #     sources:
-  #       - Data.Sensitive.OnlineIdentifiers.*
-  #   repositories:
-  #     - "**"
-  #   tags:
 
   - id: Policy.Allow.Processing.FinancialData
     name: "Example: Don't use financial data outside of payments services"
