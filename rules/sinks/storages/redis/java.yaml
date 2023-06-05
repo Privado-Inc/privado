@@ -27,6 +27,7 @@ sinks:
     domains:
       - redis.io
     patterns:
+      - (?i)(redis.clients.jedis.*get.*)
       - (?i)(redis.clients.jedis[.](providers.ClusterConnectionProvider|connection)[.])(get)(node[s]?|one|raw)?(:)(.*)
       - (?i)(redis.clients.jedis[.](providers.ClusterConnectionProvider|connection)[.])(get)((objectmulti)?bulk|integer|statuscode)(reply)(:)(.*)
       - (?i)(redis.clients.jedis.CommandObjects[.])(m|h|p)?(get)(all|del)?(:)(.*)
@@ -37,6 +38,7 @@ sinks:
     domains:
       - redis.io
     patterns:
+      - (?i)(redis.clients.jedis.*set.*)
       - (?i)(redis.clients.jedis.CommandObjects.getset:)(.*)
       - (?i)(redis.clients.jedis.CommandObjects[.])(m|h|p)?(set)(one|user|range|nx|ex)?(:)(.*)
     tags:
