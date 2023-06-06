@@ -5,6 +5,21 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(?i).*(mongoose|MongoClient).*"
-      - "(?:mongodb|mongoose|mongo-|connect-mongo|mquery|mpath|mongojs|winston-mongodb|feathers-mongoose|koa2-ratelimit|gridfs-stream|aedes-persistence-mongodb|mockgoose|mubsub|minimongo|uuid-mongodb|@fastify/mongodb|gridfs-promise|feathers-mongodb-fuzzy-search|rus-diff|recachegoose|baqend|@onehilltech/blueprint-mongodb|cachegoose|@treehouses/cli|gridfs-locking-stream|hapi-mongo-models|forerunnerdb|gridfs|payload|@lenne.tech/nest-server|database-cleaner|yams|@firstteam102/connect-mongo|json2mongo|@oguzbey/mongoose-beautiful-unique-validation|node-mongotools|ascoltatori|@casbin/mongo-changestream-watcher|@appveen/swagger-mongoose-crud|tingodb|generator-ng-fullstack|objectid|opentelemetry-instrumentation-mongoose|@immjunaid/create-express-restapis|apollo-passport-mongodb-driver|graphql-advanced-projection|jsonquery-engine|drop-mongodb-collections|nosqldbm-converter|nedb-lite|promised-mongo|feathers-mongodb|flatten-obj|mongoskin|sift|migrate-mongo|denque|mqemitter-mongodb|to-mongodb-core|graphql-mongodb-projection|jugglingdb|gulp-mongodb-data|thunkify-mongodb|joi-objectid|electron-squirrel-startup|node-express-mongodb-jwt-rest-api-skeleton|@caruuto/api-mongodb|sharedb-mongo|@chrishenderson/mongodb-queue|twitter2mongodb|@lpgroup/feathers-mongodb|@neo9/n9-mongodb-migration|sails-mongo|mongolass|w-orm-mongodb).*"
+      - "(?:mquery|mpath|mongojs|winston-mongodb|feathers-mongoose|koa2-ratelimit|gridfs-stream|aedes-persistence-mongodb|mockgoose|mubsub|minimongo|uuid-mongodb|@fastify/mongodb|gridfs-promise|feathers-mongodb-fuzzy-search|rus-diff|recachegoose|baqend|@onehilltech/blueprint-mongodb|cachegoose|@treehouses/cli|gridfs-locking-stream|hapi-mongo-models|forerunnerdb|gridfs|payload|@lenne.tech/nest-server|database-cleaner|yams|@firstteam102/connect-mongo|json2mongo|@oguzbey/mongoose-beautiful-unique-validation|node-mongotools|ascoltatori|@casbin/mongo-changestream-watcher|@appveen/swagger-mongoose-crud|tingodb|generator-ng-fullstack|objectid|opentelemetry-instrumentation-mongoose|@immjunaid/create-express-restapis|apollo-passport-mongodb-driver|graphql-advanced-projection|jsonquery-engine|drop-mongodb-collections|nosqldbm-converter|nedb-lite|promised-mongo|feathers-mongodb|flatten-obj|mongoskin|sift|migrate-mongo|denque|mqemitter-mongodb|to-mongodb-core|graphql-mongodb-projection|jugglingdb|gulp-mongodb-data|thunkify-mongodb|joi-objectid|electron-squirrel-startup|node-express-mongodb-jwt-rest-api-skeleton|@caruuto/api-mongodb|sharedb-mongo|@chrishenderson/mongodb-queue|twitter2mongodb|@lpgroup/feathers-mongodb|@neo9/n9-mongodb-migration|sails-mongo|mongolass|w-orm-mongodb).*"
+    tags:
+
+  - id: Storages.MongoDB.Read
+    name: MongoDB (Read)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)(?:mongodb|mongoose|mongo-|connect-mongo|.*(mongoose|MongoClient|connect-mongodb-session)).*(?:findOne|find|aggregate|command|findOneAndUpdate)"
+    tags:
+  
+  - id: Storages.MongoDB.Write
+    name: MongoDB (Write)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)(?:mongodb|mongoose|mongo-|connect-mongo|.*(mongoose|MongoClient|connect-mongodb-session)).*(?:insertOne|insertMany|deleteOne|deleteMany|updateOne|updateMany)"
     tags:

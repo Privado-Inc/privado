@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Lunr
+    name: Lunr
     domains:
-      - "musicplayer.io"
+      - "lunrjs.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "lunr"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Helmet
+    name: Helmet
     domains:
-      - "musicplayer.io"
+      - "helmetjs.github.io"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "helmet"
     tags:
