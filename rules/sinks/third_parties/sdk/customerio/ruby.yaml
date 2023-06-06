@@ -1,0 +1,8 @@
+sinks:
+  - id: ThirdParties.SDK.Customerio
+    name: Customerio
+    domains:
+      - "customer.io"
+    patterns:
+      - "(?i)(add_device|anonymous_track|delete|delete_device|escape_value|request_and_verify_response|track_url|suppress|unsuppress|normalize_param)"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Facebook
+    name: Facebook
+    domains:
+      - "facebook.com"
+    patterns:
+      - "(?i)(ad_account|add_user|app_secret|appsecret_proof|batch_proxy|create_ad(_set|label)|create_creative|create_image|teardown)"
+    tags:

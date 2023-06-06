@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.PwnedPasswords
+    name: Pwned Passwords
+    domains:
+      - "pwnedpasswords.com"
+    patterns:
+      - "(?i)(hash(ed)?_password|password|pwned(_count)?|validate_each)"
+    tags:

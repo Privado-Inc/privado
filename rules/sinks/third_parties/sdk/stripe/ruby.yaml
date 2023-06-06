@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Stripe
+    name: Stripe
+    domains:
+      - "stripe.com"
+    patterns:
+      - "(?i)(apply_customer_balance|convert_to_stripe_object(_with_params)?|create_funding_instructions|deauthorize|delete_discount|deliver_card|fail_card|finalize_invoice|fund_cash_balance|idempotency_key|list_computed_upfront_line_items|list_line_items|list_payment_methods|payment_intent|payment_method|present_payment_method|process_payment_intent|process_payment_method|refund_payment|retrieve_payment_method|return_card|return_outbound_transfer|return_outbound_payment|verify_microdeposits|void_credit_note|void_invoice)"
+    tags:

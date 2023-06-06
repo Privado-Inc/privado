@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Braze
+    name: Braze
+    domains:
+      - "braze.com"
+    patterns:
+      - "(?i)(braze_url|canvas_details|delete_users|email|email_status|email_unsubscribes|export_users|identify_users|schedule_message(s)?|send_message(s)?|track_(users|purchase|event))"
+    tags:

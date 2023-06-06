@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Prerender
+    name: Prerender.io
+    domains:
+      - "prerender.io"
+    patterns:
+      - "(?i)(after_render|before_render|build_api_url|build_rack_response_from_prerender|get_prerender_service_url|get_prerendered_page_response|should_show_prerendered_page)"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Twitter
+    name: Twitter
+    domains:
+      - "twitter.com"
+    patterns:
+      - "(?i)(characters_reserved_per_media|consumer_key|coordinates|contributors|contributees|country_code|create_direct_message|create_saved_search|destroy_direct_message|define_(attribute|predicate|uri)_method|direct_messages(_received|_sent)?|favorite(s)?(_count)?|firehose|followers(_count)?|friend_ids|following_followers_of|friends(_count)?|friendship(_update)?|friendships(_incoming|outgoing)|geo_search|in_reply_to_(screen_name|status_id|user_id)|iso_language_code|list_(members|subscribe|subscriber(s)?|timeline|unsubscribe|update)|location|longitude|max_media_per_upload|member_count|members_uri|muted_ids|no_retweet_ids|non_username|paths|photo_size_limit|photo_sizes|profile_background_color|profile_banner(_uri)?|profile_image_uri|profile_link_color|profile_sidebar_border_color|profile_sidebar_fill_color|profile_text_color|remove_list_member|retweet(_count)?|retweeted_(by_me|by_user|to_me)|retweeters_ids|retweets_of_me|reverse_geocode)"
+    tags:

@@ -1,0 +1,8 @@
+sinks:
+  - id: ThirdParties.SDK.Slack
+    name: Slack
+    domains:
+      - "slack.com"
+    patterns:
+      - "(?i)(bots(_info)?|channels(_archive|create|delete|history|id|invite|join|kick|leave|list|mark|rename|replies|setPurpose|setTopic|unarchive)?|chat_(command|delete|getPermalink|meMessage|postEphemeral|postMessage|unfurl|update)|conversations_(archive|close|create|history|info|invite|join|kick|leave|list|members|open|rename|replies|setPurpose|setTopic|unarchive))"
+    tags:

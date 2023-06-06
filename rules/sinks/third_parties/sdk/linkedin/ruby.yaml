@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Linkedin
+    name: Linkedin
+    domains:
+      - "linkedin.com"
+    patterns:
+      - "(?i)(comment(s)?|credentials_missing|like(s)?|new_connections|organization(_follower_statistics|page_statistics|share_statistics|search)|picture_urls|profile|redirect_uri(_mismatch)?|unlike|upload)"
+    tags:
