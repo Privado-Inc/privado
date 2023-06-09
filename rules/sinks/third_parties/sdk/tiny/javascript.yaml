@@ -1,0 +1,37 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.TinyCloud.ImageProxy
+    name: TinyCloud ImageProxy
+    domains:
+      - "imageproxy.tiny.cloud/2"
+    patterns:
+      - "imageproxy[.]tiny[.]cloud"
+    tags:
+
+  - id: ThirdParties.SDK.TinyCloud.Hyperlinking
+    name: TinyCloud HyperLinking
+    domains:
+      - "hyperlinking.tiny.cloud"
+    patterns:
+      - "hyperlinking[.]tiny[.]cloud"
+    tags:
+
+  - id: ThirdParties.SDK.TinyCloud.Catalog
+    name: TinyCloud Catalog
+    domains:
+      - "catalog.tiny.cloud"
+    patterns:
+      - "catalog[.]tiny[.]cloud"
+    tags:
+
+  - id: ThirdParties.SDK.TinyCloud.Signup
+    name: TinyCloud Signup
+    domains:
+      - "tiny.cloud/auth/signup"
+    patterns:
+      - "tiny.cloud\\/auth\\/signup"
+    tags:
