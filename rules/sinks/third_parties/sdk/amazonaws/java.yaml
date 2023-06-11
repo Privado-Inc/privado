@@ -100,14 +100,6 @@ sinks:
       - "(?i)(com[.]amazonaws[.]services[.]eventbridge).*"
     tags:
 
-  - id: ThirdParties.SDK.Amazonaws.SQS
-    name: Amazonaws SQS
-    domains:
-      - "aws.amazon.com/sqs"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]sqs).*"
-    tags:
-
   - id: ThirdParties.SDK.Amazonaws.StepFunctions
     name: Amazonaws StepFunctions
     domains:
