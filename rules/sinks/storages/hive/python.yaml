@@ -1,0 +1,9 @@
+sinks:
+  - id: Storages.Hive.ReadAndWrite
+    name: Hive(ReadAndWrite)
+    domains:
+      - hive.org
+    patterns:
+      - "pyhive[.].*[.]hive[.].*[.]execute"
+
+    tags:
