@@ -1,8 +1,15 @@
 sinks:
+
   - id: Storages.Web.Cookie.Write
     name: Web Storage Cookie(Write)
     patterns:
-      - "(?i).*(setCookie|deleteCookie|removeCookie)"
+      - "(?i)(.*cookie.*set.*)|(.*setCookie)"
+    tags:
+    
+  - id: Storages.Web.Cookie.Delete
+    name: Web Storage Cookie(Delete)
+    patterns:
+      - "(?i).*(deleteCookie|removeCookie)"
     tags:
       law: GDPR
   

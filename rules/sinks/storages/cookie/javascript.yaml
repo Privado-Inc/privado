@@ -1,9 +1,0 @@
-sinks:
-
-  - id: Storages.Cookie.Write
-    name: Cookie (Write)
-    domains:
-      - ""
-    patterns:
-      - "(?i).*cookie.*set.*"
-    tags:
