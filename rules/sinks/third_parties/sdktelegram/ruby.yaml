@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Telegram
+    name: Telegram
+    domains:
+      - "telegram.org"
+    patterns:
+      - "(?i)(telegram-bot|telegram-bot-ruby|telegram|telegram_bot|telegram-ruby|fastlane-plugin-telegram|omniauth-telegram|xasin-telegram|telegram_workflow|telegram-bot-types|telegram_meetup_bot|telegram-rails|telegram-rb|telegram-webhooks|lita-telegram-plus|xnm-telegram|lita-telegram|capistrano-telegram|jaconda_telegram|sensu-plugins-telegram|telegram_notifications|telegram_chatbot|telegram_bot_ruby|telegram-auth|telegram_bot_middleware|telegram_notification|ya_telegram_bot|botkit-telegram|stealth-telegram|telegram-rabbit|ruboty-telegram|telegram-loggerbot-ruby|telegram_bot_mgo|exception_notification_telegram|capistrano-telegram_notification|telegram_bot_api|telegram_web_proxy|telegram_imdb_bot|chatbot_helper-telegram|telegram_bot_builder|telegram-bot_manager|telegram-bot-response_builder).*"
+    tags:
