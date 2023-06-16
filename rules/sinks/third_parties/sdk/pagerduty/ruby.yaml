@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Pagerduty
+    name: Pagerduty
+    domains:
+      - "pagerduty.com"
+    patterns:
+      - "(?i)(pagerduty).*"
+    tags:

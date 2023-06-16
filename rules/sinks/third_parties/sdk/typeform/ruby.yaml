@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Typeform
+    name: Typeform
+    domains:
+      - "typeform.com"
+    patterns:
+      - "(?i)(typeform).*"
+    tags:
