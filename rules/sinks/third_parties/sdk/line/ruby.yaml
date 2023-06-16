@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Line
+    name: Line
     domains:
-      - "musicplayer.io"
+      - "line.me"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(line-bot-api|line-bot|lotify|clova-speech|lbd_sdk|pihole|line_liff).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Dwolla
+    name: Dwolla
     domains:
-      - "musicplayer.io"
+      - "dwolla.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(dwolla_v2|dwolla|dwolla-ruby|dwolla_swagger|spree_dwolla|omniauth-dwolla|fake_dwolla|money_mover).*"
     tags:

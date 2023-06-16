@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Vercel
+    name: Vercel
     domains:
-      - "musicplayer.io"
+      - "vercel.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(vercellus).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Payture
+    name: Payture
     domains:
-      - "musicplayer.io"
+      - "payture.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(payture-cheques).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Sentry
+    name: Sentry
     domains:
-      - "musicplayer.io"
+      - "sentry.io"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(fluent-plugin-sentry-ruby).*"
     tags:

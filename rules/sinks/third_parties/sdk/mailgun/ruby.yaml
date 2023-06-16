@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mailgun
+    name: Mailgun
+    domains:
+      - "mailgun.com"
+    patterns:
+      - "(?i)(mailgun-ruby|mailgun|mailgun_rails|griddler-mailgun|mailgun-rails|mailgun-tracking|mailgun_webhooks|mailgun_api|mailgun_catcher|capistrano-mailgun|mailgun-mailbox|rails-mailgun|mailgun-sendmail|mailgun_email_validator|mailgun-api-rails|lita-mailgun|mailgun-ruby-plus|rails-mailgun-plus|omw_mailgun|mailgunner|sensu-plugins-mailgun|factor-connector-mailgun|wj-mailgun-ruby|huginn_mailgun_agent|mailgat|pew_pew|mailqun|snipe).*"
+    tags:

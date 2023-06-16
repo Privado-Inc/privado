@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Upwork
+    name: Upwork
     domains:
-      - "musicplayer.io"
+      - "upwork.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(upwork-api|omniauth-upwork|ruby-upwork-oauth2|omniauth-upwork-oauth).*"
     tags:

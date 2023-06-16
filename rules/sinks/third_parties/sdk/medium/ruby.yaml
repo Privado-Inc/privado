@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Medium
+    name: Medium
     domains:
-      - "musicplayer.io"
+      - "medium.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(omniauth-medium|medium_api|medium-scrapper|medium|medium-sdk-ruby|medium_sdk|mediumite).*"
     tags:

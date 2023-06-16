@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Amplitude
+    name: Amplitude
     domains:
-      - "musicplayer.io"
+      - "amplitude.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(amplitude-api|amplitude-rb|fluent-plugin-amplitude).*"
     tags:

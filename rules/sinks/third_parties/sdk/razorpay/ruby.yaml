@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Musicplayer
-    name: Musicplayer
+  - id: ThirdParties.SDK.Razorpay
+    name: Razorpay
     domains:
-      - "musicplayer.io"
+      - "razorpay.com"
     patterns:
-      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
+      - "(?i)(razorpay|spree_razorpay|razorpay_pa|solidus_razorpay|ifsc).*"
     tags:
