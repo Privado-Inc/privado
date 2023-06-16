@@ -9,5 +9,6 @@ sinks:
     domains:
       - "ngx-auth-firebaseui.firebaseapp.com"
     patterns:
+      - "firebaseio[.]com"
       - "ngx-auth-firebaseui|@asithade\\/ngx-auth-firebaseui"
     tags:
