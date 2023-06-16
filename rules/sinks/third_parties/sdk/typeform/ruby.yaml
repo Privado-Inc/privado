@@ -5,5 +5,5 @@ sinks:
     domains:
       - "typeform.com"
     patterns:
-      - "(?i)(typeform|typeform-ruby(-client)?).*"
+      - "(?i)(typeform).*"
     tags:

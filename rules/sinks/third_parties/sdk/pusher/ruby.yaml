@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pusher.com"
     patterns:
-      - "(?i)(pusher|pusher-client).*"
+      - "(?i)(pusher).*"
     tags:

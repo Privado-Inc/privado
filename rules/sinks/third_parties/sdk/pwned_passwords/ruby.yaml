@@ -5,5 +5,5 @@ sinks:
     domains:
       - "pwnedpasswords.com"
     patterns:
-      - "(?i)(pwned|pwnedcheck).*"
+      - "(?i)(pwned).*"
     tags:

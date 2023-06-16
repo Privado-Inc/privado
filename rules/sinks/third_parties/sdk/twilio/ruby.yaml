@@ -5,5 +5,5 @@ sinks:
     domains:
       - "twilio.com"
     patterns:
-      - "(?i)(twilio-ruby|twiliolib|twilio).*"
+      - "(?i)(twilio).*"
     tags:
