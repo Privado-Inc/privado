@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Customerio
+    name: Customerio
+    domains:
+      - "customer.io"
+    patterns:
+      - "(?i)customerio.*"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Twilio
+    name: Twilio
+    domains:
+      - "twilio.com"
+    patterns:
+      - "(?i)(twilio-ruby|twiliolib|twilio).*"
+    tags:
