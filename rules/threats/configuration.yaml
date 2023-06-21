@@ -20,7 +20,7 @@ threats:
       "MSTG-STORAGE-9" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#Finding-Sensitive-Information-in-Auto-Generated-Screenshots-MSTG-STORAGE-9"
       "MITRE" : "Insecurity.MisconfiguredPermissions"
 
-  - id: Threats.CookieConsent.isCookieConsentMgmtModuleImplemented
+  - id: PrivadoPolicy.CookieConsent.IsCookieConsentMgmtModuleImplemented
     name: "Cookie access required use of consent management module"
     type: Threat
     description: "Cookie access detected without usage of consent management module"

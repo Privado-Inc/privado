@@ -30,11 +30,11 @@ threats:
       "MSTG-STORAGE-2" : "https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
-  - id: Threats.Storage.isSamePIIShouldNotBePresentInMultipleTables
-    name: "{DataElement} found in multiple tables" 
+  - id: PrivadoPolicy.Storage.IsSamePIIShouldNotBePresentInMultipleTables
+    name: "{DataElementName} found in multiple tables" 
     type: Threat
     description: >- 
-      {DataElement} was found in multiple tables
+      {DataElementName} was found in multiple tables
     fix: >-
       Avoid storing same PII in multiple tables. 
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
@@ -43,7 +43,7 @@ threats:
     tags:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
-  - id: Threats.Storage.isPIIHavingDifferentRetentionPeriod
+  - id: PrivadoPolicy.Storage.IsPIIHavingDifferentRetentionPeriod
     name: "Retention policies for all field must match" 
     type: Threat
     description: >- 
@@ -68,7 +68,7 @@ threats:
     tags:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
-  - id: Threats.Storage.isDifferentKindOfPIIStoredInDifferentTables
+  - id: PrivadoPolicy.Storage.IsDifferentKindOfPIIStoredInDifferentTables
     name: "Multiple PII categories saved to {TableName}" 
     type: Threat
     description: >- 

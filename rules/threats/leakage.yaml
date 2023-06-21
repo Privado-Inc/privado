@@ -19,10 +19,10 @@ threats:
   #     "MSTG-STORAGE-3" : "https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#Testing-Logs-for-Sensitive-Data-MSTG-STORAGE-3"
   #     "MITRE" : "Sharing.Exposure"
   
-  - id: Threats.Leakage.CustomPrivacyLoggerMustbeUsed
-    name: "Infosys privacy logger required in all applications"
+  - id: PrivadoPolicy.Leakage.CentralisedPrivacyLoggerMustbeUsed
+    name: "Centralised privacy logger required in all applications"
     type: Threat
-    description: "Infosys Privacy Logger component is a reusable component available for Java, C#, etc that protects the logs from leaking PII data. This component needs to be used in all applications."
+    description: "Centralised Privacy Logger component is a reusable component available for Java, C#, etc that protects the logs from leaking PII data. This component needs to be used in all applications."
     fix: "Talk to the Data Protection team: dataprotection@org.com"
     repositories:
       - "**"
