@@ -497,13 +497,13 @@ sinks:
     tags:
   
     - id: ThirdParties.SDK.Amazonaws.CloudTrail
-    name: Amazonaws CloudTrail
-    domains:
-      - "aws.amazon.com/cloudtrail"
-    patterns:
-      - "(?i)(aws_cdk.*aws_cloudtrail).*"
-      - "(?i)(Datamart_AWS_CloudTrails_SDK).*"
-    tags:
+      name: Amazonaws CloudTrail
+      domains:
+        - "aws.amazon.com/cloudtrail"
+      patterns:
+        - "(?i)(aws_cdk.*aws_cloudtrail).*"
+        - "(?i)(Datamart_AWS_CloudTrails_SDK).*"
+      tags:
 
   - id: ThirdParties.SDK.Amazonaws.Config
     name: Amazonaws Config

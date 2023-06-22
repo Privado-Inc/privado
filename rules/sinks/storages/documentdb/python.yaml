@@ -9,8 +9,8 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(?i).*(aws_cdk.*aws_docdb).*"
-      - "(?i).*boto.*(?:find.{0,1}one).*"
+      - "(?i)(aws_cdk.*aws_docdb).*"
+      - "(?i)boto\\d?[.].*(?:find.{0,1}one).*"
     tags:
 
   - id: Storages.AmazonDocumentDB.Write
@@ -19,5 +19,5 @@ sinks:
       - aws.amazon.com
       - amazon.com
     patterns:
-      - "(?i).*boto.*(?:insert.{0,1}(?:one|many)).*"
+      - "(?i)boto\\d?[.].*(?:insert.{0,1}(?:one|many)).*"
     tags:
