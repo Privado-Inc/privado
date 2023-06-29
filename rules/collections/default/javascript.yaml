@@ -2,5 +2,5 @@ collections:
   - id: Collections.Express
     name: Express framework restendpoint
     patterns: 
-      - "express.(post|get|all|delete|put|patch|head|subscribe|unsubscribe)"
+      - "(?:express|fetch|@feathersjs/feathers|fastify|restify|@nestjs/cli|itty-router|koa-router|@ioc[:]Adonis|@adonisjs|@sails|sails|.*loopback|.*(?:socket[.](io|on|to).*)|(?:io[.]on.*(connection|leave-room|join-room))).*"
     tags:

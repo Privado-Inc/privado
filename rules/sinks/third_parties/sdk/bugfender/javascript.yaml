@@ -9,13 +9,5 @@ sinks:
     domains:
       - "bugfender.com"
     patterns:
-      - "@bugfender\\/rn-bugfender|cordova-plugin-bugfender"
-    tags:
-
-  - id: ThirdParties.SDK.Bugfender.Js
-    name: Bugfender Js
-    domains:
-      - "js.bugfender.com"
-    patterns:
-      - "@bugfender\\/sdk"
+      - "@bugfender\\/rn-bugfender|cordova-plugin-bugfender|@bugfender\\/sdk"
     tags:
