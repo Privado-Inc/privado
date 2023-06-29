@@ -22,38 +22,6 @@ sinks:
       - "admob-plus-cordova|gdevelop-cordova-admob-plus|@admob-plus\\/capacitor|@admob-plus\\/ionic|@admob-plus\\/react-native|cordova-admob-plus-nl"
     tags:
 
-  - id: ThirdParties.SDK.Github.Angulartics
-    name: Github Angulartics
-    domains:
-      - "angulartics.github.io"
-    patterns:
-      - "angulartics2|angulartics|angulartics-piwik"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Bamlab
-    name: Github Bamlab
-    domains:
-      - "bamlab.github.io"
-    patterns:
-      - "@bam.tech\\/react-native-batch"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Contactlab
-    name: Github Contactlab
-    domains:
-      - "contactlab.github.io"
-    patterns:
-      - "contactsnag"
-    tags:
-
-  - id: ThirdParties.SDK.Firefly-jugnu
-    name: Firefly-jugnu
-    domains:
-      - "firefly-jugnu.github.io"
-    patterns:
-      - "@fire-fly\\/jugnu"
-    tags:
-
   - id: ThirdParties.SDK.Flamelink
     name: Flamelink
     domains:
@@ -100,36 +68,4 @@ sinks:
       - "react-native-share.github.io"
     patterns:
       - "react-native-share"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Recallgraph
-    name: Github Recallgraph
-    domains:
-      - "recallgraph.github.io"
-    patterns:
-      - "@recallgraph\\/foxx-tracer"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Reidjs
-    name: Github Reidjs
-    domains:
-      - "reidjs.github.io"
-    patterns:
-      - "react-firebase-input"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Relay-tools
-    name: Github Relay-tools
-    domains:
-      - "relay-tools.github.io"
-    patterns:
-      - "relay-hooks"
-    tags:
-
-  - id: ThirdParties.SDK.Github.Ventx
-    name: Github Ventx
-    domains:
-      - "ventx.github.io"
-    patterns:
-      - "@ventx\\/ler53s3"
     tags:

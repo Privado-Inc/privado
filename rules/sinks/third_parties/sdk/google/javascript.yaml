@@ -210,7 +210,7 @@ sinks:
     domains:
       - "cloud.google.com/storage"
     patterns:
-      - "electron-publisher-gcs|gstorage-video-optimizer|skipper-gcstorage|@google-cloud\\/storage|@nx-extend\\/gcp-storage|@google-cloud\\/storage-transfer|google-cloud-storage-standalone|ghost-google-cloud-storage-serve"
+      - "electron-publisher-gcs|gstorage-video-optimizer|skipper-gcstorage|@google-cloud\\/storage|@nx-extend\\/gcp-storage|@google-cloud\\/storage-transfer|google-cloud-storage-standalone|ghost-google-cloud-storage-serve|@augmentedjs\\/gcp-resource-manager"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Datastore
