@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Orkanjs
-    name: Orkanjs
+  - id: ThirdParties.SDK.EmailJS
+    name: EmailJS
     domains:
-      - "orkanjs.com"
+      - "emailjs.com"
     patterns:
-      - "orkan"
+      - "emailjs-com"
     tags:

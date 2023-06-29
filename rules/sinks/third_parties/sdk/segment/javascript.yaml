@@ -9,7 +9,7 @@ sinks:
     domains:
       - "segment.com"
     patterns:
-      - "analytics.js-loader|analytics-node"
+      - "analytics.js-loader|analytics-node|@segment\\/snippet"
     tags:
 
   - id: ThirdParties.SDK.Segment
