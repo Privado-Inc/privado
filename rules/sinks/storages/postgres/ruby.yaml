@@ -1,0 +1,8 @@
+sinks:
+  - id: Storages.Postgres.ReadAndWrite
+    name: Postgres Sql
+    domains:
+      - postgresql.org
+    patterns:
+      - "(?i)(pg).*(exec|exec_params|query)"
+    tags:

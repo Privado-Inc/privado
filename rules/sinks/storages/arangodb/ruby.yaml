@@ -1,0 +1,18 @@
+sinks:
+
+  - id: Storages.ArangoDB.Read
+    name: ArangoDB
+    domains:
+      - arangodb.com
+    patterns: 
+      - "(?i)arangodb-odm.*(?:execute|explain|parse|next|each|map)"
+    tags:
+
+  
+  - id: Storages.ArangoDB.Write
+    name: ArangoDB
+    domains:
+      - arangodb.com
+    patterns: 
+      - "(?i)arangodb-odm.*(?:create|drop|insert|update|replace|remove|truncate|execute|drop|add_vertex|add_edge|remove_vertex|remove_edge)"
+    tags:

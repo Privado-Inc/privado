@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.MongoDB.Read
+    name: MongoDB(Read)
+    domains:
+      - mongodb.com
+    patterns: 
+      - "(?i)mongo.*(?:get|fetch|aggregate|find|find_one|distinct|count)"
+    tags:
+
+  - id: Storages.MongoDB.Write
+    name: MongoDB(Write)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)mongo.*(?:(insert|update|delete)_(one|many))"
+    tags:

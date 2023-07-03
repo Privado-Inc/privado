@@ -1,0 +1,10 @@
+sinks:
+
+  - id: Storages.ApacheCassandra.ReadAndWrite
+    name: Apache Cassandra
+    domains:
+      - cassandra.apache.org
+      - apache.org
+    patterns:
+      - "(?i)cassandra.*(?:execute|each_row|execute_statement|execute_batch_statement|execute_async_statement)"
+    tags:

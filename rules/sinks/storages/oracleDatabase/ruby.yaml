@@ -1,0 +1,25 @@
+sinks:
+
+  - id: Storages.OracleDatabase.ReadAndWrite
+    name: Oracle Database
+    domains:
+      - oracle.com
+    patterns:
+      - "(?i)(ruby-oci8).*(?:sql|statement)"
+    tags:
+
+  - id: Storages.OracleDatabase.Read
+    name: Oracle Database
+    domains:
+      - oracle.com
+    patterns:
+      - "(?i)(ruby-oci8).*(?:get|fetch)"
+    tags:
+
+  - id: Storages.OracleDatabase.Write
+    name: Oracle Database
+    domains:
+      - oracle.com
+    patterns:
+      - "(?i)(ruby-oci8).*(?:set|write)"
+    tags:

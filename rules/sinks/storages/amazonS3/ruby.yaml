@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.AmazonS3.Read
+    name: Amazon S3
+    domains:
+      - s3.amazon.com
+    patterns:
+      - "(?i)aws-sdk-s3.*(?:get_object|get_object_acl)"
+    tags:
+  
+  - id: Storages.AmazonS3.Write
+    name: Amazon S3
+    domains:
+      - s3.amazon.com
+    patterns:
+      - "(?i)aws-sdk-s3.*(?:put_object|copy_object|delete_object(s)?|put_object_acl|create_multipart_upload)"
+    tags:

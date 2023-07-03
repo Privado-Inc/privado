@@ -1,0 +1,19 @@
+sinks:
+
+  - id: Storages.AmazonKinesis.Read
+    name: Amazon Kinesis(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)aws-sdk-kinesis.*(?:get_records|get_shard_iterator|describe_stream|list_shards)"
+    tags:
+
+  - id: Storages.AmazonKinesis.Write
+    name: Amazon Kinesis(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)aws-sdk-kinesis.*(?:put_record|put_records)"
+    tags:
