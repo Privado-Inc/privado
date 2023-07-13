@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.CloudBigtable.ReadAndWrite
+    name: Google Cloud Bigtable
+    domains:
+      - cloud.google.com/bigquery
+    patterns:
+      - "(?i)google/cloud/bigtable.*(?:all|app_profile|append|between|cells|cells_per_row|cells_per_column|check_and_mutate_row|check_consistency|create_table|create_instance|delete.*|increment|instance_id|length|location|path|strip_value|union|update_policy|value)"
+    tags:

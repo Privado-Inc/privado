@@ -1,0 +1,19 @@
+sinks:
+
+  - id: Storages.ApacheCouchDb.Read
+    name: Apache Couch DB(Read)
+    domains:
+      - couchdb.apache.org
+      - apache.org
+    patterns:
+      - "(?i)courchrest.*(?:database(s)?|fetch|fetch_attachment|uri|uuids|view.*)"
+    tags:
+
+  - id: Storages.ApacheCouchDb.Write
+    name: Apache Couch DB(Write)
+    domains:
+      - couchdb.apache.org
+      - apache.org
+    patterns:
+      - "(?i)(?:couchrest).*(?:bulk_save.*|copy|create_db|delete|delete_attachment|delete_doc|get.*|newdb|post|put|put_attachment|update_doc|write)"
+    tags:

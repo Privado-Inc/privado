@@ -1,0 +1,20 @@
+
+sinks:
+
+  - id: Storages.AmazonTimestream.Read
+    name: Amazon Timestream(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)aws-sdk-timestreamquery.*
+    tags:
+
+  - id: Storages.AmazonTimestream.Write
+    name: Amazon Timestream(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)aws-sdk-timestreamwrite.*"
+    tags:

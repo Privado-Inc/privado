@@ -1,0 +1,16 @@
+sinks:
+  - id: Storages.Redis.Write
+    name: Redis DB
+    domains:
+      - redis.io
+    patterns:
+      - (?i)redis(-)?.*(?:add_node|append|bgsave|l(insert|move|pop|push|rem|trim)|persist|publish|remove_node|rename|set.*|subscribe)
+    tags:
+
+  - id: Storages.Redis.Read
+    name: Redis DB
+    domains:
+      - redis.io
+    patterns:
+      - (?i)redis(-)?.*(?:db|get.*|llen|server_url|subscribe)
+    tags:

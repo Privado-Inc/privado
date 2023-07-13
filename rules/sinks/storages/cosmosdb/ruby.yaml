@@ -1,0 +1,10 @@
+sinks:
+
+  - id: Storages.AzureCosmosDb
+    name: Azure Cosmos DB
+    domains:
+      - azure.microsoft.com
+      - microsoft.com
+    patterns:
+      - "(?i)(pg|dbi|dbd-odbc|ruby-odbc).*"
+    tags:

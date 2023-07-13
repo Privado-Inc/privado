@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.Android.SQLite.ReadAndWrite
+    name: SQLite
+    domains:
+      - sqlite.org
+    patterns: 
+      - "(?i)(sqlite.*(?:add_columns|close|commit|create_table|database|execute|insert_or_update|save_data)"
+    tags:
