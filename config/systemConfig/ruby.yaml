@@ -1,6 +1,6 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: (?i)(faraday|rest-client|httparty|http.client|net.http|curb|sawyer|unirest|excon|typhoeus||.*(Http(.){0,2}Client|RestClient|HTTParty|Faraday|Unirest)).*
+    value: (?i)(faraday|rest-client|httparty|http.client|net.http|curb|sawyer|unirest|excon|typhoeus|.*(Http(.){0,2}Client|RestClient|HTTParty|Faraday|Unirest)).*
 
   - key: ignoredSinks
     value: (?i).*(?<=map|list|jsonobject|json|array|arrays|jsonnode|objectmapper|objectnode).*(put:|get:).*
