@@ -65,7 +65,7 @@ sinks:
     domains:
       - "analytics.google.com"
     patterns:
-      - "[@]{0,1}google-analytics|@firebase\\/analytics"
+      - "@firebase\\/analytics|.*google-analytics|GoogleAnalyticsService"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud

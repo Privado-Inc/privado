@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Launchdarkly
-    name: Launchdarkly
+  - id: ThirdParties.SDK.Paddle_Pay
+    name: Paddle Pay
     domains:
-      - "launchdarkly.com"
+      - "paddle.com"
     patterns:
-      - "launchdarkly-node-server-sdk|launchdarkly-react-client-sdk"
+      - "(?i)(paddle_pay).*"
     tags:
