@@ -1,13 +1,13 @@
 sources:
-  - id: Data.Sensitive.PersonalCharacteristics.Height
-    name: Height
-    category: Personal Characteristics
-    isSensitive: False
-    sensitivity: low
-    patterns:
-      - "(?i).*(height[^\\s/(;)#|,=!>]{0,5}(?:cms|inches|feet|meter|metre))|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}height|height"
-    tags:
-      law: GDPR
+  # - id: Data.Sensitive.PersonalCharacteristics.Height
+  #   name: Height
+  #   category: Personal Characteristics
+  #   isSensitive: False
+  #   sensitivity: low
+  #   patterns:
+  #     - "(?i).*(height[^\\s/(;)#|,=!>]{0,5}(?:cms|inches|feet|meter|metre))|(?:body|person|patient|baby|student|user|girl|boy|male|female)[^\\s/(;)#|,=!>]{0,5}height|height"
+  #   tags:
+  #     law: GDPR
   
   - id: Data.Sensitive.PersonalCharacteristics.MaritalStatus
     name: Marital Status
