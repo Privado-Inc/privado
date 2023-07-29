@@ -1,5 +1,11 @@
 sinks:
 
+  - id: Storages.Web.Sql
+    name: Web Sql Database
+    patterns:
+      - "(?i)(window.*opendatabase.*)(transaction|executesql)"
+    tags:
+
   - id: Storages.Web.Cookie.Write
     name: Web Storage Cookie(Write)
     patterns:
