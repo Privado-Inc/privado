@@ -9,5 +9,6 @@ sinks:
     domains:
       - "launchdarkly.com"
     patterns:
-      - "(launchdarkly-node-server-sdk|launchdarkly-react-client-sdk).*(?!useFlags)"
+      - "launchdarkly-node-server-sdk.*"
+      - "(launchdarkly-react-client-sdk)(.)(?!useFlags)"
     tags:
