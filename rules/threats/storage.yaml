@@ -31,10 +31,10 @@ threats:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
   - id: PrivadoPolicy.Storage.IsSamePIIShouldNotBePresentInMultipleTables
-    name: "{DataElementName} found in multiple tables" 
+    name: "{DataElement} found in multiple tables" 
     type: Threat
     description: >- 
-      {DataElementName} was found in multiple tables
+      {DataElement} was found in multiple tables
     fix: >-
       Avoid storing same PII in multiple tables. 
       Reference link: https://github.com/OWASP/owasp-mstg/blob/v1.4.0/Document/0x05d-Testing-Data-Storage.md#testing-local-storage-for-sensitive-data-mstg-storage-1-and-mstg-storage-2"
