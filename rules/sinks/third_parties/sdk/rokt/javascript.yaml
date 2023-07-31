@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Solui
-    name: Solui
+  - id: ThirdParties.SDK.Rokt
+    name: Rokt
     domains:
-      - "solui.dev"
+      - "rokt.com"
     patterns:
-      - "@solui\\/graphql"
+      - ".*(RoktAds|Rokt.createLauncher)"
+      - ".*launcher.selectPlacements"
     tags:
