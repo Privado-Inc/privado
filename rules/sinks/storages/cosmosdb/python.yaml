@@ -9,5 +9,5 @@ sinks:
       - azure.microsoft.com
       - microsoft.com
     patterns:
-      - "(?i).*(?:azure.*cosmos).*(?:create.{0,1}item|read.{0,1}item|delete.{0,1}item|query).*"
+      - "(?i).*(?:azure[.].*cosmos).*(?:create.{0,1}item|read.{0,1}item|delete.{0,1}item|query).*"
     tags:

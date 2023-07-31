@@ -8,5 +8,5 @@ sinks:
     domains:
       - cloud.google.com/bigquery
     patterns: 
-      - "(?i)pyarango.*(?:row.{0,1}filters|read.{0,1}row|delete|query|update.{0,1}dataset|insert.{0,1}rows.{0,1}json|load.{0,1}table.{0,1}from.{0,1}uri|query|list.{0,1}dataset).*"
+      - "(?i)pyarango[.].*(?:row.{0,1}filters|read.{0,1}row|delete|query|update.{0,1}dataset|insert.{0,1}rows.{0,1}json|load.{0,1}table.{0,1}from.{0,1}uri|query|list.{0,1}dataset).*"
     tags:

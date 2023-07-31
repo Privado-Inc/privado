@@ -1,979 +1,263 @@
-
-#  Sink rule for ThirdParty SDK
-#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
-
-sinks:
-
-  - id: ThirdParties.SDK.Amazonaws.SQS
-    name: Amazonaws SQS
-    domains:
-      - "aws.amazonaws.com/sqs"
-    patterns:
-      - "(?i)(mypy_boto3_sqs|aws_cdk.*aws_sqs).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.Athena
-    name: Amazonaws Athena
-    domains:
-      - "aws.amazonaws.com/athena"
-    patterns:
-      - "(?i)(pyathena).*"
-      - "(?i)(aws_cdk.*aws_athena).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.RDS
-    name: Amazonaws RDS
-    domains:
-      - "aws.amazonaws.com/rds"
-    patterns:
-      - "(?i)(aws_rds|mypy_boto3_rds).*"
-      - "(?i)(aws_cdk.*aws_rds).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.SNS
-    name: Amazonaws SNS
-    domains:
-      - "aws.amazonaws.com/sns"
-    patterns:
-      - "(?i)(smsframework_amazon_sns).*"
-      - "(?i)(aws_cdk.*aws_sns).*"
-      - "(?i)(aws_cdk.*aws_sns_subscriptions).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.SES
-    name: Amazonaws SES
-    domains:
-      - "aws.amazonaws.com/ses"
-    patterns:
-      - "(?i)(aws_cdk.*aws_ses|django_amazon_ses|amazon-ses-template-editor).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.SSM
-    name: Amazonaws SSM
-    domains:
-      - "aws.amazon.com/systems-manager"
-    patterns:
-      - "(?i)(aws_cdk.*aws_ssmcontacts).*"
-      - "(?i)(aws_cdk.*aws_ssm).*"
-      - "(?i)(aws_cdk.*aws_ssmincidents).*"
-      - "(?i)(mypy_boto3_ssm|SSMParameter|AWS_Manager).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.EC2
-    name: Amazonaws EC2
-    domains:
-      - "aws.amazonaws.com/ec2"
-    patterns:
-      - "(?i)(aws_cdk.*aws_ec2).*"
-      - "(?i)(mypy_boto3_ec2|ec2_metadata).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.ECS
-    name: Amazonaws ECS
-    domains:
-      - "aws.amazonaws.com/ecs"
-    patterns:
-      - "(?i)(aws_cdk.*aws_ecs).*"
-      - "(?i)(aws_cdk.*aws_ecs_patterns).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.Amplify
-    name: Amazonaws Amplify
-    domains:
-      - "aws.amazonaws.com/amplify"
-    patterns:
-      - "(?i)(aws_cdk.*aws_amplify).*"
-      - "(?i)(aws_cdk.*aws_amplifyuibuilder).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.Redshift
-    name: Amazonaws Redshift
-    domains:
-      - "aws.amazonaws.com/redshift"
-    patterns:
-      - "(?i)(aws_cdk.*aws_redshift).*"
-      - "(?i)(.*redshift.*query)"
-      - "(?i)(django_redshift_backend|target_redshift|redshift_connector|redshift_connector|mypy_boto3_redshift_data|pandas_amazon_redshift).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.Ads
-    name: Amazonaws Ads
-    domains:
-      - "aws.amazonaws.com/solutions/advertising-marketing/amazon-ads-insights"
-    patterns:
-      - "(?i)(ad_api[.]api|amazon_ad_sdk|aws_adfs|amazon_ad|amazon_advertising|tap_amazon_ads_dsp|python_amazon_advertising_api).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.Lambda
-    name: Amazonaws Lamba
-    domains:
-      - "aws.amazonaws.com/lambda"
-    patterns:
-      - "(?i)(aws_cdk.*aws_lambda_python).*"
-      - "(?i)(aws-lambda|aws_lambda|aws_cdk.*aws_lambda|chalice|torchlambda|mypy_boto3_lambda|aws_lambda_powertools|awslambdaric|pylambda|opentelemetry_instrumentation_aws_lambda).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.Dynamodb
-    name: Amazonaws Dynamodb
-    domains:
-      - "aws.amazonaws.com/dynamodb"
-    patterns:
-      - "(?i)(dynamodb-encryption-sdk|dynamo3|mypy_boto3_dynamodb|dynamodump|aws_cdk.*aws_dynamodb|pynamodb).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.CloudWatchLogs
-    name: Amazonaws CloudWatch Logs
-    domains:
-      - "aws.amazonaws.com/cloudwatch"
-    patterns:
-      - "(?i)(aws_cdk.*aws_cloudwatch).*"
-      - "(?i)(logtron_aws|aws_monitoring|awslogs|watchtower).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.CloudFormation
-    name: Amazonaws CloudFormation
-    domains:
-      - "aws.amazonaws.com/cloudformation"
-    patterns:
-      - "(?i)(aws_cdk.*aws_cloudformation).*"
-      - "(?i)(aws_cdk.*aws_cloudfront).*"
-      - "(?i)(mypy_boto3_cloudformation).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.LakeFormation
-    name: Amazonaws LakeFormation
-    domains:
-      - "aws.amazonaws.com/lake-formation"
-    patterns:
-      - "(?i)(aws_cdk.*aws_lakeformation).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Alexa
-    name: Amazonaws Alexa
-    domains:
-      - "aws.amazonaws.com/education/alexa-edu/"
-    patterns:
-      - "(?i)(ask-alexa-pykit|ask_alexa_pykit|PyForAlexa|ask-sdk|ask_sdk|sinricpro).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Aurora
-    name: Amazonaws Aurora
-    domains:
-      - "aws.amazonaws.com/rds/aurora"
-    patterns:
-      - "(?i)(aurora_data_api).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Kinesis
-    name: Amazonaws Kinesis
-    domains:
-      - "aws.amazon.com/kinesis"
-    patterns:
-      - "(?i)(amazon_kclpy|amazon_kclpy_ext).*"
-      - "(?i)(aws_cdk.*aws_kinesisanalytics).*"
-      - "(?i)(aws_cdk.*aws_kinesis).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.Cognito
-    name: Amazonaws Cognito
-    domains:
-      - "aws.amazonaws.com/cognito"
-    patterns:
-      - "(?i)(cognitojwt).*"
-      - "(?i)(aws_cdk.*aws_cognito).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.ElasticLoadBalancing
-    name: Amazon ElasticLoadBalancing
-    domains:
-      - "aws.amazonaws.com/elasticloadbalancing"
-    patterns:
-      - "(?i)(aws_cdk.*aws_elasticloadbalancing).*"
-      - "(?i)(aws_cdk.*aws_elasticloadbalancingv2).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.ElasticKubernetesService
-    name: Amazonaws Elastic Kubernetes Service
-    domains:
-      - "aws.amazonaws.com/eks"
-    patterns:
-      - "(?i)(aws_cdk.*aws_eks).*"
-    tags:
-  
-
-  - id: ThirdParties.SDK.Amazonaws.SageMaker
-    name: Amazon SageMaker
-    domains:
-      - "aws.amazonaws.com/sagemaker"
-    patterns:
-      - "(?i)(sagemaker).py.*"
-      - "(?i)(aws_cdk.*aws_sagemaker).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Elasticsearch
-    name: Amazonaws Elasticsearch
-    domains:
-      - "aws.amazonaws.com/what-is/elasticsearch"
-    patterns:
-      - "(?i)(aws_cdk.*aws_elasticsearch).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.APIGateway
-    name: Amazonaws API Gateway
-    domains:
-      - "aws.amazon.com/api-gateway"
-    patterns:
-      - "(?i)(aws_cdk.*aws_apigateway).*"
-      - "(?i)(aws_cdk.*aws_apigatewayv2).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.HealthLake
-    name: Amazonaws HealthLake
-    domains:
-      - "aws.amazon.com/healthlake"
-    patterns:
-      - "(?i)(aws_cdk.*aws_healthlake).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.AppRunner
-    name: Amazonaws AppRunner
-    domains:
-      - "aws.amazon.com/apprunner"
-    patterns:
-      - "(?i)(aws_cdk.*aws_apprunner).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.AppSync
-    name: Amazonaws AppSync
-    domains:
-      - "aws.amazon.com/appsync"
-    patterns:
-      - "(?i)(aws_cdk.*aws_appsync).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.ElasticMapReduce
-    name: Amazonaws Elastic MapReduce
-    domains:
-      - "aws.amazon.com/emr"
-    patterns:
-      - "(?i)(aws_cdk.*aws_emr).*"
-      - "(?i)(aws_cdk.*aws_emrcontainers).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.QuickSight
-    name: Amazonaws QuickSight
-    domains:
-      - "aws.amazon.com/quicksight"
-    patterns:
-      - "(?i)(aws_cdk.*aws_quicksight).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Forecast
-    name: Amazonaws Forecast
-    domains:
-      - "aws.amazon.com/forecast"
-    patterns:
-      - "(?i)(aws_cdk.*aws_forecast).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.FraudDetector
-    name: Amazonaws Fraud Detector
-    domains:
-      - "aws.amazon.com/fraud-detector"
-    patterns:
-      - "(?i)(frauddetector).*"
-      - "(?i)(aws_cdk.*aws_frauddetector).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.KinesisDataFirehose
-    name: Amazonaws Kinesis Data Firehose
-    domains:
-      - "aws.amazon.com/kinesis/data-firehose"
-    patterns:
-      - "(?i)(aws_cdk.*aws_kinesisfirehose).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Pinpoint
-    name: Amazonaws Pinpoint
-    domains:
-      - "aws.amazon.com/pinpoint"
-    patterns:
-      - "(?i)(aws_cdk.*aws_pinpoint).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.AppStream
-    name: Amazonaws AppStream
-    domains:
-      - "aws.amazon.com/appstream2"
-    patterns:
-      - "(?i)(aws_cdk.*aws_appstream).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.LookoutForVision
-    name: Amazonaws Lookout for Vision
-    domains:
-      - "aws.amazon.com/lookout-for-vision"
-    patterns:
-      - "(?i)(aws_cdk.*aws_lookoutvision).*"
-      - "(?i)(lookoutvision).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.IoTWireless
-    name: Amazonaws IoT Wireless
-    domains:
-      - "aws.amazon.com/iot"
-    patterns:
-      - "(?i)(aws_cdk.*aws_iotwireless).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.LookoutEquipment
-    name: Amazonaws Lookout Equipment
-    domains:
-      - "aws.amazon.com/lookout-for-equipment"
-    patterns:
-      - "(?i)(lookoutequipment).*"
-      - "(?i)(aws_cdk.*aws_lookoutequipment).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.CodeArtifact
-    name: Amazonaws CodeArtifact
-    domains:
-      - "aws.amazon.com/codeartifact"
-    patterns:
-      - "(?i)(aws_cdk.*aws_codeartifact).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.CodeCommit
-    name: Amazonaws CodeCommit
-    domains:
-      - "aws.amazon.com/codecommit"
-    patterns:
-      - "(?i)(aws_cdk.*aws_codecommit).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.CodePipeline
-    name: Amazonaws CodePipeline
-    domains:
-      - "aws.amazon.com/codepipeline"
-    patterns:
-      - "(?i)(aws_cdk.*aws_codepipeline).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Directory
-    name: Amazonaws Directory
-    domains:
-      - "aws.amazon.com/directoryservice"
-    patterns:
-      - "(?i)(aws_cdk.*aws_directoryservice).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.CodeGuruReviewer
-    name: Amazonaws CodeGuru Reviewer
-    domains:
-      - "aws.amazon.com/codeguru"
-    patterns:
-      - "(?i)(aws_cdk.*aws_codeguruprofiler).*"
-      - "(?i)(aws_cdk.*aws_codegurureviewer).*"
-      - "(?i)(aws_cdk.*aws_codestar).*"
-      - "(?i)(aws_cdk.*aws_codestarnotifications).*"
-      - "(?i)(aws_cdk.*aws_codestarconnections).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.IoT
-    name: Amazonaws IoT
-    domains:
-      - "aws.amazon.com/iot"
-    patterns:
-      - "(?i)(aws_cdk.*aws_chatbot).*"
-      - "(?i)(aws_cdk.*aws_iotfleethub).*"
-      - "(?i)(aws_cdk.*aws_iotthingsgraph).*"
-      - "(?i)(aws_cdk.*aws_iotanalytics).*"
-      - "(?i)(aws_cdk.*aws_iotevents).*"
-      - "(?i)(aws_cdk.*aws_iotcoredeviceadvisor).*"
-      - "(?i)(aws_cdk.*aws_iotsitewise).*"
-      - "(?i)(aws_cdk.*aws_greengrassv2).*"
-      - "(?i)(awsiotclient|awsiotsdk|AWSIoTDeviceDefenderAgentSDK|AWSIoTPythonSDK).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Route53
-    name: Amazonaws Route53
-    domains:
-      - "aws.amazon.com/route53"
-    patterns:
-      - "(?i)(aws_cdk.*aws_route53).*"
-      - "(?i)(aws_cdk.*aws_route53_targets).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.ResilienceHub
-    name: Amazonaws ResilienceHub
-    domains:
-      - "aws.amazon.com/resilience-hub"
-    patterns:
-      - "(?i)(aws_cdk.*aws_resiliencehub).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.CertificateManager
-    name: Amazonaws Certificate Manager
-    domains:
-      - "aws.amazon.com/certificate-manager"
-    patterns:
-      - "(?i)(aws_cdk.*aws_certificatemanager).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.AppConfig
-    name: Amazonaws AppConfig
-    domains:
-      - "aws.amazon.com/config"
-    patterns:
-      - "(?i)(aws_cdk.*aws_appconfig).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.SecurityLake
-    name: Amazonaws SecurityLake
-    domains:
-      - "aws.amazon.com/security-lake"
-    patterns:
-      - "(?i)(aws_cdk.*aws_securitylake).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.ElasticTranscoder
-    name: Amazonaws Elastic Transcoder
-    domains:
-      - "aws.amazon.com/elastictranscoder"
-    patterns:
-      - "(?i)(aws_cdk.*aws_elastictranscoder).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.MarketplaceCatalog
-    name: Amazonaws Marketplace Catalog
-    domains:
-      - "aws.amazon.com/marketplace"
-    patterns:
-      - "(?i)(aws_cdk.*aws_marketplacecatalog).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.DevOpsGuru
-    name: Amazonaws DevOps Guru
-    domains:
-      - "aws.amazon.com/devops-guru"
-    patterns:
-      - "(?i)(aws_cdk.*aws_devopsguru).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.LexModel
-    name: Amazonaws Lex Model
-    domains:
-      - "aws.amazon.com/lex"
-    patterns:
-      - "(?i)(amazon_lex_bot_deploy).*"
-      - "(?i)(aws_cdk.*aws_lex).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.SecretsManager
-    name: Amazonaws Secrets Manager
-    domains:
-      - "aws.amazon.com/secrets-manager"
-    patterns:
-      - "(?i)(aws_cdk.*aws_secretsmanager).*"
-      - "(?i)(mypy_boto3_secretsmanager|aws_secrets|aws_secretsmanager|aws_secret).*"
-    tags:
-  
-    - id: ThirdParties.SDK.Amazonaws.CloudTrail
-      name: Amazonaws CloudTrail
-      domains:
-        - "aws.amazon.com/cloudtrail"
-      patterns:
-        - "(?i)(aws_cdk.*aws_cloudtrail).*"
-        - "(?i)(Datamart_AWS_CloudTrails_SDK).*"
-      tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Config
-    name: Amazonaws Config
-    domains:
-      - "aws.amazon.com/config"
-    patterns:
-      - "(?i)(aws_cdk.*aws_config).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Batch
-    name: Amazonaws Batch
-    domains:
-      - "aws.amazon.com/batch"
-    patterns:
-      - "(?i)(aws_cdk.*aws_batch).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.CodeBuild
-    name: Amazonaws CodeBuild
-    domains:
-      - "aws.amazon.com/codebuild"
-    patterns:
-      - "(?i)(aws_cdk.*aws_codebuild).*"
-      - "(?i)(aws_cdk.*aws_imagebuilder).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.CostAndUsageReport
-    name: Amazonaws Cost And Usage Report
-    domains:
-      - "aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting"
-    patterns:
-      - "(?i)(aws_cdk.*aws_costandusagereport).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Health
-    name: Amazonaws Health
-    domains:
-      - "docs.aws.amazon.com/health"
-    patterns:
-      - "(?i)(aws_cdk.*aws_health).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Backup
-    name: Amazonaws Backup
-    domains:
-      - "aws.amazon.com/backup"
-    patterns:
-      - "(?i)(aws_cdk.*aws_backup).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Timestream
-    name: Amazonaws Timestream
-    domains:
-      - "aws.amazon.com/timestream"
-    patterns:
-      - "(?i)(aws_cdk.*aws_timestream).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Gamelift
-    name: Amazonaws Gamelift
-    domains:
-      - "aws.amazon.com/gamelift"
-    patterns:
-      - "(?i)(aws_cdk.*aws_gamelift).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Workspaces
-    name: Amazonaws Workspaces
-    domains:
-      - "aws.amazon.com/workspaces/web"
-    patterns:
-      - "(?i)(aws_cdk.*aws_workspaces).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.Rekognition
-    name: Amazonaws Rekognition
-    domains:
-      - "aws.amazon.com/rekognition"
-    patterns:
-      - "(?i)(aws_cdk.*aws_rekognition).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.CustomerProfiles
-    name: Amazonaws Customer Profiles
-    domains:
-      - "aws.amazon.com/connect/customer-profiles"
-    patterns:
-      - "(?i)(aws_cdk.*aws_customerprofiles).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.ElasticFileSystem
-    name: Amazonaws Elastic File System
-    domains:
-      - "aws.amazon.com/efs"
-    patterns:
-      - "(?i)(aws_cdk.*aws_efs).*"
-      - "(?i)(aws_cdk.*aws_elasticache).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.ApplicationAutoScaling
-    name: Amazonaws Application Auto Scaling
-    domains:
-      - "aws.amazon.com/autoscaling"
-    patterns:
-      - "(?i)(aws_cdk.*aws_autoscaling_hooktargets).*"
-      - "(?i)(aws_cdk.*aws_autoscaling_common).*"
-      - "(?i)(aws_cdk.*aws_autoscaling).*"
-      - "(?i)(aws_cdk.*aws_autoscalingplans).*"
-      - "(?i)(aws_cdk.*aws_applicationautoscaling).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.StepFunctions
-    name: Amazonaws StepFunctions
-    domains:
-      - "aws.amazon.com/step-functions"
-    patterns:
-      - "(?i)(aws_cdk.*aws_stepfunctions).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.AmazonMQ
-    name: Amazonaws AmazonMQ
-    domains:
-      - "aws.amazon.com/amazon-mq"
-    patterns:
-      - "(?i)(aws_cdk.*aws_amazonmq).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Kendra
-    name: Amazonaws Kendra
-    domains:
-      - "aws.amazon.com/kendra"
-    patterns:
-      - "(?i)(aws_cdk.*aws_kendra).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Neptune
-    name: Amazonaws Neptune
-    domains:
-      - "aws.amazon.com/neptune"
-    patterns:
-      - "(?i)(aws_cdk.*aws_neptune).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.MemoryDB
-    name: Amazonaws MemoryDB
-    domains:
-      - "aws.amazon.com/memorydb"
-    patterns:
-      - "(?i)(aws_cdk.*aws_memorydb).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Account
-    name: Amazonaws Account
-    domains:
-      - "aws.amazon.com/account"
-    patterns:
-      - "(?i)(com[.]amazonaws[.]services[.]account).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.DataPipeline
-    name: Amazonaws DataPipeline
-    domains:
-      - "aws.amazon.com/datapipeline"
-    patterns:
-      - "(?i)(aws_cdk.*aws_datapipeline).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.ElasticContainerRegistry
-    name: Amazonaws Elastic Container Registry
-    domains:
-      - "aws.amazon.com/ecr"
-    patterns:
-      - "(?i)(aws_cdk.*aws_ecr).*"
-      - "(?i)(aws_cdk.*aws_ecr_assets).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.OpsWorks
-    name: Amazonaws OpsWorks
-    domains:
-      - "aws.amazon.com/opsworks"
-    patterns:
-      - "(?i)(aws_cdk.*aws_opsworks).*"
-      - "(?i)(aws_cdk.*aws_opsworkscm).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.ElasticBeanStalk
-    name: Amazonaws ElasticBeanStalk
-    domains:
-      - "aws.amazon.com/elasticbeanstalk"
-    patterns:
-      - "(?i)(aws_cdk.*aws_elasticbeanstalk).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.GlueDataBrew
-    name: Amazonaws GlueDataBrew
-    domains:
-      - "aws.amazon.com/glue/features/databrew"
-    patterns:
-      - "(?i)(aws_cdk.*aws_databrew).*"
-      - "(?i)(aws_cdk.*aws_glue).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.LookoutMetrics
-    name: Amazonaws Lookout Metrics
-    domains:
-      - "aws.amazon.com/lookout-for-metrics"
-    patterns:
-      - "(?i)(aws_cdk.*aws_lookoutmetrics).*"
-    tags:
-
-
-  - id: ThirdParties.SDK.Amazonaws.AppFlow
-    name: Amazonaws App Flow
-    domains:
-      - "aws.amazon.com/appflow"
-    patterns:
-      - "(?i)(aws_cdk.*aws_appflow).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Budgets
-    name: Amazonaws Budgets
-    domains:
-      - "aws.amazon.com/aws-cost-management/aws-budgets"
-    patterns:
-      - "(?i)(aws_cdk.*aws_budgets).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.XRay
-    name: Amazonaws XRay
-    domains:
-      - "aws.amazon.com/xray"
-    patterns:
-      - "(?i)(aws_cdk.*aws_xray|aws_xray_lambda_segment_shim|types_aws_xray_sdk|xraysink|aws_xray_sdk).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.KMS
-    name: Amazonaws KMS
-    domains:
-      - "aws.amazon.com/kms"
-    patterns:
-      - "(?i)(aws_cdk.*aws_kms).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.FSx
-    name: Amazonaws FSx
-    domains:
-      - "aws.amazon.com/fsx"
-    patterns:
-      - "(?i)(aws_cdk.*aws_fsx).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.WAF
-    name: Amazonaws WAF
-    domains:
-      - "aws.amazon.com/waf"
-    patterns:
-      - "(?i)(aws_cdk.*aws_waf).*"
-      - "(?i)(aws_cdk.*aws_wafv2).*"
-      - "(?i)(aws_cdk.*aws_wafregional).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.IVS
-    name: Amazonaws IVS
-    domains:
-      - "aws.amazon.com/ivs"
-    patterns:
-      - "(?i)(aws_cdk.*aws_ivs).*"
-      - "(?i)(aws_cdk.*aws_ivs_alpha).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.AppIntegration
-    name: Amazonaws App Integration
-    domains:
-      - "aws.amazon.com/products/application-integration"
-    patterns:
-      - "(?i)(aws_cdk.*aws_appintegrations).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Lightsail
-    name: Amazonaws Lightsail
-    domains:
-      - "aws.amazon.com/lightsail"
-    patterns:
-      - "(?i)(aws_cdk.*aws_lightsail).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.IAM
-    name: Amazonaws IAM
-    domains:
-        - "aws.amazon.com/iam"
-    patterns:
-      - "(?i)(aws_cdk.*aws_iam).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazon.Aws
-    name: Amazon AWS
-    domains:
-      - "aws.amazon.com"
-    patterns:
-      - "(?i)(boto).*"
-      - "(?i)(pyqldb).py.*"
-      - "(?i)(aws_cdk.*aws_qldb).*"
-      - "(?i)(qldbshell).py.*"
-      - "(?i)(mypy_boto3_events|opentelemetry_instrumentation_boto|amazon_selenium|amazon_mws|amazon_dash|amazon_paapi|scrape_amazon|amazon[.]ion|Python_Amazon|amazon_buddy|amazon_braket_schemas|amazon_textract_prettyprinter|mint_amazon_tagger|amazon_buy_bot|amazon_dax_client|amazon_textract_overlayer|django_amazon_translate|amazon_textract_caller|collective[.]portlet[.]amazon|amazon_affiliate_url|zs_amazon_buddy|pay_with_amazon|amazon_textract_geofinder|openlabs_amazon_mws|amazon_wishlist_pricewatch|rgmining_amazon_dataset|amazon_textract_helper|stylelens_crawl_amazon|fio_amazon_mws|tap_amazon_sp|tap_amazon_mws|python_amazon_sp_api|oblcc_amazon_inspector_v2|python_amazon_product_api|amazon_sp_api_clients|Phils_Amazon_Price_Tracker|python_amazon_unthrottled_paapi|p3_amazon_jp_tool|Amazon_Arbitrage_Master_Sheet|amazon_textract_pipeline_pagedimensions|python_amazon_mws_tools|apache_airflow_providers_amazon|django_oscar_amazon_payments|singer_tap_amazon_mws|scrapy_amazon_robot_middleware3|gc_boto|pymacaron_aws|nysa_aws|fondat_aws|aio_aws|bgu_aws|cloudfn_aws|AWS_Police|navio_aws|pulumi_aws|grapher_aws|requests_aws|JT_AWS|openapi4aws|waldur_aws|exr_aws|opentelemetry_sdk_extension_aws|amazon_braket_pennylane_plugin|amazon_connect_decryption_lib|amazon_braket_default_simulator|amazon_braket_ocean_plugin|requests_auth_aws_sigv4|amazon_braket_sdk|amazon_transcribe|amazon_pay|awscli_login|datastore[.]aws|remotecv_aws|threadlocal_aws|okta_aws|odincontrib[.]aws|riffdog_aws|spring_aws|frasco_aws|mfa_aws|thumbor_aws|orchard_aws|vulcan_aws|osbot_aws).*"
-      - "(?i)(aws_crypto|aws_profile|aws_ext|aws_sync|aws_2fa|aws_amicleaner|aws_orgs|aws_checker|aws_requests_auth|aws_sam_translator|aws_credentials|aws_ssh|aws_top|aws_encrytpion|aws_bunker|aws_crpyto|aws_syndicate|aws_status|aws_mfa|aws_saving|aws_parallelcluster|aws_timely|aws_encyrption|aws_socks|aws_allowlister|aws_parsecf|aws_apimatic|aws_psycopg2|aws_vapor|aws_rotate|aws_switchrole|aws_satella|aws_keyring|aws_connector|aws_works|aws_session|aws_organized|aws_client|aws_fed|aws_login|aws_infrastructure_sdk|aws_orbit_sdk|aws_jupyter_proxy|aws_sso_cred_restore|aws_encryption|aws_sso_credential_process|aws_data_api_python_sdk|aws_hcs_cli).py.*"
-      - "(?i)(awscrypto|awswrangler|spotty|arabela|madeira|imposter|assumerole|kloudy|awscli|awsxmltojson|awshelpers|httpaws|pinkboto|coto|zappa|aiobotocore|StarCluster|awsprocesscreds).py.*"
-      - "(?i)(aws_cdk.*core).*"
-      - "(?i)(aws_cdk.*aws_datasync).*"
-      - "(?i)(aws_cdk.*aws_rum).*"
-      - "(?i)(aws_cdk.*aws_synthetics).*"
-      - "(?i)(aws_cdk.*aws_transfer).*"
-      - "(?i)(aws_cdk.*aws_signer).*"
-      - "(?i)(aws_cdk.*aws_inspector).*"
-      - "(?i)(aws_cdk.*aws_wisdom).*"
-      - "(?i)(aws_cdk.*aws_resourcegroups).*"
-      - "(?i)(aws_cdk.*aws_robomaker).*"
-      - "(?i)(aws_cdk.*aws_sdb).*"
-      - "(?i)(aws_cdk.*aws_cur).*"
-      - "(?i)(aws_cdk.*aws_acmpca).*"
-      - "(?i)(aws_cdk.*aws_eventschemas).*"
-      - "(?i)(aws_cdk.*aws_auditmanager).*"
-      - "(?i)(aws_cdk.*aws_aps).*"
-      - "(?i)(aws_cdk.*aws_mwaa).*"
-      - "(?i)(aws_cdk.*aws_fis).*"
-      - "(?i)(aws_cdk.*aws_servicecatalogappregistry).*"
-      - "(?i)(aws_cdk.*aws_ram).*"
-      - "(?i)(aws_cdk.*aws_pinpointemail).*"
-      - "(?i)(aws_cdk.*aws_refactorspaces).*"
-      - "(?i)(aws_cdk.*aws_events).*"
-      - "(?i)(aws_cdk.*aws_panorama).*"
-      - "(?i)(aws_cdk.*aws_msk).*"
-      - "(?i)(aws_cdk.*aws_servicecatalog).*"
-      - "(?i)(aws_cdk.*aws_servicediscovery).*"
-      - "(?i)(aws_cdk.*aws_ce).*"
-      - "(?i)(aws_cdk.*aws_appmesh).*"
-      - "(?i)(aws_cdk.*aws_evidently).*"
-      - "(?i)(aws_cdk.*aws_networkmanager).*"
-      - "(?i)(aws_cdk.*aws_globalaccelerator).*"
-      - "(?i)(aws_cdk.*aws_dlm).*"
-      - "(?i)(aws_cdk.*aws_licensemanager).*"
-      - "(?i)(aws_cdk.*aws_accessanalyzer).*"
-      - "(?i)(aws_cdk.*aws_quickstarts).*"
-      - "(?i)(aws_cdk.*aws_detective).*"
-      - "(?i)(aws_cdk.*aws_location).*"
-      - "(?i)(aws_cdk.*aws_applicationinsights).*"
-      - "(?i)(aws_cdk.*aws_events_targets).*"
-      - "(?i)(aws_cdk.*custom_resources).*"
-      - "(?i)(aws_cdk.*region_info).*"
-      - "(?i)(aws_cdk.*cx_api).*"
-      - "(?i)(aws_cdk.*cloud_assembly_schema).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Finspace
-    name: Amazonaws Finspace
-    domains:
-      - "aws.amazon.com/finspace"
-    patterns:
-      - "(?i)(aws_cdk.*aws_finspace).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.FirewallManager
-    name: Amazonaws Firewall Manager
-    domains:
-      - "aws.amazon.com/firewall-manager"
-    patterns:
-      - "(?i)(aws_cdk.*aws_fms).*"
-      - "(?i)(aws_cdk.*aws_networkfirewall).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Medialive
-    name: Amazonaws Medialive
-    domains:
-      - "aws.amazon.com/medialive"
-    patterns:
-      - "(?i)(aws_cdk.*aws_medialive).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Mediapackage
-    name: Amazonaws Mediapackage
-    domains:
-      - "aws.amazon.com/mediapackage"
-    patterns:
-      - "(?i)(aws_cdk.*aws_mediapackage).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Mediastore
-    name: Amazonaws Mediastore
-    domains:
-      - "aws.amazon.com/mediastore"
-    patterns:
-      - "(?i)(aws_cdk.*aws_mediastore).*"
-      - "(?i)(aws_cdk.*aws_mediaconvert).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Mediaconnect
-    name: Amazonaws Mediaconnect
-    domains:
-      - "aws.amazon.com/mediaconnect"
-    patterns:
-      - "(?i)(aws_cdk.*aws_mediaconnect).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.ServerlessApplicationModel
-    name: Amazonaws Serverless Application Model
-    domains:
-      - "aws.amazon.com/serverless/sam"
-    patterns:
-      - "(?i)(aws_cdk.*aws_sam).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.NimbleStudio
-    name: Amazonaws Nimble Studio
-    domains:
-      - "aws.amazon.com/nimble-studio"
-    patterns:
-      - "(?i)(aws_cdk.*aws_nimblestudio).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.SecurityHub
-    name: Amazonaws Security Hub
-    domains:
-      - "aws.amazon.com/security-hub"
-    patterns:
-      - "(?i)(aws_cdk.*aws_securityhub).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.GuardDuty
-    name: Amazonaws GuardDuty
-    domains:
-      - "aws.amazon.com/guardduty"
-    patterns:
-      - "(?i)(aws_cdk.*aws_guardduty).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.SingleSignOn
-    name: Amazonaws Single SignOn
-    domains:
-      - "aws.amazon.com/what-is/sso"
-    patterns:
-      - "(?i)(aws_cdk.*aws_sso).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Cloud9
-    name: Amazonaws Cloud9
-    domains:
-      - "aws.amazon.com/cloud9"
-    patterns:
-      - "(?i)(aws_cdk.*aws_cloud9).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.Macie2
-    name: Amazonaws Macie2
-    domains:
-      - "aws.amazon.com/macie"
-    patterns:
-      - "(?i)(aws_cdk.*aws_macie).*"
-    tags:
-  
-  - id: ThirdParties.SDK.Amazonaws.MachineLearning
-    name: Amazonaws MachineLearning
-    domains:
-      - "aws.amazon.com/machine-learning"
-    patterns:
-      - "(?i)(aws_mlops|aws_jupyter).*"
-    tags:
-
-  - id: ThirdParties.SDK.Amazonaws.OpenSearch
-    name: Amazonaws OpenSearch
-    domains:
-      - "aws.amazon.com/opensearch-service"
-    patterns:
-      - "(?i)(aws_cdk.*aws_opensearchservice).*"
-    tags:
+{
+  "data": {
+    "scanLogs": "b'2023-07-10 17:58:27.702 +00:00 [INF] Analyze command completed\
+'
+b'cetoScan\
+'
+b'2023-07-10 17:58:26.700 +00:00 [VRB] AnalyzeCommand::ConfigRules\
+'
+b'2023-07-10 17:58:26.787 +00:00 [VRB] Attempting to add rule: PB000001:Data: Discovery(URL Pattern)\
+'
+b'2023-07-10 17:58:26.788 +00:00 [VRB] Attempting to add rule: PB000002:Data: Discovery(URL Pattern PHP environment)\
+'
+b'2023-07-10 17:58:26.819 +00:00 [DBG] Attempting to read rule file: /app/external-rules/db-9795.json\
+'
+b'2023-07-10 17:58:26.829 +00:00 [DBG] Attempting to read rule file: /app/external-rules/cpp_dbs.json\
+'
+b'2023-07-10 17:58:26.833 +00:00 [DBG] Attempting to read rule file: /app/external-rules/default.json\
+'
+b'2023-07-10 17:58:26.837 +00:00 [DBG] Attempting to read rule file: /app/external-rules/9795.json\
+'
+b'2023-07-10 17:58:26.838 +00:00 [DBG] Attempting to read rule file: /app/external-rules/sdk-9795.json\
+'
+b'2023-07-10 17:58:26.839 +00:00 [DBG] Attempting to read rule file: /app/external-rules/nmbrs.json\
+'
+b'2023-07-10 17:58:26.843 +00:00 [DBG] Attempting to read rule file: /app/external-rules/trimble_app_ins_rules.json\
+'
+b'2023-07-10 17:58:27.083 +00:00 [VRB] AnalyzeCommand::GetResultAsync\
+'
+b'2023-07-10 17:58:27.085 +00:00 [INF] Analyze command running\
+'
+b'2023-07-10 17:58:27.090 +00:00 [VRB] AnalyzeCommand::PopulateRecords\
+'
+b'2023-07-10 17:58:27.097 +00:00 [VRB] AnalyzeCommand::EnumerateFileEntries\
+'
+b'2023-07-10 17:58:27.444 +00:00 [DBG] File skipped: First 100 bytes appear to indicate this is a binary file. /app/code/TripExport/ExportModules/ExportModules.rc\
+'
+b'2023-07-10 17:58:27.569 +00:00 [DBG] File skipped: First 100 bytes appear to indicate this is a binary file. /app/code/TripExport/TripExport/TripExport.rc\
+'
+b'2023-07-10 17:58:27.594 +00:00 [DBG] File skipped: First 100 bytes appear to indicate this is a binary file. /app/code/TripExport/TripExport/RCa06772\
+'
+b'2023-07-10 17:58:27.659 +00:00 [ERR] No pattern matches were detected for files in source path\
+'
+",
+    "resultLogs": "b\"[2023-07-10 17:56:10,728: DEBUG/MainProcess] pidbox received method hello(from_node='codescanworker@e26bfc78c0df', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '706eab6a-35af-30b1-8eb4-335cc07aa324'} ticket:560f722b-7ded-4222-8196-4e02be1b907e]\
+\"
+b\"[2023-07-10 17:56:10,767: DEBUG/MainProcess] pidbox received method hello(from_node='reporelevancyworker@e26bfc78c0df', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '6a8134fc-917c-3550-9452-dcb527e24108'} ticket:5db5029f-2a08-4942-a48c-e464be3ba551]\
+\"
+b\"[2023-07-10 17:56:11,233: DEBUG/MainProcess] pidbox received method hello(from_node='assessmentworker@e26bfc78c0df', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '08cdfb7b-caff-3fa5-b5bb-1bf585a16b23'} ticket:bd2696d3-ec3b-45db-8731-fab4479bcfb0]\
+\"
+b\"[2023-07-10 17:56:11,418: DEBUG/MainProcess] pidbox received method hello(from_node='bulkworker@e26bfc78c0df', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '75d8c0fe-1546-3f33-8665-d710152935d3'} ticket:95063cac-589b-43a6-9b97-08930cfaaeee]\
+\"
+b'[2023-07-10 17:56:11,803: DEBUG/MainProcess] reporelevancyworker@e26bfc78c0df joined the party\
+'
+b\"[2023-07-10 17:56:11,928: DEBUG/MainProcess] pidbox received method hello(from_node='websitescanworker@e26bfc78c0df', revoked={}) [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '1867bf69-3620-3992-afde-d6a351c7bdb2'} ticket:26e7d9e3-57aa-40d1-9d23-5b4a1c057344]\
+\"
+b'[2023-07-10 17:56:12,285: DEBUG/MainProcess] assessmentworker@e26bfc78c0df joined the party\
+'
+b'[2023-07-10 17:56:12,452: DEBUG/MainProcess] bulkworker@e26bfc78c0df joined the party\
+'
+b'[2023-07-10 17:56:12,964: DEBUG/MainProcess] websitescanworker@e26bfc78c0df joined the party\
+'
+b'[2023-07-10 17:58:28,185: INFO/MainProcess] Received task: hueristics.tasks.processResult[6fd6ff43-01e3-48b2-9922-002448cd32fd]  \
+'
+b'[2023-07-10 17:58:28,186: INFO/ForkPoolWorker-1] PROCESS RESULT request recieved ==> scanId: 64ac46b68146a196a22c1131\
+'
+b'[2023-07-10 17:58:28,187: DEBUG/ForkPoolWorker-1] PROCESS RESULT all details ==> scanId: 64ac46b68146a196a22c1131, repoName: TripExport, repoURL: https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.gitbranchName: develop, commitId: f31c819bd017e8ef5d02afe248babd8b9fd981d1, customerId: 62B18DCFA1160601D81588B3providerId: 8cf89a46-4005-4b56-a0bb-0e8f85ad991c, providerName: bitbucket_server, scanId: 64ac46b68146a196a22c1131, subProjectPath: \
+'
+b'[2023-07-10 17:58:28,187: INFO/ForkPoolWorker-1] Inside process\
+'
+b'[2023-07-10 17:58:28,187: DEBUG/ForkPoolWorker-1] PII PROCESSOR enabled models => scanId:64ac46b68146a196a22c1131\
+'
+b'[2023-07-10 17:58:28,187: DEBUG/ForkPoolWorker-1] Completed piiprocess for scanID: 64ac46b68146a196a22c1131\
+'
+b'[2023-07-10 17:58:28,188: INFO/ForkPoolWorker-1] Inside permission process\
+'
+b'[2023-07-10 17:58:28,188: DEBUG/ForkPoolWorker-1] Completed permission process for scanID: 64ac46b68146a196a22c1131\
+'
+b'[2023-07-10 17:58:28,188: INFO/ForkPoolWorker-1] ****Database processing*******\
+'
+b'[2023-07-10 17:58:28,188: INFO/ForkPoolWorker-1] 0\
+'
+b'[2023-07-10 17:58:28,188: INFO/ForkPoolWorker-1] ********Database after processing***********\
+'
+b'[2023-07-10 17:58:28,188: INFO/ForkPoolWorker-1] 0\
+'
+b'[2023-07-10 17:58:28,188: INFO/ForkPoolWorker-1] Storing data into raw_data for repoName: TripExport customerId: 62B18DCFA1160601D81588B3\
+'
+b\"[2023-07-10 17:58:28,224: DEBUG/ForkPoolWorker-1] Getting Customer Domains for {'cls': <class 'codeengine.service.CustomerDomainService.CustomerDomainService'>, 'customerId': '62B18DCFA1160601D81588B3', 'filterParameters': {}, 'isUI': False, 'pageConfig': {'pageSize': -1, 'filterOptions': True}, 'count': 0}\
+\"
+b'[2023-07-10 17:58:28,227: INFO/ForkPoolWorker-1] Completed storing data into raw_data for repoName: TripExport customerId: 62B18DCFA1160601D81588B3\
+'
+b'[2023-07-10 17:58:28,228: INFO/ForkPoolWorker-1] Skipping issue creation for scanType: probe, customerId: 62B18DCFA1160601D81588B3, repoId: 9795\
+'
+b'[2023-07-10 17:58:28,228: DEBUG/ForkPoolWorker-1] Getting raw data for rawDataReportId: 64ac46c466fa0e79d5eb0873\
+'
+b'[2023-07-10 17:58:28,229: DEBUG/ForkPoolWorker-1] Completed getting raw data for rawDataReportId: 64ac46c466fa0e79d5eb0873\
+'
+b\"[2023-07-10 17:58:28,230: WARNING/ForkPoolWorker-1] /home/ubuntu/install/envs/andromeda-on-premise/lib/python3.8/site-packages/pymongo/topology.py:175: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: https://pymongo.readthedocs.io/en/stable/faq.html#is-pymongo-fork-safe\
+\"
+b'  warnings.warn(\
+'
+b'\
+'
+b'[2023-07-10 17:58:28,261: DEBUG/ForkPoolWorker-1] Completed getting repo for customerId: 62B18DCFA1160601D81588B3 and repoId: 9795\
+'
+b'[2023-07-10 17:58:28,263: INFO/ForkPoolWorker-1] Successfully added 1interestsubject data for name: TripExport branchName: develop customerId: 62B18DCFA1160601D81588B3 \
+'
+b'[2023-07-10 17:58:28,287: DEBUG/ForkPoolWorker-1] Completed getting repo for customerId: 62B18DCFA1160601D81588B3 and repoId: 9795\
+'
+b\"[2023-07-10 17:58:28,289: INFO/ForkPoolWorker-1] Getting Interest Subject  for {'cls': <class 'reports.service.InterestSubjectsService.InterestSubjectsService'>, 'customerId': '62B18DCFA1160601D81588B3', 'filterParameters': {'repoId': '9795', 'branchName': 'develop'}, 'isUI': False, 'pageConfig': {'pageSize': -1, 'filterOptions': True}, 'repoId': 9795, 'count': 1}\
+\"
+b\"[2023-07-10 17:58:28,291: DEBUG/ForkPoolWorker-1] Getting Customer Domains for {'cls': <class 'codeengine.service.CustomerDomainService.CustomerDomainService'>, 'customerId': '62B18DCFA1160601D81588B3', 'filterParameters': {}, 'isUI': False, 'pageConfig': {'pageSize': -1, 'filterOptions': True}, 'count': 0}\
+\"
+b\"[2023-07-10 17:58:28,291: DEBUG/ForkPoolWorker-1] Getting Blocklist Domains for {'cls': <class 'codeengine.service.BlocklistDomainService.BlocklistDomainService'>, 'customerId': '62B18DCFA1160601D81588B3', 'filterParameters': {}, 'isUI': False, 'pageConfig': {'pageSize': -1, 'filterOptions': True}, 'count': 0}\
+\"
+b\"[2023-07-10 17:58:28,292: DEBUG/ForkPoolWorker-1] Getting internal services for {'cls': <class 'reports.service.InternalVendorsService.InternalVendorsService'>, 'customerId': '62B18DCFA1160601D81588B3', 'filterParameters': {'repoId': '9795'}, 'isUI': False, 'pageConfig': {'pageSize': -1, 'filterOptions': True}, 'count': 18}\
+\"
+b'[2023-07-10 17:58:28,539: DEBUG/ForkPoolWorker-1] Successfully added/updated 0internal services data for name: TripExport customerId: 62B18DCFA1160601D81588B3 \
+'
+b'[2023-07-10 17:58:28,540: WARNING/ForkPoolWorker-1] total\
+'
+b'[2023-07-10 17:58:28,540: WARNING/ForkPoolWorker-1] 34\
+'
+b'[2023-07-10 17:58:28,542: WARNING/ForkPoolWorker-1] 0\
+'
+b\"[2023-07-10 17:58:28,545: INFO/ForkPoolWorker-1] Successfully added TYPE = <class 'list'>customer vendors data for name: TripExport branchName: develop customerId: 62B18DCFA1160601D81588B3 repoId 9795\
+\"
+b'[2023-07-10 17:58:28,569: DEBUG/ForkPoolWorker-1] Completed getting repo for customerId: 62B18DCFA1160601D81588B3 and repoId: 9795\
+'
+b'[2023-07-10 17:58:28,582: INFO/ForkPoolWorker-1] Successfully fetched scan priority for the repoId: 9795 customerId: 62B18DCFA1160601D81588B3 priority: 8 for provider : bitbucket_server.\
+'
+b'[2023-07-10 17:58:28,582: DEBUG/ForkPoolWorker-1] Updating status for repoId: 9795 branchName: develop customerId: 62B18DCFA1160601D81588B3\
+'
+b'[2023-07-10 17:58:28,583: DEBUG/ForkPoolWorker-1] recording amplitude event: repo scan queue\
+'
+b'[2023-07-10 17:58:28,589: INFO/ForkPoolWorker-1] Ensuring customer rule directories are created pre-sync: 62B18DCFA1160601D81588B3\
+'
+b'[2023-07-10 17:58:28,590: INFO/ForkPoolWorker-1] Created customer specific rules directories for customerId: 62B18DCFA1160601D81588B3\
+'
+b'[2023-07-10 17:58:38,600: INFO/ForkPoolWorker-1] Event sent successfully.\
+'
+b\"[2023-07-10 18:00:01,924: DEBUG/MainProcess] pidbox received method stats() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '64aeb075-a761-3edc-bd1f-fb3d14561c83'} ticket:3b825086-95aa-4c86-88f4-1ef297c83918]\
+\"
+",
+    "codescanLogs": "b\"[2023-07-10 17:58:33,359: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'git_checkout_completed', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:33,361: INFO/ForkPoolWorker-1] CHECKOUT command for commitId successful => scanId:64ac46c48146a196a22c1132\
+'
+b'[2023-07-10 17:58:33,361: INFO/ForkPoolWorker-1] Updating status for scanId: 64ac46c48146a196a22c1132 having status: git_checkout_completed\
+'
+b\"[2023-07-10 17:58:33,361: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'git_checkout_completed', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:33,362: INFO/ForkPoolWorker-1] DIRECTORY_SCAN started for TripExport => scanId:64ac46c48146a196a22c1132\
+'
+b\"[2023-07-10 17:58:33,363: WARNING/ForkPoolWorker-1] /home/ubuntu/install/envs/andromeda-on-premise/lib/python3.8/site-packages/pymongo/topology.py:175: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: https://pymongo.readthedocs.io/en/stable/faq.html#is-pymongo-fork-safe\
+\"
+b'  warnings.warn(\
+'
+b'\
+'
+b'[2023-07-10 17:58:33,390: INFO/ForkPoolWorker-1] DIRECTORY_SCAN completed for TripExport => scanId:64ac46c48146a196a22c1132\
+'
+b'[2023-07-10 17:58:33,390: INFO/ForkPoolWorker-1] Updating status for scanId: 64ac46c48146a196a22c1132 having status: directory_scan_completed\
+'
+b\"[2023-07-10 17:58:33,391: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'directory_scan_completed', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:33,393: INFO/ForkPoolWorker-1] Stating CODEINSPECTOR => scanId:64ac46c48146a196a22c1132\
+'
+b'[2023-07-10 17:58:33,394: INFO/ForkPoolWorker-1] Updating status for scanId: 64ac46c48146a196a22c1132 having status: code_inspector_start\
+'
+b\"[2023-07-10 17:58:33,394: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'code_inspector_start', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:33,398: DEBUG/ForkPoolWorker-1] []\
+'
+b'[2023-07-10 17:58:33,399: WARNING/ForkPoolWorker-1] []\
+'
+b'[2023-07-10 17:58:33,399: INFO/ForkPoolWorker-1] /home/ubuntu/install/repositories/62B18DCFA1160601D81588B3/TripExport/requirements.txt\
+'
+b'[2023-07-10 17:58:33,399: INFO/ForkPoolWorker-1] []\
+'
+b'[2023-07-10 17:58:33,400: INFO/ForkPoolWorker-1] []\
+'
+b'[2023-07-10 17:58:34,526: INFO/ForkPoolWorker-1] DB parser started............\
+'
+b'[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] python parser running.....\
+'
+b'[2023-07-10 17:58:34,527: INFO/ForkPoolWorker-1] java parser running.....\
+'
+b'[2023-07-10 17:58:34,527: INFO/ForkPoolWorker-1] javascript parser running.....\
+'
+b'[2023-07-10 17:58:34,527: INFO/ForkPoolWorker-1] scala parser running.....\
+'
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['mongodbcloud', '(mongodb\\\\\\\\+srv:)|(\\\\\\\\.mongodb\\\\\\\\.net)']\
+\"
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['mongodb', '(MongoClient\\\\\\\\()|(MongoClient[.]connect\\\\\\\\()|(mongodb://)']\
+\"
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['documentdb', '(\\\\\\\\w)[.]docdb[.]amazonaws[.]com']\
+\"
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['mongodbcloud', '(mongodb\\\\\\\\+srv:)|(\\\\\\\\.mongodb\\\\\\\\.net)']\
+\"
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['awscognito', 'new S3Client\\\\\\\\(']\
+\"
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['awss3', 'awscala.s3']\
+\"
+b\"[2023-07-10 17:58:34,527: WARNING/ForkPoolWorker-1] ['dynamodb', 'com.amazonaws.services.dynamodb']\
+\"
+b\"[2023-07-10 17:58:34,528: INFO/ForkPoolWorker-1] [['TP00DB1'], ['TP00DB2'], ['TP00DB3'], ['TP00DB4'], ['TP00DB5'], ['TP00DB6'], ['TP00DB7'], ['TP00DB8'], ['TP00DB9'], ['TP00DB10'], ['TP00DB11'], ['TP00DB12'], ['TP00DB13'], ['TP00DB14'], ['TP00DB15'], ['TP00DB16'], ['TP00DB17'], ['TP00DB18'], ['TP00DB19'], ['TP00DB20'], ['TP00DB21'], ['TP00DB22'], ['TP00DB23'], ['TP00DB24'], ['TP00DB25'], ['TP00DB26'], ['TP00DB27'], ['TP00DB28'], ['TP00DB29'], ['TP00DB30'], ['TP00DB31'], ['TP00DB32'], ['TP00DB33'], ['TP00DB34'], ['TP00DB35'], ['TP00DB36'], ['TP00DB37'], ['TP00DB38'], ['TP00DB39'], ['TP00DB40'], ['TP00DB41'], ['TP00DB42'], ['TP00DB43'], ['TP00DB44'], ['TP00DB45'], ['TP00DB46'], ['TP00DB47'], ['TP00DB48'], ['TP00DB49'], ['TP00DB50'], ['TP00DB51'], ['TP00DB52'], ['TP00DB53'], ['TP00DB54'], ['TP00DB55'], ['TP00DB56'], ['TP00DB57'], ['TP00DB58'], ['TP00DB59'], ['TP00DB60'], ['TP00DB61'], ['TP00DB62'], ['TP00DB63'], ['TP00DB64'], ['TP00DB65'], ['TP00DB66'], ['TP00DB67'], ['TP00DB68'], ['TP00DB69'], ['TP00DB70'], ['TP00DB71'], ['TP00DB72'], ['TP00DB73'], ['TP00DB74'], ['TP00DB75'], ['TP00DB76'], ['TP00DB77'], ['TP00DB78'], ['TP00DB79'], ['TP00DB80'], ['TP00DB81'], ['TP00DB82'], ['TP00DB83'], ['TP00DB84'], ['TP00DB85'], ['TP00DB86'], ['TP00DB87'], ['TP00DB88'], ['TP00DB89'], ['TP00DB90'], ['TP00DB91'], ['TP00DB92'], ['TP00DB93'], ['TP00DB94'], ['TP00DB95'], ['TP00DB96'], ['TP00DB97'], ['TP00DB98'], ['TP00DB99'], ['TP00DB100'], ['TP00DB101'], ['TP00DB102'], ['TP00DB103'], ['TP00DB104'], ['TP00DB105'], ['TP00DB106']]\
+\"
+b'[2023-07-10 17:58:34,529: INFO/ForkPoolWorker-1] Final Rule list ================ >\
+'
+b'[2023-07-10 17:58:34,529: INFO/ForkPoolWorker-1] writing to the file /home/ubuntu/install/data/62B18DCFA1160601D81588B3/db\
+'
+b'[2023-07-10 17:58:34,538: INFO/ForkPoolWorker-1] DB parser competed............\
+'
+b'[2023-07-10 17:58:35,623: WARNING/ForkPoolWorker-1] stdout: b\\'false\\\
+Not in OSS Support\\\
+\\\
+> Pulling the latest image: 638117407428.dkr.ecr.eu-west-1.amazonaws.com/appinspector:latest\\\
+latest: Pulling from appinspector\\\
+Digest: sha256:110baacfc78a5f14c1c4af58ceba59ae1f8befa99e1ca3ad7f7f40ec9a7783b6\\\
+Status: Image is up to date for 638117407428.dkr.ecr.eu-west-1.amazonaws.com/appinspector:latest\\\
+Received error: Error response from daemon: Conflict. The container name \"/TripExport__9795_2\" is already in use by container \"50cb448a34553ee77ec76a1fde9231d1a3d7ca2f6dfe7a02a56587ab0ce48685\". You have to remove (or rename) that container to be able to reuse that name.\\\
+\\'\
+'
+b'[2023-07-10 17:58:35,623: WARNING/ForkPoolWorker-1] returncode: 1\
+'
+b'[2023-07-10 17:58:35,624: ERROR/ForkPoolWorker-1] CODEINSPECTOR failed ==> scanId: 64ac46c48146a196a22c1132, scanType: full, repoName: TripExport, result:b\\'false\\\
+Not in OSS Support\\\
+\\\
+> Pulling the latest image: 638117407428.dkr.ecr.eu-west-1.amazonaws.com/appinspector:latest\\\
+latest: Pulling from appinspector\\\
+Digest: sha256:110baacfc78a5f14c1c4af58ceba59ae1f8befa99e1ca3ad7f7f40ec9a7783b6\\\
+Status: Image is up to date for 638117407428.dkr.ecr.eu-west-1.amazonaws.com/appinspector:latest\\\
+Received error: Error response from daemon: Conflict. The container name \"/TripExport__9795_2\" is already in use by container \"50cb448a34553ee77ec76a1fde9231d1a3d7ca2f6dfe7a02a56587ab0ce48685\". You have to remove (or rename) that container to be able to reuse that name.\\\
+\\'\
+'
+b'[2023-07-10 17:58:36,176: INFO/ForkPoolWorker-1] Updating status for scanId: 64ac46c48146a196a22c1132 having status: code_inspector_failed\
+'
+b\"[2023-07-10 17:58:36,176: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'code_inspector_failed', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:36,178: INFO/ForkPoolWorker-1] PROCESS RESULT started ==> scanId: 64ac46c48146a196a22c1132\
+'
+b'[2023-07-10 17:58:36,178: INFO/ForkPoolWorker-1] Updating status for scanId: 64ac46c48146a196a22c1132 having status: process_result_started\
+'
+b\"[2023-07-10 17:58:36,178: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'process_result_started', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:36,204: INFO/ForkPoolWorker-1] Updating status for scanId: 64ac46c48146a196a22c1132 having status: process_result_failed\
+'
+b\"[2023-07-10 17:58:36,204: WARNING/ForkPoolWorker-1] scan : {'customerId': '62B18DCFA1160601D81588B3', 'repoName': 'TripExport', 'repoURL': 'https://oauth2:{{INSTALLATION_TOKEN}}@bitbucket.trimble.tools/scm/lwfh/tripexport.git', 'branchName': 'develop', 'commitId': 'f31c819bd017e8ef5d02afe248babd8b9fd981d1', 'subProjectPath': '', 'isMonoRepo': False, 'status': 'process_result_failed', 'scanPriority': 8, 'isManualSync': True}\
+\"
+b'[2023-07-10 17:58:36,206: ERROR/ForkPoolWorker-1] PROCESS RESULT error, the json result file is missing => scanId:64ac46c48146a196a22c1132, file : /home/ubuntu/install/scan_results/64ac46c48146a196a22c1132.json\
+'
+b\"[2023-07-10 17:58:36,702: DEBUG/ForkPoolWorker-1] Status code 200, {'data': {'_id': {'$oid': '649c5f445f8ff4081e782080'}, 'customerId': '62B18DCFA1160601D81588B3', 'pullRequest': True, 'commit': False, 'deleteDirectoryAfterScan': True, 'python-feature-flag': False, 'js-feature-flag': False}}, <class 'dict'>\
+\"
+b\"[2023-07-10 17:58:36,703: DEBUG/ForkPoolWorker-1] scanningEventSetting {'_id': {'$oid': '649c5f445f8ff4081e782080'}, 'customerId': '62B18DCFA1160601D81588B3', 'pullRequest': True, 'commit': False, 'deleteDirectoryAfterScan': True, 'python-feature-flag': False, 'js-feature-flag': False} , <class 'dict'>\
+\"
+b'[2023-07-10 17:58:36,709: INFO/ForkPoolWorker-1] Existing SOURCE_DIR deleted ==> Directory: /home/ubuntu/install/repositories/62B18DCFA1160601D81588B3/TripExport\
+'
+b\"[2023-07-10 18:00:01,924: DEBUG/MainProcess] pidbox received method stats() [reply_to:{'exchange': 'reply.celery.pidbox', 'routing_key': '64aeb075-a761-3edc-bd1f-fb3d14561c83'} ticket:3b825086-95aa-4c86-88f4-1ef297c83918]\
+\"
+"
+  }
+}

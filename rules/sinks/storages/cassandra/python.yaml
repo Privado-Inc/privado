@@ -9,6 +9,6 @@ sinks:
       - cassandra.apache.org
       - apache.org
     patterns:
-      - "(?i)(aws_cdk.*aws_cassandra).*"
+      - "(?i)(aws_cdk[.].*aws_cassandra).*"
       - "(?i).*cassandra.*cluster.*(?:execute|save|query|get|list|head|select|find|search|match|create|insert).*"
     tags:

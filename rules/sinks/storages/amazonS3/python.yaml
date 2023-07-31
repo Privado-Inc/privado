@@ -5,8 +5,8 @@ sinks:
     domains:
       - s3.amazon.com
     patterns:
-      - "(?i).*(aws_cdk.*(aws_s3|assets)).*"
+      - "(?i).*(aws_cdk[.].*(aws_s3|assets)).*"
       - "(?i).*(get_s3_bucket).*"
       - "(?i).*(aws_helper|s3transfer|templates_s3|s3util|s3url|url_for_s3|s3_parse_url|ctodd_python_lib_aws|awss3lib|s3file|mypy_boto3_s3|s3_encryption|mypy_boto3_s3|pip_services3_aws|bits3).py.*"
-      - "(?i).*boto.*(?:get|bucket|put|download.{0,1}file|delete|bucket|object|list.{0,1}obj|upload.{0,1}file|download.{0,1}fileobj|presigned.{0,1}url).*"
+      - "(?i)boto\\d?[.].*(?:get|bucket|put|download.{0,1}file|delete|bucket|object|list.{0,1}obj|upload.{0,1}file|download.{0,1}fileobj|presigned.{0,1}url).*"
     tags:
