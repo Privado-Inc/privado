@@ -64,7 +64,6 @@ threats:
       Data.Sensitive.PersonalCharacteristics.Height: "30"
       Data.Sensitive.PersonalCharacteristics.Weigth: "30"
       Data.Sensitive.PurchaseData.OrderDetails: "30"
-      Data.Sensitive.FinancialData.PaymentMode: "30"
     tags:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
   
@@ -80,6 +79,6 @@ threats:
     config:
       PersonalCharacteristics: "Data.Sensitive.PersonalIdentification.FirstName,Data.Sensitive.PersonalIdentification.LastName,Data.Sensitive.PersonalIdentification.DateofBirth,Data.Sensitive.PersonalCharacteristics.Height,Data.Sensitive.PersonalCharacteristics.Weigth,Data.Sensitive.ContactData.PhoneNumber,Data.Sensitive.ContactData.Address,Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber,Data.Sensitive.NationalIdentificationNumbers.TaxpayerIdentificationNumber"
       PurchaseData: "Data.Sensitive.PurchaseData.OrderDetails,Data.Sensitive.PurchaseData.OfferDetails,Data.Sensitive.PurchaseData.ProductReturnHistory,Data.Sensitive.PurchaseData.PurchaseHistory"
-      FinancialData: "Data.Sensitive.FinancialData.BankAccountDetails,Data.Sensitive.FinancialData.CardNumber,Data.Sensitive.FinancialData.PaymentMode,Data.Sensitive.FinancialData.CreditScore,Data.Sensitive.FinancialData.Salary"
+      FinancialData: "Data.Sensitive.FinancialData.BankAccountDetails,Data.Sensitive.FinancialData.CardNumber,Data.Sensitive.FinancialData.CreditScore,Data.Sensitive.FinancialData.Salary"
     tags:
       "MITRE" : "QualityAssurance.UnvettedSecurity, Sharing.Exposure"
