@@ -4,11 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Launchdarkly
-    name: LaunchDarkly
+  - id: ThirdParties.SDK.Braintreepayments
+    name: Braintreepayments
     domains:
-      - "launchdarkly.com"
+      - "braintreepayments.com"
     patterns:
-      - "launchdarkly-node-server-sdk.*"
-      - "(launchdarkly-react-client-sdk)(.)(?!useFlags)"
+      - "(?i)(braintree).*"
     tags:
