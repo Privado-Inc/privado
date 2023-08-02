@@ -5,7 +5,7 @@
 sinks:
 
   - id: ThirdParties.SDK.Launchdarkly
-    name: Launchdarkly
+    name: LaunchDarkly
     domains:
       - "launchdarkly.com"
     patterns:
