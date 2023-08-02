@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      -  "(?i).*((?:vehicle|truck|car|motorcycle|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}).*"
+      -  "(?i).*((?:vehicle|truck|motorcycle|tractor)[^\\s/(;)#|,=!>]{0,5}registration([^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)){0,1}|(?:car)[-_.]{0,3}registration[^\\s/(;)#|,=!>]{0,5}(details|number|num|nbr|no)).*"
     tags:
       law: GDPR
 
