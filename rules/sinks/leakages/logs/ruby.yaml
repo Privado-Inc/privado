@@ -2,7 +2,7 @@ sinks:
   - id: Leakages.Log.Console
     name: Log Console
     patterns: 
-      - "(?i)(puts|print|p|pp)"
+      - "(?i)(puts|print)"
     tags:
 
   - id: Leakages.Log.Info
