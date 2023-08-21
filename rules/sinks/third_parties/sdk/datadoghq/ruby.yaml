@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Datadoghq
+    name: Datadoghq
     domains:
-      - "sentry.io"
+      - "datadoghq.com"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby).*"
+      - "(?i)(ddtrace|dogstatsd-ruby|datadog_api_client).*"
     tags:

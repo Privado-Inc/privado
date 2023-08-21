@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Plaid
+    name: Plaid
     domains:
-      - "sentry.io"
+      - "plaid.com"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby).*"
+      - "(?i)(plaid).*"
     tags:

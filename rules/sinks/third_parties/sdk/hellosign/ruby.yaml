@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Hellosign
+    name: Hellosign
     domains:
-      - "sentry.io"
+      - "hellosign.com"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby).*"
+      - "(?i)(hellosign-api).*"
     tags:
