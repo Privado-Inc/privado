@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Docusign
+    name: Docusign
     domains:
-      - "sentry.io"
+      - "docusign.com"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby|sentry-rails|sentry-sidekiq).*"
+      - "(?i)(docusign_esign).*"
     tags:

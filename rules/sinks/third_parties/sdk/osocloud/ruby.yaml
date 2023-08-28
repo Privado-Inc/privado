@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Oso
+    name: Oso
     domains:
-      - "sentry.io"
+      - "osohq.io"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby|sentry-rails|sentry-sidekiq).*"
+      - "(?i)(oso-cloud).*"
     tags:

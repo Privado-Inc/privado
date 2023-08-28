@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Codat
+    name: Codat
     domains:
-      - "sentry.io"
+      - "codat.io"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby|sentry-rails|sentry-sidekiq).*"
+      - "(?i)(codat).*"
     tags:

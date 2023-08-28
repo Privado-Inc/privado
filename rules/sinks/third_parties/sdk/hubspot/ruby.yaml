@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Sentry
-    name: Sentry
+  - id: ThirdParties.SDK.Hubspot
+    name: Hubspot
     domains:
-      - "sentry.io"
+      - "hubspot.com"
     patterns:
-      - "(?i)(fluent-plugin-sentry-ruby|sentry-ruby|sentry-rails|sentry-sidekiq).*"
+      - "(?i)(hubspot).*"
     tags:
