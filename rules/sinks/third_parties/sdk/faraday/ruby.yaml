@@ -1,9 +1,0 @@
-sinks:
-
-  - id: ThirdParties.SDK.Faraday
-    name: Faraday
-    domains:
-      - "faraday.com"
-    patterns:
-      - (?i)(faraday).*
-    tags:

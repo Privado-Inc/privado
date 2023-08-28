@@ -1,9 +1,9 @@
 sinks:
 
-  - id: ThirdParties.SDK.Hubspot
-    name: Hubspot
+  - id: ThirdParties.SDK.Postmark
+    name: Postmark
     domains:
-      - "hubspot.com"
+      - "postmark.com"
     patterns:
-      - "(?i)(actionmailer).*"
+      - "(?i)(postmark-rails).*"
     tags:

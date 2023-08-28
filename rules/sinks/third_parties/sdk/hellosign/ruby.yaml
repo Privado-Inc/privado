@@ -1,9 +1,0 @@
-sinks:
-
-  - id: ThirdParties.SDK.HelloSign
-    name: HelloSign
-    domains:
-      - "hellosign.com"
-    patterns:
-      - (?i)(HelloSignService).*
-    tags:
