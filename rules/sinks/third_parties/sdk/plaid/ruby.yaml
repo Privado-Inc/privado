@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Plaid
+    name: Plaid
+    domains:
+      - "plaid.com"
+    patterns:
+      - "(?i)(plaid).*"
+    tags:

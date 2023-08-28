@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Calendarific
+    name: Calendarific
+    domains:
+      - "calendarific.com"
+    patterns:
+      - "(?i)(calendarific).*"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Hubspot
+    name: Hubspot
+    domains:
+      - "hubspot.com"
+    patterns:
+      - "(?i)(hubspot).*"
+    tags:

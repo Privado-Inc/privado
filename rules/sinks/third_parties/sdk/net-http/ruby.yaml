@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Net-Http
+    name: Net-Http
+    domains:
+      - "net-http.com"
+    patterns:
+      - (?i)(NET[::]HTTP).*
+    tags:

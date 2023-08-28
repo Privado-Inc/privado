@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Launchdarkly
+    name: Launchdarkly
+    domains:
+      - "launchdarkly.com"
+    patterns:
+      - "(?i)(ldclient).*"
+    tags:
