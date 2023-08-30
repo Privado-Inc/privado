@@ -1,0 +1,9 @@
+sinks:
+  - id: Storages.AmazonDynamoDB.ReadAndWrite
+    name: Amazon Dynamo DB
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns: 
+      - "(?i)(aws-sessionstore-dynamodb|aws-sdk-dynamodb|aws-dynamodb-query|aws-sdk-dynamodbstreams).*"
+    tags:

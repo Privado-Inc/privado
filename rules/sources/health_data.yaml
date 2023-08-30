@@ -48,3 +48,33 @@ sources:
       - "(?i).*(blood[^\\s/(;)#|,=!>]{0,10}report|medical[^\\s/(;)#|,=!>]{0,10}(?:report|test)|medical[^\\s/(;)#|,=!>]{0,10}certificate|blood[^\\s/(;)#|,=!>]{0,10}group).*"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.HealthData.Mood
+    name: Mood Survey Data
+    category: Health Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i)(mood).*"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.HealthData.CallRecords
+    name: Call Record data
+    category: Health Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*(CallHelpfulness|CallFeedback).*"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.HealthData.Messages
+    name: Message data
+    category: Health Data
+    isSensitive: True
+    sensitivity: high
+    patterns:
+      - "(?i).*(MessageEntry|messageDict|messageHistory).*"
+    tags:
+      law: GDPR
