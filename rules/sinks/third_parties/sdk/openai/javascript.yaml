@@ -9,5 +9,5 @@ sinks:
     domains:
       - "openai.com"
     patterns:
-      - "(?i)(openai|chronological).*"
+      - "(?i)(openai|chatgpt|gpt3|@tectalic\\/openai|@dalenguyen\\/openai).*"
     tags:
