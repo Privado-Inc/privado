@@ -25,7 +25,7 @@ sinks:
     domains:
       - "admanager.google.com"
     patterns:
-      - "@carlos.algms\\/react-gpt|gpts|@atmedia\\/react-gpt|react-google-publisher-tag|openai|@tomdracz\\/react-gpt|@ticketmaster\\/react-gpt|@cruisecritic\\/react-gpt|@codingcatdev\\/react-gpt|@flightstats\\/react-gpt|@chatsight\\/gee-pee-tee"
+      - "@carlos.algms\\/react-gpt|gpts|@atmedia\\/react-gpt|react-google-publisher-tag|@tomdracz\\/react-gpt|@ticketmaster\\/react-gpt|@cruisecritic\\/react-gpt|@codingcatdev\\/react-gpt|@flightstats\\/react-gpt|@chatsight\\/gee-pee-tee"
     tags:
 
   - id: ThirdParties.SDK.Google.Admob
