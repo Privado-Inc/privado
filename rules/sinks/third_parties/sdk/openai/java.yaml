@@ -9,6 +9,5 @@ sinks:
     domains:
       - "openai.com"
     patterns:
-      - "(?i).*(OpenAiService|OpenAiStreamClient|OpenAiClient|OpenAiApi).*"
       - "(?i)(com.theokanning.openai-gpt3-java).*"
     tags:

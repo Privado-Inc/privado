@@ -10,4 +10,5 @@ sinks:
       - "openai.com"
     patterns:
       - "(?i)(openai|chronological).*"
+      - "(?i)langchain[.]llms.*(openai|azureopenai|openllm).*"
     tags:
