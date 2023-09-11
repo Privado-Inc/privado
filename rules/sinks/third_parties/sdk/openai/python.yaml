@@ -11,4 +11,6 @@ sinks:
     patterns:
       - "(?i)(openai|chronological).*"
       - "(?i)langchain[.]llms.*(openai|azureopenai|openllm).*"
+      - "(?i).*(openai.ChatCompletion).*"
+      - "(?i)(langchain.chat_models).*(ChatOpenAI).*"
     tags:
