@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Apnotic
+    name: Apnotic
+    domains:
+      - "apple.com"
+    patterns:
+      - ".*Apnotic.*"
+    tags:
