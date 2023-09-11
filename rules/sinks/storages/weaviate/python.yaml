@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Vaticle TypeDB - https://vaticle.com/typedb
+
+sinks:
+
+  - id: Storages.Weaviate.ReadAndWrite
+    name: Weaviate VectorDB
+    domains:
+      - weaviate.io
+    patterns:
+      - "(?i)(weaviate).*"
+    tags:

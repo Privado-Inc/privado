@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Devise
+    name: Devise
+    domains:
+      - "devise.com"
+    patterns:
+      - (?i)(devise).*
+    tags:
