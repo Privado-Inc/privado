@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Postmark
+    name: Postmark
+    domains:
+      - "postmark.com"
+    patterns:
+      - "(?i)(postmark-rails).*"
+    tags:
