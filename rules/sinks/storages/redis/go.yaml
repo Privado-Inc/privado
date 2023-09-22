@@ -1,9 +1,17 @@
 sinks:
 
-  - id: Storages.Redis.ReadAndWrite
-    name: Redis DB
+  - id: Storages.Redis.Read
+    name: Redis DB(Read)
     domains:
       - redis.io
     patterns:
-      - "(?i).*(go-redis).*(Set|Get|HSet|HGetAll).*"
+      - "(?i).*(go-redis).*(Get|HGet|HGetAll).*"
+    tags:
+
+  - id: Storages.Redis.Write
+    name: Redis DB(Write)
+    domains:
+      - redis.io
+    patterns:
+      - "(?i).*(go-redis).*(Set|HSet|Del).*"
     tags:
