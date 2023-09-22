@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.Redis.ReadAndWrite
+    name: Redis DB
+    domains:
+      - redis.io
+    patterns:
+      - "(?i).*(go-redis).*(Set|Get|HSet|HGetAll).*"
+    tags:
