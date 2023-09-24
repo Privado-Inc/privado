@@ -1,0 +1,16 @@
+sinks:
+
+  - id: Storages.AmazonS3.Write
+    name: Amazon S3(Read)
+    domains:
+      - s3.amazon.com
+    patterns:
+      - "(?i).*(aws-sdk-go).*(s3).*(PutObject|ListObject|HeadObject).*"
+    tags:
+
+  - id: Storage.AmazonS3.Read
+    name: Amazon S3(Write)
+    domain:
+      - s3.amazon.com
+    patterns:
+      - "(?i).*(aws-sdk-go).*(s3).*(DeleteObject|GetObject|CopyObject).*"

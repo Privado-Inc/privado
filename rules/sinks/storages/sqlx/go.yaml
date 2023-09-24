@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.SQLX.ReadAndWrite
+    name: SQLX
+    domains:
+      - sqlx.com
+    patterns:
+      - "(?i).*(sqlx).*(Exec|Select|Get).*"
+    tags:
