@@ -10,7 +10,7 @@ sinks:
 
   - id: Storage.AmazonS3.Read
     name: Amazon S3(Write)
-    domain:
+    domains:
       - s3.amazon.com
     patterns:
       - "(?i).*(aws-sdk-go).*(s3).*(DeleteObject|GetObject|CopyObject).*"
