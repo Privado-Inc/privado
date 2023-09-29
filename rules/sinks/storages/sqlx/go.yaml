@@ -13,5 +13,5 @@ sinks:
     domains:
       - sqlx.com
     patterns:
-      - "(?i).*(Select).*"
+      - "(?i).*(Select)"
     tags:
