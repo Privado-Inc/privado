@@ -5,13 +5,5 @@ sinks:
     domains:
       - sqlx.com
     patterns:
-      - "(?i).*(sqlx).*(Exec|Select|Get|In).*"
-    tags:
-
-  - id: Storages.SQLX.Read
-    name: SQLX
-    domains:
-      - sqlx.com
-    patterns:
-      - "(?i).*(Select)"
+      - "(?i).*(Exec|Select|Get|In).*"
     tags:
