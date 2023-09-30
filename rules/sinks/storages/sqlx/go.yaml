@@ -1,9 +1,17 @@
 sinks:
 
+  - id: Storages.SQLX.Read
+    name: SQLX
+    domains:
+      - pkg.go.dev/github.com/jmoiron/sqlx
+    patterns:
+      - "(?i).*(sqlx).*(Select|Get)"
+    tags:
+
   - id: Storages.SQLX.ReadAndWrite
     name: SQLX
     domains:
-      - sqlx.com
+      - pkg.go.dev/github.com/jmoiron/sqlx
     patterns:
-      - "(?i).*(sqlx).*(Exec|Select|Get).*"
+      - "(?i).*(sqlx).*(Exec|Rebind)"
     tags:
