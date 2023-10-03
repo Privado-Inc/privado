@@ -5,7 +5,7 @@ sinks:
     domains:
       - s3.amazon.com
     patterns:
-      - "(?i).*(aws-sdk-go).*(s3).*(PutObject|ListObjects|HeadObject).*"
+      - "(?i)(github.com/aws/aws-sdk-go).*(s3).*(PutObject|ListObjects|HeadObject).*"
     tags:
 
   - id: Storage.AmazonS3.Read
@@ -13,4 +13,4 @@ sinks:
     domains:
       - s3.amazon.com
     patterns:
-      - "(?i).*(aws-sdk-go).*(s3).*(DeleteObject|GetObject|CopyObject).*"
+      - "(?i)(github.com/aws/aws-sdk-go).*(s3).*(DeleteObject|GetObject|CopyObject).*"
