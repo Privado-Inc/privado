@@ -5,5 +5,5 @@ sinks:
     domains:
       - sqlx.com
     patterns:
-      - "(?i).*(sqlx).*(Exec|Select|Get|In).*"
+      - "(?i)(github.com/jmoiron/sqlx).*(Exec|Select|Get)"
     tags:
