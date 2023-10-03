@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Paypal
+    name: Paypal
+    domains:
+      - "paypal.com"
+    patterns:
+      - "(?i)(swisspay|active_paypal_adaptive_payment|paypal-payment|spree_paypal_adaptive_payment|georgedrummond-active_paypal_adaptive_payment|paypal_adaptive|yukon|shoppe-paypal|paypal-express|pp-adaptive|lolita-paypal|adaptive_pay|ianfleeton-paypal-express|paypal-adaptive-gateway|sinatra-paypal|elucid-adaptive_pay|adapt|spree_paypal_website_standard|ruby-paypal|creative-paypal-express|spree_paypal_rest|spree_paypal_express|trado_paypal_module|creative-pp-adaptive|spree_paypal_express_mutalis|killbill-paypal-express|nimbleshop_paypalwp|astrails-paypal_adaptive|tonyla-paypal_adaptive|workarea-paypal|active_paypal_adaptive_accounts|koduc_express_paypal|adaptive_payments|spree_billing_sisow|lottay-paypal_adaptive|heartcheck-paypal|paypal-masspay|JekyllEWP|paypal-sdk-rest|paypal-sdk-core|paypal-sdk-merchant|paypal-checkout-sdk|paypal-sdk-adaptivepayments|paypal-sdk-permissions|paypal-sdk-adaptiveaccounts|paypal-sdk-invoice|paypal-sdk-subscriptions|paypal-payouts-sdk|paypal-sdk-buttonmanager|paypal-sdk-http-adapters|paypal-sdk-merchant-jk|paypal-sdk-rest-pmrb|paypal-sdk-buttonmanager-rails|paypal_merchant|cabernet|paypkg).*"
+    tags:

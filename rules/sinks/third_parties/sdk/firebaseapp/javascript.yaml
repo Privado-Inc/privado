@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Firebaseapp.Ngx-auth-firebaseui
-    name: Firebaseapp Ngx-auth-firebaseui
+  - id: ThirdParties.SDK.Firebaseapp
+    name: Firebaseapp
     domains:
-      - "ngx-auth-firebaseui.firebaseapp.com"
+      - "firebaseapp.com"
     patterns:
-      - "ngx-auth-firebaseui|@asithade\\/ngx-auth-firebaseui"
+      - "firebaseio[.]com"
+      - "ngx-auth-firebaseui|@asithade\\/ngx-auth-firebaseui|@fire-fly\\/jugnu"
     tags:

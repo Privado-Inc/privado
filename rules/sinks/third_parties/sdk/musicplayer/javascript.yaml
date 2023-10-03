@@ -9,5 +9,5 @@ sinks:
     domains:
       - "musicplayer.io"
     patterns:
-      - "musicplayer"
+      - "(?i)(music\\.163\\.com|neteasecloudmusic|musicplayer).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cylonjs.com"
     patterns:
-      - "cylon-force"
+      - "cylon"
     tags:

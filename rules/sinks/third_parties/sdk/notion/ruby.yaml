@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Notion
+    name: Notion
+    domains:
+      - "notion.com"
+    patterns:
+      - "(?i)(notion|notion_orbit|notion_rb|notion-ruby-client|omniauth-notion|notion-sdk-ruby|notion_ruby|notion_client|notion_api|jekyll-notion).*"
+    tags:

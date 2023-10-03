@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Mailchimp
+    name: Mailchimp
+    domains:
+      - "mailchimp.com"
+    patterns:
+      - "(?i)(monkey_party|mailchimp|omniauth-mailchimp|mailchimp_api|mailchimp_ses|mailchimp_api_v3|mailchimp_template|ruby-mailchimp|webhookr-mailchimp|mailchimp_subscriber|mailchimp_exporter|devise_mailchimp|easy_mailchimp|mailchimp_transactional|refinerycms-mailchimp|embulk-output-mailchimp|catarse_mailchimp|camaleon_mailchimp|chimpster|mojura-mailchimp|solidus_mailchimp_sync|trado_mailchimp_module|marnen-catarse_mailchimp|mailchimp3|gibbon|hominid|MailchimpMarketing|mailchimpv3|MailchimpTransactional|chimpster-rails|mc_markdown|hominid-wout|monkeywrench|monkey_wrench|chimpmunk|workarea-mail_chimp|bgetting-hominid|panthoot|mc|mcmailer|chimp_contact|banana_peels|chimp_mailer|chimp_light|babney-hominid|chimp_sync|Empact-hominid|mandrill_queue|malechimp|purple-monkey|netguru-hominid|mcparty|mailfox|catarse_monkeymail|chimpy|banana_bits|devise_campaignable|slack-ruby-bot-server-mailchimp).*"
+    tags:

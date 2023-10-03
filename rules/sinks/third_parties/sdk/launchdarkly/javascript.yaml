@@ -5,9 +5,10 @@
 sinks:
 
   - id: ThirdParties.SDK.Launchdarkly
-    name: Launchdarkly
+    name: LaunchDarkly
     domains:
       - "launchdarkly.com"
     patterns:
-      - "launchdarkly-node-server-sdk"
+      - "launchdarkly-node-server-sdk.*"
+      - "(launchdarkly-react-client-sdk)(.)(?!useFlags)"
     tags:

@@ -1,0 +1,10 @@
+
+sinks:
+
+  - id: ThirdParties.SDK.Yahoo
+    name: Yahoo
+    domains:
+      - "yahoo.com"
+    patterns:
+      - "(?i)(yahoo-finance|yahoo_weatherman).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Youtube
+    name: Youtube
+    domains:
+      - "youtube.com"
+    patterns:
+      - "(?i)(youtube_search|youtube_it|youtube|youtube_id|youtube_addy|youtube-g|youtube_rails|youtube-dl.rb|youtube_dlhelper|youtube_url|youtube_query|youtube_embed|jekyll-youtube|youtube_pop|youtube-embed|simple_youtube|omniauth-youtube|youtube-downloader|ruboty-youtube|punndit_youtube|youtube_dl|youtube_images|youtube_video|youtube_feed|youtube_sync|lita-youtube|youtube-ripper|youtube_analytics|youtube_audio|youtube_transcript2020|youtube_identifier|youtube-searcher|youtube_api|easy_youtube|active_youtube|paperclip-youtube|youtube_data_api|html-pipeline-youtube|bulk_youtube|ecm_youtube|youtube_search_thumbnail|basic_youtube|spree_youtube|youtube_dl_ruby|msp-youtube-g|youtube_video_id|workarea-youtube_playlists|youtube_audio_downloader|gaqzi-youtube-downloader|podcast-to-youtube|agiley-youtube-g|lita-youtube-me|natedaiger-youtube-g|vibedeck-youtube_it|ruby-youtube-dl|tmm1-youtube-g|youtube_video_info|youtube-g-es|jekyll-html5-youtube|google-apis-youtube_v3|lita-onewheel-youtube|slainer68_youtube_it|youtube_to_rss|sensu-plugins-youtube|cinch-youtube-search|ecm_youtube_backend|audio_to_youtube|trak3r-youtube_sso|asciidoctor-youtube|mintdigital-youtube-g|nddrylliog_youtube_it|beef-youtube-g|ceritium-youtube-g2|FiXato-youtube-g|pius-youtube-g|youtubeDL|videojs-ng-youtube|fetch_youtube_transcript|ceritium-youtube-g-extra|youtube_video_search_at_web_page|google-apis-youtube_analytics_v2|video_info).*"
+    tags:

@@ -1,13 +1,13 @@
 sources:
-  - id: Data.Sensitive.BiometricData.FingerprintScans
-    name: Fingerprint Scans
-    category: Biometric Data
-    isSensitive: True
-    sensitivity: high
-    patterns:
-      - "(?i)finger[^\\s/(;)#|,=!>]{0,5}print|finger[^\\s/(;)#|,=!>]{0,5}print[^\\s/(;)#|,=!>]{0,5}scan"
-    tags:
-      law: GDPR
+  # - id: Data.Sensitive.BiometricData.FingerprintScans
+  #   name: Fingerprint Scans
+  #   category: Biometric Data
+  #   isSensitive: True
+  #   sensitivity: high
+  #   patterns:
+  #     - "(?i)finger[^\\s/(;)#|,=!>]{0,5}print|finger[^\\s/(;)#|,=!>]{0,5}print[^\\s/(;)#|,=!>]{0,5}scan"
+  #   tags:
+  #     law: GDPR
 
   - id: Data.Sensitive.BiometricData.IrisRecognition
     name: Iris Recognition
