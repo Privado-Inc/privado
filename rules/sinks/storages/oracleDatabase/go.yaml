@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Oracle Database - https://www.oracle.com/database/
+
+sinks:
+
+  - id: Storages.OracleDatabase.ReadAndWrite
+    name: Oracle Database
+    domains:
+      - oracle.com
+    patterns:
+      - "(?i)(github.com/sijms/go-ora).*(Exec|Query)"
+    tags:

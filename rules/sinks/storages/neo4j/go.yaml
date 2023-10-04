@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Neo4j Graph Database - https://neo4j.com/
+
+sinks:
+
+  - id: Storages.Neo4jGraphDatabase.ReadAndWrite
+    name: Neo4j Graph Database(ReadAndWrite)
+    domains:
+      - neo4j.com
+    patterns:
+      - "(?i)(github.com/neo4j/neo4j-go-driver).*(ExecuteQuery|ExecuteRead)"
+    tags:
