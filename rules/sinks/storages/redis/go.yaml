@@ -5,7 +5,7 @@ sinks:
     domains:
       - redis.io
     patterns:
-      - "(?i).*(go-redis).*(Get|HGet|HGetAll).*"
+      - "(?i)(github.com/go-redis).*[.](Get|HGet|HGetAll)"
     tags:
 
   - id: Storages.Redis.Write
@@ -13,5 +13,5 @@ sinks:
     domains:
       - redis.io
     patterns:
-      - "(?i).*(go-redis).*(Set|HSet|Del).*"
+      - "(?i)(github.com/go-redis).*[.](Set|HSet|Del)"
     tags:
