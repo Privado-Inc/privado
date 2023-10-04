@@ -3,6 +3,7 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
+      - "(?i)(github.com/rs/zerolog/log).*[.](Error).*(Msg)"
       - "(?i)(github.com/sirupsen/logrus).*[.](error)(f?)"
       - "(?i)(go.uber.org/zap).*[.](error)(f|ln|w)?"
       - "(?i)(github.com/golang/glog).*[.](error)(depth|depthf|f|ln)?"
@@ -12,6 +13,7 @@ sinks:
   - id: Leakages.Log.Warn
     name: Log Warn
     patterns:
+      - "(?i)(github.com/rs/zerolog/log).*[.](Warn).*(Msg)"
       - "(?i)(github.com/sirupsen/logrus).*[.](warn)(f?)"
       - "(?i)(go.uber.org/zap).*[.](warn)(f|ln|w)?"
       - "(?i)(github.com/golang/glog).*[.](warn)(depth|depthf|f|ln)?"
@@ -21,6 +23,7 @@ sinks:
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
+      - "(?i)(github.com/rs/zerolog/log).*[.](Debug).*(Msg)"
       - "(?i)(github.com/sirupsen/logrus).*[.](debug)(f?)"
       - "(?i)(go.uber.org/zap).*[.](debug)(f|ln|w)?"
       - "(?i)(github.com/golang/glog).*[.](debug)(depth|depthf|f|ln)?"
@@ -30,6 +33,7 @@ sinks:
   - id: Leakages.Log.Info
     name: Log Info
     patterns:
+      - "(?i)(github.com/rs/zerolog/log).*[.](Info).*(Msg)"
       - "(?i)(github.com/sirupsen/logrus).*[.](info)(f?)"
       - "(?i)(go.uber.org/zap).*[.](info)(f|ln|w)?"
       - "(?i)(github.com/golang/glog).*[.](info)(depth|depthf|f|ln)?"
@@ -55,4 +59,10 @@ sinks:
     name: Log Console
     patterns:
       - "(?i)(fmt)[.](Println|Print)(f?)"
+    tags:
+
+  - id: Leakages.Log.Trace
+    name: Log Trace
+    patterns:
+      - "(?i)(github.com/rs/zerolog/log).*[.](Trace).*(Msg)"
     tags:
