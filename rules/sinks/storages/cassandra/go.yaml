@@ -1,0 +1,10 @@
+sinks:
+
+  - id: Storages.ApacheCassandra.ReadAndWrite
+    name: Apache Cassandra
+    domains:
+      - cassandra.apache.org
+      - apache.org
+    patterns:
+      - "(?i)(github.com/gocql/gocql).*(Query)"
+    tags:

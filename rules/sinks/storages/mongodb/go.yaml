@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.MongoDB.Read
+    name: MongoDB(Read)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)(go.mongodb.org/mongo-driver/mongo).*(Find)"
+    tags:
+
+  - id: Storages.MongoDB.Write
+    name: MongoDB(Write)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i)(go.mongodb.org/mongo-driver/mongo).*(InsertOne|DeleteOne|UpdateOne)"
+    tags:
