@@ -10,3 +10,11 @@ sinks:
     patterns:
       - "(?i)(github.com/semi-technologies/weaviate-go-client).*(ObjectsBatcher|Get|GetSearch)"
     tags:
+
+  - id: Storages.Weaviate.Read
+    name: Weaviate VectorDB(Read)
+    domains:
+      - weaviate.io
+    patterns:
+      - "(?i)(github.com/semi-technologies/weaviate-go-client).*(Get|GetSearch)"
+    tags:
