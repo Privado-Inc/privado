@@ -4,10 +4,18 @@
 
 sinks:
 
-  - id: Storages.PouchDb.ReadAndWrite
-    name: Pouch DB
+  - id: Storages.PouchDb.Write
+    name: Pouch DB(Write)
     domains:
       - pouchdb.com
     patterns:
-      - "(?i)(github.com/go-kivik/pouchdb).*(Put|Get|BulkDocs|BulkGet)"
+      - "(?i)(github.com/go-kivik/pouchdb).*(Put|BulkDocs)"
+    tags:
+
+  - id: Storages.PouchDb.Read
+    name: Pouch DB(Read)
+    domains:
+      - pouchdb.com
+    patterns:
+      - "(?i)(github.com/go-kivik/pouchdb).*(Get|BulkGet)"
     tags:
