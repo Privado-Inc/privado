@@ -1,0 +1,19 @@
+sinks:
+
+  - id: Storages.AmazonKinesis.Read
+    name: Amazon Kinesis(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/kinesis).*(GetRecords)"
+    tags:
+
+  - id: Storages.AmazonKinesis.Write
+    name: Amazon Kinesis(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/kinesis).*(PutRecords)"
+    tags:
