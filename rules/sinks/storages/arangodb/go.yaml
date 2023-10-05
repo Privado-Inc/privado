@@ -13,5 +13,5 @@ sinks:
     domains:
       - arangodb.com
     patterns:
-      - "(?i)(github.com/neo4j/neo4j-go-driver).*(CreateDocument|UpdateDocument|RemoveDocument)"
+      - "(?i)(github.com/arangodb/go-driver).*(CreateDocument|UpdateDocument|RemoveDocument)"
     tags:
