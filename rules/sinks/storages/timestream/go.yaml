@@ -1,0 +1,22 @@
+
+# Sink Rules for storage database Amazon Timestream - https://aws.amazon.com/timestream/
+
+sinks:
+
+  - id: Storages.AmazonTimestream.Read
+    name: Amazon Timestream(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/timestreamquery).*(QueryInput)"
+    tags:
+
+  - id: Storages.AmazonTimestream.Write
+    name: Amazon Timestream(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/timestreamwrite).*(WriteRecordsInput)"
+    tags:

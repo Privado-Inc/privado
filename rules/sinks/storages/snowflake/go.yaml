@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Android SQLite - https://developer.android.com/
+
+sinks:
+
+  - id: Storages.Snowflake.ReadAndWrite
+    name: Snowflake(ReadAndWrite)
+    domains:
+      - "snowflake.com"
+    patterns:
+      - "(?i)(github.com/snowflakedb/gosnowflake).*(Exec|Query|mustExec|Prepare)"
+    tags:
