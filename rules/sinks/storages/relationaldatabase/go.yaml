@@ -1,0 +1,12 @@
+
+#In Go lang "database/sql" is a common package to connect any relational database
+
+sinks:
+
+  - id: Storages.SQL.ReadAndWrite
+    name: SQL DB(ReadAndWrite)
+    domains:
+      - pkg.go.dev/database/sql
+    patterns:
+      - "(?i)(database/sql).*(Prepare|Query|Stmt)(Context|Row)?"
+    tags:

@@ -1,0 +1,19 @@
+sinks:
+
+  - id: Storages.AmazonCognito.Read
+    name: Amazon Cognito(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/cognitoidentityprovider).*(GetItem)"
+    tags:
+
+  - id: Storages.AmazonCognito.Write
+    name: Amazon Cognito(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/cognitoidentityprovider).*(PutItem|UpdateItem|DeleteItem)"
+    tags:
