@@ -8,7 +8,7 @@ sinks:
     domains:
       - weaviate.io
     patterns:
-      - "(?i)(github.com/semi-technologies/weaviate-go-client).*(ObjectsBatcher|Get|GetSearch)"
+      - "(?i)(github.com/semi-technologies/weaviate-go-client).*(ObjectsBatcher)"
     tags:
 
   - id: Storages.Weaviate.Read
