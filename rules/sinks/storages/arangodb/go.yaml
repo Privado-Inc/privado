@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.ArangoDB.ReadAndWrite
+    name: ArangoDB(Read)
+    domains:
+      - arangodb.com
+    patterns:
+      - "(?i)(github.com/arangodb/go-driver).*(Query|Execute)"
+    tags:
+
+  - id: Storages.ArangoDB.Write
+    name: ArangoDB(Write)
+    domains:
+      - arangodb.com
+    patterns:
+      - "(?i)(github.com/neo4j/neo4j-go-driver).*(CreateDocument|UpdateDocument|RemoveDocument)"
+    tags:
