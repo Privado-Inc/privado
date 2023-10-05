@@ -1,0 +1,10 @@
+sinks:
+  - id: ThirdParties.SDK.Google.Firebase
+    name: Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]firebase).*"
+      - "(?i)(com[.]firebase).*"
+      - "(?i)(io[.]firebase).*"
+    tags:
