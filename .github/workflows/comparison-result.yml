@@ -127,6 +127,7 @@ jobs:
           ref: parallel-test
 
 
+
       - name: Collate summary
         run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./collate_summary.py -s /home/runner/work/privado/privado/language_summary
 
