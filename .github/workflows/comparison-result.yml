@@ -1,6 +1,7 @@
 name: Monitoring Stability and Comparing Results for privado 
 
 # Triggers when a pull_request is created
+# Run on all branches
 on:
   pull_request_target:
     branches:
