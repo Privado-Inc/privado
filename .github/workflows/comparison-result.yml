@@ -1,8 +1,8 @@
 name: Monitoring Stability and Comparing Results for privado 
 
-# Triggers when a pull_request or a push action is configured on master branch
+# Triggers when a pull_request is created
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - "**"
 
