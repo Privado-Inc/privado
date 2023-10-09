@@ -1,7 +1,6 @@
+name: Monitoring Stability and Comparing Results for privado 
 
-name: Monitoring Stability and Comparing Results
-
-# Triggers when a pull_request is created
+# Triggers when a pull_request or a push action is configured on master branch
 on:
   pull_request_target:
     branches:
@@ -25,6 +24,7 @@ jobs:
         run: echo "INIT_MSG_TS=${{ fromJson(steps.initial-message.outputs.slack-result).response.message.ts }}" >> $GITHUB_OUTPUT
     outputs:
       init_message_ts: ${{steps.save-output.outputs.INIT_MSG_TS}}
+
   setup_and_scan:
     needs: start_workflow
     strategy:
@@ -59,15 +59,14 @@ jobs:
           ref: main 
       
       - name: Run the script for ${{github.head_ref}} and ${{github.base_ref}}
-        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -rbb ${{github.base_ref}} -rbh ${{github.head_ref}} -brr ${{ github.event.pull_request.base.repo.html_url }} -hrr ${{ github.event.pull_request.head.repo.html_url }} -guf -urc
+        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{github.base_ref}} -rbh ${{github.head_ref}} -brr ${{ github.event.pull_request.base.repo.html_url }} -hrr ${{ github.event.pull_request.head.repo.html_url }} -guf -urc
 
       - name: Run aws-export
-        run: cd ./temp/standalone-monitoring-stability/ && python3 aws-export.py ${{github.event.number}}
+        run: cd ./temp/standalone-monitoring-stability/ && python3 aws-export.py ${{matrix.language}}-${{github.event.number}}
 
       - name: Move results to a folder
-        run: cd ./temp/standalone-monitoring-stability/ && mkdir results && mv output-${{github.event.number}}.xlsx ./results/output-${{github.event.number}}.xlsx && mv ./temp/result-${{github.event.number}}.zip ./results/result-${{github.event.number}}.zip && mv slack_summary.txt ./results/slack_summary.txt
-      
-      # Send result to slack
+        run: cd ./temp/standalone-monitoring-stability/ && mkdir results && mv output-${{matrix.language}}-${{github.event.number}}.xlsx ./results/output-${{matrix.language}}-${{github.event.number}}.xlsx && mv ./temp/result-${{matrix.language}}-${{github.event.number}}.zip ./results/result-${{matrix.language}}-${{github.event.number}}.zip && mv slack_summary.txt ./results/slack_summary.txt
+
       - name: Zip the results
         run: zip result-${{matrix.language}}-${{github.event.number}}.zip -r /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results
 
@@ -89,15 +88,12 @@ jobs:
 
       - name: Export workflow output
         run: cd ./temp/standalone-monitoring-stability && python3 ./workflow_check.py /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt
-
+    
       - name: Set summary variable
         run: |
           echo "MESSAGE<<EOF" >> $GITHUB_ENV
           echo "$(cat ./temp/standalone-monitoring-stability/action_result.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV 
-
-      - name: Print action result
-        run: cat ./temp/standalone-monitoring-stability/action_result.txt
 
       - name: Upload summary file
         uses: actions/upload-artifact@master
@@ -130,13 +126,14 @@ jobs:
           path: ./temp/standalone-monitoring-stability
           ref: main
 
-      - name: Collate summary
-        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./collate_summary.py -s ./language_summary
 
+      - name: Collate summary
+        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./collate_summary.py -s /home/runner/work/privado/privado/language_summary
+    
       - name: Set summary variable
         run: |
           echo "MESSAGE<<EOF" >> $GITHUB_ENV
-          echo "$(cat ./temp/standalone-monitoring-stability/global_summary.txt)" >> $GITHUB_ENV
+          echo "$(cat /home/runner/work/privado/privado/temp/standalone-monitoring-stability/global_summary.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
       - name: Send summary to slack
