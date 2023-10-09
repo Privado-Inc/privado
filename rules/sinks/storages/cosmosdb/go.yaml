@@ -1,0 +1,19 @@
+sinks:
+
+  - id: Storages.AzureCosmosDb.Read
+    name: Azure Cosmos DB(Read)
+    domains:
+      - azure.microsoft.com
+      - microsoft.com
+    patterns:
+      - "(?i)(github.com/Azure/azure-sdk-for-go/sdk/data/cosmos).*(ReadItem|QueryItems)"
+    tags:
+
+  - id: Storages.AzureCosmosDb.Write
+    name: Azure Cosmos DB(Write)
+    domains:
+      - azure.microsoft.com
+      - microsoft.com
+    patterns:
+      - "(?i)(github.com/Azure/azure-sdk-for-go/sdk/data/cosmos).*(UpsertItem|DeleteItem)"
+    tags:

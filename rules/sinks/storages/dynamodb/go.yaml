@@ -1,0 +1,19 @@
+sinks:
+
+  - id: Storages.AmazonDynamoDB.Write
+    name: Amazon Dynamo DB(Write)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/dynamodb).*(PutItem|UpdateItem|DeleteItem)"
+    tags:
+
+  - id: Storages.AmazonDynamoDB.Read
+    name: Amazon Dynamo DB(Read)
+    domains:
+      - aws.amazon.com
+      - amazon.com
+    patterns:
+      - "(?i)(github.com/aws/aws-sdk-go/service/dynamodb).*(GetItem)"
+    tags:
