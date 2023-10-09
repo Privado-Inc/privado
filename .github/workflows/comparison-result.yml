@@ -58,7 +58,7 @@ jobs:
 
       # langauge specific repository file
       - name: Run the script for ${{github.head_ref}} and ${{github.base_ref}}
-        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -b ${{github.base_ref}} -h ${{github.head_ref}} -bcr ${{ github.event.pull_request.base.repo.html_url }} -hcr ${{ github.event.pull_request.head.repo.html_url }} -guf
+        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -rbb ${{github.base_ref}} -rbh ${{github.head_ref}} -brr ${{ github.event.pull_request.base.repo.html_url }} -hrr ${{ github.event.pull_request.head.repo.html_url }} -guf -urc
 
       - name: Run aws-export
         run: cd ./temp/standalone-monitoring-stability/ && python3 aws-export.py ${{matrix.language}}-${{github.event.number}}
@@ -146,3 +146,4 @@ jobs:
           slack-message: "\nComparison Results generated on ${{github.event.repository.name}} by PR ${{github.event.number}} from branch ${{github.head_ref}} to ${{github.base_ref}} \nPR link https://github.com/Privado-Inc/privado-core/pull/${{github.event.number}}\nLanguage: All \nSummary Report:\n ${{ env.MESSAGE }}"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+
