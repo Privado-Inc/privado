@@ -2,9 +2,4 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - "(.*_test(s)?.*)|/Test[A-Z]|Test[.]"
-
-  - id: Exclusions.Empty
-    name: Exclude file which cannot be read
-    patterns:
-      - "<empty>|<unknownFullName>"
+      - '.*_test\(s\)?.*'
