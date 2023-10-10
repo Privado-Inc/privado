@@ -68,7 +68,7 @@ jobs:
         run: cd ./temp/standalone-monitoring-stability/ && mkdir results && mv output-${{matrix.language}}-${{github.event.number}}.xlsx ./results/output-${{matrix.language}}-${{github.event.number}}.xlsx && mv ./temp/result-${{matrix.language}}-${{github.event.number}}.zip ./results/result-${{matrix.language}}-${{github.event.number}}.zip && mv slack_summary.txt ./results/slack_summary.txt
 
       - name: Zip the results
-        run: zip result-${{matrix.language}}-${{github.event.number}}.zip -r /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results
+        run: cd /home/runner/work/privado/privado/temp/standalone-monitoring-stability && zip result-${{matrix.language}}-${{github.event.number}}.zip -r ./results
 
       - name: Set summary variable
         run: |
@@ -82,7 +82,7 @@ jobs:
           thread_ts: ${{needs.start_workflow.outputs.init_message_ts}}
           slack_token: ${{ secrets.SLACK_TOKEN }}
           channel_id: ${{ secrets.SLACK_CHANNEL_ID }}
-          file_path: "/home/runner/work/privado/privado/result-${{matrix.language}}-${{github.event.number}}.zip"
+          file_path: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{github.event.number}}.zip"
           initial_comment: "Comparison Results generated on ${{github.event.repository.name}} by PR ${{github.event.number}} from branch ${{github.head_ref}} to ${{github.base_ref}} \nPR link https://github.com/Privado-Inc/privado/pull/${{github.event.number}}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}"
           file_type: "zip"
 
