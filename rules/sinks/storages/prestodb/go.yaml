@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Zamaon.Aws
-    name: Zamaon Aws
+  - id: Storages.Prestodb.ReadAndWrite
+    name: Prestodb(ReadAndWrite)
     domains:
-      - "aws.zamaon.com"
+      - "prestodb.io"
     patterns:
-      - "(?i)(troposphere).*"
+      - "(?i)(github.com/prestodb/presto-go-client/presto).*(Query)"
     tags:

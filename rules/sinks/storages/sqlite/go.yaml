@@ -1,0 +1,20 @@
+
+# Sink Rules for storage database Android SQLite - https://developer.android.com/
+
+sinks:
+
+  - id: Storages.Android.SQLite.Read
+    name: SQLite(Read)
+    domains:
+      - android.com
+    patterns: 
+      - "(?i)(github.com/mattn/go-sqlite).*(Query|QueryRow)"
+    tags:
+
+  - id: Storages.Android.SQLite.ReadAndWrite
+    name: SQLite(ReadAndWrite)
+    domains:
+      - android.com
+    patterns:
+      - "(?i)(github.com/mattn/go-sqlite).*(Exec|Prepare|Stmt)"
+    tags:
