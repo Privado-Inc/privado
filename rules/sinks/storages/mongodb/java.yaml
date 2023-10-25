@@ -42,7 +42,7 @@ sinks:
     domains:
       - mongodb.com
     patterns: 
-      - "(?i)(org.springframework.data.mongodb.core.ReactiveMongoTemplate)[.]((find|get|getByKey|getByKeys|getCount|createAggregation|createQuery|queryByExample|exists).*)"
+      - "(?i)(org.springframework.data.mongodb.core).*[.]((find|get|getByKey|getByKeys|getCount|createAggregation|createQuery|queryByExample|exists).*)"
     tags:
 
   - id: Storages.MongoDB.SpringRepository.Write
@@ -50,5 +50,5 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(?i)(org.springframework.data.mongodb.core.ReactiveMongoTemplate)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)).*)"
+      - "(?i)(org.springframework.data.mongodb.core).*[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)).*)"
     tags:
