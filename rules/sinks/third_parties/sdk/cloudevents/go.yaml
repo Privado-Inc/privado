@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Cloudevents
+    name: Cloudevents
+    domains:
+      - "cloudevents.io"
+    patterns:
+      - "(?i)(github.com/cloudevents/sdk-go).*"
+    tags:
