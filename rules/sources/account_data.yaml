@@ -33,7 +33,7 @@ sources:
     name: Account Password
     category: Account Data
     isSensitive: False
-    sensitivity: high
+    sensitivity: medium
     patterns:
       - "(?i)(.*(?<!(db|database|jira|sql|postgres|mongo|aws)[^\\s/(;)#|,=!>]{0,3})(pwd|psw|pswd|password|passwrd))"
     tags:
