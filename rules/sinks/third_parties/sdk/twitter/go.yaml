@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Twitter
+    name: Twitter
     domains:
-      - "cloudevents.io"
+      - "twitter.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](contextgg)[\\/](go-sdk\\/autha\\/providers\\/twitter).*"
     tags:

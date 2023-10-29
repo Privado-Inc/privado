@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Hashicorp.vault
+    name: Hashicorp Vault
+    domains:
+      - "vaultproject.io"
+    patterns:
+      - "(?i)(github.com)[\\/](hashicorp)[\\/](vault-plugin-auth-kerberos|vault-plugin-auth-kubernetes|vault-plugin-auth-oci|vault-plugin-secrets-ad|vault-plugin-secrets-kv|vault-plugin-secrets-openldap|vault-plugin-secrets-terraform).*"
+    tags:

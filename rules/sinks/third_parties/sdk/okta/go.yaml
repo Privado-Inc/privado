@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Okta
+    name: Okta
     domains:
-      - "cloudevents.io"
+      - "okta.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](chrismalek)[\\/](oktasdk-go).*"
     tags:

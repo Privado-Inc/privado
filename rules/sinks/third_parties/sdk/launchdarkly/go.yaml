@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Launchdarkly
+    name: Launchdarkly
     domains:
-      - "cloudevents.io"
+      - "launchdarkly.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](launchdarkly)[\\/](eventsource).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Delinea
+    name: Delinea
     domains:
-      - "cloudevents.io"
+      - "delinea.com/centrify"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](centrify)[\\/](cloud-golang-sdk).*"
     tags:

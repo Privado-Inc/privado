@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Hashicorp
-    name: Hashicorp
+  - id: ThirdParties.SDK.Hashicorp.consul
+    name: Hashicorp Consul
     domains:
-      - "hashicorp.io"
+      - "consul.io"
     patterns:
-      - "(?i)(https://github.com/hashicorp/consul).*"
+      - "(?i)(github.com)[\\/](hashicorp)[\\/](consul|terraform-plugin-sdk).*"
     tags:

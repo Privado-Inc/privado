@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Braintreepayments
+    name: Braintreepayments
     domains:
-      - "cloudevents.io"
+      - "braintreepayments.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](BoltApp)[\\/](braintree-go).*"
     tags:

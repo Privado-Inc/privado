@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Tencent
+    name: Tencent
     domains:
-      - "cloudevents.io"
+      - "tencent.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](tencentcloud)[\\/](tencentcloud-sdk-go).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Wechat
+    name: Wechat
     domains:
-      - "cloudevents.io"
+      - "wechat.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](chanxuehong|chanxuehong|XieXianbin|esap)[\\/](wechat).*"
     tags:

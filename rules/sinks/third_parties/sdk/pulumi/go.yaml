@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cloudevents
-    name: Cloudevents
+  - id: ThirdParties.SDK.Pulumi
+    name: Pulumi
     domains:
-      - "cloudevents.io"
+      - "pulumi.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)[\\/](pulumi)[\\/](pulumi\\/sdk).*"
     tags:
+
