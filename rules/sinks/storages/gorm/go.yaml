@@ -5,7 +5,7 @@ sinks:
     domains:
       - gorm.io
     patterns:
-      - "(?i).*(github.com)[\\/](go-grom)[\\/](gorm).*(Find).*"
+      - "(?i).*(github.com)[\\/](go-grom|jinzhu)[\\/](gorm).*(Find).*"
     tags:
 
   - id: Storages.GormFramework.Write
@@ -13,5 +13,5 @@ sinks:
     domains:
       - gorm.io
     patterns:
-      - "(?i).*(github.com)[\\/](go-grom)[\\/](gorm).*(Create|Update|Delete|Save).*"
+      - "(?i).*(github.com)[\\/](go-grom|jinzhu)[\\/](gorm).*(Create|Update|Delete|Save).*"
     tags:
