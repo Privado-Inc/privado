@@ -9,5 +9,5 @@ sinks:
     domains:
       - "knadh.com"
     patterns:
-      - "(?i)(github.com/knadh/koanf).*"
+      - "(?i)(github.com)[\\/](knadh)[\\/](koanf).*"
     tags:
