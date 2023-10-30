@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.GormFramework.Read
+    name: Gorm (Read)
+    domains:
+      - gorm.io
+    patterns:
+      - "(?i).*(github.com)[\\/](go-grom)[\\/](gorm).*(Find).*"
+    tags:
+
+  - id: Storages.GormFramework.Write
+    name: Gorm (Write)
+    domains:
+      - gorm.io
+    patterns:
+      - "(?i).*(github.com)[\\/](go-grom)[\\/](gorm).*(Create|Update|Delete|Save).*"
+    tags:
