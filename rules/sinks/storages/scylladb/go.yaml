@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database ScyllaDB - https://www.scylladb.com/
+
+sinks:
+
+  - id: Storages.ScyllaDB.ReadAndWrite
+    name: ScyllaDB(ReadAndWrite)
+    domains:
+      - scylladb.com
+    patterns:
+      - "(?i)(goapp/internal/scylla).*(Query)"
+    tags: 

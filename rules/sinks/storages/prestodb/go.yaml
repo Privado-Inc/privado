@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Vertx
-    name: Vertx
+  - id: Storages.Prestodb.ReadAndWrite
+    name: Prestodb(ReadAndWrite)
     domains:
-      - "vertx.io"
+      - "prestodb.io"
     patterns:
-      - "(?i)(io[.]vertx).*"
+      - "(?i)(github.com/prestodb/presto-go-client/presto).*(Query)"
     tags:
