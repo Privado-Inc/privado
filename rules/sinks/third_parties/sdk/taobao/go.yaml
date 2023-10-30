@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Taobao
+    name: Taobao
     domains:
-      - "uber.com"
+      - "taobao.com"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com)[\\/](changkong|yaofangou|beJuvenile)[\\/](open_taobao|go-sdk-taobao).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Umeng
+    name: Umeng
     domains:
-      - "nats.io"
+      - "umeng.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](shfc|kkkbird|huangfuhui|uhhc)[\\/](umeng-openapi-sdk|umeng-push).*"
     tags:

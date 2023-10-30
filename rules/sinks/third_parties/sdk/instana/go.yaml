@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Instana
+    name: Instana
     domains:
-      - "nats.io"
+      - "instana.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](instana)[\\/](go-sensor).*"
     tags:

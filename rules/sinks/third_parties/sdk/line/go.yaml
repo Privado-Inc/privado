@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Line
+    name: Line
     domains:
-      - "nats.io"
+      - "line.me"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](gotokatsuya|chy168)[\\/](line-pay-sdk-go).*"
     tags:

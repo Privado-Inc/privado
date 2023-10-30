@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Paypal
+    name: Paypal
     domains:
-      - "nats.io"
+      - "paypal.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](logpacker)[\\/](PayPal-Go-SDK).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Shopify
+    name: Shopify
     domains:
-      - "nats.io"
+      - "shopify.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
     tags:

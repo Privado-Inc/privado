@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Consul
+    name: Consul
+    domains:
+      - "consul.io"
+    patterns:
+      - "(?i)(github.com|gopkg.in)[\\/](launchdarkly|yingyingtang-brex|hashicorp)[\\/](go-server-sdk.v4|go-server-sdk-consul|go-server-sdk\\/ldconsul|go-client.v4\\/ldconsul|go-client\\/ldconsul|packer-plugin-sdk\\/template|waypoint-plugin-sdk).*"
+    tags:

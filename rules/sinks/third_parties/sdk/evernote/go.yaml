@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Evernote
+    name: Evernote
+    domains:
+      - "evernote.com"
+    patterns:
+      - "(?i)(github.com)[\\/](TcM1911|dreampuf|quekshuy|aliabdullahcp|double1996|shinofara|tcm1911)[\\/](evernote-sdk-golang|evernote-golang-sdk).*"
+    tags:

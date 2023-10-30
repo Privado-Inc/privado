@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Callr
+    name: Callr
     domains:
-      - "nats.io"
+      - "callr.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](THECALLR)[\\/](sdk-go).*"
     tags:

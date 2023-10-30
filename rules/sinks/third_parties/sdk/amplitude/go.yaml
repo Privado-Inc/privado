@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Amplitude
+    name: Amplitude
     domains:
-      - "uber.com"
+      - "amplitude.com"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com)[\\/](renatoaf|gotokatsuya)[\\/](amplitude-go|amplitude-sdk-go).*"
     tags:

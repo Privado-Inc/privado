@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Yandex
+    name: Yandex
     domains:
-      - "nats.io"
+      - "yandex.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](yandex-cloud)[\\/](go-sdk|ydb-go-sdk).*"
     tags:

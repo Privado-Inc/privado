@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Onesignal
+    name: Onesignal
     domains:
-      - "uber.com"
+      - "onesignal.com"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com)[\\/](peelz|KodepandaID)[\\/](onesignal-go-sdk|go-onesignal-sdk).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Virgilsecurity
+    name: Virgilsecurity
     domains:
-      - "uber.com"
+      - "virgilsecurity.com"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com|gopkg.in)[\\/](VirgilSecurity|tochka)[\\/](virgil-sdk-go).*"
     tags:

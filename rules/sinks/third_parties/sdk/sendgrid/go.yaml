@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Sendgrid
+    name: Sendgrid
     domains:
-      - "nats.io"
+      - "sendgrid.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(gopkg.in|github.com)[\\/](sendgrid)[\\/](sendgrid-go|smtpapi-go).*"
     tags:

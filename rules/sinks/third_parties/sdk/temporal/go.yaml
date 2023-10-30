@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Temporal
+    name: Temporal
     domains:
-      - "uber.com"
+      - "temporal.io"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com)[\\/](spiral|cretz)[\\/](go-sdk\\/temporal|temporal-sdk-go-advanced).*"
     tags:

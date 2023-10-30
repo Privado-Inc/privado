@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Yunpian
+    name: Yunpian
     domains:
-      - "uber.com"
+      - "yunpian.com"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com)[\\/](yunpian|FeiniuBus|fixJ|venuses|feiniubus)[\\/](yunpian-go-sdk).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Nats
-    name: Nats
+  - id: ThirdParties.SDK.Squareup
+    name: Squareup
     domains:
-      - "nats.io"
+      - "squareup.com"
     patterns:
-      - "(?i)(github.com)[\\/](nats-io)[\\/](nats.go).*"
+      - "(?i)(github.com)[\\/](square)[\\/](square-connect-go-sdk).*"
     tags:

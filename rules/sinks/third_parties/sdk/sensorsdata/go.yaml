@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Uber
-    name: Uber
+  - id: ThirdParties.SDK.Sensorsdata
+    name: Sensorsdata
     domains:
-      - "uber.com"
+      - "sensorsdata.cn"
     patterns:
-      - "(?i)(github.com|go.uber.org)[\\/](uber-go\\/tally|goleak).*"
+      - "(?i)(github.com)[\\/](sensorsdata)[\\/](sa-sdk-go\\/structs|abtesting-sdk-go).*"
     tags:

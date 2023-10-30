@@ -9,5 +9,5 @@ sinks:
     domains:
       - "auth0.com"
     patterns:
-      - "(?i)(github.com)[\\/](auth0-community)[\\/](go-auth0).*"
+      - "(?i)(github.com)[\\/](auth0-community|pulumi|auth0-lab)[\\/](go-auth0|pulumi-auth0\\/sdk\\/v2\\/go\\/auth0|fga-go-sdk).*"
     tags:

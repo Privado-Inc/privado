@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Xiaomi
+    name: Xiaomi
+    domains:
+      - "xiaomi.com"
+    patterns:
+      - "(?i)(github.com)[\\/](XiaoMi|cristiane|rxwen|curltech|ling-bin)[\\/](galaxy-sdk-go|go-push-sdk|xiaomi-go-sdk-push|galaxy-fds-sdk-golang).*"
+    tags:
