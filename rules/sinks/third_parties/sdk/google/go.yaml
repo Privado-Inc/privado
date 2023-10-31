@@ -17,7 +17,7 @@ sinks:
     domains:
       - "github.google.com"
     patterns:
-      - "(?i)(github.com\\/google\\/go-github).*"
+      - "(?i)(github.com)(/)(google)(/)(go-github).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Map
@@ -25,7 +25,7 @@ sinks:
     domains:
       - "map.google.com"
     patterns:
-      - "(?i)(googlemaps.github.io\\/maps).*"
+      - "(?i)(googlemaps.github.io/maps).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Firebase
@@ -41,7 +41,7 @@ sinks:
     domains:
       - "cloud.google.com/endpoints/docs/grpc"
     patterns:
-      - "(?i)(github.com)(/)(GoogleCloudPlatform)(/)(golang-samples\\/run\\/grpc-ping).*"
+      - "(?i)(github.com)(/)(GoogleCloudPlatform)(/)(golang-samples/run/grpc-ping).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Firestore

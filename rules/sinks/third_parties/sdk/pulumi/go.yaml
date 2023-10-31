@@ -9,6 +9,6 @@ sinks:
     domains:
       - "pulumi.com"
     patterns:
-      - "(?i)(github.com)(/)(pulumi)(/)(pulumi\\/sdk).*"
+      - "(?i)(github.com)(/)(pulumi)(/)(pulumi/sdk).*"
     tags:
 

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vmware.com"
     patterns:
-      - "(?i)(github.com)(/)(vmware|clumio-code|laidbackware)(/)(vsphere-automation-sdk-go|alb-sdk|photon-controller-go-sdk|vra-sdk-go\\/pkg\\/client|clumio-go-sdk\\/controllers|vmware-download-sdk).*"
+      - "(?i)(github.com)(/)(vmware|clumio-code|laidbackware)(/)(vsphere-automation-sdk-go|alb-sdk|photon-controller-go-sdk|vra-sdk-go/pkg/client|clumio-go-sdk/controllers|vmware-download-sdk).*"
     tags:

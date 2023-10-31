@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sentry.io"
     patterns:
-      - "(?i)(github.com)(/)(getsentry|harmony-development|blend)(/)(sentry-go|go-sdk\\/sentry).*"
+      - "(?i)(github.com)(/)(getsentry|harmony-development|blend)(/)(sentry-go|go-sdk/sentry).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "sensorsdata.cn"
     patterns:
-      - "(?i)(github.com)(/)(sensorsdata)(/)(sa-sdk-go\\/structs|abtesting-sdk-go).*"
+      - "(?i)(github.com)(/)(sensorsdata)(/)(sa-sdk-go/structs|abtesting-sdk-go).*"
     tags:

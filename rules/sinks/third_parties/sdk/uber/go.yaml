@@ -9,5 +9,5 @@ sinks:
     domains:
       - "uber.com"
     patterns:
-      - "(?i)(github.com|go.uber.org)(/)(uber-go\\/tally|goleak).*"
+      - "(?i)(github.com|go.uber.org)(/)(uber-go/tally|goleak).*"
     tags:
