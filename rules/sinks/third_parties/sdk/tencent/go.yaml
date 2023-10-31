@@ -9,7 +9,7 @@ sinks:
     domains:
       - "tencent.com"
     patterns:
-      - "(?i)(github.com)[\\/](tencentcloud)[\\/](tencentcloud-sdk-go).*"
+      - "(?i)(github.com)(/)(tencentcloud)(/)(tencentcloud-sdk-go).*"
     tags:
 
   - id: ThirdParties.SDK.Tencent.Cloud
@@ -17,5 +17,5 @@ sinks:
     domains:
       - "intl.cloud.tencent.com"
     patterns:
-      - "(?i)(github.com)[\\/](tencentyun|tencentad|dreamCodeMan|bulletRush|lily-lee|SiCo-Ops|MangoMilk|dreamcodeman|teamlint|cosmos|mozillazg|lewzylu|huanght1997|likexian|yiGmMk|liuyongqing|Garyluoluoluo)[\\/](qcloud-cos-sts-sdk\\/go|qcloud-sdk|qcloud-cos-go-sdk|cloud-go-sdk\\/qcloud|go-sdk\\/qcloud|qcloud-sms|cosmos-sdk|cos-go-sdk-v5|go-cos|marketing-api-go-sdk).*"
+      - "(?i)(github.com)(/)(tencentyun|tencentad|dreamCodeMan|bulletRush|lily-lee|SiCo-Ops|MangoMilk|dreamcodeman|teamlint|cosmos|mozillazg|lewzylu|huanght1997|likexian|yiGmMk|liuyongqing|Garyluoluoluo)(/)(qcloud-cos-sts-sdk\\/go|qcloud-sdk|qcloud-cos-go-sdk|cloud-go-sdk\\/qcloud|go-sdk\\/qcloud|qcloud-sms|cosmos-sdk|cos-go-sdk-v5|go-cos|marketing-api-go-sdk).*"
     tags:

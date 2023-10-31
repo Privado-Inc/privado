@@ -9,5 +9,5 @@ sinks:
     domains:
       - "launchdarkly.com"
     patterns:
-      - "(?i)(github.com)[\\/](launchdarkly)[\\/](eventsource|go-sdk-common|go-server-sdk|go-server-sdk-evaluation|go-server-sdk-redis-redigo).*"
+      - "(?i)(github.com)(/)(launchdarkly)(/)(eventsource|go-sdk-common|go-server-sdk|go-server-sdk-evaluation|go-server-sdk-redis-redigo).*"
     tags:

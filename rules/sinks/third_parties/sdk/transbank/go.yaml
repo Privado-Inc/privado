@@ -9,5 +9,5 @@ sinks:
     domains:
       - "transbank.mn"
     patterns:
-      - "(?i)(github.com)[\\/](v1nland|microapis)[\\/](transbank-sdk-golang).*"
+      - "(?i)(github.com)(/)(v1nland|microapis)(/)(transbank-sdk-golang).*"
     tags:

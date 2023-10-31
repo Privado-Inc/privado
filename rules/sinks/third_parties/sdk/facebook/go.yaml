@@ -9,5 +9,5 @@ sinks:
     domains:
       - "facebook.com"
     patterns:
-      - "(?i)(github.com)[\\/](madebyais|muhfaris|bnjjj)[\\/](facebook-go-sdk|gomessenger).*"
+      - "(?i)(github.com)(/)(madebyais|muhfaris|bnjjj)(/)(facebook-go-sdk|gomessenger).*"
     tags:

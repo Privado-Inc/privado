@@ -9,5 +9,5 @@ sinks:
     domains:
       - "wechat.com"
     patterns:
-      - "(?i)(github.com)[\\/](chanxuehong|chanxuehong|XieXianbin|esap|rixingyike|zhi-miao)[\\/](wechat|wechat-sdk\\/pay).*"
+      - "(?i)(github.com)(/)(chanxuehong|chanxuehong|XieXianbin|esap|rixingyike|zhi-miao)(/)(wechat|wechat-sdk\\/pay).*"
     tags:

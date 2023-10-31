@@ -9,7 +9,7 @@ sinks:
     domains:
       - "cloud.google.com"
     patterns:
-      - "(?i)(github.com|cloud.google.com)[\\/](GoogleCloudPlatform|googleapis|fsouza|gogo|go|graymeta)[\\/](k8s-cloud-provider|enterprise-certificate-proxy|fake-gcs-server|googleapis|cloudtasks|language|automl|video|securitycenter|videointelligence|dataproc|monitoring|secretmanager|storagetransfer|texttospeech|gaming|opentelemetry-operations-go|asset|functions-framework-go|servicedirectory|speech|container|kms|dlp|grafeas|functions|/pubsublite|compute|talent|stow).*"
+      - "(?i)(github.com|cloud.google.com)(/)(GoogleCloudPlatform|googleapis|fsouza|gogo|go|graymeta)(/)(k8s-cloud-provider|enterprise-certificate-proxy|fake-gcs-server|googleapis|cloudtasks|language|automl|video|securitycenter|videointelligence|dataproc|monitoring|secretmanager|storagetransfer|texttospeech|gaming|opentelemetry-operations-go|asset|functions-framework-go|servicedirectory|speech|container|kms|dlp|grafeas|functions|/pubsublite|compute|talent|stow).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Github
@@ -33,7 +33,7 @@ sinks:
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(github.com)[\\/](firebase.google.com|acoshift)[\\/](go).*"
+      - "(?i)(github.com)(/)(firebase.google.com|acoshift)(/)(go).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.GRPC
@@ -41,7 +41,7 @@ sinks:
     domains:
       - "cloud.google.com/endpoints/docs/grpc"
     patterns:
-      - "(?i)(github.com)[\\/](GoogleCloudPlatform)[\\/](golang-samples\\/run\\/grpc-ping).*"
+      - "(?i)(github.com)(/)(GoogleCloudPlatform)(/)(golang-samples\\/run\\/grpc-ping).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Cloud.Firestore
@@ -49,6 +49,6 @@ sinks:
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(github.com)[\\/](GoogleCloudPlatform)[\\/](firestore-gorilla-sessions).*"
+      - "(?i)(github.com)(/)(GoogleCloudPlatform)(/)(firestore-gorilla-sessions).*"
     tags:
 

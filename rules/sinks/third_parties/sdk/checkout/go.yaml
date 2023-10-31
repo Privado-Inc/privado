@@ -9,5 +9,5 @@ sinks:
     domains:
       - "checkout.com"
     patterns:
-      - "(?i)(github.com)[\\/](checkout)[\\/](checkout-sdk-go\\/payments).*"
+      - "(?i)(github.com)(/)(checkout)(/)(checkout-sdk-go\\/payments).*"
     tags:

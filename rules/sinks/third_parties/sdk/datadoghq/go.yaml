@@ -9,5 +9,5 @@ sinks:
     domains:
       - "datadoghq.com"
     patterns:
-      - "(?i)(github.com)[\\/](DataDog)[\\/](opencensus-go-exporter-datadog).*"
+      - "(?i)(github.com)(/)(DataDog)(/)(opencensus-go-exporter-datadog).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "min.io"
     patterns:
-      - "(?i)(github.com)[\\/](minio)[\\/](mc).*"
+      - "(?i)(github.com)(/)(minio)(/)(mc).*"
     tags:

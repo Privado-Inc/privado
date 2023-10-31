@@ -9,5 +9,5 @@ sinks:
     domains:
       - "bing.com"
     patterns:
-      - "(?i)(github.com)[\\/](kritzware|chigley|godofdream)[\\/](bing-ads-go-sdk).*"
+      - "(?i)(github.com)(/)(kritzware|chigley|godofdream)(/)(bing-ads-go-sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "taobao.com"
     patterns:
-      - "(?i)(github.com)[\\/](changkong|yaofangou|beJuvenile)[\\/](open_taobao|go-sdk-taobao).*"
+      - "(?i)(github.com)(/)(changkong|yaofangou|beJuvenile)(/)(open_taobao|go-sdk-taobao).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "paypal.com"
     patterns:
-      - "(?i)(github.com)[\\/](logpacker)[\\/](PayPal-Go-SDK).*"
+      - "(?i)(github.com)(/)(logpacker)(/)(PayPal-Go-SDK).*"
     tags:

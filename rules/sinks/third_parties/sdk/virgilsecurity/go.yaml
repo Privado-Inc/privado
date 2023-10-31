@@ -9,5 +9,5 @@ sinks:
     domains:
       - "virgilsecurity.com"
     patterns:
-      - "(?i)(github.com|gopkg.in)[\\/](VirgilSecurity|tochka)[\\/](virgil-sdk-go).*"
+      - "(?i)(github.com|gopkg.in)(/)(VirgilSecurity|tochka)(/)(virgil-sdk-go).*"
     tags:

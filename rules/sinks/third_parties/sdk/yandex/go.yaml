@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yandex.com"
     patterns:
-      - "(?i)(github.com)[\\/](yandex-cloud)[\\/](go-sdk|ydb-go-sdk).*"
+      - "(?i)(github.com)(/)(yandex-cloud)(/)(go-sdk|ydb-go-sdk).*"
     tags:

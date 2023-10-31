@@ -9,5 +9,5 @@ sinks:
     domains:
       - "umeng.com"
     patterns:
-      - "(?i)(github.com)[\\/](shfc|kkkbird|huangfuhui|uhhc)[\\/](umeng-openapi-sdk|umeng-push).*"
+      - "(?i)(github.com)(/)(shfc|kkkbird|huangfuhui|uhhc)(/)(umeng-openapi-sdk|umeng-push).*"
     tags:

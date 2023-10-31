@@ -9,5 +9,5 @@ sinks:
     domains:
       - "cloudevents.io"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)(/)(cloudevents)(/)(sdk-go).*"
     tags:

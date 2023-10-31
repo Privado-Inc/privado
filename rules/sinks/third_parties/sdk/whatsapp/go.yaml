@@ -9,5 +9,5 @@ sinks:
     domains:
       - "whatsapp.com"
     patterns:
-      - "(?i)(github.com)[\\/](Rhymen)[\\/](go-whatsapp).*"
+      - "(?i)(github.com)(/)(Rhymen)(/)(go-whatsapp).*"
     tags:

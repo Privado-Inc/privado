@@ -9,5 +9,5 @@ sinks:
     domains:
       - "shopify.com"
     patterns:
-      - "(?i)(github.com)[\\/](cloudevents)[\\/](sdk-go).*"
+      - "(?i)(github.com)(/)(cloudevents)(/)(sdk-go).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "slack.com"
     patterns:
-      - "(?i)(github.com)[\\/](blend|totvs|gogurgaon|seratch|ericogr|lacework|totvs)[\\/](go-sdk\\/slack|pulumi-slack\\/sdk|joinslack\\/api|go-slack-sdk-experimental|pulumi-resource-slack\\/sdk\\/go|pulumi-slack\\/sdk\\/go|go-sdk\\/api|pulumi-slack-remover).*"
+      - "(?i)(github.com)(/)(blend|totvs|gogurgaon|seratch|ericogr|lacework|totvs)(/)(go-sdk\\/slack|pulumi-slack\\/sdk|joinslack\\/api|go-slack-sdk-experimental|pulumi-resource-slack\\/sdk\\/go|pulumi-slack\\/sdk\\/go|go-sdk\\/api|pulumi-slack-remover).*"
     tags:

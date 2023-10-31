@@ -9,5 +9,5 @@ sinks:
     domains:
       - "delinea.com/centrify"
     patterns:
-      - "(?i)(github.com)[\\/](centrify)[\\/](cloud-golang-sdk).*"
+      - "(?i)(github.com)(/)(centrify)(/)(cloud-golang-sdk).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "africastalking.com"
     patterns:
-      - "(?i)(github.com)[\\/](kingzbauer)[\\/](africastalking-go).*"
+      - "(?i)(github.com)(/)(kingzbauer)(/)(africastalking-go).*"
     tags:

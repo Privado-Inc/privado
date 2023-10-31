@@ -9,5 +9,5 @@ sinks:
     domains:
       - "liqpay.ua"
     patterns:
-      - "(?i)(github.com)[\\/](liqpay)[\\/](go-sdk).*"
+      - "(?i)(github.com)(/)(liqpay)(/)(go-sdk).*"
     tags:

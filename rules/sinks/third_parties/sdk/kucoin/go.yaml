@@ -9,5 +9,5 @@ sinks:
     domains:
       - "kucoin.com"
     patterns:
-      - "(?i)(github.com)[\\/](Kucoin|aharenaz|newgoo|reid-garner|orrelln|blackbittech)[\\/](kucoin-go-sdk|kumex-go-sdk|kucoin-futures-go-sdk).*"
+      - "(?i)(github.com)(/)(Kucoin|aharenaz|newgoo|reid-garner|orrelln|blackbittech)(/)(kucoin-go-sdk|kumex-go-sdk|kucoin-futures-go-sdk).*"
     tags:

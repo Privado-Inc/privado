@@ -9,5 +9,5 @@ sinks:
     domains:
       - "stripe.com"
     patterns:
-      - "(?i)(github.com)[\\/](stripe)[\\/](stripe-go).*"
+      - "(?i)(github.com)(/)(stripe)(/)(stripe-go).*"
     tags:

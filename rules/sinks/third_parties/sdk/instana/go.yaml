@@ -9,5 +9,5 @@ sinks:
     domains:
       - "instana.com"
     patterns:
-      - "(?i)(github.com)[\\/](instana)[\\/](go-sensor).*"
+      - "(?i)(github.com)(/)(instana)(/)(go-sensor).*"
     tags:

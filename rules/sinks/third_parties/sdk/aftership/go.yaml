@@ -9,5 +9,5 @@ sinks:
     domains:
       - "aftership.com"
     patterns:
-      - "(?i)(github.com)[\\/](jackharley7|aftership)[\\/](aftership-sdk-go|).*"
+      - "(?i)(github.com)(/)(jackharley7|aftership)(/)(aftership-sdk-go).*"
     tags:

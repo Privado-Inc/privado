@@ -9,5 +9,5 @@ sinks:
     domains:
       - "amplitude.com"
     patterns:
-      - "(?i)(github.com)[\\/](renatoaf|gotokatsuya)[\\/](amplitude-go|amplitude-sdk-go).*"
+      - "(?i)(github.com)(/)(renatoaf|gotokatsuya)(/)(amplitude-go|amplitude-sdk-go).*"
     tags:

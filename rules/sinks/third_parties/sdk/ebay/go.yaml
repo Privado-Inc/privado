@@ -8,5 +8,5 @@ sinks:
     domains:
       - "ebay.com"
     patterns:
-      - "(?i)(github.com)[\\/](feelinc)[\\/](go_ebay_sdk).*"
+      - "(?i)(github.com)(/)(feelinc)(/)(go_ebay_sdk).*"
     tags:

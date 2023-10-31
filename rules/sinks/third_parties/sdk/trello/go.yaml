@@ -9,5 +9,5 @@ sinks:
     domains:
       - "trello.com"
     patterns:
-      - "(?i)(github.com)[\\/](adlio)[\\/](trello).*"
+      - "(?i)(github.com)(/)(adlio)(/)(trello).*"
     tags:

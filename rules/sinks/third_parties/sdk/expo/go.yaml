@@ -9,5 +9,5 @@ sinks:
     domains:
       - "docs.expo.dev"
     patterns:
-      - "(?i)(github.com)[\\/](adierkens|Terminux)[\\/](expo-server-sdk-go|exponent-server-sdk-go).*"
+      - "(?i)(github.com)(/)(adierkens|Terminux)(/)(expo-server-sdk-go|exponent-server-sdk-go).*"
     tags:

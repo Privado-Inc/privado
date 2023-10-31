@@ -9,5 +9,5 @@ sinks:
     domains:
       - "braintreepayments.com"
     patterns:
-      - "(?i)(github.com)[\\/](BoltApp)[\\/](braintree-go).*"
+      - "(?i)(github.com)(/)(BoltApp)(/)(braintree-go).*"
     tags:

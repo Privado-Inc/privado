@@ -9,5 +9,5 @@ sinks:
     domains:
       - "consul.io"
     patterns:
-      - "(?i)(github.com|gopkg.in)[\\/](launchdarkly|yingyingtang-brex|hashicorp)[\\/](go-server-sdk.v4|go-server-sdk-consul|go-server-sdk\\/ldconsul|go-client.v4\\/ldconsul|go-client\\/ldconsul|packer-plugin-sdk\\/template|waypoint-plugin-sdk).*"
+      - "(?i)(github.com|gopkg.in)(/)(launchdarkly|yingyingtang-brex|hashicorp)(/)(go-server-sdk.v4|go-server-sdk-consul|go-server-sdk\\/ldconsul|go-client.v4\\/ldconsul|go-client\\/ldconsul|packer-plugin-sdk\\/template|waypoint-plugin-sdk).*"
     tags:

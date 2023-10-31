@@ -9,5 +9,5 @@ sinks:
     domains:
       - "line.me"
     patterns:
-      - "(?i)(github.com)[\\/](gotokatsuya|chy168)[\\/](line-pay-sdk-go).*"
+      - "(?i)(github.com)(/)(gotokatsuya|chy168)(/)(line-pay-sdk-go).*"
     tags:

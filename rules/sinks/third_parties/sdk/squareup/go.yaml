@@ -9,5 +9,5 @@ sinks:
     domains:
       - "squareup.com"
     patterns:
-      - "(?i)(github.com)[\\/](square)[\\/](square-connect-go-sdk).*"
+      - "(?i)(github.com)(/)(square)(/)(square-connect-go-sdk).*"
     tags:

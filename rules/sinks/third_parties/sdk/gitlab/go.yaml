@@ -8,5 +8,5 @@ sinks:
     domains:
       - "gitlab.com"
     patterns:
-      - "(?i)(github.com)[\\/](xanzy)[\\/](go-gitlab).*"
+      - "(?i)(github.com)(/)(xanzy)(/)(go-gitlab).*"
     tags:

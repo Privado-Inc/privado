@@ -9,5 +9,5 @@ sinks:
     domains:
       - "onesignal.com"
     patterns:
-      - "(?i)(github.com)[\\/](peelz|KodepandaID)[\\/](onesignal-go-sdk|go-onesignal-sdk).*"
+      - "(?i)(github.com)(/)(peelz|KodepandaID)(/)(onesignal-go-sdk|go-onesignal-sdk).*"
     tags:

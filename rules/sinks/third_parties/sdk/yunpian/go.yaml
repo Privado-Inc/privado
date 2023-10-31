@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yunpian.com"
     patterns:
-      - "(?i)(github.com)[\\/](yunpian|FeiniuBus|fixJ|venuses|feiniubus)[\\/](yunpian-go-sdk).*"
+      - "(?i)(github.com)(/)(yunpian|FeiniuBus|fixJ|venuses|feiniubus)(/)(yunpian-go-sdk).*"
     tags:

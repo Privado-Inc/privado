@@ -9,5 +9,5 @@ sinks:
     domains:
       - "vaultproject.io"
     patterns:
-      - "(?i)(github.com)[\\/](hashicorp)[\\/](vault-plugin-auth-kerberos|vault-plugin-auth-kubernetes|vault-plugin-auth-oci|vault-plugin-secrets-ad|vault-plugin-secrets-kv|vault-plugin-secrets-openldap|vault-plugin-secrets-terraform).*"
+      - "(?i)(github.com)(/)(hashicorp)(/)(vault-plugin-auth-kerberos|vault-plugin-auth-kubernetes|vault-plugin-auth-oci|vault-plugin-secrets-ad|vault-plugin-secrets-kv|vault-plugin-secrets-openldap|vault-plugin-secrets-terraform).*"
     tags:

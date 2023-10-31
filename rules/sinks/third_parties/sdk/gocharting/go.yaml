@@ -9,5 +9,5 @@ sinks:
     domains:
       - "gocharting.com"
     patterns:
-      - "(?i)(github.com)[\\/](wcharczuk)[\\/](go-chart).*"
+      - "(?i)(github.com)(/)(wcharczuk)(/)(go-chart).*"
     tags:

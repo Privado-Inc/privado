@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adyen.com"
     patterns:
-      - "(?i)(github.com)[\\/](adyen)[\\/](adyen-go-api-library).*"
+      - "(?i)(github.com)(/)(adyen)(/)(adyen-go-api-library).*"
     tags:

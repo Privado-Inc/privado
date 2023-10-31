@@ -9,5 +9,5 @@ sinks:
     domains:
       - "dropbox.com"
     patterns:
-      - "(?i)(github.com)[\\/](dropbox|toanqng|henrikcozza|skynet-core|neevaco|herval|ncw|milanaleksic|gwatts|hushed|ga-con|intello-io)[\\/](dropbox-sdk-go-unofficial|dropbox-go-sdk).*"
+      - "(?i)(github.com)(/)(dropbox|toanqng|henrikcozza|skynet-core|neevaco|herval|ncw|milanaleksic|gwatts|hushed|ga-con|intello-io)(/)(dropbox-sdk-go-unofficial|dropbox-go-sdk).*"
     tags:

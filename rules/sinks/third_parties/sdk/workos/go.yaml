@@ -9,5 +9,5 @@ sinks:
     domains:
       - "workos.com"
     patterns:
-      - "(?i)(github.com)[\\/](workos)[\\/](workos-go).*"
+      - "(?i)(github.com)(/)(workos)(/)(workos-go).*"
     tags:

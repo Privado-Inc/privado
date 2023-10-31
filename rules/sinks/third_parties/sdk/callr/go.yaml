@@ -9,5 +9,5 @@ sinks:
     domains:
       - "callr.com"
     patterns:
-      - "(?i)(github.com)[\\/](THECALLR)[\\/](sdk-go).*"
+      - "(?i)(github.com)(/)(THECALLR)(/)(sdk-go).*"
     tags:

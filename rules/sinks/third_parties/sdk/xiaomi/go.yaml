@@ -9,5 +9,5 @@ sinks:
     domains:
       - "xiaomi.com"
     patterns:
-      - "(?i)(github.com)[\\/](XiaoMi|cristiane|rxwen|curltech|ling-bin)[\\/](galaxy-sdk-go|go-push-sdk|xiaomi-go-sdk-push|galaxy-fds-sdk-golang).*"
+      - "(?i)(github.com)(/)(XiaoMi|cristiane|rxwen|curltech|ling-bin)(/)(galaxy-sdk-go|go-push-sdk|xiaomi-go-sdk-push|galaxy-fds-sdk-golang).*"
     tags:

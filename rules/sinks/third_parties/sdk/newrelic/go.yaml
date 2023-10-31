@@ -9,5 +9,5 @@ sinks:
     domains:
       - "newrelic.com"
     patterns:
-      - "(?i)(github.com)[\\/](newrelic)[\\/](go-agent).*"
+      - "(?i)(github.com)(/)(newrelic)(/)(go-agent).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "evernote.com"
     patterns:
-      - "(?i)(github.com)[\\/](TcM1911|dreampuf|quekshuy|aliabdullahcp|double1996|shinofara|tcm1911)[\\/](evernote-sdk-golang|evernote-golang-sdk).*"
+      - "(?i)(github.com)(/)(TcM1911|dreampuf|quekshuy|aliabdullahcp|double1996|shinofara|tcm1911)(/)(evernote-sdk-golang|evernote-golang-sdk).*"
     tags:

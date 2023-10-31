@@ -9,5 +9,5 @@ sinks:
     domains:
       - "hubspot.com"
     patterns:
-      - "(?i)(github.com)[\\/](getwagz|Getwagz)[\\/](hubspot-sdk).*"
+      - "(?i)(github.com)(/)(getwagz|Getwagz)(/)(hubspot-sdk).*"
     tags:

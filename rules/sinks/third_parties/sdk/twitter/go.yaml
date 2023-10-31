@@ -9,5 +9,5 @@ sinks:
     domains:
       - "twitter.com"
     patterns:
-      - "(?i)(github.com)[\\/](contextgg)[\\/](go-sdk\\/autha\\/providers\\/twitter).*"
+      - "(?i)(github.com)(/)(contextgg)(/)(go-sdk\\/autha\\/providers\\/twitter).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mercadolibre.com"
     patterns:
-      - "(?i)(github.com)[\\/](tiaguinho|mercadolibre)[\\/](mercadolibre-go-sdk|golang-sdk).*"
+      - "(?i)(github.com)(/)(tiaguinho|mercadolibre)(/)(mercadolibre-go-sdk|golang-sdk).*"
     tags:

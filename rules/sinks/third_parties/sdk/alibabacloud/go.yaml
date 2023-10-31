@@ -9,5 +9,5 @@ sinks:
     domains:
       - "alibabacloud.com"
     patterns:
-      - "(?i)(github.com)[\\/](hashicorp|aliyun|nacos-group|alibabacloud-go|cxr29|aliyunmq|tencentyun|huaweicloud|RandolphCYG|likexian)[\\/](vault-plugin-auth-alicloud|vault-plugin-secrets-alicloud|alibaba-cloud-sdk-go\\/sdk\\/requests|nacos-sdk-go\\/clients|tea-oss-sdk\\/client|aliyun-oss-go-sdk|aliyun-log-go-sdk|aliyun-openapi-go-sdk|aliyun-datahub-sdk-go\\/datahub|fc-go-sdk|aliyun-mns-go-sdk|mq-http-go-sdk|vod-go-sdk|huaweicloud-sdk-go|hwc-sdk\\/services|tencentcloud-sdk-go).*"
+      - "(?i)(github.com)(/)(hashicorp|aliyun|nacos-group|alibabacloud-go|cxr29|aliyunmq|tencentyun|huaweicloud|RandolphCYG|likexian)(/)(vault-plugin-auth-alicloud|vault-plugin-secrets-alicloud|alibaba-cloud-sdk-go\\/sdk\\/requests|nacos-sdk-go\\/clients|tea-oss-sdk\\/client|aliyun-oss-go-sdk|aliyun-log-go-sdk|aliyun-openapi-go-sdk|aliyun-datahub-sdk-go\\/datahub|fc-go-sdk|aliyun-mns-go-sdk|mq-http-go-sdk|vod-go-sdk|huaweicloud-sdk-go|hwc-sdk\\/services|tencentcloud-sdk-go).*"
     tags:

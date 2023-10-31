@@ -9,5 +9,5 @@ sinks:
     domains:
       - "goharbor.io"
     patterns:
-      - "(?i)(github.com)[\\/](goharbor)[\\/](go-client).*"
+      - "(?i)(github.com)(/)(goharbor)(/)(go-client).*"
     tags:

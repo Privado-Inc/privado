@@ -9,5 +9,5 @@ sinks:
     domains:
       - "segment.com"
     patterns:
-      - "(?i)(github.com)[\\/](segmentio)[\\/](asm).*"
+      - "(?i)(github.com)(/)(segmentio)(/)(asm).*"
     tags:

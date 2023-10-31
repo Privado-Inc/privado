@@ -9,5 +9,5 @@ sinks:
     domains:
       - "github.com"
     patterns:
-      - "(?i)(github.com)[\\/](gogs)[\\/](git-module).*"
+      - "(?i)(github.com)(/)(gogs)(/)(git-module).*"
     tags:
