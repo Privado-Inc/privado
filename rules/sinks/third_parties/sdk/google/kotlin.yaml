@@ -4,7 +4,7 @@ sinks:
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(com[.]google[.]firebase).*"
-      - "(?i)(com[.]firebase).*"
-      - "(?i)(io[.]firebase).*"
+      - "(?i)(com[.]google[.]firebase)[.](?!(database)).*"
+      - "(?i)(com[.]firebase)[.](?!(database)).*"
+      - "(?i)(io[.]firebase)[.](?!(database)).*"
     tags:
