@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Dropbox
+    name: Dropbox
+    domains:
+      - "dropbox.com"
+    patterns:
+      - "(?i)(github.com)(/)(dropbox|toanqng|henrikcozza|skynet-core|neevaco|herval|ncw|milanaleksic|gwatts|hushed|ga-con|intello-io)(/)(dropbox-sdk-go-unofficial|dropbox-go-sdk).*"
+    tags:
