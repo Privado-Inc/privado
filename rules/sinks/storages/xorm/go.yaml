@@ -1,0 +1,25 @@
+sinks:
+
+  - id: Storages.XormFramework.Read
+    name: Xorm (Read)
+    domains:
+      - xorm.io
+    patterns:
+      - "(?i).*(github.com)(/)(go-xrom)(/)(xorm).*(Get|Find).*"
+    tags:
+
+  - id: Storages.XormFramework.Write
+    name: Xorm (Write)
+    domains:
+      - xorm.io
+    patterns:
+      - "(?i).*(github.com)(/)(go-xrom)(/)(xorm).*(Insert|Update|Delete).*"
+    tags:
+
+  - id: Storages.XormFramework.ReadAndWrite
+    name: Xorm
+    domains:
+      - xorm.io
+    patterns:
+      - "(?i).*(github.com)(/)(go-xrom)(/)(xorm).*(Exec).*"
+    tags:
