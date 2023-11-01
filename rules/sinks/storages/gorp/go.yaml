@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.GorpFramework.Read
+    name: Gorp (Read)
+    domains:
+      - pkg.go.dev/github.com/go-gorp/gorp
+    patterns:
+      - "(?i).*(github.com|gopkg.in)(/)(gorp|go-gorp/gorp).*(Select).*"
+    tags:
+
+  - id: Storages.GormFramework.Write
+    name: Gorm (Write)
+    domains:
+      - pkg.go.dev/github.com/go-gorp/gorp
+    patterns:
+      - "(?i).*(github.com|gopkg.in)(/)(gorp|go-gorp/gorp).*(Insert|Update|Delete).*"
+    tags:
