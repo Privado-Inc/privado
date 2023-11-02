@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Kucoin
+    name: Kucoin
+    domains:
+      - "kucoin.com"
+    patterns:
+      - "(?i)(github.com)(/)(Kucoin|aharenaz|newgoo|reid-garner|orrelln|blackbittech)(/)(kucoin-go-sdk|kumex-go-sdk|kucoin-futures-go-sdk).*"
+    tags:

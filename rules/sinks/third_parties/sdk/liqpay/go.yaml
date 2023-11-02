@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Cherrypy
-    name: Cherrypy
+  - id: ThirdParties.SDK.Liqpay
+    name: Liqpay
     domains:
-      - "cherrypy.org"
+      - "liqpay.ua"
     patterns:
-      - "(?i)(cherrypy).*"
+      - "(?i)(github.com)(/)(liqpay)(/)(go-sdk).*"
     tags:
