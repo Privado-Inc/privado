@@ -81,7 +81,7 @@ jobs:
         with:
           thread_ts: ${{needs.start_workflow.outputs.init_message_ts}}
           channel: ${{ secrets.SLACK_CHANNEL_ID }} # check
-          path: "/home/runner/work/privado-core/privado-core/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{github.event.number}}.zip"
+          path: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{github.event.number}}.zip"
           initial_comment: "Comparison Results generated on ${{github.event.repository.name}} by PR ${{github.event.number}} from branch ${{github.head_ref}} to ${{github.base_ref}} \nPR link https://github.com/Privado-Inc/privado/pull/${{github.event.number}}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}"
           filetype: "zip"
           token: ${{ secrets.SLACK_TOKEN }}
