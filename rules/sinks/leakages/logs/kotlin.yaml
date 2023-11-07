@@ -1,0 +1,31 @@
+sinks:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i)(?:io.github.microutils.kotlin-logging.Logger).*(?:wtf|error|severe|fatal|[.]e[:]).*"
+    tags:
+    
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i)(?:io.github.microutils.kotlin-logging.Logger).*(warn|warning|[.]w[:]).*"
+    tags:
+  
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i)(?:io.github.microutils.kotlin-logging.Logger).*(debug|trace|[.](log|d|v|t)[:]).*"
+    tags:
+  
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i)(?:io.github.microutils.kotlin-logging.Logger).*(info|[.]i[:]).*"
+    tags:
+  
+  - id: Leakages.Log.Console
+    name: Log Console
+    patterns: 
+      - "(?i)(kotlin.io).(?:print|println|write)[:].*"
+    tags:
