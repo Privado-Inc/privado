@@ -2,4 +2,4 @@ exclusions:
   - id: Exclusions.Template
     name: Exclude template file
     patterns:
-      - "(?i)(.*template.kt|.*template(s)?/.*)"
+      - "(?i)(.*template.kt|.*template(s)?\\/.*)"
