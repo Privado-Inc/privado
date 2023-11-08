@@ -1,0 +1,16 @@
+sinks:
+  - id: Storages.Realm.Read
+    name: Realm(Read)
+    domains:
+      - realm.io
+    patterns:
+      - (?i)(io.realm.Realm)[.].*(?:find|get|select|search|load)(.*)
+    tags:
+
+  - id: Storages.Realm.Write
+    name: Realm(Write)
+    domains:
+      - realm.io
+    patterns:
+      - (?i)(io.realm.Realm)[.].*(?:save|delete|insert|update)(.*)
+    tags:
