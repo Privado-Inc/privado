@@ -1,0 +1,21 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: Storages.PouchDb.Write
+    name: Pouch DB(Write)
+    domains:
+      - pouchdb.com
+    patterns:
+      - "(?i)(github.com/go-kivik/pouchdb).*(Put|BulkDocs)"
+    tags:
+
+  - id: Storages.PouchDb.Read
+    name: Pouch DB(Read)
+    domains:
+      - pouchdb.com
+    patterns:
+      - "(?i)(github.com/go-kivik/pouchdb).*(Get|BulkGet)"
+    tags:

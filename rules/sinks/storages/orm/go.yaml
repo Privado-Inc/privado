@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.ORM.GORM.Write
+    name: GORM (Write)
+    domains:
+      - gorm.io
+    patterns:
+      - "(?i)(gorm.io/gorm).*(Updates|Create|Save|SavePoint|Replace|CreateInBatches|Delete)"
+    tags:
+
+  - id: Storage.ORM.GORM.Read
+    name: GORM (Read)
+    domains:
+      - gorm.io
+    patterns:
+      - "(?i)(gorm.io/gorm).*(Find|FindInBatches|Where|Exec)"
+    tags:

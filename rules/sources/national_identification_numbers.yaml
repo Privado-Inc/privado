@@ -48,23 +48,3 @@ sources:
       - "(?i)(employer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|ein)"
     tags:
       law: GDPR
-
-  - id: Data.Sensitive.NationalIdentificationNumbers.PANNumber
-    name: PAN Number
-    category: National Identification Numbers
-    isSensitive: False
-    sensitivity: high
-    patterns:
-      - "(?i).*(pan([^\\s/(;)#|,=!>]{0,3}card){0,1}[^\\s/(;)#|,=!>]{0,3}(?:no|num|number)|permanant[^\\s/(;)#|,=!>]{0,3}account[^\\s/(;)#|,=!>]{0,3}number)"
-    tags:
-      law: GDPR
-
-  - id: Data.Sensitive.NationalIdentificationNumbers.AadharNumber
-    name: Aadhar Number
-    category: National Identification Numbers
-    isSensitive: False
-    sensitivity: high
-    patterns:
-      - "(?i).*(aadhaar[^\\s/(;)#|,=!>]*(?:no|num|number|id)|aadhaar[^\\s/(;)#|,=!>]*card[^\\s/(;)#|,=!>]*(?:no|num|number|id)|aadhaar[^\\s/(;)#|,=!>]*card)"
-    tags:
-      law: GDPR
