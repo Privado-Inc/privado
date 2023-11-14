@@ -5,6 +5,6 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)(.*(gps[^\\s/(;)#|,=!>]{0,3}(?:location|position|trace)|user[^\\s/(;)#|,=!>]{0,5}location|latitude|longitude|geo[^\\s/(;)#|,=!>]{0,5}coordinates)|(lat|lon|lng|latlng|latlon))"
+      - "(?i)(.*(gps[^\\s/(;)#|,=!>]{0,3}(?:location|position|trace)|user[^\\s/(;)#|,=!>]{0,5}location|latitude|longitude|geo[^\\s/(;)#|,=!>]{0,5}coordinates)|(lat|lon|latlng|latlon))"
     tags:
       law: GDPR
