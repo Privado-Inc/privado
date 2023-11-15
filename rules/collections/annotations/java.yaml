@@ -2,7 +2,7 @@ collections:
   - id: Collections.Annotation.Spring
     name: Spring Web Interface Annotation
     patterns: 
-      - "RequestMapping|PostMapping|PutMapping|GetMapping|DeleteMapping"
+      - "RequestMapping|PostMapping|PutMapping|PatchMapping|GetMapping|DeleteMapping"
     tags:
 
   - id: Collections.Annotation.Struts
