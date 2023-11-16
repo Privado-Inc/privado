@@ -961,7 +961,7 @@ sinks:
     domains:
       - "google.com/maps"
     patterns:
-      - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps|com[.]google[.]android[.]gms[.]maps).*"
+      - "(?i)(com[.]google[.]maps[.]android|com[.]google[.]maps|com[.]google[.]android[.]gms[.]maps|com[.]google[.]android[.]geo).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Pay
@@ -977,7 +977,7 @@ sinks:
     domains:
       - "play.google.com"
     patterns:
-      - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar|com[.]google[.]android[.]gms[.](games|wallet)).*"
+      - "(?i)(com[.]google[.]ar[.]sceneform|com[.]google[.]ar|com[.]google[.]android[.]gms[.](games|wallet)|com[.]android[.]billingclient[.]api[.]|com[.]google[.]android[.]gms[.]games).*"
     tags:
     
   - id: ThirdParties.SDK.Google.Crashlytics
