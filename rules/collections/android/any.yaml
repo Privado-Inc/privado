@@ -1,0 +1,43 @@
+collections:
+  - id: Collections.Android.Form.Email
+    name: Android app email input
+    patterns: 
+      - "(?i)email.*"
+    tags:
+
+  - id: Collections.Android.Form.User
+    name: Android app username input
+    patterns: 
+      - "(?i)user.*"
+    tags:
+
+  - id: Collections.Android.Form.Address
+    name: Address text input Android
+    patterns: 
+      - "(?i)address.*"
+    tags:
+
+  - id: Collections.Android.Form.PhoneNumber
+    name: Phone number input Android
+    patterns: 
+      - "(?i)phone.*"
+    tags:
+
+  - id: Collections.Android.Form.ZipCode
+    name: Zip code input Android
+    patterns: 
+      - "(?i)zip.*"
+    tags:
+
+  - id: Collections.Android.Form.Password
+    name: Password input Android
+    patterns: 
+      - "(?i)password.*"
+    tags:
+  
+  - id: Collections.Android.Form.Sensitve
+    name: Miscellaneous sensitive text input Android
+    patterns: 
+      - ".*(?i)(bio|message|detail|comment).*"
+    tags:
+
