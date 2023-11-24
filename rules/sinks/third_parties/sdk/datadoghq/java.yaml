@@ -1,4 +1,3 @@
-
 #  Sink rule for ThirdParty SDK
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
@@ -9,5 +8,9 @@ sinks:
     domains:
       - "datadoghq.com"
     patterns:
-      - "(?i)(com[.]datadoghq).*"
+      - "(?i)(com[.]datadoghq|com[.]datadog[.]api[.]client|com[.]bazaarvoice[.]lassie.*DataDog|org[.]coursera[.]metrics[.]datadog).*"
+      - "(?i)(com[.]timgroup[.]statsd|com[.]github[.]arnabk[.]statsd|org[.]honton[.]chas[.]dogstatd).*"
+      - "(?i)(datadog[.]opentracing|datadog[.]trace[.]api|org[.]honton[.]chas[.]datadog[.]apm).*"
+      - "(?i)(datadog[.]telemetry).*"
     tags:
+
