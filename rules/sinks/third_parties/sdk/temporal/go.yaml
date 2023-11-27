@@ -9,5 +9,5 @@ sinks:
     domains:
       - "temporal.io"
     patterns:
-      - "(?i)(github.com|go.temporal.io)(/)(spiral|cretz|sdk)(/)(go-sdk/temporal|temporal-sdk-go-advanced).*"
+      - "(?i)(github.com|go.temporal.io)(/)(spiral|cretz|sdk)(/)(temporal|go-sdk/temporal|temporal-sdk-go-advanced).*"
     tags:
