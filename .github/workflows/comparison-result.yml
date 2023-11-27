@@ -29,7 +29,7 @@ jobs:
     needs: start_workflow
     strategy:
       matrix:
-        language: ['java', 'python', 'js', 'ruby-1', 'ruby-2']
+        language: ['java', 'python', 'js', 'ruby-1', 'ruby-2', 'go']
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
@@ -75,16 +75,16 @@ jobs:
           echo "MESSAGE<<EOF" >> $GITHUB_ENV
           echo "$(cat /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
-
+      
       - name: Post results to slack
-        uses: MeilCli/slack-upload-file@v3
+        uses: adrey/slack-file-upload-action@master
         with:
           thread_ts: ${{needs.start_workflow.outputs.init_message_ts}}
-          slack_token: ${{ secrets.SLACK_TOKEN }}
-          channel_id: ${{ secrets.SLACK_CHANNEL_ID }}
-          file_path: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{github.event.number}}.zip"
+          channel: ${{ secrets.SLACK_CHANNEL_ID }} # check
+          path: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{github.event.number}}.zip"
           initial_comment: "Comparison Results generated on ${{github.event.repository.name}} by PR ${{github.event.number}} from branch ${{github.head_ref}} to ${{github.base_ref}} \nPR link https://github.com/Privado-Inc/privado/pull/${{github.event.number}}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}"
-          file_type: "zip"
+          filetype: "zip"
+          token: ${{ secrets.SLACK_TOKEN }}
 
       - name: Export workflow output
         run: cd ./temp/standalone-monitoring-stability && python3 ./workflow_check.py /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt

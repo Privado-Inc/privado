@@ -5,7 +5,7 @@ sinks:
     domains:
       - elastic.co
     patterns:
-      - "(?i)(github.com/olivere/elastic).*(Search)"
+      - "(?i)(github.com|gopkg.in)(/)(olivere)(/)(elastic).*(Search)"
     tags:
 
   - id: Storages.Elasticsearch.Write
@@ -13,5 +13,5 @@ sinks:
     domains:
       - elastic.co
     patterns:
-      - "(?i)(github.com/olivere/elastic).*(CreateIndex|Delete|Update)"
+      - "(?i)(github.com|gopkg.in)(/)(olivere)(/)(elastic).*(CreateIndex|Delete|Update)"
     tags:

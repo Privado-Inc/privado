@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.QBSFramework.Read
+    name: Qbs (Read)
+    domains:
+      - doc.qt.io/qbs
+    patterns:
+      - "(?i).*(github.com|gopkg.in)(/)(coocood)(/)(qbs).*(Find).*"
+    tags:
+
+  - id: Storages.QBSFramework.Write
+    name: Qbs (Write)
+    domains:
+      - doc.qt.io/qbs
+    patterns:
+      - "(?i).*(github.com|gopkg.in)(/)(coocood)(/)(qbs).*(Save|Update|Delete).*"
+    tags:

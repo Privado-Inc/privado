@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Microsoft
+    name: Microsoft
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(github.com)(/)(Azure|AzureAD|microsoft|MSOpenTech|kris-nova|kubicorn|pulumi|vmware|SsrCoder|pmalek-sumo|wiz-sec|jackesdavid|msopentech|discentem|dennis-menge|veertuinc|beyondnetworks|peterzeller|dbaur|larstore|johnstairs|tadelesh|hashicorp|tombuildsstuff)(/)(azure-pipeline-go|azure-sdk-for-go|kiota/abstractions/go|kubicorn/cloud/azure|pulumi-azure/sdk|vra-sdk-go/pkg/client/fabric_azure_storage_account|onedrive-sdk-golang|go-autorest|go-ntlmssp|vault-plugin-auth-azure|go-azure-helpers|giovanni|azure-devops-go-api|azure-service-bus-go|go-amqp|azure-amqp-common-go|microsoft-authentication-library-for-go).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Yandex
+    name: Yandex
+    domains:
+      - "yandex.com"
+    patterns:
+      - "(?i)(github.com)(/)(yandex-cloud)(/)(go-sdk|ydb-go-sdk).*"
+    tags:
