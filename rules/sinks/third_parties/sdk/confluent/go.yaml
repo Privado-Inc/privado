@@ -1,13 +1,12 @@
-
 #  Sink rule for ThirdParty SDK
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
 sinks:
 
-  - id: ThirdParties.SDK.Datadog
-    name: Datadog
+  - id: ThirdParties.SDK.Confluent.Kafka
+    name: Confluent Kafka
     domains:
-      - "datadoghq.com"
+      - "confluent.io"
     patterns:
-      - "(?i)(github.com|gopkg.in)(/)(DataDog)(/)(datadog-go|dd-trace-go).*"
+      - "(?i)(github.com)(/)(confluentinc)(/)(confluent-kafka-go).*"
     tags:
