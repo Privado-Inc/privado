@@ -52,3 +52,10 @@ sinks:
       - "(?i)(github.com)(/)(GoogleCloudPlatform)(/)(firestore-gorilla-sessions).*"
     tags:
 
+  - id: ThirdParties.SDK.Google.PageSpeedAPI
+    name: Google Page Speed API
+    domains:
+      - "developers.google.com/speed"
+    patterns:
+      - "(?i)(google.golang.org)(/)(api)(/)(pagespeedonline).*"
+    tags:

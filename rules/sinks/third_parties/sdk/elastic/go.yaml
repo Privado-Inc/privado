@@ -9,5 +9,5 @@ sinks:
     domains:
       - "elastic.co"
     patterns:
-      - "(?i)(go.elastic.co|gopkg.in)(/)(apm|olivere/elastic|go-elasticsearch).*"
+      - "(?i)(go.elastic.co|gopkg.in|github.com)(/)(apm|olivere/elastic|go-elasticsearch|elastic/go-elasticsearch).*"
     tags:
