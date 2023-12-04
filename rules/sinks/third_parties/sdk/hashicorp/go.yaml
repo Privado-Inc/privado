@@ -9,5 +9,5 @@ sinks:
     domains:
       - "consul.io"
     patterns:
-      - "(?i)(github.com)(/)(hashicorp)(/)(consul|terraform-plugin-sdk).*"
+      - "(?i)(github.com)(/)(hashicorp)(/)(consul|terraform-plugin-sdk|vault).*"
     tags:
