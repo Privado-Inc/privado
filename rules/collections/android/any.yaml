@@ -41,9 +41,3 @@ collections:
     tags:
       sourceId: Data.Sensitive.AccountData.AccountPassword
   
-  - id: Collections.Android.Form.Sensitve
-    name: Android Form Sensitive Data
-    patterns: 
-      - ".*(?i)(bio|message|detail|comment).*"
-    tags:
-      sourceId: Data.Sensitive.AccountData.AccountPassword
