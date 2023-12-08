@@ -1,6 +1,6 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: ^(?i)(net/http|github.com/parnurzeal/gorequest|gopkg.in/resty|github.com/gojektech/heimdall/v\\d/httpclient|github.com/levigross/grequests|github.com/PuerkitoBio/rehttp|github.com/machinebox/graphql).*
+    value: ^(?i)(net/http|github.com/parnurzeal/gorequest|(gopkg.in|go-resty)/resty|valyala/fasthttp|github.com/gojektech/heimdall/v\\d/httpclient|github.com/levigross/grequests|github.com/PuerkitoBio/rehttp|github.com/machinebox/graphql).*
 
   - key: apiSinks
     value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do)
