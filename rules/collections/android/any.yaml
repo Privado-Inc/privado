@@ -13,6 +13,13 @@ collections:
     tags:
       sourceId: Data.Sensitive.AccountData.AccountID
 
+  - id: Collections.Android.Form.OrderDetails
+    name: Android Form Order Details
+    patterns:
+      - "(?i).*((order|shipping|billing|invoice)(subscription|charge)?[^\\s/(;)#|,=!>]{0,5}(number|code|num|no|id))*"
+    tags:
+      sourceId: Data.Sensitive.PurchaseData.OrderDetails
+
   - id: Collections.Android.Form.FirstName
     name: Android Form Personal Characterstics
     patterns:
