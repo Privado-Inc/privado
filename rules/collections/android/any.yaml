@@ -1,43 +1,63 @@
 collections:
   - id: Collections.Android.Form.Email
     name: Android Form Email
-    patterns: 
-      - "(?i)email.*"
+    patterns:
+      - ".*(?i)email.*"
     tags:
       sourceId: Data.Sensitive.ContactData.EmailAddress
 
   - id: Collections.Android.Form.User
     name: Android Form User Account
-    patterns: 
-      - "(?i)user.*"
+    patterns:
+      - ".*(?i)(user|login).*"
     tags:
       sourceId: Data.Sensitive.AccountData.AccountID
 
+  - id: Collections.Android.Form.OrderDetails
+    name: Android Form Order Details
+    patterns:
+      - "(?i).*((order|shipping|billing|invoice)(subscription|charge)?[^\\s/(;)#|,=!>]{0,5}(number|code|num|no|id))"
+    tags:
+      sourceId: Data.Sensitive.PurchaseData.OrderDetails
+
+  - id: Collections.Android.Form.FirstName
+    name: Android Form Personal Characterstics
+    patterns:
+      - "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|full)[_]?name"
+    tags:
+      sourceId: Data.Sensitive.PersonalIdentification.FirstName
+
+  - id: Collections.Android.Form.LastName
+    name: Android Form Personal Characterstics
+    patterns:
+      - "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)"
+    tags:
+      sourceId: Data.Sensitive.PersonalIdentification.LastName
+
   - id: Collections.Android.Form.Address
     name: Android Form Address
-    patterns: 
-      - "(?i)address.*"
+    patterns:
+      - ".*(?i)address.*"
     tags:
       sourceId: Data.Sensitive.ContactData.Address
 
   - id: Collections.Android.Form.PhoneNumber
     name: Android Form Phone Number
-    patterns: 
-      - "(?i)phone.*"
+    patterns:
+      - ".*(?i)phone.*"
     tags:
       sourceId: Data.Sensitive.ContactData.PhoneNumber
 
   - id: Collections.Android.Form.ZipCode
     name: Android Form Zip Code
-    patterns: 
-      - "(?i)zip.*"
+    patterns:
+      - ".*(?i)zip.*"
     tags:
       sourceId: Data.Sensitive.ContactData.Address
 
   - id: Collections.Android.Form.Password
     name: Android Form Password
-    patterns: 
-      - "(?i)password.*"
+    patterns:
+      - ".*(?i)password.*"
     tags:
       sourceId: Data.Sensitive.AccountData.AccountPassword
-  
