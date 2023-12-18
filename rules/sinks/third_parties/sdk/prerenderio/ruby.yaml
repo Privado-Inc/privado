@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Prerender
+    name: Prerender.io
+    domains:
+      - "prerender.io"
+    patterns:
+      - "(?i)(prerender_rails(_embedded)?|prerendercloud|prerender_chrome).*"
+    tags:

@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: Storages.Prestodb.ReadAndWrite
+    name: Prestodb(ReadAndWrite)
+    domains:
+      - "prestodb.io"
+    patterns:
+      - "(?i)(github.com/prestodb/presto-go-client/presto).*(Query)"
+    tags:

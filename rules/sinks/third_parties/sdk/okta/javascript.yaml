@@ -9,5 +9,6 @@ sinks:
     domains:
       - "okta.com"
     patterns:
-      - "@okta\\/okta-vue|@okta\\/okta-auth-js|@okta\\/okta-react"
+      - "@okta\\/okta-(vue|auth-js|react)"
+      - ".*OktaAuth"
     tags:

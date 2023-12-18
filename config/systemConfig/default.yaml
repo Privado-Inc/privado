@@ -1,0 +1,3 @@
+systemConfig:
+  - key: maxSocketCount
+    value: "4096"

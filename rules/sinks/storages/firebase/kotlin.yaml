@@ -1,0 +1,24 @@
+sinks:
+  - id: Storages.Firebase.Read
+    name: Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]firebase)[.](database).*(?:find|get|select|search|load).*"
+      - "(?i)(com[.]firebase)[.](database).*(?:find|get|select|search|load).*"
+      - "(?i)(io[.]firebase)[.](database).*(?:find|get|select|search|load).*"
+    tags:
+
+  - id: Storages.Firebase.Write
+    name: Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]firebase)[.](database).*(?:set|save|delete|insert|update).*"
+      - "(?i)(com[.]firebase)[.](database).*(?:set|save|delete|insert|update).*"
+      - "(?i)(io[.]firebase)[.](database).*(?:set|save|delete|insert|update).*"
+    tags:
+
+    
+
+  

@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.Elasticsearch.Read
+    name: Elasticsearch(Read)
+    domains:
+      - elastic.co
+    patterns:
+      - "(?i)(github.com|gopkg.in)(/)(olivere)(/)(elastic).*(Search)"
+    tags:
+
+  - id: Storages.Elasticsearch.Write
+    name: Elasticsearch(Write)
+    domains:
+      - elastic.co
+    patterns:
+      - "(?i)(github.com|gopkg.in)(/)(olivere)(/)(elastic).*(CreateIndex|Delete|Update)"
+    tags:

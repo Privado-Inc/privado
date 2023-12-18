@@ -1,0 +1,9 @@
+sinks:
+
+  - id: ThirdParties.SDK.Clearbit
+    name: Clearbit
+    domains:
+      - "clearbit.com"
+    patterns:
+      - "(?i)clearbit.*"
+    tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "mapbox.com"
     patterns:
-      - "@mapbox\\/mapbox-sdk|mapbox|react-map-gl"
+      - "@mapbox\\/mapbox-sdk|mapbox|react-map-gl|mapbox-gl"
     tags:

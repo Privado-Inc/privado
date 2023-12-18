@@ -9,13 +9,5 @@ sinks:
     domains:
       - "gatsbyjs.com"
     patterns:
-      - "gatsby-plugin-gatsby-cloud"
-    tags:
-
-  - id: ThirdParties.SDK.Gatsbyjs
-    name: Gatsbyjs
-    domains:
-      - "gatsbyjs.org"
-    patterns:
-      - "@ccalamos\\/gatsby-source-googlemaps-static"
+      - "gatsby-plugin-gatsby-cloud|@ccalamos\\/gatsby-source-googlemaps-static"
     tags:

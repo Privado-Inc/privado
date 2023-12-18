@@ -1,0 +1,25 @@
+sinks:
+
+  - id: Storages.PopFramework.Read
+    name: pop (Read)
+    domains:
+      - gobuffalo.io/documentation/database/pop/
+    patterns:
+      - "(?i).*(github.com)(/)(gobuffalo)(/)(pop).*(Find).*"
+    tags:
+
+  - id: Storages.PopFramework.Write
+    name: Xorm (Write)
+    domains:
+      - gobuffalo.io/documentation/database/pop/
+    patterns:
+      - "(?i).*(github.com)(/)(gobuffalo)(/)(pop).*(Create|Update|Destroy).*"
+    tags:
+
+  - id: Storages.PopFramework.ReadAndWrite
+    name: Xorm
+    domains:
+      - gobuffalo.io/documentation/database/pop/
+    patterns:
+      - "(?i).*(github.com)(/)(gobuffalo)(/)(pop).*(All).*"
+    tags:

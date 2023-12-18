@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.IndexedDB.Write
+    name: IndexedDB(Write)
+    domains:
+      - "w3.org/TR/IndexedDB"
+    patterns:
+      - "(?i)(idb).*(deletedb|transaction|createObjectStore|put|delete|clear|add)"
+    tags:
+  
+  - id: Storages.IndexedDB.Read
+    name: IndexedDB(Read)
+    domains:
+      - "w3.org/TR/IndexedDB"
+    patterns:
+      - "(?i)(idb).*(opendb|unwrap|wrap|get|getall)"
+    tags:
