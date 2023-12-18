@@ -97,7 +97,7 @@ sinks:
     domains:
       - "cloud.google.com/pubsub"
     patterns:
-      - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]api[.]client).*"
+      - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]pubsub).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Bigquery
