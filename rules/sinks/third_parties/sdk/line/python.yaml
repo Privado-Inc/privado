@@ -9,5 +9,5 @@ sinks:
     domains:
       - "line.me"
     patterns:
-      - "(?i)(linebot|lotify|line_pay|lineapi|byteline_sdk|alerta|juq|Rev|clova_cek_sdk).*"
+      - "(?i)(linebot|lotify|line_pay|lineapi|byteline_sdk|alerta|rev_ai|clova_cek_sdk).*"
     tags:
