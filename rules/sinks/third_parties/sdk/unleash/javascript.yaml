@@ -1,13 +1,12 @@
-
 #  Sink rule for ThirdParty SDK
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
 sinks:
 
-  - id: ThirdParties.SDK.Line
-    name: Line
+  - id: ThirdParties.SDK.Unleash
+    name: Unleash
     domains:
-      - "line.me"
+      - "getunleash.io"
     patterns:
-      - "(?i)(linebot|lotify|line_pay|lineapi|byteline_sdk|alerta|rev_ai|clova_cek_sdk).*"
+      - ".*unleash-server.*"
     tags:
