@@ -9,5 +9,5 @@ sinks:
     domains:
       - "payloadcms.com"
     patterns:
-      - "payload"
+      - "(?i)(payload).*(init).*"
     tags:
