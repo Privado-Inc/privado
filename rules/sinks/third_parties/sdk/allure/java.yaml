@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Payloadcms
-    name: Payloadcms
+  - id: ThirdParties.SDK.Allure
+    name: Allure
     domains:
-      - "payloadcms.com"
+      - "allure.com"
     patterns:
-      - "(?i)(payload).*(init).*"
+      - "(?i)(io[.]qameta[.]allure).*"
     tags:
