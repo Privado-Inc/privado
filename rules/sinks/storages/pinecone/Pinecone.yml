@@ -7,7 +7,6 @@ sinks:
     domains:
       - pinecone.io
     patterns:
-      # - "(?i).*(?:happybase|hbase|cdata.{0,1}apachehbase).*(?:query).*"
       - "(?i).*(?:pinecone).*(?:fetch|query).*"
     tags:
 
