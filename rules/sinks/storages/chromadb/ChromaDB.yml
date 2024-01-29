@@ -1,0 +1,19 @@
+
+# Sink Rules for vector DB ChromaDB
+
+sinks:
+  - id: Storages.Chroma.Read
+    name: Chroma DB (Read)
+    domains:
+      - trychroma.com
+    patterns:
+      - "(?i).*(?:chromadb).*(?:search|query|get_collection).*"
+    tags:
+
+  - id: Storages.Chroma.Write
+    name: Chroma DB (Write)
+    domains:
+      - trychroma.com
+    patterns:
+      - "(?i).*(?:chromadb).*(?:add|insert|do_bulk_insert|update|upsert|create_collection).*"
+    tags:

@@ -1,0 +1,19 @@
+
+# Sink Rules for vector DB Milvus
+
+sinks:
+  - id: Storages.Milvus.Read
+    name: Milvus DB (Read)
+    domains:
+      - milvus.io
+    patterns:
+      - "(?i).*(?:pymilvus).*(?:search|query).*"
+    tags:
+
+  - id: Storages.Milvus.Write
+    name: Milvus DB (Write)
+    domains:
+      - milvus.io
+    patterns:
+      - "(?i).*(?:pymilvus).*(?:insert|do_bulk_insert|upsert).*"
+    tags:

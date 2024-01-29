@@ -1,0 +1,20 @@
+
+# Sink Rules for vector DB Pinecone
+
+sinks:
+  - id: Storages.Pinecone.Read
+    name: Pinecone DB (Read)
+    domains:
+      - pinecone.io
+    patterns:
+      # - "(?i).*(?:happybase|hbase|cdata.{0,1}apachehbase).*(?:query).*"
+      - "(?i).*(?:pinecone).*(?:fetch|query).*"
+    tags:
+
+  - id: Storages.Pinecone.Write
+    name: Pinecone DB (Write)
+    domains:
+      - pinecone.io
+    patterns:
+      - "(?i).*(?:pinecone).*(?:upsert|update).*"
+    tags:
