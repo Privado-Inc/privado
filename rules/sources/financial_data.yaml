@@ -59,16 +59,6 @@ sources:
     tags:
       law: GDPR
 
-  - id: Data.Sensitive.FinancialData.PaymentPlan
-    name: Payment Plan
-    category: Financial Data
-    isSensitive: False
-    sensitivity: medium
-    patterns:
-      - "(?i).*(payment[^\\s/(;)#|,=!>]{0,5}(?:plan))"
-    tags:
-      law: GDPR
-
   - id: Data.Sensitive.FinancialData.CreditScore
     name: Credit Score
     category: Financial Data
