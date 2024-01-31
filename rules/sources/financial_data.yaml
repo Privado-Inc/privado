@@ -55,7 +55,17 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i).*(payment[^\\s/(;)#|,=!>]{0,5}(?:mode|method|option|options))"
+      - "(?i).*(payment[^\\s/(;)#|,=!>]{0,5}(?:mode|method|option|options|methodtype))"
+    tags:
+      law: GDPR
+
+  - id: Data.Sensitive.FinancialData.PaymentPlan
+    name: Payment Plan
+    category: Financial Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(payment[^\\s/(;)#|,=!>]{0,5}(?:plan))"
     tags:
       law: GDPR
 
@@ -75,7 +85,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)(tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax|(form|name|box|item)1099)"
+      - "(?i)(tax[^\\s/(;)#|,=!>]{0,5}(?:information|group|rate|info|percent|statement|detail|amount|calculate|type|slip|number)|taxable[^\\s/(;)#|,=!>]{0,10}value|(?:standard|income|without)[^\\s/(;)#|,=!>]{0,10}tax|(form|name|box|item)1099)"
     tags:
       law: GDPR
 

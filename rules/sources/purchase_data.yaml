@@ -38,3 +38,13 @@ sources:
       - "(?i).*(?:product|special)[^\\s/(;)#|,=!>]{0,5}offer|offer[^\\s/(;)#|,=!>]{0,5}(?:details|detail|applied|card|code|id|number)|coupon|cashback|product[^\\s/(;)#|,=!>]{0,5}discount|reward[^\\s/(;)#|,=!>]{0,5}(?:points|point).*"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.PurchaseData.PurchaseModification
+    name: Purchase Modification
+    category: Purchase Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(changed)[^\\s/(;)#|,=!>]{0,5}(amount).*"
+    tags:
+      law: GDPR
