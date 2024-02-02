@@ -4,5 +4,5 @@ sinks:
     domains:
       - docs.datastax.com
     patterns:
-      - (?i).*(astrapy).*(?:create_collection|insert_many|vector_find|).*
+      - (?i).*(astrapy).*(?:create_collection|insert_many|vector_find).*
     tags:

@@ -4,7 +4,7 @@
 sinks:
 
   - id: Storages.Qdrant.ReadAndWrite
-    name: Chroma Qdrant
+    name: Qdrant DB
     domains:
       - qdrant.tech
     patterns:
