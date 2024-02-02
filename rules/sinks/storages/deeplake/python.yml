@@ -1,0 +1,8 @@
+sinks:
+  - id: Storages.Deeplake.ReadAndWrite
+    name: Deeplake DB
+    domains:
+      - docs.activeloop.ai
+    patterns:
+      - (?i).*(deeplake).*(?:load|add|search).*
+    tags:

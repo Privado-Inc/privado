@@ -1,0 +1,8 @@
+sinks:
+  - id: Storages.Vald.ReadAndWrite
+    name: Vald DB
+    domains:
+      - vald.vdaas.org
+    patterns:
+      - (?i).*(vald).*(?:Insert|Update|Upsert|Search|Remove).*
+    tags:
