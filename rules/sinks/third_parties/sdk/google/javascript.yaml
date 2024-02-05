@@ -44,6 +44,15 @@ sinks:
       - "@analytics\\/google-tag-manager|gatsby-plugin-google-gtag|react-gtm-module"
     tags:
 
+  - id: ThirdParties.SDK.Google.TagManagerPixel
+    name: Google Tag Manager Pixel
+    filterProperty: "code"
+    domains:
+      - "admob.google.com"
+    patterns:
+      - "gtag\\(*"
+    tags:
+
   - id: ThirdParties.SDK.Google.Spreadsheet
     name: Google Spreadsheet
     domains:

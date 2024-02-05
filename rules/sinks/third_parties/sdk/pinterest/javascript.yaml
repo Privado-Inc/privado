@@ -1,0 +1,10 @@
+sinks:
+
+  - id: ThirdParties.SDK.Pinterest
+    name: Pinterest
+    filterProperty: "code"
+    domains:
+      - "pinterest.com"
+    patterns:
+      - "pintrk\\(*"
+    tags:
