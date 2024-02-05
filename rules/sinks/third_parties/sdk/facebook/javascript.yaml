@@ -13,7 +13,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.FacebookPixel
-    name: Facebook Pixel
+    name: Facebook
     filterProperty: "code"
     domains:
       - "facebook.com"

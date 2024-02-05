@@ -1,6 +1,6 @@
 sinks:
 
-  - id: ThirdParties.SDK.Pinterest
+  - id: ThirdParties.SDK.PinterestPixel
     name: Pinterest
     filterProperty: "code"
     domains:

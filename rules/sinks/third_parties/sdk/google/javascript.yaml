@@ -45,7 +45,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Google.TagManagerPixel
-    name: Google Tag Manager Pixel
+    name: Google Tag Manager
     filterProperty: "code"
     domains:
       - "admob.google.com"
