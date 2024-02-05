@@ -1,0 +1,10 @@
+sinks:
+
+  - id: ThirdParties.SDK.TikTok
+    name: TikTok
+    filterProperty: "code"
+    domains:
+      - "tiktok.com"
+    patterns:
+      - "ttq.track[(].*"
+    tags:
