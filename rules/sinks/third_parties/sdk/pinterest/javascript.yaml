@@ -6,6 +6,6 @@ sinks:
     domains:
       - "pinterest.com"
     patterns:
-      - "pintrk\\(.*"
+      - "pintrk[(].*"
     tags:
 
