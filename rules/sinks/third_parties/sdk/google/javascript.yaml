@@ -50,7 +50,7 @@ sinks:
     domains:
       - "admob.google.com"
     patterns:
-      - "(gtag|dataLayer.push)\\(*"
+      - "(gtag|dataLayer.push)\\(.*"
     tags:
 
   - id: ThirdParties.SDK.Google.Spreadsheet
