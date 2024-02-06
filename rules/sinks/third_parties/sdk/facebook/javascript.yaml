@@ -18,5 +18,5 @@ sinks:
     domains:
       - "facebook.com"
     patterns:
-      - "fbq[(].*"
+      - "((window|w|this)[.])?fbq[(].*"
     tags:
