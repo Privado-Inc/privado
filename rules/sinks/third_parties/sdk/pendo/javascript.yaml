@@ -11,3 +11,11 @@ sinks:
     patterns:
       - "rn-pendo-sdk|ngx-pendo"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Pendo
+    name: Pendo
+    domains:
+      - "pendo.io"
+    filterProperty: "code"
+    patterns:
+      - "(($)?(window|w|this)[.])?(pendo)[.](initialize)[(].*"
