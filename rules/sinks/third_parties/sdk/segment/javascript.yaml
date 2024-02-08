@@ -19,3 +19,12 @@ sinks:
     patterns:
       - "quepasa|@analytics\\/segment"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Segment
+    name: Segment
+    domains:
+      - "segment.io"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*(segmentpayloads)[.])?(logInternalEvent|identify|logPageView)[(].*"
+    tags:

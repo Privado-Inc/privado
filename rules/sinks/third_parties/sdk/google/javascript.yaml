@@ -383,7 +383,7 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(.*(window|w|this)[.])?ga[(].*"
+      - "(?i)(.*(window|w|this)[.])?ga[(].*"
     tags:
 
   - id: ThirdParties.SDK.Pixel.Google.TagManager
@@ -392,5 +392,5 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(.*(window|w|this)[.])?(datalayer[.]push)[(].*"
+      - "(?i)(.*(window|w|this)[.])?(datalayer[.]push|gtag)[(].*"
     tags:
