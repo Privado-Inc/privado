@@ -383,5 +383,5 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(($)?(window|w|this)[.])?(ga|datalayer)([.]push)?[(].*"
+      - "((\\$)?(window|w|this)[.])?(ga|datalayer)([.]push)?[(].*"
     tags:
