@@ -383,5 +383,14 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(.*(window|w|this)[.])?(ga|datalayer)([.]push)?[(].*"
+      - "(.*(window|w|this)[.])?ga[(].*"
+    tags:
+
+  - id: ThirdParties.SDK.Pixel.Google.TagManager
+    name: Google Tag Manager
+    domains:
+      - "admob.google.com"
+    filterProperty: "code"
+    patterns:
+      - "(.*(window|w|this)[.])?(datalayer[.]push)[(].*"
     tags:
