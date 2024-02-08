@@ -18,5 +18,5 @@ sinks:
       - "pendo.io"
     filterProperty: "code"
     patterns:
-      - "(($)?(window|w|this)[.])?(pendo)[.](initialize)[(].*"
+      - "(($)?(window|w|this)[.])?(pendo)([.]initialize)?[(].*"
     tags:
