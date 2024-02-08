@@ -384,3 +384,4 @@ sinks:
     filterProperty: "code"
     patterns:
       - "(($)?(window|w|this)[.])?(ga|datalayer)([.]push)?[(].*"
+    tags:

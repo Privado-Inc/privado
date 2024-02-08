@@ -19,3 +19,4 @@ sinks:
     filterProperty: "code"
     patterns:
       - "(($)?(window|w|this)[.])?(pendo)[.](initialize)[(].*"
+    tags:
