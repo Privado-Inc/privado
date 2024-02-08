@@ -1,6 +1,6 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: (?i)(request|fetch|axios|vue-axios|urllib|http|client|react-query|swr|socket(.){0,1}io|xmlhttprequest|node.http|cors|got|apollo|superagent|wretch|@angular\/common\/http|@(.){2,25}\/http|.*(HttpClient)|reconnecting-websocket).*
+    value: (?i)\${0,1}(request|fetch|axios|vue-axios|urllib|http|client|react-query|swr|socket(.){0,1}io|xmlhttprequest|node.http|cors|got|apollo|superagent|wretch|@angular\/common\/http|@(.){2,25}\/http|.*(HttpClient)|reconnecting-websocket).*
 
   - key: ignoredSinks
     value: (?i).*(?<=map|list|jsonobject|json|array|arrays|jsonnode|objectmapper|objectnode).*(put:|get:).*
