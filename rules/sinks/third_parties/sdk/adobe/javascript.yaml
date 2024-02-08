@@ -11,3 +11,11 @@ sinks:
     patterns:
       - "flipper-plugin-native-genesis-logger|flipper-plugin-react-native-logging-tools|flipper-plugin-interlogger|@adobe\\/asset-compute-sdk|@adobe\\/alloy|@adobe\\/magento-data-layer-sdk|@adobe\\/cordova-acpanalytics|flex-sdk|@adobe\\/aio-lib-core-logging|adobe-sign-sdk|@adobe\\/aio-lib-core-errors|jwplayer-flex-sdk|@adobe\\/aio-lib-core-tvm|@adobe\\/aio-lib-state|@adobe\\/reactor-sdk|@adobe\\/magento-storefront-events-sdk|@adobe\\/aio-lib-analytics|@adobe\\/aio-lib-target|@adobe\\/aio-lib-campaign-standard|@adobe\\/target-nodejs-sdk|@dpwolfe\\/flex-sdk|@adobe\\/griffon-toolkit-aep-mobile|@adobe\\/pdfservices-node-sdk|@adobe\\/aio-lib-photoshop-api|@magento\\/search-sdk|@adobe\\/aio-sdk-core|@adobe\\/aio-lib-audience-manager-cd|@adobe\\/aio-sdk|@adobe\\/acc-js-sdk|@adobe\\/pdftools-extract-node-sdk|@adobe\\/dc-services-node-sdk|angular-aviary|@essent\\/nativescript-adobe-experience-cloud|acs-sdk"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.AdobeAnalytics
+    name: Adobe
+    domains:
+      - "adobe.com"
+    filterProperty: "code"
+    patterns:
+      - "((window|w|this)[.])?[(].*"

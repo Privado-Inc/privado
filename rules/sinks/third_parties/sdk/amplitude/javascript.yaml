@@ -11,3 +11,11 @@ sinks:
     patterns:
       - "@amplitude\\/(analytics-browser|analytics-node|core)|react-amplitude-hooks|amplitude|read-audio|react-native-amplitude-analytics|@analytics\\/amplitude|@itly\\/plugin-amplitude-node|vue-amplitude|@segment\\/analytics.js-integration-amplitude|gatsby-plugin-amplitude-analytics|@amplitude\\/react-amplitude|vue-amplitude-js|react-amplitude|gatsby-plugin-amplitude|@mntm\\/stats|@uptechworks\\/analytics-service-angular|@suttj\\/amplitude-js|@csod-oss\\/tracker-vendor-amplitude|node-amplitude|@rudderstack\\/rudder-integration-amplitude-react-native|@shawacademynpm\\/gatsby-plugin-amplitude-analytics|djipav|react-native-amplitude-sdk|@jtran\\/amplitude-js|@exiasr\\/gatsby-plugin-amplitude-analytics|amplitude-vue|@quintoandar\\/storybook-amplitude|@amplitude\\/analytics-connector"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Amplitude
+    name: Amplitude
+    domains:
+      - "amplitude.com"
+    filterProperty: "code"
+    patterns:
+      - "((window|w|this)[.])?(amplitude)([.](init|record_user|Identify|setUserId|track|setGroup|setDeviceId|revenue))?[(].*"

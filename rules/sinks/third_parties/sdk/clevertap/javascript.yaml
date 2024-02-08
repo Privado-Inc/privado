@@ -11,3 +11,11 @@ sinks:
     patterns:
       - "clevertap-react|react-native-clevertap-inbox|clevertap|clevertap-react-native|clevertap-cordova|leads-clevertap|@segment\\/analytics.js-integration-clevertap|flaviocopes-clevertap-cordova|clevertap-web-sdk|sda-clevertap|@ionic-native\\/clevertap"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Clevertap
+    name: Clevertap
+    domains:
+      - "clevertap.com"
+    filterProperty: "code"
+    patterns:
+      - "((window|w|this)[.])?clevertap([.]event[.]push)?[(].*"

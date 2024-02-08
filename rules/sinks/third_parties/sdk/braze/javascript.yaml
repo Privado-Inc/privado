@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "@braze\\/web-sdk-no-amd|@rudderstack\\/rudder-integration-braze-react-native|@segment\\/analytics.js-integration-appboy|@vivianhealth\\/braze-segment-debounce|@itly\\/plugin-braze-node|@braze\\/service-worker|react-native-appboy-sdk|appboy-web-sdk|@braze\\/web-sdk|@braze\\/web-sdk-core|brazejs"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Braze
+    name: Braze
+    domains:
+      - "braze.com"
+    filterProperty: "code"
+    patterns:
+      - "((window|w|this)[.])?(braze)([.](changeUser|logCustomEvent|([getuser().](setGender|setEmail|setFirstName|setLastName|setPhoneNumber|setCustomUserAttribute|setCountry|setHomeCity))))?[(].*"
+
