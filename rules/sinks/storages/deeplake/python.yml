@@ -5,14 +5,14 @@ sinks:
   - id: Storages.Deeplake.Initialize
     name: Deeplake DB
     domains:
-      - docs.activeloop.ai
+      - activeloop.ai
     patterns:
       - "(?i).*(?:langchain.*vectorstores.*.DeepLake).*"
 
   - id: Storages.Deeplake.ReadAndWrite
     name: Deeplake DB
     domains:
-      - docs.activeloop.ai
+      - activeloop.ai
     patterns:
       - (?i).*(deeplake).*(?:load|add|search).*
     tags:
