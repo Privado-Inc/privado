@@ -14,7 +14,7 @@ sinks:
   - id: ThirdParties.SDK.Langchain.ChatModels.AzureML
     name: Langchain AzureML model
     domains:
-      - "azure.com"
+      - "langchain.com"
     patterns:
       - "(?i).*(?:langchain.*chat_models.*.AzureML).*"
     tags:
