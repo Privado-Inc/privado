@@ -3,6 +3,13 @@
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
 sinks:
+  - id: ThirdParties.SDK.Langchain.ChatModels.Anthropic
+    name: Langchain Anthropic model
+    domains:
+      - "langchain.com"
+    patterns:
+      - "(?i).*(?:langchain.*chat_models.*.ChatAnthropic).*"
+    tags:
 
   - id: ThirdParties.SDK.Anthropic
     name: Anthropic
