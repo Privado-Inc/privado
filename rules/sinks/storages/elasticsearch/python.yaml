@@ -2,6 +2,12 @@
 # Sink Rules for storage database Elasticsearch - https://www.elastic.co/elasticsearch/
 
 sinks:
+  - id: Storages.Elasticsearch.Initialize
+    name: Elasticsearch(Initialize)
+    domains:
+      - elastic.co
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.ElasticsearchStore).*"
 
   - id: Storages.Elasticsearch.Read
     name: Elasticsearch(Read)

@@ -1,4 +1,11 @@
 sinks:
+  - id: Storages.Vald.Initialize
+    name: Vald DB
+    domains:
+      - vald.vdaas.org
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.Vald).*"
+
   - id: Storages.Vald.ReadAndWrite
     name: Vald DB
     domains:

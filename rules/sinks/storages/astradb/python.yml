@@ -1,8 +1,15 @@
 sinks:
+  - id: Storages.AstraDB.Initialize
+    name: AstraDB DB
+    domains:
+      - datastax.com
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.AstraDB).*"
+
   - id: Storages.AstraDB.ReadAndWrite
     name: Astra DB
     domains:
-      - docs.datastax.com
+      - datastax.com
     patterns:
       - (?i).*(astrapy).*(?:create_collection|insert_many|vector_find).*
     tags:

@@ -2,6 +2,13 @@
 # Sink Rules for vector DB Milvus
 
 sinks:
+  - id: Storages.Milvus.Initialize
+    name: Milvus DB
+    domains:
+      - milvus.io
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.Milvus).*"
+
   - id: Storages.Milvus.Read
     name: Milvus DB (Read)
     domains:
