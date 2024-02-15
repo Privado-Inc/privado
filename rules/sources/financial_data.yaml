@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i).*((?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}(number|no|num|nbr)|(?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card)|cc[-_]{0,1}(number|num|nbr|no)"
+      - "(?![A-Z_]+)(?i).*((?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card[^\\s/(;)#|,=!>]{0,10}(number|no|num|nbr)|(?:credit|debit)[^\\s/(;)#|,=!>]{0,10}card)|cc[-_]{0,1}(number|num|nbr|no)"
     tags:
       law: GDPR
 
