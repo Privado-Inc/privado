@@ -64,7 +64,7 @@ sinks:
   - id: Leakages.Log.Console
     name: Log Console
     patterns:
-      - "(?i)(fmt)[.](Println|Print)(f?)"
+      - "(?i)(fmt)[.](F|S)?(Println|Print)(f?)"
     tags:
 
   - id: Leakages.Log.Trace
