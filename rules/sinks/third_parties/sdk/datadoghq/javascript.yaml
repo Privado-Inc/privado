@@ -9,5 +9,5 @@ sinks:
     domains:
       - "datadoghq.com"
     patterns:
-      - "dd-trace|@datadog\\/browser-rum|@datadog\\/browser-logs"
+      - "dd-trace|@datadog\\/browser-rum|@datadog\\/browser-logs|@datadog\\/browser-core|datadog-metrics"
     tags:
