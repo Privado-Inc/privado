@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Google.TagManager
     name: Google Tag Manager
     domains:
-      - "admob.google.com"
+      - "analytics.google.com"
     patterns:
       - "@analytics\\/google-tag-manager|gatsby-plugin-google-gtag|react-gtm-module"
     tags:
@@ -375,4 +375,22 @@ sinks:
       - "cloud.google.com/recaptcha-enterprise"
     patterns:
       - "react-google-recaptcha|vue-recaptcha|@google-cloud\\/recaptcha-enterprise|react-google-recaptcha-v3"
+    tags:
+
+  - id: ThirdParties.SDK.Pixel.Google.Analytics
+    name: Google Analytics
+    domains:
+      - "analytics.google.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*(window|w|this)[.])?ga[(].*"
+    tags:
+
+  - id: ThirdParties.SDK.Pixel.Google.TagManager
+    name: Google Tag Manager
+    domains:
+      - "analytics.google.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*(window|w|this)[.])?(datalayer[.]push|gtag)[(].*"
     tags:
