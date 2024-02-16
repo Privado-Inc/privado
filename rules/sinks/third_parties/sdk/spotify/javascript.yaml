@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "node-spotify-helper|vue-spotify|spotify-web-utils|@ngx-spotify-api\\/core|@cameronriu\\/spotify-web-api-node|spotify-mp3-playlist-downloader|@vilp1l\\/spotify.js|spotify-metadata-search|spotify-web-api-node|spotify-web-api-js|spotify|node-spotify-webhelper|spotify-finder|spotify-middleware-webapi|angular-spotify|react-native-spotify|spdl-core|@panz3r\\/spotify-js|spotify-info.js|deezer-api-ts|spotify-api-request|react-spotify-api|spotify-playback-sdk|spotify-api.js|spotify-lyrics-api|spotify-web-sdk|easy-spotify-ts|spotify-personal-auth|spotydrive|spotify-cover-art-api|angular2-spotify|rc-angular-spotify|spotify-webhelper|adonis-spotify|spotify-api|visdi-deezer-api-ts|@g749\\/spotify-web-api-node|spotify-types|spotify-objects|simple-spotify|spotify-web-playback|@kaname-png\\/erela.js-spotify|@redline187\\/spotify-web-api-node|spotify-service-rg|js-spotify-api|@kywagaha\\/spotify-event-api|spotify-web-api-node-server|spotify-playback-sdk-node|canvacordpalaexpress|spotify-manager"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Spotify
+    name: Spotify
+    domains:
+      - "spotify.com"
+    filterProperty: "code"
+    patterns:
+      - "((window|w|this)[.])?(spdt)([.]q[.]push)?[(].*"
+    tags:
