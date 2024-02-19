@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "@translate-tools\\/core|node-bing-api|bing.search|bing-translate-api|wonderful-bing-wallpaper|bing-spell-checker|simple-bing-geocoder|bing-translate-result|bing-image-search-api-scraper|ping_bing|hpsweb-bingmaps-distance|scorebing-api|bing-elevation|bingtranslator"
     tags:
+
+  - id: ThirdParties.SDK.Script.Bing
+    name: Bing
+    domains:
+      - "bing.com"
+    filterProperty: "code"
+    patterns:
+      - ".*(bing[a-zA-Z0-9_]{0,25}|uetq)[.](push)[(].*"
+    tags:

@@ -1,0 +1,9 @@
+sinks:
+  - id: ThirdParties.SDK.Braze
+    name: Braze
+    domains:
+      - "braze.com"
+    patterns:
+      - "(?i)(com[.]braze[.]).*"
+    tags:
+

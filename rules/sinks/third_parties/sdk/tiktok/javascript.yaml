@@ -6,5 +6,5 @@ sinks:
     domains:
       - "tiktok.com"
     patterns:
-      - "ttq.track[(].*"
+      - "((window|w|this)[.])?ttq.track[(].*"
     tags:

@@ -11,3 +11,21 @@ sinks:
     patterns:
       - "react-native-branch|branch-sdk"
     tags:
+  
+  - id: ThirdParties.SDK.Branch
+    name: Branch
+    domains:
+      - "branch.io"
+    patterns:
+      - "branchio-sdk|branch-sdk"
+    tags:
+
+  - id: ThirdParties.SDK.Script.Branch
+    name: Branch
+    filterProperty: "code"
+    domains:
+      - "branch.io"
+    patterns:
+      - ".*(branch[a-zA-Z0-9_]{0,25}[.](link|init|setBranchViewData|track|qrCode|setIdentity|logEvent)[(]).*"
+    tags:
+
