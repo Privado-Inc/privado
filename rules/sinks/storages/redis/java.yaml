@@ -42,3 +42,11 @@ sinks:
       - (?i)(redis.clients.jedis.CommandObjects.getset:)(.*)
       - (?i)(redis.clients.jedis.CommandObjects[.])(m|h|p)?(set)(one|user|range|nx|ex)?(:)(.*)
     tags:
+
+  - id: Storages.Redis.Lettuce
+    name: Redis
+    domains:
+      - redis.io
+    patterns:
+      - (?i)(io.lettuce.core.RedisClient.*[:])(.*)
+    tags:
