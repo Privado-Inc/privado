@@ -48,3 +48,13 @@ sources:
       - "(?i).*(((?:nps|csat|net[^\\s/(;)#|,=!>]{0,15}promoter)([^\\s/(;)#|,=!>]{0,15}(?:score|feedback)){0,1}|customer[^\\s/(;)#|,=!>]{0,15}satisfaction)|(product[^\\s/(;)#|,=!>]{0,10}feedback|(feedback|survey)[^\\s/(;)#|,=!>]{0,5}(response|result))).*|feedback"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.UserContentData.PlayerData
+    name: Player Data
+    category: User Content Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i)(((?:player)[^\\s/(;)#|,=!>]{0,4}){0,1}(?:data|profile|profileData))"
+    tags:
+      law: GDPR
