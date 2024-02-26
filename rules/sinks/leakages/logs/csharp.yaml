@@ -2,29 +2,29 @@ sinks:
   - id: Leakages.Log.Console
     name: Log Console
     patterns: 
-      - "(?i)(Write|WriteLine)"
+      - "(?i).*(WriteLine).*"
     tags:
 
   - id: Leakages.Log.Info
     name: Log Info
     patterns:
-      - "(?i)(LogInformation|LogTrace|Info|Information|Verbose)"
+      - "(?i).*(ILogger).*(LogInformation|LogTrace).*"
     tags:
 
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
-      - "(?i)(LogError|LogCritical|Error)"
+      - "(?i).*(ILogger).*(LogError|LogCritical).*"
     tags:
 
   - id: Leakages.Log.Warn
     name: Log Warn
     patterns:
-      - "(?i)(LogWarning|Warn|Warning)"
+      - "(?i).*(ILogger).*(LogWarning).*"
     tags:
 
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i)(LogDebug|Debug)"
+      - "(?i).*(ILogger).*(LogDebug).*"
     tags:
