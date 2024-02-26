@@ -55,6 +55,6 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i)(((?:player)[^\\s/(;)#|,=!>]{0,4}){0,1}(?:data|profile|profileData))"
+      - "(?i)(((?:player)[^\\s/(;)#|,=!>]{0,4}){0,1}(?:id(s)|data|profile|profileData))"
     tags:
       law: GDPR
