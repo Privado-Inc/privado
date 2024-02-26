@@ -58,3 +58,13 @@ sources:
       - "(?i)(((?:player)[^\\s/(;)#|,=!>]{0,4}){0,1}(?:id(s)|data|profile|profileData))"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.UserContentData.Comments
+    name: User Comments
+    category: User Content Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*((note|reason|comment)([s]?$))"
+    tags:
+      law: GDPR
