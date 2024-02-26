@@ -1,0 +1,8 @@
+sinks:
+  - id: ThirdParties.SDK.Zendesk
+    name: Zendesk
+    domains:
+      - "zendesk.com"
+    patterns:
+      - "(?i)(zendesk).*"
+    tags:
