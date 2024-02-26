@@ -5,7 +5,7 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i).*((?<!question)bank[^\\s/(;)#|,=!>]*(?:name|account|details|detail|address|country|(swift|bic)-code|(swift|bic)_code)|bank[^\\s/(;)#|,=!>]*account[^\\s/(;)#|,=!>]*details|(swift|bic)[-_]code|(swift|bic)code)"
+      - "(?i).*((?<!question)bank[^\\s/(;)#|,=!>]*(?:name|account|details|detail|address|country|(swift|bic)-code|(swift|bic)_code)|bank[^\\s/(;)#|,=!>]*account[^\\s/(;)#|,=!>]*details|(swift|bic)[-_]code|(swift|bic)code|iban)"
     tags:
       law: GDPR
 
