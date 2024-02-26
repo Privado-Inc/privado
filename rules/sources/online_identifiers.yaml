@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i).*(device[^\\s/(;)#|,=!>]{0,5}(?:id|info|details|token))|imei"
+      - "(?i).*(device[^\\s/(;)#|,=!>]{0,5}(?:id|info|details|token))|imei|fingerprint"
     tags:
       law: GDPR
 
