@@ -19,6 +19,17 @@ sources:
     tags:
       law: GDPR
 
+  - id: Data.Sensitive.BackgroundCheckDetails.ReferenceCheckDocuments
+    name: Reference Check Documents
+    category: Background Check Document Identifiers
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "(?i).*(?:address|main)[^\\s/(;)#|,=!>]{0,10}document"
+      - "(?i).*(?:document)[^\\s/(;)#|,=!>]{0,10}(?:reference|id)"
+    tags:
+      law: GDPR
+
   - id: Data.Sensitive.BackgroundCheckDetails.EmploymentHistory
     name: Employment History
     category: Background Check Details
