@@ -39,6 +39,16 @@ sources:
     tags:
       law: GDPR
 
+  - id: Data.Sensitive.PersonalIdentification.MiddleName
+    name: Middle Name(s)
+    category: Personal Identification
+    isSensitive: False
+    sensitivity: low
+    patterns:
+      - "(?i).*((?:middle)[^\\s(;)#|,=!>]{0,5}name(s){0,1})"
+    tags:
+      law: GDPR
+
   - id: Data.Sensitive.PersonalIdentification.Age
     name: Age
     category: Personal Identification
