@@ -1,0 +1,25 @@
+sinks:
+
+  - id: Storages.EntityFrameworkCore.Write
+    name: Entity Framework DB Connector
+    domains:
+      - learn.microsoft.com/ef/core
+    patterns:
+      - "(?i).*(IRepository).*(Add|AddOrUpdate|AddRange).*" 
+    tags:
+
+  - id: Storages.EntityFrameworkCore.Read
+    name: Entity Framework DB Connector
+    domains:
+      - learn.microsoft.com/ef/core
+    patterns:
+      - "(?i).*(IRepository).*(Find|Find|Fiest|ForEach|LongCount|ToArray|Single)(Async)?.*" 
+    tags:
+
+  - id: Storages.EntityFrameworkCore.Delete
+    name: Entity Framework DB Connector
+    domains:
+      - learn.microsoft.com/ef/core
+    patterns:
+      - "(?i).*(IRepository).*(Remove|RemoveRange).*" 
+    tags:
