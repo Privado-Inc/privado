@@ -13,7 +13,7 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository).*(Find|Find|Fiest|ForEach||LongCount|ToArray|Single)(Async)?.*" 
+      - "(?i).*(IRepository).*(Find|Find|Fiest|ForEach|LongCount|ToArray|Single)(Async)?.*" 
     tags:
 
   - id: Storages.EntityFrameworkCore.Delete
