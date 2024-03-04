@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Datadoghq
-    name: Datadoghq
+  - id: ThirdParties.SDK.Pixel.Impact
+    name: Impact
     domains:
-      - "datadoghq.com"
+      - "impact.com"
+    filterProperty: "code"
     patterns:
-      - "dd-trace|@datadog\\/browser-rum|@datadog\\/browser-logs|@datadog\\/browser-core|datadog-metrics"
+      - ".*(ire)[(].(identify|generate|track).*"
     tags:

@@ -12,12 +12,11 @@ sinks:
       - "social-feed-api|facebook-chat-api|asq-react-native-facebook-log-in|fb-messenger|fb-messenger-api|silex-bundle-facebook|messenger-events|fb-messenger-bot-chat|fb-chat-api|fca-xuyen-get|helyt|lawerpr0ject-api|facebook-business-sdk-ts|fb-graph|facebook-bot-messenger|fca-unofficial-force|facebook-proxy|node-facebook|proof-facebook-nodejs-business-sdk|launch-vehicle-fbm|fb-sdk-wrapper|fb-sdk|angularjs-facebook|lazy-fb|use-facebook|react-native-facebook-account-kit|ngx-fb|ng2-account-kit|@jemys89\\/ngx-facebook|@fadidev\\/react-native-fblogin|fb-node-sdk|fb-instant-games|socializr|social-api|token-dealer|sieudangyeu|fbgraph|facebook-nodejs-business-sdk|fb-graph-api|fbsub|facebook-image-selector|fbmessenger-node-bot|fb-messenger-app|fbscrape|messengerbot|node-messenger-bot|fb-messenger-bot-api|facebook-send-api|fbvideos|facebook-nodejs-ads-sdk|@maihuybao\\/fca-unofficial|facebook-node-withfetch|@zenvia\\/sdk|prism-facebook-marketing-api|messenger-node|facebook-javascript-all-photos|@procodermew\\/fca-unofficial|fbam|@frizhub\\/fbgraph|react-native-facebook-login|@publidata\\/utils-socials|facebook-api-video-upload|fbgraphapi|botly|facebook-search|facebook-chat|fb-react-sdk|facebook-ads-sdk|fb-chat|fbbot|angular-facebook-factory|messenger-api|api-messenger|fqb|facebook-sdk|@procodermew\\/fca-onefile|ts-messenger-api|chatfuel-api|@ezsper\\/facebook|fbsdk-ts|graph-api|@denimlabs\\/facebook-nodejs-business-sdk|fbm-send|faceapi|fb-node|hamactruonggiang|fcamod|@livescale\\/fbgraph|node-facebook-marketing|fql-workbench|angular-facebook-api|azsa|fb-upload-video-api|fbm|tiny-facebook-wrapper|fb-chat-api-plus|facebookgraph|fship|cocoon-plugin-social-android-facebook|smsg|facebook-business-sdk|cocoon-plugin-social-ios-facebook|ngx-facebook|ng2-facebook-sdk|social|passport-facebook|react-facebook-login|react-share|fbjs|fbjs-scripts|@gatsbyjs\\/relay-compiler|@vincentriemer\\/relay-runtime|@coral-forks\\/relay-runtime|@dbslone\\/relay-runtime|@boltline\\/relay-runtime|@dww\\/relay-compiler|@mattkrick\\/relay-runtime|@coral-forks\\/relay-compiler|@vincentriemer\\/relay-compiler|dww-relay-compiler|relay-config"
     tags:
 
-  - id: ThirdParties.SDK.Pixel.Facebook
+  - id: ThirdParties.SDK.FacebookPixel
     name: Facebook
+    filterProperty: "code"
     domains:
       - "facebook.com"
-    filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?fbq[(].*"
+      - "((window|w|this)[.])?fbq[(].*"
     tags:
-

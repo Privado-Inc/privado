@@ -15,8 +15,8 @@ sinks:
   - id: ThirdParties.SDK.Pixel.Spotify
     name: Spotify
     domains:
-      - "ads.spotify.com"
+      - "spotify.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?(pdst|spdt)[(].*"
+      - "((window|w|this)[.])?(spdt)([.]q[.]push)?[(].*"
     tags:

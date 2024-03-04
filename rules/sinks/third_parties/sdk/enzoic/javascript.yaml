@@ -4,11 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Pixel.Snapchat
-    name: Snapchat
+  - id: ThirdParties.SDK.Enzoic
+    name: Enzoic
     domains:
-      - "snapchat.com"
-    filterProperty: "code"
+      - "enzoic.com"
     patterns:
-      - ".*(snaptr)[(].*"
+      - "enzoic"
     tags:

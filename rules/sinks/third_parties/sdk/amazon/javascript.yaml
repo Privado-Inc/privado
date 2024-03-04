@@ -11,7 +11,7 @@ sinks:
     patterns:
       - "aws-sqs-"
       - "@aws-solutions-constructs\\/aws-(lambda-sqs|sns-sqs|lambda-sqs|sqs-helper|apigateway-sqs|s3-sqs)"
-      - "graphql-sqs-subscriptions|sns-sqs-slq-code7|@battleline\\/sqs-large-payload-nodejs|typescript-aws-sqs-helper"
+      - "graphql-sqs-subscriptions|sns-sqs-slq-code7|@battleline\\/sqs-large-payload-nodejs|typescript-aws-sqs-helper|sqs-consumer"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Athena
