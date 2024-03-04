@@ -5,7 +5,7 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository|DBSet).*(Add|AddOrUpdate|AddRange)(Async)?.*" 
+      - "(?i).*(IRepository|DBSet).*(Add|AddOrUpdate|AddRange|Remove|RemoveRange)(Async)?.*" 
     tags:
 
   - id: Storages.EntityFrameworkCore.Read
@@ -13,13 +13,5 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository|DBSet).*(Find|Find|Fiest|ForEach|LongCount|ToArray|Single)(Async)?.*" 
-    tags:
-
-  - id: Storages.EntityFrameworkCore.Delete
-    name: Entity Framework DB Connector
-    domains:
-      - learn.microsoft.com/ef/core
-    patterns:
-      - "(?i).*(IRepository|DBSet).*(Remove|RemoveRange)(Async)?.*" 
+      - "(?i).*(IRepository|DBSet).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*" 
     tags:
