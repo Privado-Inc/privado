@@ -10,5 +10,5 @@ sinks:
       - "tvsquared.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?_tvq([.]push)[(].*"
+      - "(?i)(.*[.])?_tvq([.]push)[(].*"
     tags:

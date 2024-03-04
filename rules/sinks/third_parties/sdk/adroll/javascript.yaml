@@ -10,4 +10,4 @@ sinks:
       - "adroll.com"
     filterProperty: "code"
     patterns:
-      - "((window|w|this)[.])?(__adroll)([.](record_adroll_email|record_user))?[(].*"
+      - "(?i)(.*[.])?(__adroll)([.](record_adroll_email|record_user))?[(].*"

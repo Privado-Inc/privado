@@ -18,5 +18,5 @@ sinks:
       - "moengage.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?moeClient([.](add_user_attribute|add_unique_user_id|track_event))?[(].*"
+      - "(?i)(.*[.])?moeClient([.](add_user_attribute|add_unique_user_id|track_event))?[(].*"
     tags:

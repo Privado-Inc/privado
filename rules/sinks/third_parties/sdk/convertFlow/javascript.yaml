@@ -10,5 +10,5 @@ sinks:
       - "convertflow.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?convertFlow([.]identify)?[(].*"
+      - "(?i)(.*[.])?convertFlow([.]identify)?[(].*"
     tags:

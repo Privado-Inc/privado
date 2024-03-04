@@ -18,5 +18,5 @@ sinks:
       - "qualtrics.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?_qsie([.]push)[(].*"
+      - "(?i)(.*[.])?_qsie([.]push)[(].*"
     tags:

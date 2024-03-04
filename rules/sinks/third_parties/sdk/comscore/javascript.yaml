@@ -19,5 +19,5 @@ sinks:
       - "comscore.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?_comscore([.]push)?[(].*"
+      - "(?i)(.*[.])?_comscore([.]push)?[(].*"
     tags:

@@ -10,5 +10,5 @@ sinks:
       - "satismeter.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?satismeter[(].*"
+      - "(?i)(.*[.])?satismeter[(].*"
     tags:

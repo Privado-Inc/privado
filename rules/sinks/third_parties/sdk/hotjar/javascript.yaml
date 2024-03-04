@@ -10,5 +10,5 @@ sinks:
       - "hotjar.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?hj[(].*"
+      - "(?i)(.*[.])?hj[(].*"
     tags:

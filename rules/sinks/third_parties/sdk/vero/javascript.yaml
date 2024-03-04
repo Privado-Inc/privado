@@ -10,5 +10,5 @@ sinks:
       - "vero.co"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?_veroq([.]push)[(].*"
+      - "(?i)(.*[.])?_veroq([.]push)[(].*"
     tags:

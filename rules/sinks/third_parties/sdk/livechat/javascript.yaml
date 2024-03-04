@@ -10,5 +10,5 @@ sinks:
       - "livechat.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?LiveChatWidget([.]call)[(].*"
+      - "(?i)(.*[.])?LiveChatWidget([.]call)[(].*"
     tags:

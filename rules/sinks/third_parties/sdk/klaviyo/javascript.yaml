@@ -10,5 +10,5 @@ sinks:
       - "klaviyo.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?_learnq([.]push)[(].*"
+      - "(?i)(.*[.])?_learnq([.]push)[(].*"
     tags:

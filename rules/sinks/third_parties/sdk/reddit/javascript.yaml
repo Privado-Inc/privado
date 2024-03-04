@@ -18,5 +18,5 @@ sinks:
       - "reddit.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?rdt[(].*"
+      - "(?i)(.*[.])?rdt[(].*"
     tags:

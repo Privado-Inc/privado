@@ -18,4 +18,4 @@ sinks:
       - "amplitude.com"
     filterProperty: "code"
     patterns:
-      - "((window|w|this)[.])?(amplitude)([.](init|record_user|Identify|setUserId|track|setGroup|setDeviceId|revenue))?[(].*"
+      - "(?i)(.*[.])?(amplitude)([.](init|record_user|Identify|setUserId|track|setGroup|setDeviceId|revenue))?[(].*"

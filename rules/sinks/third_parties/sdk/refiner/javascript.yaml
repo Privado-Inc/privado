@@ -10,5 +10,5 @@ sinks:
       - "refiner.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?_refiner[(].*"
+      - "(?i)(.*[.])?_refiner[(].*"
     tags:

@@ -10,5 +10,5 @@ sinks:
       - "posthog.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?posthog([.](group|capture|identify|register|register_once|unregister))[(].*"
+      - "(?i)(.*[.])?posthog([.](group|capture|identify|register|register_once|unregister))[(].*"
     tags:

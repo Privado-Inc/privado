@@ -50,7 +50,7 @@ sinks:
     domains:
       - "admob.google.com"
     patterns:
-      - "((window|w|this)[.])?(gtag|dataLayer.push)[(].*"
+      - "(?i)(.*[.])?(gtag|dataLayer.push)[(].*"
     tags:
 
   - id: ThirdParties.SDK.Google.Spreadsheet
@@ -392,7 +392,7 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*(window|w|this)[.])?ga[(].*"
+      - "(?i)(.*[.])?ga[(].*"
     tags:
 
   - id: ThirdParties.SDK.Pixel.Google.TagManager
@@ -401,5 +401,5 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*(window|w|this)[.])?(datalayer[.]push|gtag)[(].*"
+      - "(?i)(.*[.])?(datalayer[.]push|gtag)[(].*"
     tags:

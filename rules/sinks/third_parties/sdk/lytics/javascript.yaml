@@ -10,5 +10,5 @@ sinks:
       - "lytics.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?jstag([.](send|pageView))[(].*"
+      - "(?i)(.*[.])?jstag([.](send|pageView))[(].*"
     tags:

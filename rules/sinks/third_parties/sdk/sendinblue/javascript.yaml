@@ -10,5 +10,5 @@ sinks:
       - "sendinblue.com"
     filterProperty: "code"
     patterns:
-      - "(?i)((window|w|this)[.])?sendinblue([.](page|track|identify))[(].*"
+      - "(?i)(.*[.])?sendinblue([.](page|track|identify))[(].*"
     tags:

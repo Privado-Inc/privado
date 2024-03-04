@@ -18,5 +18,5 @@ sinks:
       - "bugsnag.com"
     filterProperty: "code"
     patterns:
-      - "((window|w|this)[.])?(budsnag|bugsnagClient)([.](notify))?[(].*"
+      - "(?i)(.*[.])?(budsnag|bugsnagClient)([.](notify))?[(].*"
 

@@ -10,4 +10,4 @@ sinks:
       - "axeptio.io"
     filterProperty: "code"
     patterns:
-      - "((window|w|this)[.])?(__axcb|__axeptioSDK)([.](push|on))?[(].*"
+      - "(?i)(.*[.])?(__axcb|__axeptioSDK)([.](push|on))?[(].*"
