@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.Ktor
+    name: Ktor Kotlin Framework
+    patterns:
+      - "(?i)io.ktor.server.routing.(post|get|delete|put).*"
+    tags:
