@@ -11,3 +11,13 @@ sinks:
     patterns:
       - "@fullstory\\/browser"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Fullstory
+    name: Fullstory
+    domains:
+      - "fullstory.so"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?fs([.](identity|event))?[(].*"
+    tags:
+

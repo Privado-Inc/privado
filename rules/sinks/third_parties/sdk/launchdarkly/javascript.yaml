@@ -12,3 +12,12 @@ sinks:
       - "launchdarkly-node-server-sdk.*"
       - "(launchdarkly-react-client-sdk)(.)(?!useFlags)"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Launchdarkly
+    name: Launchdarkly
+    domains:
+      - "launchdarkly.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?ldclient([.](track|identify|alias))[(].*"
+    tags:

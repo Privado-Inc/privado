@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "reggit|imageapi.js|trev|bruhapi|snoowrap|raw.js|redwrap|nraw|snoode|snoots|reddit|reddit-fetch|reddit-wrapper-v2|reddit-scrapper|node-red-contrib-get-reddit|node-reddit-js|rereddit|random-reddit|reddit-image-fetcher|simple-oauth2-reddit|better-redddit|reddit-api-image-getter|reddit-oauth-helper|pushshift-api|djs-meme|scrap-reddit|kytra-api|snooshift|tsumiki-reddit.js|reddit.js|redditor|pokello|bee-api|wholesome|redddit|simple-reddit-api|fetch-reddit|snoostorm|reddit-oauth|jawfr|@kindl3d\\/reddit.js|@ipmanlk\\/reddit-simple"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Reddit
+    name: Reddit
+    domains:
+      - "reddit.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?rdt[(].*"
+    tags:

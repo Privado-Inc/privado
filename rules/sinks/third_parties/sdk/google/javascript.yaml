@@ -376,3 +376,12 @@ sinks:
     patterns:
       - "react-google-recaptcha|vue-recaptcha|@google-cloud\\/recaptcha-enterprise|react-google-recaptcha-v3"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Google
+    name: Google
+    domains:
+      - "google.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?(ga|gtag)([.](call|q.push))?[(].*"
+    tags:

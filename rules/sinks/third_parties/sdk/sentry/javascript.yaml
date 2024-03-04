@@ -11,3 +11,12 @@ sinks:
     patterns:
       - ".*sentry|@sentry\\/utils|raven-js|angular-raven|react-raven|adonis-sentry|node-sentry-error-reporter|@randy.tarampi\\/browser-logger|raven-logger|meanie-express-raven-service|uber-raven|nest-raven|vue-raven|good-sentry|bunyan-sentry-stream|raven|@randy.tarampi\\/lambda-logger|react-sentry-error-boundary|@pager\\/hapi-raven|react-native-sentry-android|winston-sentry-node|@ecg\\/vue-raven|@nglogger\\/raven|@dreipol\\/vue-log|adonis-sentry-v2|winston-transport-sentry|sails-hook-sentry|koa2-raven|@randy.tarampi\\/serverless|ravenjs-ignores|@sentry\\/tracing|@sentry\\/rrweb|sentry-monitor|@nuxtjs\\/sentry|error-receiver|crash-reporter-middleware|@sentry-internal\\/global-search|prism-sentry|@sentry\\/wizard|@sentry\\/core|@sentry\\/hub|@ntegral\\/nestjs-sentry|@sentry\\/gatsby"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Sentry
+    name: Sentry
+    domains:
+      - "sentry.io"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?sentry([.](init|setTag|setUser))[(].*"
+    tags:

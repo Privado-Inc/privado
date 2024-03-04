@@ -11,3 +11,13 @@ sinks:
     patterns:
       - "@segment\\/analytics.js-integration-comscore|react-native-comscore"
     tags:
+
+
+  - id: ThirdParties.SDK.Pixel.Comscore
+    name: Comscore
+    domains:
+      - "comscore.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?_comscore([.]push)?[(].*"
+    tags:

@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "@optimizely\\/js-sdk-utils|@optimizely\\/optimizely-sdk|@optimizely\\/js-sdk-logging|@optimizely\\/js-sdk-event-processor|@segment\\/analytics.js-integration-optimizely|optimizely-server-sdk|@opendoor\\/optimizely-js-sdk-utils|@opendoor\\/optimizely-js-sdk-logging|@opendoor\\/optimizely-js-sdk-event-processor|featuretoggle-react|@opendoor\\/optimizely-sdk|machinepack-optimizely|optimizely-singleton|passport-optimizely|@episerver\\/content-delivery|@vivareal\\/ng-optimizely|@episerver\\/content-definitions|@bryandbor\\/optimizely-react"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Optimizely
+    name: Optimizely
+    domains:
+      - "optimizely.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?optimizely([.]push)?[(].*"
+    tags:

@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "react-native-moengage-custom|react-native-moengage|moengage|react-native-moengage-inbox|react-native-moengage-geofence|react-moengage|@segment\\/analytics.js-integration-moengage"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Moengage
+    name: Moengage
+    domains:
+      - "moengage.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?moeClient([.](add_user_attribute|add_unique_user_id|track_event))?[(].*"
+    tags:

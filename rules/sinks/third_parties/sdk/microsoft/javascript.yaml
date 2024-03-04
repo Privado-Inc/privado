@@ -315,3 +315,12 @@ sinks:
     patterns:
       - "powerbi"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Microsoft
+    name: Microsoft Clarity
+    domains:
+      - "microsoft.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])clarity[(].*"
+    tags:

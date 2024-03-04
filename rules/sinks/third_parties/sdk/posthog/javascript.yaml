@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "posthog-js"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Posthog
+    name: Posthog
+    domains:
+      - "posthog.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)((window|w|this)[.])?posthog([.](group|capture|identify|register|register_once|unregister))[(].*"
+    tags:
