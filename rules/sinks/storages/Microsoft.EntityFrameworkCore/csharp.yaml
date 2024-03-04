@@ -5,7 +5,7 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository).*(Add|AddOrUpdate|AddRange).*" 
+      - "(?i).*(IRepository|DBSet).*(Add|AddOrUpdate|AddRange)(Async)?.*" 
     tags:
 
   - id: Storages.EntityFrameworkCore.Read
@@ -13,7 +13,7 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository).*(Find|Find|Fiest|ForEach|LongCount|ToArray|Single)(Async)?.*" 
+      - "(?i).*(IRepository|DBSet).*(Find|Find|Fiest|ForEach|LongCount|ToArray|Single)(Async)?.*" 
     tags:
 
   - id: Storages.EntityFrameworkCore.Delete
@@ -21,5 +21,5 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository).*(Remove|RemoveRange).*" 
+      - "(?i).*(IRepository|DBSet).*(Remove|RemoveRange)(Async)?.*" 
     tags:
