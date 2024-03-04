@@ -1,0 +1,30 @@
+sinks:
+  - id: Leakages.Log.Console
+    name: Log Console
+    patterns: 
+      - "(?i).*(WriteLine).*"
+    tags:
+
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i).*(ILogger).*(LogInformation|LogTrace).*"
+    tags:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i).*(ILogger).*(LogError|LogCritical).*"
+    tags:
+
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i).*(ILogger).*(LogWarning).*"
+    tags:
+
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i).*(ILogger).*(LogDebug).*"
+    tags:
