@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.SparkJava
+    name: SparkJava Http Framework
+    patterns:
+      - "(?i)(spark.Spark).(post|get|delete|put).*"
+    tags:

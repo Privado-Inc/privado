@@ -1,6 +1,6 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: ^(?i)(org.apache.http|okhttp|org.glassfish.jersey|com.mashape.unirest|java.net.http|java.net.URL|org.springframework.(web|core.io)|groovyx.net.http|org.asynchttpclient|kong.unirest.java|org.concordion.cubano.driver.http|javax.net.ssl|javax.xml.soap|org.apache.axis2|com.sun.xml.messaging.saaj|org.springframework.ws.client|com.eviware.soapui|org.apache.cxf|org.jboss.ws|com.ibm.websphere.sca.extensions.soap|com.sun.xml.ws|org.apache.camel.component.cxf|org.codehaus.xfire|org.apache.synapse|org.apache.wink.client|com.oracle.webservices.internal.api.databinding.Databinding|com.sap.engine.interfaces.webservices.runtime.client).*
+    value: ^(?i)(org.apache.http|okhttp|org.glassfish.jersey|com.mashape.unirest|java.net.http|java.net.URL|org.springframework.(web|core.io)|groovyx.net.http|org.asynchttpclient|kong.unirest.java|org.concordion.cubano.driver.http|javax.net.ssl|javax.xml.soap|org.apache.axis2|com.sun.xml.messaging.saaj|org.springframework.ws.client|com.eviware.soapui|org.apache.cxf|org.jboss.ws|com.ibm.websphere.sca.extensions.soap|com.sun.xml.ws|org.apache.camel.component.cxf|org.codehaus.xfire|org.apache.synapse|org.apache.wink.client|com.oracle.webservices.internal.api.databinding.Databinding|com.sap.engine.interfaces.webservices.runtime.client|io.ktor.client.HttpClient).*
 
   - key: ignoredSinks
     value: (?i).*(?<=map|list|jsonobject|json|array|arrays|jsonnode|objectmapper|objectnode).*(put:|get:).*
