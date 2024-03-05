@@ -10,4 +10,4 @@ sinks:
       - "appcues.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?(Appcues)([.](identify|track|page))?[(].*"
+      - "(?i)(.*\\.)?(Appcues)(\\.(identify|track|page))?[(].*"

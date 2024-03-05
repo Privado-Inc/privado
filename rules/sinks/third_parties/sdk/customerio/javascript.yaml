@@ -10,5 +10,5 @@ sinks:
       - "customer.io"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?_cio([.](identify|track|page|))?[(].*"
+      - "(?i)(.*\\.)?_cio([.](identify|track|page|))?[(].*"
     tags:

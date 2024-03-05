@@ -10,5 +10,5 @@ sinks:
       - "hubspot.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?_hsq([.]push)?[(].*"
+      - "(?i)(.*\\.)?_hsq([.]push)?[(].*"
     tags:

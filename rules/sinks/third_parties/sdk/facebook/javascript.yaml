@@ -18,5 +18,5 @@ sinks:
     domains:
       - "facebook.com"
     patterns:
-      - "(?i)(.*[.])?fbq[(].*"
+      - "(?i)(.*\\.)?fbq[(].*"
     tags:

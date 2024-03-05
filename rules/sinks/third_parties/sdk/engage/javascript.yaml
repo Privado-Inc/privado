@@ -10,5 +10,5 @@ sinks:
       - "engage.so"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?Engage([.]track)?[(].*"
+      - "(?i)(.*\\.)?Engage([.]track)?[(].*"
     tags:

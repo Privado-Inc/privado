@@ -18,5 +18,5 @@ sinks:
       - "optimizely.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?optimizely([.]push)?[(].*"
+      - "(?i)(.*\\.)?optimizely([.]push)?[(].*"
     tags:

@@ -10,5 +10,5 @@ sinks:
       - "rockerbox.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?RB([.]track)[(].*"
+      - "(?i)(.*\\.)?RB([.]track)[(].*"
     tags:

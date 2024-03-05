@@ -10,5 +10,5 @@ sinks:
       - "rollbar.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?Rollbar([.]configure)[(].*"
+      - "(?i)(.*\\.)?Rollbar([.]configure)[(].*"
     tags:

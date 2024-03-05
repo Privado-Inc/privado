@@ -10,5 +10,5 @@ sinks:
       - "quora.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?qp[(].*"
+      - "(?i)(.*\\.)?qp[(].*"
     tags:

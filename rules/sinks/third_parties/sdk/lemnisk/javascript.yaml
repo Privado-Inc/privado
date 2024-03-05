@@ -10,5 +10,5 @@ sinks:
       - "klaviyo.co"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?_lmSMTObj([.](track|page|identify))[(].*"
+      - "(?i)(.*\\.)?_lmSMTObj([.](track|page|identify))[(].*"
     tags:

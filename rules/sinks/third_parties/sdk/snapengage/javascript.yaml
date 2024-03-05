@@ -10,5 +10,5 @@ sinks:
       - "snapengage.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?snapengage([.](setUserEmail|setUserName))[(].*"
+      - "(?i)(.*\\.)?snapengage([.](setUserEmail|setUserName))[(].*"
     tags:

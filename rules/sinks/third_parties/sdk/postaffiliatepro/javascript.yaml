@@ -10,5 +10,5 @@ sinks:
       - "postaffiliatepro.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?PostAffTracker([.](track|writeCookieToLink|writeCampaignToCustomField|writeAffiliateToCustomField|writeCookieToCustomField))[(].*"
+      - "(?i)(.*\\.)?PostAffTracker([.](track|writeCookieToLink|writeCampaignToCustomField|writeAffiliateToCustomField|writeCookieToCustomField))[(].*"
     tags:

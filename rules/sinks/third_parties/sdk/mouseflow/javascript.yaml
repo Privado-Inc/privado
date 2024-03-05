@@ -10,5 +10,5 @@ sinks:
       - "mouseflow.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?(mouseflow|_mfq)([.](push|identify))[(].*"
+      - "(?i)(.*\\.)?(mouseflow|_mfq)([.](push|identify))[(].*"
     tags:

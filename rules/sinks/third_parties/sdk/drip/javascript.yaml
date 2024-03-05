@@ -9,5 +9,5 @@ sinks:
       - "drip.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?_dcq([.]push)?[(].*"
+      - "(?i)(.*\\.)?_dcq([.]push)?[(].*"
     tags:

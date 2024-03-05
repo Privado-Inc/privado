@@ -10,4 +10,4 @@ sinks:
       - "activecampaign.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?vgo[(].*"
+      - "(?i)(.*\\.)?vgo[(].*"

@@ -10,5 +10,5 @@ sinks:
       - "heap.io"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?heap([.](track|identify|addUserProperties))?[(].*"
+      - "(?i)(.*\\.)?heap([.](track|identify|addUserProperties))?[(].*"
     tags:

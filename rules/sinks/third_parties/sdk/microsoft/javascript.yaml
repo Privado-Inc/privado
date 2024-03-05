@@ -322,5 +322,5 @@ sinks:
       - "microsoft.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])clarity[(].*"
+      - "(?i)(.*\\.)clarity[(].*"
     tags:

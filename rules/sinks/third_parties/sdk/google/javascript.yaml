@@ -48,9 +48,9 @@ sinks:
     name: Google Tag Manager
     filterProperty: "code"
     domains:
-      - "admob.google.com"
+      - "analytics.google.com"
     patterns:
-      - "(?i)(.*[.])?(gtag|dataLayer.push)[(].*"
+      - "(?i)(.*\\.)?(gtag|dataLayer.push)[(].*"
     tags:
 
   - id: ThirdParties.SDK.Google.Spreadsheet
@@ -392,14 +392,14 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?ga[(].*"
+      - "(?i)(.*\\.)?ga[(].*"
     tags:
 
   - id: ThirdParties.SDK.Pixel.Google.TagManager
     name: Google Tag Manager
     domains:
-      - "analytics.google.com"
+      - "tagmanager.google.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?(datalayer[.]push|gtag)[(].*"
+      - "(?i)(.*\\.)?(datalayer[.]push|gtag)[(].*"
     tags:

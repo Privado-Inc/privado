@@ -18,5 +18,5 @@ sinks:
       - "spotify.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?(spdt)([.]q[.]push)?[(].*"
+      - "(?i)(.*\\.)?(spdt)([.]q[.]push)?[(].*"
     tags:

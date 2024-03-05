@@ -18,5 +18,5 @@ sinks:
       - "qualaroo.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?_kiq([.]push)[(].*"
+      - "(?i)(.*\\.)?_kiq([.]push)[(].*"
     tags:

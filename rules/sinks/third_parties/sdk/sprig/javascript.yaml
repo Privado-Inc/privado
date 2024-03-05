@@ -10,5 +10,5 @@ sinks:
       - "sprig.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?sprig[(].*"
+      - "(?i)(.*\\.)?sprig[(].*"
     tags:
