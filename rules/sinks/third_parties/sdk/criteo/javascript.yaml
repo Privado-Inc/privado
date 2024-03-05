@@ -12,11 +12,11 @@ sinks:
       - "node-criteo-api|criteo-api"
     tags:
 
-  - id: ThirdParties.SDK.Pixel.ConvertFlow
-    name: ConvertFlow
+  - id: ThirdParties.SDK.Pixel.Criteo
+    name: Criteo
     domains:
-      - "convertflow.com"
+      - "criteo.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?convertFlow([.]identify)?[(].*"
+      - "(?i)(.*[.])?criteo_q([.]push)?[(].*"
     tags:

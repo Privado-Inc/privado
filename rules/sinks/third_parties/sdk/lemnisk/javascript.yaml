@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Pixel.Lemnisk
     name: Lemnisk
     domains:
-      - "klaviyo.co"
+      - "lemnisk.co"
     filterProperty: "code"
     patterns:
       - "(?i)(.*[.])?_lmSMTObj([.](track|page|identify))[(].*"

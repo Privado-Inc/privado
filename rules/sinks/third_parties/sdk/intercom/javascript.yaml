@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Intercom
     name: Intercom
     domains:
-      - "intercom.io"
+      - "intercom.com"
     patterns:
       - "intercom-next|trailpack-intercom|ember-elevio|gatsby-plugin-intercom-spa|react-intercom-widget|ember-metrics|intercom.io|cordova-plugin-intercom|tabex|react-use-intercom|ember-intercom-io|ng-intercom|@analytics\\/intercom|passport-intercom|crosstab|react-live-chat-loader|intercom-react|cwb|@segment\\/analytics.js-integration-intercom|facet-intercom|@reclaim-ai\\/react-intercom-hook|next-intercom|gatsby-plugin-intercom|intercom-service-js|react-intercom-hook|ng-intercom-angular-ten|angular-intercom|intercom-facade|simple-node-intercom-io|@paperbits\\/intercom|tab-emitter|use-intercom-hook|ng-intercom-upd|@mentorly\\/react-intercom-hook|wechaty-intercom|@musicplayce\\/intercom-ts|@mobileaction\\/ui-modules|vuepress-intercom|intercomly|@vai0s-org\\/react-use-intercom|react-custom-chat|@beyonk\\/svelte-intercom|@efstajas\\/tela|intercom-react-native|@vai0\\/react-use-intercom|@runnable\\/orion|ng2-intercom|react-facebook-message-us|@getlago\\/passport-intercom|@jackmerrill\\/next-intercom|ng-intercom-multi"
     tags:
@@ -15,7 +15,7 @@ sinks:
   - id: ThirdParties.SDK.Pixel.Intercom
     name: Intercom
     domains:
-      - "intercom.io"
+      - "intercom.com"
     filterProperty: "code"
     patterns:
       - "(?i)(.*[.])?intercom[(].*"
