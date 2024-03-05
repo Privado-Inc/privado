@@ -18,5 +18,5 @@ sinks:
       - "linkedin.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?lintrk[(].*"
+      - "(?i)(.*[.])?lintrk[(].*"
     tags:

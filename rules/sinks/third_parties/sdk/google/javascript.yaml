@@ -50,7 +50,7 @@ sinks:
     domains:
       - "analytics.google.com"
     patterns:
-      - "(?i)(.*\\.)?(gtag|dataLayer.push)[(].*"
+      - "(?i)(.*[.])?(gtag|dataLayer.push)[(].*"
     tags:
 
   - id: ThirdParties.SDK.Google.Spreadsheet
@@ -392,7 +392,7 @@ sinks:
       - "analytics.google.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?ga[(].*"
+      - "(?i)(.*[.])?ga[(].*"
     tags:
 
   - id: ThirdParties.SDK.Pixel.Google.TagManager
@@ -401,5 +401,5 @@ sinks:
       - "tagmanager.google.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?(datalayer[.]push|gtag)[(].*"
+      - "(?i)(.*[.])?(datalayer[.]push|gtag)[(].*"
     tags:

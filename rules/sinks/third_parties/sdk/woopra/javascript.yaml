@@ -10,5 +10,5 @@ sinks:
       - "woopra.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?woopra([.](track|identify|config))[(].*"
+      - "(?i)(.*[.])?woopra([.](track|identify|config))[(].*"
     tags:

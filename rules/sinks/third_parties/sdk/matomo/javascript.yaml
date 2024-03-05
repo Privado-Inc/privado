@@ -10,5 +10,5 @@ sinks:
       - "matomo.org"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?_paq([.]push)[(].*"
+      - "(?i)(.*[.])?_paq([.]push)[(].*"
     tags:

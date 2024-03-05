@@ -18,5 +18,5 @@ sinks:
       - "mixpanel.org"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?mixpanel([.](get_group|track|track_forms|track_links|people[.](track_change|increment|set)))[(].*"
+      - "(?i)(.*[.])?mixpanel([.](get_group|track|track_forms|track_links|people[.](track_change|increment|set)))[(].*"
     tags:

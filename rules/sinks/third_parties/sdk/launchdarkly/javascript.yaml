@@ -19,5 +19,5 @@ sinks:
       - "launchdarkly.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?ldclient([.](track|identify|alias))[(].*"
+      - "(?i)(.*[.])?ldclient([.](track|identify|alias))[(].*"
     tags:

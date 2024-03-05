@@ -10,5 +10,5 @@ sinks:
       - "paddle.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?profitwell[(].*"
+      - "(?i)(.*[.])?profitwell[(].*"
     tags:

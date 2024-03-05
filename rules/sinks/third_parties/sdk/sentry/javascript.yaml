@@ -18,5 +18,5 @@ sinks:
       - "sentry.io"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?sentry([.](init|setTag|setUser))[(].*"
+      - "(?i)(.*[.])?sentry([.](init|setTag|setUser))[(].*"
     tags:

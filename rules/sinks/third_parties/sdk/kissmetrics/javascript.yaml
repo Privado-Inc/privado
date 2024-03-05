@@ -18,5 +18,5 @@ sinks:
       - "kissmetrics.io"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?_kmq([.]push)[(].*"
+      - "(?i)(.*[.])?_kmq([.]push)[(].*"
     tags:

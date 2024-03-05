@@ -18,5 +18,5 @@ sinks:
       - "intercom.io"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?intercom[(].*"
+      - "(?i)(.*[.])?intercom[(].*"
     tags:

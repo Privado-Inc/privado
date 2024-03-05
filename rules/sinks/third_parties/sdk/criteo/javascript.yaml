@@ -18,5 +18,5 @@ sinks:
       - "convertflow.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*\\.)?convertFlow([.]identify)?[(].*"
+      - "(?i)(.*[.])?convertFlow([.]identify)?[(].*"
     tags:
