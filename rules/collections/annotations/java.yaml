@@ -34,3 +34,9 @@ collections:
     patterns:
       - "GET|POST"
     tags:
+
+  - id: Collections.Annotation.JAX-RS
+    name: JAX-RS Annotation
+    patterns:
+      - "(?i)(javax.ws.rs).(GET|PUT|POST|DELETE|HEAD|OPTIONS).*"
+    tags:
