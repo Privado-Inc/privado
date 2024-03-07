@@ -27,6 +27,7 @@ sinks:
       - mongodb.com
     patterns: 
       - "(?i)(.*[.]morphia[.]Datastore)[.]((find|get|getByKey|getByKeys|getCount|createAggregation|createQuery|queryByExample|exists).*[:].*)"
+      - "(?i)(.*[.]morphia[.]query[.](asList|countAll|count|get).*)"
     tags:
 
   - id: Storages.MongoDB.Morphia.Write
@@ -34,7 +35,8 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(?i)(.*[.]morphia[.]Datastore)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)|merge).*[:].*)|(.*[.]morphia[.]query[.]FieldEnd.*)"
+      - "(?i)(.*[.]morphia[.]Datastore)[.]((save|update|updateFirst|createUpdateOperations|delete|findAnd(Delete|Modify)|merge).*[:].*)"
+      - "(?i)(.*[.]morphia[.]query[.](FieldEnd|modify|execute|delete).*)"
     tags:
     
   - id: Storages.MongoDB.SpringRepository.Read
