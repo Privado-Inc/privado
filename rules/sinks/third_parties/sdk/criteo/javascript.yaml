@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "node-criteo-api|criteo-api"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Criteo
+    name: Criteo
+    domains:
+      - "criteo.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*[.])?criteo_q([.]push)?[(].*"
+    tags:

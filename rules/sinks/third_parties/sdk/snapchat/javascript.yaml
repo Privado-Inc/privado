@@ -11,4 +11,4 @@ sinks:
     filterProperty: "code"
     patterns:
       - ".*(snaptr)[(].*"
-    tags:      
+    tags:

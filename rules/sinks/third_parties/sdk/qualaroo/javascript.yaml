@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "react-native-qualaroo-mobile-sdk"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Qualaroo
+    name: Qualaroo
+    domains:
+      - "qualaroo.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*[.])?_kiq([.]push)[(].*"
+    tags:

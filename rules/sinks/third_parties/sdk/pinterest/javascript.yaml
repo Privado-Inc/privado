@@ -6,6 +6,6 @@ sinks:
     domains:
       - "pinterest.com"
     patterns:
-      - "((window|w|this)[.])?pintrk[(].*"
+      - "(?i)(.*[.])?pintrk[(].*"
     tags:
 

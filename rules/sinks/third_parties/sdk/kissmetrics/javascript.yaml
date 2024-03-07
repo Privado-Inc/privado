@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "@okgrow\\/auto-analytics|kissmetrics-js|kissmymetrics|kissmetrics-export|simple-node-kissmetrics|tracktics"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Kissmetrics
+    name: Kissmetrics
+    domains:
+      - "kissmetrics.io"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*[.])?_kmq([.]push)[(].*"
+    tags:

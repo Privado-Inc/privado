@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "ah-bugsnag-plugin|contactsnag|graphql-middleware-bugsnag|cabin|@bugsnag\\/expo|epic-logger|vite-plugin-bugsnag|bunyan-bugsnag|bugsnag-roku|nest-bugsnag|@wizbii\\/nest-bugsnag|winston-bugsnag|@ssut\\/nest-bugsnag|bugsnag-browser-lite|@werkspot\\/decrypterror|nest-bugsnag-remade|paperplane-bugsnag|@articulate\\/paperplane-bugsnag|@keyrock\\/winston-bugsnag-transport|adonis-bugsnag|@bugsnag\\/js|@bugsnag\\/source-maps|@bugsnag\\/react-native|axe|sensitive-fields|@nkaurelien\\/nest-bugsnag|winston-3-bugsnag-transport"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Bugsnag
+    name: Bugsnag
+    domains:
+      - "bugsnag.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*[.])?(budsnag|bugsnagClient)([.](notify))?[(].*"
+
