@@ -29,14 +29,8 @@ collections:
       - "RemoteServiceRelativePath"
     tags:
 
-  - id: Collections.Annotation.Retrofit
-    name: Retrofit Interface Annotation
-    patterns:
-      - "GET|POST"
-    tags:
-
   - id: Collections.Annotation.JAX-RS
     name: JAX-RS Annotation
     patterns:
-      - "(?i)(javax.ws.rs).(GET|PUT|POST|DELETE|HEAD|OPTIONS).*"
+      - ".*(GET|PUT|POST|DELETE|HEAD|OPTIONS).*"
     tags:
