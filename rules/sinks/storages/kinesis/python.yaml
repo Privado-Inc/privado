@@ -4,7 +4,7 @@
 sinks:
 
   - id: Storages.AmazonKinesis.Read
-    name: Amazon Kinesis(Read)
+    name: Amazon AWS Kinesis(Read)
     domains:
       - aws.amazon.com
       - amazon.com
@@ -13,7 +13,7 @@ sinks:
     tags:
 
   - id: Storages.AmazonKinesis.Write
-    name: Amazon Kinesis(Write)
+    name: Amazon AWS Kinesis(Write)
     domains:
       - aws.amazon.com
       - amazon.com
