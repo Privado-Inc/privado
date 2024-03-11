@@ -1,7 +1,7 @@
 sinks:
 
   - id: Storages.AmazonKinesis.ReadAndWrite
-    name: Amazon Kinesis
+    name: Amazon AWS Kinesis
     domains:
       - aws.amazon.com/kinesis
     patterns:
