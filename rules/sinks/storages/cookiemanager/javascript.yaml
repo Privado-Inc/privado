@@ -9,7 +9,7 @@ sinks:
   - id: Storages.Web.Cookie.Write
     name: Web Storage Cookie(Write)
     patterns:
-      - "(?i)(.*cookie[^{}()]*set.*)|(.*:setcookie)"
+      - "(?i)(.*cookie[^{}()]*set(?!(ting)).*)|(.*:setcookie)"
     tags:
     
   - id: Storages.Web.Cookie.Delete
