@@ -179,7 +179,7 @@ sinks:
     tags:
   
   - id: ThirdParties.SDK.Amazonaws.Kinesis
-    name: Amazonaws Kinesis
+    name: Amazon AWS Kinesis
     domains:
       - "aws.amazon.com/kinesis"
     patterns:
@@ -303,7 +303,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.KinesisDataFirehose
-    name: Amazonaws Kinesis Data Firehose
+    name: Amazon AWS Kinesis Firehose
     domains:
       - "aws.amazon.com/kinesis/data-firehose"
     patterns:

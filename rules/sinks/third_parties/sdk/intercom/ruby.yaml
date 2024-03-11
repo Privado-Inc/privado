@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Intercom
     name: Intercom
     domains:
-      - "intercom.io"
+      - "intercom.com"
     patterns:
       - "(?i)(intercom|intercom-rails|omniauth-intercom|intercom-app|intercom_summary|lucid_intercom|intercom_export|cogniteev-intercom|ahoy-intercom|intercom_event_wrapper|hertz-courier-intercom|PSA|user_trackers|helply).*"
     tags:

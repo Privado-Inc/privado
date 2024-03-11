@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "qualtrics-api|qualtrics-google-map-lat-long|@spartacus\\/qualtrics|@jonathonbaron\\/factorial-assign"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Qualtrics
+    name: Qualtrics
+    domains:
+      - "qualtrics.com"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*[.])?_qsie([.]push)[(].*"
+    tags:

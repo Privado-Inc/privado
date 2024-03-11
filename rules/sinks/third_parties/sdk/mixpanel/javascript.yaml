@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "mixpanel|@analytics\\/mixpanel"
     tags:
+
+  - id: ThirdParties.SDK.Pixel.Mixpanel
+    name: Mixpanel
+    domains:
+      - "mixpanel.org"
+    filterProperty: "code"
+    patterns:
+      - "(?i)(.*[.])?mixpanel([.](get_group|track|track_forms|track_links|people[.](track_change|increment|set)))[(].*"
+    tags:

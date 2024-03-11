@@ -1,0 +1,19 @@
+# Sink Rules for storage database JDBC Driver - https://www.oracle.com/in/database/technologies/appdev/jdbc.html
+
+sinks:
+
+  - id: Storages.JDBI.Jdbi.Write
+    name: Java Database Interface(Write)
+    domains:
+      - jdbi.org
+    patterns:
+      - "(?i)((org[.]jdbi[.]v3[.]core[.].*)[.](createUpdate|bind)).*"
+    tags:
+
+  - id: Storages.JDBI.Jdbi.Read
+    name: Java Database Interface(Read)
+    domains:
+      - jdbi.org
+    patterns:
+      - "(?i)((org[.]jdbi[.]v3[.]core[.].*)[.]createQuery).*"
+    tags:
