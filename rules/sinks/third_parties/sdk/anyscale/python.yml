@@ -1,0 +1,20 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+  - id: ThirdParties.SDK.Langchain.ChatModels.Anyscale
+    name: Langchain Anyscale model
+    domains:
+      - "langchain.com"
+    patterns:
+      - "(?i).*(?:langchain.*chat_models.*.ChatAnyscale).*"
+    tags:
+
+  - id: ThirdParties.SDK.Anyscale
+    name: Anyscale
+    domains:
+      - "anyscale.com"
+    patterns:
+      - "(?i).*(anyscalesdk).*"
+    tags:

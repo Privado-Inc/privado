@@ -1,0 +1,26 @@
+
+# Sink Rules for vector DB ChromaDB
+
+sinks:
+  - id: Storages.Lance.Initialize
+    name: Lance DB
+    domains:
+      - https://lancedb.com/
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.LanceDB).*"
+
+  - id: Storages.Lance.Read
+    name: Lance DB (Write)
+    domains:
+      - https://lancedb.com/
+    patterns:
+      - "(?i).*(?:lancedb.db).*(?:open_table|search).*"
+    tags:
+
+  - id: Storages.Lance.Write
+    name: Lance DB (Write)
+    domains:
+      - https://lancedb.com/
+    patterns:
+      - "(?i).*(?:lancedb.db).*(?:add|create_table|create_index|delete|drop_table).*"
+    tags:

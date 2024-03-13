@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Pinecone - pinecone.io
+
+sinks:
+
+  - id: Storages.Pinecone.ReadAndWrite
+    name: Pinecone VectorDB
+    domains:
+      - pinecone.io
+    patterns:
+      - "(?i)(pinecone-database|pinecone).*"
+    tags:
