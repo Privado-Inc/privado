@@ -16,5 +16,5 @@ sinks:
     domains:
       - "anyscale.com"
     patterns:
-      - "(?i)(anyscale.sdk).*"
+      - "(?i).*(anyscalesdk).*"
     tags:

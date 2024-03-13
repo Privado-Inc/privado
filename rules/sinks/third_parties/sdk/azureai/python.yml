@@ -24,5 +24,5 @@ sinks:
     domains:
       - "azure.com"
     patterns:
-      - "(?i)(azure.AzureOpenAI).*"
+      - "(?i).*(AzureOpenAI).*"
     tags:

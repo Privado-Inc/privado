@@ -9,5 +9,5 @@ sinks:
     domains:
       - "https://platform.stability.ai/"
     patterns:
-      - "(?i)(stability_sdk.interfaces.gooseai).*"
+      - "(?i).*(stability_sdk.*.StabilityInference).*"
     tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "huggingface.co"
     patterns:
-      - "(?i)(sagemaker.huggingface).*"
+      - "(?i).*(sagemaker.*huggingface).*"
     tags:
