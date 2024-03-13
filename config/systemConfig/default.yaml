@@ -3,4 +3,4 @@ systemConfig:
     value: "4096"
 
   - key: RepoPropertyConfig
-    value: "name|config.prod.DB_HOST_NAME|config.prod.DB_LOG_NAME|dataClassification|serviceTier|isPciInScope|isSoxInScope|squad"
+    value: "(?i).*(prod|production|release).*((db|data_?base|data_?source).?(host|name|url|type)|s3.?bucket)"
