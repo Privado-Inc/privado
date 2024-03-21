@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Vmware
+    name: Vmware
+    domains:
+      - "vmware.com"
+    patterns:
+      - "(?i).*(vcenter|VmwareApiClient|Vmwarephp|VMware_VCloud_SDK_Service).*"
+    tags:

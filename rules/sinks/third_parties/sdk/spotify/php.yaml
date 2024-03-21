@@ -4,10 +4,11 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Matrix
-    name: Matrix
+  - id: ThirdParties.SDK.Spotify
+    name: Spotify
     domains:
-      - "matrix.org"
+      - "spotify.com"
     patterns:
-      - "(?i)(matrix_client).*"
+      - "(?i)(spotify).*"
+      - "(?i).*(spotifywebapi|SpotifyExtendSocialite).*"
     tags:

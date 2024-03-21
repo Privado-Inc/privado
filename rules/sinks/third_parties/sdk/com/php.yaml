@@ -1,0 +1,53 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Moip
+    name: Moip
+    domains:
+      - "moip.com.br"
+    patterns:
+      - "(?i).*(MoipServiceProvider|Moip.Moip).*"
+    tags:
+
+  - id: ThirdParties.SDK.Unipago
+    name: Unipago
+    domains:
+      - "unipago.com.do"
+    patterns:
+      - "(?i).*(UnipagoApi|Unipag_Invoice|Unipag_Event).*"
+    tags:
+
+  - id: ThirdParties.SDK.Brighte
+    name: Brighte
+    domains:
+      - "brighte.com.au"
+    patterns:
+      - "(?i).*(brighte).*"
+    tags:
+
+  - id: ThirdParties.SDK.Comtele
+    name: Comtele
+    domains:
+      - "comtele.com.br"
+    patterns:
+      - "(?i).*(comtele).*"
+    tags:
+
+  - id: ThirdParties.SDK.Betalabs
+    name: Betalabs
+    domains:
+      - "betalabs.com.br"
+    patterns:
+      - "(?i).*(engine.sdk.freight|engine.sdk.gateway|engine.contracts).*"
+    tags:
+
+  - id: ThirdParties.SDK.Ipag
+    name: Ipag
+    domains:
+      - "ipag.com.br"
+    patterns:
+      - "(?i).*(ipag[.]).*"
+    tags:

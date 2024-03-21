@@ -1,0 +1,9 @@
+systemConfig:
+  - key: apiHttpLibraries
+    value: (?i)(guzzlehttp|RestClient|requests|Httpful|RestRequest|.*(HttpClient)).*
+
+  - key: apiSinks
+    value: (?i)(?:url|client|openConnection|request|execute|newCall|load|host|access|usequery|useSWR|useSWRInfinite|useSWRSubscription|fetch|fetchapi|fetchlegacyxml|createfetch|postform|axios|cors|get|getInputStream|getApod|getForObject|getForEntity|list|set|put|post|del|proceed|trace|patch|Path|send|sendAsync|remove|delete|write|read|assignment|provider|exchange|postForEntity|call|createCall|createEndpoint|dispatch|invoke|newMessage|getInput|getOutput|getResponse|marshall|unmarshall|send|asyncSend|emit|on|track|addEventListener|ajax)
+
+  - key: apiIdentifier
+    value: (?i).*((hook|base|auth|prov|endp|install|cloud|host|request|service|gateway|route|resource|upload|api|worker|tracker|paymentservice)(.){0,12}url|(slack|web)(.){0,4}hook|(sentry|segment)(.){0,1}(dsn)|(rest|api|host|cloud|request|service)(.){0,4}(endpoint|gateway|route)).*

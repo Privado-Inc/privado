@@ -1,0 +1,29 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Line
+    name: Line
+    domains:
+      - "line.me"
+    patterns:
+      - "(?i).*(line.client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Line.Notify-bot
+    name: Line Notify-bot
+    domains:
+      - "notify-bot.line.me"
+    patterns:
+      - "(?i).*(yidas.linenotify).*"
+    tags:
+
+  - id: ThirdParties.SDK.Line.Pay
+    name: Line Pay
+    domains:
+      - "pay.line.me"
+    patterns:
+      - "(?i).*(linepay[.]).*"
+    tags:

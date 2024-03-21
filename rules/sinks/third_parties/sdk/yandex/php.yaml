@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Yandex
+    name: Yandex
+    domains:
+      - "yandex.com"
+    patterns:
+      - "(?i).*(ydelivery.sdk|yandex.sdk.|yandex.direct|yandex.market.oauth|yandex.library|yandex.dialogs.sdk|yandex.market.content|marketplace.partner|yandex.money.sdk.|beru.partner|yandex.metrika.sdk|yandex.delivery|yandex.market.partner|yandex|yandex.sdk|yandex.xml.library|yandex.market.common).*"
+    tags:

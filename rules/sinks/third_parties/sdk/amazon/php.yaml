@@ -1,0 +1,29 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amazon.Aws
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i).*(easy.amazon.advertising|sns.push|instantaccess.sdk|kinesis|rds.data.service|amazon.advertising.laravel|selling.partner.api|amazon.advertising.api.sdk|amazon.pay.api.sdk.|paapisdk|predis.client.nette.extension|firehose|simple.s3|typo3.aws|amazon.mws.sdk|secrets.manager|cloud.watch.logs|step.functions|amazon.pay.sdk|cloud.watch|event.bridge|amazon.mws.bundle|dynamo.db.session|yii.aws|dynamodb.sessions.dependency.free|amazon.mws.complete|login.and.pay.with.amazon.sdk.|sp.api.sdk|amazon.paapi5.sdk|cognito.identity.provider|paapi5.sdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazon
+    name: Amazon
+    domains:
+      - "amazon.com"
+    patterns:
+      - "(?i).*(aws.sdk|aws.symfony2.bundle|aws.sqs|aws.crt|amazon.bundle|yii2.aws.components|flysystem.aws.s3.v3.minio|code.deploy|yii2.aws.s3.client|aws.helper|aws.sdk.v3.bridge|laminas.aws.sdk|cloud.formation|aws.guzzle.handler|flysystem.s3|simple.s3|aws.sns.message.validator|aws.s3.service.|flysystem.akeneo.aws3v3|aws.bundle|queue.bundle|aws.sns|dynamo.db|aws.wrappers|ilab.aws.media.cloud.sdk|aws.sdk.symfony|ilab.flysystem.aws.s3.v3|aws.ssm|aws.lambda|aws.cognito|async.aws.bundle|aws.ses).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazon.Aws.S3
+    name: Amazon Aws S3
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i).*(aws.s3|s3client).*"
+    tags:

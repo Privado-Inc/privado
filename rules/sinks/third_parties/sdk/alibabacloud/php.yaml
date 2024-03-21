@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Alibabacloud
+    name: Alibabacloud
+    domains:
+      - "alibabacloud.com"
+    patterns:
+      - "(?i).*(aliyun.open.api|alidayu.sdk|aliyun.green|aliyun.dysms.msg|aliyun.imagesearch|aliyun.acm|aliyun.dysms.sdk|aliyun.dypls.sdk|aliyun.ems.selector|alibaba.acm|laravel.aliyun.mailer|alikafka|aliyun.vod|alinlp|aliyun.log.sdk|alidayu.sdk|aliyun.client|nlscloudmeta|aliyunmns|alidns|aliyun.sms|aliyuncs.green|aliyun.core|aliyun.iot|aliyun.dysms|laravel.alifc|aliyunphpsdk|aliyun.sts|aliyun_mns|laravel.aliyunoss.service|aliyun.sls.laravel|aliyun.dyvms.sdk|guzzle.subscriber|aliyun.openapi|aliyun.sms.service|aliyun.oss|aliyun.push|aliyun.tablestore|alibaba.sdk|aliyun.mns.sdk|yii2.aliyun|alibaba_open|laravel.aliyun).*"
+    tags:
