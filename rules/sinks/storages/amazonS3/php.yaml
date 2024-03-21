@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.AmazonS3.ReadAndWrite
+    name: Amazon S3
+    domains:
+      - aws.amazon.com
+    patterns: 
+      - "(?i).*(aws.s3|s3client).*"
+    tags:

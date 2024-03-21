@@ -9,5 +9,5 @@ sinks:
     domains:
       - "adobe.com"
     patterns:
-      - "(?i).*(AdobeMarketingCloud.client|AdobeSign|Scene7.(Factory|Helpers|Requests)|adobe.experience.cloud.sdk).*"
+      - "(?i).*(AdobeStock|AdobeMarketingCloud.client|AdobeSign|Scene7.(Factory|Helpers|Requests)|adobe.experience.cloud.sdk).*"
     tags:
