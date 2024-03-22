@@ -1,7 +1,7 @@
 sources:
   - id: Data.Sensitive.AudioVisualAndSensoryData.Video
     name: Video
-    category: Audio Visual & Sensory Data
+    category: Audio, Visual & Sensory Data
     isSensitive: False
     sensitivity: medium
     patterns:
@@ -11,7 +11,7 @@ sources:
 
   - id: Data.Sensitive.AudioVisualAndSensoryData.AudioRecordings
     name: Audio Recordings
-    category: Audio Visual & Sensory Data
+    category: Audio, Visual & Sensory Data
     isSensitive: False
     sensitivity: medium
     patterns:
@@ -21,7 +21,7 @@ sources:
 
   - id: Data.Sensitive.AudioVisualAndSensoryData.IoTorSensorData
     name: IoT or Sensor Data
-    category: Audio Visual & Sensory Data
+    category: Audio, Visual & Sensory Data
     isSensitive: False
     sensitivity: medium
     patterns:
