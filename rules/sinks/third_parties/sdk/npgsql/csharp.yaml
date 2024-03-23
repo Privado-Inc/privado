@@ -1,0 +1,23 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Npgsql.EntityFrameworkCore.PostgreSQL
+    name: Npgsql Entity Framework Core Postgre S Q L
+    patterns:
+      - "(?i)(Npgsql[.]EntityFrameworkCore[.]PostgreSQL).*"
+    tags:
+
+  - id: ThirdParties.SDK.Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime
+    name: Npgsql Entity Framework Core Postgre S Q L Noda Time
+    patterns:
+      - "(?i)(Npgsql[.]EntityFrameworkCore[.]PostgreSQL[.]NodaTime).*"
+    tags:
+
+  - id: ThirdParties.SDK.Npgsql.OpenTelemetry
+    name: Npgsql Open Telemetry
+    patterns:
+      - "(?i)(Npgsql[.]OpenTelemetry).*"
+    tags:

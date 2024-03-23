@@ -1,0 +1,17 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.SpecFlow.Plus.LivingDocPlugin
+    name: Spec Flow Plus Living Doc Plugin
+    patterns:
+      - "(?i)(SpecFlow[.]Plus[.]LivingDocPlugin).*"
+    tags:
+
+  - id: ThirdParties.SDK.SpecFlow.xUnit
+    name: Spec Flowx Unit
+    patterns:
+      - "(?i)(SpecFlow[.]xUnit).*"
+    tags:

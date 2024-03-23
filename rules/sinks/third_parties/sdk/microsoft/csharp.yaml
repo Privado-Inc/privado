@@ -1,0 +1,641 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Microsoft.AspNet.WebApi.Client
+    name: Microsoft Asp Net Web Api Client
+    patterns:
+      - "(?i)(Microsoft[.]AspNet[.]WebApi[.]Client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore
+    name: Microsoft Asp Net Core
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Authentication.Cookies
+    name: Microsoft Asp Net Core Authentication Cookies
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Authentication[.]Cookies).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Authentication.Google
+    name: Microsoft Asp Net Core Authentication Google
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Authentication[.]Google).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Authentication.JwtBearer
+    name: Microsoft Asp Net Core Authentication Jwt Bearer
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Authentication[.]JwtBearer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Authentication.OAuth
+    name: Microsoft Asp Net Core Authentication O Auth
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Authentication[.]OAuth).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Authorization
+    name: Microsoft Asp Net Core Authorization
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Authorization).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Components
+    name: Microsoft Asp Net Core Components
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Components).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Components.Web
+    name: Microsoft Asp Net Core Components Web
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Components[.]Web).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.CookiePolicy
+    name: Microsoft Asp Net Core Cookie Policy
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]CookiePolicy).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Cors
+    name: Microsoft Asp Net Core Cors
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Cors).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.DataProtection
+    name: Microsoft Asp Net Core Data Protection
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]DataProtection).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.DataProtection.Abstractions
+    name: Microsoft Asp Net Core Data Protection Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]DataProtection[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.DataProtection.EntityFrameworkCore
+    name: Microsoft Asp Net Core Data Protection Entity Framework Core
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]DataProtection[.]EntityFrameworkCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.DataProtection.StackExchangeRedis
+    name: Microsoft Asp Net Core Data Protection Stack Exchange Redis
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]DataProtection[.]StackExchangeRedis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
+    name: Microsoft Asp Net Core Diagnostics Entity Framework Core
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Diagnostics[.]EntityFrameworkCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Diagnostics.HealthChecks
+    name: Microsoft Asp Net Core Diagnostics Health Checks
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Diagnostics[.]HealthChecks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Hosting
+    name: Microsoft Asp Net Core Hosting
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Hosting).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Hosting.Abstractions
+    name: Microsoft Asp Net Core Hosting Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Hosting[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Http
+    name: Microsoft Asp Net Core Http
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Http).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Http.Abstractions
+    name: Microsoft Asp Net Core Http Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Http[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Http.Extensions
+    name: Microsoft Asp Net Core Http Extensions
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Http[.]Extensions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Http.Features
+    name: Microsoft Asp Net Core Http Features
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Http[.]Features).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.HttpsPolicy
+    name: Microsoft Asp Net Core Https Policy
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]HttpsPolicy).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Identity.EntityFrameworkCore
+    name: Microsoft Asp Net Core Identity Entity Framework Core
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Identity[.]EntityFrameworkCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Identity.UI
+    name: Microsoft Asp Net Core Identity U I
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Identity[.]UI).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Metadata
+    name: Microsoft Asp Net Core Metadata
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Metadata).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc
+    name: Microsoft Asp Net Core Mvc
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.Abstractions
+    name: Microsoft Asp Net Core Mvc Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.Core
+    name: Microsoft Asp Net Core Mvc Core
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.NewtonsoftJson
+    name: Microsoft Asp Net Core Mvc Newtonsoft Json
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]NewtonsoftJson).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+    name: Microsoft Asp Net Core Mvc Razor Runtime Compilation
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]Razor[.]RuntimeCompilation).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.Testing
+    name: Microsoft Asp Net Core Mvc Testing
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]Testing).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.Versioning
+    name: Microsoft Asp Net Core Mvc Versioning
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]Versioning).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
+    name: Microsoft Asp Net Core Mvc Versioning Api Explorer
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]Versioning[.]ApiExplorer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: Microsoft Asp Net Core Mvc View Features
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Mvc[.]ViewFeatures).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.OpenApi
+    name: Microsoft Asp Net Core Open Api
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]OpenApi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.Razor.Runtime
+    name: Microsoft Asp Net Core Razor Runtime
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]Razor[.]Runtime).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.SignalR.Client
+    name: Microsoft Asp Net Core Signal R Client
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]SignalR[.]Client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.SignalR.Common
+    name: Microsoft Asp Net Core Signal R Common
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]SignalR[.]Common).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.SignalR.StackExchangeRedis
+    name: Microsoft Asp Net Core Signal R Stack Exchange Redis
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]SignalR[.]StackExchangeRedis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.StaticFiles
+    name: Microsoft Asp Net Core Static Files
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]StaticFiles).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.AspNetCore.TestHost
+    name: Microsoft Asp Net Core Test Host
+    patterns:
+      - "(?i)(Microsoft[.]AspNetCore[.]TestHost).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.DocumentDB.Core
+    name: Microsoft Azure Document D B Core
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]DocumentDB[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Functions.Extensions
+    name: Microsoft Azure Functions Extensions
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]Functions[.]Extensions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.KeyVault.Core
+    name: Microsoft Azure Key Vault Core
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]KeyVault[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Services.AppAuthentication
+    name: Microsoft Azure Services App Authentication
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]Services[.]AppAuthentication).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.SignalR
+    name: Microsoft Azure Signal R
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]SignalR).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.SignalR.Protocols
+    name: Microsoft Azure Signal R Protocols
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]SignalR[.]Protocols).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.Storage.Queue
+    name: Microsoft Azure Storage Queue
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]Storage[.]Queue).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Azure.WebJobs.Core
+    name: Microsoft Azure Web Jobs Core
+    patterns:
+      - "(?i)(Microsoft[.]Azure[.]WebJobs[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.CognitiveServices.Speech
+    name: Microsoft Cognitive Services Speech
+    patterns:
+      - "(?i)(Microsoft[.]CognitiveServices[.]Speech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Data.SqlClient
+    name: Microsoft Data Sql Client
+    patterns:
+      - "(?i)(Microsoft[.]Data[.]SqlClient).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore
+    name: Microsoft Entity Framework Core
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.Design
+    name: Microsoft Entity Framework Core Design
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]Design).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.InMemory
+    name: Microsoft Entity Framework Core In Memory
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]InMemory).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.Proxies
+    name: Microsoft Entity Framework Core Proxies
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]Proxies).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.Relational
+    name: Microsoft Entity Framework Core Relational
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]Relational).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.SqlServer
+    name: Microsoft Entity Framework Core Sql Server
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]SqlServer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.SqlServer.Design
+    name: Microsoft Entity Framework Core Sql Server Design
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]SqlServer[.]Design).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.EntityFrameworkCore.Tools
+    name: Microsoft Entity Framework Core Tools
+    patterns:
+      - "(?i)(Microsoft[.]EntityFrameworkCore[.]Tools).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.ApiDescription.Client
+    name: Microsoft Extensions Api Description Client
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]ApiDescription[.]Client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Caching.Abstractions
+    name: Microsoft Extensions Caching Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Caching[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Caching.Memory
+    name: Microsoft Extensions Caching Memory
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Caching[.]Memory).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Caching.StackExchangeRedis
+    name: Microsoft Extensions Caching Stack Exchange Redis
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Caching[.]StackExchangeRedis).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.CommandLineUtils
+    name: Microsoft Extensions Command Line Utils
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]CommandLineUtils).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration
+    name: Microsoft Extensions Configuration
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration.Abstractions
+    name: Microsoft Extensions Configuration Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration.Binder
+    name: Microsoft Extensions Configuration Binder
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration[.]Binder).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration.EnvironmentVariables
+    name: Microsoft Extensions Configuration Environment Variables
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration[.]EnvironmentVariables).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration.FileExtensions
+    name: Microsoft Extensions Configuration File Extensions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration[.]FileExtensions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration.Json
+    name: Microsoft Extensions Configuration Json
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration[.]Json).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Configuration.KeyPerFile
+    name: Microsoft Extensions Configuration Key Per File
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Configuration[.]KeyPerFile).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.DependencyInjection
+    name: Microsoft Extensions Dependency Injection
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]DependencyInjection).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.DependencyInjection.Abstractions
+    name: Microsoft Extensions Dependency Injection Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]DependencyInjection[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Diagnostics.HealthChecks
+    name: Microsoft Extensions Diagnostics Health Checks
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Diagnostics[.]HealthChecks).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore
+    name: Microsoft Extensions Diagnostics Health Checks Entity Framework Core
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Diagnostics[.]HealthChecks[.]EntityFrameworkCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Diagnostics.Testing
+    name: Microsoft Extensions Diagnostics Testing
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Diagnostics[.]Testing).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Hosting
+    name: Microsoft Extensions Hosting
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Hosting).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Hosting.Abstractions
+    name: Microsoft Extensions Hosting Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Hosting[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Http
+    name: Microsoft Extensions Http
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Http).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Http.Polly
+    name: Microsoft Extensions Http Polly
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Http[.]Polly).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Http.Resilience
+    name: Microsoft Extensions Http Resilience
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Http[.]Resilience).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Identity.Stores
+    name: Microsoft Extensions Identity Stores
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Identity[.]Stores).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Logging
+    name: Microsoft Extensions Logging
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Logging).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Logging.Abstractions
+    name: Microsoft Extensions Logging Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Logging[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Logging.Configuration
+    name: Microsoft Extensions Logging Configuration
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Logging[.]Configuration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Logging.Console
+    name: Microsoft Extensions Logging Console
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Logging[.]Console).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Logging.Debug
+    name: Microsoft Extensions Logging Debug
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Logging[.]Debug).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Options
+    name: Microsoft Extensions Options
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Options).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Options.ConfigurationExtensions
+    name: Microsoft Extensions Options Configuration Extensions
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Options[.]ConfigurationExtensions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Options.DataAnnotations
+    name: Microsoft Extensions Options Data Annotations
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Options[.]DataAnnotations).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Extensions.Primitives
+    name: Microsoft Extensions Primitives
+    patterns:
+      - "(?i)(Microsoft[.]Extensions[.]Primitives).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Identity.Web
+    name: Microsoft Identity Web
+    patterns:
+      - "(?i)(Microsoft[.]Identity[.]Web).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Identity.Web.UI
+    name: Microsoft Identity Web U I
+    patterns:
+      - "(?i)(Microsoft[.]Identity[.]Web[.]UI).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Kiota.Abstractions
+    name: Microsoft Kiota Abstractions
+    patterns:
+      - "(?i)(Microsoft[.]Kiota[.]Abstractions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Kiota.Http.HttpClientLibrary
+    name: Microsoft Kiota Http Http Client Library
+    patterns:
+      - "(?i)(Microsoft[.]Kiota[.]Http[.]HttpClientLibrary).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Kiota.Serialization.Form
+    name: Microsoft Kiota Serialization Form
+    patterns:
+      - "(?i)(Microsoft[.]Kiota[.]Serialization[.]Form).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Kiota.Serialization.Json
+    name: Microsoft Kiota Serialization Json
+    patterns:
+      - "(?i)(Microsoft[.]Kiota[.]Serialization[.]Json).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Kiota.Serialization.Multipart
+    name: Microsoft Kiota Serialization Multipart
+    patterns:
+      - "(?i)(Microsoft[.]Kiota[.]Serialization[.]Multipart).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.Kiota.Serialization.Text
+    name: Microsoft Kiota Serialization Text
+    patterns:
+      - "(?i)(Microsoft[.]Kiota[.]Serialization[.]Text).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.NET.Sdk.Functions
+    name: Microsoft N E T Sdk Functions
+    patterns:
+      - "(?i)(Microsoft[.]NET[.]Sdk[.]Functions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.NET.Test.Sdk
+    name: Microsoft N E T Test Sdk
+    patterns:
+      - "(?i)(Microsoft[.]NET[.]Test[.]Sdk).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.OpenApi
+    name: Microsoft Open Api
+    patterns:
+      - "(?i)(Microsoft[.]OpenApi).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.OpenApi.Readers
+    name: Microsoft Open Api Readers
+    patterns:
+      - "(?i)(Microsoft[.]OpenApi[.]Readers).*"
+    tags:
+
+  - id: ThirdParties.SDK.Microsoft.VisualStudio.Azure.Containers.Tools.Targets
+    name: Microsoft Visual Studio Azure Containers Tools Targets
+    patterns:
+      - "(?i)(Microsoft[.]VisualStudio[.]Azure[.]Containers[.]Tools[.]Targets).*"
+    tags:

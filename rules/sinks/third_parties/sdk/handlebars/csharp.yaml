@@ -1,0 +1,23 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Handlebars.Net
+    name: Handlebars Net
+    patterns:
+      - "(?i)(Handlebars[.]Net).*"
+    tags:
+
+  - id: ThirdParties.SDK.Handlebars.Net.Extension.Json
+    name: Handlebars Net Extension Json
+    patterns:
+      - "(?i)(Handlebars[.]Net[.]Extension[.]Json).*"
+    tags:
+
+  - id: ThirdParties.SDK.Handlebars.Net.Helpers
+    name: Handlebars Net Helpers
+    patterns:
+      - "(?i)(Handlebars[.]Net[.]Helpers).*"
+    tags:

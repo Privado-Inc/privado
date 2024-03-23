@@ -1,0 +1,95 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.Aws.S3
+    name: Asp Net Core Health Checks Aws S
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]Aws[.]S3).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.Hangfire
+    name: Asp Net Core Health Checks Hangfire
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]Hangfire).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.MongoDb
+    name: Asp Net Core Health Checks Mongo Db
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]MongoDb).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.MySql
+    name: Asp Net Core Health Checks My Sql
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]MySql).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.NpgSql
+    name: Asp Net Core Health Checks Npg Sql
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]NpgSql).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.Npgsql
+    name: Asp Net Core Health Checks Npgsql
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]Npgsql).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.Rabbitmq
+    name: Asp Net Core Health Checks Rabbitmq
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]Rabbitmq).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.Redis
+    name: Asp Net Core Health Checks Redis
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]Redis).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.SqlServer
+    name: Asp Net Core Health Checks Sql Server
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]SqlServer).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.System
+    name: Asp Net Core Health Checks System
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]System).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.UI
+    name: Asp Net Core Health Checks U I
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]UI).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.UI.Client
+    name: Asp Net Core Health Checks U I Client
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]UI[.]Client).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.UI.InMemory.Storage
+    name: Asp Net Core Health Checks U I In Memory Storage
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]UI[.]InMemory[.]Storage).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.UI.PostgreSQL.Storage
+    name: Asp Net Core Health Checks U I Postgre S Q L Storage
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]UI[.]PostgreSQL[.]Storage).*"
+    tags:
+
+  - id: ThirdParties.SDK.AspNetCore.HealthChecks.Uris
+    name: Asp Net Core Health Checks Uris
+    patterns:
+      - "(?i)(AspNetCore[.]HealthChecks[.]Uris).*"
+    tags:

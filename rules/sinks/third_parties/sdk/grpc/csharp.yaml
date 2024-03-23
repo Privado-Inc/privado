@@ -1,0 +1,23 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Grpc.AspNetCore
+    name: Grpc Asp Net Core
+    patterns:
+      - "(?i)(Grpc[.]AspNetCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Grpc.Net.Client
+    name: Grpc Net Client
+    patterns:
+      - "(?i)(Grpc[.]Net[.]Client).*"
+    tags:
+
+  - id: ThirdParties.SDK.Grpc.Tools
+    name: Grpc Tools
+    patterns:
+      - "(?i)(Grpc[.]Tools).*"
+    tags:

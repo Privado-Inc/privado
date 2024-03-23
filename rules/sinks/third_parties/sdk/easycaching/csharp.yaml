@@ -1,0 +1,23 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.EasyCaching.CSRedis
+    name: Easy Caching C S Redis
+    patterns:
+      - "(?i)(EasyCaching[.]CSRedis).*"
+    tags:
+
+  - id: ThirdParties.SDK.EasyCaching.InMemory
+    name: Easy Caching In Memory
+    patterns:
+      - "(?i)(EasyCaching[.]InMemory).*"
+    tags:
+
+  - id: ThirdParties.SDK.EasyCaching.Serialization.MessagePack
+    name: Easy Caching Serialization Message Pack
+    patterns:
+      - "(?i)(EasyCaching[.]Serialization[.]MessagePack).*"
+    tags:

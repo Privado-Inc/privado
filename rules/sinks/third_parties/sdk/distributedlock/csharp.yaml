@@ -1,0 +1,23 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.DistributedLock.Core
+    name: Distributed Lock Core
+    patterns:
+      - "(?i)(DistributedLock[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.DistributedLock.Redis
+    name: Distributed Lock Redis
+    patterns:
+      - "(?i)(DistributedLock[.]Redis).*"
+    tags:
+
+  - id: ThirdParties.SDK.DistributedLock.SqlServer
+    name: Distributed Lock Sql Server
+    patterns:
+      - "(?i)(DistributedLock[.]SqlServer).*"
+    tags:

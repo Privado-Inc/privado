@@ -1,0 +1,41 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Testcontainers.MariaDb
+    name: Testcontainers Maria Db
+    patterns:
+      - "(?i)(Testcontainers[.]MariaDb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Testcontainers.MongoDb
+    name: Testcontainers Mongo Db
+    patterns:
+      - "(?i)(Testcontainers[.]MongoDb).*"
+    tags:
+
+  - id: ThirdParties.SDK.Testcontainers.MsSql
+    name: Testcontainers Ms Sql
+    patterns:
+      - "(?i)(Testcontainers[.]MsSql).*"
+    tags:
+
+  - id: ThirdParties.SDK.Testcontainers.PostgreSql
+    name: Testcontainers Postgre Sql
+    patterns:
+      - "(?i)(Testcontainers[.]PostgreSql).*"
+    tags:
+
+  - id: ThirdParties.SDK.Testcontainers.RabbitMq
+    name: Testcontainers Rabbit Mq
+    patterns:
+      - "(?i)(Testcontainers[.]RabbitMq).*"
+    tags:
+
+  - id: ThirdParties.SDK.Testcontainers.Redis
+    name: Testcontainers Redis
+    patterns:
+      - "(?i)(Testcontainers[.]Redis).*"
+    tags:

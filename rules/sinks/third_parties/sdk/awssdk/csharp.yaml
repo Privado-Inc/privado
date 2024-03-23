@@ -1,0 +1,53 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.AWSSDK.Core
+    name: A W S S D K Core
+    patterns:
+      - "(?i)(AWSSDK[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.Extensions.NETCore.Setup
+    name: A W S S D K Extensions N E T Core Setup
+    patterns:
+      - "(?i)(AWSSDK[.]Extensions[.]NETCore[.]Setup).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.S3
+    name: A W S S D K S
+    patterns:
+      - "(?i)(AWSSDK[.]S3).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.SSO
+    name: A W S S D K S S O
+    patterns:
+      - "(?i)(AWSSDK[.]SSO).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.SSOOIDC
+    name: A W S S D K S S O O I D C
+    patterns:
+      - "(?i)(AWSSDK[.]SSOOIDC).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.Schemas
+    name: A W S S D K Schemas
+    patterns:
+      - "(?i)(AWSSDK[.]Schemas).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.SecurityToken
+    name: A W S S D K Security Token
+    patterns:
+      - "(?i)(AWSSDK[.]SecurityToken).*"
+    tags:
+
+  - id: ThirdParties.SDK.AWSSDK.SimpleEmail
+    name: A W S S D K Simple Email
+    patterns:
+      - "(?i)(AWSSDK[.]SimpleEmail).*"
+    tags:

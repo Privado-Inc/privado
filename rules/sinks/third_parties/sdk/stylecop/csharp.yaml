@@ -1,0 +1,11 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.StyleCop.Analyzers
+    name: Style Cop Analyzers
+    patterns:
+      - "(?i)(StyleCop[.]Analyzers).*"
+    tags:

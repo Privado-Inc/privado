@@ -1,0 +1,35 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.MongoDB.Bson
+    name: Mongo D B Bson
+    patterns:
+      - "(?i)(MongoDB[.]Bson).*"
+    tags:
+
+  - id: ThirdParties.SDK.MongoDB.Driver
+    name: Mongo D B Driver
+    patterns:
+      - "(?i)(MongoDB[.]Driver).*"
+    tags:
+
+  - id: ThirdParties.SDK.MongoDB.Driver.Core
+    name: Mongo D B Driver Core
+    patterns:
+      - "(?i)(MongoDB[.]Driver[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.MongoDB.Driver.Core.Extensions.DiagnosticSources
+    name: Mongo D B Driver Core Extensions Diagnostic Sources
+    patterns:
+      - "(?i)(MongoDB[.]Driver[.]Core[.]Extensions[.]DiagnosticSources).*"
+    tags:
+
+  - id: ThirdParties.SDK.MongoDB.Driver.Core.Extensions.OpenTelemetry
+    name: Mongo D B Driver Core Extensions Open Telemetry
+    patterns:
+      - "(?i)(MongoDB[.]Driver[.]Core[.]Extensions[.]OpenTelemetry).*"
+    tags:

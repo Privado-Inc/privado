@@ -1,0 +1,23 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.EFCore.BulkExtensions
+    name: E F Core Bulk Extensions
+    patterns:
+      - "(?i)(EFCore[.]BulkExtensions).*"
+    tags:
+
+  - id: ThirdParties.SDK.EFCore.BulkExtensions.SqlServer
+    name: E F Core Bulk Extensions Sql Server
+    patterns:
+      - "(?i)(EFCore[.]BulkExtensions[.]SqlServer).*"
+    tags:
+
+  - id: ThirdParties.SDK.EFCore.NamingConventions
+    name: E F Core Naming Conventions
+    patterns:
+      - "(?i)(EFCore[.]NamingConventions).*"
+    tags:

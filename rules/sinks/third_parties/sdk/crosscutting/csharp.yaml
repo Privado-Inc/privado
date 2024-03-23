@@ -1,0 +1,173 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.CrossCutting.Appcues
+    name: Cross Cutting Appcues
+    patterns:
+      - "(?i)(CrossCutting[.]Appcues).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Cache.NetCache
+    name: Cross Cutting Cache Net Cache
+    patterns:
+      - "(?i)(CrossCutting[.]Cache[.]NetCache).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Cache.Redis
+    name: Cross Cutting Cache Redis
+    patterns:
+      - "(?i)(CrossCutting[.]Cache[.]Redis).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.CommandProcessor
+    name: Cross Cutting Command Processor
+    patterns:
+      - "(?i)(CrossCutting[.]CommandProcessor).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.CommandProcessor.AzureQueue
+    name: Cross Cutting Command Processor Azure Queue
+    patterns:
+      - "(?i)(CrossCutting[.]CommandProcessor[.]AzureQueue).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Core
+    name: Cross Cutting Core
+    patterns:
+      - "(?i)(CrossCutting[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Core.Logging.Implementations
+    name: Cross Cutting Core Logging Implementations
+    patterns:
+      - "(?i)(CrossCutting[.]Core[.]Logging[.]Implementations).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Cronofy
+    name: Cross Cutting Cronofy
+    patterns:
+      - "(?i)(CrossCutting[.]Cronofy).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.DataMasking
+    name: Cross Cutting Data Masking
+    patterns:
+      - "(?i)(CrossCutting[.]DataMasking).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.DateTimeProvider
+    name: Cross Cutting Date Time Provider
+    patterns:
+      - "(?i)(CrossCutting[.]DateTimeProvider).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Domain
+    name: Cross Cutting Domain
+    patterns:
+      - "(?i)(CrossCutting[.]Domain).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.FeatureManagement
+    name: Cross Cutting Feature Management
+    patterns:
+      - "(?i)(CrossCutting[.]FeatureManagement).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Http
+    name: Cross Cutting Http
+    patterns:
+      - "(?i)(CrossCutting[.]Http).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.JetSms
+    name: Cross Cutting Jet Sms
+    patterns:
+      - "(?i)(CrossCutting[.]JetSms).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Json
+    name: Cross Cutting Json
+    patterns:
+      - "(?i)(CrossCutting[.]Json).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Logging
+    name: Cross Cutting Logging
+    patterns:
+      - "(?i)(CrossCutting[.]Logging).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Logs.DocumentDB
+    name: Cross Cutting Logs Document D B
+    patterns:
+      - "(?i)(CrossCutting[.]Logs[.]DocumentDB).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Mixpanel
+    name: Cross Cutting Mixpanel
+    patterns:
+      - "(?i)(CrossCutting[.]Mixpanel).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.MongoDb.ToolSet
+    name: Cross Cutting Mongo Db Tool Set
+    patterns:
+      - "(?i)(CrossCutting[.]MongoDb[.]ToolSet).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Nexmo
+    name: Cross Cutting Nexmo
+    patterns:
+      - "(?i)(CrossCutting[.]Nexmo).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.OpenTelemetry
+    name: Cross Cutting Open Telemetry
+    patterns:
+      - "(?i)(CrossCutting[.]OpenTelemetry).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.OptionalTypes
+    name: Cross Cutting Optional Types
+    patterns:
+      - "(?i)(CrossCutting[.]OptionalTypes).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.PdfHelper
+    name: Cross Cutting Pdf Helper
+    patterns:
+      - "(?i)(CrossCutting[.]PdfHelper).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Phone
+    name: Cross Cutting Phone
+    patterns:
+      - "(?i)(CrossCutting[.]Phone).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Stream
+    name: Cross Cutting Stream
+    patterns:
+      - "(?i)(CrossCutting[.]Stream).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Templating.Handlebars
+    name: Cross Cutting Templating Handlebars
+    patterns:
+      - "(?i)(CrossCutting[.]Templating[.]Handlebars).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.Urls.GoogleUrlShortener
+    name: Cross Cutting Urls Google Url Shortener
+    patterns:
+      - "(?i)(CrossCutting[.]Urls[.]GoogleUrlShortener).*"
+    tags:
+
+  - id: ThirdParties.SDK.CrossCutting.VaultClient
+    name: Cross Cutting Vault Client
+    patterns:
+      - "(?i)(CrossCutting[.]VaultClient).*"
+    tags:

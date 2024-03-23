@@ -1,0 +1,95 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Api
+    name: Open Telemetry Api
+    patterns:
+      - "(?i)(OpenTelemetry[.]Api).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Api.ProviderBuilderExtensions
+    name: Open Telemetry Api Provider Builder Extensions
+    patterns:
+      - "(?i)(OpenTelemetry[.]Api[.]ProviderBuilderExtensions).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Exporter.Console
+    name: Open Telemetry Exporter Console
+    patterns:
+      - "(?i)(OpenTelemetry[.]Exporter[.]Console).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Exporter.OpenTelemetryProtocol
+    name: Open Telemetry Exporter Open Telemetry Protocol
+    patterns:
+      - "(?i)(OpenTelemetry[.]Exporter[.]OpenTelemetryProtocol).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Extensions.Hosting
+    name: Open Telemetry Extensions Hosting
+    patterns:
+      - "(?i)(OpenTelemetry[.]Extensions[.]Hosting).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Extensions.Propagators
+    name: Open Telemetry Extensions Propagators
+    patterns:
+      - "(?i)(OpenTelemetry[.]Extensions[.]Propagators).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.AspNetCore
+    name: Open Telemetry Instrumentation Asp Net Core
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]AspNetCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.EntityFrameworkCore
+    name: Open Telemetry Instrumentation Entity Framework Core
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]EntityFrameworkCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.Hangfire
+    name: Open Telemetry Instrumentation Hangfire
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]Hangfire).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.Http
+    name: Open Telemetry Instrumentation Http
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]Http).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.Process
+    name: Open Telemetry Instrumentation Process
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]Process).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.Runtime
+    name: Open Telemetry Instrumentation Runtime
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]Runtime).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.SqlClient
+    name: Open Telemetry Instrumentation Sql Client
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]SqlClient).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.Instrumentation.StackExchangeRedis
+    name: Open Telemetry Instrumentation Stack Exchange Redis
+    patterns:
+      - "(?i)(OpenTelemetry[.]Instrumentation[.]StackExchangeRedis).*"
+    tags:
+
+  - id: ThirdParties.SDK.OpenTelemetry.ResourceDetectors.Container
+    name: Open Telemetry Resource Detectors Container
+    patterns:
+      - "(?i)(OpenTelemetry[.]ResourceDetectors[.]Container).*"
+    tags:

@@ -1,0 +1,17 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.MediatR.Contracts
+    name: Mediat R Contracts
+    patterns:
+      - "(?i)(MediatR[.]Contracts).*"
+    tags:
+
+  - id: ThirdParties.SDK.MediatR.Extensions.Microsoft.DependencyInjection
+    name: Mediat R Extensions Microsoft Dependency Injection
+    patterns:
+      - "(?i)(MediatR[.]Extensions[.]Microsoft[.]DependencyInjection).*"
+    tags:

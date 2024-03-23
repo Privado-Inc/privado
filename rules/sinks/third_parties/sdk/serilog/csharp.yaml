@@ -1,0 +1,95 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Serilog.AspNetCore
+    name: Serilog Asp Net Core
+    patterns:
+      - "(?i)(Serilog[.]AspNetCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Enrichers.Environment
+    name: Serilog Enrichers Environment
+    patterns:
+      - "(?i)(Serilog[.]Enrichers[.]Environment).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Expressions
+    name: Serilog Expressions
+    patterns:
+      - "(?i)(Serilog[.]Expressions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Extensions.Hosting
+    name: Serilog Extensions Hosting
+    patterns:
+      - "(?i)(Serilog[.]Extensions[.]Hosting).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Extensions.Logging
+    name: Serilog Extensions Logging
+    patterns:
+      - "(?i)(Serilog[.]Extensions[.]Logging).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Formatting.Compact
+    name: Serilog Formatting Compact
+    patterns:
+      - "(?i)(Serilog[.]Formatting[.]Compact).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Formatting.Elasticsearch
+    name: Serilog Formatting Elasticsearch
+    patterns:
+      - "(?i)(Serilog[.]Formatting[.]Elasticsearch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Settings.Configuration
+    name: Serilog Settings Configuration
+    patterns:
+      - "(?i)(Serilog[.]Settings[.]Configuration).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.Console
+    name: Serilog Sinks Console
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]Console).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.Elasticsearch
+    name: Serilog Sinks Elasticsearch
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]Elasticsearch).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.File
+    name: Serilog Sinks File
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]File).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.Network
+    name: Serilog Sinks Network
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]Network).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.Seq
+    name: Serilog Sinks Seq
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]Seq).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.TestCorrelator
+    name: Serilog Sinks Test Correlator
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]TestCorrelator).*"
+    tags:
+
+  - id: ThirdParties.SDK.Serilog.Sinks.Udp
+    name: Serilog Sinks Udp
+    patterns:
+      - "(?i)(Serilog[.]Sinks[.]Udp).*"
+    tags:

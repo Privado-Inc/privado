@@ -1,0 +1,17 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.MiniProfiler.AspNetCore.Mvc
+    name: Mini Profiler Asp Net Core Mvc
+    patterns:
+      - "(?i)(MiniProfiler[.]AspNetCore[.]Mvc).*"
+    tags:
+
+  - id: ThirdParties.SDK.MiniProfiler.EntityFrameworkCore
+    name: Mini Profiler Entity Framework Core
+    patterns:
+      - "(?i)(MiniProfiler[.]EntityFrameworkCore).*"
+    tags:

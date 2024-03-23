@@ -1,0 +1,35 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Hangfire.AspNetCore
+    name: Hangfire Asp Net Core
+    patterns:
+      - "(?i)(Hangfire[.]AspNetCore).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hangfire.Core
+    name: Hangfire Core
+    patterns:
+      - "(?i)(Hangfire[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hangfire.Mongo
+    name: Hangfire Mongo
+    patterns:
+      - "(?i)(Hangfire[.]Mongo).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hangfire.PostgreSql
+    name: Hangfire Postgre Sql
+    patterns:
+      - "(?i)(Hangfire[.]PostgreSql).*"
+    tags:
+
+  - id: ThirdParties.SDK.Hangfire.SqlServer
+    name: Hangfire Sql Server
+    patterns:
+      - "(?i)(Hangfire[.]SqlServer).*"
+    tags:

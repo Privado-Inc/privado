@@ -1,0 +1,47 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Azure.AI.OpenAI
+    name: Azure A I Open A I
+    patterns:
+      - "(?i)(Azure[.]AI[.]OpenAI).*"
+    tags:
+
+  - id: ThirdParties.SDK.Azure.Core
+    name: Azure Core
+    patterns:
+      - "(?i)(Azure[.]Core).*"
+    tags:
+
+  - id: ThirdParties.SDK.Azure.Extensions.AspNetCore.Configuration.Secrets
+    name: Azure Extensions Asp Net Core Configuration Secrets
+    patterns:
+      - "(?i)(Azure[.]Extensions[.]AspNetCore[.]Configuration[.]Secrets).*"
+    tags:
+
+  - id: ThirdParties.SDK.Azure.Identity
+    name: Azure Identity
+    patterns:
+      - "(?i)(Azure[.]Identity).*"
+    tags:
+
+  - id: ThirdParties.SDK.Azure.Security.KeyVault.Secrets
+    name: Azure Security Key Vault Secrets
+    patterns:
+      - "(?i)(Azure[.]Security[.]KeyVault[.]Secrets).*"
+    tags:
+
+  - id: ThirdParties.SDK.Azure.Storage.Blobs
+    name: Azure Storage Blobs
+    patterns:
+      - "(?i)(Azure[.]Storage[.]Blobs).*"
+    tags:
+
+  - id: ThirdParties.SDK.Azure.Storage.Queues
+    name: Azure Storage Queues
+    patterns:
+      - "(?i)(Azure[.]Storage[.]Queues).*"
+    tags:
