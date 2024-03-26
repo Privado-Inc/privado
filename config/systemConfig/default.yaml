@@ -8,5 +8,5 @@ systemConfig:
   - kye: propertyFileSizeLimit
     value: "10"
 
-  - kye: "propertyFileDirCountLimit"
+  - kye: propertyFileDirCountLimit
     value: "20"
