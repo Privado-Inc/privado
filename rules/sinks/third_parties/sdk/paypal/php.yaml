@@ -1,0 +1,14 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Paypal
+    name: Paypal
+    domains:
+      - "paypal.com"
+    patterns:
+      - (?i).*(PayPalCheckoutSdk).*
+      - (?i).*(paypal.merchant.sdk|paypal.checkout|paypalpayment|yii2.bitcko.paypal.api|paypalbridgebundle|paypal.subscriptions.sdk|adaptivepayments.sdk.|paypal.payouts|commerce.paypal.express|paypal.sdk|paypal.rest.api).*"
+    tags:

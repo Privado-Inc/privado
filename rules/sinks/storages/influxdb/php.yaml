@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.SDK.Influxdata
+    name: Influxdata
+    domains:
+      - "influxdata.com"
+    patterns:
+      - "(?i)(influxdb.*client|influxdb.*model|influxdb.driver).*"
+    tags:

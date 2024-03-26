@@ -1,0 +1,13 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Fanap
+    name: Fanap
+    domains:
+      - "fanap.ir"
+    patterns:
+      - "(?i).*(pod.product.service|pod.virtual.account.service|pod.billing.service|pod.social.service|pod.base.service|pod.sso.service|pod.user.operation.service|pod.dealing.service|pod.common.service|pod.neshan.service).*"
+    tags:
