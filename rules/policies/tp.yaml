@@ -1,0 +1,218 @@
+policies:
+  - action: Deny
+    dataFlow:
+      collectionFilters:
+        collectionType: api
+        endPoint: "/v1/api/users"
+      sources:
+      - 'Data.Sensitive.PreciseLocation'
+    description: Application logs are widely made available to internal teams and sometimes
+      external teams for debugging. Do not leak sensitive information to logs, console
+      logs, etc. Logging sensitive data can lead to data breach and will surprise our
+      customers/users about our privacy practices.
+    fix: Remove code sending sensitive data to {SinkName}. In case you want to still
+      log the sensitive data, obfuscate or encrypt {DataElement} before logging.
+    id: PrivadoPolicy.Deny.Collection.API
+    name: Collection API
+    repositories:
+    - .*
+    tags: {}
+    type: Compliance
+  - action: Deny
+    dataFlow:
+      sinkFilters:
+        domains:
+        - google.com/drive
+        - drive.google.com
+        - dropbox.com
+        - box.com
+      sinks:
+      - Sinks.ThirdParties.*
+      - ThirdParties.*
+      sources:
+      - '**'
+    description: Sharing sensitive data should not be shared with third parties with
+      unapproved methods where default security controls are not sufficient.
+    fix: Work with the security team to setup security controls
+    id: PrivadoPolicy.Deny.InsecureSensitiveDataStorage.CloudProviders
+    name: Insecure Sensitive Data Storage - Cloud Providers
+    repositories:
+    - .*
+    tags: {}
+    type: Compliance
+  - action: Allow
+    dataFlow:
+      sinkFilters:
+        domains:
+        - adobesc.com
+        - marketingplatform.google.com
+        - unity3d.com
+        - pubnative.net
+        - azuremarketplace.microsoft.com/en-us/marketplace/apps/aad.bingads
+        - linkedin.com
+        - adobe.com
+        - alibaba.com
+        - tumblr.com
+        - admob.google.com
+        - adcolony.com
+        - snssdk.com
+        - rokt.com
+        - play.google.com
+        - triplelift.net
+        - bing.com
+        - samsung.com
+        - appsflyer.com
+        - advertising.amazon.com
+        - applovin.com
+        - googletagservices.com
+        - react-share-facebook.com
+        - twitter.com
+        - facebook.com
+        - criteo.com
+        - adversal.com
+        - douyutv.com
+        - fyber.com
+        - inmobi.com
+        - adjust.com
+        - baidu.com
+        - impactradius.com
+        - liftoff.com
+        - mopub.com
+        - pinterest.com
+        - adagio.io
+        - yandex.com
+        - taobao.com
+        - liveintent.com
+        - ebay.com
+        - smaato.com
+        - weibo.com
+        - liftoff.io
+        - facebook.net
+        - 360dialog.io
+        - bilibili.com
+        - instagram.com
+        - triplelift.com
+        - indexexchange.com
+        - adform.com
+        - connectad.io
+        - google.com/dfp
+        - line.me
+        - rubiconproject.com
+        - tiktok.com
+        - addapptr.com
+        - naver.com
+        - snapchat.com
+        - admanager.google.com
+        - pubmatic.com
+        - sovrn.com
+        - thetradedesk.com
+        - amazon-adsystem.com
+        - appnexus.com
+        - mparticle.com
+        - yahoo.com
+        - conversantmedia.com
+        - richaudience.com
+        - smartadserver.com
+        - beachfrontreach.com
+        - springboardplatform.com
+        - brightcove.com
+        - bucksense.com
+        - yandex.net
+      sinks:
+      - '**'
+      sources:
+      - Data.Sensitive.<TODO>.*
+    description: 'As per our CPRA policy notice, we only share the following data categories
+      with third parties: {DataElement}'
+    fix: 1. If additional data sharing is not important, please remove it \n 2. In case
+      the third party will use this data for non-advertising purposes, work with privacy
+      office for signing a service provider agreement \n 3. If additional data will
+      be used for advertising, work with privacy teams for approval & updation of the
+      privacy notice Turn on screen reader sup
+    id: PrivadoPolicy.Deny.CPRA.DoNotSellorShare
+    name: CPRA - Do Not Sell or Share
+    repositories:
+    - .*
+    tags: {}
+    type: Compliance
+  - action: Allow
+    dataFlow:
+      sinkFilters:
+        domains:
+        - authorize.net
+        - orbitalpay.com
+        - realexpayments.com
+        - squareup.com
+        - paypal.com
+        - payu.com
+        - vendhq.com
+        - afterpay.com
+        - braintree.com
+        - dwolla.com
+        - cardinalcommerce.com
+        - nmi.com
+        - hyperwallet.com
+        - avatax.com
+        - razorpay.com
+        - monzo.com
+        - plaid.com
+        - vantivcnp.com
+        - kassa.com
+        - payoneer.com
+        - paystack.com
+        - testvantiv.com
+        - authorize.net-1
+        - vatstack.com
+        - bity.com
+        - zipmoney.com.au
+        - stripe.com
+        - wepay.com
+        - bill.com
+        - instamojo.com
+        - allinpay.com
+        - alipay.com
+        - invoiceninja.com
+        - pay.com
+        - intercepteft.com
+        - paytm.com
+        - getmondo.co.uk
+        - zuora.com
+        - citcon.com
+        - ethereum.org
+        - vantivprelive.com
+        - chasepaymentech.net
+        - cardconnect.com
+        - rocketgate.com
+        - moneycorp.com
+        - payway.com.au
+        - adyen.com
+        - coinbase.com
+        - rev.io
+        - mangopay.com
+        - checkout.com
+        - chargebee.com
+        - cybersource.com
+        - revolut.com
+        - worldpay.com
+        - hips.com
+        - securepay.com
+        - clearcommerce.com
+        - braintreepayments.com
+        - affirm.com
+        - paypalobjects.com
+      sinks:
+      - '**'
+      sources:
+      - Data.Sensitive.FinancialData.*
+    description: Privado detected sharing of {DataElement} with {SinkName}. Financial
+      Data should only be shared with payment providers. As best practice, minimize
+      financial data sharing and work with the privacy office if sharing is necessary
+      for your business goals.
+    fix: Please work with our privacy office to ensure the sharing of health data is
+      approved by our privacy team.
+    id: PrivadoPolicy.Deny.FinancialDataSharing
+    name: Financial Data Sharing
+    repositories:
+    - .*
+    tags: {}
+    type: Compliance
