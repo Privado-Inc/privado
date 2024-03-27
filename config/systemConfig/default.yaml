@@ -5,8 +5,8 @@ systemConfig:
   - key: RepoPropertyConfig
     value: "(?i).*(prod|production|release).*((db|data_?base|data_?source).?(host|name|url|type)|s3.?bucket)"
 
-  - kye: propertyFileSizeLimit
+  - key: propertyFileSizeLimit
     value: "5"
 
-  - kye: propertyFileDirCountLimit
+  - key: propertyFileDirCountLimit
     value: "10"
