@@ -1,0 +1,61 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Co.Freee
+    name: Co Freee
+    domains:
+      - "freee.co.jp"
+    patterns:
+      - "(?i).*(freee.accounting).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Textmarketer
+    name: Co Textmarketer
+    domains:
+      - "textmarketer.co.uk"
+    patterns:
+      - "(?i).*(textmarketer).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Opayo
+    name: Co Opayo
+    domains:
+      - "opayo.co.uk"
+    patterns:
+      - "(?i).*(sagepay).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Kaskus
+    name: Co Kaskus
+    domains:
+      - "kaskus.co.id"
+    patterns:
+      - "(?i).*(kaskus).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Payment-assist
+    name: Co Payment-assist
+    domains:
+      - "payment-assist.co.uk"
+    patterns:
+      - "(?i).*(paymentassist).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Fastsms
+    name: Co Fastsms
+    domains:
+      - "fastsms.co.uk"
+    patterns:
+      - "(?i).*(fastsms).*"
+    tags:
+
+  - id: ThirdParties.SDK.Co.Skyscanner
+    name: Co Skyscanner
+    domains:
+      - "skyscanner.co.in"
+    patterns:
+      - "(?i).*(skyscanner).*"
+    tags:

@@ -1,0 +1,135 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Google
+    name: Google
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(google.auth|google.client|google.service|google.apicore).*"
+      - "(?i)(google.cloud|gtfs.sdk|armonia.google|apigee.client|google.ReCaptcha).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Maps
+    name: Google Maps
+    domains:
+      - "maps.google.com"
+    patterns:
+      - "(?i)(ivory.googlemap).*"
+      - "(?i).*(googlemaps|GoogleMapsServiceProvider).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Firebase
+    name: Google Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i).*(firebase).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Analytics
+    name: Google Analytics
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(google.analytics|spatie.analytics|.*googleanalytics.analytics).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.AIPlatform
+    name: Google Cloud AI Platform
+    domains:
+      - "cloud.google.com/ai-platform"
+    patterns:
+      - "(?i)(google.cloud.aiplatform).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Admob
+    name: Google Admob
+    domains:
+      - "admob.google.com"
+    patterns:
+      - ".*(LaravelAdmobSsv.AdMob).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.TagManager
+    name: Google Tag Manager
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i).*(googletagmanager).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Storage
+    name: Google Cloud Storage
+    domains:
+      - "cloud.google.com/storage"
+    patterns:
+      - "(?i)(google.cloud.storage).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Cloud.Pubsub
+    name: Google Cloud Pub/Sub
+    domains:
+      - "cloud.google.com/pubsub"
+    patterns:
+      - "(?i)(google.cloud.pubsub).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Datastore
+    name: Google Cloud Datastore
+    domains:
+      - "cloud.google.com/datastore"
+    patterns:
+      - "(?i)(google.cloud.Datastore).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Cloud.Firestore
+    name: Google Cloud Firestore
+    domains:
+      - "cloud.google.com/firestore"
+    patterns:
+      - "(?i)(google.cloud.firestore).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Cloud.BigQuery
+    name: Google Cloud BigQuery
+    domains:
+      - "cloud.google.com/bigquery"
+    patterns:
+      - "(?i)(google.cloud.BigQuery).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.Translation
+    name: Google Cloud Translation
+    domains:
+      - "cloud.google.com/translate"
+    patterns:
+      - "(?i)(google.cloud.MediaTranslation).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.SpeechToText
+    name: Google Cloud Speech-to-Text
+    domains:
+      - "cloud.google.com/speech-to-text"
+    patterns:
+      - "(?i)(google.cloud.Speech).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Cloud.TextToSpeech
+    name: Google Cloud Text-to-Speech
+    domains:
+      - "cloud.google.com/text-to-speech"
+    patterns:
+      - "(?i)(google.cloud.TextToSpeech).*"
+    tags:
+  
+  - id: ThirdParties.SDK.Google.Cloud.Vision
+    name: Google Cloud Vision
+    domains:
+      - "cloud.google.com/vision"
+    patterns:
+      - "(?i)(Google.Cloud.vision).*"
+    tags:
