@@ -9,5 +9,5 @@ sinks:
     domains:
       - "seven.io"
     patterns:
-      - "(?i)(sms77-api).*"
+      - "(?i)(Sms77.Api.Client).*"
     tags:
