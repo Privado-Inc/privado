@@ -4,7 +4,7 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Mysql.Www
+  - id: ThirdParties.SDK.Mysql
     name: Mysql
     domains:
       - "mysql.com"

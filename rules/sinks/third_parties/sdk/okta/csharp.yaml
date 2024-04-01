@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Okta.Www
-    name: Okta Www
+  - id: ThirdParties.SDK.Okta
+    name: Okta
     domains:
-      - "www.okta.com/"
+      - "okta.com/"
     patterns:
       - "(?i)(Okta[.]AspNetCore).*"
     tags:

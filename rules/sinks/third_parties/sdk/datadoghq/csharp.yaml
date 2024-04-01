@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Datadoghq.Www
-    name: Datadoghq Www
+  - id: ThirdParties.SDK.Datadoghq
+    name: Datadoghq
     domains:
-      - "www.datadoghq.com/"
+      - "datadoghq.com/"
     patterns:
       - "(?i)(Datadog[.]Trace[.]Bundle).*"
     tags:

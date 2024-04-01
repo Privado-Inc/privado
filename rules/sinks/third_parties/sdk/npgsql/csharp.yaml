@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Npgsql.Www
-    name: Npgsql Www
+  - id: ThirdParties.SDK.Npgsql
+    name: Npgsql
     domains:
-      - "www.npgsql.org/"
+      - "npgsql.org/"
     patterns:
       - "(?i)(Npgsql).*"
     tags:

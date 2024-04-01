@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Alibabacloud.Www
-    name: Alibabacloud Www
+  - id: ThirdParties.SDK.Alibabacloud
+    name: Alibabacloud
     domains:
-      - "www.alibabacloud.com/product/object-storage-service"
+      - "alibabacloud.com/product/object-storage-service"
     patterns:
       - "(?i)(Aliyun[.]OSS[.]SDK[.]NetCore).*"
     tags:

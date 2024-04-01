@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Hangfire.Www
-    name: Hangfire Www
+  - id: ThirdParties.SDK.Hangfire
+    name: Hangfire
     domains:
-      - "www.hangfire.io/"
+      - "hangfire.io/"
     patterns:
       - "(?i)(Hangfire).*"
     tags:
