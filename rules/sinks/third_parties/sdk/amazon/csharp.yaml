@@ -5,7 +5,7 @@
 sinks:
 
   - id: ThirdParties.SDK.Amazonaws.S3
-    name: Amazon Aws
+    name: Amazon Aws S3
     domains:
       - "aws.amazon.com/s3"
     patterns:
@@ -13,7 +13,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SQS
-    name: Amazon Aws
+    name: Amazon Aws SQS
     domains:
       - "aws.amazon.com/sqs"
     patterns:
@@ -21,7 +21,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SNS
-    name: Amazon Aws
+    name: Amazon Aws SNS
     domains:
       - "aws.amazon.com/sns"
     patterns:
@@ -29,7 +29,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.IAM
-    name: Amazon Aws
+    name: Amazon Aws IAM
     domains:
       - "aws.amazon.com/iam/"
     patterns:
@@ -37,7 +37,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Kinesis
-    name: Amazon Aws
+    name: Amazon Aws Kinesis
     domains:
       - "aws.amazon.com/kinesis/"
     patterns:
@@ -45,7 +45,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SecretsManager
-    name: Amazon Aws
+    name: Amazon Aws Secrets Manager
     domains:
       - "aws.amazon.com/secrets-manager/"
     patterns:
@@ -53,7 +53,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Lambda
-    name: Amazon Aws
+    name: Amazon Aws Lambda
     domains:
       - "aws.amazon.com/lambda/"
     patterns:
@@ -61,7 +61,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.KMS
-    name: Amazon Aws
+    name: Amazon Aws KMS
     domains:
       - "aws.amazon.com/kms"
     patterns:
@@ -69,7 +69,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Cognito
-    name: Amazon Aws
+    name: Amazon Aws Cognito
     domains:
       - "aws.amazon.com/cognito/"
     patterns:
@@ -77,7 +77,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.RDS
-    name: Amazon Aws
+    name: Amazon Aws RDS
     domains:
       - "aws.amazon.com/rds"
     patterns:
@@ -85,7 +85,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SES
-    name: Amazon Aws
+    name: Amazon Aws SES
     domains:
       - "aws.amazon.com/ses"
     patterns:
@@ -93,7 +93,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.CloudSearch
-    name: Amazon Aws
+    name: Amazon Aws CloudSearch
     domains:
       - "aws.amazon.com/cloudsearch/"
     patterns:
@@ -101,7 +101,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.EKS
-    name: Amazon Aws
+    name: Amazon Aws EKS
     domains:
       - "aws.amazon.com/eks/"
     patterns:
@@ -109,15 +109,15 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Bedrock
-    name: Amazon Aws
+    name: Amazon Aws Bedrock
     domains:
       - "aws.amazon.com/bedrock/"
     patterns:
-      - "(?i)(AWSSDK[.]Bedrock|AWSSDK[.]BedrockRuntime).*"
+      - "(?i)(AWSSDK[.]Bedrock|AWSSDK[.]BedrockRuntime|Amazon[.]Bedrock|Amazon[.]BedrockRuntine).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SSO
-    name: Amazon Aws
+    name: Amazon Aws SSO
     domains:
       - "aws.amazon.com/sso"
     patterns:
