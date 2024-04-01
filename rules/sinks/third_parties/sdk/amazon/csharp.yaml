@@ -1,0 +1,125 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Amazonaws.S3
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/s3"
+    patterns:
+      - "(?i)(AWSSDK[.]S3).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SQS
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/sqs"
+    patterns:
+      - "(?i)(AWSSDK[.]SQS|Amazon[.]CDK[.]AWS[.]SQS).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SNS
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/sns"
+    patterns:
+      - "(?i)(AWSSDK[.]SimpleNotificationService|Amazon[.]CDK[.]AWS[.]SNS|Amazon[.]CDK[.]AWS[.]SNS[.]Subscriptions).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.IAM
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/iam/"
+    patterns:
+      - "(?i)(AWSSDK[.]IdentityManagement|Amazon[.]CDK[.]AWS[.]IAM).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Kinesis
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/kinesis/"
+    patterns:
+      - "(?i)(AWSSDK[.]Kinesis|AWSSDK[.]KinesisFirehose).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SecretsManager
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/secrets-manager/"
+    patterns:
+      - "(?i)(AWSSDK[.]SecretsManager|AWSSDK[.]SecretsManager[.]Caching).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Lambda
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/lambda/"
+    patterns:
+      - "(?i)(AWSSDK[.]Lambda).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.KMS
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/kms"
+    patterns:
+      - "(?i)(AWSSDK[.]KeyManagementService).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Cognito
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/cognito/"
+    patterns:
+      - "(?i)(Amazon[.]AspNetCore[.]Identity[.]Cognito).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.RDS
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/rds"
+    patterns:
+      - "(?i)(AWSSDK[.]RDS).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SES
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/ses"
+    patterns:
+      - "(?i)(AWSSDK|AWSSDK[.]SimpleEmail).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.CloudSearch
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/cloudsearch/"
+    patterns:
+      - "(?i)(AWSSDK[.]CloudSearch|AWSSDK[.]CloudSearchDomain).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.EKS
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/eks/"
+    patterns:
+      - "(?i)(AWSSDK[.]EKS).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Bedrock
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/bedrock/"
+    patterns:
+      - "(?i)(AWSSDK[.]Bedrock|AWSSDK[.]BedrockRuntime).*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SSO
+    name: Amazon Aws
+    domains:
+      - "aws.amazon.com/sso"
+    patterns:
+      - "(?i)(AWSSDK[.]SSO).*"
+    tags:
