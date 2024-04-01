@@ -9,7 +9,7 @@ sinks:
     domains:
       - "aws.amazon.com/s3"
     patterns:
-      - "(?i)(AWSSDK[.]S3).*"
+      - "(?i)(AWSSDK[.]S3|Amazon.S3).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SQS
