@@ -1,9 +1,9 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: ^(?i)(net/http|github.com/parnurzeal/gorequest|(gopkg.in|github.com/go-resty)/resty|valyala/fasthttp|github.com/gojektech/heimdall/v\\d/httpclient|github.com/levigross/grequests|github.com/PuerkitoBio/rehttp|github.com/machinebox/graphql).*
+    value: ^(?i)(System[.]Net[.]Http|RestSharp|EasyHttp).*
 
   - key: apiSinks
-    value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do)
+    value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|create|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do)(async)?
 
   - key: apiIdentifier
     value: (?i).*((hook|base|auth|prov|endp|install|request|service|gateway|route|resource)(.){0,12}url|(slack|web)(.){0,4}hook|(rest|api|request|service)(.){0,4}(endpoint|gateway|route)).*
