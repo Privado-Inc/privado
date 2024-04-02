@@ -1,6 +1,6 @@
 systemConfig:
   - key: apiHttpLibraries
-    value: ^(?i)(System[.]Net[.]Http|RestSharp|EasyHttp).*
+    value: ^(?i)(System[.]Net[.]Http|RestSharp|EasyHttp|Flurl[.]Http|Refit|Restease|Nancy[.]HttpClient|FluentHttp|Polly|EasyHttp|Windows[.]Web[.]Http|FluentRest|Restup|FiddlerCore|NHttp).*
 
   - key: apiSinks
     value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|create|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do)(async)?
