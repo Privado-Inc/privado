@@ -9,7 +9,7 @@ sinks:
     domains:
       - "azure.microsoft.com"
     patterns:
-      - "(?i)(Azure[.]Core|Azure[.]Storage[.]Queues|Azure[.]Identity|Microsoft[.]Azure[.]KeyVault[.]Core|Azure[.]Storage[.]Blobs|Azure[.]Security[.]KeyVault[.]Secrets|Azure[.]Messaging[.]EventHubs|Microsoft[.]Azure[.]NotificationHubs|Microsoft[.]CognitiveServices[.]Speech|WindowsAzure[.]Storage|Azure[.]Extensions[.]AspNetCore[.]Configuration[.]Secrets|AzureStorageUtils|Azure[.]Search[.]Documents).*"
+      - "(?i)(Microsoft[.])?(Azure[.]Core|Azure[.]Storage[.]Queues|Azure[.]Identity|Microsoft[.]Azure[.]KeyVault[.]Core|Azure[.]Storage[.]Blobs|Azure[.]Security[.]KeyVault[.]Secrets|Azure[.]Messaging[.]EventHubs|Microsoft[.]Azure[.]NotificationHubs|Microsoft[.]CognitiveServices[.]Speech|WindowsAzure[.]Storage|Azure[.]Extensions[.]AspNetCore[.]Configuration[.]Secrets|AzureStorageUtils|Azure[.]Search[.]Documents).*"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure.OpenAI

@@ -4,7 +4,7 @@
 
 sinks:
   - id: ThirdParties.SDK.Mongodb
-    name: Mongodb Www
+    name: Mongodb
     domains:
       - "mongodb.com/"
     patterns:
