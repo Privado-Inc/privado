@@ -4,6 +4,14 @@
 
 sinks:
 
+  - id: ThirdParties.SDK.Amazon
+    name: Amazon
+    domains:
+      - "amazon.com"
+    patterns:
+      - "(?i)(Amazon).*"
+    tags:
+
   - id: ThirdParties.SDK.Amazonaws.S3
     name: Amazon Aws S3
     domains:
