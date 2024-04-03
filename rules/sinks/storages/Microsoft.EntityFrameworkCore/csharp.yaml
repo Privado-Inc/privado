@@ -15,5 +15,5 @@ sinks:
       - learn.microsoft.com/ef/core
     patterns:
       - "(?i).*(IRepository|DBSet).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*" 
-      - "(?i)(Microsoft.EntityFrameworkCore).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*""
+      - "(?i)(Microsoft.EntityFrameworkCore).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*"
     tags:
