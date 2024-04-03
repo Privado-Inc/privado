@@ -17,5 +17,13 @@ sinks:
     domains:
       - "google.com"
     patterns:
-      - "(?i)(Google[.]Apis|Google[.]Cloud).*"
+      - "(?i)(Google[.]Apis).*"
+    tags:
+
+  - id: ThirdParties.SDK.GoogleCloud
+    name: Google Cloud
+    domains:
+      - "cloud.google.com"
+    patterns:
+      - "(?i)(Google[.]Cloud).*"
     tags:

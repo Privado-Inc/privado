@@ -17,7 +17,7 @@ sinks:
     domains:
       - "aws.amazon.com/sqs"
     patterns:
-      - "(?i)(AWSSDK[.]SQS|Amazon[.]CDK[.]AWS[.]SQS).*"
+      - "(?i)(AWSSDK[.]SQS|Amazon[.]CDK[.]AWS[.]SQS|Amazon[.]SQS).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.SNS
