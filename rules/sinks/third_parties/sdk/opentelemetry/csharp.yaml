@@ -9,4 +9,4 @@ sinks:
     domains:
       - "opentelemetry.io"
     patterns:
-      - "(?i)(OpenTelemetry).*)"
+      - "(?i)(OpenTelemetry).*"
