@@ -5,7 +5,8 @@ sinks:
     domains:
       - learn.microsoft.com/ef/core
     patterns:
-      - "(?i).*(IRepository|DBSet).*(Add|AddOrUpdate|AddRange|Remove|RemoveRange)(Async)?.*" 
+      - "(?i).*(IRepository|DBSet).*(Add|AddOrUpdate|AddRange|Remove|RemoveRange)(Async)?.*"
+      - "(?i)(Microsoft.EntityFrameworkCore).*(Add|AddOrUpdate|AddRange|Remove|RemoveRange)(Async)?.*"
     tags:
 
   - id: Storages.EntityFrameworkCore.Read
@@ -14,4 +15,5 @@ sinks:
       - learn.microsoft.com/ef/core
     patterns:
       - "(?i).*(IRepository|DBSet).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*" 
+      - "(?i)(Microsoft.EntityFrameworkCore).*(Find|First|ForEach|LongCount|ToArray|Single)(Async)?.*"
     tags:
