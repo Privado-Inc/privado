@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.ASP.NET.Core
+    name: ASP.NET Core framework routes
+    patterns:
+      - "(?i).*(Route|HttpGet|HttpPost|HttpPut|HttpDelete|HttpPatch|HttpHead).*"
+    tags:
