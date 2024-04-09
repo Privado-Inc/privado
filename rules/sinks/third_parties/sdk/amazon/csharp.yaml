@@ -45,7 +45,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Kinesis
-    name: Amazon Aws Kinesis
+    name: Amazon AWS Kinesis
     domains:
       - "aws.amazon.com/kinesis/"
     patterns:

@@ -39,7 +39,7 @@ sinks:
   - id: ThirdParties.SDK.Google.TagManager
     name: Google Tag Manager
     domains:
-      - "analytics.google.com"
+      - "tagmanager.google.com"
     patterns:
       - "@analytics\\/google-tag-manager|gatsby-plugin-google-gtag|react-gtm-module"
     tags:
@@ -48,7 +48,7 @@ sinks:
     name: Google Tag Manager
     filterProperty: "code"
     domains:
-      - "analytics.google.com"
+      - "tagmanager.google.com"
     patterns:
       - "(?i)(.*[.])?(gtag|dataLayer.push)[(].*"
     tags:
