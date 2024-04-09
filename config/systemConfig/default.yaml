@@ -10,3 +10,6 @@ systemConfig:
 
   - key: propertyFileDirCountLimit
     value: "10"
+
+  - key: maxLineLimit
+    value: "1000"
