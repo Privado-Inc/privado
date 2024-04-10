@@ -1359,7 +1359,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.AppRegistry
     name: Amazonaws App Registry
     domains:
-      - "aws.amazon.com"
+      - "docs.aws.amazon.com/servicecatalog/latest/arguide/intro-app-registry.html"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]appregistry).*"
     tags:

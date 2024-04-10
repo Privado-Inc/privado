@@ -138,7 +138,7 @@ sinks:
   - id: ThirdParties.SDK.Amazonaws.Auth
     name: Amazonaws Auth
     domains:
-      - "aws.amazon.com"
+      - "docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications-security/authentication.html"
     patterns:
       - "(?i)(react-oauth2-pkce|@cloudcomponents\\/cdk-cloudfront-authorization|@vue-toolkit\\/aws-auth|react-oauth2-pkce-temp|passwordless-auth|serverless-custom-auth-plugin|brewery-auth|graphql-workspace-authorizer-transformer|vault-auth-aws|aws-api-auth-policy|@pi-team-mn\\/aws-apigw-authorizer|awsauth|redis-connection-no-auth|@stinkstudios\\/cf-auth|api-gateway-auth-policy|@orcden\\/od-authentication|aws-apigw-authorizer|@engineal\\/aws-cdk-recaptcha-authorizer)"
     tags:
