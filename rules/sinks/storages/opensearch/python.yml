@@ -1,0 +1,10 @@
+
+# Sink Rules for vector DB Opensearch
+
+sinks:
+  - id: Storages.OpenSearch.Initialize
+    name: OpenSearch DB
+    domains:
+      - https://opensearch.org/
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.OpenSearchVectorSearch).*"

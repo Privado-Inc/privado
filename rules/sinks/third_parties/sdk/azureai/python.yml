@@ -1,0 +1,28 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+  - id: ThirdParties.SDK.Langchain.ChatModels.AzureChatOpenAI
+    name: Langchain Azure model
+    domains:
+      - "langchain.com"
+    patterns:
+      - "(?i).*(?:langchain.*chat_models.*.AzureChatOpenAI).*"
+    tags:
+
+  - id: ThirdParties.SDK.Langchain.ChatModels.AzureML
+    name: Langchain AzureML model
+    domains:
+      - "langchain.com"
+    patterns:
+      - "(?i).*(?:langchain.*chat_models.*.AzureML).*"
+    tags:
+
+  - id: ThirdParties.SDK.AzureAI.AzureOpenAI
+    name: AzureAI
+    domains:
+      - "azure.com"
+    patterns:
+      - "(?i).*(AzureOpenAI).*"
+    tags:

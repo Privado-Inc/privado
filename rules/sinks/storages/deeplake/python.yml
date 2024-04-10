@@ -1,0 +1,18 @@
+
+# Sink Rules for vector DB Deeplake
+
+sinks:
+  - id: Storages.Deeplake.Initialize
+    name: Deeplake DB
+    domains:
+      - activeloop.ai
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.DeepLake).*"
+
+  - id: Storages.Deeplake.ReadAndWrite
+    name: Deeplake DB
+    domains:
+      - activeloop.ai
+    patterns:
+      - (?i).*(deeplake).*(?:load|add|search).*
+    tags:

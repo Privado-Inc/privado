@@ -1,4 +1,11 @@
 sinks:
+  - id: Storages.Redis.Initialize
+    name: Redis DB
+    domains:
+      - redis.io
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.Redis).*"
+
   - id: Storages.Redis.Read
     name: Redis DB
     domains:
