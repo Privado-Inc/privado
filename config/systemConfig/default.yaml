@@ -11,5 +11,5 @@ systemConfig:
   - key: propertyFileDirCountLimit
     value: "10"
 
-  - key: maxLineLimit
+  - key: maxCharLimit
     value: "1000"
