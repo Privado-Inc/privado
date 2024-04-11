@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database Qdrant - qdrant.tech
+
+sinks:
+
+  - id: Storages.Qdrant.ReadAndWrite
+    name: Qdrant DB
+    domains:
+      - qdrant.tech
+    patterns:
+      - "@qdrant\\/js-client-rest"
+    tags:

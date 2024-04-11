@@ -1,0 +1,26 @@
+
+# Sink Rules for vector DB Qdrant
+
+sinks:
+  - id: Storages.Qdrant.Initialize
+    name: Qdrant DB
+    domains:
+      - qdrant.tech
+    patterns:
+      - "(?i).*(?:langchain.*vectorstores.*.Qdrant).*"
+
+  - id: Storages.Qdrant.Read
+    name: Qdrant DB (Read)
+    domains:
+      - qdrant.tech
+    patterns:
+      - "(?i).*(?:qdrant_client).*(?:query|search).*"
+    tags:
+
+  - id: Storages.Qdrant.Write
+    name: Qdrant DB (Write)
+    domains:
+      - qdrant.tech
+    patterns:
+      - "(?i).*(?:qdrant_client).*(?:upsert|add).*"
+    tags:

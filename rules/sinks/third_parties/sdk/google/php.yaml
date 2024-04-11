@@ -57,7 +57,7 @@ sinks:
   - id: ThirdParties.SDK.Google.TagManager
     name: Google Tag Manager
     domains:
-      - "analytics.google.com"
+      - "tagmanager.google.com"
     patterns:
       - "(?i).*(googletagmanager).*"
     tags:

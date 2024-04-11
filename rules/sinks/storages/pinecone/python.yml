@@ -1,0 +1,26 @@
+
+# Sink Rules for vector DB Pinecone
+
+sinks:
+  - id: Storages.Pinecone.Initialize
+    name: Pinecone DB
+    domains:
+      - pinecone.io
+    patterns:
+      - "(?i).*(?:langchain.*.Pinecone).*"
+
+  - id: Storages.Pinecone.Read
+    name: Pinecone DB (Read)
+    domains:
+      - pinecone.io
+    patterns:
+      - "(?i).*(?:pinecone).*(?:fetch|query).*"
+    tags:
+
+  - id: Storages.Pinecone.Write
+    name: Pinecone DB (Write)
+    domains:
+      - pinecone.io
+    patterns:
+      - "(?i).*(?:pinecone).*(?:upsert|update).*"
+    tags:
