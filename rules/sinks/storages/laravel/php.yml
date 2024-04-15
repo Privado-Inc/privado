@@ -9,7 +9,7 @@ sinks:
     patterns:
       - "(?i).*(?:\\\\Facades\\\\DB).*(connection)"
 
-  - id: Storages.Laravel.Face.ReadAndWrite
+  - id: Storages.Laravel.Facade.ReadAndWrite
     name: Laravel Facade (Read and Write)
     domains:
       - laravel.com
