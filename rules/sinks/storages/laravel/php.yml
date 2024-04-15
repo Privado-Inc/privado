@@ -1,0 +1,18 @@
+
+# Sink Rules for Laravel DB Facade
+
+sinks:
+  - id: Storages.Laravel.Facade.Initialize
+    name: Laravel Facade (Initialize)
+    domains:
+      - laravel.com
+    patterns:
+      - "(?i).*(?:\\\\Facades\\\\DB).*(connection)"
+
+  - id: Storages.Laravel.Face.ReadAndWrite
+    name: Laravel Facade (Read and Write)
+    domains:
+      - laravel.com
+    patterns:
+      - "(?i).*(?:\\\\Facades\\\\DB).*(select|selectResultSets|scalar|insert|prepareBindings|unprepared|statement|delete|update|transaction|commit|begin_transaction|rollBack)"
+    tags:
