@@ -5,14 +5,14 @@ sinks:
   - id: Storages.Doctrine.Interface.Initialize
     name: Doctrine Interface (Initialize)
     domains:
-      - <url>
+      - www.doctrine-project.org
     patterns:
       - "(?i).*(?:Doctrine\\\\ORM\\\\EntityManager).*(__construct)"
 
   - id: Storages.Doctrine.Interface.ReadAndWrite
     name: Doctrine Interface (Read and Write)
     domains:
-      - <url>
+      - www.doctrine-project.org
     patterns:
       - "(?i).*(?:Doctrine\\\\ORM\\\\EntityManager).*(getConnection|getMetadataFactory|getExpressionBuilder|beginTransaction|transactional|commit|rollback|getClassMetadata|createQuery|createNamedQuery|createNativeQuery|createNamedNativeQuery|createQueryBuilder|flush|find|getReference|getPartialReference|clear|close|persist|remove|refresh|detach|merge|copy|lock|getEventManager|create|insert|delete)"
     tags:
