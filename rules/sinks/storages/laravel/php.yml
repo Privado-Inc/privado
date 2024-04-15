@@ -7,12 +7,12 @@ sinks:
     domains:
       - laravel.com
     patterns:
-      - "(?i).*(?:\\\\Facades\\\\DB).*(connection)"
+      - "(?i).*(?:Illuminate\\\\Support\\\\Facades\\\\DB).*(connection)"
 
   - id: Storages.Laravel.Facade.ReadAndWrite
     name: Laravel Facade (Read and Write)
     domains:
       - laravel.com
     patterns:
-      - "(?i).*(?:\\\\Facades\\\\DB).*(select|selectResultSets|scalar|insert|prepareBindings|unprepared|statement|delete|update|transaction|commit|begin_transaction|rollBack)"
+      - "(?i).*(?:Illuminate\\\\Support\\\\Facades\\\\DB).*(select|selectResultSets|scalar|insert|prepareBindings|unprepared|statement|delete|update|transaction|commit|begin_transaction|rollBack|table)"
     tags:
