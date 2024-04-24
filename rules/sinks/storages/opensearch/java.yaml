@@ -1,0 +1,21 @@
+
+# Sink Rules for storage database Elasticsearch - https://www.opensearch.org
+
+sinks:
+
+  - id: Storages.Opensearch.Read
+    name: Opensearch(Read)
+    domains:
+      - opensearch.org
+    patterns:
+      - "(?i).*(?:org[.]opensearch[.](action|client)).*(?:get|list|head|select|view|find|search|match).*" 
+    tags:
+
+  - id: Storages.Opensearch.Write
+    name: Opensearch(Write)
+    domains:
+      - opensearch.org
+    patterns:
+      - "(?i).*(?:org[.]opensearch[.](action|client)).*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*" 
+      - "org.apache.flink.connector.opensearch.sink.OpensearchSinkBuilder.*"
+    tags:

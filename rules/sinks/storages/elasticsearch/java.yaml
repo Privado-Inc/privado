@@ -8,7 +8,7 @@ sinks:
     domains:
       - elastic.co
     patterns:
-      - "(?i).*(?:org[.]opensearch[.](action|client)|org[.]elasticsearch[.]client[.]|org[.]eclipse[.]jnosql[.]mapping[.]elasticsearch).*(?:get|list|head|select|view|find|search|match).*" 
+      - "(?i).*(?:org[.]elasticsearch[.]client[.]|org[.]eclipse[.]jnosql[.]mapping[.]elasticsearch).*(?:get|list|head|select|view|find|search|match).*" 
     tags:
 
   - id: Storages.Elasticsearch.Write
@@ -16,5 +16,6 @@ sinks:
     domains:
       - elastic.co
     patterns:
-      - "(?i).*(?:org[.]opensearch[.](action|client)|org[.]elasticsearch[.]client[.]|org[.]eclipse[.]jnosql[.]mapping[.]elasticsearch).*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*" 
+      - "(?i).*(?:org[.]elasticsearch[.]client[.]|org[.]eclipse[.]jnosql[.]mapping[.]elasticsearch).*(?:add|copy|apply|create|delete|modify|remove|reset|restore|insert|drop|rename|save|set|update|bulkWrite).*" 
+      - "org.apache.flink.connector.elasticsearch.sink.Elasticsearch.SinkBuilder.*"
     tags:

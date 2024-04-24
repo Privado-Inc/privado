@@ -29,4 +29,5 @@ sinks:
       - amazon.com
     patterns:
       - "(?i)((?:com[.]amazonaws[.]services[.]dynamodbv2[.]((AmazonDynamoDB|AmazonDynamoDBAsyncClient|AmazonDynamoDBClient|AbstractAmazonDynamoDB|AbstractAmazonDynamoDBAsync|document[.]Table)[.]((batchWrite|delete|put|update)Item|transactWriteItems)[:].*))|(?:com[.]amazonaws[.]services[.]dynamodbv2[.]datamodeling[.]DynamoDBMapper[.](batchWrite|delete|save|transactionWrite)[:].*))"
+      - "org.apache.flink.connector.dynamodb.sink.DynamoDbSink.builder[:].*"
     tags:

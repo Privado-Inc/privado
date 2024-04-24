@@ -10,4 +10,5 @@ sinks:
       - apache.org
     patterns:
       - "(?i).*(?:CassandraConnector|Cluster[.]builder|com[.]datastax[.]oss|com[.]datastax[.]driver[.]core|com[.]noorq[.]casser|org[.]eclipse[.]jnosql[.]mapping[.]cassandra).*"
+      - "org.apache.flink.streaming.connectors.cassandra.CassandraSink.addSink[:].*"
     tags:
