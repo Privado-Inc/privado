@@ -19,5 +19,5 @@ sinks:
       - amazon.com
     patterns:
       - "(?i).*(?:KinesisAsyncClient|KinesisClient|software.amazon.awssdk.services.kinesis).*(add|create|delete|merge|put|remove|update|set|send).*"
-      - "org.apache.flink.connector.kinesis.sink.KinesisStreamsSink.builder[:].*"
+      - "org.apache.flink.connector.kinesis.sink.KinesisStreamsSink.builder.*"
     tags:

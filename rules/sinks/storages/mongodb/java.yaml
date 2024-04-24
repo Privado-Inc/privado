@@ -19,7 +19,7 @@ sinks:
       - mongodb.com
     patterns:
       - "(?i)(com[.]mongodb[.](client[.]MongoCollection|DBCollection)[.]((delete|deleteMany|deleteOne|findOneAnd(Delete|Replace|Update)|replace|replaceOne|replaceMany|update|updateOne|updateMany|bulkWrite|insert|insertOne|insertMany)[:].*))"
-      - "org.apache.flink.connector.mongodb.sink.MongoSink.builder[:].*"
+      - "org.apache.flink.connector.mongodb.sink.MongoSink.builder.*"
     tags:
 
   - id: Storages.MongoDB.Morphia.Read
