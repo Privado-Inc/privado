@@ -98,6 +98,7 @@ sinks:
       - "cloud.google.com/pubsub"
     patterns:
       - "(?i)(com[.]google[.]cloud[.]pubsub|com[.]google[.]pubsub).*"
+      - "org.apache.flink.streaming.connectors.gcp.pubsub.PubSubSink.newBuilder.*"
     tags:
 
   - id: ThirdParties.SDK.Google.Bigquery

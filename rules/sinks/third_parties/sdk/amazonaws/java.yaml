@@ -306,6 +306,7 @@ sinks:
       - "aws.amazon.com/kinesis/data-firehose"
     patterns:
       - "(?i)(com[.]amazonaws[.]services[.]kinesisfirehose).*"
+      - "org.apache.flink.connector.firehose.sink.KinesisFirehoseSink.builder.*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Pinpoint

@@ -17,6 +17,7 @@ sinks:
       - oracle.com
     patterns:
       - "(?i)((java[.]sql[.](Statement|PreparedStatement)[.](executeUpdate|executeLargeUpdate).*)|(org[.]springframework[.]jdbc[.]core[.]JdbcTemplate[.].*update[:].*))"
+      - "org.apache.flink.connector.jdbc.sink.JdbcSink.builder.*"
     tags:
 
   - id: Storages.SpringFramework.Jdbc.Read
