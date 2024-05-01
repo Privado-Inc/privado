@@ -9,7 +9,23 @@ sinks:
     domains:
       - "admob.google.com"
     patterns:
-      - "(?i)(com[.]google[.]ads[.]mediation|com[.]google[.]android[.]gms[.]ads|com[.]google[.]api[.]services[.]admob|com[.]google[.]ads).*"
+      - "(?i)(com[.]google[.]ads[.]mediation|com[.]google[.]android[.](gms[.]ads|ump)|com[.]google[.]api[.]services[.]admob).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Ads
+    name: Google Ads
+    domains:
+      - "admob.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]android[.]gms[.]ads|com[.]google[.]ads[.](googleads|interactivemedia)).*"
+    tags:
+
+  - id: ThirdParties.SDK.Google.Adsense
+    name: Google Adsense
+    domains:
+      - "adsense.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]api[.]services[.]adsense).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Analytics
