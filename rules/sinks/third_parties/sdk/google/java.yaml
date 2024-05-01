@@ -15,9 +15,10 @@ sinks:
   - id: ThirdParties.SDK.Google.Ads
     name: Google Ads
     domains:
-      - "admob.google.com"
+      - "ads.google.com"
     patterns:
       - "(?i)(com[.]google[.]android[.]gms[.]ads|com[.]google[.]ads[.](googleads|interactivemedia)).*"
+      - "(?i).*(ClickConversion[.]Builder[.]).*"
     tags:
 
   - id: ThirdParties.SDK.Google.Adsense
