@@ -6,6 +6,7 @@ sinks:
       - apache.com
     patterns: 
       - "(?i).*((org[.]springframework[.]kafka[.]core[.]KafkaTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute|commit|produce|write)[:])|(org[.]apache[.]kafka[.]clients[.]producer[.]KafkaProducer[.](sendOffsetsToTransaction|send|commit|produce|write|sendAsync)[:])|(com[.]salesforce[.]heroku[.]kafka[.]producer[.]HerokuKafkaProducer[.]send[:])|(io[.]lenses[.]kafka[.]client[.]producer[.]Producer[.]send)|(io[.]confluent[.]kafka[.]clients[.]producer[.]KafkaProducer[.]send)|(io[.]quarkus[.]kafka[.]producer[.]KafkaProducer[.]send)).*"
+      - "(org.apache.flink.connector.kafka.sink.KafkaSink.builder|org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer).*"
     tags:
 
   - id: Messaging.Queue.Kafka.Consumer
@@ -22,6 +23,7 @@ sinks:
       - rabbitmq.com
     patterns: 
       - "(?i).*(org[.]springframework[.]amqp[.]rabbit[.]core[.]RabbitTemplate[.](doSend|send|sendAndReceive|convertAndSend|execute)[:]).*"
+      - "org.apache.flink.streaming.connectors.rabbitmq.RMQSink.*"
     tags:
 
   - id: Messaging.Service.JMS.Producer
