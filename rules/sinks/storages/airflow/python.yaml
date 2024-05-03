@@ -1,0 +1,17 @@
+sinks:
+
+  - id: ThirdParties.Operator.MySQL
+    name: MySQL
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)(MySqlOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Postgres
+    name: Postgres
+    domains:
+      - "postgresql.org"
+    patterns:
+      - "(?i)(PostgresOperator).*"
+    tags:
