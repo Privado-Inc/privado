@@ -1,0 +1,53 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.Operator.Slack
+    name: Airflow Slack Operator
+    domains:
+      - "slack.com"
+    patterns:
+      - "(?i)(SlackAPIOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.MySQL
+    name: Airflow MySQL Operator
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)(MySqlOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Postgres
+    name: Airflow Postgres Operator
+    domains:
+      - "postgresql.org"
+    patterns:
+      - "(?i)(PostgresOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Oracle
+    name: Airflow Oracle Operator
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)(OracleOperator|JdbcOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Apache.Hive
+    name: Airflow Hive Operator
+    domains:
+      - "apache.com"
+    patterns:
+      - "(?i)(HiveOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Amazon
+    name: Airflow Amazon Operator
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i)(S3CreateBucketOperator|S3DeleteBucketOperator|S3GetBucketTaggingOperator|S3PutBucketTaggingOperator|S3DeleteBucketTaggingOperator|S3CopyObjectOperator|S3CreateObjectOperator|S3DeleteObjectsOperator|S3FileTransformOperator|S3ListOperator).*"
+    tags:
