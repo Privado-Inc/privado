@@ -5,7 +5,7 @@
 sinks:
 
   - id: ThirdParties.Operator.Slack
-    name: Airflow Slack Operator
+    name: Slack
     domains:
       - "slack.com"
     patterns:
@@ -13,7 +13,7 @@ sinks:
     tags:
 
   - id: ThirdParties.Operator.MySQL
-    name: Airflow MySQL Operator
+    name: MySQL
     domains:
       - "mysql.com"
     patterns:
@@ -21,7 +21,7 @@ sinks:
     tags:
 
   - id: ThirdParties.Operator.Postgres
-    name: Airflow Postgres Operator
+    name: Postgres
     domains:
       - "postgresql.org"
     patterns:
@@ -29,7 +29,7 @@ sinks:
     tags:
 
   - id: ThirdParties.Operator.Oracle
-    name: Airflow Oracle Operator
+    name: Oracle
     domains:
       - "oracle.com"
     patterns:
@@ -37,7 +37,7 @@ sinks:
     tags:
 
   - id: ThirdParties.Operator.Apache.Hive
-    name: Airflow Hive Operator
+    name: Apache Hive
     domains:
       - "apache.com"
     patterns:
@@ -45,9 +45,25 @@ sinks:
     tags:
 
   - id: ThirdParties.Operator.Amazon
-    name: Airflow Amazon Operator
+    name: Amazon AWS
     domains:
       - "aws.amazon.com"
     patterns:
       - "(?i)(S3CreateBucketOperator|S3DeleteBucketOperator|S3GetBucketTaggingOperator|S3PutBucketTaggingOperator|S3DeleteBucketTaggingOperator|S3CopyObjectOperator|S3CreateObjectOperator|S3DeleteObjectsOperator|S3FileTransformOperator|S3ListOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Google.Ads
+    name: Google Ads
+    domains:
+      - "ads.google.com"
+    patterns:
+      - "(?i)(GoogleAdsListAccountsOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Google.Analytics
+    name: Google Analytics
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(GoogleAnalyticsAdminListAccountsOperator|GoogleAnalyticsAdminCreatePropertyOperator|GoogleAnalyticsAdminDeletePropertyOperator|GoogleAnalyticsAdminCreateDataStreamOperator|GoogleAnalyticsAdminDeleteDataStreamOperator|GoogleAnalyticsAdminListGoogleAdsLinksOperator|GoogleAnalyticsAdminGetGoogleAdsLinkOperator).*"
     tags:
