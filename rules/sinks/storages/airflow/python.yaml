@@ -15,3 +15,19 @@ sinks:
     patterns:
       - "(?i)(PostgresOperator).*"
     tags:
+
+  - id: ThirdParties.Operator.Oracle
+    name: Oracle
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)(OracleOperator|JdbcOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Apache.Hive
+    name: Apache Hive
+    domains:
+      - "apache.com"
+    patterns:
+      - "(?i)(HiveOperator).*"
+    tags:
