@@ -27,3 +27,19 @@ sinks:
       - "(?i).*(?:mysql.*connector|mysqldb|flask_mysqldb|pymysql).*(?:execute|connect).*"
       - "(?i).*(aiomysql|oursql).*(create_pool|create_engine|acquire|execute|cursor|fetchone).*"
     tags:
+
+  - id: ThirdParties.Operator.Oracle
+    name: Oracle
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)(OracleOperator|JdbcOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Apache.Hive
+    name: Apache Hive
+    domains:
+      - "apache.com"
+    patterns:
+      - "(?i)(HiveOperator).*"
+    tags:

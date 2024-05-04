@@ -12,22 +12,6 @@ sinks:
       - "(?i)(SlackAPIOperator).*"
     tags:
 
-  - id: ThirdParties.Operator.Oracle
-    name: Oracle
-    domains:
-      - "oracle.com"
-    patterns:
-      - "(?i)(OracleOperator|JdbcOperator).*"
-    tags:
-
-  - id: ThirdParties.Operator.Apache.Hive
-    name: Apache Hive
-    domains:
-      - "apache.com"
-    patterns:
-      - "(?i)(HiveOperator).*"
-    tags:
-
   - id: ThirdParties.Operator.Amazon
     name: Amazon AWS
     domains:
