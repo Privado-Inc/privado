@@ -1,0 +1,33 @@
+sinks:
+
+  - id: ThirdParties.Operator.MySQL
+    name: MySQL
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)(MySqlOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Postgres
+    name: Postgres
+    domains:
+      - "postgresql.org"
+    patterns:
+      - "(?i)(PostgresOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Oracle
+    name: Oracle
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)(OracleOperator|JdbcOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Apache.Hive
+    name: Apache Hive
+    domains:
+      - "apache.com"
+    patterns:
+      - "(?i)(HiveOperator).*"
+    tags:
