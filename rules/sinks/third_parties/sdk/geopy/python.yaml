@@ -188,14 +188,6 @@ sinks:
       - "(?i)(geopy).*(What3Words).*"
     tags:
 
-  - id: ThirdParties.SDK.Geopy.Woosmap
-    name: Woosmap
-    domains:
-      - "woosmap.com"
-    patterns:
-      - "(?i)(geopy).*(Woosmap).*"
-    tags:
-
   - id: ThirdParties.SDK.Geopy.Yandex
     name: Yandex
     domains:
