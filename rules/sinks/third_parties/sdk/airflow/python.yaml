@@ -1,0 +1,37 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.Operator.Slack
+    name: Slack
+    domains:
+      - "slack.com"
+    patterns:
+      - "(?i)(SlackAPIOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Amazon
+    name: Amazon AWS
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i)(S3CreateBucketOperator|S3DeleteBucketOperator|S3GetBucketTaggingOperator|S3PutBucketTaggingOperator|S3DeleteBucketTaggingOperator|S3CopyObjectOperator|S3CreateObjectOperator|S3DeleteObjectsOperator|S3FileTransformOperator|S3ListOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Google.Ads
+    name: Google Ads
+    domains:
+      - "ads.google.com"
+    patterns:
+      - "(?i)(GoogleAdsListAccountsOperator).*"
+    tags:
+
+  - id: ThirdParties.Operator.Google.Analytics
+    name: Google Analytics
+    domains:
+      - "analytics.google.com"
+    patterns:
+      - "(?i)(GoogleAnalyticsAdminListAccountsOperator|GoogleAnalyticsAdminCreatePropertyOperator|GoogleAnalyticsAdminDeletePropertyOperator|GoogleAnalyticsAdminCreateDataStreamOperator|GoogleAnalyticsAdminDeleteDataStreamOperator|GoogleAnalyticsAdminListGoogleAdsLinksOperator|GoogleAnalyticsAdminGetGoogleAdsLinkOperator).*"
+    tags:
