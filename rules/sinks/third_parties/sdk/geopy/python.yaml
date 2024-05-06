@@ -1,0 +1,205 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+
+  - id: ThirdParties.SDK.Geopy.ArcGIS
+    name: ArcGIS
+    domains:
+      - "arcgis.com"
+    patterns:
+      - "(?i)(geopy).*(ArcGIS).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Azure
+    name: Azure
+    domains:
+      - "azure.microsoft.com"
+    patterns:
+      - "(?i)(geopy).*(AzureMaps).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Baidu
+    name: Baidu
+    domains:
+      - "intl.cloud.baidu.com"
+    patterns:
+      - "(?i)(geopy).*(Baidu).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.BANFrance
+    name: BANFrance
+    domains:
+      - "adresse.data.gouv.fr"
+    patterns:
+      - "(?i)(geopy).*(BANFrance).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Bing
+    name: Bing
+    domains:
+      - "bing.com"
+    patterns:
+      - "(?i)(geopy).*(Bing).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.GeocodeEarth
+    name: GeocodeEarth
+    domains:
+      - "geocode.earth"
+    patterns:
+      - "(?i)(geopy).*(GeocodeEarth).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.GeocodeFarm
+    name: GeocodeFarm
+    domains:
+      - "geocod.io"
+    patterns:
+      - "(?i)(geopy).*(Geocodio).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Geokeo
+    name: Geokeo
+    domains:
+      - "geokeo.com"
+    patterns:
+      - "(?i)(geopy).*(Geokeo).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Geolake
+    name: Geolake
+    domains:
+      - "geolake.com"
+    patterns:
+      - "(?i)(geopy).*(Geolake).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.GeoNames
+    name: GeoNames
+    domains:
+      - "geonames.org"
+    patterns:
+      - "(?i)(geopy).*(GeoNames).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Google
+    name: Google
+    domains:
+      - "google.com"
+    patterns:
+      - "(?i)(geopy).*(GoogleV3).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Here
+    name: Here
+    domains:
+      - "here.com"
+    patterns:
+      - "(?i)(geopy).*(Here).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.MapBox
+    name: MapBox
+    domains:
+      - "mapbox.com"
+    patterns:
+      - "(?i)(geopy).*(MapBox).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.MapQuest
+    name: MapQuest
+    domains:
+      - "mapquest.com"
+    patterns:
+      - "(?i)(geopy).*(MapQuest|OpenMapQuest).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.MapTiler
+    name: MapTiler
+    domains:
+      - "maptiler.com"
+    patterns:
+      - "(?i)(geopy).*(MapTiler).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.MapBox
+    name: Mapbox
+    domains:
+      - "mapbox.com"
+    patterns:
+      - "(?i)(geopy).*(MapBox).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.OpenCage
+    name: OpenCage
+    domains:
+      - "opencagedata.com"
+    patterns:
+      - "(?i)(geopy).*(OpenCage).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Nominatim
+    name: Nominatim
+    domains:
+      - "nominatim.org"
+    patterns:
+      - "(?i)(geopy).*(Nominatim).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Photon
+    name: Komoot
+    domains:
+      - "photon.komoot.org"
+    patterns:
+      - "(?i)(geopy).*(Photon).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.PickPoint
+    name: PickPoint
+    domains:
+      - "pickpoint.io"
+    patterns:
+      - "(?i)(geopy).*(PickPoint).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Smarty
+    name: Smarty
+    domains:
+      - "smarty.com"
+    patterns:
+      - "(?i)(geopy).*(LiveAddress).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.TomTom
+    name: TomTom
+    domains:
+      - "tomtom.com"
+    patterns:
+      - "(?i)(geopy).*(TomTom).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.What3Words
+    name: What3Words
+    domains:
+      - "what3words.com"
+    patterns:
+      - "(?i)(geopy).*(What3Words).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Woosmap
+    name: Woosmap
+    domains:
+      - "woosmap.com"
+    patterns:
+      - "(?i)(geopy).*(Woosmap).*"
+    tags:
+
+  - id: ThirdParties.SDK.Geopy.Yandex
+    name: Yandex
+    domains:
+      - "yandex.com"
+    patterns:
+      - "(?i)(geopy).*(Yandex).*"
+    tags:
