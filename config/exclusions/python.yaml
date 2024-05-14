@@ -2,7 +2,7 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - "(.*/test(s)?.*)|/Test[A-Z]|Test[.]"
+      - "((.*/)?test(s)?.*)|/Test[A-Z]|Test[.]"
 
   - id: Exclusions.Python.Packages
     name: Exclude External Python Packages
