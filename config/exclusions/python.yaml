@@ -7,7 +7,7 @@ exclusions:
   - id: Exclusions.Python.Packages
     name: Exclude External Python Packages
     patterns:
-      - "(venv|site-packages)/.*"
+      - ".*/(venv|site-packages)/.*"
 
   - id: Exclusions.Empty
     name: Exclude file which cannot be read
