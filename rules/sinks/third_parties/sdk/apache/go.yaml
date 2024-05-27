@@ -7,7 +7,7 @@ sinks:
   - id: ThirdParties.SDK.Apache.Jenkin
     name: Apache Jenkin
     domains:
-      - "jenkins.io/"
+      - "jenkins.io"
     patterns:
       - "(?i)(github.com)(/)(bndr)(/)(gojenkins).*"
     tags:
