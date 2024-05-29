@@ -4,8 +4,8 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Apache.Jenkin
-    name: Apache Jenkin
+  - id: ThirdParties.SDK.Apache.Jenkins
+    name: Apache Jenkins
     domains:
       - "jenkins.io"
     patterns:
