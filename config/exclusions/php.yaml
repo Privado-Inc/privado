@@ -2,4 +2,4 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - "(.*/Tests/.*)|/.*Test.php"
+      - "(.*(?i)Tests/.*)|/.*Test.php"
