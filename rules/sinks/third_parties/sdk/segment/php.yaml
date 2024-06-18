@@ -9,5 +9,5 @@ sinks:
     domains:
       - "segment.com"
     patterns:
-      - "(?i).*(segment).*"
+      - "(?i)(Segment\\\\Segment).*"
     tags:
