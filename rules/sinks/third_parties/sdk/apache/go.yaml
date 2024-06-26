@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Segment
-    name: Segment
+  - id: ThirdParties.SDK.Apache.Jenkins
+    name: Apache Jenkins
     domains:
-      - "segment.com"
+      - "jenkins.io"
     patterns:
-      - "(?i)(Segment\\\\Segment).*"
+      - "(?i)(github.com)(/)(bndr)(/)(gojenkins).*"
     tags:

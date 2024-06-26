@@ -1,0 +1,5 @@
+exclusions:
+  - id: Exclusions.Test
+    name: Exclude test source code
+    patterns:
+      - "(.*(?i)Tests/.*)|/.*Test.php"

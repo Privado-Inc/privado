@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Segment
-    name: Segment
+  - id: ThirdParties.SDK.Paypal
+    name: Paypal
     domains:
-      - "segment.com"
+      - "paypal.com"
     patterns:
-      - "(?i)(Segment\\\\Segment).*"
+      - "(?i)(PayflowNetApi|PFPro|Paypal).*"
     tags:
