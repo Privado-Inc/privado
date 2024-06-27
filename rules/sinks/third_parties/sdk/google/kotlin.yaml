@@ -10,10 +10,10 @@ sinks:
       - "(?i)(com[.]google[.]firebase[.]remoteconfig).*"
     tags:
 
-  - id: ThirdParties.SDK.Google.Firebase.Crashlytics
-    name: Firebase
+  - id: ThirdParties.SDK.Google.Crashlytics
+    name: Google Crashlytics
     domains:
-      - "firebase.google.com"
+      - "firebase.google.com/docs/crashlytics"
     patterns:
       - "(?i)(com[.]google[.]firebase[.]firebaseCrashlytics).*"
     tags:
