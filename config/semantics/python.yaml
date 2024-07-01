@@ -1,0 +1,8 @@
+# 1->-1 => 1st parameter taints the return value
+# 0->0 => 0th parameter taints itself back
+# empty flow => no tainting done by method
+# 1->-1 2->-1 => 1st and 2nd parameter both taints the return value
+
+semantics:
+  - signature: "__builtin.len"
+    flow: "1->1"
