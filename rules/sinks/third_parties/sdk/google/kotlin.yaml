@@ -7,4 +7,5 @@ sinks:
       - "(?i)(com[.]google[.]firebase)[.](?!(database)).*"
       - "(?i)(com[.]firebase)[.](?!(database)).*"
       - "(?i)(io[.]firebase)[.](?!(database)).*"
+      - "(?i)(com[.]google[.]firebase[.]remoteconfig).*"
     tags:
