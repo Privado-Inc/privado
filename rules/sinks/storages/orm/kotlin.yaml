@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.ORM.ORMLite.Read
+    name: ORMLite (Read)
+    domains:
+      - ormlite.com
+    patterns:
+      - "(?i)(com[.]j256[.]ormlite).*(queryForFirst|queryForId|queryForAll|countOf|queryBuilder)"
+    tags:
+
+  - id: Storages.ORM.ORMLite.Write
+    name: ORMLite (Write)
+    domains:
+      - ormlite.com
+    patterns:
+      - "(?i)(com[.]j256[.]ormlite).*(create|update|createOrUpdate|delete|deleteById|deleteBuilder)"
+    tags:

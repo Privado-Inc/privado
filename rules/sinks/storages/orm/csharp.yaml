@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.ORM.Dapper.Write
+    name: Dapper (Write)
+    domains:
+      - learndapper.com
+    patterns:
+      - "(?i)(Dapper).*(Execute|Insert|Update|Delete)(Async)?.*"
+    tags:
+
+  - id: Storage.ORM.Dapper.Read
+    name: Dapper (Read)
+    domains:
+      - learndapper.com
+    patterns:
+      - "(?i)(Dapper).*(Query|QuerySingle|QueryFirst|QueryMultiple)(Async)?.*"
+    tags:
