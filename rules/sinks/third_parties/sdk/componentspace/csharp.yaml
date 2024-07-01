@@ -5,7 +5,7 @@
 sinks:
 
   - id: ThirdParties.SDK.ComponentSpace
-    name: Component Space
+    name: ComponentSpace
     domains:
       - "componentspace.com"
     patterns:

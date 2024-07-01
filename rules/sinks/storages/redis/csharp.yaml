@@ -5,7 +5,7 @@ sinks:
     domains:
       - redis.io
     patterns:
-      - "(?i)(stackExchange[.]redis).*[.](StringGet|)"
+      - "(?i)(stackExchange[.]redis).*[.](StringGet)"
     tags:
 
   - id: Storages.Redis.Write
