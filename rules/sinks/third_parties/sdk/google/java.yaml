@@ -1011,5 +1011,5 @@ sinks:
     domains:
       - "firebase.google.com"
     patterns:
-      - "(?i)(com[.]google[.]firebase)[.](ktx|messaging)).*"
+      - "(?i)(com[.]google[.]firebase[.](ktx|messaging)).*"
     tags:
