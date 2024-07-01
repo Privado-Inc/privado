@@ -1004,4 +1004,12 @@ sinks:
       - "firebase.google.com/docs/crashlytics"
     patterns:
       - "(?i)(com[.]crashlytics|com.firebase.crashlytics|com.google.firebase.crashlytics).*"
-    tags: 
+    tags:
+
+  - id: ThirdParties.SDK.Google.Firebase.Messaging
+    name: Google Firebase
+    domains:
+      - "firebase.google.com"
+    patterns:
+      - "(?i)(com[.]google[.]firebase)[.](ktx|messaging)).*"
+    tags:

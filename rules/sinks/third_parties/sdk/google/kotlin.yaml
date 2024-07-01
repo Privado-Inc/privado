@@ -9,19 +9,3 @@ sinks:
       - "(?i)(io[.]firebase)[.](?!(database)).*"
       - "(?i)(com[.]google[.]firebase[.]remoteconfig).*"
     tags:
-
-  - id: ThirdParties.SDK.Google.Crashlytics
-    name: Google Crashlytics
-    domains:
-      - "firebase.google.com/docs/crashlytics"
-    patterns:
-      - "(?i)(com[.]google[.]firebase[.]firebaseCrashlytics).*"
-    tags:
-
-  - id: ThirdParties.SDK.Google.Firebase.Messaging
-    name: Firebase
-    domains:
-      - "firebase.google.com"
-    patterns:
-      - "(?i)(com[.]google[.]firebase)[.](ktx|messaging)).*"
-    tags:

@@ -9,5 +9,5 @@ sinks:
     domains:
       - "pendo.io"
     patterns:
-      - "(?i)(sdk[.]pendo[.]io[.](Pendo)).*"
+      - "(?i)(sdk[.]pendo[.]io[.]Pendo).*"
     tags:
