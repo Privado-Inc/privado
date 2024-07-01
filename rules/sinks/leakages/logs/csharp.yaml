@@ -9,6 +9,7 @@ sinks:
     name: Log Info
     patterns:
       - "(?i).*(Microsoft[.]Extensions[.]Logging[.]ILogger).*(LogInformation|LogTrace).*"
+      - "(?i).*(Serilog).*(Information).*"
     tags:
 
   - id: Leakages.Log.Error
@@ -21,10 +22,12 @@ sinks:
     name: Log Warn
     patterns:
       - "(?i).*(Microsoft[.]Extensions[.]Logging[.]ILogger).*(LogWarning).*"
+      - "(?i).*(Serilog).*(Warning).*"
     tags:
 
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
       - "(?i).*(Microsoft[.]Extensions[.]Logging[.]ILogger).*(LogDebug).*"
+      - "(?i).*(Serilog).*(Debug).*"
     tags:
