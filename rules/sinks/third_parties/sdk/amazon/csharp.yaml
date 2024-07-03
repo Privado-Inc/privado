@@ -57,7 +57,7 @@ sinks:
     domains:
       - "aws.amazon.com/secrets-manager/"
     patterns:
-      - "(?i)(AWSSDK[.]SecretsManager|AWSSDK[.]SecretsManager[.]Caching).*"
+      - "(?i)((AWSSDK|Amazon)[.]SecretsManager|AWSSDK[.]SecretsManager[.]Caching).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Lambda
