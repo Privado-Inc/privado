@@ -48,3 +48,13 @@ sources:
       - "(?i)(employer[^\\s/(;)#|,=!>]{0,3}(identification|id)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|ein)"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.NationalIdentificationNumbers.PersonalPublicServiceNumber
+    name: Personal Public Service Number
+    category: National Identification Numbers
+    isSensitive: False
+    sensitivity: high
+    patterns:
+      - "(?i)(personal[^\\s/(;)#|,=!>]{0,3}(public)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|pps[^\\s/(;)#|,=!>]*[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
+    tags:
+      law: GDPR
