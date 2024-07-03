@@ -55,6 +55,6 @@ sources:
     isSensitive: False
     sensitivity: high
     patterns:
-      - "(?i)(personal[^\\s/(;)#|,=!>]{0,3}(public)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|pps[^\\s/(;)#|,=!>]*[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
+      - "(?i)(personal[^\\s/(;)#|,=!>]{0,3}(public)[^\\s/(;)#|,=!>]{0,3}(?:number|no)|pps[-_]?(?:nbr|no|number))"
     tags:
       law: GDPR
