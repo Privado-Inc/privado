@@ -135,7 +135,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i).*(salary[^\\s/(;)#|,=!>]{0,10}(?:details|detail|slip|pay)|employee[^\\s/(;)#|,=!>]{0,10}salary|basic[^\\s/(;)#|,=!>]{0,10}salary|(?:dearness|houserent)[^\\s/(;)#|,=!>]{0,10}allowance|salary)"
+      - "(?i).*(salary[^\\s/(;)#|,=!>]{0,10}(?:details|detail|slip|pay)|employee[^\\s/(;)#|,=!>]{0,10}salary|basic[^\\s/(;)#|,=!>]{0,10}salary|(?:dearness|houserent)[^\\s/(;)#|,=!>]{0,10}allowance|salary)|(previous|prev|current|curr)[^\\s/(;)#|,=!>]*(employee|employment)[^\\s/(;)#|,=!>]*(?:pay|salary)"
     tags:
       law: GDPR
 
@@ -155,6 +155,6 @@ sources:
     isSensitive: True
     sensitivity: high
     patterns:
-      - "(?i).*(insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|insurance[^\\s/(;)#|,=!>]*claim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no))"
+      - "(?i).*(insurance[^\\s/(;)#|,=!>]*(?:policy|plan|card|claim)|(?:insurance)[^\\s/(;)#|,=!>]*(?:card|policy|claim|plan|company)|card[^\\s/(;)#|,=!>]*insurance|insurance[^\\s/(;)#|,=!>]*policy[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|insurance[^\\s/(;)#|,=!>]*claim[^\\s/(;)#|,=!>]*(?:nbr|number|id|no)|ni[-_]?(?:nbr|no|number))"
     tags:
       law: GDPR
