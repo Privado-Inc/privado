@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Datadoghq
-    name: Datadoghq
+  - id: ThirdParties.SDK.Opentelemetry
+    name: Opentelemetry
     domains:
-      - "datadoghq.com"
+      - "opentelemetry.io"
     patterns:
-      - "(?i)(github.com|gopkg.in)(/)(DataDog)(/)(opencensus-go-exporter-datadog|datadog-go|dd-trace-go).*"
+      - "(?i)(OpenTelemetry\\\\(sdk|api)).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Datadog
-    name: Datadog
+  - id: ThirdParties.SDK.Launchdarkly
+    name: Launchdarkly
     domains:
-      - "datadoghq.com"
+      - "launchdarkly.com"
     patterns:
-      - "(?i)(github.com|gopkg.in)(/)(DataDog)(/)(datadog-go|dd-trace-go).*"
+      - "(?i)(LaunchDarkly[.]Sdk).*"
     tags:
