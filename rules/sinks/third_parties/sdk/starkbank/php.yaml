@@ -9,5 +9,5 @@ sinks:
     domains:
       - "starkbank.com"
     patterns:
-      - "(?i)(starkbank|EllipticCurve).*"
+      - "(?i)(starkbank).*"
     tags:
