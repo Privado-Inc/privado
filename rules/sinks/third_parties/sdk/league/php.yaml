@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Starkbank
-    name: Starkbank
+  - id: ThirdParties.SDK.League
+    name: League
     domains:
-      - "starkbank.com"
+      - "oauth2-client.thephpleague.com"
     patterns:
-      - "(?i)(starkbank|EllipticCurve).*"
+      - "(?i)(League\\\\OAuth2\\\\Client).*"
     tags:

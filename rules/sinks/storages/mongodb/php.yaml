@@ -1,0 +1,17 @@
+
+# Sink Rules for storage database MongoDB - https://www.mongodb.com/
+
+sinks:
+  - id: Storages.MongoDB.Read
+    name: MongoDB(Read)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i).*(MongoDB(\\\\)?(Client|Driver)).*(find|findOne|findAndModify|distinct|aggregate|execute|executeQuery)"
+
+  - id: Storages.MongoDB.Write
+    name: MongoDB(Write)
+    domains:
+      - mongodb.com
+    patterns:
+      - "(?i).*(MongoDB(\\\\)?(Client|Driver)).*(insertOne|update|updateMany|replaceOne|deleteOne|deleteMany|bulkWrite)"
