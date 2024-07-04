@@ -23,15 +23,19 @@ phases:
         fi
       - echo $VERSION
       - echo $BRANCH_NAME
+      - | 
+        COMMIT_HASH=$(git rev-parse --short HEAD)
+        TIMESTAMP=$(date +%Y%m%d%H%M%S)
+        DOCKER_TAG="${COMMIT_HASH}${TIMESTAMP}"
       - |
         if [[ $AWS_REGION = "eu-west-1" ]]
         then
             TAG_1=latest
         else
-            TAG_1=${CODEBUILD_WEBHOOK_TRIGGER:7}
+            TAG_1=$DOCKER_TAG
         fi
       - TAG_2=$VERSION
-      - TAG_3=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
+      - TAG_3=$DOCKER_TAG
 
   build:
     commands:
