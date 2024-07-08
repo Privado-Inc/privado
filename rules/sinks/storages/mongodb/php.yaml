@@ -7,11 +7,11 @@ sinks:
     domains:
       - mongodb.com
     patterns:
-      - "(?i).*(MongoDB(\\\\)?(Client|Driver)).*(find|findOne|findAndModify|distinct|aggregate|execute|executeQuery)"
+      - "(?i)(MongoDB(\\)?(Client|Driver)).*(find|findOne|findAndModify|distinct|aggregate|execute|executeQuery)"
 
   - id: Storages.MongoDB.Write
     name: MongoDB(Write)
     domains:
       - mongodb.com
     patterns:
-      - "(?i).*(MongoDB(\\\\)?(Client|Driver)).*(insertOne|update|updateMany|replaceOne|deleteOne|deleteMany|bulkWrite)"
+      - "(?i)(MongoDB(\\)?(Client|Driver)).*(insertOne|update|updateMany|replaceOne|deleteOne|deleteMany|bulkWrite)"

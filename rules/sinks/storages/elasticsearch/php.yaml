@@ -1,0 +1,9 @@
+sinks:
+
+  - id: Storages.Elasticsearch.ReadAndWrite
+    name: Elasticsearch(ReadAndWrite)
+    domains:
+      - elastic.co
+    patterns:
+      - "(?i)(?:elasticsearch).*" 
+    tags:

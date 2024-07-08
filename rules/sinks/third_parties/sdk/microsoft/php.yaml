@@ -307,5 +307,5 @@ sinks:
     domains:
       - "developer.microsoft.com/graph"
     patterns:
-      - "(?i)Microsoft\\\\Graph.*"
+      - "(?i)Microsoft\\Graph.*"
     tags:
