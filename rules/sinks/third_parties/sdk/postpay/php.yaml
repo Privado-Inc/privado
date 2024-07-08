@@ -9,5 +9,5 @@ sinks:
     domains:
       - "postpay.io"
     patterns:
-      - "(?i).*(postpay).*"
+      - "(?i)(postpay).*"
     tags:
