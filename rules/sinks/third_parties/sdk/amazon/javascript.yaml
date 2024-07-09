@@ -12,6 +12,7 @@ sinks:
       - "aws-sqs-"
       - "@aws-solutions-constructs\\/aws-(lambda-sqs|sns-sqs|lambda-sqs|sqs-helper|apigateway-sqs|s3-sqs)"
       - "graphql-sqs-subscriptions|sns-sqs-slq-code7|@battleline\\/sqs-large-payload-nodejs|typescript-aws-sqs-helper|sqs-consumer"
+      - "(?i)(@aws-sdk\\/client-sqs).*"
     tags:
 
   - id: ThirdParties.SDK.Amazonaws.Athena
@@ -123,6 +124,7 @@ sinks:
       - "aws.amazonaws.com/cloudwatch"
     patterns:
       - "(?i)(@aws-cdk\\/aws_cloudwatch)"
+      - "(?i)(@aws-sdk\\/client-cloudwatch).*"
       - "cloudwatch-logs-janitor|cfn-cloudwatch-events-rule|cfn-cloudwatch-events-target|typescript-aws-cloudwatch-helper|cloudwatch-logs-janitor"
     tags:
   
@@ -1040,4 +1042,12 @@ sinks:
       - "aws.amazon.com/managed-workflows-for-apache-airflow"
     patterns:
       - "@aws-sdk\\/client-mwaa"
+    tags:
+
+  - id: ThirdParties.SDK.Amazon.Aws.Presigner
+    name: Amazon Aws MWAA
+    domains:
+      - "aws.amazon.com/managed-workflows-for-apache-airflow"
+    patterns:
+      - "(?i)(@aws-sdk\\/s3-request-presigner).*"
     tags:

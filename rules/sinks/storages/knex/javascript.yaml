@@ -1,0 +1,25 @@
+sinks:
+
+  - id: Storages.Knex.ReadAndWrite
+    name: Knex
+    domains:
+      - knexjs.org
+    patterns:
+      - "(?i).*(knex).*(raw).*"
+    tags:
+
+  - id: Storages.Knex.Read
+    name: Knex(Read)
+    domains:
+      - knexjs.org
+    patterns:
+      - "(?i).*(knex).*(select|first|where|count|sum|avg|min|max).*"
+    tags:
+
+  - id: Storages.Knex.Write
+    name: Knex(Write)
+    domains:
+      - knexjs.org
+    patterns:
+      - "(?i).*(knex).*(insert|update|del|increment|decrement).*"
+    tags:

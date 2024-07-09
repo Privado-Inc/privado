@@ -9,7 +9,7 @@ sinks:
     domains:
       - "azure.microsoft.com"
     patterns:
-      - "generator-azuresfjava|generator-azuresfcontainer|generator-azuresfcsharp|generator-azuresfguest|passport-azure-ad-oauth2|@azure\\/functions|@microsoft\\/applicationinsights-web|@microsoft\\/applicationinsights-react-js"
+      - "generator-azuresfjava|generator-azuresfcontainer|generator-azuresfcsharp|generator-azuresfguest|passport-azure-ad-oauth2|@azure\\/functions|@microsoft\\/applicationinsights-web|@microsoft\\/applicationinsights-react-js|passport-azure-ad"
     tags:
 
   - id: ThirdParties.SDK.Microsoft.Azure.Storage
