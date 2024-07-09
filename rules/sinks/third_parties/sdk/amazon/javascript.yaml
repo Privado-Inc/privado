@@ -1043,11 +1043,3 @@ sinks:
     patterns:
       - "@aws-sdk\\/client-mwaa"
     tags:
-
-  - id: ThirdParties.SDK.Amazon.Aws.Presigner
-    name: Amazon Aws MWAA
-    domains:
-      - "aws.amazon.com/managed-workflows-for-apache-airflow"
-    patterns:
-      - "(?i)(@aws-sdk\\/s3-request-presigner).*"
-    tags:
