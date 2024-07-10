@@ -3,25 +3,25 @@ sinks:
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:wtf|error|severe|fatal|[.]e[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.blueshift.logger.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(?:wtf|error|severe|fatal|[.]e[:]).*"
     tags:
     
   - id: Leakages.Log.Warn
     name: Log Warn
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(warn|warning|[.]w[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.blueshift.logger.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(warn|warning|[.]w[:]).*"
     tags:
   
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|trace|[.](log|d|v|t)[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.blueshift.logger.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|ch.qos.logback|java.util.logging|timber.log.Timber|android.util.Log).*(debug|trace|[.](log|d|v|t)[:]).*"
     tags:
   
   - id: Leakages.Log.Info
     name: Log Info
     patterns:
-      - "(?i)(?:org.slf4j.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|java.util.logging|ch.qos.logback|timber.log.Timber|android.util.Log).*(info|[.]i[:]).*"
+      - "(?i)(?:org.slf4j.Logger|org.blueshift.logger.Logger|org.apache.(logging.log4j|commons.logging.Log)|org.tinylog.Logger|java.util.logging|ch.qos.logback|timber.log.Timber|android.util.Log).*(info|[.]i[:]).*"
     tags:
   
   - id: Leakages.Log.Console
