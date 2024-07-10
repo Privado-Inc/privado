@@ -1,0 +1,17 @@
+sinks:
+
+  - id: Storages.ORM.TypeORM.Read
+    name: TypeORM (Read)
+    domains:
+      - typeorm.io
+    patterns:
+      - "(?i)(typeorm).*(QueryRunner).*(query)"
+    tags:
+
+  - id: Storages.ORM.TypeORM.Write
+    name: TypeORM (Write)
+    domains:
+      - typeorm.io
+    patterns:
+      - "(?i)(typeorm).*(QueryRunner).*(save|update|delete|insert)"
+    tags:
