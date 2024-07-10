@@ -9,7 +9,7 @@ sinks:
     domains:
       - "freee.co.jp"
     patterns:
-      - "(?i).*(freee.accounting).*"
+      - "(?i)(freee.accounting).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Textmarketer
@@ -17,7 +17,7 @@ sinks:
     domains:
       - "textmarketer.co.uk"
     patterns:
-      - "(?i).*(textmarketer).*"
+      - "(?i)(textmarketer).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Opayo
@@ -25,7 +25,7 @@ sinks:
     domains:
       - "opayo.co.uk"
     patterns:
-      - "(?i).*(sagepay).*"
+      - "(?i)(sagepay).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Kaskus
@@ -33,7 +33,7 @@ sinks:
     domains:
       - "kaskus.co.id"
     patterns:
-      - "(?i).*(kaskus).*"
+      - "(?i)(kaskus).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Payment-assist
@@ -41,7 +41,7 @@ sinks:
     domains:
       - "payment-assist.co.uk"
     patterns:
-      - "(?i).*(paymentassist).*"
+      - "(?i)(paymentassist).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Fastsms
@@ -49,7 +49,7 @@ sinks:
     domains:
       - "fastsms.co.uk"
     patterns:
-      - "(?i).*(fastsms).*"
+      - "(?i)(fastsms).*"
     tags:
 
   - id: ThirdParties.SDK.Co.Skyscanner
@@ -57,5 +57,5 @@ sinks:
     domains:
       - "skyscanner.co.in"
     patterns:
-      - "(?i).*(skyscanner).*"
+      - "(?i)(skyscanner).*"
     tags:
