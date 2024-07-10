@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Twilio
-    name: Twilio
+  - id: ThirdParties.SDK.Xero
+    name: Xero
     domains:
-      - "twilio.com"
+      - "xero.com"
     patterns:
-      - "@sendgrid\\/design-primitives|twilio"
+      - "(?i)(xero-node).*"
     tags:

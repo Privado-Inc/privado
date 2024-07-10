@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Twilio
-    name: Twilio
+  - id: ThirdParties.SDK.Intuit.Quickbooks
+    name: Intuit QuickBooks
     domains:
-      - "twilio.com"
+      - "intuit.com"
     patterns:
-      - "@sendgrid\\/design-primitives|twilio"
+      - "(?i)(node-quickbooks).*"
     tags:
