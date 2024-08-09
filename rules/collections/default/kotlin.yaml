@@ -4,3 +4,9 @@ collections:
     patterns:
       - "(?i)io.ktor.server.routing.(post|get|delete|put).*"
     tags:
+    
+  - id: Collections.Spark.HttpFramework
+    name: Spark Http microframework
+    patterns:
+      - "(?i)spark.Spark.*(post|get|delete|put|options|halt).*"
+    tags:
