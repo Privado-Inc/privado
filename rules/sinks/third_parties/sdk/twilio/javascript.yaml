@@ -9,5 +9,5 @@ sinks:
     domains:
       - "twilio.com"
     patterns:
-      - "@sendgrid\\/design-primitives"
+      - "@sendgrid\\/design-primitives|twilio"
     tags:

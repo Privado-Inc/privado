@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Datadog
-    name: Datadog
+  - id: ThirdParties.SDK.Xero
+    name: Xero
     domains:
-      - "datadoghq.com"
+      - "xero.com"
     patterns:
-      - "(?i)(github.com|gopkg.in)(/)(DataDog)(/)(datadog-go|dd-trace-go).*"
+      - "(?i)(xero-node).*"
     tags:

@@ -4,10 +4,10 @@
 
 sinks:
 
-  - id: ThirdParties.SDK.Stripe
-    name: Stripe
+  - id: ThirdParties.SDK.Intuit.Quickbooks
+    name: Intuit QuickBooks
     domains:
-      - "stripe.com"
+      - "intuit.com"
     patterns:
-      - "(?i)(stripe|StripePlaid).*"
+      - "(?i)(node-quickbooks).*"
     tags:

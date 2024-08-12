@@ -13,9 +13,3 @@ systemConfig:
 
   - key: maxCharLimit
     value: "1000"
-
-  - key: dataflowElementInPathLimit
-    value: "-1"
-
-  - key: dataflowSourceSinkPairPathLimit
-    value: "-1"

@@ -301,3 +301,11 @@ sinks:
     patterns:
       - "(?i)azure.powerbi.*"
     tags:
+
+  - id: ThirdParties.SDK.Microsoft.Graph
+    name: Microsoft Graph
+    domains:
+      - "developer.microsoft.com/graph"
+    patterns:
+      - "(?i)Microsoft\\\\Graph.*"
+    tags:
