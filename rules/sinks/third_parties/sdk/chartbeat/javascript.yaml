@@ -18,5 +18,5 @@ sinks:
       - "chartbeat.com"
     filterProperty: "code"
     patterns:
-      - "(?i)(.*[.])?(braze)([.](changeUser|logCustomEvent|([getuser().](setGender|setEmail|setFirstName|setLastName|setPhoneNumber|setCustomUserAttribute|setCountry|setHomeCity))))?[(].*"
+      - "(?i)(.*[.])?cbq([.]push)?[(].*"
 
