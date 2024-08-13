@@ -9,5 +9,5 @@ sinks:
     domains:
       - "futunn.com"
     patterns:
-      - "(?i)(futu).*"
+      - "(?i)(futu)[^a-z].*"
     tags:

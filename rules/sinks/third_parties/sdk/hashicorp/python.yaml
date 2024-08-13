@@ -9,7 +9,7 @@ sinks:
     domains:
       - "hashicorp.com"
     patterns:
-      - "(?i)(hvac).*"
+      - "(?i)(hvac)[^a-z].*"
     tags:
 
   - id: ThirdParties.SDK.Hashicorp.Nomad
@@ -17,7 +17,7 @@ sinks:
     domains:
       - "nomadproject.io"
     patterns:
-      - "(?i)(nomad).*"
+      - "(?i)(nomad)[^a-z].*"
     tags:
 
   - id: ThirdParties.SDK.Hashicorp.Terraform
@@ -41,7 +41,7 @@ sinks:
     domains:
       - "consul.io"
     patterns:
-      - "(?i)(consul).*"
+      - "(?i)(consul)[^a-z].*"
     tags:
 
   - id: ThirdParties.SDK.Hashicorp.Packer
