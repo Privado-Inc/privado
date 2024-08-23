@@ -2,7 +2,8 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - "(.*/(test|spec)(s)?.*)|/Test[A-Z]|Test[.]"
+      - "(?i)(.*(test|spec|mock)(s)?/.*)"
+      - "(?i)(?:_){1,2}test(?:_){1,2}"
 
   - id: Exclusions.JavaScript.Packages
     name: Exclude External JavaScript Packages
