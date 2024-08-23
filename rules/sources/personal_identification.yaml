@@ -15,7 +15,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|full)name"
+      - "(?i).*((?:first|given)[^\\s/(;)#|,=!>]{0,5}|fore[-_]?|full[-_]?)name|f[_]?name"
     tags:
       law: GDPR
 
@@ -35,7 +35,7 @@ sources:
     isSensitive: False
     sensitivity: low
     patterns:
-      - "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)"
+      - "(?i).*((?:last|sur(?!geon))[^\\s/(;)#|,=!>]{0,5}name)|l[_]?name"
     tags:
       law: GDPR
 

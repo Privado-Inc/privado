@@ -1,0 +1,30 @@
+sinks:
+  - id: Leakages.Log.Critical
+    name: Log Critical
+    patterns:
+      - "(?i).*(?:log|logger)->.*(?:emergency|alert|critical).*"
+    tags:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i).*(?:log|logger)->.*(?:error).*"
+    tags:
+    
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i).*(?:log|logger)->.*(?:warning).*"
+    tags:
+  
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i).*(?:log|logger)->.*(?:debug).*"
+    tags:
+  
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i).*(?:log|logger)->.*(?:info|notice).*"
+    tags:

@@ -11,6 +11,7 @@ sinks:
     patterns:
       - "(?i)(aws.laravel).*"
       - "(?i).*(easy.amazon.advertising|sns.push|instantaccess.sdk|kinesis|rds.data.service|amazon.advertising.laravel|selling.partner.api|amazon.advertising.api.sdk|amazon.pay.api.sdk.|paapisdk|predis.client.nette.extension|firehose|simple.s3|typo3.aws|amazon.mws.sdk|secrets.manager|cloud.watch.logs|step.functions|amazon.pay.sdk|cloud.watch|event.bridge|amazon.mws.bundle|dynamo.db.session|yii.aws|dynamodb.sessions.dependency.free|amazon.mws.complete|login.and.pay.with.amazon.sdk.|sp.api.sdk|amazon.paapi5.sdk|cognito.identity.provider|paapi5.sdk).*"
+      - "(?i).*(aws\\\\s3\\\\s3client).*"
     tags:
 
   - id: ThirdParties.SDK.Amazon

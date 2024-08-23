@@ -25,7 +25,7 @@ sources:
     isSensitive: False
     sensitivity: medium
     patterns:
-      - "(?i).*((order|shipping|billing|invoice|total)(subscription|charge|charged)?[^\\s/(;)#|,=!>]{0,5}(number|code|num|no|id|amount))"
+      - "(?i).*((order|shipping|billing|invoice|total[-_]?(subscription|charge|charged))[^\\s/(;)#|,=!>]{0,5}(number|code|num|no|id|amount))"
     tags:
       law: GDPR
 

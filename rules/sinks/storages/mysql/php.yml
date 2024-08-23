@@ -1,0 +1,26 @@
+
+# Sink Rules for MySQL
+
+sinks:
+  - id: Storages.MySQL.Initialize
+    name: MySQL DB (Initialize)
+    domains:
+      - mysql.com
+    patterns:
+      - "(?i).*(?:mysqli|mysql).*(construct|connect)"
+
+  - id: Storages.MySQL.ReadAndWrite
+    name: MySQL DB (Read and Write)
+    domains:
+      - mysql.com
+    patterns:
+      - "(?i).*(?:mysqli|mysql|PDO).*(affected_rows|create_db|drop_db|construct|query|prepare|execute|bindValue|bind_param|setAttribute|store_result|fetch_all|fetch_array|fetch_row|num_fields|num_rows|next_result)"
+    tags:
+
+  - id: Storages.MySQL.ClearResources
+    name: MySQL DB (Clear resources)
+    domains:
+      - mysql.com
+    patterns:
+      - "(?i).*(?:mysqli|mysql|PDO).*(free_result|close)"
+    tags:

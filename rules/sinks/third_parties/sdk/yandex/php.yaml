@@ -9,5 +9,5 @@ sinks:
     domains:
       - "yandex.com"
     patterns:
-      - "(?i).*(ydelivery.sdk|yandex.sdk.|yandex.direct|yandex.market.oauth|yandex.library|yandex.dialogs.sdk|yandex.market.content|marketplace.partner|yandex.money.sdk.|beru.partner|yandex.metrika.sdk|yandex.delivery|yandex.market.partner|yandex|yandex.sdk|yandex.xml.library|yandex.market.common).*"
+      - "(?i)(ydelivery.sdk|yandex.sdk.|yandex.direct|yandex.market.oauth|yandex.library|yandex.dialogs.sdk|yandex.market.content|marketplace.partner|yandex.money.sdk.|beru.partner|yandex.metrika.sdk|yandex.delivery|yandex.market.partner|yandex|yandex.sdk|yandex.xml.library|yandex.market.common).*"
     tags:

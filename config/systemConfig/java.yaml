@@ -10,3 +10,6 @@ systemConfig:
 
   - key: apiIdentifier
     value: (?i).*((hook|base|auth|prov|endp|install|request|service|gateway|route|resource)(.){0,12}url|(slack|web)(.){0,4}hook|(rest|api|request|service)(.){0,4}(endpoint|gateway|route)).*
+
+  - key: flinkConnectorProducerRuleIds
+    value: (Storages.ApacheCassandra.ReadAndWrite|Storages.AmazonDynamoDB.Write|Storages.Elasticsearch.Write|Storages.SpringFramework.Jdbc.Write|Storages.AmazonKinesis.Write|Messaging.Queue.Kafka.Producer|Messaging.Queue.AMQP.Rabbit.Producer|Storages.MongoDB.Write|Storages.Opensearch.Write|ThirdParties.SDK.Amazonaws.KinesisDataFirehose|ThirdParties.SDK.Google.Cloud.Pubsub)

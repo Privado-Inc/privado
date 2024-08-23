@@ -2,7 +2,8 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - "(.*/src/test/.*)|/Test[A-Z]|Test[.]"
+      - "(.*/test/.*)|/Test[A-Z]|Test[.]"
+      - "(/)?target/.*"
   
   - id: Exclusions.Invalid.Properties
     name: Exclude invalid properties file

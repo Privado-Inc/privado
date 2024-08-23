@@ -1,0 +1,26 @@
+
+# Sink Rules for PostgreSQL
+
+sinks:
+  - id: Storages.PostgreSQL.Initialize
+    name: PostgreSQL DB (Initialize)
+    domains:
+      - postgresql.org
+    patterns:
+      - "(?i).*(pg_connect|pg_connect_poll|pg_connection).*"
+
+  - id: Storages.PostgreSQL.ReadAndWrite
+    name: PostgreSQL DB (Read and Write)
+    domains:
+      - postgresql.org
+    patterns:
+      - "(?i).*(pg_query|pg_fetch|pg_field|pg_lo|pg_affected_rows|pg_num|pg_result|pg_set|pg_delete).*"
+    tags:
+
+  - id: Storages.PostgreSQL.ClearResources
+    name: PostgreSQL DB (Clear resources)
+    domains:
+      - postgresql.org
+    patterns:
+      - "(?i).*(pg_free_result|pg_close|pg_cancel_query)"
+    tags:

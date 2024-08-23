@@ -799,7 +799,7 @@ sinks:
     tags:
 
   - id: ThirdParties.SDK.Amazon.Aws
-    name: Amazon AWS
+    name: Amazon Aws
     domains:
       - "aws.amazon.com"
     patterns:

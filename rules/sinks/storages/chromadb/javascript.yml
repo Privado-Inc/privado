@@ -1,0 +1,12 @@
+
+# Sink Rules for storage database ChromaDB - trychroma.com
+
+sinks:
+
+  - id: Storages.Chroma.ReadAndWrite
+    name: Chroma VectorDB
+    domains:
+      - trychroma.com
+    patterns:
+      - "(?i)(chromadb).*"
+    tags:

@@ -3,7 +3,14 @@
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
 sinks:
-  
+  - id: ThirdParties.SDK.Langchain.ChatModels.OpenAI
+    name: Langchain OpenAI model
+    domains:
+      - "langchain.com"
+    patterns:
+      - "(?i).*(?:langchain.*chat_models.*.ChatOpenAI).*"
+    tags:
+
   - id: ThirdParties.SDK.OpenAI
     name: OpenAI
     domains:
