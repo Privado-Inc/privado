@@ -1,0 +1,10 @@
+sinks:
+
+  - id: Storages.MicrosoftSQLServer.Read
+    name: Microsoft SQL Server
+    domains:
+      - microsoft.com/sql-server
+    patterns:
+      - "(?i).*(Avaya[.]PIP[.]Common[.]SQLDataAccessLayer[.]Execute).*"
+    tags:
+      law: GDPR
