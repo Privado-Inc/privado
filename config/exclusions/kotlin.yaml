@@ -2,4 +2,4 @@ exclusions:
   - id: Exclusions.Template
     name: Exclude template file
     patterns:
-      - "(?i)(.*.kts|.*template.kt|.*template(s)?/.*)"
+      - "(?i)(?!.*build.gradle.kts$)(.*.kts|.*template.kt|.*templates?/.*)"
