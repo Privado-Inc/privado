@@ -4,6 +4,7 @@
 
 Privado is an open-source static code analysis tool to discover data flows in the code. It detects more than 110 [personal data elements](docs/extra/data%20element%20list.csv) being processed and further maps the data flow from the point of collection to "sinks" such as external third parties, databases, logs, and internal APIs.
 
+
 <img src="https://user-images.githubusercontent.com/80044360/186333819-779bfff5-d7a2-4bba-88e9-0ca866e1ee81.gif" width="600px">
 
 # Supported languages
