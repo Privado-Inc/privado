@@ -75,7 +75,7 @@ jobs:
         run: cd ./temp/standalone-monitoring-stability/ && python3 aws-export.py ${{matrix.language}}-${{ env.PR_NUMBER }}
 
       - name: Move results to a folder
-        run: cd ./temp/standalone-monitoring-stability/ && mkdir results && mv output-${{matrix.language}}-${{ env.PR_NUMBER }}.xlsx ./results/output-${{matrix.language}}-.xlsx && mv ./temp/result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip ./results/result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip && mv slack_summary.txt ./results/slack_summary.txt
+        run: cd ./temp/standalone-monitoring-stability/ && mkdir results && mv output-${{matrix.language}}-${{ env.PR_NUMBER }}.xlsx ./results/output-${{matrix.language}}-$${{ env.PR_NUMBER }}.xlsx && mv ./temp/result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip ./results/result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip && mv slack_summary.txt ./results/slack_summary.txt
 
       # Zip the results by name
       - name: Zip the results
@@ -146,7 +146,7 @@ jobs:
       - name: Set summary variable
         run: |
           echo "MESSAGE<<EOF" >> $GITHUB_ENV
-          echo "$(cat /home/runner/work/privado/privado/ temp/standalone-monitoring-stability/global_summary.txt)" >> $GITHUB_ENV
+          echo "$(cat /home/runner/work/privado/privado/temp/standalone-monitoring-stability/global_summary.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
       - name: Send summary to slack
