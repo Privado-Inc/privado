@@ -29,7 +29,7 @@ jobs:
   setup_and_scan:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      PAT: ${{ secrets.PAT }}
+      CORE_AT: ${{ secrets.CORE_AT }}
       BASE_REF: ${{ github.BASE_REF }}
       HEAD_REF: ${{ github.HEAD_REF }}
       BASE_RULE_URL: ${{ github.event.pull_request.base.repo.html_url }}
