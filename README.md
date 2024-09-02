@@ -10,6 +10,7 @@ Privado is an open-source static code analysis tool to discover data flows in th
 We support Java and Python in GA. Our Enterprise offering covers all programming languages, and we're working on adding support for more languages to OSS. Support for JS/TS is coming soon!
 
 
+
 # Quick Start
 
 First, make sure you have [Docker](https://docs.docker.com/get-docker/) installed on your system, then follow these simple steps to get started with Privado.
