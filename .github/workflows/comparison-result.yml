@@ -6,6 +6,19 @@ on:
     branches:
       - "**"
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  CORE_AT: ${{ secrets.CORE_AT }}
+  BASE_REF: ${{ github.BASE_REF }}
+  HEAD_REF: ${{ github.HEAD_REF }}
+  BASE_RULE_URL: ${{ github.event.pull_request.base.repo.html_url }}
+  HEAD_RULE_URL: ${{ github.event.pull_request.head.repo.html_url }}
+  PR_NUMBER: ${{ github.event.number }}
+  REPOSITORY_NAME: ${{github.event.repository.name}}
+  PR_URL: ${{ github.event.pull_request.html_url }}
+  SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+  SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+
 jobs:
   start_workflow:
     runs-on: ubuntu-latest
@@ -14,28 +27,17 @@ jobs:
     steps:
       - name: Send message to slack
         id: initial-message
-        uses: archive/github-actions-slack@master
+        uses: slackapi/slack-github-action@v1.27.0
         with:
-          slack-optional-parse: full
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_TOKEN }}
-          slack-channel: ${{ secrets.SLACK_CHANNEL_ID }}
-          slack-text: "Comparison workflow started for ${{env.PR_URL}}"
+          channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
+          slack-message : "Comparison workflow started for ${{env.PR_URL}}"
 
       - name: Save output to env
         id: save-output
-        run: echo "INIT_MSG_TS=${{ fromJson(steps.initial-message.outputs.slack-result).response.message.ts }}" >> $GITHUB_OUTPUT
+        run: echo "INIT_MSG_TS=${{ steps.initial-message.outputs.ts }}" >> $GITHUB_OUTPUT
     outputs:
       init_message_ts: ${{steps.save-output.outputs.INIT_MSG_TS}}
   setup_and_scan:
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      CORE_AT: ${{ secrets.CORE_AT }}
-      BASE_REF: ${{ github.BASE_REF }}
-      HEAD_REF: ${{ github.HEAD_REF }}
-      BASE_RULE_URL: ${{ github.event.pull_request.base.repo.html_url }}
-      HEAD_RULE_URL: ${{ github.event.pull_request.head.repo.html_url }}
-      PR_NUMBER: ${{ github.event.number }}
-      REPOSITORY_NAME: ${{github.event.repository.name}}
     needs: start_workflow
     strategy:
       matrix:
@@ -88,15 +90,16 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: Post results to slack
-        uses: adrey/slack-file-upload-action@master
-        with:
-          thread_ts: ${{needs.start_workflow.outputs.init_message_ts}}
-          channel: ${{ secrets.SLACK_CHANNEL_ID }} # check
-          path: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip"
-          initial_comment: "Comparison Results generated on ${{ env.REPOSITORY_NAME }} by PR ${{ env.PR_NUMBER }} from branch ${{ env.HEAD_REF }} to ${{ env.BASE_REF }} \nPR link https://github.com/Privado-Inc/privado/pull/${{ env.PR_NUMBER }}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}"
-          filetype: "zip"
-          token: ${{ secrets.SLACK_TOKEN }}
-
+        run: curl -o- https://raw.githubusercontent.com/Privado-Inc/standalone-monitoring-stability/private-fork/slack_upload.sh | bash
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          FILE_NAME: "result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip"
+          INIT_TS: ${{ needs.start_workflow.outputs.init_message_ts }}
+          FILE_PATH: "/home/runner/work/joern/joern/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{ env.PR_NUMBER }}.zip"
+          PR_MESSAGE: "Comparison Results generated on ${{ env.REPOSITORY_NAME }} by PR ${{ env.PR_NUMBER }} from branch ${{ env.HEAD_REF }} to ${{ env.BASE_REF }} \nPR link ${{ env.PR_URL }}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}"
+  
+  
       - name: Export workflow output
         run: cd ./temp/standalone-monitoring-stability && python3 ./workflow_check.py /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt
 
