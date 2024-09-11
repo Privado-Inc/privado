@@ -1,4 +1,4 @@
-name: Monitoring Stability and Comparing Results for privado
+name: Monitoring Stability and Comparing Results
 
 # Triggers when a pull_request is created
 on:
@@ -6,35 +6,52 @@ on:
     branches:
       - "**"
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  CORE_AT: ${{ secrets.CORE_AT }}
+  BASE_REF: ${{ github.BASE_REF }}
+  HEAD_REF: ${{ github.HEAD_REF }}
+  BASE_RULE_URL: ${{ github.event.pull_request.base.repo.html_url }}
+  HEAD_RULE_URL: ${{ github.event.pull_request.head.repo.html_url }}
+  PR_NUMBER: ${{ github.event.number }}
+  REPOSITORY_NAME: ${{github.event.repository.name}}
+  PR_URL: ${{ github.event.pull_request.html_url }}
+  SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+  SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  MONITORING_REPO_PATH: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability"
+
+
 jobs:
   start_workflow:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # We are version-locking this to avoid breaking changes in the future
     steps:
       - name: Send message to slack
         id: initial-message
-        uses: archive/github-actions-slack@master
+        uses: slackapi/slack-github-action@v1.27.0
         with:
-          slack-optional-parse: full
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_TOKEN }}
-          slack-channel: ${{ secrets.SLACK_CHANNEL_ID }}
-          slack-text: "Comparison workflow started for ${{github.event.pull_request.html_url}}"
+          channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
+          slack-message : "Comparison workflow started for ${{env.PR_URL}}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
 
       - name: Save output to env
         id: save-output
-        run: echo "INIT_MSG_TS=${{ fromJson(steps.initial-message.outputs.slack-result).response.message.ts }}" >> $GITHUB_OUTPUT
+        run: echo "INIT_MSG_TS=${{ steps.initial-message.outputs.ts }}" >> $GITHUB_OUTPUT
     outputs:
       init_message_ts: ${{steps.save-output.outputs.INIT_MSG_TS}}
-
   setup_and_scan:
+    permissions: # Need these permissions for the job to create a JWT to authenticate with AWS
+      id-token: 'write'
+      contents: 'read'
     needs: start_workflow
     strategy:
       matrix:
-        language: ['java-1', 'java-2' , 'python', 'js', 'ruby-1', 'ruby-2', 'go', 'kotlin']
+        language: ['java-1', 'java-2' ,'python', 'js', 'ruby-1', 'ruby-2', 'go', 'kotlin']
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Install JDK-18
         uses: actions/setup-java@v3
         with:
@@ -46,51 +63,77 @@ jobs:
 
       - name: Install sbt
         run: mkdir -p ~/bin && curl -Ls https://raw.githubusercontent.com/dwijnand/sbt-extras/master/sbt > ~/bin/sbt && chmod 0755 ~/bin/sbt
+
       - name: Install Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Clone standalone-monitoring-stability/main
+      - name: Clone standalone-monitoring-stability/private-fork
         uses: actions/checkout@v3
         with:
           repository: Privado-Inc/standalone-monitoring-stability
           path: ./temp/standalone-monitoring-stability
           ref: private-fork
 
-      - name: Run the script for ${{github.head_ref}} and ${{github.base_ref}}
-        # It is important to sanitize the branch name from forks, otherwise it can be used to inject code.
-        env:
-          HEAD_REF: ${{ github.head_ref }}
-        run: export GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} && export PAT=${{ secrets.PAT }} && cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{github.base_ref}} -rbh $HEAD_REF -brr ${{ github.event.pull_request.base.repo.html_url }} -hrr ${{ github.event.pull_request.head.repo.html_url }} -guf -urc
- 
-      - name: Run aws-export
-        run: cd ./temp/standalone-monitoring-stability/ && python3 aws-export.py ${{matrix.language}}-${{github.event.number}}
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
 
-      - name: Move results to a folder
-        run: cd ./temp/standalone-monitoring-stability/ && mkdir results && mv output-${{matrix.language}}-${{github.event.number}}.xlsx ./results/output-${{matrix.language}}-${{github.event.number}}.xlsx && mv ./temp/result-${{matrix.language}}-${{github.event.number}}.zip ./results/result-${{matrix.language}}-${{github.event.number}}.zip && mv slack_summary.txt ./results/slack_summary.txt
+      - name: Run the script for ${{ env.HEAD_REF }} and ${{ env.BASE_REF }}
+        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{ env.BASE_REF }}} -rbh ${{ env.HEAD_REF }} -brr ${{ env.BASE_RULE_URL }} -hrr ${{ env.HEAD_RULE_URL }} -guf -urc
 
+      # Rename result files, and zip them together
       - name: Zip the results
-        run: cd /home/runner/work/privado/privado/temp/standalone-monitoring-stability && zip result-${{matrix.language}}-${{github.event.number}}.zip -r ./results
+        env:
+          FILE_SUFFIX: ${{ matrix.language }}-${{ env.PR_NUMBER }}
+        run: |
+          cd ./temp/standalone-monitoring-stability/
+          mv output.xlsx output-${{ env.FILE_SUFFIX }}.xlsx
+          zip -r ./result-${{ env.FILE_SUFFIX }}.zip ./temp/result
+          mkdir results
+          mv output-${{matrix.language}}-${{github.event.number}}.xlsx ./results/output-${{ env.FILE_SUFFIX }}.xlsx
+          mv ./result-${{matrix.language}}-${{github.event.number}}.zip ./results/result-${{ env.FILE_SUFFIX }}.zip
+          mv slack_summary.txt ./results/slack_summary.txt
+          cd ${{ env.MONITORING_REPO_PATH }} && zip result-rules-${{ env.FILE_SUFFIX }}.zip -r ./results
+
+      - name: Upload to S3
+        env:
+          FILE_SUFFIX: ${{ matrix.language }}-${{ env.PR_NUMBER }}
+          AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
+        run: cd ${{ env.MONITORING_REPO_PATH }} && aws s3 cp result-rules-${{ env.FILE_SUFFIX }}.zip ${{ secrets.S3_BUCKET }}
+
+      - name: Create a presigned S3 URL
+        env:
+          FILE_SUFFIX: ${{ matrix.language }}-${{ env.PR_NUMBER }}
+          AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
+          TTL: 604800
+        run: echo "S3_URL=$(aws s3 presign ${{ secrets.S3_BUCKET }}/result-${{ env.FILE_SUFFIX }}.zip --expires-in ${{ env.TTL }} --region ${{ env.AWS_DEFAULT_REGION }} --endpoint-url https://s3.${{ env.AWS_DEFAULT_REGION }}.amazonaws.com)" >> $GITHUB_ENV
 
       - name: Set summary variable
         run: |
           echo "MESSAGE<<EOF" >> $GITHUB_ENV
-          echo "$(cat /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt)" >> $GITHUB_ENV
+          echo "$(cat ${{ env.MONITORING_REPO_PATH }}/results/slack_summary.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
-      
+
       - name: Post results to slack
-        uses: adrey/slack-file-upload-action@master
-        with:
-          thread_ts: ${{needs.start_workflow.outputs.init_message_ts}}
-          channel: ${{ secrets.SLACK_CHANNEL_ID }} # check
-          path: "/home/runner/work/privado/privado/temp/standalone-monitoring-stability/result-${{matrix.language}}-${{github.event.number}}.zip"
-          initial_comment: "Comparison Results generated on ${{github.event.repository.name}} by PR ${{github.event.number}} from branch ${{github.head_ref}} to ${{github.base_ref}} \nPR link https://github.com/Privado-Inc/privado/pull/${{github.event.number}}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}"
-          filetype: "zip"
-          token: ${{ secrets.SLACK_TOKEN }}
+        env:
+          PR_MESSAGE: "Comparison Results generated on ${{ env.REPOSITORY_NAME }} by PR ${{ env.PR_NUMBER }} from branch ${{ env.HEAD_REF }} to ${{ env.BASE_REF }} \nPR link ${{ env.PR_URL }}\n Language: ${{matrix.language}} \nSummary Report:\n ${{ env.MESSAGE }}\n Download report <${{ env.S3_URL }}|here> :link:"
+        run: |
+          curl -X POST -H "Authorization: Bearer ${{ secrets.SLACK_TOKEN }}" \
+          -H "Content-type: application/json" \
+          --data '{
+            "channel": "'${{ secrets.SLACK_CHANNEL_ID }}'", 
+            "text": "'"${{ env.PR_MESSAGE }}"'",
+            "thread_ts": "'"${{ needs.start_workflow.outputs.init_message_ts }}"'",
+          }' \
+          https://slack.com/api/chat.postMessage
 
       - name: Export workflow output
-        run: cd ./temp/standalone-monitoring-stability && python3 ./workflow_check.py /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt
+        run: cd ./temp/standalone-monitoring-stability && python3 ./workflow_check.py ${{ env.MONITORING_REPO_PATH }}/results/slack_summary.txt
 
       - name: Set summary variable
         run: |
@@ -98,11 +141,14 @@ jobs:
           echo "$(cat ./temp/standalone-monitoring-stability/action_result.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV 
 
+      - name: Print action result
+        run: cat ./temp/standalone-monitoring-stability/action_result.txt
+
       - name: Upload summary file
         uses: actions/upload-artifact@master
         with:
           name: ${{matrix.language}}
-          path: /home/runner/work/privado/privado/temp/standalone-monitoring-stability/results/slack_summary.txt
+          path: ${{ env.MONITORING_REPO_PATH }}/results/slack_summary.txt
 
       - name: Workflow report analysis
         if: ${{ env.MESSAGE != 'true' }}
@@ -122,13 +168,12 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Clone standalone-monitoring-stability/flow-test
+      - name: Clone standalone-monitoring-stability/private-fork
         uses: actions/checkout@v3
         with:
           repository: Privado-Inc/standalone-monitoring-stability
           path: ./temp/standalone-monitoring-stability
-          ref: main
-
+          ref: private-fork
 
       - name: Collate summary
         run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./collate_summary.py -s /home/runner/work/privado/privado/language_summary
@@ -136,14 +181,14 @@ jobs:
       - name: Set summary variable
         run: |
           echo "MESSAGE<<EOF" >> $GITHUB_ENV
-          echo "$(cat /home/runner/work/privado/privado/temp/standalone-monitoring-stability/global_summary.txt)" >> $GITHUB_ENV
+          echo "$(cat ${{ env.MONITORING_REPO_PATH }}/global_summary.txt)" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
       - name: Send summary to slack
-        uses: slackapi/slack-github-action@v1.24.0
+        uses: slackapi/slack-github-action@v1.27.0
         with:
           update-ts: ${{needs.start_workflow.outputs.init_message_ts}}
           channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
-          slack-message: "\nComparison Results generated on ${{github.event.repository.name}} by PR ${{github.event.number}} from branch ${{github.head_ref}} to ${{github.base_ref}} \nPR link https://github.com/Privado-Inc/privado/pull/${{github.event.number}}\nLanguage: All \nSummary Report:\n ${{ env.MESSAGE }}"
+          slack-message: "\nComparison Results generated on ${{ env.REPOSITORY_NAME }} by PR ${{ env.PR_NUMBER }} from branch ${{ env.HEAD_REF }} to ${{ env.BASE_REF }} \nPR link ${{ env.PR_URL }}\nLanguage: All \nSummary Report:\n ${{ env.MESSAGE }}"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
