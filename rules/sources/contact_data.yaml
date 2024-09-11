@@ -9,16 +9,6 @@ sources:
     tags:
       law: GDPR
   
-  - id: Data.Sensitive.ContactData.EmailAddress
-    name: Email Address
-    category: Contact Data
-    isSensitive: False
-    sensitivity: medium
-    patterns:
-      - "(?i)(.*email)|(?:business|personal|work|contact)[^\\s/(;)#|,=!>]{0,10}email.*|.*email[^\\s/(;)#|,=!>]{0,10}(?:address|id)"
-    tags:
-      law: GDPR
-  
   - id: Data.Sensitive.ContactData.PhoneNumber
     name: Phone Number
     category: Contact Data
