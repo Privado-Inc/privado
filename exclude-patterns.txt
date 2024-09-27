@@ -1,2 +1,8 @@
+^/privado/trufflehog_output.text
+^/privado/exclude-patterns.txt
+^/privado/.git
 ^/privado/truffleHogAllowRules.json
 ^/privado/trufflehog_filtered_output.text
+
+
+
