@@ -32,7 +32,7 @@ jobs:
       - name: TruffleHog scan
         run: |
           echo "Starting TruffleHog scan..."
-          docker run -v "$PWD:/pwd" -v $GITHUB_WORKSPACE:/bishamonten ghcr.io/trufflesecurity/trufflehog:latest filesystem --directory /bishamonten --exclude_paths /bishamonten/exclude-patterns.txt > trufflehog_output.text
+          docker run -v "$PWD:/pwd" -v $GITHUB_WORKSPACE:/privado ghcr.io/trufflesecurity/privado:latest filesystem --directory /privado --exclude_paths /privado/exclude-patterns.txt > trufflehog_output.text
           python3 $GITHUB_WORKSPACE/trufflehog-exception.py
           echo "TruffleHog scan completed."
           cat trufflehog_filtered_output.text
