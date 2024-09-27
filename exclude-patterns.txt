@@ -1,0 +1,2 @@
+^/privado/truffleHogAllowRules.json
+^/privado/trufflehog_filtered_output.text
