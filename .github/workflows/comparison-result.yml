@@ -47,7 +47,7 @@ jobs:
     needs: start_workflow
     strategy:
       matrix:
-        language: ['java-1', 'java-2' ,'python', 'js', 'ruby-1', 'ruby-2', 'go', 'kotlin']
+        language: ['java-1', 'java-2' ,'python', 'js', 'ruby-1', 'ruby-2', 'go', 'kotlin', 'php', 'csharp']
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
