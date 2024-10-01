@@ -3,6 +3,5 @@
 ^/privado/.git
 ^/privado/truffleHogAllowRules.json
 ^/privado/trufflehog_filtered_output.text
-^/privado/rules/sinks/third_parties/sdk/atlassian/javascript.yaml
 
 
