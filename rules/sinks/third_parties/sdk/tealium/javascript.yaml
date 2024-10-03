@@ -11,3 +11,12 @@ sinks:
     patterns:
       - "ember-tracker|tealium-react-native|tealium|tealium-cordova-plugin|gatsby-plugin-tealium-utag|@s-ui\\/tealium-tracker|tealium-tracker|react-metrics-service"
     tags:
+
+  - id: ThirdParties.SDK.Tealium.TagManagerPixel
+    name: Tealium Tag Manager
+    filterProperty: "code"
+    domains:
+      - "tags.tiqcdn.com"
+    patterns:
+      - "(?i)(.*[.])?(utag|utag.view|utag.link|utag.track)[(].*"
+    tags:
