@@ -1,0 +1,14 @@
+
+#  Sink rule for ThirdParty SDK
+#  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
+
+sinks:
+  - id: ThirdParties.SDK.Tealium
+    name: Tealium
+    filterProperty: "code"
+    domains:
+      - "tealium.com"
+    patterns:
+      - "(?i)(.*)?(tealium_add_data|utag.{0,2}track)[(].*"
+    tags:
+
