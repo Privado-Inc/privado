@@ -16,7 +16,7 @@ sinks:
     name: Tealium Tag Manager
     filterProperty: "code"
     domains:
-      - "tags.tiqcdn.com"
+      - "tealium.com"
     patterns:
       - "(?i)(.*[.])?(utag|utag.view|utag.link|utag.track)[(].*"
     tags:
