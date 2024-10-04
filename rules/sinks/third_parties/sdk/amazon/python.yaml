@@ -116,7 +116,7 @@ sinks:
   
 
   - id: ThirdParties.SDK.Amazonaws.Lambda
-    name: Amazonaws Lamba
+    name: Amazonaws Lambda
     domains:
       - "aws.amazonaws.com/lambda"
     patterns:
