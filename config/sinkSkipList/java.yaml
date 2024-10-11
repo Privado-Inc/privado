@@ -2,7 +2,7 @@ sinkSkipList:
   - id: SinkSkipList.ThirdParties
     name: Skip Third Party Sinks
     patterns:
-      - "(?i)(android\\.|javax\\.|androidx\\.|com.sun.jna|com.sun.tools|sun.management|org.apache.kafka|okhttp3\\.|io.grpc\\.|io.netty\\.|org.apache.http\\.|org.json|org.junit\\.|org.apache.commons\\.|org.apache.tomcat|org.springframework\\.|tools.fastlane\\.|com.fasterxml.jackson\\.|com.alibaba.fastjson\\.|org.apache.hadoop\\.|org.apache.giraph\\.|org.javatuples\\.|org.antlr\\.|junit.framework\\.|io.reactivex\\.|com.bumptech.glide|com.google.protobuf|com.google.testing|com.google.common.*|com.google.android\\.|com.google.protobuf\\.|reactor.core\\.|io.grpc\\.).*"
+      - "(?i)(android\\.|javax\\.|androidx\\.|com.sun.jna|com.sun.tools|sun.management|org.apache.kafka|io.grpc\\.|io.netty\\.|org.apache.http\\.|org.json|org.junit\\.|org.apache.commons\\.|org.apache.tomcat|org.springframework\\.|tools.fastlane\\.|com.fasterxml.jackson\\.|com.alibaba.fastjson\\.|org.apache.hadoop\\.|org.apache.giraph\\.|org.javatuples\\.|org.antlr\\.|junit.framework\\.|io.reactivex\\.|com.bumptech.glide|com.google.protobuf|com.google.testing|com.google.common.*|com.google.android\\.|com.google.protobuf\\.|reactor.core\\.|io.grpc\\.).*"
 
   - id: SinkSkipList.BuiltInLib
     name: Skip built in language libraries
