@@ -61,3 +61,31 @@ collections:
       - ".*(?i)password.*"
     tags:
       sourceId: Data.Sensitive.AccountData.AccountPassword
+  
+  - id: Collections.Android.Form.DateofBirth
+    name: Android Form DateofBirth
+    patterns:
+      - ".*(?i)(?i)(dob|(.*(date[^\\s/(;)#|,=!>]{0,5}of[^\\s/(;)#|,=!>]{0,5}birth|birth[^\\s/(;)#|,=!>]{0,5}(?:day|date|month|year)|birth[-_]{0,2}dt))).*"
+    tags:
+      sourceId: Data.Sensitive.PersonalIdentification.DateofBirth
+  
+  - id: Collections.Android.Form.Age
+    name: Android Form Age
+    patterns:
+      - ".*(?i)(user|person|customer|under|years|yrs|human)?(_)?(of|in)?(_)?(age).*"
+    tags:
+      sourceId: Data.Sensitive.PersonalIdentification.Age
+  
+  - id: Collections.Android.Form.Gender
+    name: Android Form Gender
+    patterns:
+      - "(?i)((.*gender)|is[_-]{0,1}male|is[_-]{0,1}female|sex)"
+    tags:
+      sourceId: Data.Sensitive.PersonalIdentification.Gender
+  
+  - id: Collections.Android.Form.Photograph
+    name: Android Form Photograph
+    patterns:
+      - "(?i).*(?:profile|employee|user)[^\\s/(;)#|,=!>]{0,5}(?:picture|image|pic|photo).*"
+    tags:
+      sourceId: Data.Sensitive.PersonalIdentification.Photograph
