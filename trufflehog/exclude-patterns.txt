@@ -3,3 +3,4 @@
 ^/privado/.git
 ^/privado/trufflehog/truffleHogAllowRules.json
 ^/privado/trufflehog_filtered_output.text
+^/privado/rules/
