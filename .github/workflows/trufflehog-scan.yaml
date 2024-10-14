@@ -1,0 +1,47 @@
+name: TruffleHog Scan
+
+on:
+  push:
+    branches:
+      - trufflehog-new
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  trufflehog-scan:
+    runs-on: ubuntu-22.04
+    services:
+      docker:
+        image: docker:19.03.12
+        options: --privileged
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Set up Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+      - name: TruffleHog scan
+        run: |
+          echo "Starting TruffleHog scan..."
+          docker run -v "$PWD:/pwd" -v $GITHUB_WORKSPACE:/privado ghcr.io/trufflesecurity/trufflehog:latest filesystem --directory /privado --exclude_paths /privado/trufflehog/exclude-patterns.txt > trufflehog_output.text
+          python3 $GITHUB_WORKSPACE/trufflehog/trufflehog-exception.py
+          echo "TruffleHog scan completed."
+          cat trufflehog_filtered_output.text
+          if grep -qE 'Found (unverified|verified) result' trufflehog_filtered_output.text; then
+            echo "TruffleHog found sensitive information. Failing the pipeline."
+            exit 1
+          else
+            echo "No sensitive information found."
+          fi
