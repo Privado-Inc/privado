@@ -89,3 +89,59 @@ collections:
       - "(?i).*(?:profile|employee|user)[^\\s/(;)#|,=!>]{0,5}(?:picture|image|pic|photo).*"
     tags:
       sourceId: Data.Sensitive.PersonalIdentification.Photograph
+  
+  - id: Collections.Android.Form.Passport
+    name: Android Form Passport
+    patterns:
+      - ".*(?i)(.*passport[^\\s/(;)#|,=!>]{0,10}(?:no|number|id|expiry|validity|country)).*"
+    tags:
+      sourceId: Data.Sensitive.NationalIdentificationNumbers.Passport
+
+  - id: Collections.Android.Form.DrivingLicense
+    name: Android Form DrivingLicense
+    patterns:
+      - ".*(?i)((?:driving|driver)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)[^\\s/(;)#|,=!>]{0,5}(?:no|number|id)|(?:driving|driver)[^\\s/(;)#|,=!>]{0,5}(?:license|lisense|licence)).*"
+    tags:
+      sourceId: Data.Sensitive.NationalIdentificationNumbers.DrivingLicense
+
+  - id: Collections.Android.Form.SocialSecurityNumber
+    name: Android Form SocialSecurityNumber
+    patterns:
+      - ".*(?i)(social[^\\s/(;)#|,=!>]{0,5}security[^\\s/(;)#|,=!>]{0,5}(?:number|no|id)|.*_ssn|ssn).*"
+    tags:
+      sourceId: Data.Sensitive.NationalIdentificationNumbers.SocialSecurityNumber
+  
+  - id: Collections.Android.Form.DisabilityorSpecificCondition
+    name: Android Form DisabilityorSpecificCondition
+    patterns:
+      - "(?i).*(locomotor[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*illness|cerebral[^\\s/(;)#|,=!>]*palsy|hearing[^\\s/(;)#|,=!>]*impairment|muscular[^\\s/(;)#|,=!>]*dystrophy|multiple[^\\s/(;)#|,=!>]*sclerosis|hiv[^\\s/(;)#|,=!>]*aids|physical[^\\s/(;)#|,=!>]*disability|mental[^\\s/(;)#|,=!>]*disability|alzheimer|thalassemia|hemophilia|autism|cancer|dwarfism|blindness|handicapped|wheelchair|diabetic|dyslexia|epilepsy|schizophrenia|depression|physical[^\\s/(;)#|,=!>]disorder).*"
+    tags:
+      sourceId: Data.Sensitive.HealthData.DisabilityorSpecificCondition
+  
+  - id: Collections.Android.Form.IllnessorMedicalCondition
+    name: Android Form IllnessorMedicalCondition
+    patterns:
+      - "(?i).*(health[^\\s/(;)#|,=!>]{0,10}record|medical[^\\s/(;)#|,=!>]{0,10}condition|(?:user|person|customer|employee)[^\\s/(;)#|,=!>]{0,10}health|illness[^\\s/(;)#|,=!>]{0,10}(?:record|name|data|type|date))"
+    tags:
+      sourceId: Data.Sensitive.HealthData.IllnessorMedicalCondition
+  
+  - id: Collections.Android.Form.MaternityLeaveDetails
+    name: Android Form MaternityLeaveDetails
+    patterns:
+      - "(?i).*(maternity[^\\s/(;)#|,=!>]{0,10}leave).*"
+    tags:
+      sourceId: Data.Sensitive.HealthData.MaternityLeaveDetails
+
+  - id: Collections.Android.Form.PaternityLeaveDetails
+    name: Android Form PaternityLeaveDetails
+    patterns:
+      - "(?i).*(paternity[^\\s/(;)#|,=!>]{0,10}leave).*"
+    tags:
+      sourceId: Data.Sensitive.HealthData.PaternityLeaveDetails
+  
+  - id: Collections.Android.Form.MedicalCertificates
+    name: Android Form MedicalCertificates
+    patterns:
+      - "(?i).*(blood[^\\s/(;)#|,=!>]{0,10}report|medical[^\\s/(;)#|,=!>]{0,10}(?:report|test)|medical[^\\s/(;)#|,=!>]{0,10}certificate|blood[^\\s/(;)#|,=!>]{0,10}group).*"
+    tags:
+      sourceId: Data.Sensitive.HealthData.MedicalCertificates
