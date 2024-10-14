@@ -1,0 +1,9 @@
+systemConfig:
+  - key: apiHttpLibraries
+    value: ^(?i)(System.Net.Http|RestSharp|Flurl.Http|ServiceStack.HttpClient|EasyHttp.Http).*
+
+  - key: apiSinks
+    value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do)
+
+  - key: apiIdentifier
+    value: (?i).*((hook|base|auth|prov|endp|install|request|service|gateway|route|resource)(.){0,12}url|(slack|web)(.){0,4}hook|(rest|api|request|service)(.){0,4}(endpoint|gateway|route)).*
