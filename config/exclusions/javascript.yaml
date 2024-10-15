@@ -19,3 +19,8 @@ exclusions:
     name: Exclude file which cannot be read
     patterns:
       - "<empty>|<unknownFullName>"
+
+  - id: Exclusions.JQuery
+    name: Exclude JQuery Folder
+    patterns:
+      - ".*(jquery).*([.]js).*"
