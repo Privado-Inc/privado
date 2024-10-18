@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.Annotation.NextJS
+    name: NextJS Annotation
+    patterns:
+      - "Controller"
+    tags:
