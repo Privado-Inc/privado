@@ -1,6 +1,6 @@
 collections:
-  - id: Collections.Annotation.NextJS
-    name: NextJS Annotation
+  - id: Collections.Annotation.NestJS
+    name: NestJS Annotation
     patterns:
       - "Controller"
     tags:
