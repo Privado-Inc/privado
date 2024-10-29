@@ -58,3 +58,13 @@ sources:
       - "(?i)idfa|idfv|aaid|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.OnlineIdentifiers.Token
+    name: Token
+    category: Online Identifiers
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "((?i)(auth|session|access|bearer|jwt|recaptcha|user|useraccess)?token[s]?)"
+    tags:
+      law: GDPR
