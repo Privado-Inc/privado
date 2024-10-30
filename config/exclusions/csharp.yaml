@@ -2,4 +2,4 @@ exclusions:
   - id: Exclusions.Test
     name: Exclude test source code
     patterns:
-      - '.*(tests|Tests|UnitTest)(s)?.*'
+      - "(.*(?i)(Tests|UnitTest(s)?)/.*)|/.*Test(s)?[.]cs$"
