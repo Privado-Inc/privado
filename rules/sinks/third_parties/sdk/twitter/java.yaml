@@ -9,5 +9,5 @@ sinks:
     domains:
       - "twitter.com"
     patterns:
-      - "(?i)(com[.]twitter[.]common[.]zookeeper|com[.]twitter[.]common|com[.]twitter[.]elephantbird|com[.]twitter[.]inject|com[.]twitter[.]sdk[.]android|com[.]twitter|org[.]twitter4j|twitter-api).*"
+      - "(?i)(com[.]twitter[.]common[.]zookeeper|com[.]twitter[.]common|com[.]twitter[.]elephantbird|com[.]twitter[.]inject|com[.]twitter[.]sdk[.]android|com[.]twitter[.]clientlib|org[.]twitter4j|twitter-api).*"
     tags:
