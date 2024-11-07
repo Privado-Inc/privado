@@ -1,0 +1,32 @@
+name: Draft a new release
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  create_release:
+    env:
+      OWNER: "Privado-Inc"
+      BRANCH: "main"
+      REPO: "privado"
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Create an incremental tag
+        id: generate-tag
+        run: |
+          latest_tag=$(gh api repos/$OWNER/$REPO/tags --jq '.[0].name')
+          
+          new_tag=$(echo $latest_tag | awk -F. '{print $1"."$2"."$3+1}')
+          
+          latest_commit_sha=$(gh api repos/$OWNER/$REPO/git/refs/heads/$BRANCH --jq '.object.sha')
+          
+          gh api repos/$OWNER/$REPO/git/refs \
+          -f ref="refs/tags/$new_tag" \
+          -f sha=$latest_commit_sha
+          
+          echo "new_tag=$new_tag" >> $GITHUB_OUTPUT                
+
+      - name: Create a release
+        run: gh release create ${{ steps.generate-tag.outputs.new_tag }} --draft --generate-notes --target main --title "${{ steps.generate-tag.outputs.new_tag }} 🌈" --repo "${{ env.OWNER }}/${{ env.REPO }}"
