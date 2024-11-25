@@ -9,5 +9,5 @@ sinks:
     domains:
       - "linecorp.com"
     patterns:
-      - "(?i)(com[.]linecorp).*"
+      - "(?i)(com[.]linecorp[.](bot(?![.]jackson)|centraldogma[.]client)([.].+)?$)"
     tags:
