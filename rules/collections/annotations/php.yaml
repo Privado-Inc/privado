@@ -1,0 +1,6 @@
+collections:
+  - id: Collections.Symfony
+    name: Symfony MVC Endpoints
+    patterns:
+      - "(?i).*(Route).*"
+    tags:
