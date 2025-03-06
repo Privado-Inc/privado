@@ -1,9 +1,0 @@
-sinks:
-
-  - id: ThirdParties.SDK.Braze
-    name: Braze
-    domains:
-      - "braze.com"
-    patterns:
-      - "(?i)(braze(_ruby)?).*"
-    tags:
