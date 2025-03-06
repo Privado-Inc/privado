@@ -84,7 +84,7 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Run the script for ${{ env.HEAD_REF }} and ${{ env.BASE_REF }}
-        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{ env.BASE_REF }}} -rbh ${{ env.HEAD_REF }} -brr ${{ env.BASE_RULE_URL }} -hrr ${{ env.HEAD_RULE_URL }} -guf -urc
+        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{ env.BASE_REF }} -rbh ${{ env.HEAD_REF }} -brr ${{ env.BASE_RULE_URL }} -hrr ${{ env.HEAD_RULE_URL }} -guf -urc
 
       # Rename result files, and zip them together
       - name: Zip the results
