@@ -3,3 +3,8 @@ exclusions:
     name: Exclude test source code
     patterns:
       - '.*_test(s)?.*'
+
+  - id: Exclusions.ExternalModules
+    name: Exclude external modules
+    patterns:
+      - '(?i).*vendor(s)?/.*'
