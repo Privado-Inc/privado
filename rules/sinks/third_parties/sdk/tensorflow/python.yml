@@ -2,12 +2,12 @@
 #  Sink rule for ThirdParty SDK
 #  The id follows a format : "ThirdParties.SDK.<THIRD_PARTY_ORGANISATION>.<SUB_ORGANISATION_IF_APPLICABLE>"
 
-sinks:
+# sinks:
 
-  - id: ThirdParties.SDK.Tensorflow
-    name: Tensorflow
-    domains:
-      - "tensorflow.org"
-    patterns:
-      - "(?i)(tensorflow).*"
-    tags:
+#   - id: ThirdParties.SDK.Tensorflow
+#     name: Tensorflow
+#     domains:
+#       - "tensorflow.org"
+#     patterns:
+#       - "(?i)(tensorflow).*"
+#     tags:
