@@ -3,7 +3,7 @@ systemConfig:
     value: (?i)(request|retry|retriable|aiohttp|treq|grequests|urllib|http|uplink|httoop|flask_restful|tornado.httpclient|pycurl|bs4|.*(HttpClient)).*
 
   - key: apiSinks
-    value: (?i)(?:url(?!(open|encode))|client|get|set|post|put|patch|delete|head|options|request|feed|trigger|init|find|send|receive|redirect|fetch|execute|response|pool|client|http|load|list|trace|remove|write|provider|host|access|info_read|select|perform).*
+    value: (?i)(?:url(?:open|retrieve)|client|get|set|post|put|patch|delete|head|options|request|feed|trigger|init|find|send|receive|redirect|fetch|execute|response|pool|client|http|load|list|trace|remove|write|provider|host|access|info_read|select|perform).*
 
   - key: apiIdentifier
     value: (?i).*((hook|base|auth|prov|endp|install|cloud|host|request|service|gateway|route|resource|upload)(.){0,12}url|(slack|web)(.){0,4}hook|(rest|api|host|cloud|request|service)(.){0,4}(endpoint|gateway|route)).*
