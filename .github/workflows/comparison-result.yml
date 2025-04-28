@@ -111,7 +111,7 @@ jobs:
           FILE_SUFFIX: ${{ matrix.language }}-${{ env.PR_NUMBER }}
           AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
           TTL: 604800
-        run: echo "S3_URL=$(aws s3 presign ${{ secrets.S3_BUCKET }}/result-${{ env.FILE_SUFFIX }}.zip --expires-in ${{ env.TTL }} --region ${{ env.AWS_DEFAULT_REGION }} --endpoint-url https://s3.${{ env.AWS_DEFAULT_REGION }}.amazonaws.com)" >> $GITHUB_ENV
+        run: echo "S3_URL=$(aws s3 presign ${{ secrets.S3_BUCKET }}/result-rules-${{ env.FILE_SUFFIX }}.zip --expires-in ${{ env.TTL }} --region ${{ env.AWS_DEFAULT_REGION }} --endpoint-url https://s3.${{ env.AWS_DEFAULT_REGION }}.amazonaws.com)" >> $GITHUB_ENV
 
       - name: Set summary variable
         run: |
