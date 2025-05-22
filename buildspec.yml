@@ -31,7 +31,7 @@ phases:
         else
             TAG_1=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
             # assigns branch name for dev build it will be dev
-            TAG_PREFIX=TAG_1
+            TAG_PREFIX=$TAG_1
         fi
       - TAG_2=$VERSION
 
