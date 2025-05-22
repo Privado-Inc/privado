@@ -27,7 +27,7 @@ phases:
         if [[ $AWS_REGION = "eu-west-1" ]]
         then
             TAG_1=latest
-            TAG_PREFIX="prod"
+            TAG_PREFIX=prod
         else
             TAG_1=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
             # assigns branch name for dev build it will be dev
