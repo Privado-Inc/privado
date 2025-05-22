@@ -27,11 +27,13 @@ phases:
         if [[ $AWS_REGION = "eu-west-1" ]]
         then
             TAG_1=latest
+            TAG_PREFIX="prod"
         else
-            TAG_1=${CODEBUILD_WEBHOOK_TRIGGER:7}
+            TAG_1=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
+            # assigns branch name for dev build it will be dev
+            TAG_PREFIX=TAG_1
         fi
       - TAG_2=$VERSION
-      - TAG_3=${CODEBUILD_WEBHOOK_HEAD_REF##*/}
 
   build:
     commands:
@@ -51,11 +53,11 @@ phases:
       - docker push $REPOSITORY_URI:$TAG_1
       - docker push $REPOSITORY_URI:$TAG_2
       - |
-        if [[ -z "$TAG_3" ]]
+        if [[ -z "$TAG_PREFIX" ]]
         then
-              echo "\$TAG_3 is empty"
+              echo "\$TAG_PREFIX is empty"
         else
-              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_3-$VERSION
-              docker push $REPOSITORY_URI:$TAG_3-$VERSION
+              docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$TAG_PREFIX-$VERSION
+              docker push $REPOSITORY_URI:$TAG_PREFIX-$VERSION
         fi
       - echo completed pushing image to ecr
