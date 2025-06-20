@@ -58,3 +58,4 @@ sources:
       - "(?i)idfa|idfv|aaid|advertising[^\\s/(;)#|,=!>]{0,5}id|gps[^\\s/(;)#|,=!>]{0,5}adid"
     tags:
       law: GDPR
+

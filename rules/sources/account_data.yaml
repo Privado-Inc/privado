@@ -58,3 +58,13 @@ sources:
       - "(?i)(.*(?<!(db|database|jira|sql|postgres|mongo|aws)[^\\s/(;)#|,=!>]{0,3})user[^\\s/(;)#|,=!>]{0,3}name)|(.*(account|customer|doctor|patient|teacher|student|person|organi[zs]ation|company)[^\\s/(;)#|,=!>]{0,3}name)"
     tags:
       law: GDPR
+
+  - id: Data.Sensitive.AccountData.Token
+    name: Token
+    category: Account Data
+    isSensitive: False
+    sensitivity: medium
+    patterns:
+      - "((?i)(auth|session|access|bearer|jwt|recaptcha|user|useraccess)[^\\s/(;)#|,=!>]{0,3}token[s]?)"
+    tags:
+      law: GDPR
