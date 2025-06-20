@@ -9,5 +9,5 @@ sinks:
     domains:
       - "payex.com"
     patterns:
-      - "(?i).*(payex).*"
+      - "(?i)(PayEx\\Api).*"
     tags:
