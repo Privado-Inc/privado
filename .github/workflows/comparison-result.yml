@@ -24,7 +24,7 @@ env:
 
 jobs:
   start_workflow:
-    runs-on: ubuntu-24.04 # We are version-locking this to avoid breaking changes in the future
+    runs-on: ubuntu-22.04 # We are version-locking this to avoid breaking changes in the future
     steps:
       - name: Send message to slack
         id: initial-message
@@ -49,7 +49,7 @@ jobs:
       matrix:
         language: ['java-1', 'java-2' ,'python', 'js', 'ruby-1', 'ruby-2', 'go', 'kotlin', 'php', 'csharp']
     continue-on-error: true
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Install JDK-18
@@ -74,7 +74,7 @@ jobs:
         with:
           repository: Privado-Inc/standalone-monitoring-stability
           path: ./temp/standalone-monitoring-stability
-          ref: private-fork
+          ref: main
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
@@ -84,7 +84,7 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Run the script for ${{ env.HEAD_REF }} and ${{ env.BASE_REF }}
-        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{ env.BASE_REF }}} -rbh ${{ env.HEAD_REF }} -brr ${{ env.BASE_RULE_URL }} -hrr ${{ env.HEAD_RULE_URL }} -guf -urc
+        run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./run.py -r ./repos/${{matrix.language}}.txt -rbb ${{ env.BASE_REF }} -rbh ${{ env.HEAD_REF }} -brr ${{ env.BASE_RULE_URL }} -hrr ${{ env.HEAD_RULE_URL }} -guf -urc
 
       # Rename result files, and zip them together
       - name: Zip the results
@@ -156,7 +156,7 @@ jobs:
 
   collate_summary:
     needs: [start_workflow, setup_and_scan]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Download summary file
         uses: actions/download-artifact@master
@@ -173,7 +173,7 @@ jobs:
         with:
           repository: Privado-Inc/standalone-monitoring-stability
           path: ./temp/standalone-monitoring-stability
-          ref: private-fork
+          ref: main
 
       - name: Collate summary
         run: cd ./temp/standalone-monitoring-stability && pip install -r requirements.txt && python3 ./collate_summary.py -s /home/runner/work/privado/privado/language_summary
