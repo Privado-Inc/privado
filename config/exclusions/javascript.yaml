@@ -7,7 +7,7 @@ exclusions:
   - id: Exclusions.JavaScript.Packages
     name: Exclude External JavaScript Packages
     patterns:
-      - ".*(node_modules).*"
+      - ".*(node_modules|graphql).*"
 
   - id: Exclusions.JavaScript.MinifiedFiles
     name: Exclude External JavaScript MinifiedFiles
