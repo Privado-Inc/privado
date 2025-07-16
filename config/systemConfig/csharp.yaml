@@ -3,7 +3,7 @@ systemConfig:
     value: ^(?i)(System[.]Net[.]Http|RestSharp|EasyHttp|Flurl[.]Http|Refit|Restease|Nancy[.]HttpClient|FluentHttp|Polly|EasyHttp|Windows[.]Web[.]Http|FluentRest|Restup|FiddlerCore|NHttp).*
 
   - key: apiSinks
-    value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do)
+    value: (?i)(?:url|client|open|request|execute|newCall|load|host|access|list|set|put|post|proceed|trace|patch|Path|send|remove|delete|write|read|postForEntity|call|createCall|createEndpoint|dispatch|invoke|getInput|getOutput|getResponse|do|GetFromJsonAsync|PostAsJsonAsync|DeleteAsync|SendAsync|GetAsync|UrlEncode|UrlDecode|PutAsJsonAsync|PostAsync|PutAsync)
 
   - key: apiIdentifier
     value: (?i).*((hook|base|auth|prov|endp|install|request|service|gateway|route|resource)(.){0,12}url|(slack|web)(.){0,4}hook|(rest|api|request|service)(.){0,4}(endpoint|gateway|route)).*
