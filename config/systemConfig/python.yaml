@@ -7,3 +7,6 @@ systemConfig:
 
   - key: apiIdentifier
     value: (?i).*((hook|base|auth|prov|endp|install|cloud|host|request|service|gateway|route|resource|upload)(.){0,12}url|(slack|web)(.){0,4}hook|(rest|api|host|cloud|request|service)(.){0,4}(endpoint|gateway|route)).*
+
+  - key: airflowBaseClasses
+    value: (?i).*(BaseOperator|BaseSensorOperator|BashOperator|KubernetesPodOperator|PythonVirtualenvOperator|BaseHook|GoogleDriveHook|HttpHook).*
