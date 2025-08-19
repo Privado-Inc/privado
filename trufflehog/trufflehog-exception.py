@@ -1,4 +1,5 @@
 import json
+import re
 
 # Load patterns from the JSON file
 with open("./trufflehog/truffleHogAllowRules.json", "r") as f:
