@@ -9,6 +9,5 @@ sinks:
     domains:
       - "activecampaign.com"
     patterns:
-      - "(?i).*(ActiveCampaign|ActiveCampaignContact).*"
-      - "(?i).*(activecampaign.sdk).*"
+      - "(?i)(activecampaign.sdk|activeCampaignContact).*"
     tags:
