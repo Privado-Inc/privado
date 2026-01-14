@@ -4,6 +4,7 @@ exclusions:
     patterns:
       - "(.*/test/.*)|/Test[A-Z]|Test[.]"
       - "(/)?target/.*"
+      - "(?i).*test(s)?/.*"
   
   - id: Exclusions.Invalid.Properties
     name: Exclude invalid properties file
