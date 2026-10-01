@@ -13,3 +13,12 @@ systemConfig:
 
   - key: maxCharLimit
     value: "1000"
+
+  - key: muleStructuralModules
+    value: "^(core|documentation|mule-apikit|secure-properties|munit|munit-tools|spring|tls|api-gateway)$"
+
+  - key: muleStructuralSinkElements
+    value: "^(logger)$"
+
+  - key: muleEventSourceElements
+    value: "^(listener|scheduler)$"

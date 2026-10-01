@@ -1,0 +1,216 @@
+# =============================================================================
+#  MuleSoft - storage and messaging sinks
+# =============================================================================
+#  Rule ids here are the SAME ids privado already reports these systems under,
+#  so a Mule occurrence and a Java/Python occurrence of the same system land on
+#  one entry instead of two. Only the patterns are Mule-specific.
+#
+#  Patterns match the canonical identity privado-core builds for each element
+#  from its NAMESPACE URI, never its XML prefix (a project may bind xmlns:mydb
+#  itself, so a prefix-keyed rule would silently miss it):
+#
+#      mule:<module>:<operation>        e.g. mule:s3:create-object
+#      mule:db:<vendor>:<operation>     e.g. mule:db:mysql:insert
+#      mule:logger:<level>              e.g. mule:logger:info
+#
+#  `any` as the filename keeps these language-agnostic, so they load both on the
+#  Java path and on the Default path a Mule-only repo falls through to.
+# =============================================================================
+muleSinks:
+
+  - id: Storages.MySQL.Write
+    name: MySQL(Write)
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)^mule:db:mysql:(insert|update|delete|upsert|merge|bulk-.*|execute-.*|stored-procedure)$"
+    tags:
+
+  - id: Storages.MySQL.Read
+    name: MySQL(Read)
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)^mule:db:mysql:(select|query)$"
+    tags:
+
+  - id: Storages.OracleDatabase.ReadAndWrite
+    name: Oracle Database
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)^mule:db:oracle:.*"
+    tags:
+
+  - id: Storages.Postgres.ReadAndWrite
+    name: Postgres Sql
+    domains:
+      - "postgresql.org"
+    patterns:
+      - "(?i)^mule:db:(postgres|postgresql):.*"
+    tags:
+
+  # Catch-all for any vendor without a rule of its own: SQL Server
+  # (<db:mssql-connection>), DB2, <db:generic-connection> which takes a raw JDBC
+  # URL so the driver is not structurally visible, and the case where no
+  # config-ref resolved at all (hence the optional vendor segment). The negative
+  # lookahead defers to the vendor-specific rules above.
+  - id: Storages.SpringFramework.Jdbc.Write
+    name: Java Database Connector(Write)
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)^mule:db:(?!mysql:|oracle:|postgres:|postgresql:|snowflake:)([a-z0-9]+:)?(insert|update|delete|upsert|merge|bulk-.*|execute-.*|stored-procedure)$"
+    tags:
+
+  - id: Storages.SpringFramework.Jdbc.Read
+    name: Java Database Connector(Read)
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)^mule:db:(?!mysql:|oracle:|postgres:|postgresql:|snowflake:)([a-z0-9]+:)?(select|query)$"
+    tags:
+
+  - id: Storages.MongoDB.Write
+    name: MongoDB(Write)
+    domains:
+      - "mongodb.com"
+    patterns:
+      - "(?i)^mule:mongodb:(insert|update|delete|save|create|drop)$"
+    tags:
+
+  - id: Storages.MongoDB.Read
+    name: MongoDB(Read)
+    domains:
+      - "mongodb.com"
+    patterns:
+      - "(?i)^mule:mongodb:(find|get|list|count|aggregate|query)$"
+    tags:
+
+  - id: Storages.Redis.Write
+    name: Redis DB(Write)
+    domains:
+      - "redis.io"
+    patterns:
+      - "(?i)^mule:redis:(set|add|put|increment|decrement|delete|expire|publish)$"
+    tags:
+
+  - id: Storages.Redis.Read
+    name: Redis DB(Read)
+    domains:
+      - "redis.io"
+    patterns:
+      - "(?i)^mule:redis:(get|exists|keys|subscribe)$"
+    tags:
+
+  - id: Storages.Snowflake.ReadAndWrite
+    name: Snowflake(ReadAndWrite)
+    domains:
+      - "snowflake.com"
+    patterns:
+      - "(?i)^mule:snowflake:.*"
+    tags:
+
+  - id: Storages.AmazonDynamoDB.Write
+    name: Amazon Dynamo DB(Write)
+    domains:
+      - "aws.amazon.com"
+      - "amazon.com"
+    patterns:
+      - "(?i)^mule:dynamodb:(put.*|update.*|delete.*|batch-write.*|create.*)$"
+    tags:
+
+  - id: Storages.AmazonDynamoDB.Read
+    name: Amazon Dynamo DB(Read)
+    domains:
+      - "aws.amazon.com"
+      - "amazon.com"
+    patterns:
+      - "(?i)^mule:dynamodb:(get.*|query.*|scan.*|batch-get.*|describe.*)$"
+    tags:
+
+  # S3 carries a storage rule as well as the third-party one - an object write is
+  # both, exactly as a Java S3 SDK call can match ObjectStorageBaseTagger and
+  # RegularSinkTagger.
+  - id: Storages.AmazonS3.Write
+    name: Amazon S3(Write)
+    domains:
+      - "s3.amazon.com"
+    patterns:
+      - "(?i)^mule:s3:(create-object|put-object|copy-object|delete-object|upload)$"
+    tags:
+
+  - id: Storages.AmazonS3.Read
+    name: Amazon S3(Read)
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i)^mule:s3:(get-object|list-objects|download)$"
+    tags:
+
+  - id: Messaging.Queue.Kafka.Producer
+    name: Apache Kafka (Producer)
+    domains:
+      - "apache.com"
+    patterns:
+      - "(?i)^mule:(kafka|apachekafka):(publish|send|produce)$"
+    tags:
+
+  - id: Messaging.Queue.Kafka.Consumer
+    name: Apache Kafka (Consumer)
+    domains:
+      - "apache.com"
+    patterns:
+      - "(?i)^mule:(kafka|apachekafka):(consume|listener|message-listener)$"
+    tags:
+
+  - id: Messaging.Service.JMS.Producer
+    name: JMS (Producer)
+    domains:
+      - "springframework.org"
+    patterns:
+      - "(?i)^mule:jms:(publish|send|publish-consume)$"
+    tags:
+
+  - id: Messaging.Service.JMS.Consumer
+    name: JMS (Consumer)
+    domains:
+      - "springframework.org"
+    patterns:
+      - "(?i)^mule:jms:(consume|listener)$"
+    tags:
+
+  - id: Messaging.Service.AmazonSQS.Producer
+    name: Amazon SQS (Producer)
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)^mule:sqs:(send.*|publish)$"
+    tags:
+
+  - id: Messaging.Service.AmazonSQS.Consumer
+    name: Amazon SQS (Consumer)
+    domains:
+      - "amazonaws.com"
+    patterns:
+      - "(?i)^mule:sqs:(receive.*|consume|listener)$"
+    tags:
+
+  - id: Messaging.Queue.AMQP.Rabbit.Producer
+    name: RabbitMq (Producer)
+    domains:
+      - "rabbitmq.com"
+    patterns:
+      - "(?i)^mule:(amqp|ibm-mq|solace):(publish|send|produce)$"
+    tags:
+
+  # Mule's in-process queue. Genuinely has no equivalent elsewhere - it never
+  # leaves the runtime - so there is no existing rule to reuse. It still matters
+  # for the data map, because flow variables do NOT survive it.
+  - id: Messaging.Service.Mulesoft.VM
+    name: Mulesoft VM Queue
+    domains:
+      - "mulesoft.com"
+    patterns:
+      - "(?i)^mule:vm:(publish|send|publish-consume|consume)$"
+    tags:
