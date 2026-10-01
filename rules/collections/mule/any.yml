@@ -1,0 +1,55 @@
+# =============================================================================
+#  MuleSoft - collection points (ingress)
+# =============================================================================
+#  Collection rule ids are per-framework by existing convention
+#  (Collections.ASP.NET.Core, Collections.Android.Form.*), so MuleSoft gets its
+#  own here - there is no generic HTTP-listener rule to reuse.
+#
+#  Mule names every transport's event source `listener` by convention, so the
+#  identity is `mule:<module>:listener`. APIkit endpoints have no listener of
+#  their own - the path lives in the RAML and is recoverable only from the
+#  generated flow name - so privado-core emits `mule:apikit:<method>`.
+# =============================================================================
+muleCollections:
+
+  - id: Collections.Mulesoft.HttpListener
+    name: Mulesoft HTTP Listener
+    patterns:
+      - "(?i)^mule:https?:listener$"
+    tags:
+
+  - id: Collections.Mulesoft.ApikitRouter
+    name: Mulesoft APIkit Endpoint
+    patterns:
+      - "(?i)^mule:apikit:(get|post|put|patch|delete|head|options)$"
+    tags:
+
+  - id: Collections.Mulesoft.SaasListener
+    name: Mulesoft SaaS Event Listener
+    patterns:
+      - "(?i)^mule:[a-z0-9-]+:(on-new.*|on-modified.*|on-updated.*|on-deleted.*|replay-.*-listener|subscribe-.*-listener)$"
+    tags:
+
+  - id: Collections.Mulesoft.Scheduler
+    name: Mulesoft Scheduler
+    patterns:
+      - "(?i)^mule:core:scheduler$"
+    tags:
+
+  - id: Collections.Mulesoft.QueueListener
+    name: Mulesoft Queue Listener
+    patterns:
+      - "(?i)^mule:(vm|jms|anypoint-mq|amqp|kafka|apachekafka|sqs|ibm-mq|solace):(listener|subscriber|message-listener)$"
+    tags:
+
+  - id: Collections.Mulesoft.FileListener
+    name: Mulesoft File Listener
+    patterns:
+      - "(?i)^mule:(file|ftp|sftp|email|imap|pop3):(listener|on-new.*)$"
+    tags:
+
+  - id: Collections.Mulesoft.DatabaseListener
+    name: Mulesoft Database Listener
+    patterns:
+      - "(?i)^mule:db:[a-z0-9]*:?(listener|on-table-row)$"
+    tags:

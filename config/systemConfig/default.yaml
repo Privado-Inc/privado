@@ -13,3 +13,18 @@ systemConfig:
 
   - key: maxCharLimit
     value: "1000"
+
+  - key: muleStructuralModules
+    value: "^(core|documentation|mule-apikit|secure-properties|munit|munit-tools|spring|tls|api-gateway)$"
+
+  - key: muleStructuralSinkElements
+    value: "^(logger)$"
+
+  # Element names that start a flow, i.e. collection points. Most transports use
+  # `listener`, but not all: Anypoint MQ uses `subscriber`, Kafka
+  # `message-listener`, Salesforce `on-new-object`, the Database connector
+  # `on-table-row`. Getting this wrong costs twice over - an unlisted source is
+  # misreported as an egress AND its flow loses its collection point, so the PII
+  # collected there is never linked to an entry point.
+  - key: muleEventSourceElements
+    value: "^(listener|subscriber|scheduler|poll|on-table-row|.*-listener|on-new.*|on-modified.*|on-updated.*|on-deleted.*)$"

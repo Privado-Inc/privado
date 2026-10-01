@@ -1,0 +1,122 @@
+# =============================================================================
+#  MuleSoft - third-party connector egress
+# =============================================================================
+#  Rule ids here are the SAME ids privado already reports these systems under,
+#  so a Mule occurrence and a Java/Python occurrence of the same system land on
+#  one entry instead of two. Only the patterns are Mule-specific.
+#
+#  Patterns match the canonical identity privado-core builds for each element
+#  from its NAMESPACE URI, never its XML prefix (a project may bind xmlns:mydb
+#  itself, so a prefix-keyed rule would silently miss it):
+#
+#      mule:<module>:<operation>        e.g. mule:s3:create-object
+#      mule:db:<vendor>:<operation>     e.g. mule:db:mysql:insert
+#      mule:logger:<level>              e.g. mule:logger:info
+#
+#  `any` as the filename keeps these language-agnostic, so they load both on the
+#  Java path and on the Default path a Mule-only repo falls through to.
+# =============================================================================
+muleSinks:
+
+  - id: ThirdParties.SDK.Amazonaws.S3
+    name: Amazon Aws S3
+    domains:
+      - "aws.amazon.com/s3"
+    patterns:
+      - "(?i)^mule:s3:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SNS
+    name: Amazon Aws SNS
+    domains:
+      - "aws.amazon.com/sns"
+    patterns:
+      - "(?i)^mule:sns:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SQS
+    name: Amazon Aws SQS
+    domains:
+      - "aws.amazon.com/sqs"
+    patterns:
+      - "(?i)^mule:sqs:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Kinesis
+    name: Amazon AWS Kinesis
+    domains:
+      - "aws.amazon.com/kinesis/"
+    patterns:
+      - "(?i)^mule:kinesis:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Lambda
+    name: Amazon Aws Lambda
+    domains:
+      - "aws.amazon.com/lambda/"
+    patterns:
+      - "(?i)^mule:lambda:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Salesforce
+    name: Salesforce
+    domains:
+      - "salesforce.com"
+    patterns:
+      - "(?i)^mule:salesforce(-marketing)?:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Workday
+    name: Workday
+    domains:
+      - "workday.com"
+    patterns:
+      - "(?i)^mule:workday:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Sap
+    name: Sap
+    domains:
+      - "sap.com"
+    patterns:
+      - "(?i)^mule:sap:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Stripe
+    name: Stripe
+    domains:
+      - "stripe.com"
+    patterns:
+      - "(?i)^mule:stripe:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Twilio
+    name: Twilio
+    domains:
+      - "twilio.com"
+    patterns:
+      - "(?i)^mule:twilio:.*"
+    tags:
+
+  - id: ThirdParties.SDK.Slack
+    name: Slack
+    domains:
+      - "slack.com"
+    patterns:
+      - "(?i)^mule:slack:.*"
+    tags:
+
+  # Outbound HTTP/SOAP. The domain is resolved from the operation's url attribute.
+  - id: Sinks.ThirdParties.API
+    name: Third Party API
+    patterns:
+      - "(?i)^mule:(https?|wsc):request$"
+    tags:
+
+  - id: ThirdParties.SDK.Mulesoft
+    name: Mulesoft
+    domains:
+      - "mulesoft.com"
+    patterns:
+      - "(?i)^mule:anypoint-mq:.*|^mule:(?!s3:|sns:|sqs:|kinesis:|lambda:|salesforce|workday:|sap:|stripe:|twilio:|slack:|https?:|wsc:|db:|mongodb:|redis:|snowflake:|cassandra:|dynamodb:|file:|ftp:|sftp:|objectstore:|azure-storage:|gcs:|vm:|jms:|kafka:|apachekafka:|amqp:|ibm-mq:|solace:|logger:|email:|smtp:)[a-z0-9_.-]+:.*"
+    tags:
