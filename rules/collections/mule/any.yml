@@ -24,6 +24,12 @@ muleCollections:
       - "(?i)^mule:apikit:(get|post|put|patch|delete|head|options)$"
     tags:
 
+  - id: Collections.Mulesoft.SaasListener
+    name: Mulesoft SaaS Event Listener
+    patterns:
+      - "(?i)^mule:[a-z0-9-]+:(on-new.*|on-modified.*|on-updated.*|on-deleted.*|replay-.*-listener|subscribe-.*-listener)$"
+    tags:
+
   - id: Collections.Mulesoft.Scheduler
     name: Mulesoft Scheduler
     patterns:
@@ -33,17 +39,17 @@ muleCollections:
   - id: Collections.Mulesoft.QueueListener
     name: Mulesoft Queue Listener
     patterns:
-      - "(?i)^mule:(vm|jms|anypoint-mq|amqp|kafka|apachekafka|sqs|ibm-mq|solace):listener$"
+      - "(?i)^mule:(vm|jms|anypoint-mq|amqp|kafka|apachekafka|sqs|ibm-mq|solace):(listener|subscriber|message-listener)$"
     tags:
 
   - id: Collections.Mulesoft.FileListener
     name: Mulesoft File Listener
     patterns:
-      - "(?i)^mule:(file|ftp|sftp|email|imap|pop3):listener$"
+      - "(?i)^mule:(file|ftp|sftp|email|imap|pop3):(listener|on-new.*)$"
     tags:
 
   - id: Collections.Mulesoft.DatabaseListener
     name: Mulesoft Database Listener
     patterns:
-      - "(?i)^mule:db:[a-z0-9]*:?listener$"
+      - "(?i)^mule:db:[a-z0-9]*:?(listener|on-table-row)$"
     tags:
