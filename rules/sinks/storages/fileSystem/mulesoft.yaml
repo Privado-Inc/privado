@@ -1,0 +1,15 @@
+# MuleSoft File, FTP and SFTP connectors: mule.(file|ftp|sftp).<operation>.
+
+muleSinks:
+
+  - id: Storages.Mulesoft.File.Read
+    name: File System(Read)
+    patterns:
+      - "(?i)^mule\\.(file|ftp|sftp)\\.(read|list)$"
+    tags:
+
+  - id: Storages.Mulesoft.File.Write
+    name: File System(Write)
+    patterns:
+      - "(?i)^mule\\.(file|ftp|sftp)\\.(write|copy|move|rename|delete|create-directory)$"
+    tags:

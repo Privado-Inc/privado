@@ -1,0 +1,19 @@
+# MuleSoft MongoDB connector: mule.mongo.<operation>.
+
+muleSinks:
+
+  - id: Storages.MongoDB.Read
+    name: MongoDB(Read)
+    domains:
+      - "mongodb.com"
+    patterns:
+      - "(?i)^mule\\.mongo\\.(find-documents|find-one-document|find-one-and-update-document|count-documents|list-collections|list-indices|exists-collection)$"
+    tags:
+
+  - id: Storages.MongoDB.Write
+    name: MongoDB(Write)
+    domains:
+      - "mongodb.com"
+    patterns:
+      - "(?i)^mule\\.mongo\\.(insert-document|update-documents|remove-documents|save-object|create-collection|drop-collection|create-index|drop-index|execute-command|insert-documents|replace-document)$"
+    tags:

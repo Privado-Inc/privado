@@ -1,0 +1,20 @@
+# MuleSoft: outbound HTTP calls.
+#
+# Patterns are matched against the identity privado-core builds from the element's namespace URI
+# (never the XML prefix): mule.<module>.<operation>. `<http:request>` -> mule.http.request.
+# The host comes from the referenced <http:request-config>; exposing it as the API URL is a follow-up.
+
+muleSinks:
+
+  - id: ThirdParties.API.Mulesoft.Http
+    name: Mulesoft HTTP Request
+    patterns:
+      - "(?i)^mule\\.http\\.request$"
+    tags:
+
+  # <wsc:consume> (Web Service Consumer): a SOAP call to the service configured in <wsc:connection address=…>.
+  - id: ThirdParties.API.Mulesoft.SOAP
+    name: Mulesoft SOAP Web Service
+    patterns:
+      - "(?i)^mule\\.wsc\\.consume$"
+    tags:

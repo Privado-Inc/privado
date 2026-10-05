@@ -1,0 +1,46 @@
+# MuleSoft: Anypoint connectors for AWS. One rule per connector module, same ids as the Java/Python SDK rules so a
+# Mule S3 write and a Java S3 call land in the same report entry.
+#
+# Namespace URIs: http://www.mulesoft.org/schema/mule/<module>  ->  mule.<module>.<operation>
+
+muleSinks:
+
+  - id: ThirdParties.SDK.Amazonaws.S3
+    name: Amazon Aws S3
+    domains:
+      - "aws.amazon.com/s3"
+    patterns:
+      - "(?i)^mule\\.s3\\..*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SQS
+    name: Amazon Aws SQS
+    domains:
+      - "aws.amazon.com/sqs"
+    patterns:
+      - "(?i)^mule\\.sqs\\..*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.SNS
+    name: Amazon Aws SNS
+    domains:
+      - "aws.amazon.com/sns"
+    patterns:
+      - "(?i)^mule\\.sns\\..*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.DynamoDB
+    name: Amazon Aws DynamoDB
+    domains:
+      - "aws.amazon.com/dynamodb"
+    patterns:
+      - "(?i)^mule\\.dynamodb\\..*"
+    tags:
+
+  - id: ThirdParties.SDK.Amazonaws.Lambda
+    name: Amazon Aws Lambda
+    domains:
+      - "aws.amazon.com/lambda"
+    patterns:
+      - "(?i)^mule\\.lambda\\..*"
+    tags:

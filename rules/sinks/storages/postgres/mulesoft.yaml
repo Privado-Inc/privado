@@ -1,0 +1,20 @@
+# MuleSoft Database connector, PostgreSQL (<db:postgresql-connection> or a generic connection whose element name
+# carries "postgres").
+
+muleSinks:
+
+  - id: Storages.Postgres.Read
+    name: Postgres(Read)
+    domains:
+      - "postgresql.org"
+    patterns:
+      - "(?i)^mule\\.db\\.postgres(ql)?\\.(select|query-single)$"
+    tags:
+
+  - id: Storages.Postgres.Write
+    name: Postgres(Write)
+    domains:
+      - "postgresql.org"
+    patterns:
+      - "(?i)^mule\\.db\\.postgres(ql)?\\.(insert|update|delete|bulk-insert|bulk-update|bulk-delete|stored-procedure|execute-script|execute-ddl)$"
+    tags:

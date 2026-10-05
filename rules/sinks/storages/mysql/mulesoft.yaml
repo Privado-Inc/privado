@@ -1,0 +1,21 @@
+# MuleSoft Database connector, MySQL. The vendor segment comes from the connection element of the referenced
+# <db:config>: <db:my-sql-connection> -> mule.db.mysql.<operation>. The resolved host/database are attached to the
+# sink as database details by privado-core.
+
+muleSinks:
+
+  - id: Storages.MySQL.Read
+    name: MySQL(Read)
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)^mule\\.db\\.mysql\\.(select|query-single)$"
+    tags:
+
+  - id: Storages.MySQL.Write
+    name: MySQL(Write)
+    domains:
+      - "mysql.com"
+    patterns:
+      - "(?i)^mule\\.db\\.mysql\\.(insert|update|delete|bulk-insert|bulk-update|bulk-delete|stored-procedure|execute-script|execute-ddl)$"
+    tags:

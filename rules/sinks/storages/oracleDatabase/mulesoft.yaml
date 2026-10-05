@@ -1,0 +1,11 @@
+# MuleSoft Database connector, Oracle (<db:oracle-connection>).
+
+muleSinks:
+
+  - id: Storages.OracleDatabase.ReadAndWrite
+    name: Oracle Database(Read and Write)
+    domains:
+      - "oracle.com"
+    patterns:
+      - "(?i)^mule\\.db\\.oracle\\.(select|query-single|insert|update|delete|bulk-insert|bulk-update|bulk-delete|stored-procedure|execute-script|execute-ddl)$"
+    tags:

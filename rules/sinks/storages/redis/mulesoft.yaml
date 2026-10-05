@@ -1,0 +1,19 @@
+# MuleSoft Redis connector: mule.redis.<operation>.
+
+muleSinks:
+
+  - id: Storages.Redis.Read
+    name: Redis(Read)
+    domains:
+      - "redis.io"
+    patterns:
+      - "(?i)^mule\\.redis\\.(get|hget|hgetall|hkeys|lrange|lindex|smembers|sismember|zrange|zrangebyscore|keys|exists|ttl|scan)$"
+    tags:
+
+  - id: Storages.Redis.Write
+    name: Redis(Write)
+    domains:
+      - "redis.io"
+    patterns:
+      - "(?i)^mule\\.redis\\.(set|setnx|hset|hsetnx|lpush|rpush|lpop|rpop|sadd|srem|zadd|zrem|del|expire|increment|decrement|publish|flushdb)$"
+    tags:
