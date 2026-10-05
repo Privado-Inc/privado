@@ -41,6 +41,15 @@ muleSinks:
       - "(?i)^mule\\.email\\.send$"
     tags:
 
+  # Notifications to Anypoint Runtime Manager; the message and custom properties carry the data.
+  - id: ThirdParties.SDK.Mulesoft.CloudHub
+    name: Mulesoft CloudHub Notifications
+    domains:
+      - "anypoint.mulesoft.com"
+    patterns:
+      - "(?i)^mule\\.cloudhub\\.create-notification$"
+    tags:
+
   # Any other Anypoint connector operation. The implementation lives in another artifact, so privado cannot say
   # where the data goes, but the egress must not be dropped. Excludes every module that has a dedicated rule above
   # or under storages/ and leakages/, plus parameter-style modules that never carry data out on their own.
@@ -49,5 +58,5 @@ muleSinks:
     domains:
       - "mulesoft.com"
     patterns:
-      - "(?i)^mule\\.(?!(http|wsc|db|s3|sqs|sns|dynamodb|lambda|salesforce|salesforce-[a-z0-9-]+|sfdc-[a-z0-9-]+|vm|anypoint-mq|jms|kafka|email|os|file|ftp|sftp|mongo|redis|logger)\\.)[a-z0-9_-]+\\..*"
+      - "(?i)^mule\\.(?!(http|wsc|db|s3|sqs|sns|dynamodb|lambda|salesforce|salesforce-[a-z0-9-]+|sfdc-[a-z0-9-]+|vm|anypoint-mq|jms|kafka|email|cloudhub|os|file|ftp|sftp|mongo|redis|logger)\\.)[a-z0-9_-]+\\..*"
     tags:
