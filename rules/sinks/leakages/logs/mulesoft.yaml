@@ -1,0 +1,28 @@
+# MuleSoft <logger level="..."> elements: mule.logger.<level> (level lower-cased, INFO when absent).
+# Only active when the scan runs with --enable-logger-sinks, like the other languages' log rules.
+
+sinks:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    patterns:
+      - "(?i)^mule\\.logger\\.error$"
+    tags:
+
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    patterns:
+      - "(?i)^mule\\.logger\\.warn$"
+    tags:
+
+  - id: Leakages.Log.Info
+    name: Log Info
+    patterns:
+      - "(?i)^mule\\.logger\\.info$"
+    tags:
+
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    patterns:
+      - "(?i)^mule\\.logger\\.(debug|trace)$"
+    tags:

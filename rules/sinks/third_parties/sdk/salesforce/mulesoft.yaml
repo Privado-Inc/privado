@@ -1,0 +1,12 @@
+# MuleSoft: Salesforce connectors (core, Marketing Cloud, Composite, CDP).
+
+sinks:
+
+  - id: ThirdParties.SDK.Salesforce
+    name: Salesforce
+    domains:
+      - "salesforce.com"
+    patterns:
+      - "(?i)^mule\\.salesforce(-[a-z0-9-]+)?\\..*"
+      - "(?i)^mule\\.sfdc-[a-z0-9-]+\\..*"
+    tags:

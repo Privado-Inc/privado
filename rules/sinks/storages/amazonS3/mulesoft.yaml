@@ -1,0 +1,20 @@
+# MuleSoft Amazon S3 connector as a storage. An object write is both a third-party egress (third_parties/sdk/amazonaws)
+# and a storage write, the same duality the Java S3 SDK rules have.
+
+sinks:
+
+  - id: Storages.AmazonS3.Read
+    name: Amazon S3(Read)
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i)^mule\\.s3\\.(get-object|get-object-content|get-object-metadata|list-objects|list-buckets|get-bucket-[a-z-]+)$"
+    tags:
+
+  - id: Storages.AmazonS3.Write
+    name: Amazon S3(Write)
+    domains:
+      - "aws.amazon.com"
+    patterns:
+      - "(?i)^mule\\.s3\\.(create-object|put-object|copy-object|delete-object|delete-objects|create-bucket|delete-bucket|upload-part|complete-multipart-upload|set-object-[a-z-]+)$"
+    tags:
