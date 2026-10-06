@@ -20,5 +20,14 @@ collections:
   - id: Collections.Mulesoft.QueueListener
     name: Mulesoft Queue Listener
     patterns:
-      - "(?i)^mule\\.(vm|jms|sqs|anypoint-mq|kafka)\\.listener$"
+      - "(?i)^mule\\.(vm|jms|amqp|ibm-mq)\\.listener$"
+      - "(?i)^mule\\.kafka\\.(batch-)?message-listener$"
+      - "(?i)^mule\\.anypoint-mq\\.subscriber$"
+      - "(?i)^mule\\.sqs\\.receivemessages$"
+    tags:
+
+  - id: Collections.Mulesoft.FileListener
+    name: Mulesoft File Listener
+    patterns:
+      - "(?i)^mule\\.(file|ftp|sftp)\\.listener$"
     tags:
