@@ -1,9 +1,6 @@
-# MuleSoft: messaging connectors, email, and the catch-all for connectors no other rule names.
-#
-# Keep the catch-all's negative lookahead in step with every module that has its own rule (here, in
-# amazonaws/, salesforce/, storages/, leakages/). Otherwise a connector is reported twice.
+# MuleSoft: messaging connectors, email and CloudHub notifications.
 
-muleSinks:
+sinks:
 
   - id: Messaging.Service.Mulesoft.VM
     name: Mulesoft VM Queue
@@ -48,15 +45,4 @@ muleSinks:
       - "anypoint.mulesoft.com"
     patterns:
       - "(?i)^mule\\.cloudhub\\.create-notification$"
-    tags:
-
-  # Any other Anypoint connector operation. The implementation lives in another artifact, so privado cannot say
-  # where the data goes, but the egress must not be dropped. Excludes every module that has a dedicated rule above
-  # or under storages/ and leakages/, plus parameter-style modules that never carry data out on their own.
-  - id: ThirdParties.SDK.Mulesoft
-    name: Mulesoft Connector
-    domains:
-      - "mulesoft.com"
-    patterns:
-      - "(?i)^mule\\.(?!(http|wsc|db|s3|sqs|sns|dynamodb|lambda|salesforce|salesforce-[a-z0-9-]+|sfdc-[a-z0-9-]+|vm|anypoint-mq|jms|kafka|email|cloudhub|os|file|ftp|sftp|mongo|redis|logger)\\.)[a-z0-9_-]+\\..*"
     tags:

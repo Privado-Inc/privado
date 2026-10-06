@@ -1,7 +1,7 @@
 # MuleSoft Amazon S3 connector as a storage. An object write is both a third-party egress (third_parties/sdk/amazonaws)
 # and a storage write, the same duality the Java S3 SDK rules have.
 
-muleSinks:
+sinks:
 
   - id: Storages.AmazonS3.Read
     name: Amazon S3(Read)

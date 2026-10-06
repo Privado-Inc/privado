@@ -1,6 +1,6 @@
 # MuleSoft File, FTP and SFTP connectors: mule.(file|ftp|sftp).<operation>.
 
-muleSinks:
+sinks:
 
   - id: Storages.Mulesoft.File.Read
     name: File System(Read)

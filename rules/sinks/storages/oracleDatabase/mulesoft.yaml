@@ -1,6 +1,6 @@
 # MuleSoft Database connector, Oracle (<db:oracle-connection>).
 
-muleSinks:
+sinks:
 
   - id: Storages.OracleDatabase.ReadAndWrite
     name: Oracle Database(Read and Write)

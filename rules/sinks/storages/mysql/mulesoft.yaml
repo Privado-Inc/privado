@@ -2,7 +2,7 @@
 # <db:config>: <db:my-sql-connection> -> mule.db.mysql.<operation>. The resolved host/database are attached to the
 # sink as database details by privado-core.
 
-muleSinks:
+sinks:
 
   - id: Storages.MySQL.Read
     name: MySQL(Read)

@@ -1,9 +1,0 @@
-# Hard gate for the MuleSoft engine: without these three keys the connector catalog is "not configured" and no Mule
-# element is emitted. Add them to the systemConfig the scan already loads (config/systemConfig/default.yaml).
-systemConfig:
-  - key: muleStructuralModules
-    value: "^(core|documentation|mule-apikit|secure-properties|munit|munit-tools|spring|tls|api-gateway|ee)$"
-  - key: muleStructuralSinkElements
-    value: "^(logger)$"
-  - key: muleEventSourceElements
-    value: "^(listener|scheduler)$"

@@ -1,6 +1,6 @@
 # MuleSoft MongoDB connector: mule.mongo.<operation>.
 
-muleSinks:
+sinks:
 
   - id: Storages.MongoDB.Read
     name: MongoDB(Read)

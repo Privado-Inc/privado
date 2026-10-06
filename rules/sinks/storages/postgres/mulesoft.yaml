@@ -1,7 +1,7 @@
 # MuleSoft Database connector, PostgreSQL (<db:postgresql-connection> or a generic connection whose element name
 # carries "postgres").
 
-muleSinks:
+sinks:
 
   - id: Storages.Postgres.Read
     name: Postgres(Read)

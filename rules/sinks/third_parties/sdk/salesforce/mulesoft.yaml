@@ -1,6 +1,6 @@
 # MuleSoft: Salesforce connectors (core, Marketing Cloud, Composite, CDP).
 
-muleSinks:
+sinks:
 
   - id: ThirdParties.SDK.Salesforce
     name: Salesforce

@@ -2,7 +2,7 @@
 # (basePath + path for HTTP, the queue/topic name otherwise) is attached by privado-core.
 # APIkit-generated route flows are identified as mule.apikit.<method> and get their own collection id.
 
-muleCollections:
+collections:
 
   - id: Collections.Mulesoft.HttpListener
     name: Mulesoft HTTP Listener

@@ -3,7 +3,7 @@
 #
 # Namespace URIs: http://www.mulesoft.org/schema/mule/<module>  ->  mule.<module>.<operation>
 
-muleSinks:
+sinks:
 
   - id: ThirdParties.SDK.Amazonaws.S3
     name: Amazon Aws S3

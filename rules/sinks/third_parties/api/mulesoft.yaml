@@ -4,7 +4,7 @@
 # (never the XML prefix): mule.<module>.<operation>. `<http:request>` -> mule.http.request.
 # The host comes from the referenced <http:request-config>; exposing it as the API URL is a follow-up.
 
-muleSinks:
+sinks:
 
   - id: ThirdParties.API.Mulesoft.Http
     name: Mulesoft HTTP Request

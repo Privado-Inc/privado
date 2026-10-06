@@ -1,7 +1,7 @@
 # MuleSoft Object Store connector (<os:store>, <os:retrieve>...): mule.os.<operation>. Persisted within the runtime,
 # so it is a storage rather than a third party.
 
-muleSinks:
+sinks:
 
   - id: Storages.Mulesoft.ObjectStore.Read
     name: Mulesoft Object Store(Read)

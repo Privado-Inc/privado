@@ -1,7 +1,7 @@
 # MuleSoft <logger level="..."> elements: mule.logger.<level> (level lower-cased, INFO when absent).
 # Only active when the scan runs with --enable-logger-sinks, like the other languages' log rules.
 
-muleSinks:
+sinks:
 
   - id: Leakages.Log.Error
     name: Log Error

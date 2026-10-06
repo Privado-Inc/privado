@@ -1,6 +1,6 @@
 # MuleSoft Redis connector: mule.redis.<operation>.
 
-muleSinks:
+sinks:
 
   - id: Storages.Redis.Read
     name: Redis(Read)
