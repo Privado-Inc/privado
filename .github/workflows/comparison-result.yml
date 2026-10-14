@@ -7,7 +7,7 @@ on:
       - "**"
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.CORE_AT }}
   CORE_AT: ${{ secrets.CORE_AT }}
   BASE_REF: ${{ github.BASE_REF }}
   HEAD_REF: ${{ github.HEAD_REF }}
