@@ -1,0 +1,20 @@
+# MuleSoft Object Store connector (<os:store>, <os:retrieve>...): mule.os.<operation>. Persisted within the runtime,
+# so it is a storage rather than a third party.
+
+sinks:
+
+  - id: Storages.Mulesoft.ObjectStore.Read
+    name: Mulesoft Object Store(Read)
+    domains:
+      - "mulesoft.com"
+    patterns:
+      - "(?i)^mule\\.os\\.(retrieve|retrieve-all|retrieve-all-keys|contains)$"
+    tags:
+
+  - id: Storages.Mulesoft.ObjectStore.Write
+    name: Mulesoft Object Store(Write)
+    domains:
+      - "mulesoft.com"
+    patterns:
+      - "(?i)^mule\\.os\\.(store|remove|clear)$"
+    tags:

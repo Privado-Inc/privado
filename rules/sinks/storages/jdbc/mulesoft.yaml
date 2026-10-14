@@ -1,0 +1,17 @@
+# MuleSoft Database connector, any vendor without a dedicated rule: <db:mssql-connection>, <db:derby-connection>,
+# <db:generic-connection>, <db:data-source-connection>, ... The negative lookahead must list every vendor segment
+# that has its own storages/ rule.
+
+sinks:
+
+  - id: Storages.SpringFramework.Jdbc.Read
+    name: Database(Read)
+    patterns:
+      - "(?i)^mule\\.db\\.(?!(mysql|postgres|postgresql|oracle)\\.)[a-z0-9]+\\.(select|query-single)$"
+    tags:
+
+  - id: Storages.SpringFramework.Jdbc.Write
+    name: Database(Write)
+    patterns:
+      - "(?i)^mule\\.db\\.(?!(mysql|postgres|postgresql|oracle)\\.)[a-z0-9]+\\.(insert|update|delete|bulk-insert|bulk-update|bulk-delete|stored-procedure|execute-script|execute-ddl)$"
+    tags:
