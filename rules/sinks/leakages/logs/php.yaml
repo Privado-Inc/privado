@@ -5,10 +5,24 @@ sinks:
       - "(?i).*(?:log|logger)->.*(?:emergency|alert|critical).*"
     tags:
 
+  - id: Leakages.Log.Critical
+    name: Log Critical
+    filterProperty: "code"
+    patterns:
+      - "(?is)(?:[$]?\\w+\\s*(?:\\(\\s*\\))?\\s*(?:->|::)\\s*)*[$]?\\w*log(?:ger)?\\s*(?:\\(\\s*\\))?\\s*->\\s*(?:emergency|alert|critical)\\s*[(].*"
+    tags:
+
   - id: Leakages.Log.Error
     name: Log Error
     patterns:
       - "(?i).*(?:log|logger)->.*(?:error).*"
+    tags:
+
+  - id: Leakages.Log.Error
+    name: Log Error
+    filterProperty: "code"
+    patterns:
+      - "(?is)(?:[$]?\\w+\\s*(?:\\(\\s*\\))?\\s*(?:->|::)\\s*)*[$]?\\w*log(?:ger)?\\s*(?:\\(\\s*\\))?\\s*->\\s*(?:error)\\s*[(].*"
     tags:
     
   - id: Leakages.Log.Warn
@@ -16,15 +30,36 @@ sinks:
     patterns:
       - "(?i).*(?:log|logger)->.*(?:warning).*"
     tags:
+
+  - id: Leakages.Log.Warn
+    name: Log Warn
+    filterProperty: "code"
+    patterns:
+      - "(?is)(?:[$]?\\w+\\s*(?:\\(\\s*\\))?\\s*(?:->|::)\\s*)*[$]?\\w*log(?:ger)?\\s*(?:\\(\\s*\\))?\\s*->\\s*(?:warning)\\s*[(].*"
+    tags:
   
   - id: Leakages.Log.Debug
     name: Log Debug
     patterns:
       - "(?i).*(?:log|logger)->.*(?:debug).*"
     tags:
+
+  - id: Leakages.Log.Debug
+    name: Log Debug
+    filterProperty: "code"
+    patterns:
+      - "(?is)(?:[$]?\\w+\\s*(?:\\(\\s*\\))?\\s*(?:->|::)\\s*)*[$]?\\w*log(?:ger)?\\s*(?:\\(\\s*\\))?\\s*->\\s*(?:debug)\\s*[(].*"
+    tags:
   
   - id: Leakages.Log.Info
     name: Log Info
     patterns:
       - "(?i).*(?:log|logger)->.*(?:info|notice).*"
+    tags:
+
+  - id: Leakages.Log.Info
+    name: Log Info
+    filterProperty: "code"
+    patterns:
+      - "(?is)(?:[$]?\\w+\\s*(?:\\(\\s*\\))?\\s*(?:->|::)\\s*)*[$]?\\w*log(?:ger)?\\s*(?:\\(\\s*\\))?\\s*->\\s*(?:info|notice)\\s*[(].*"
     tags:
